@@ -44,7 +44,7 @@ export default function Home() {
   }
   const scene = owlScene(started, step, done);
   const worldStyle = {
-    '--scene-image': `url("${import.meta.env.BASE_URL}${scene.image}")`,
+    '--scene-image': `url("${new URL(`${import.meta.env.BASE_URL}${scene.image}`, document.baseURI).href}")`,
     '--background': scene.background, '--scene-surface': scene.surface,
     '--scene-raised': scene.raised, '--scene-border': scene.border,
     '--primary': scene.accent, '--ring': scene.accent,
