@@ -1,0 +1,186 @@
+{
+  "language": "Język gry",
+  "brand": [
+    "BIURO",
+    "DZIWNYCH SPRAW"
+  ],
+  "case": "SPRAWA",
+  "closed": "SPRAWA ZAMKNIĘTA",
+  "secret": "TAJNE AKTA",
+  "school": "SZKOŁA „ORBITA”",
+  "title": [
+    "Gdzie podziała się",
+    "złota sowa?"
+  ],
+  "subtitle": "Sowa zniknęła z gabloty. Zostały mokra kartka i kilka zapisów z kamer.",
+  "unsolved": "NIEROZWIĄZANA",
+  "first": "TWOJE PIERWSZE ŚLEDZTWO",
+  "greeting": "Zacznijmy od tego, co wiemy.",
+  "intro": "O 15:25 nauczycielka zauważyła pustą gablotę. Obok stał przewrócony wazon, a woda rozmazała wiadomość na kartce. Wystawa zaczyna się o 16:00. Nauczycielka prosi cię o znalezienie sowy i przekazuje dwa zdjęcia gabloty. Najpierw ustalmy, w jakim przedziale czasu zniknęła.",
+  "motto": "Szukaj. Łącz wskazówki. Rozwiązuj zagadki.",
+  "duration": "4 etapy · około 10-15 minut",
+  "start": "Przyjmij sprawę",
+  "calm": "Bez limitu czasu i kar. Podpowiedzi są zawsze pod ręką. Możesz grać z drugą osobą.",
+  "caseTitle": "ZAGINIONA ZŁOTA SOWA",
+  "progress": "Postęp śledztwa",
+  "titles": [
+    "Dwa zdjęcia gabloty",
+    "Sprawdź czas",
+    "Dokąd trafiła sowa?",
+    "Z kim porozmawiać?"
+  ],
+  "locations": [
+    "Szkoła · zdjęcia gabloty",
+    "Dziedziniec · rozmowa z Mirą",
+    "Biblioteka · zapisy z kamer",
+    "Biblioteka · łączenie wskazówek"
+  ],
+  "notebook": "NOTATNIK DETEKTYWA",
+  "notebookTitle": "Żaden szczegół nam nie umknie.",
+  "empty": "Nauczycielka przekazała dwa zdjęcia gabloty. Ustal przedział czasu, aby sprawdzić właściwy fragment nagrania.",
+  "clue": "WSKAZÓWKA",
+  "partner": "Myśl na głos. Wyjaśnienie pomysłu drugiej osobie może pomóc dostrzec to, co najważniejsze.",
+  "footer": "Ciekawość to twoja supermoc.",
+  "clues": [
+    "Między zdjęciami minęły 42 minuty. Woźna sprawdziła ten fragment nagrania: o 15:05 ktoś wyniósł sowę. Widać żółtą przypinkę. Według rejestru w tej części szkoły były wtedy tylko trzy osoby: Mira, Lew i Sasza.",
+    "Mira wyszła o 14:35 na 45 minut. Woźna potwierdziła jej powrót o 15:20. O 15:05 Mira była jeszcze poza szkołą.",
+    "Po poprawieniu czasu kolejność jest taka: biblioteka o 15:07, korytarz o 15:09, teatr o 15:11. Na każdym zdjęciu ta sama osoba niesie sowę. Ostatnie potwierdzone miejsce to teatr."
+  ],
+  "lock": {
+    "intro": "Na pierwszym zdjęciu sowa jest jeszcze w gablocie, a na drugim już jej nie ma. Woźna potrzebuje dokładnego przedziału czasu, żeby wybrać nagranie. Ile minut minęło między zdjęciami?",
+    "label": "ZDJĘCIA Z KAMERY PRZY GABLOCIE",
+    "rules": [
+      "14:30: sowa stoi w gablocie.",
+      "15:12: gablota jest pusta.",
+      "Zegar tej kamery pokazuje prawidłowy czas."
+    ],
+    "input": "Ile minut dzieli te zdjęcia?",
+    "submit": "Sprawdź przedział czasu",
+    "short": "Wpisz liczbę minut za pomocą dwóch cyfr.",
+    "wrong": "Policz w dwóch krokach: od 14:30 do 15:00, a potem od 15:00 do 15:12."
+  },
+  "time": {
+    "intro": "Na nagraniu widać żółtą przypinkę. Woźna mówi, że taką ma Mira, i kieruje cię na dziedziniec, gdzie Mira wiesza ozdoby. Mira wyjaśnia, kiedy wyszła ze szkoły. Sprawdź, czy wróciła do 15:05.",
+    "quote": "„O 14:35 wyszłam po papier na dekoracje. Nie było mnie dokładnie 45 minut”.",
+    "input": "O której godzinie wróciła Mira?",
+    "placeholder": "GG:MM",
+    "submit": "Sprawdź godzinę",
+    "wrong": "Coś się jeszcze nie zgadza. Podziel 45 minut na czas do 15:00 i pozostałe minuty."
+  },
+  "note": {
+    "intro": "Mira kieruje cię do bibliotekarza. Woźna zostawiła u niego trzy zdjęcia tej samej osoby niosącej sowę. Figurka zasłania twarz. Jednak zegary kamer pokazują różne czasy! Na kartach podano poprawki. Ułóż zdjęcia według rzeczywistego czasu, od najwcześniejszego. Ostatnie wskaże, dokąd pójść.",
+    "pieces": [
+      "Biblioteka",
+      "Korytarz",
+      "Teatr"
+    ],
+    "add": "Dodaj zapis",
+    "undo": "Usuń ostatni zapis",
+    "clear": "Od początku",
+    "submit": "Odtwórz trasę",
+    "wrong": "Najpierw popraw czas każdej kamery. Gdy zegar się spieszy, odejmij poprawkę. Gdy się spóźnia, dodaj ją.",
+    "records": [
+      "15:10, zegar spieszy się o 3 minuty",
+      "15:04, zegar spóźnia się o 5 minut",
+      "15:11, zegar pokazuje dobry czas"
+    ]
+  },
+  "deduction": {
+    "intro": "Wiemy już, gdzie szukać sowy. Ustalmy, z kim porozmawiać w teatrze. Woźna sprawdziła rejestr wejść i kolory przypinek; dane są poniżej. Osoba niosąca sowę o 15:05 ma żółtą przypinkę.",
+    "people": [
+      "Mira",
+      "Lew",
+      "Sasza"
+    ],
+    "badges": [
+      "Żółta przypinka",
+      "Niebieska przypinka",
+      "Żółta przypinka"
+    ],
+    "notes": [
+      "Wyszła o 14:35 na 45 minut.",
+      "Był w szkole przez cały dzień.",
+      "Była w szkole od 14:00 do 16:00."
+    ],
+    "wrongPeople": [
+      "Mira ma odpowiednią przypinkę. Ale przypomnij sobie, o której wróciła.",
+      "Lew był w szkole, ale kolor jego przypinki nie pasuje do wskazówki."
+    ],
+    "why": "Sasza. Które fakty wskazują właśnie na nią?",
+    "answers": [
+      "Trasa kończy się w teatrze",
+      "Żółta przypinka i obecność w szkole o 15:05",
+      "Mira wróciła później niż inni"
+    ],
+    "wrongReasons": [
+      "Trasa wskazuje miejsce, ale nie imię. Potrzebujemy też koloru przypinki i godziny obecności.",
+      "Późny powrót wyklucza Mirę. Sam w sobie nie wskazuje na Saszę."
+    ],
+    "success": "Lew ma niebieską przypinkę, a Mira o 15:05 była poza szkołą. Pozostaje Sasza. Zapisy z poprawionym czasem pokazują, że zaniosła sowę do teatru. Chodźmy zapytać, co się stało."
+  },
+  "success": [
+    "Przedział ustalony. Sprawdźmy nagranie.",
+    "Czas potwierdzony.",
+    "Trasa odtworzona: Teatr.",
+    "Wiemy, gdzie szukać i kogo zapytać."
+  ],
+  "explanations": [
+    "Od 14:30 do 15:00 mija 30 minut. Do 15:12 jeszcze 12. Razem 42.",
+    "14:35 + 25 minut = 15:00. Jeszcze 20 minut = 15:20.",
+    "15:10 - 3 minuty = 15:07; 15:04 + 5 minut = 15:09; ostatnie zdjęcie: 15:11."
+  ],
+  "next": "Zabierz wskazówkę i idź dalej",
+  "find": "Znajdź sowę",
+  "hint": "Potrzebuję podpowiedzi",
+  "moreHint": "Kolejna podpowiedź",
+  "allHints": "Wszystkie podpowiedzi odkryte",
+  "hints": [
+    [
+      "Najpierw policz minuty do pełnej godziny.",
+      "Od 14:30 do 15:00 mija 30 minut. Do drugiego zdjęcia zostaje jeszcze 12.",
+      "30 + 12 = 42 minuty."
+    ],
+    [
+      "Od 14:35 do 15:00 mija 25 minut. Ile z 45 minut jeszcze zostało?",
+      "Zostało 20 minut. Dodaj je do 15:00.",
+      "Mira wróciła o 15:20. O 15:05 nie było jej jeszcze w szkole."
+    ],
+    [
+      "Spieszący się zegar pokazuje późniejszą godzinę niż rzeczywista. Spóźniający się pokazuje wcześniejszą.",
+      "Biblioteka: 15:10 - 3 = 15:07. Korytarz: 15:04 + 5 = 15:09.",
+      "15:07, potem 15:09, potem 15:11. Biblioteka, korytarz, teatr."
+    ],
+    [
+      "Szukamy osoby z żółtą przypinką, która była w szkole o 15:05.",
+      "Lew ma niebieską przypinkę. Mira wróciła dopiero o 15:20.",
+      "Pozostaje Sasza: żółta przypinka i obecność w szkole o właściwej godzinie."
+    ]
+  ],
+  "end": {
+    "location": "Szkolny teatr",
+    "title": "Sowa odnaleziona!",
+    "solved": "ROZWIĄZANA",
+    "intro": "W teatrze Sasza wyciera podstawę sowy papierowymi ręcznikami. Figurka jest cała. Obok stoi taca, na której przyniosła ją z biblioteki.",
+    "quote": "„Potrąciłam wazon i woda wlała się do gabloty. Wyjęłam sowę i poszłam do biblioteki po papierowe ręczniki. Potem zaniosłam ją do pustego teatru, żeby wysuszyć podstawę. Zostawiłam kartkę przy gablocie, ale zamokła. Powinnam była od razu powiedzieć nauczycielce”.",
+    "summary": "Oddajecie suchą sowę nauczycielce. Zdjęcia pomogły ustalić czas, rejestr wykluczył Mirę, a kamery pokazały trasę. Ktoś chciał uratować figurkę, ale zapomniał o tym powiedzieć.",
+    "rank": "Nowy tytuł: bystry tropiciel",
+    "helped": "Podpowiedzi pomogły ci w śledztwie. Dobry detektyw wie, kiedy poprosić o pomoc.",
+    "solo": "Udało ci się samodzielnie połączyć zapisy.",
+    "question": "Które wskazówki pokazały miejsce, gdzie szukać sowy, a które pozwoliły ustalić, kto ją przeniósł?",
+    "restart": "Zagraj jeszcze raz"
+  },
+  "music": {
+    "play": "Włącz muzykę",
+    "pause": "Wyłącz muzykę",
+    "volume": "Głośność",
+    "loading": "Wczytywanie…",
+    "error": "Nie udało się wczytać muzyki. Spróbuj ponownie lub graj bez niej.",
+    "credit": "Muzyka w tle",
+    "waiting": "Muzyka rozpocznie się po pierwszym dotknięciu ekranu."
+  },
+  "nextSteps": [
+    "Porozmawiaj z Mirą",
+    "Sprawdź trasę na nagraniach",
+    "Porównaj dane o osobach"
+  ]
+}

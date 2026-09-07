@@ -1,0 +1,186 @@
+{
+  "language": "Game language",
+  "brand": [
+    "BUREAU OF",
+    "STRANGE CASES"
+  ],
+  "case": "CASE",
+  "closed": "CASE CLOSED",
+  "secret": "SECRET FILES",
+  "school": "ORBIT SCHOOL",
+  "title": [
+    "Where is the",
+    "golden owl?"
+  ],
+  "subtitle": "The owl is missing from its display case. A wet note and a few camera records remain.",
+  "unsolved": "UNSOLVED",
+  "first": "YOUR FIRST INVESTIGATION",
+  "greeting": "Let’s start with what we know.",
+  "intro": "At 15:25, a teacher found the display case empty. Water from a knocked-over vase had blurred a note beside it. The exhibition opens at 16:00. She asks you to find the owl and gives you two photos of the case. First, work out the time interval in which it disappeared.",
+  "motto": "Explore. Connect the clues. Solve the mystery.",
+  "duration": "4 stages · about 10-15 minutes",
+  "start": "Take the case",
+  "calm": "No timer or penalties. Hints are always available. You can play with a partner.",
+  "caseTitle": "THE MISSING GOLDEN OWL",
+  "progress": "Investigation progress",
+  "titles": [
+    "Two photos of the display",
+    "Check the timing",
+    "Where did the owl go?",
+    "Who should we talk to?"
+  ],
+  "locations": [
+    "School · display photos",
+    "Schoolyard · talking to Mira",
+    "Library · camera records",
+    "Library · connecting the clues"
+  ],
+  "notebook": "DETECTIVE’S NOTEBOOK",
+  "notebookTitle": "Keep track of every clue.",
+  "empty": "The teacher gave us two photos of the display. Find the time interval so we can check the right recording.",
+  "clue": "CLUE",
+  "partner": "Think aloud. Explaining your idea to a partner can help you notice what matters.",
+  "footer": "Curiosity is your superpower.",
+  "clues": [
+    "The photos are 42 minutes apart. The caretaker checked that part of the recording: at 15:05, someone carried the owl away. A yellow badge is visible. The entry log shows that only Mira, Lev and Sasha were in that part of the school during this interval.",
+    "Mira left at 14:35 for 45 minutes. The caretaker confirmed her return at 15:20. At 15:05, Mira was still outside the school.",
+    "With the clocks corrected, the records show: library at 15:07, corridor at 15:09, theatre at 15:11. Every image shows the same person carrying the owl. The last confirmed location is the theatre."
+  ],
+  "lock": {
+    "intro": "The owl is in the first photo but missing from the second. The caretaker needs the exact interval to select the right recording. How many minutes passed between the photos?",
+    "label": "PHOTOS FROM THE DISPLAY CAMERA",
+    "rules": [
+      "14:30: the owl is in the display case.",
+      "15:12: the display case is empty.",
+      "This camera’s clock shows the correct time."
+    ],
+    "input": "How many minutes between the photos?",
+    "submit": "Check the interval",
+    "short": "Enter the number of minutes using two digits.",
+    "wrong": "Try two steps: from 14:30 to 15:00, then from 15:00 to 15:12."
+  },
+  "time": {
+    "intro": "The recording shows a yellow badge. The caretaker says Mira has one and sends you to the schoolyard, where Mira is putting up decorations. Mira explains when she left school. Check whether she was back by 15:05.",
+    "quote": "“I left at 14:35 to buy paper for the decorations. I was away for exactly 45 minutes.”",
+    "input": "What time did Mira return?",
+    "placeholder": "HH:MM",
+    "submit": "Check the time",
+    "wrong": "That doesn’t quite add up yet. Split the 45 minutes into the time until 15:00 and the minutes left over."
+  },
+  "note": {
+    "intro": "Mira sends you to the librarian. The caretaker left three images there showing the same person carrying the owl. The statue hides their face. But the camera clocks don’t agree! Each card gives its clock correction. Put the images in order by the actual time, earliest first. The last one will show where to go.",
+    "pieces": [
+      "Library",
+      "Corridor",
+      "Theatre"
+    ],
+    "add": "Add record",
+    "undo": "Remove the last record",
+    "clear": "Start over",
+    "submit": "Reconstruct the route",
+    "wrong": "Correct each camera’s time first. Subtract when a clock is fast; add when it is slow.",
+    "records": [
+      "15:10, clock is 3 minutes fast",
+      "15:04, clock is 5 minutes slow",
+      "15:11, clock is correct"
+    ]
+  },
+  "deduction": {
+    "intro": "We know where to look for the owl. Now work out who to speak to at the theatre. The caretaker checked the entry log and badge colours; the details are below. The person carrying the owl at 15:05 has a yellow badge.",
+    "people": [
+      "Mira",
+      "Lev",
+      "Sasha"
+    ],
+    "badges": [
+      "Yellow badge",
+      "Blue badge",
+      "Yellow badge"
+    ],
+    "notes": [
+      "Left at 14:35 for 45 minutes.",
+      "Was at school all day.",
+      "Was at school from 14:00 to 16:00."
+    ],
+    "wrongPeople": [
+      "Mira has the right badge. But remember what time she returned.",
+      "Lev was at school, but his badge colour doesn’t match the clue."
+    ],
+    "why": "Sasha. Which facts identify her?",
+    "answers": [
+      "The route ends at the theatre",
+      "Yellow badge and at school at 15:05",
+      "Mira returned later than everyone else"
+    ],
+    "wrongReasons": [
+      "The route gives us a place, not a name. We also need the badge colour and the time.",
+      "Her late return rules Mira out. By itself, it does not identify Sasha."
+    ],
+    "success": "Lev has a blue badge, and Mira was outside at 15:05. That leaves Sasha. The corrected camera records show that she took the owl to the theatre. Let’s go and ask what happened."
+  },
+  "success": [
+    "Interval found. Let’s check the recording.",
+    "Timing confirmed.",
+    "Route reconstructed: Theatre.",
+    "We know where to look and who to ask."
+  ],
+  "explanations": [
+    "14:30 to 15:00 is 30 minutes. Another 12 minutes takes us to 15:12. Total: 42.",
+    "14:35 + 25 minutes = 15:00. Another 20 minutes = 15:20.",
+    "15:10 - 3 minutes = 15:07; 15:04 + 5 minutes = 15:09; the final image is at 15:11."
+  ],
+  "next": "Take the clue and continue",
+  "find": "Find the owl",
+  "hint": "I need a hint",
+  "moreHint": "Another hint",
+  "allHints": "All hints revealed",
+  "hints": [
+    [
+      "First count the minutes up to the next full hour.",
+      "From 14:30 to 15:00 is 30 minutes. The second photo is another 12 minutes later.",
+      "30 + 12 = 42 minutes."
+    ],
+    [
+      "There are 25 minutes from 14:35 to 15:00. How many of the 45 minutes are left?",
+      "There are 20 minutes left. Add them to 15:00.",
+      "Mira returned at 15:20. She wasn’t back at school at 15:05."
+    ],
+    [
+      "A fast clock shows a later time than the actual time. A slow clock shows an earlier time.",
+      "Library: 15:10 - 3 = 15:07. Corridor: 15:04 + 5 = 15:09.",
+      "15:07, then 15:09, then 15:11. Library, corridor, theatre."
+    ],
+    [
+      "We need someone with a yellow badge who was at school at 15:05.",
+      "Lev has a blue badge. Mira only returned at 15:20.",
+      "That leaves Sasha: a yellow badge, and she was at school at the right time."
+    ]
+  ],
+  "end": {
+    "location": "School theatre",
+    "title": "The owl is found!",
+    "solved": "SOLVED",
+    "intro": "In the theatre, Sasha is drying the owl’s base with paper towels. The statue is undamaged. Beside her is the tray she used to carry it from the library.",
+    "quote": "“I knocked the vase and water ran into the display case. I took the owl out and went to the library for paper towels. Then I put it in the empty theatre to dry its base. I left a note at the display, but the paper got wet. I should have told the teacher straight away.”",
+    "summary": "You return the dry owl to the teacher. The photos established the time, the log ruled Mira out, and the camera records revealed the route. Someone was trying to save the statue but forgot to tell anyone.",
+    "rank": "New title: sharp-eyed sleuth",
+    "helped": "You used hints. A good detective knows when to ask for help.",
+    "solo": "You connected the records on your own.",
+    "question": "Which clues told us where to find the owl, and which told us who moved it?",
+    "restart": "Play again"
+  },
+  "music": {
+    "play": "Play music",
+    "pause": "Pause music",
+    "volume": "Volume",
+    "loading": "Loading…",
+    "error": "The music could not load. Try again or keep playing without it.",
+    "credit": "Background music",
+    "waiting": "Music starts when you first tap the screen."
+  },
+  "nextSteps": [
+    "Talk to Mira",
+    "Check the route on camera",
+    "Compare the people’s details"
+  ]
+}
