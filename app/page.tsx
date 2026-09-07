@@ -8,7 +8,7 @@ import { cameraRecords, correctInterval, correctTime, correctOrder, correctPerso
 import MusicPlayer from './MusicPlayer';
 import ForestCase from './ForestCase';
 import forestCopy from './forest.json';
-import { owlScene } from './themes';
+import { owlScene, forestScene } from './themes';
 
 export default function Home() {
   const [language, setLanguage] = useState<Language>(() => {
@@ -16,6 +16,7 @@ export default function Home() {
     catch { return 'ru'; }
   });
   const t = translations[language];
+  const [forestStep, setForestStep] = useState(-1);
   const [caseId, setCaseId] = useState<'owl' | 'forest'>('owl');
   const [started, setStarted] = useState(false);
   const [step, setStep] = useState(0);
@@ -33,7 +34,7 @@ export default function Home() {
   useEffect(() => { if (started) heading.current?.focus(); }, [started, step, done]);
   function ok() { setSolved(true); setError(''); }
   function next() { setStep(step + 1); setSolved(false); setHint(0); setError(''); }
-  function reset() { setCaseId('owl'); setStarted(false); setStep(0); setDone(false); setSolved(false); setCode(''); setTime(''); setOrder([]); setHint(0); setError(''); setUsedHints(false); setReason(false); }
+  function reset() { setForestStep(-1); setCaseId('owl'); setStarted(false); setStep(0); setDone(false); setSolved(false); setCode(''); setTime(''); setOrder([]); setHint(0); setError(''); setUsedHints(false); setReason(false); }
   const messages: Record<string, string> = {
     short: t.lock.short, code: t.lock.wrong, time: t.time.wrong, order: t.note.wrong,
     mira: t.deduction.wrongPeople[0], lev: t.deduction.wrongPeople[1],
@@ -45,9 +46,9 @@ export default function Home() {
         {languages.map(l => <label key={l.id} lang={l.id} className={language === l.id ? 'language-option chosen' : 'language-option'}><RadioGroupItem value={l.id} aria-label={l.name} /><span>{l.name}</span></label>)}
       </RadioGroup></div>;
   }
-  const scene = caseId === 'forest' ? { ...owlScene(true,1,false), background: '#102b25', surface: '#193d32', accent: '#e8d58c' } : owlScene(started, step, done);
+  const scene = caseId === 'forest' ? forestScene(forestStep) : owlScene(started, step, done);
   const worldStyle = {
-    '--scene-image': caseId === 'forest' ? 'none' : `url("${new URL(`${import.meta.env.BASE_URL}${scene.image}`, document.baseURI).href}")`,
+    '--scene-image': `url("${new URL(`${import.meta.env.BASE_URL}${scene.image}`, document.baseURI).href}")`,
     '--background': scene.background, '--scene-surface': scene.surface,
     '--scene-raised': scene.raised, '--scene-border': scene.border,
     '--primary': scene.accent, '--ring': scene.accent,
@@ -55,7 +56,7 @@ export default function Home() {
   return <div className="world" style={worldStyle}><div className="scene-backdrop" aria-hidden="true" /><div className="shell">
     <header><button onClick={reset} className="brand" aria-label={t.brand.join(' ')}><Search size={23} /><span>{t.brand[0]}<b>{t.brand[1]}</b></span></button><span className="case-id">{t.case} {caseId === 'forest' ? '002' : '001'} <span className="live-dot" /></span></header>
     <MusicPlayer labels={t.music} />
-    {caseId === 'forest' ? <main className="game">{languagePicker()}<ForestCase language={language} exit={reset} /></main> : !started ? <main className="start-wrap">{languagePicker()}<nav className="case-picker" aria-label={forestCopy[language][1]}><button className="secondary" aria-current="page">001 · {forestCopy[language][2]}</button><button className="primary" onClick={() => setCaseId('forest')}>002 · {forestCopy[language][0]}</button></nav><div className="start">
+    {caseId === 'forest' ? <main className="game">{languagePicker()}<ForestCase language={language} exit={reset} step={forestStep} setStep={setForestStep} /></main> : !started ? <main className="start-wrap">{languagePicker()}<nav className="case-picker" aria-label={forestCopy[language][1]}><button className="secondary" aria-current="page">001 · {forestCopy[language][2]}</button><button className="primary" onClick={() => setCaseId('forest')}>002 · {forestCopy[language][0]}</button></nav><div className="start">
       <section className="cover" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}scene.png)` }}><div className="cover-shade" /><div className="cover-label"><Fingerprint size={19} />{t.secret}</div><div className="cover-title"><span className="eyebrow">{t.school}</span><h1>{t.title[0]}<br /><em>{t.title[1]}</em></h1><p>{t.subtitle}</p></div><div className="case-stamp">{t.unsolved}</div></section>
       <section className="brief"><span className="eyebrow">{t.first}</span><h2>{t.greeting}</h2><p>{t.intro}</p><div className="mission"><Search /><div><strong>{t.motto}</strong><p>{t.duration}</p></div></div><button className="primary" onClick={() => setStarted(true)}>{t.start}<ArrowRight size={20} /></button><p className="quiet">{t.calm}</p></section>
     </div></main> : <main className="game">{languagePicker()}<div className="game-top"><span className="eyebrow">{done ? t.closed : t.caseTitle}</span><span>{done ? '4 / 4' : `${step + 1} / 4`}</span></div><Progress value={done ? 100 : step * 25} aria-label={t.progress} />

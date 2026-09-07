@@ -11,3 +11,13 @@ export function owlScene(started: boolean, step: number, done: boolean) {
   if (step === 1) return owlScenes.courtyard;
   return owlScenes.library;
 }
+
+export const forestScenes = [
+ { image: 'backgrounds/forest-depot.jpg', background: '#0c2423', surface: '#163732', raised: '#254a3e', border: '#638779', accent: '#dfd48f' },
+ { image: 'backgrounds/forest-clearing.jpg', background: '#111e35', surface: '#1c3047', raised: '#2b435b', border: '#71879e', accent: '#ecd18d' },
+ { image: 'backgrounds/forest-workshop.jpg', background: '#291b15', surface: '#3a2c22', raised: '#503e2b', border: '#978369', accent: '#f4c37a' },
+ { image: 'backgrounds/forest-pavilions.jpg', background: '#1e1b35', surface: '#302b46', raised: '#443b57', border: '#898098', accent: '#f1cc84' },
+];
+export function forestScene(step: number) {
+ return forestScenes[Math.max(0, Math.min(step, 3))];
+}
