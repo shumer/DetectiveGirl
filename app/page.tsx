@@ -7,6 +7,8 @@ import { cameraRecords, correctInterval, correctTime, correctOrder, correctPerso
 
 import MusicPlayer from './MusicPlayer';
 import ForestCase from './ForestCase';
+import StoryCase from './StoryCase';
+import { stories } from './stories';
 import forestCopy from './forest.json';
 import { owlScene, forestScene } from './themes';
 
@@ -17,7 +19,8 @@ export default function Home() {
   });
   const t = translations[language];
   const [forestStep, setForestStep] = useState(-1);
-  const [caseId, setCaseId] = useState<'owl' | 'forest'>('owl');
+  const [caseId, setCaseId] = useState<string>('owl');
+  const activeStory = stories.find(story => story.id === caseId);
   const [started, setStarted] = useState(false);
   const [step, setStep] = useState(0);
   const [done, setDone] = useState(false);
@@ -30,7 +33,7 @@ export default function Home() {
   const [usedHints, setUsedHints] = useState(false);
   const [reason, setReason] = useState(false);
   const heading = useRef<HTMLHeadingElement>(null);
-  useEffect(() => { document.documentElement.lang = language; document.title = `${caseId === 'forest' ? forestCopy[language][0] : t.title.join(' ')} · DetectiveGirl`; try { localStorage.setItem('detective-girl-language', language); } catch { /* Play remains available when storage is blocked. */ } }, [language, t, caseId]);
+  useEffect(() => { document.documentElement.lang = language; document.title = `${activeStory ? activeStory.locales[language].title : caseId === 'forest' ? forestCopy[language][0] : t.title.join(' ')} · DetectiveGirl`; try { localStorage.setItem('detective-girl-language', language); } catch { /* Play remains available when storage is blocked. */ } }, [language, t, caseId, activeStory]);
   useEffect(() => { if (started) heading.current?.focus(); }, [started, step, done]);
   function ok() { setSolved(true); setError(''); }
   function next() { setStep(step + 1); setSolved(false); setHint(0); setError(''); }
@@ -46,7 +49,7 @@ export default function Home() {
         {languages.map(l => <label key={l.id} lang={l.id} className={language === l.id ? 'language-option chosen' : 'language-option'}><RadioGroupItem value={l.id} aria-label={l.name} /><span>{l.name}</span></label>)}
       </RadioGroup></div>;
   }
-  const scene = caseId === 'forest' ? forestScene(forestStep) : owlScene(started, step, done);
+  const scene = activeStory ? { ...forestScene(forestStep), image: `backgrounds/${activeStory.id}-${Math.max(0,Math.min(forestStep,3))}.jpg` } : caseId === 'forest' ? forestScene(forestStep) : owlScene(started, step, done);
   const worldStyle = {
     '--scene-image': `url("${new URL(`${import.meta.env.BASE_URL}${scene.image}`, document.baseURI).href}")`,
     '--background': scene.background, '--scene-surface': scene.surface,
@@ -54,9 +57,9 @@ export default function Home() {
     '--primary': scene.accent, '--ring': scene.accent,
   } as CSSProperties;
   return <div className="world" style={worldStyle}><div className="scene-backdrop" aria-hidden="true" /><div className="shell">
-    <header><button onClick={reset} className="brand" aria-label={t.brand.join(' ')}><Search size={23} /><span>{t.brand[0]}<b>{t.brand[1]}</b></span></button><span className="case-id">{t.case} {caseId === 'forest' ? '002' : '001'} <span className="live-dot" /></span></header>
+    <header><button onClick={reset} className="brand" aria-label={t.brand.join(' ')}><Search size={23} /><span>{t.brand[0]}<b>{t.brand[1]}</b></span></button><span className="case-id">{t.case} {activeStory ? activeStory.number : caseId === 'forest' ? '002' : '001'} <span className="live-dot" /></span></header>
     <MusicPlayer labels={t.music} />
-    {caseId === 'forest' ? <main className="game">{languagePicker()}<ForestCase language={language} exit={reset} step={forestStep} setStep={setForestStep} /></main> : !started ? <main className="start-wrap">{languagePicker()}<nav className="case-picker" aria-label={forestCopy[language][1]}><button className="secondary" aria-current="page">001 · {forestCopy[language][2]}</button><button className="primary" onClick={() => setCaseId('forest')}>002 · {forestCopy[language][0]}</button></nav><div className="start">
+    {activeStory ? <main className="game">{languagePicker()}<StoryCase key={activeStory.id} story={activeStory} language={language} step={forestStep} setStep={setForestStep} exit={reset}/></main> : caseId === 'forest' ? <main className="game">{languagePicker()}<ForestCase language={language} exit={reset} step={forestStep} setStep={setForestStep} /></main> : !started ? <main className="start-wrap">{languagePicker()}<nav className="case-picker" aria-label={forestCopy[language][1]}><button className="secondary" aria-current="page">001 · {forestCopy[language][2]}</button><button className="primary" onClick={() => setCaseId('forest')}>002 · {forestCopy[language][0]}</button>{stories.map(story => <button className="secondary" key={story.id} onClick={() => { setForestStep(-1); setCaseId(story.id); }}>{story.number} · {story.locales[language].title}</button>)}</nav><div className="start">
       <section className="cover" style={{ backgroundImage: `url(${import.meta.env.BASE_URL}scene.png)` }}><div className="cover-shade" /><div className="cover-label"><Fingerprint size={19} />{t.secret}</div><div className="cover-title"><span className="eyebrow">{t.school}</span><h1>{t.title[0]}<br /><em>{t.title[1]}</em></h1><p>{t.subtitle}</p></div><div className="case-stamp">{t.unsolved}</div></section>
       <section className="brief"><span className="eyebrow">{t.first}</span><h2>{t.greeting}</h2><p>{t.intro}</p><div className="mission"><Search /><div><strong>{t.motto}</strong><p>{t.duration}</p></div></div><button className="primary" onClick={() => setStarted(true)}>{t.start}<ArrowRight size={20} /></button><p className="quiet">{t.calm}</p></section>
     </div></main> : <main className="game">{languagePicker()}<div className="game-top"><span className="eyebrow">{done ? t.closed : t.caseTitle}</span><span>{done ? '4 / 4' : `${step + 1} / 4`}</span></div><Progress value={done ? 100 : step * 25} aria-label={t.progress} />
