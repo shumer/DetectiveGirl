@@ -16,7 +16,7 @@ export default function RevisionCase({ story, language, step, setStep, exit }: {
  const t=story.locales[language], shared=translations[language], buttons=forestCopy[language], ui=labels[language];
  const [solved,setSolved]=useState(false),[wrong,setWrong]=useState(false),[hint,setHint]=useState(0),[answer,setAnswer]=useState(''),[order,setOrder]=useState<number[]>([]);
  const heading=useRef<HTMLHeadingElement>(null);
- useEffect(()=>{ heading.current?.focus({preventScroll:true}); },[step]);
+ useEffect(()=>{ heading.current?.focus({preventScroll:step<0}); },[step]);
  const done=step===t.steps.length, task=t.steps[step];
  const advance=()=>{setSolved(false);setWrong(false);setHint(0);setAnswer('');setOrder([]);setStep(step+1);};
  function check(value:string|number[]) { if(solved)return; const ok=validateResponse(task.kind,task.answer,value);setSolved(ok);setWrong(!ok); }
