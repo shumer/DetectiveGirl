@@ -1,0 +1,514 @@
+{
+  "id": "theatre",
+  "number": "006",
+  "locales": {
+    "ru": {
+      "title": "Театр потерянного финала",
+      "intro": "Перед спектаклем в папке режиссёра нашлись четыре разных финала: «Мост», «Плавание», «Бал» и «Фонарь». Никто не отметил, какой репетировали вчера, а актёры на уроках до 16:00. В архиве три записи репетиций без подписей, и реквизитор принёс список на сегодня, где есть лодка. Помоги найти вчерашнюю запись, определить финал и рассчитать сегодняшнюю репетицию.",
+      "ending": "Финал начинается на 25-й минуте файла, потому что камера стояла на паузе весь перерыв. Вчерашняя запись это файл 3: шесть гирлянд из 54 оставшихся звёзд и новый синий занавес. По декорациям подошёл только «Мост», а лодка из списка реквизита оказалась из первого акта. Мост поставят к 15:55, актёры прогонят финал три раза и закончат в 16:26.",
+      "question": "У файла 1 тоже шесть гирлянд. Почему он всё равно не вчерашний?",
+      "steps": [
+        {
+          "title": "Где в файле начинается финал?",
+          "situation": "В архиве режиссёр открывает длинную запись репетиции. Известно, как шла репетиция и как работала камера.",
+          "evidence": [
+            "Репетиция началась в 16:20, запись включили в тот же момент.",
+            "Первая часть длилась 25 минут, затем был перерыв 10 минут, после него сразу начался финал.",
+            "На перерыв камеру ставили на паузу, и после перерыва запись продолжилась с того же места файла."
+          ],
+          "question": "На какой минуте файла начинается финал? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "25",
+          "feedback": [],
+          "explanation": "Перерыв в файл не попал: камера стояла на паузе. В файле идут 25 минут первой части и сразу финал, поэтому он начинается на 25-й минуте, а не на 35-й.",
+          "outcome": "На 25-й минуте в кадре сцена с гирляндами и мостом. Но в архиве три файла без подписей, и сначала нужно убедиться, что открыт именно вчерашний.",
+          "next": "Сверить записи",
+          "hints": [
+            "Перерыв в файл не попал: камера стояла на паузе.",
+            "В файле идёт только первая часть, а потом сразу финал.",
+            "Сколько минут длилась первая часть?"
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Какая запись вчерашняя?",
+          "situation": "На сцене реквизитор показывает, что осталось от вчерашних украшений, а режиссёр листает три файла без подписей. Вчера утром сменили занавес. Найди файл, у которого совпадает всё.",
+          "evidence": [
+            "Вчера было 72 звезды. 18 из них закрепили на афише, а все остальные распределили поровну на гирлянды, по 9 звёзд на каждую.",
+            "Вчера в 11:00 красный занавес заменили новым синим. Все вчерашние репетиции были после этого.",
+            "Файл 1: 6 гирлянд, красный занавес.",
+            "Файл 2: 8 гирлянд, синий занавес.",
+            "Файл 3: 6 гирлянд, синий занавес.",
+            "Файл 4: 7 гирлянд, синий занавес."
+          ],
+          "question": "Какой файл записан вчера?",
+          "kind": "choice",
+          "options": [
+            "Файл 1",
+            "Файл 2",
+            "Файл 3",
+            "Файл 4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Шесть гирлянд совпадают, но занавес красный. Его сняли вчера в 11:00, значит запись сделана раньше.",
+            "Восемь гирлянд получится, если разделить все 72 звезды на 9. Но 18 звёзд ушли на афишу.",
+            "",
+            "Семь гирлянд не получается ни при каком счёте: 54 звезды на 9 делятся без остатка."
+          ],
+          "explanation": "72 - 18 = 54 звезды на гирлянды, 54 : 9 = 6 гирлянд. Синий занавес висит с 11:00 вчера. Шесть гирлянд и синий занавес только в файле 3.",
+          "outcome": "Вчерашняя запись найдена: файл 3. В кадре финала шесть гирлянд и мост, лодки и фонаря нет. Теперь сравним это с четырьмя текстами.",
+          "next": "Сравнить четыре финала",
+          "hints": [
+            "Сначала посчитай, сколько гирлянд сделали вчера: звёзды для афиши в гирлянды не пошли.",
+            "Занавес тоже улика: красный занавес сняли до всех вчерашних репетиций.",
+            "Должны совпасть оба признака: и число гирлянд, и цвет занавеса."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Какой финал репетировали?",
+          "situation": "У реквизита режиссёр раскладывает четыре текста. В каждом указано, что обязательно должно быть на сцене. Реквизитор принёс список на сегодня и в нём есть лодка, но не спеши.",
+          "evidence": [
+            "На вчерашней записи: шесть гирлянд, мост, в руках у актёров ничего нет.",
+            "«Мост»: 6 гирлянд и мост.",
+            "«Плавание»: 6 гирлянд и лодка.",
+            "«Бал»: 8 гирлянд и мост.",
+            "«Фонарь»: 6 гирлянд, мост и фонарь в руках у актёра.",
+            "Список реквизита на сегодня: лодка для первого акта, мост для финала."
+          ],
+          "question": "Какой текст совпадает со вчерашней записью?",
+          "kind": "choice",
+          "options": [
+            "«Мост»",
+            "«Плавание»",
+            "«Бал»",
+            "«Фонарь»"
+          ],
+          "answer": 0,
+          "feedback": [
+            "",
+            "Лодка есть в списке на сегодня, но для первого акта. В кадре финала лодки нет, там мост.",
+            "На записи шесть гирлянд, а «Балу» нужно восемь.",
+            "Мост и шесть гирлянд совпадают, но фонаря в руках у актёров на записи нет."
+          ],
+          "explanation": "«Мост» совпадает по всем признакам: шесть гирлянд, мост, ничего в руках. У «Плавания» лодка, у «Бала» восемь гирлянд, у «Фонаря» лишний предмет. Лодка из списка реквизита относится к первому акту и на финал не указывает.",
+          "outcome": "Финал найден: «Мост». Осталось рассчитать сегодняшнюю репетицию, чтобы актёры успели прогнать финал несколько раз.",
+          "next": "Составить план репетиции",
+          "hints": [
+            "Сравни каждый текст со всеми признаками на записи, а не с одним.",
+            "Список реквизита на сегодня говорит о сегодняшнем спектакле целиком, а не о финале.",
+            "Лишний предмет на сцене тоже несовпадение."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "Когда закончится репетиция?",
+          "situation": "За столом режиссёр составляет план. Сцена освободится после занятий, мост нужно собрать до прихода актёров, а финал прогнать три раза с паузами.",
+          "evidence": [
+            "Сцена свободна с 15:10. Сборка моста занимает 45 минут.",
+            "Актёры приходят в 16:00 и сразу начинают первый прогон.",
+            "На вчерашней записи финал шёл с 25-й по 33-ю минуту файла, включая поклон 2 минуты. Сегодня прогоняют без поклона.",
+            "Прогонов три, между соседними прогонами пауза 4 минуты."
+          ],
+          "question": "Во сколько закончится третий прогон? Введи время ЧЧ:ММ.",
+          "kind": "time",
+          "options": [],
+          "answer": "16:26",
+          "feedback": [],
+          "explanation": "Мост готов к 15:55, до прихода актёров. Финал без поклона: 33 - 25 - 2 = 6 минут. Три прогона по 6 минут это 18 минут, между ними две паузы по 4 минуты, ещё 8. 16:00 + 26 минут = 16:26.",
+          "outcome": "План готов: мост к 15:55, актёры в 16:00, третий прогон заканчивается в 16:26. Режиссёр убирает три других финала в архив.",
+          "next": "Передать план режиссёру",
+          "hints": [
+            "Сначала проверь, что сцена будет готова к приходу актёров.",
+            "Прогонов три, а пауз между ними только две.",
+            "Сложи три прогона и две паузы и прибавь к 16:00."
+          ],
+          "scene": 3
+        }
+      ]
+    },
+    "pl": {
+      "title": "Teatr zaginionego finału",
+      "intro": "Przed spektaklem w teczce reżysera znalazły się cztery różne finały: „Most”, „Rejs”, „Bal” i „Latarnia”. Nikt nie zaznaczył, który próbowano wczoraj, a aktorzy są na lekcjach do 16:00. W archiwum są trzy nagrania prób bez podpisów, a rekwizytor przyniósł listę na dziś, na której jest łódka. Pomóż znaleźć wczorajsze nagranie, ustalić finał i zaplanować dzisiejszą próbę.",
+      "ending": "Finał zaczyna się w 25. minucie pliku, bo kamera była zatrzymana przez całą przerwę. Wczorajsze nagranie to plik 3: sześć girland z 54 pozostałych gwiazd i nowa niebieska kurtyna. Do dekoracji pasował tylko „Most”, a łódka z listy rekwizytów okazała się z pierwszego aktu. Most ustawią do 15:55, aktorzy przejdą finał trzy razy i skończą o 16:26.",
+      "question": "Plik 1 też ma sześć girland. Dlaczego mimo to nie jest wczorajszy?",
+      "steps": [
+        {
+          "title": "Gdzie w pliku zaczyna się finał?",
+          "situation": "W archiwum reżyser otwiera długie nagranie próby. Wiadomo, jak przebiegała próba i jak działała kamera.",
+          "evidence": [
+            "Próba zaczęła się o 16:20, nagranie włączono w tym samym momencie.",
+            "Pierwsza część trwała 25 minut, potem była przerwa 10 minut, a zaraz po niej zaczął się finał.",
+            "Na przerwę kamerę zatrzymano i po przerwie nagranie ruszyło z tego samego miejsca pliku."
+          ],
+          "question": "W której minucie pliku zaczyna się finał? Wpisz liczbę.",
+          "kind": "number",
+          "options": [],
+          "answer": "25",
+          "feedback": [],
+          "explanation": "Przerwa nie trafiła do pliku: kamera była zatrzymana. W pliku jest 25 minut pierwszej części i od razu finał, więc zaczyna się on w 25. minucie, a nie w 35.",
+          "outcome": "W 25. minucie w kadrze jest scena z girlandami i mostem. Ale w archiwum są trzy pliki bez podpisów i najpierw trzeba się upewnić, że otwarty jest właśnie wczorajszy.",
+          "next": "Porównaj nagrania",
+          "hints": [
+            "Przerwa nie trafiła do pliku: kamera była zatrzymana.",
+            "W pliku jest tylko pierwsza część, a potem od razu finał.",
+            "Ile minut trwała pierwsza część?"
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Które nagranie jest wczorajsze?",
+          "situation": "Na scenie rekwizytor pokazuje, co zostało z wczorajszych dekoracji, a reżyser przegląda trzy pliki bez podpisów. Wczoraj rano wymieniono kurtynę. Znajdź plik, w którym zgadza się wszystko.",
+          "evidence": [
+            "Wczoraj były 72 gwiazdy. 18 z nich przypięto do afisza, a wszystkie pozostałe rozdzielono po równo na girlandy, po 9 gwiazd na każdą.",
+            "Wczoraj o 11:00 czerwoną kurtynę wymieniono na nową niebieską. Wszystkie wczorajsze próby były po tym.",
+            "Plik 1: 6 girland, czerwona kurtyna.",
+            "Plik 2: 8 girland, niebieska kurtyna.",
+            "Plik 3: 6 girland, niebieska kurtyna.",
+            "Plik 4: 7 girland, niebieska kurtyna."
+          ],
+          "question": "Który plik nagrano wczoraj?",
+          "kind": "choice",
+          "options": [
+            "Plik 1",
+            "Plik 2",
+            "Plik 3",
+            "Plik 4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Sześć girland się zgadza, ale kurtyna jest czerwona. Zdjęto ją wczoraj o 11:00, więc nagranie powstało wcześniej.",
+            "Osiem girland wyjdzie, jeśli podzielić wszystkie 72 gwiazdy przez 9. Ale 18 gwiazd poszło na afisz.",
+            "",
+            "Siedem girland nie wychodzi przy żadnym liczeniu: 54 gwiazdy dzielą się przez 9 bez reszty."
+          ],
+          "explanation": "72 - 18 = 54 gwiazdy na girlandy, 54 : 9 = 6 girland. Niebieska kurtyna wisi od wczoraj od 11:00. Sześć girland i niebieska kurtyna są tylko w pliku 3.",
+          "outcome": "Wczorajsze nagranie znalezione: plik 3. W kadrze finału jest sześć girland i most, nie ma łódki ani latarni. Teraz porównamy to z czterema tekstami.",
+          "next": "Porównaj cztery finały",
+          "hints": [
+            "Najpierw policz, ile girland zrobiono wczoraj: gwiazdy na afisz nie poszły na girlandy.",
+            "Kurtyna też jest poszlaką: czerwoną kurtynę zdjęto przed wszystkimi wczorajszymi próbami.",
+            "Muszą się zgadzać obie cechy: liczba girland i kolor kurtyny."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Który finał próbowano?",
+          "situation": "Przy rekwizytach reżyser rozkłada cztery teksty. W każdym zapisano, co koniecznie musi być na scenie. Rekwizytor przyniósł listę na dziś i jest na niej łódka, ale nie spiesz się.",
+          "evidence": [
+            "Na wczorajszym nagraniu: sześć girland, most, aktorzy nic nie trzymają w rękach.",
+            "„Most”: 6 girland i most.",
+            "„Rejs”: 6 girland i łódka.",
+            "„Bal”: 8 girland i most.",
+            "„Latarnia”: 6 girland, most i latarnia w ręku aktora.",
+            "Lista rekwizytów na dziś: łódka do pierwszego aktu, most do finału."
+          ],
+          "question": "Który tekst zgadza się z wczorajszym nagraniem?",
+          "kind": "choice",
+          "options": [
+            "„Most”",
+            "„Rejs”",
+            "„Bal”",
+            "„Latarnia”"
+          ],
+          "answer": 0,
+          "feedback": [
+            "",
+            "Łódka jest na liście na dziś, ale do pierwszego aktu. W kadrze finału nie ma łódki, jest most.",
+            "Na nagraniu jest sześć girland, a „Bal” potrzebuje ośmiu.",
+            "Most i sześć girland się zgadzają, ale latarni w rękach aktorów na nagraniu nie ma."
+          ],
+          "explanation": "„Most” zgadza się we wszystkim: sześć girland, most, nic w rękach. „Rejs” ma łódkę, „Bal” osiem girland, „Latarnia” dodatkowy przedmiot. Łódka z listy rekwizytów należy do pierwszego aktu i nie wskazuje na finał.",
+          "outcome": "Finał znaleziony: „Most”. Zostało zaplanować dzisiejszą próbę, żeby aktorzy zdążyli przejść finał kilka razy.",
+          "next": "Ułóż plan próby",
+          "hints": [
+            "Porównaj każdy tekst ze wszystkimi cechami nagrania, a nie z jedną.",
+            "Lista rekwizytów na dziś mówi o całym dzisiejszym spektaklu, a nie o finale.",
+            "Dodatkowy przedmiot na scenie to też niezgodność."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "Kiedy skończy się próba?",
+          "situation": "Przy stole reżyser układa plan. Scena zwolni się po zajęciach, most trzeba złożyć przed przyjściem aktorów, a finał przejść trzy razy z przerwami.",
+          "evidence": [
+            "Scena jest wolna od 15:10. Składanie mostu zajmuje 45 minut.",
+            "Aktorzy przychodzą o 16:00 i od razu zaczynają pierwsze przejście.",
+            "Na wczorajszym nagraniu finał trwał od 25. do 33. minuty pliku, łącznie z ukłonem 2 minuty. Dziś przechodzą bez ukłonu.",
+            "Przejścia są trzy, między sąsiednimi przejściami przerwa 4 minuty."
+          ],
+          "question": "O której skończy się trzecie przejście? Wpisz czas GG:MM.",
+          "kind": "time",
+          "options": [],
+          "answer": "16:26",
+          "feedback": [],
+          "explanation": "Most gotowy na 15:55, przed przyjściem aktorów. Finał bez ukłonu: 33 - 25 - 2 = 6 minut. Trzy przejścia po 6 minut to 18 minut, między nimi dwie przerwy po 4 minuty, jeszcze 8. 16:00 + 26 minut = 16:26.",
+          "outcome": "Plan gotowy: most na 15:55, aktorzy o 16:00, trzecie przejście kończy się o 16:26. Reżyser odkłada trzy pozostałe finały do archiwum.",
+          "next": "Przekaż plan reżyserowi",
+          "hints": [
+            "Najpierw sprawdź, czy scena będzie gotowa na przyjście aktorów.",
+            "Przejścia są trzy, a przerw między nimi tylko dwie.",
+            "Dodaj trzy przejścia i dwie przerwy, a potem dodaj to do 16:00."
+          ],
+          "scene": 3
+        }
+      ]
+    },
+    "en": {
+      "title": "The Theatre of the Lost Finale",
+      "intro": "Before the play, four different finales turned up in the director’s folder: “The Bridge”, “The Voyage”, “The Ball” and “The Lantern”. Nobody marked which one was rehearsed yesterday, and the actors are in lessons until 16:00. The archive holds three unlabelled rehearsal recordings, and the props manager has brought today’s list, which includes a boat. Help find yesterday’s recording, identify the finale and plan today’s rehearsal.",
+      "ending": "The finale starts at minute 25 of the file, because the camera was paused for the whole break. Yesterday’s recording is file 3: six garlands made from the 54 remaining stars, and the new blue curtain. Only “The Bridge” matched the set, and the boat on the props list turned out to belong to act one. The bridge will be built by 15:55, the actors will run the finale three times and finish at 16:26.",
+      "question": "File 1 also has six garlands. Why is it still not yesterday’s recording?",
+      "steps": [
+        {
+          "title": "Where in the file does the finale start?",
+          "situation": "In the archive, the director opens a long rehearsal recording. We know how the rehearsal went and how the camera worked.",
+          "evidence": [
+            "The rehearsal began at 16:20, and the recording was started at the same moment.",
+            "The first part lasted 25 minutes, then there was a 10-minute break, and the finale began straight after it.",
+            "The camera was paused for the break, and after the break the recording continued from the same point in the file."
+          ],
+          "question": "At what minute of the file does the finale start? Enter a number.",
+          "kind": "number",
+          "options": [],
+          "answer": "25",
+          "feedback": [],
+          "explanation": "The break did not make it into the file: the camera was paused. The file holds 25 minutes of the first part and then the finale immediately, so it starts at minute 25, not 35.",
+          "outcome": "At minute 25 the frame shows a stage with garlands and a bridge. But there are three unlabelled files in the archive, and first we need to be sure this one is yesterday’s.",
+          "next": "Compare the recordings",
+          "hints": [
+            "The break did not make it into the file: the camera was paused.",
+            "The file holds only the first part, and then the finale straight away.",
+            "How many minutes did the first part last?"
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Which recording is yesterday’s?",
+          "situation": "On stage, the props manager shows what is left of yesterday’s decorations while the director flicks through three unlabelled files. The curtain was replaced yesterday morning. Find the file where everything matches.",
+          "evidence": [
+            "Yesterday there were 72 stars. 18 of them were fixed to the poster, and all the rest were shared equally between garlands, 9 stars each.",
+            "Yesterday at 11:00 the red curtain was replaced with a new blue one. All of yesterday’s rehearsals came after that.",
+            "File 1: 6 garlands, red curtain.",
+            "File 2: 8 garlands, blue curtain.",
+            "File 3: 6 garlands, blue curtain.",
+            "File 4: 7 garlands, blue curtain."
+          ],
+          "question": "Which file was recorded yesterday?",
+          "kind": "choice",
+          "options": [
+            "File 1",
+            "File 2",
+            "File 3",
+            "File 4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Six garlands match, but the curtain is red. It was taken down yesterday at 11:00, so this recording was made earlier.",
+            "You get eight garlands if you divide all 72 stars by 9. But 18 stars went on the poster.",
+            "",
+            "Seven garlands do not come out of any calculation: 54 stars divide by 9 exactly."
+          ],
+          "explanation": "72 - 18 = 54 stars for garlands, 54 ÷ 9 = 6 garlands. The blue curtain has been up since 11:00 yesterday. Six garlands and a blue curtain appear only in file 3.",
+          "outcome": "Yesterday’s recording is found: file 3. The finale frame shows six garlands and a bridge, with no boat and no lantern. Now let’s compare that with the four scripts.",
+          "next": "Compare the four finales",
+          "hints": [
+            "First work out how many garlands were made yesterday: the poster stars did not go into garlands.",
+            "The curtain is a clue too: the red curtain came down before all of yesterday’s rehearsals.",
+            "Both features must match: the number of garlands and the colour of the curtain."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Which finale was rehearsed?",
+          "situation": "By the props, the director lays out four scripts. Each one lists what must be on stage. The props manager has brought today’s list and it includes a boat, but do not rush.",
+          "evidence": [
+            "In yesterday’s recording: six garlands, a bridge, and the actors hold nothing.",
+            "“The Bridge”: 6 garlands and a bridge.",
+            "“The Voyage”: 6 garlands and a boat.",
+            "“The Ball”: 8 garlands and a bridge.",
+            "“The Lantern”: 6 garlands, a bridge and a lantern in an actor’s hand.",
+            "Today’s props list: a boat for act one, a bridge for the finale."
+          ],
+          "question": "Which script matches yesterday’s recording?",
+          "kind": "choice",
+          "options": [
+            "“The Bridge”",
+            "“The Voyage”",
+            "“The Ball”",
+            "“The Lantern”"
+          ],
+          "answer": 0,
+          "feedback": [
+            "",
+            "The boat is on today’s list, but for act one. There is no boat in the finale frame, there is a bridge.",
+            "The recording shows six garlands, and “The Ball” needs eight.",
+            "The bridge and six garlands match, but there is no lantern in the actors’ hands in the recording."
+          ],
+          "explanation": "“The Bridge” matches on every point: six garlands, a bridge, nothing in hand. “The Voyage” has a boat, “The Ball” has eight garlands, “The Lantern” has an extra object. The boat on the props list belongs to act one and says nothing about the finale.",
+          "outcome": "The finale is found: “The Bridge”. All that remains is to plan today’s rehearsal so the actors can run the finale several times.",
+          "next": "Plan the rehearsal",
+          "hints": [
+            "Compare each script with all the features of the recording, not just one.",
+            "Today’s props list describes the whole of today’s play, not the finale.",
+            "An extra object on stage is a mismatch too."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "When will the rehearsal end?",
+          "situation": "At the table, the director draws up a plan. The stage will be free after lessons, the bridge must be built before the actors arrive, and the finale has to be run three times with breaks.",
+          "evidence": [
+            "The stage is free from 15:10. Building the bridge takes 45 minutes.",
+            "The actors arrive at 16:00 and start the first run straight away.",
+            "In yesterday’s recording the finale ran from minute 25 to minute 33 of the file, including a 2-minute bow. Today they run it without the bow.",
+            "There are three runs, with a 4-minute break between neighbouring runs."
+          ],
+          "question": "What time will the third run end? Enter the time as HH:MM.",
+          "kind": "time",
+          "options": [],
+          "answer": "16:26",
+          "feedback": [],
+          "explanation": "The bridge is ready by 15:55, before the actors arrive. The finale without the bow: 33 - 25 - 2 = 6 minutes. Three runs of 6 minutes make 18 minutes, with two 4-minute breaks between them, another 8. 16:00 + 26 minutes = 16:26.",
+          "outcome": "The plan is ready: bridge by 15:55, actors at 16:00, third run ending at 16:26. The director files the other three finales away in the archive.",
+          "next": "Hand the plan to the director",
+          "hints": [
+            "First check that the stage will be ready when the actors arrive.",
+            "There are three runs, but only two breaks between them.",
+            "Add up three runs and two breaks, then add that to 16:00."
+          ],
+          "scene": 3
+        }
+      ]
+    },
+    "uk": {
+      "title": "Театр загубленого фіналу",
+      "intro": "Перед виставою в теці режисера знайшлися чотири різні фінали: «Міст», «Плавання», «Бал» і «Ліхтар». Ніхто не позначив, який репетирували вчора, а актори на уроках до 16:00. В архіві три записи репетицій без підписів, і реквізитор приніс список на сьогодні, де є човен. Допоможи знайти вчорашній запис, визначити фінал і розрахувати сьогоднішню репетицію.",
+      "ending": "Фінал починається на 25-й хвилині файлу, бо камера стояла на паузі всю перерву. Вчорашній запис це файл 3: шість гірлянд із 54 зірок, що залишилися, і нова синя завіса. За декораціями підійшов лише «Міст», а човен зі списку реквізиту виявився з першої дії. Міст поставлять до 15:55, актори проженуть фінал тричі і закінчать о 16:26.",
+      "question": "У файлу 1 теж шість гірлянд. Чому він усе одно не вчорашній?",
+      "steps": [
+        {
+          "title": "Де у файлі починається фінал?",
+          "situation": "В архіві режисер відкриває довгий запис репетиції. Відомо, як ішла репетиція і як працювала камера.",
+          "evidence": [
+            "Репетиція почалася о 16:20, запис увімкнули в той самий момент.",
+            "Перша частина тривала 25 хвилин, потім була перерва 10 хвилин, після неї одразу почався фінал.",
+            "На перерву камеру ставили на паузу, і після перерви запис продовжився з того самого місця файлу."
+          ],
+          "question": "На якій хвилині файлу починається фінал? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "25",
+          "feedback": [],
+          "explanation": "Перерва у файл не потрапила: камера стояла на паузі. У файлі йдуть 25 хвилин першої частини і одразу фінал, тому він починається на 25-й хвилині, а не на 35-й.",
+          "outcome": "На 25-й хвилині в кадрі сцена з гірляндами і мостом. Але в архіві три файли без підписів, і спершу треба переконатися, що відкрито саме вчорашній.",
+          "next": "Звірити записи",
+          "hints": [
+            "Перерва у файл не потрапила: камера стояла на паузі.",
+            "У файлі йде лише перша частина, а потім одразу фінал.",
+            "Скільки хвилин тривала перша частина?"
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Який запис учорашній?",
+          "situation": "На сцені реквізитор показує, що залишилося від учорашніх прикрас, а режисер гортає три файли без підписів. Учора вранці змінили завісу. Знайди файл, у якого збігається все.",
+          "evidence": [
+            "Учора було 72 зірки. 18 із них закріпили на афіші, а всі інші розподілили порівну на гірлянди, по 9 зірок на кожну.",
+            "Учора об 11:00 червону завісу замінили новою синьою. Усі вчорашні репетиції були після цього.",
+            "Файл 1: 6 гірлянд, червона завіса.",
+            "Файл 2: 8 гірлянд, синя завіса.",
+            "Файл 3: 6 гірлянд, синя завіса.",
+            "Файл 4: 7 гірлянд, синя завіса."
+          ],
+          "question": "Який файл записано вчора?",
+          "kind": "choice",
+          "options": [
+            "Файл 1",
+            "Файл 2",
+            "Файл 3",
+            "Файл 4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Шість гірлянд збігаються, але завіса червона. Її зняли вчора об 11:00, отже запис зроблено раніше.",
+            "Вісім гірлянд вийде, якщо поділити всі 72 зірки на 9. Але 18 зірок пішли на афішу.",
+            "",
+            "Сім гірлянд не виходить за жодного рахунку: 54 зірки діляться на 9 без остачі."
+          ],
+          "explanation": "72 - 18 = 54 зірки на гірлянди, 54 : 9 = 6 гірлянд. Синя завіса висить з 11:00 учора. Шість гірлянд і синя завіса лише у файлі 3.",
+          "outcome": "Учорашній запис знайдено: файл 3. У кадрі фіналу шість гірлянд і міст, човна і ліхтаря немає. Тепер порівняємо це з чотирма текстами.",
+          "next": "Порівняти чотири фінали",
+          "hints": [
+            "Спершу порахуй, скільки гірлянд зробили вчора: зірки для афіші в гірлянди не пішли.",
+            "Завіса теж доказ: червону завісу зняли до всіх учорашніх репетицій.",
+            "Мають збігтися обидві ознаки: і кількість гірлянд, і колір завіси."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Який фінал репетирували?",
+          "situation": "Біля реквізиту режисер розкладає чотири тексти. У кожному вказано, що обов’язково має бути на сцені. Реквізитор приніс список на сьогодні, і в ньому є човен, але не поспішай.",
+          "evidence": [
+            "На вчорашньому записі: шість гірлянд, міст, у руках в акторів нічого немає.",
+            "«Міст»: 6 гірлянд і міст.",
+            "«Плавання»: 6 гірлянд і човен.",
+            "«Бал»: 8 гірлянд і міст.",
+            "«Ліхтар»: 6 гірлянд, міст і ліхтар у руках в актора.",
+            "Список реквізиту на сьогодні: човен для першої дії, міст для фіналу."
+          ],
+          "question": "Який текст збігається з учорашнім записом?",
+          "kind": "choice",
+          "options": [
+            "«Міст»",
+            "«Плавання»",
+            "«Бал»",
+            "«Ліхтар»"
+          ],
+          "answer": 0,
+          "feedback": [
+            "",
+            "Човен є у списку на сьогодні, але для першої дії. У кадрі фіналу човна немає, там міст.",
+            "На записі шість гірлянд, а «Балу» потрібно вісім.",
+            "Міст і шість гірлянд збігаються, але ліхтаря в руках в акторів на записі немає."
+          ],
+          "explanation": "«Міст» збігається за всіма ознаками: шість гірлянд, міст, нічого в руках. У «Плавання» човен, у «Балу» вісім гірлянд, у «Ліхтаря» зайвий предмет. Човен зі списку реквізиту стосується першої дії і на фінал не вказує.",
+          "outcome": "Фінал знайдено: «Міст». Залишилося розрахувати сьогоднішню репетицію, щоб актори встигли прогнати фінал кілька разів.",
+          "next": "Скласти план репетиції",
+          "hints": [
+            "Порівняй кожен текст з усіма ознаками на записі, а не з однією.",
+            "Список реквізиту на сьогодні говорить про сьогоднішню виставу цілком, а не про фінал.",
+            "Зайвий предмет на сцені теж незбіг."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "Коли закінчиться репетиція?",
+          "situation": "За столом режисер складає план. Сцена звільниться після занять, міст треба зібрати до приходу акторів, а фінал прогнати тричі з паузами.",
+          "evidence": [
+            "Сцена вільна з 15:10. Збирання моста займає 45 хвилин.",
+            "Актори приходять о 16:00 і одразу починають перший прогін.",
+            "На вчорашньому записі фінал ішов з 25-ї по 33-тю хвилину файлу, разом із поклоном 2 хвилини. Сьогодні проганяють без поклону.",
+            "Прогонів три, між сусідніми прогонами пауза 4 хвилини."
+          ],
+          "question": "О котрій закінчиться третій прогін? Введи час ГГ:ХХ.",
+          "kind": "time",
+          "options": [],
+          "answer": "16:26",
+          "feedback": [],
+          "explanation": "Міст готовий до 15:55, до приходу акторів. Фінал без поклону: 33 - 25 - 2 = 6 хвилин. Три прогони по 6 хвилин це 18 хвилин, між ними дві паузи по 4 хвилини, ще 8. 16:00 + 26 хвилин = 16:26.",
+          "outcome": "План готовий: міст до 15:55, актори о 16:00, третій прогін закінчується о 16:26. Режисер прибирає три інші фінали в архів.",
+          "next": "Передати план режисерові",
+          "hints": [
+            "Спершу перевір, що сцена буде готова до приходу акторів.",
+            "Прогонів три, а пауз між ними лише дві.",
+            "Додай три прогони і дві паузи і додай до 16:00."
+          ],
+          "scene": 3
+        }
+      ]
+    }
+  }
+}

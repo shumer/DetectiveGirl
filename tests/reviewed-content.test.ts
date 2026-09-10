@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import type { RevisedStep } from '../app/RevisionCase';
 import { validateResponse } from '../app/revision-game.ts';
+import { storyScenes } from '../app/themes.ts';
 await test('reviewed cases preserve puzzles across languages and contain every player-facing field',()=>{
  const root=new URL('../app/revised/',import.meta.url);
  for(const file of readdirSync(root).filter(name=>name.endsWith('.json'))){
@@ -36,7 +37,8 @@ await test('reviewed cases preserve puzzles across languages and contain every p
     assert.doesNotMatch(JSON.stringify(step),/[–—]/);
    });
   }
-  const paths=story.id==='owl'?['scene.png','backgrounds/courtyard.webp','backgrounds/library.webp','backgrounds/theatre.webp']:story.id==='forest'?['depot','clearing','workshop','pavilions'].map(id=>`backgrounds/forest-${id}.jpg`):[0,1,2,3].map(i=>`backgrounds/${story.id}-${i}.jpg`);
-  for(const path of paths)assert.ok(existsSync(new URL(`../public/${path}`,import.meta.url)),path);
+  const scenes=storyScenes[story.id];
+  assert.ok(scenes&&scenes.length===4,`${file}: four scenes in themes.ts`);
+  for(const scene of scenes)assert.ok(existsSync(new URL(`../public/${scene.image}`,import.meta.url)),scene.image);
  }
 });

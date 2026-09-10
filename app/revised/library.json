@@ -1,0 +1,518 @@
+{
+  "id": "library",
+  "number": "010",
+  "locales": {
+    "ru": {
+      "title": "Две закладки и одна страница",
+      "intro": "Книжный клуб собирается обсудить задачу про сад из сборника загадок. Две читательницы отмечали её закладками, но при ремонте книги закладки вынули, а угол страницы с рисунком повредился. Остались две заметки читательниц и папка с копиями рисунков. Помоги библиотекарю найти издание, страницу и верную копию, а потом решить задачу, ради которой всё затевалось.",
+      "ending": "Издание Б единственное совпало по обеим границам раздела: 121 и 160. Обе заметки указали на страницу 139, хотя считали по-разному: одна с девятнадцатой страницы раздела, другая на 21 назад от последней. Копия Б единственная совпала по всем четырём признакам рисунка. Для сада 8 на 5 метров с воротами нужно 13 столбов: столько же, сколько промежутков по 2 метра на всей границе.",
+      "question": "Первая заметка говорит «девятнадцатая страница раздела», а вторая «на 21 меньше последней». Почему обе дают 139, хотя 121 + 19 не равно 139?",
+      "steps": [
+        {
+          "title": "Какое издание открыть?",
+          "situation": "У полок библиотекарь показывает четыре издания одного сборника. В каждом раздел загадок начинается и заканчивается на своих страницах. Одна из читательниц записала границы раздела в своей книге.",
+          "evidence": [
+            "Запись читательницы: раздел загадок начинается на странице 121 и заканчивается на странице 160.",
+            "Издание А: загадки на страницах 81-120.",
+            "Издание Б: загадки на страницах 121-160.",
+            "Издание В: загадки на страницах 161-200.",
+            "Издание Г: загадки на страницах 121-164."
+          ],
+          "question": "Какое издание совпадает с записью?",
+          "kind": "choice",
+          "options": [
+            "Издание А",
+            "Издание Б",
+            "Издание В",
+            "Издание Г"
+          ],
+          "answer": 1,
+          "feedback": [
+            "В издании А раздел кончается на 120, там, где в записи он только начинается.",
+            "",
+            "В издании В раздел начинается на 161, сразу после конца раздела в записи.",
+            "Начало совпадает, но раздел здесь заканчивается на 164, а в записи на 160."
+          ],
+          "explanation": "Совпасть должны обе границы. Издание Г начинается на 121, как в записи, но заканчивается на 164 вместо 160. Только издание Б даёт 121 и 160.",
+          "outcome": "Библиотекарь открывает издание Б. Теперь нужно найти саму страницу по двум заметкам, которые считали по-разному.",
+          "next": "Найти страницу",
+          "hints": [
+            "Сравни и начало, и конец раздела.",
+            "Одна граница может совпасть случайно. Проверь вторую.",
+            "Только у одного издания совпадают обе границы."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Какая это страница?",
+          "situation": "За столом библиотекарь раскладывает две заметки. Одна читательница считала страницы раздела по порядку, другая отсчитывала назад от последней страницы. Обе имели в виду одну и ту же напечатанную страницу.",
+          "evidence": [
+            "Раздел загадок занимает страницы с 121 по 160.",
+            "Первая заметка: «Задача про сад на девятнадцатой странице раздела».",
+            "Вторая заметка: «Номер страницы с задачей на 21 меньше номера последней страницы раздела».",
+            "Первая страница раздела это страница 121."
+          ],
+          "question": "Какой номер напечатан на нужной странице? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "139",
+          "feedback": [],
+          "explanation": "Первая страница раздела 121, вторая 122, значит девятнадцатая это 121 + 18 = 139. Проверка по второй заметке: 160 - 21 = 139. Обе заметки указывают на 139.",
+          "outcome": "Страница 139 найдена: там задача про сад. Но угол с рисунком повреждён. Библиотекарь достаёт папку ремонта с копиями.",
+          "next": "Подобрать копию рисунка",
+          "hints": [
+            "Девятнадцатая страница раздела: первая это 121, вторая 122. Сколько прибавить к 121?",
+            "Вторая заметка: от последней страницы отними 21.",
+            "Обе заметки должны дать одно и то же число."
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Какая копия верная?",
+          "situation": "В папке ремонта четыре копии рисунков к задачам про сады. Текст задачи на странице 139 сохранился, и по нему можно проверить каждую копию.",
+          "evidence": [
+            "Текст: прямоугольный сад длиной 8 м и шириной 5 м.",
+            "В ограде оставлен проём ворот шириной 2 м.",
+            "Вдоль длинной стороны сада внутри ограды идёт дорожка шириной 1 м.",
+            "Копия А: сад 8 × 5 м, ворота 2 м, дорожки нет.",
+            "Копия Б: сад 8 × 5 м, ворота 2 м, дорожка вдоль длинной стороны.",
+            "Копия В: сад 8 × 6 м, ворота 2 м, дорожка вдоль длинной стороны.",
+            "Копия Г: сад 8 × 5 м, ворота 2 м, дорожка вдоль короткой стороны."
+          ],
+          "question": "Какая копия соответствует тексту?",
+          "kind": "choice",
+          "options": [
+            "Копия А",
+            "Копия Б",
+            "Копия В",
+            "Копия Г"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Размеры и ворота совпадают, но в тексте есть дорожка, а на копии А её нет.",
+            "",
+            "На копии В ширина сада 6 м, а в тексте 5 м.",
+            "Дорожка есть, но она идёт вдоль короткой стороны, а в тексте вдоль длинной."
+          ],
+          "explanation": "Нужно совпадение всех четырёх признаков: длина, ширина, ворота и дорожка вдоль длинной стороны. У А нет дорожки, у В другая ширина, у Г дорожка не там. Подходит только копия Б.",
+          "outcome": "Рисунок восстановлен по копии Б. Теперь можно прочитать задачу целиком и решить её к встрече клуба.",
+          "next": "Решить найденную задачу",
+          "hints": [
+            "Проверь каждую копию по всем четырём признакам, а не по первым двум.",
+            "Дорожка это тоже признак: где она проходит?",
+            "Копии могут совпадать в трёх признаках из четырёх. Нужна та, где совпадают все."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "Сколько нужно столбов?",
+          "situation": "В комнате клуба читают задачу с восстановленной страницы. Ограда идёт по границе сада, столбы стоят через равные промежутки, а для ворот столбы нужны тем более.",
+          "evidence": [
+            "Сад прямоугольный: длина 8 м, ширина 5 м.",
+            "Столбы ставят по всей границе сада через каждые 2 м, начиная от угла.",
+            "Проём ворот шириной 2 м приходится ровно между двумя соседними столбами. Эти два столба остаются: на них вешают ворота.",
+            "Дорожка внутри сада на ограду не влияет."
+          ],
+          "question": "Сколько столбов нужно для ограды? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "13",
+          "feedback": [],
+          "explanation": "Граница сада: 8 + 5 + 8 + 5 = 26 м. На замкнутой границе столбов столько же, сколько промежутков по 2 м: 26 : 2 = 13. Ворота занимают один из промежутков, но столбы по его краям нужны, поэтому их по-прежнему 13.",
+          "outcome": "Задача решена: 13 столбов. Страница найдена, рисунок восстановлен, обе закладки возвращаются на страницу 139.",
+          "next": "Передать книгу клубу",
+          "hints": [
+            "Сначала найди длину всей границы сада.",
+            "На замкнутой границе столбов столько же, сколько промежутков по 2 м.",
+            "Ворота занимают один промежуток, но столбы по его краям остаются."
+          ],
+          "scene": 3
+        }
+      ]
+    },
+    "pl": {
+      "title": "Dwie zakładki i jedna strona",
+      "intro": "Klub książki zbiera się, żeby omówić zadanie o ogrodzie ze zbioru zagadek. Dwie czytelniczki zaznaczały je zakładkami, ale podczas naprawy książki zakładki wyjęto, a róg strony z rysunkiem został uszkodzony. Zostały dwie notatki czytelniczek i teczka z kopiami rysunków. Pomóż bibliotekarce znaleźć wydanie, stronę i właściwą kopię, a potem rozwiązać zadanie, o które w tym wszystkim chodziło.",
+      "ending": "Wydanie B jako jedyne zgadzało się z obiema granicami rozdziału: 121 i 160. Obie notatki wskazały stronę 139, choć liczyły inaczej: jedna od dziewiętnastej strony rozdziału, druga o 21 wstecz od ostatniej. Kopia B jako jedyna zgadzała się we wszystkich czterech cechach rysunku. Do ogrodu 8 na 5 metrów z furtką potrzeba 13 słupków: tyle samo, ile odcinków po 2 metry na całej granicy.",
+      "question": "Pierwsza notatka mówi „dziewiętnasta strona rozdziału”, a druga „o 21 mniej niż ostatnia”. Dlaczego obie dają 139, skoro 121 + 19 to nie 139?",
+      "steps": [
+        {
+          "title": "Które wydanie otworzyć?",
+          "situation": "Przy półkach bibliotekarka pokazuje cztery wydania tego samego zbioru. W każdym rozdział z zagadkami zaczyna się i kończy na innych stronach. Jedna z czytelniczek zapisała granice rozdziału w swojej książce.",
+          "evidence": [
+            "Notatka czytelniczki: rozdział z zagadkami zaczyna się na stronie 121 i kończy na stronie 160.",
+            "Wydanie A: zagadki na stronach 81-120.",
+            "Wydanie B: zagadki na stronach 121-160.",
+            "Wydanie C: zagadki na stronach 161-200.",
+            "Wydanie D: zagadki na stronach 121-164."
+          ],
+          "question": "Które wydanie zgadza się z notatką?",
+          "kind": "choice",
+          "options": [
+            "Wydanie A",
+            "Wydanie B",
+            "Wydanie C",
+            "Wydanie D"
+          ],
+          "answer": 1,
+          "feedback": [
+            "W wydaniu A rozdział kończy się na 120, tam gdzie w notatce dopiero się zaczyna.",
+            "",
+            "W wydaniu C rozdział zaczyna się na 161, zaraz po końcu rozdziału z notatki.",
+            "Początek się zgadza, ale rozdział kończy się tu na 164, a w notatce na 160."
+          ],
+          "explanation": "Zgadzać się muszą obie granice. Wydanie D zaczyna się na 121, jak w notatce, ale kończy na 164 zamiast 160. Tylko wydanie B daje 121 i 160.",
+          "outcome": "Bibliotekarka otwiera wydanie B. Teraz trzeba znaleźć samą stronę według dwóch notatek, które liczyły inaczej.",
+          "next": "Znajdź stronę",
+          "hints": [
+            "Porównaj i początek, i koniec rozdziału.",
+            "Jedna granica może zgadzać się przypadkiem. Sprawdź drugą.",
+            "Tylko w jednym wydaniu zgadzają się obie granice."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Która to strona?",
+          "situation": "Przy stole bibliotekarka rozkłada dwie notatki. Jedna czytelniczka liczyła strony rozdziału po kolei, druga odliczała wstecz od ostatniej strony. Obie miały na myśli tę samą wydrukowaną stronę.",
+          "evidence": [
+            "Rozdział z zagadkami zajmuje strony od 121 do 160.",
+            "Pierwsza notatka: „Zadanie o ogrodzie jest na dziewiętnastej stronie rozdziału”.",
+            "Druga notatka: „Numer strony z zadaniem jest o 21 mniejszy niż numer ostatniej strony rozdziału”.",
+            "Pierwsza strona rozdziału to strona 121."
+          ],
+          "question": "Jaki numer jest wydrukowany na szukanej stronie? Wpisz liczbę.",
+          "kind": "number",
+          "options": [],
+          "answer": "139",
+          "feedback": [],
+          "explanation": "Pierwsza strona rozdziału to 121, druga 122, więc dziewiętnasta to 121 + 18 = 139. Sprawdzenie z drugiej notatki: 160 - 21 = 139. Obie notatki wskazują 139.",
+          "outcome": "Strona 139 znaleziona: tam jest zadanie o ogrodzie. Ale róg z rysunkiem jest uszkodzony. Bibliotekarka wyjmuje teczkę naprawy z kopiami.",
+          "next": "Dobierz kopię rysunku",
+          "hints": [
+            "Dziewiętnasta strona rozdziału: pierwsza to 121, druga 122. Ile dodać do 121?",
+            "Druga notatka: od ostatniej strony odejmij 21.",
+            "Obie notatki muszą dać tę samą liczbę."
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Która kopia jest właściwa?",
+          "situation": "W teczce naprawy są cztery kopie rysunków do zadań o ogrodach. Tekst zadania na stronie 139 się zachował i można według niego sprawdzić każdą kopię.",
+          "evidence": [
+            "Tekst: prostokątny ogród o długości 8 m i szerokości 5 m.",
+            "W ogrodzeniu zostawiono otwór na furtkę o szerokości 2 m.",
+            "Wzdłuż dłuższego boku ogrodu, po wewnętrznej stronie ogrodzenia, biegnie ścieżka o szerokości 1 m.",
+            "Kopia A: ogród 8 × 5 m, furtka 2 m, bez ścieżki.",
+            "Kopia B: ogród 8 × 5 m, furtka 2 m, ścieżka wzdłuż dłuższego boku.",
+            "Kopia C: ogród 8 × 6 m, furtka 2 m, ścieżka wzdłuż dłuższego boku.",
+            "Kopia D: ogród 8 × 5 m, furtka 2 m, ścieżka wzdłuż krótszego boku."
+          ],
+          "question": "Która kopia odpowiada tekstowi?",
+          "kind": "choice",
+          "options": [
+            "Kopia A",
+            "Kopia B",
+            "Kopia C",
+            "Kopia D"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Wymiary i furtka się zgadzają, ale w tekście jest ścieżka, a na kopii A jej nie ma.",
+            "",
+            "Na kopii C szerokość ogrodu to 6 m, a w tekście 5 m.",
+            "Ścieżka jest, ale biegnie wzdłuż krótszego boku, a w tekście wzdłuż dłuższego."
+          ],
+          "explanation": "Potrzebna jest zgodność wszystkich czterech cech: długość, szerokość, furtka i ścieżka wzdłuż dłuższego boku. A nie ma ścieżki, C ma inną szerokość, D ma ścieżkę nie tam. Pasuje tylko kopia B.",
+          "outcome": "Rysunek odtworzono według kopii B. Teraz można przeczytać zadanie w całości i rozwiązać je na spotkanie klubu.",
+          "next": "Rozwiąż znalezione zadanie",
+          "hints": [
+            "Sprawdź każdą kopię według wszystkich czterech cech, a nie tylko dwóch pierwszych.",
+            "Ścieżka to też cecha: gdzie biegnie?",
+            "Kopie mogą zgadzać się w trzech cechach z czterech. Potrzebna jest ta, w której zgadzają się wszystkie."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "Ile potrzeba słupków?",
+          "situation": "W sali klubu czytają zadanie z odtworzonej strony. Ogrodzenie biegnie wzdłuż granicy ogrodu, słupki stoją w równych odstępach, a przy furtce słupki są potrzebne tym bardziej.",
+          "evidence": [
+            "Ogród jest prostokątny: długość 8 m, szerokość 5 m.",
+            "Słupki stawia się wzdłuż całej granicy ogrodu co 2 m, zaczynając od narożnika.",
+            "Otwór na furtkę o szerokości 2 m wypada dokładnie między dwoma sąsiednimi słupkami. Te dwa słupki zostają: na nich wiesza się furtkę.",
+            "Ścieżka wewnątrz ogrodu nie wpływa na ogrodzenie."
+          ],
+          "question": "Ile słupków potrzeba do ogrodzenia? Wpisz liczbę.",
+          "kind": "number",
+          "options": [],
+          "answer": "13",
+          "feedback": [],
+          "explanation": "Granica ogrodu: 8 + 5 + 8 + 5 = 26 m. Na zamkniętej granicy słupków jest tyle samo, ile odcinków po 2 m: 26 : 2 = 13. Furtka zajmuje jeden z odcinków, ale słupki na jego końcach są potrzebne, więc nadal jest ich 13.",
+          "outcome": "Zadanie rozwiązane: 13 słupków. Strona znaleziona, rysunek odtworzony, obie zakładki wracają na stronę 139.",
+          "next": "Przekaż książkę klubowi",
+          "hints": [
+            "Najpierw znajdź długość całej granicy ogrodu.",
+            "Na zamkniętej granicy słupków jest tyle samo, ile odcinków po 2 m.",
+            "Furtka zajmuje jeden odcinek, ale słupki na jego końcach zostają."
+          ],
+          "scene": 3
+        }
+      ]
+    },
+    "en": {
+      "title": "Two Bookmarks and One Page",
+      "intro": "The book club is meeting to discuss a garden puzzle from a riddle collection. Two readers had marked it with bookmarks, but the bookmarks were removed when the book was repaired, and the corner of the page with the drawing got damaged. What remains are the two readers’ notes and a folder of drawing copies. Help the librarian find the edition, the page and the right copy, and then solve the puzzle this was all about.",
+      "ending": "Edition B was the only one that matched both section boundaries: 121 and 160. Both notes pointed to page 139, although they counted differently: one from the nineteenth page of the section, the other 21 back from the last. Copy B was the only one that matched all four features of the drawing. The 8 by 5 metre garden with a gate needs 13 posts: as many as there are 2-metre gaps around the whole boundary.",
+      "question": "The first note says “the nineteenth page of the section” and the second “21 less than the last”. Why do both give 139, when 121 + 19 is not 139?",
+      "steps": [
+        {
+          "title": "Which edition to open?",
+          "situation": "At the shelves, the librarian shows four editions of the same collection. In each, the riddle section starts and ends on different pages. One of the readers wrote down the section boundaries in her copy.",
+          "evidence": [
+            "The reader’s note: the riddle section begins on page 121 and ends on page 160.",
+            "Edition A: riddles on pages 81-120.",
+            "Edition B: riddles on pages 121-160.",
+            "Edition C: riddles on pages 161-200.",
+            "Edition D: riddles on pages 121-164."
+          ],
+          "question": "Which edition matches the note?",
+          "kind": "choice",
+          "options": [
+            "Edition A",
+            "Edition B",
+            "Edition C",
+            "Edition D"
+          ],
+          "answer": 1,
+          "feedback": [
+            "In edition A the section ends on 120, where in the note it only begins.",
+            "",
+            "In edition C the section begins on 161, right after the end of the section in the note.",
+            "The start matches, but here the section ends on 164, and in the note on 160."
+          ],
+          "explanation": "Both boundaries have to match. Edition D starts on 121 like the note but ends on 164 instead of 160. Only edition B gives 121 and 160.",
+          "outcome": "The librarian opens edition B. Now the page itself has to be found from two notes that counted in different ways.",
+          "next": "Find the page",
+          "hints": [
+            "Compare both the start and the end of the section.",
+            "One boundary can match by chance. Check the other.",
+            "Only one edition matches both boundaries."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Which page is it?",
+          "situation": "At the desk, the librarian lays out the two notes. One reader counted the pages of the section in order; the other counted back from the last page. Both meant the same printed page.",
+          "evidence": [
+            "The riddle section occupies pages 121 to 160.",
+            "First note: “The garden puzzle is on the nineteenth page of the section.”",
+            "Second note: “The number of the puzzle page is 21 less than the number of the last page of the section.”",
+            "The first page of the section is page 121."
+          ],
+          "question": "What number is printed on the page we need? Enter a number.",
+          "kind": "number",
+          "options": [],
+          "answer": "139",
+          "feedback": [],
+          "explanation": "The first page of the section is 121, the second is 122, so the nineteenth is 121 + 18 = 139. Check with the second note: 160 - 21 = 139. Both notes point to 139.",
+          "outcome": "Page 139 is found: the garden puzzle is there. But the corner with the drawing is damaged. The librarian takes out the repair folder with the copies.",
+          "next": "Pick the drawing copy",
+          "hints": [
+            "The nineteenth page of the section: the first is 121, the second is 122. How much do you add to 121?",
+            "Second note: subtract 21 from the last page.",
+            "Both notes must give the same number."
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Which copy is right?",
+          "situation": "The repair folder holds four copies of drawings for garden puzzles. The text of the puzzle on page 139 has survived, so each copy can be checked against it.",
+          "evidence": [
+            "Text: a rectangular garden 8 m long and 5 m wide.",
+            "A 2 m wide gate opening is left in the fence.",
+            "Along the long side of the garden, inside the fence, runs a path 1 m wide.",
+            "Copy A: garden 8 × 5 m, gate 2 m, no path.",
+            "Copy B: garden 8 × 5 m, gate 2 m, path along the long side.",
+            "Copy C: garden 8 × 6 m, gate 2 m, path along the long side.",
+            "Copy D: garden 8 × 5 m, gate 2 m, path along the short side."
+          ],
+          "question": "Which copy matches the text?",
+          "kind": "choice",
+          "options": [
+            "Copy A",
+            "Copy B",
+            "Copy C",
+            "Copy D"
+          ],
+          "answer": 1,
+          "feedback": [
+            "The dimensions and gate match, but the text has a path and copy A has none.",
+            "",
+            "In copy C the garden is 6 m wide, and in the text it is 5 m.",
+            "There is a path, but it runs along the short side, and in the text along the long side."
+          ],
+          "explanation": "All four features must match: length, width, gate and a path along the long side. A has no path, C has a different width, D has the path in the wrong place. Only copy B fits.",
+          "outcome": "The drawing is restored from copy B. Now the puzzle can be read in full and solved for the club meeting.",
+          "next": "Solve the puzzle you found",
+          "hints": [
+            "Check each copy against all four features, not just the first two.",
+            "The path is a feature too: where does it run?",
+            "Copies can match three features out of four. You need the one that matches all of them."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "How many posts are needed?",
+          "situation": "In the club room, they read the puzzle from the restored page. The fence runs along the garden boundary, the posts stand at equal intervals, and the gate needs posts more than anything.",
+          "evidence": [
+            "The garden is rectangular: 8 m long and 5 m wide.",
+            "Posts are placed along the whole boundary of the garden every 2 m, starting from a corner.",
+            "The 2 m gate opening falls exactly between two neighbouring posts. Those two posts stay: the gate hangs on them.",
+            "The path inside the garden does not affect the fence."
+          ],
+          "question": "How many posts are needed for the fence? Enter a number.",
+          "kind": "number",
+          "options": [],
+          "answer": "13",
+          "feedback": [],
+          "explanation": "The garden boundary: 8 + 5 + 8 + 5 = 26 m. On a closed boundary there are as many posts as 2 m gaps: 26 ÷ 2 = 13. The gate takes up one of the gaps, but the posts at its edges are needed, so there are still 13.",
+          "outcome": "The puzzle is solved: 13 posts. The page is found, the drawing is restored, and both bookmarks go back to page 139.",
+          "next": "Hand the book to the club",
+          "hints": [
+            "First find the length of the whole garden boundary.",
+            "On a closed boundary there are as many posts as 2 m gaps.",
+            "The gate takes up one gap, but the posts at its edges stay."
+          ],
+          "scene": 3
+        }
+      ]
+    },
+    "uk": {
+      "title": "Дві закладки й одна сторінка",
+      "intro": "Книжковий клуб збирається обговорити задачу про сад зі збірки загадок. Дві читачки позначали її закладками, але під час ремонту книжки закладки вийняли, а кут сторінки з малюнком пошкодився. Залишилися дві нотатки читачок і тека з копіями малюнків. Допоможи бібліотекарці знайти видання, сторінку і правильну копію, а потім розв’язати задачу, заради якої все затівалося.",
+      "ending": "Видання Б єдине збіглося за обома межами розділу: 121 і 160. Обидві нотатки вказали на сторінку 139, хоча рахували по-різному: одна з дев’ятнадцятої сторінки розділу, друга на 21 назад від останньої. Копія Б єдина збіглася за всіма чотирма ознаками малюнка. Для саду 8 на 5 метрів із хвірткою потрібно 13 стовпів: стільки ж, скільки проміжків по 2 метри на всій межі.",
+      "question": "Перша нотатка каже «дев’ятнадцята сторінка розділу», а друга «на 21 менше за останню». Чому обидві дають 139, хоча 121 + 19 не дорівнює 139?",
+      "steps": [
+        {
+          "title": "Яке видання відкрити?",
+          "situation": "Біля полиць бібліотекарка показує чотири видання однієї збірки. У кожному розділ загадок починається і закінчується на своїх сторінках. Одна з читачок записала межі розділу у своїй книжці.",
+          "evidence": [
+            "Запис читачки: розділ загадок починається на сторінці 121 і закінчується на сторінці 160.",
+            "Видання А: загадки на сторінках 81-120.",
+            "Видання Б: загадки на сторінках 121-160.",
+            "Видання В: загадки на сторінках 161-200.",
+            "Видання Г: загадки на сторінках 121-164."
+          ],
+          "question": "Яке видання збігається із записом?",
+          "kind": "choice",
+          "options": [
+            "Видання А",
+            "Видання Б",
+            "Видання В",
+            "Видання Г"
+          ],
+          "answer": 1,
+          "feedback": [
+            "У виданні А розділ закінчується на 120, там, де в записі він лише починається.",
+            "",
+            "У виданні В розділ починається на 161, одразу після кінця розділу в записі.",
+            "Початок збігається, але розділ тут закінчується на 164, а в записі на 160."
+          ],
+          "explanation": "Збігтися мають обидві межі. Видання Г починається на 121, як у записі, але закінчується на 164 замість 160. Лише видання Б дає 121 і 160.",
+          "outcome": "Бібліотекарка відкриває видання Б. Тепер треба знайти саму сторінку за двома нотатками, які рахували по-різному.",
+          "next": "Знайти сторінку",
+          "hints": [
+            "Порівняй і початок, і кінець розділу.",
+            "Одна межа може збігтися випадково. Перевір другу.",
+            "Лише в одного видання збігаються обидві межі."
+          ],
+          "scene": 0
+        },
+        {
+          "title": "Яка це сторінка?",
+          "situation": "За столом бібліотекарка розкладає дві нотатки. Одна читачка рахувала сторінки розділу по порядку, друга відлічувала назад від останньої сторінки. Обидві мали на увазі ту саму надруковану сторінку.",
+          "evidence": [
+            "Розділ загадок займає сторінки з 121 по 160.",
+            "Перша нотатка: «Задача про сад на дев’ятнадцятій сторінці розділу».",
+            "Друга нотатка: «Номер сторінки із задачею на 21 менший за номер останньої сторінки розділу».",
+            "Перша сторінка розділу це сторінка 121."
+          ],
+          "question": "Який номер надруковано на потрібній сторінці? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "139",
+          "feedback": [],
+          "explanation": "Перша сторінка розділу 121, друга 122, отже дев’ятнадцята це 121 + 18 = 139. Перевірка за другою нотаткою: 160 - 21 = 139. Обидві нотатки вказують на 139.",
+          "outcome": "Сторінку 139 знайдено: там задача про сад. Але кут із малюнком пошкоджено. Бібліотекарка дістає теку ремонту з копіями.",
+          "next": "Дібрати копію малюнка",
+          "hints": [
+            "Дев’ятнадцята сторінка розділу: перша це 121, друга 122. Скільки додати до 121?",
+            "Друга нотатка: від останньої сторінки відніми 21.",
+            "Обидві нотатки мають дати те саме число."
+          ],
+          "scene": 1
+        },
+        {
+          "title": "Яка копія правильна?",
+          "situation": "У теці ремонту чотири копії малюнків до задач про сади. Текст задачі на сторінці 139 зберігся, і за ним можна перевірити кожну копію.",
+          "evidence": [
+            "Текст: прямокутний сад завдовжки 8 м і завширшки 5 м.",
+            "В огорожі залишено проріз хвіртки завширшки 2 м.",
+            "Уздовж довгої сторони саду всередині огорожі йде доріжка завширшки 1 м.",
+            "Копія А: сад 8 × 5 м, хвіртка 2 м, доріжки немає.",
+            "Копія Б: сад 8 × 5 м, хвіртка 2 м, доріжка вздовж довгої сторони.",
+            "Копія В: сад 8 × 6 м, хвіртка 2 м, доріжка вздовж довгої сторони.",
+            "Копія Г: сад 8 × 5 м, хвіртка 2 м, доріжка вздовж короткої сторони."
+          ],
+          "question": "Яка копія відповідає тексту?",
+          "kind": "choice",
+          "options": [
+            "Копія А",
+            "Копія Б",
+            "Копія В",
+            "Копія Г"
+          ],
+          "answer": 1,
+          "feedback": [
+            "Розміри і хвіртка збігаються, але в тексті є доріжка, а на копії А її немає.",
+            "",
+            "На копії В ширина саду 6 м, а в тексті 5 м.",
+            "Доріжка є, але вона йде вздовж короткої сторони, а в тексті вздовж довгої."
+          ],
+          "explanation": "Потрібен збіг усіх чотирьох ознак: довжина, ширина, хвіртка і доріжка вздовж довгої сторони. В А немає доріжки, у В інша ширина, у Г доріжка не там. Підходить лише копія Б.",
+          "outcome": "Малюнок відновлено за копією Б. Тепер можна прочитати задачу цілком і розв’язати її до зустрічі клубу.",
+          "next": "Розв’язати знайдену задачу",
+          "hints": [
+            "Перевір кожну копію за всіма чотирма ознаками, а не за першими двома.",
+            "Доріжка це теж ознака: де вона проходить?",
+            "Копії можуть збігатися у трьох ознаках із чотирьох. Потрібна та, де збігаються всі."
+          ],
+          "scene": 2
+        },
+        {
+          "title": "Скільки потрібно стовпів?",
+          "situation": "У кімнаті клубу читають задачу з відновленої сторінки. Огорожа йде по межі саду, стовпи стоять через рівні проміжки, а для хвіртки стовпи потрібні тим паче.",
+          "evidence": [
+            "Сад прямокутний: довжина 8 м, ширина 5 м.",
+            "Стовпи ставлять по всій межі саду через кожні 2 м, починаючи від кута.",
+            "Проріз хвіртки завширшки 2 м припадає рівно між двома сусідніми стовпами. Ці два стовпи залишаються: на них вішають хвіртку.",
+            "Доріжка всередині саду на огорожу не впливає."
+          ],
+          "question": "Скільки стовпів потрібно для огорожі? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "13",
+          "feedback": [],
+          "explanation": "Межа саду: 8 + 5 + 8 + 5 = 26 м. На замкненій межі стовпів стільки ж, скільки проміжків по 2 м: 26 : 2 = 13. Хвіртка займає один із проміжків, але стовпи по його краях потрібні, тому їх так само 13.",
+          "outcome": "Задачу розв’язано: 13 стовпів. Сторінку знайдено, малюнок відновлено, обидві закладки повертаються на сторінку 139.",
+          "next": "Передати книжку клубу",
+          "hints": [
+            "Спершу знайди довжину всієї межі саду.",
+            "На замкненій межі стовпів стільки ж, скільки проміжків по 2 м.",
+            "Хвіртка займає один проміжок, але стовпи по його краях залишаються."
+          ],
+          "scene": 3
+        }
+      ]
+    }
+  }
+}
