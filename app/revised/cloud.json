@@ -3,418 +3,502 @@
   "number": "003",
   "locales": {
     "ru": {
-      "title": "\u041f\u043e\u0441\u044b\u043b\u043a\u0430 \u0434\u043b\u044f \u043e\u0431\u043b\u0430\u0447\u043d\u043e\u0433\u043e \u043e\u0441\u0442\u0440\u043e\u0432\u0430",
-      "intro": "\u041d\u0430 \u043e\u0431\u043b\u0430\u0447\u043d\u043e\u043c \u043e\u0441\u0442\u0440\u043e\u0432\u0435 \u0441\u043e\u0431\u0438\u0440\u0430\u044e\u0442 \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u0447\u043d\u044b\u0439 \u0444\u043b\u044e\u0433\u0435\u0440. \u0412\u043c\u0435\u0441\u0442\u043e \u0445\u0432\u043e\u0441\u0442\u0430 \u0432 \u043a\u043e\u0440\u043e\u0431\u043a\u0435 \u043e\u043a\u0430\u0437\u0430\u043b\u0441\u044f \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0438\u0439 \u043f\u0430\u0440\u0443\u0441. \u041f\u043e\u0447\u0442\u0430\u043b\u044c\u043e\u043d \u041d\u0438\u043a\u0430 \u0433\u043e\u0432\u043e\u0440\u0438\u0442: \u00ab\u041a\u0430\u0436\u0435\u0442\u0441\u044f, \u044f \u043f\u0435\u0440\u0435\u043f\u0443\u0442\u0430\u043b\u0430 \u0434\u0432\u0435 \u043a\u043e\u0440\u043e\u0431\u043a\u0438 \u0441 \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u044b\u043c \u043e\u0431\u043b\u0430\u043a\u043e\u043c \u043d\u0430 \u043a\u0440\u044b\u0448\u043a\u0435\u00bb. \u041d\u0430 \u043f\u043e\u0447\u0442\u0435 \u043e\u0441\u0442\u0430\u043b\u0438\u0441\u044c \u0434\u0432\u0430 \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f. \u041f\u043e\u043c\u043e\u0433\u0438 \u043d\u0430\u0439\u0442\u0438 \u043d\u0443\u0436\u043d\u043e\u0435 \u0438 \u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0435\u0433\u043e \u043a \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u043e\u0439.",
-      "ending": "\u041d\u0438\u043a\u0430 \u043f\u0435\u0440\u0435\u0434\u0430\u043b\u0430 \u043d\u0443\u0436\u043d\u0443\u044e \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u043d\u0430 \u0440\u0435\u0439\u0441, \u0430 \u043a\u0443\u0440\u044c\u0435\u0440 \u0411 \u043f\u0440\u0438\u0432\u0451\u0437 \u0435\u0451 \u0432 12:05. \u041c\u0430\u0441\u0442\u0435\u0440 \u0443\u0441\u043f\u0435\u043b \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0445\u0432\u043e\u0441\u0442 \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0444\u043b\u044e\u0433\u0435\u0440 \u0441 \u043c\u0438\u043d\u0443\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441\u0430. \u041d\u0438\u043a\u0430 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u043b\u0430: \u043f\u0440\u0438 \u043f\u043e\u0433\u0440\u0443\u0437\u043a\u0435 \u0441\u043c\u043e\u0442\u0440\u0435\u043b\u0430 \u043d\u0430 \u0440\u0438\u0441\u0443\u043d\u043e\u043a \u043e\u0431\u043b\u0430\u043a\u0430, \u0430 \u0442\u0435\u043f\u0435\u0440\u044c \u0431\u0443\u0434\u0435\u0442 \u0441\u0432\u0435\u0440\u044f\u0442\u044c \u0430\u0434\u0440\u0435\u0441.",
-      "question": "\u041f\u043e\u0447\u0435\u043c\u0443 \u0441\u0430\u043c\u044b\u0439 \u0440\u0430\u043d\u043d\u0438\u0439 \u043a\u0443\u0440\u044c\u0435\u0440 \u043d\u0435 \u043f\u043e\u0434\u043e\u0448\u0451\u043b \u0434\u043b\u044f \u043d\u0430\u0448\u0435\u0439 \u043f\u043e\u0441\u044b\u043b\u043a\u0438?",
+      "title": "Посылка для облачного острова",
+      "intro": "На облачном острове к празднику собирают флюгер-петуха. Мастер открыл коробку: вместо хвоста внутри маленький парус. Почтальон Ника уверена, что перепутала две коробки с одинаковым облаком на крышке. На почте четыре невостребованных отправления, у всех размокли ярлыки. Праздник в 12:10, «Ласточка» летает на остров раз в день. Нужно найти хвост, доставить его к мастеру и успеть к празднику. А потом ещё вернуть парус тому, кто его ждёт.",
+      "ending": "Хвост нашёлся в третьей коробке: две коробки весили одинаково, и разобраться помогла длина. «Ласточка» долетела за 40 минут с остановкой, курьер Б привёз хвост в 11:50, и мастер поднял флюгер к 12:10. Парус улетел «Стрижом» в 12:40 и был у лодочника Тима в 13:05. Ника больше не подписывает коробки только рисунком: теперь на каждой адрес и вес.",
+      "question": "Две коробки весили ровно 1,6 кг. Почему масса сама по себе не сказала, в какой из них хвост?",
       "steps": [
         {
-          "title": "\u041a\u0430\u043a\u0430\u044f \u043a\u043e\u0440\u043e\u0431\u043a\u0430 \u043d\u0443\u0436\u043d\u0430?",
-          "situation": "\u041c\u0430\u0441\u0442\u0435\u0440 \u043f\u0440\u0438\u0441\u043b\u0430\u043b \u0447\u0435\u0440\u0442\u0451\u0436 \u0438 \u0441\u043f\u0438\u0441\u043e\u043a \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u0438. \u041d\u0438\u043a\u0430 \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u0442 \u0441\u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u0432\u0435\u0440\u0438\u0442\u044c \u043c\u0430\u0441\u0441\u0443, \u0430 \u043f\u043e\u0442\u043e\u043c \u043e\u0442\u043a\u0440\u044b\u0442\u044c \u043f\u043e\u0434\u0445\u043e\u0434\u044f\u0449\u0443\u044e \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0434\u0435\u0442\u0430\u043b\u044c.",
+          "title": "Какая коробка наша?",
+          "situation": "На почте Ника кладёт на весы все четыре отправления и достаёт накладную мастера. Открывать чужие посылки нельзя, поэтому выбрать нужно по накладной, а открыть только одну.",
           "evidence": [
-            "\u0425\u0432\u043e\u0441\u0442 \u0444\u043b\u044e\u0433\u0435\u0440\u0430 \u0432\u0435\u0441\u0438\u0442 1 \u043a\u0433.",
-            "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0432\u0435\u0441\u0438\u0442 150 \u0433, \u0431\u0443\u043c\u0430\u0433\u0430 \u0432\u043d\u0443\u0442\u0440\u0438 100 \u0433.",
-            "\u041e\u0441\u0442\u0430\u0432\u0448\u0438\u0435\u0441\u044f \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0432\u0435\u0441\u044f\u0442 1250 \u0433 \u0438 1450 \u0433."
+            "Накладная мастера: хвост длиной 45 см, масса 1 кг 200 г. Упакован в коробку массой 250 г, внутри ещё 150 г бумаги.",
+            "Отправление №1: 1,45 кг, коробка длиной 50 см.",
+            "Отправление №2: 1,6 кг, коробка длиной 30 см.",
+            "Отправление №3: 1,6 кг, коробка длиной 50 см.",
+            "Отправление №4: 1 кг 750 г, коробка длиной 60 см."
           ],
-          "question": "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u0433\u0440\u0430\u043c\u043c\u043e\u0432 \u0434\u043e\u043b\u0436\u043d\u0430 \u0432\u0435\u0441\u0438\u0442\u044c \u043d\u0443\u0436\u043d\u0430\u044f \u043f\u043e\u0441\u044b\u043b\u043a\u0430 \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u0443\u043f\u0430\u043a\u043e\u0432\u043a\u043e\u0439?",
-          "kind": "number",
-          "options": [],
-          "answer": "1250",
-          "explanation": "1 \u043a\u0433 = 1000 \u0433. 1000 + 150 + 100 = 1250 \u0433.",
-          "outcome": "\u041d\u0438\u043a\u0430 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u043f\u043e\u0441\u044b\u043b\u043a\u0443 \u043c\u0430\u0441\u0441\u043e\u0439 1250 \u0433 \u0438 \u0441\u0432\u0435\u0440\u044f\u0435\u0442 \u0445\u0432\u043e\u0441\u0442 \u0441 \u0447\u0435\u0440\u0442\u0435\u0436\u043e\u043c: \u044d\u0442\u043e \u043d\u0443\u0436\u043d\u0430\u044f \u0434\u0435\u0442\u0430\u043b\u044c. \u0422\u0435\u043f\u0435\u0440\u044c \u0432\u044b\u0431\u0435\u0440\u0435\u043c \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0443.",
-          "next": "\u041f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0432\u0440\u0435\u043c\u044f \u0440\u0435\u0439\u0441\u0430",
+          "question": "Какое отправление открыть?",
+          "kind": "choice",
+          "options": [
+            "Отправление №1",
+            "Отправление №2",
+            "Отправление №3",
+            "Отправление №4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "1,45 кг это 1450 г: хвост и коробка без бумаги. Но бумага тоже лежит внутри.",
+            "Масса совпадает, но хвост длиной 45 см не поместится в коробку длиной 30 см.",
+            "",
+            "1 кг 750 г тяжелее нужной массы на 150 г."
+          ],
+          "explanation": "1200 + 250 + 150 = 1600 г, то есть 1,6 кг. Столько весят №2 и №3, но хвост длиной 45 см поместится только в коробку длиной 50 см. Ника открывает №3: внутри хвост петуха.",
+          "outcome": "Хвост найден в отправлении №3. Теперь его нужно отправить на остров «Ласточкой» и понять, сколько времени останется.",
+          "next": "К причалу «Ласточки»",
           "hints": [
-            "\u041f\u0435\u0440\u0435\u0432\u0435\u0434\u0438 \u043a\u0438\u043b\u043e\u0433\u0440\u0430\u043c\u043c \u0432 \u0433\u0440\u0430\u043c\u043c\u044b.",
-            "\u0421\u043b\u043e\u0436\u0438 \u043c\u0430\u0441\u0441\u0443 \u0434\u0435\u0442\u0430\u043b\u0438, \u043a\u043e\u0440\u043e\u0431\u043a\u0438 \u0438 \u0431\u0443\u043c\u0430\u0433\u0438.",
-            "1000 + 150 + 100."
+            "Переведи всё в граммы и сложи хвост, коробку и бумагу.",
+            "Одинаковую массу могут иметь две коробки. Тогда смотри на размер.",
+            "Хвост длиной 45 см не согнёшь: коробка должна быть длиннее."
           ],
           "scene": 0
         },
         {
-          "title": "\u041a\u043e\u0433\u0434\u0430 \u043f\u0440\u0438\u0431\u0443\u0434\u0435\u0442 \u0432\u043e\u0437\u0434\u0443\u0448\u043d\u0430\u044f \u043f\u043e\u0447\u0442\u0430?",
-          "situation": "\u041d\u0438\u043a\u0430 \u043c\u043e\u0436\u0435\u0442 \u043e\u0442\u043f\u0440\u0430\u0432\u0438\u0442\u044c \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u043d\u0430 \u00ab\u041b\u0430\u0441\u0442\u043e\u0447\u043a\u0435\u00bb. \u041f\u0440\u043e\u0432\u0435\u0440\u0438\u043c \u0435\u0451 \u0440\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435 \u0434\u043e \u043e\u0441\u0442\u0440\u043e\u0432\u0430.",
+          "title": "Когда коробка будет на острове?",
+          "situation": "На причале Ника сдаёт коробку на «Ласточку». Капитан показывает маршрут: до острова с одной остановкой на Ветряной башне. Посчитай, когда коробку выдадут курьеру.",
           "evidence": [
-            "\u0412\u044b\u043b\u0435\u0442 \u0432 10:25.",
-            "\u041f\u0435\u0440\u0432\u044b\u0439 \u043f\u0435\u0440\u0435\u043b\u0451\u0442 35 \u043c\u0438\u043d\u0443\u0442, \u0441\u0442\u043e\u044f\u043d\u043a\u0430 10 \u043c\u0438\u043d\u0443\u0442, \u0432\u0442\u043e\u0440\u043e\u0439 \u043f\u0435\u0440\u0435\u043b\u0451\u0442 25 \u043c\u0438\u043d\u0443\u0442.",
-            "\u041d\u0430 \u043e\u0441\u0442\u0440\u043e\u0432\u0435 \u0440\u0430\u0437\u0433\u0440\u0443\u0437\u043a\u0430 \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 \u0435\u0449\u0451 10 \u043c\u0438\u043d\u0443\u0442 \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u0438\u0431\u044b\u0442\u0438\u044f.",
-            "\u0424\u043b\u044e\u0433\u0435\u0440 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0433\u043e\u0442\u043e\u0432 \u043a 12:10."
+            "«Ласточка» вылетает в 10:25 и летит со скоростью 90 км/ч.",
+            "До острова 60 км. По пути одна остановка на Ветряной башне, 10 минут.",
+            "После прибытия разгрузка занимает 10 минут, потом коробку выдают курьеру."
           ],
-          "question": "\u0412\u043e \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u00ab\u041b\u0430\u0441\u0442\u043e\u0447\u043a\u0430\u00bb \u043f\u0440\u0438\u0431\u0443\u0434\u0435\u0442 \u043d\u0430 \u043e\u0441\u0442\u0440\u043e\u0432, \u0434\u043e \u0440\u0430\u0437\u0433\u0440\u0443\u0437\u043a\u0438? \u0412\u0432\u0435\u0434\u0438 \u0432\u0440\u0435\u043c\u044f \u0427\u0427:\u041c\u041c.",
+          "question": "Во сколько коробку выдадут курьеру на острове? Введи время ЧЧ:ММ.",
           "kind": "time",
           "options": [],
-          "answer": "11:35",
-          "explanation": "35 + 10 + 25 = 70 \u043c\u0438\u043d\u0443\u0442. 10:25 + 70 \u043c\u0438\u043d\u0443\u0442 = 11:35.",
-          "outcome": "\u041f\u043e\u0441\u043b\u0435 10 \u043c\u0438\u043d\u0443\u0442 \u0440\u0430\u0437\u0433\u0440\u0443\u0437\u043a\u0438 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u043c\u043e\u0436\u043d\u043e \u0437\u0430\u0431\u0440\u0430\u0442\u044c \u0432 11:45. \u041d\u0443\u0436\u0435\u043d \u043a\u0443\u0440\u044c\u0435\u0440, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0434\u043e\u0436\u0434\u0451\u0442\u0441\u044f \u0435\u0451 \u0438 \u0443\u0441\u043f\u0435\u0435\u0442 \u043a \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u043e\u0439.",
-          "next": "\u0412\u044b\u0431\u0440\u0430\u0442\u044c \u043a\u0443\u0440\u044c\u0435\u0440\u0430",
+          "answer": "11:25",
+          "feedback": [],
+          "explanation": "60 км при скорости 90 км/ч это 2/3 часа, то есть 40 минут. Остановка 10 минут и разгрузка 10 минут: всего 60 минут. 10:25 + 60 минут = 11:25.",
+          "outcome": "Коробку выдадут в 11:25. До праздника в 12:10 остаётся 45 минут, и их надо разделить между дорогой курьера и работой мастера.",
+          "next": "Выбрать курьера",
           "hints": [
-            "\u0421\u043d\u0430\u0447\u0430\u043b\u0430 \u0441\u043b\u043e\u0436\u0438 \u043f\u0435\u0440\u0435\u043b\u0451\u0442\u044b \u0438 \u0441\u0442\u043e\u044f\u043d\u043a\u0443.",
-            "\u0414\u043e \u043f\u0440\u0438\u0431\u044b\u0442\u0438\u044f \u043f\u0440\u043e\u0439\u0434\u0451\u0442 70 \u043c\u0438\u043d\u0443\u0442. \u0420\u0430\u0437\u0433\u0440\u0443\u0437\u043a\u0443 \u043f\u043e\u043a\u0430 \u043d\u0435 \u043f\u0440\u0438\u0431\u0430\u0432\u043b\u044f\u0439.",
-            "\u041f\u0440\u0438\u0431\u0430\u0432\u044c \u043a 10:25 \u043e\u0434\u0438\u043d \u0447\u0430\u0441 \u0438 \u0435\u0449\u0451 10 \u043c\u0438\u043d\u0443\u0442."
+            "Сначала узнай, сколько минут займёт сам полёт: за час 90 км, значит какую часть часа займут 60 км?",
+            "60 из 90 это две трети. Переведи две трети часа в минуты.",
+            "К полёту прибавь остановку и разгрузку, а потом всё к 10:25."
           ],
           "scene": 1
         },
         {
-          "title": "\u041a\u0442\u043e \u0443\u0441\u043f\u0435\u0435\u0442 \u0437\u0430\u0431\u0440\u0430\u0442\u044c \u043a\u043e\u0440\u043e\u0431\u043a\u0443?",
-          "situation": "\u041a\u0443\u0440\u044c\u0435\u0440\u044b \u0432\u0435\u0437\u0443\u0442 \u043d\u0430 \u043e\u0441\u0442\u0440\u043e\u0432\u0435 \u0438 \u0434\u0440\u0443\u0433\u0438\u0435 \u043f\u043e\u0441\u044b\u043b\u043a\u0438, \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u0443 \u043a\u0430\u0436\u0434\u043e\u0433\u043e \u0441\u0432\u043e\u0439 \u0440\u0435\u0439\u0441. \u041d\u0438\u043a\u0430 \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u0440\u0430\u0441\u043f\u0438\u0441\u0430\u043d\u0438\u0435: \u0432\u0440\u0435\u043c\u044f \u0432\u044b\u0435\u0437\u0434\u0430 \u0438\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u043d\u0435\u043b\u044c\u0437\u044f.",
+          "title": "Кто довезёт хвост?",
+          "situation": "На площади острова четыре курьера, у каждого свой рейс по расписанию: время выезда изменить нельзя. Ника записала для каждого, когда он выезжает, сколько ехать и что он берёт.",
           "evidence": [
-            "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0433\u043e\u0442\u043e\u0432\u0430 \u043a \u0432\u044b\u0434\u0430\u0447\u0435 \u0432 11:45.",
-            "\u0424\u043b\u044e\u0433\u0435\u0440 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0433\u043e\u0442\u043e\u0432 \u043a 12:10.",
-            "\u041c\u0430\u0441\u0442\u0435\u0440\u0443 \u043d\u0443\u0436\u043d\u044b 3 \u043c\u0438\u043d\u0443\u0442\u044b \u043d\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0443 \u0445\u0432\u043e\u0441\u0442\u0430 \u0438 1 \u043c\u0438\u043d\u0443\u0442\u0430 \u043d\u0430 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0443.",
-            "\u041a\u0443\u0440\u044c\u0435\u0440 \u0410: \u0432\u044b\u0435\u0437\u0434 11:40, \u0434\u043e\u0440\u043e\u0433\u0430 20 \u043c\u0438\u043d\u0443\u0442.",
-            "\u041a\u0443\u0440\u044c\u0435\u0440 \u0411: \u0432\u044b\u0435\u0437\u0434 11:50, \u0434\u043e\u0440\u043e\u0433\u0430 15 \u043c\u0438\u043d\u0443\u0442.",
-            "\u041a\u0443\u0440\u044c\u0435\u0440 \u0412: \u0432\u044b\u0435\u0437\u0434 12:00, \u0434\u043e\u0440\u043e\u0433\u0430 20 \u043c\u0438\u043d\u0443\u0442."
+            "Коробку выдают в 11:25. Праздник в 12:10. Мастеру нужно 12 минут: установить хвост и проверить флюгер.",
+            "Курьер А: выезжает в 11:20, едет 3 км со скоростью 12 км/ч.",
+            "Курьер Б: выезжает в 11:30, едет 4 км со скоростью 12 км/ч.",
+            "Курьер В: выезжает в 11:35, идёт с тележкой 3 км со скоростью 6 км/ч.",
+            "Курьер Г: выезжает в 11:25, едет 5 км со скоростью 10 км/ч, но берёт только коробки длиной до 40 см."
           ],
-          "question": "\u041a\u0442\u043e \u0437\u0430\u0431\u0435\u0440\u0451\u0442 \u0433\u043e\u0442\u043e\u0432\u0443\u044e \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0438 \u043e\u0441\u0442\u0430\u0432\u0438\u0442 \u043c\u0430\u0441\u0442\u0435\u0440\u0443 \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u044c \u0434\u043e 12:10?",
+          "question": "Кто довезёт хвост так, чтобы мастер успел к 12:10?",
           "kind": "choice",
           "options": [
-            "\u041a\u0443\u0440\u044c\u0435\u0440 \u0410",
-            "\u041a\u0443\u0440\u044c\u0435\u0440 \u0411",
-            "\u041a\u0443\u0440\u044c\u0435\u0440 \u0412"
+            "Курьер А",
+            "Курьер Б",
+            "Курьер В",
+            "Курьер Г"
           ],
           "answer": 1,
-          "explanation": "\u0410 \u0443\u0435\u0437\u0436\u0430\u0435\u0442 \u0434\u043e \u0432\u044b\u0434\u0430\u0447\u0438 \u043a\u043e\u0440\u043e\u0431\u043a\u0438. \u0411 \u043f\u0440\u0438\u0431\u044b\u0432\u0430\u0435\u0442 \u0432 12:05, \u0430 \u0440\u0430\u0431\u043e\u0442\u0430 \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u0441\u044f \u0432 12:09. \u0412 \u043f\u0440\u0438\u0431\u044b\u0432\u0430\u0435\u0442 \u0432 12:20, \u0443\u0436\u0435 \u043f\u043e\u0441\u043b\u0435 \u0441\u0440\u043e\u043a\u0430.",
-          "outcome": "\u041d\u0438\u043a\u0430 \u0434\u043e\u0433\u043e\u0432\u0430\u0440\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u0441 \u043a\u0443\u0440\u044c\u0435\u0440\u043e\u043c \u0411. \u041e\u043d \u0437\u0430\u0431\u0435\u0440\u0451\u0442 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0432 11:50 \u0438 \u043f\u0440\u0438\u0432\u0435\u0437\u0451\u0442 \u0432 12:05.",
-          "next": "\u0412\u0441\u0442\u0440\u0435\u0442\u0438\u0442\u044c \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0432 \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u043e\u0439",
-          "hints": [
-            "\u041d\u0443\u0436\u043d\u043e \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0438 \u0432\u0440\u0435\u043c\u044f \u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f, \u0438 \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u0438\u044f \u0440\u0430\u0431\u043e\u0442\u044b.",
-            "\u041d\u0430 \u0440\u0430\u0431\u043e\u0442\u0443 \u043c\u0430\u0441\u0442\u0435\u0440\u0430 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f 4 \u043c\u0438\u043d\u0443\u0442\u044b.",
-            "\u0411 \u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442 \u0432 12:05; \u0447\u0435\u0442\u044b\u0440\u0435 \u043c\u0438\u043d\u0443\u0442\u044b \u0441\u043f\u0443\u0441\u0442\u044f \u0431\u0443\u0434\u0435\u0442 12:09."
+          "feedback": [
+            "Курьер А выезжает в 11:20, а коробку выдадут только в 11:25.",
+            "",
+            "3 км при 6 км/ч это 30 минут: курьер В приедет в 12:05, и мастеру не хватит 12 минут.",
+            "По времени курьер Г успевает, но наша коробка длиной 50 см, а он берёт только до 40 см."
           ],
-          "scene": 2
-        },
-        {
-          "title": "\u041a\u0430\u043a\u043e\u0439 \u043e\u0441\u0442\u0430\u0451\u0442\u0441\u044f \u0437\u0430\u043f\u0430\u0441?",
-          "situation": "\u041a\u0443\u0440\u044c\u0435\u0440 \u0411 \u0434\u043e\u0441\u0442\u0430\u0432\u0438\u043b \u0445\u0432\u043e\u0441\u0442 \u0442\u043e\u0447\u043d\u043e \u0432 12:05. \u041c\u0430\u0441\u0442\u0435\u0440 \u0441\u0440\u0430\u0437\u0443 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u0440\u0430\u0431\u043e\u0442\u0443.",
-          "evidence": [
-            "\u041d\u0430\u0447\u0430\u043b\u043e \u0440\u0430\u0431\u043e\u0442\u044b \u0432 12:05.",
-            "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430 \u0434\u043b\u0438\u0442\u0441\u044f 3 \u043c\u0438\u043d\u0443\u0442\u044b, \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u0435\u0449\u0451 1 \u043c\u0438\u043d\u0443\u0442\u0443.",
-            "\u041f\u0440\u0430\u0437\u0434\u043d\u0438\u043a \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442\u0441\u044f \u0432 12:10. \u041a \u044d\u0442\u043e\u043c\u0443 \u0432\u0440\u0435\u043c\u0435\u043d\u0438 \u0444\u043b\u044e\u0433\u0435\u0440 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0433\u043e\u0442\u043e\u0432."
-          ],
-          "question": "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u043c\u0438\u043d\u0443\u0442 \u043e\u0441\u0442\u0430\u043d\u0435\u0442\u0441\u044f \u043f\u043e\u0441\u043b\u0435 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u0434\u043e \u043d\u0430\u0447\u0430\u043b\u0430 \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u043a\u0430 \u0432 12:10?",
-          "kind": "number",
-          "options": [],
-          "answer": "1",
-          "explanation": "\u0420\u0430\u0431\u043e\u0442\u0430 \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 3 + 1 = 4 \u043c\u0438\u043d\u0443\u0442\u044b \u0438 \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u0441\u044f \u0432 12:09. \u0414\u043e 12:10 \u043e\u0441\u0442\u0430\u0451\u0442\u0441\u044f 1 \u043c\u0438\u043d\u0443\u0442\u0430.",
-          "outcome": "\u041f\u043b\u0430\u043d \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442. \u041c\u0430\u0441\u0442\u0435\u0440 \u0443\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442 \u0445\u0432\u043e\u0441\u0442, \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u0442 \u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0438 \u043f\u0435\u0440\u0435\u0434\u0430\u0451\u0442 \u0433\u043e\u0442\u043e\u0432\u044b\u0439 \u0444\u043b\u044e\u0433\u0435\u0440 \u043a \u043f\u0440\u0430\u0437\u0434\u043d\u0438\u043a\u0443.",
-          "next": "\u041f\u043e\u0434\u043d\u044f\u0442\u044c \u0444\u043b\u044e\u0433\u0435\u0440",
+          "explanation": "Мастеру нужно 12 минут, значит хвост должен быть у него не позже 11:58. Б: 4 км при 12 км/ч это 20 минут, приедет в 11:50. А уезжает до выдачи, В приедет в 12:05, Г не берёт такие коробки.",
+          "outcome": "Ника договаривается с курьером Б: он забирает коробку в 11:30 и привозит мастеру в 11:50. У мастера 20 минут на работу, которая занимает 12.",
+          "next": "Собрать флюгер",
           "hints": [
-            "\u0421\u043d\u0430\u0447\u0430\u043b\u0430 \u043d\u0430\u0439\u0434\u0438 \u0432\u0440\u0435\u043c\u044f \u043e\u043a\u043e\u043d\u0447\u0430\u043d\u0438\u044f \u0432\u0441\u0435\u0439 \u0440\u0430\u0431\u043e\u0442\u044b.",
-            "12:05 + 4 \u043c\u0438\u043d\u0443\u0442\u044b = 12:09.",
-            "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u043c\u0438\u043d\u0443\u0442 \u043c\u0435\u0436\u0434\u0443 12:09 \u0438 12:10?"
+            "Сначала посчитай, к какому времени хвост должен быть у мастера.",
+            "Время дороги: расстояние раздели на скорость. При 12 км/ч один километр занимает 5 минут.",
+            "Проверь у каждого три вещи: время выезда, время прибытия и подходит ли коробка."
           ],
           "scene": 3
+        },
+        {
+          "title": "Куда девать парус?",
+          "situation": "В трюме «Ласточки» мастер устанавливает хвост: в 12:02 флюгер готов, к 12:10 петух на башне. Осталась вторая половина ошибки Ники: коробка с парусом, которую ждёт лодочник Тим на Малом острове.",
+          "evidence": [
+            "Курьер Б привезёт коробку с парусом обратно на площадь к 12:15.",
+            "Тим ждёт парус на своём причале на Малом острове до 13:30.",
+            "«Стриж» летает на Малый остров каждые 40 минут, первый рейс в 12:00. Полёт занимает 25 минут.",
+            "Коробку грузят только на рейс, который вылетает после того, как её привезли на площадь."
+          ],
+          "question": "Во сколько самое раннее парус будет у Тима? Введи время ЧЧ:ММ.",
+          "kind": "time",
+          "options": [],
+          "answer": "13:05",
+          "feedback": [],
+          "explanation": "Рейсы «Стрижа»: 12:00, 12:40, 13:20. Коробка на площади только в 12:15, значит первый подходящий рейс в 12:40. 12:40 + 25 минут = 13:05, Тим ещё ждёт.",
+          "outcome": "Парус улетает в 12:40 и будет у Тима в 13:05, за 25 минут до того, как он перестанет ждать. Обе коробки нашли своих хозяев.",
+          "next": "Поднять флюгер",
+          "hints": [
+            "Выпиши рейсы «Стрижа»: первый в 12:00, дальше каждые 40 минут.",
+            "Коробка попадёт только на рейс, который вылетает после 12:15.",
+            "Прибавь длительность полёта ко времени вылета."
+          ],
+          "scene": 2
         }
       ]
     },
     "pl": {
       "title": "Paczka dla Wyspy Chmur",
-      "intro": "Na Wyspie Chmur powstaje wiatrowskaz na \u015bwi\u0119to. W pude\u0142ku zamiast ogona by\u0142 ma\u0142y \u017cagiel. Listonoszka Nika m\u00f3wi: \u201eChyba pomyli\u0142am dwa pude\u0142ka z tak\u0105 sam\u0105 chmurk\u0105 na wieczku\u201d. Na poczcie zosta\u0142y dwie paczki. Pom\u00f3\u017c znale\u017a\u0107 w\u0142a\u015bciw\u0105 i dostarczy\u0107 j\u0105 do warsztatu.",
-      "ending": "Nika nada\u0142a w\u0142a\u015bciw\u0105 paczk\u0119, a kurier B dostarczy\u0142 j\u0105 o 12:05. Majster zd\u0105\u017cy\u0142 zamontowa\u0107 ogon i sprawdzi\u0107 wiatrowskaz z minut\u0105 zapasu. Nika potwierdzi\u0142a, \u017ce przy za\u0142adunku patrzy\u0142a na rysunek chmurki. Teraz b\u0119dzie sprawdza\u0107 adres.",
-      "question": "Dlaczego kurier z najwcze\u015bniejszym odjazdem nie m\u00f3g\u0142 zabra\u0107 naszej paczki?",
+      "intro": "Na Wyspie Chmur na święto składają wiatrowskaz w kształcie koguta. Majster otworzył pudełko: zamiast ogona w środku był mały żagiel. Listonoszka Nika jest pewna, że pomyliła dwa pudełka z taką samą chmurką na wieczku. Na poczcie są cztery nieodebrane przesyłki, wszystkie z rozmokłymi etykietami. Święto jest o 12:10, „Jaskółka” lata na wyspę raz dziennie. Trzeba znaleźć ogon, dostarczyć go do majstra i zdążyć na święto. A potem jeszcze oddać żagiel temu, kto na niego czeka.",
+      "ending": "Ogon znalazł się w trzecim pudełku: dwa pudełka ważyły tyle samo i pomogła długość. „Jaskółka” doleciała w 40 minut z postojem, kurier B przywiózł ogon o 11:50, a majster ustawił wiatrowskaz na 12:10. Żagiel odleciał „Jerzykiem” o 12:40 i był u szkutnika Tima o 13:05. Nika nie podpisuje już pudełek samym rysunkiem: teraz na każdym jest adres i masa.",
+      "question": "Dwa pudełka ważyły dokładnie 1,6 kg. Dlaczego sama masa nie powiedziała, w którym jest ogon?",
       "steps": [
         {
-          "title": "Kt\u00f3re pude\u0142ko jest nasze?",
-          "situation": "Majster przys\u0142a\u0142 rysunek i opis opakowania. Nika proponuje najpierw por\u00f3wna\u0107 masy, a potem otworzy\u0107 pasuj\u0105ce pude\u0142ko i sprawdzi\u0107 cz\u0119\u015b\u0107.",
+          "title": "Które pudełko jest nasze?",
+          "situation": "Na poczcie Nika kładzie na wadze wszystkie cztery przesyłki i wyjmuje list przewozowy majstra. Cudzych paczek nie wolno otwierać, więc trzeba wybrać według listu, a otworzyć tylko jedną.",
           "evidence": [
-            "Ogon wiatrowskazu wa\u017cy 1 kg.",
-            "Pude\u0142ko wa\u017cy 150 g, a papier w \u015brodku 100 g.",
-            "Pozosta\u0142e paczki wa\u017c\u0105 1250 g i 1450 g."
+            "List przewozowy majstra: ogon o długości 45 cm, masa 1 kg 200 g. Zapakowany w pudełko o masie 250 g, w środku jeszcze 150 g papieru.",
+            "Przesyłka nr 1: 1,45 kg, pudełko o długości 50 cm.",
+            "Przesyłka nr 2: 1,6 kg, pudełko o długości 30 cm.",
+            "Przesyłka nr 3: 1,6 kg, pudełko o długości 50 cm.",
+            "Przesyłka nr 4: 1 kg 750 g, pudełko o długości 60 cm."
           ],
-          "question": "Ile gram\u00f3w powinna wa\u017cy\u0107 w\u0142a\u015bciwa paczka razem z opakowaniem?",
-          "kind": "number",
-          "options": [],
-          "answer": "1250",
-          "explanation": "1 kg = 1000 g. 1000 + 150 + 100 = 1250 g.",
-          "outcome": "Nika otwiera paczk\u0119 o masie 1250 g i por\u00f3wnuje ogon z rysunkiem. To w\u0142a\u015bciwa cz\u0119\u015b\u0107! Teraz trzeba zaplanowa\u0107 dostaw\u0119.",
-          "next": "Sprawd\u017a rozk\u0142ad lotu",
+          "question": "Którą przesyłkę otworzyć?",
+          "kind": "choice",
+          "options": [
+            "Przesyłka nr 1",
+            "Przesyłka nr 2",
+            "Przesyłka nr 3",
+            "Przesyłka nr 4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "1,45 kg to 1450 g: ogon i pudełko bez papieru. Ale papier też jest w środku.",
+            "Masa się zgadza, ale ogon o długości 45 cm nie zmieści się w pudełku o długości 30 cm.",
+            "",
+            "1 kg 750 g jest o 150 g cięższe niż potrzebna masa."
+          ],
+          "explanation": "1200 + 250 + 150 = 1600 g, czyli 1,6 kg. Tyle ważą nr 2 i nr 3, ale ogon o długości 45 cm zmieści się tylko w pudełku o długości 50 cm. Nika otwiera nr 3: w środku jest ogon koguta.",
+          "outcome": "Ogon znalazł się w przesyłce nr 3. Teraz trzeba wysłać go na wyspę „Jaskółką” i policzyć, ile czasu zostanie.",
+          "next": "Do przystani „Jaskółki”",
           "hints": [
-            "Zamie\u0144 kilogram na gramy.",
-            "Dodaj mas\u0119 cz\u0119\u015bci, pude\u0142ka i papieru.",
-            "1000 + 150 + 100."
+            "Zamień wszystko na gramy i dodaj ogon, pudełko i papier.",
+            "Dwa pudełka mogą mieć tę samą masę. Wtedy patrz na rozmiar.",
+            "Ogona o długości 45 cm nie da się zgiąć: pudełko musi być dłuższe."
           ],
           "scene": 0
         },
         {
-          "title": "Kiedy przyleci poczta?",
-          "situation": "Nika mo\u017ce wys\u0142a\u0107 paczk\u0119 \u201eJask\u00f3\u0142k\u0105\u201d. Sprawd\u017amy jej rozk\u0142ad lotu na wysp\u0119.",
+          "title": "Kiedy pudełko będzie na wyspie?",
+          "situation": "Na przystani Nika oddaje pudełko na „Jaskółkę”. Kapitan pokazuje trasę: do wyspy z jednym postojem na Wietrznej Wieży. Policz, kiedy pudełko zostanie wydane kurierowi.",
           "evidence": [
-            "Wylot o 10:25.",
-            "Pierwszy lot trwa 35 minut, post\u00f3j 10 minut, drugi lot 25 minut.",
-            "Po przylocie roz\u0142adunek zajmuje jeszcze 10 minut.",
-            "Wiatrowskaz musi by\u0107 gotowy na 12:10."
+            "„Jaskółka” wylatuje o 10:25 i leci z prędkością 90 km/h.",
+            "Do wyspy jest 60 km. Po drodze jeden postój na Wietrznej Wieży, 10 minut.",
+            "Po przylocie rozładunek zajmuje 10 minut, potem pudełko wydaje się kurierowi."
           ],
-          "question": "O kt\u00f3rej \u201eJask\u00f3\u0142ka\u201d przyleci na wysp\u0119, jeszcze przed roz\u0142adunkiem? Wpisz GG:MM.",
+          "question": "O której pudełko zostanie wydane kurierowi na wyspie? Wpisz czas GG:MM.",
           "kind": "time",
           "options": [],
-          "answer": "11:35",
-          "explanation": "35 + 10 + 25 = 70 minut. 10:25 + 70 minut = 11:35.",
-          "outcome": "Po 10 minutach roz\u0142adunku paczk\u0119 b\u0119dzie mo\u017cna odebra\u0107 o 11:45. Potrzebujemy kuriera, kt\u00f3ry odbierze j\u0105 po tej godzinie i zd\u0105\u017cy do warsztatu.",
+          "answer": "11:25",
+          "feedback": [],
+          "explanation": "60 km przy prędkości 90 km/h to 2/3 godziny, czyli 40 minut. Postój 10 minut i rozładunek 10 minut: razem 60 minut. 10:25 + 60 minut = 11:25.",
+          "outcome": "Pudełko zostanie wydane o 11:25. Do święta o 12:10 zostaje 45 minut i trzeba je podzielić między drogę kuriera i pracę majstra.",
           "next": "Wybierz kuriera",
           "hints": [
-            "Najpierw dodaj oba loty i post\u00f3j.",
-            "Do przylotu minie 70 minut. Na razie nie dodawaj roz\u0142adunku.",
-            "Dodaj do 10:25 godzin\u0119 i jeszcze 10 minut."
+            "Najpierw ustal, ile minut zajmie sam lot: w godzinę 90 km, więc jaką część godziny zajmie 60 km?",
+            "60 z 90 to dwie trzecie. Zamień dwie trzecie godziny na minuty.",
+            "Do lotu dodaj postój i rozładunek, a potem wszystko do 10:25."
           ],
           "scene": 1
         },
         {
-          "title": "Kto zd\u0105\u017cy z paczk\u0105?",
-          "situation": "Kurierzy rozwo\u017c\u0105 te\u017c inne paczki, wi\u0119c ka\u017cdy ma sw\u00f3j kurs. Nika pokazuje rozk\u0142ad: godzin odjazdu nie mo\u017cna zmieni\u0107.",
+          "title": "Kto dowiezie ogon?",
+          "situation": "Na placu wyspy jest czterech kurierów, każdy ma swój kurs według rozkładu: godziny odjazdu nie można zmienić. Nika zapisała dla każdego, kiedy odjeżdża, jak długo jedzie i co bierze.",
           "evidence": [
-            "Paczka jest gotowa do odbioru o 11:45.",
-            "Wiatrowskaz musi by\u0107 gotowy na 12:10.",
-            "Majster potrzebuje 3 minut na monta\u017c ogona i 1 minuty na sprawdzenie.",
-            "Kurier A: odjazd 11:40, przejazd 20 minut.",
-            "Kurier B: odjazd 11:50, przejazd 15 minut.",
-            "Kurier C: odjazd 12:00, przejazd 20 minut."
+            "Pudełko wydają o 11:25. Święto jest o 12:10. Majster potrzebuje 12 minut: zamontować ogon i sprawdzić wiatrowskaz.",
+            "Kurier A: odjeżdża o 11:20, jedzie 3 km z prędkością 12 km/h.",
+            "Kurier B: odjeżdża o 11:30, jedzie 4 km z prędkością 12 km/h.",
+            "Kurier C: odjeżdża o 11:35, idzie z wózkiem 3 km z prędkością 6 km/h.",
+            "Kurier D: odjeżdża o 11:25, jedzie 5 km z prędkością 10 km/h, ale bierze tylko pudełka o długości do 40 cm."
           ],
-          "question": "Kto odbierze gotow\u0105 paczk\u0119 i zostawi majstrowi czas na sko\u0144czenie przed 12:10?",
+          "question": "Kto dowiezie ogon tak, żeby majster zdążył na 12:10?",
           "kind": "choice",
           "options": [
             "Kurier A",
             "Kurier B",
-            "Kurier C"
+            "Kurier C",
+            "Kurier D"
           ],
           "answer": 1,
-          "explanation": "A odje\u017cd\u017ca, zanim paczka jest gotowa. B przyje\u017cd\u017ca o 12:05, a praca sko\u0144czy si\u0119 o 12:09. C przyje\u017cd\u017ca o 12:20, ju\u017c po terminie.",
-          "outcome": "Nika umawia si\u0119 z kurierem B. Odbierze paczk\u0119 o 11:50 i dostarczy j\u0105 o 12:05.",
-          "next": "Odbierz paczk\u0119 w warsztacie",
-          "hints": [
-            "Sprawd\u017a godzin\u0119 odjazdu i godzin\u0119 zako\u0144czenia pracy.",
-            "Majster potrzebuje \u0142\u0105cznie 4 minut.",
-            "B dostarczy paczk\u0119 o 12:05. Cztery minuty p\u00f3\u017aniej b\u0119dzie 12:09."
+          "feedback": [
+            "Kurier A odjeżdża o 11:20, a pudełko wydadzą dopiero o 11:25.",
+            "",
+            "3 km przy 6 km/h to 30 minut: kurier C dojedzie o 12:05 i majstrowi zabraknie 12 minut.",
+            "Czasowo kurier D zdąży, ale nasze pudełko ma 50 cm długości, a on bierze tylko do 40 cm."
           ],
-          "scene": 2
-        },
-        {
-          "title": "Ile czasu zostanie?",
-          "situation": "Kurier B dostarczy\u0142 ogon dok\u0142adnie o 12:05. Majster od razu zabiera si\u0119 do pracy.",
-          "evidence": [
-            "Praca zaczyna si\u0119 o 12:05.",
-            "Monta\u017c trwa 3 minuty, a sprawdzenie kolejn\u0105 1 minut\u0119.",
-            "\u015awi\u0119to zaczyna si\u0119 o 12:10. Wiatrowskaz musi by\u0107 wtedy gotowy."
-          ],
-          "question": "Ile minut zostanie po sprawdzeniu do pocz\u0105tku \u015bwi\u0119ta o 12:10?",
-          "kind": "number",
-          "options": [],
-          "answer": "1",
-          "explanation": "Praca zajmuje 3 + 1 = 4 minuty i sko\u0144czy si\u0119 o 12:09. Do 12:10 zostaje 1 minuta.",
-          "outcome": "Plan si\u0119 sprawdza. Majster montuje ogon, sprawdza, czy wiatrowskaz si\u0119 obraca, i przygotowuje go na \u015bwi\u0119to.",
-          "next": "Ustaw wiatrowskaz",
+          "explanation": "Majster potrzebuje 12 minut, więc ogon musi być u niego najpóźniej o 11:58. B: 4 km przy 12 km/h to 20 minut, dojedzie o 11:50. A odjeżdża przed wydaniem, C dojedzie o 12:05, D nie bierze takich pudełek.",
+          "outcome": "Nika umawia się z kurierem B: odbiera pudełko o 11:30 i przywozi majstrowi o 11:50. Majster ma 20 minut na pracę, która zajmuje 12.",
+          "next": "Złóż wiatrowskaz",
           "hints": [
-            "Najpierw ustal koniec ca\u0142ej pracy.",
-            "12:05 + 4 minuty = 12:09.",
-            "Ile minut mija od 12:09 do 12:10?"
+            "Najpierw policz, do której ogon musi być u majstra.",
+            "Czas drogi: odległość podziel przez prędkość. Przy 12 km/h jeden kilometr zajmuje 5 minut.",
+            "Sprawdź u każdego trzy rzeczy: godzinę odjazdu, godzinę przyjazdu i czy pudełko pasuje."
           ],
           "scene": 3
+        },
+        {
+          "title": "Co zrobić z żaglem?",
+          "situation": "W ładowni „Jaskółki” majster montuje ogon: o 12:02 wiatrowskaz jest gotowy, na 12:10 kogut jest na wieży. Została druga połowa pomyłki Niki: pudełko z żaglem, na które czeka szkutnik Tim na Małej Wyspie.",
+          "evidence": [
+            "Kurier B przywiezie pudełko z żaglem z powrotem na plac na 12:15.",
+            "Tim czeka na żagiel na swojej przystani na Małej Wyspie do 13:30.",
+            "„Jerzyk” lata na Małą Wyspę co 40 minut, pierwszy kurs o 12:00. Lot trwa 25 minut.",
+            "Pudełko ładuje się tylko na kurs, który wylatuje po tym, jak przywieziono je na plac."
+          ],
+          "question": "O której najwcześniej żagiel będzie u Tima? Wpisz czas GG:MM.",
+          "kind": "time",
+          "options": [],
+          "answer": "13:05",
+          "feedback": [],
+          "explanation": "Kursy „Jerzyka”: 12:00, 12:40, 13:20. Pudełko jest na placu dopiero o 12:15, więc pierwszy pasujący kurs jest o 12:40. 12:40 + 25 minut = 13:05, Tim jeszcze czeka.",
+          "outcome": "Żagiel odlatuje o 12:40 i będzie u Tima o 13:05, 25 minut przed tym, jak przestanie czekać. Oba pudełka trafiły do właścicieli.",
+          "next": "Ustaw wiatrowskaz",
+          "hints": [
+            "Wypisz kursy „Jerzyka”: pierwszy o 12:00, dalej co 40 minut.",
+            "Pudełko trafi tylko na kurs, który wylatuje po 12:15.",
+            "Dodaj czas lotu do godziny wylotu."
+          ],
+          "scene": 2
         }
       ]
     },
     "en": {
       "title": "A Parcel for Cloud Island",
-      "intro": "A weather vane is being built for the festival on Cloud Island. But the box contains a little sail instead of its tail. Nika the postwoman says, \u201cI think I mixed up two boxes with the same cloud on the lid.\u201d Two parcels remain at the post office. Help find the right one and get it to the workshop.",
-      "ending": "Nika sent the right box on the flight, and courier B delivered it at 12:05. The maker fitted the tail and checked the weather vane with one minute to spare. Nika confirmed that she had looked at the cloud picture while loading. From now on, she will check the address.",
-      "question": "Why couldn\u2019t the earliest courier take our parcel?",
+      "intro": "On Cloud Island, a rooster weather vane is being assembled for the festival. The maker opened the box: instead of the tail, there was a little sail inside. Nika the postwoman is sure she mixed up two boxes with the same cloud on the lid. There are four unclaimed parcels at the post office, all with soggy labels. The festival is at 12:10, and the Swallow flies to the island once a day. You need to find the tail, get it to the maker and make it in time for the festival. And then return the sail to whoever is waiting for it.",
+      "ending": "The tail was in the third box: two boxes weighed the same, and it was the length that settled it. The Swallow flew there in 40 minutes plus a stop, courier B brought the tail at 11:50, and the maker raised the vane by 12:10. The sail left on the Swift at 12:40 and reached Tim the boatman at 13:05. Nika no longer labels boxes with just a picture: now every one carries an address and a weight.",
+      "question": "Two boxes weighed exactly 1.6 kg. Why did the weight alone not tell you which one held the tail?",
       "steps": [
         {
-          "title": "Which box do we need?",
-          "situation": "The maker has sent a drawing and a packing list. Nika suggests checking the weight first, then opening the matching box to check the part.",
+          "title": "Which box is ours?",
+          "situation": "At the post office, Nika puts all four parcels on the scales and takes out the maker’s packing note. Other people’s parcels must not be opened, so you have to choose by the note and open only one.",
           "evidence": [
-            "The weather vane\u2019s tail weighs 1 kg.",
-            "The box weighs 150 g and the paper inside weighs 100 g.",
-            "The remaining parcels weigh 1250 g and 1450 g."
+            "The maker’s note: the tail is 45 cm long and weighs 1 kg 200 g. It is packed in a box weighing 250 g, with another 150 g of paper inside.",
+            "Parcel 1: 1.45 kg, box 50 cm long.",
+            "Parcel 2: 1.6 kg, box 30 cm long.",
+            "Parcel 3: 1.6 kg, box 50 cm long.",
+            "Parcel 4: 1 kg 750 g, box 60 cm long."
           ],
-          "question": "How many grams should the correct parcel weigh, including its packaging?",
-          "kind": "number",
-          "options": [],
-          "answer": "1250",
-          "explanation": "1 kg = 1000 g. 1000 + 150 + 100 = 1250 g.",
-          "outcome": "Nika opens the 1250 g parcel and compares the tail with the drawing. It is the right part! Now we need a delivery plan.",
-          "next": "Check the flight time",
+          "question": "Which parcel should be opened?",
+          "kind": "choice",
+          "options": [
+            "Parcel 1",
+            "Parcel 2",
+            "Parcel 3",
+            "Parcel 4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "1.45 kg is 1450 g: the tail and box without the paper. But the paper is inside too.",
+            "The weight matches, but a 45 cm tail will not fit in a 30 cm box.",
+            "",
+            "1 kg 750 g is 150 g heavier than the weight we need."
+          ],
+          "explanation": "1200 + 250 + 150 = 1600 g, which is 1.6 kg. Parcels 2 and 3 both weigh that, but a 45 cm tail only fits in the 50 cm box. Nika opens parcel 3: the rooster’s tail is inside.",
+          "outcome": "The tail is in parcel 3. Now it has to be sent to the island on the Swallow, and we need to work out how much time will be left.",
+          "next": "To the Swallow’s dock",
           "hints": [
-            "Convert one kilogram to grams.",
-            "Add the weight of the part, box and paper.",
-            "1000 + 150 + 100."
+            "Convert everything to grams and add the tail, the box and the paper.",
+            "Two boxes can have the same weight. Then look at the size.",
+            "A 45 cm tail cannot be bent: the box has to be longer."
           ],
           "scene": 0
         },
         {
-          "title": "When will the air mail arrive?",
-          "situation": "Nika can send the box on the Swallow. Let\u2019s check its flight schedule to the island.",
+          "title": "When will the box reach the island?",
+          "situation": "At the dock, Nika hands the box over to the Swallow. The captain shows the route: to the island with one stop at Windmill Tower. Work out when the box will be handed to a courier.",
           "evidence": [
-            "Departure is at 10:25.",
-            "The first flight takes 35 minutes, the stop takes 10 minutes, and the second flight takes 25 minutes.",
-            "Unloading on the island takes another 10 minutes after arrival.",
-            "The weather vane must be ready by 12:10."
+            "The Swallow departs at 10:25 and flies at 90 km/h.",
+            "It is 60 km to the island. There is one stop on the way at Windmill Tower, lasting 10 minutes.",
+            "After arrival, unloading takes 10 minutes, and then the box is handed to a courier."
           ],
-          "question": "What time will the Swallow arrive on the island, before unloading? Enter HH:MM.",
+          "question": "What time will the box be handed to a courier on the island? Enter the time as HH:MM.",
           "kind": "time",
           "options": [],
-          "answer": "11:35",
-          "explanation": "35 + 10 + 25 = 70 minutes. 10:25 + 70 minutes = 11:35.",
-          "outcome": "After 10 minutes of unloading, the box can be collected at 11:45. We need a courier who can collect it then or later and reach the workshop in time.",
+          "answer": "11:25",
+          "feedback": [],
+          "explanation": "60 km at 90 km/h is 2/3 of an hour, which is 40 minutes. A 10-minute stop and 10 minutes of unloading: 60 minutes in total. 10:25 + 60 minutes = 11:25.",
+          "outcome": "The box will be handed over at 11:25. There are 45 minutes until the festival at 12:10, to be shared between the courier’s journey and the maker’s work.",
           "next": "Choose a courier",
           "hints": [
-            "Add both flights and the stop first.",
-            "It takes 70 minutes to arrive. Do not add unloading yet.",
-            "Add one hour and another 10 minutes to 10:25."
+            "First work out how many minutes the flight itself takes: 90 km in an hour, so what fraction of an hour does 60 km take?",
+            "60 out of 90 is two thirds. Convert two thirds of an hour into minutes.",
+            "Add the stop and the unloading to the flight, then add it all to 10:25."
           ],
           "scene": 1
         },
         {
-          "title": "Who can deliver in time?",
-          "situation": "The couriers carry other parcels too, so each has a scheduled run. Nika shows you the timetable: departure times cannot be changed.",
+          "title": "Who will deliver the tail?",
+          "situation": "In the island square there are four couriers, each with a scheduled run: departure times cannot be changed. Nika has noted for each one when they leave, how far they travel and what they carry.",
           "evidence": [
-            "The box is ready to collect at 11:45.",
-            "The weather vane must be ready by 12:10.",
-            "The maker needs 3 minutes to fit the tail and 1 minute to check it.",
-            "Courier A: leaves at 11:40, journey takes 20 minutes.",
-            "Courier B: leaves at 11:50, journey takes 15 minutes.",
-            "Courier C: leaves at 12:00, journey takes 20 minutes."
+            "The box is handed over at 11:25. The festival is at 12:10. The maker needs 12 minutes to fit the tail and check the vane.",
+            "Courier A: leaves at 11:20, rides 3 km at 12 km/h.",
+            "Courier B: leaves at 11:30, rides 4 km at 12 km/h.",
+            "Courier C: leaves at 11:35, walks 3 km with a cart at 6 km/h.",
+            "Courier D: leaves at 11:25, rides 5 km at 10 km/h, but only takes boxes up to 40 cm long."
           ],
-          "question": "Who can collect the box when it is ready and leave enough time to finish before 12:10?",
+          "question": "Who can deliver the tail so that the maker finishes by 12:10?",
           "kind": "choice",
           "options": [
             "Courier A",
             "Courier B",
-            "Courier C"
+            "Courier C",
+            "Courier D"
           ],
           "answer": 1,
-          "explanation": "A leaves before the box is ready. B arrives at 12:05, so the work finishes at 12:09. C arrives at 12:20, after the deadline.",
-          "outcome": "Nika books courier B. The box will be collected at 11:50 and delivered at 12:05.",
-          "next": "Meet the box at the workshop",
-          "hints": [
-            "Check both the departure time and when the work would finish.",
-            "The maker needs 4 minutes in total.",
-            "B delivers at 12:05. Four minutes later is 12:09."
+          "feedback": [
+            "Courier A leaves at 11:20, but the box is only handed over at 11:25.",
+            "",
+            "3 km at 6 km/h is 30 minutes: courier C arrives at 12:05, and the maker would not have 12 minutes.",
+            "Courier D is fine on time, but our box is 50 cm long and D only takes boxes up to 40 cm."
           ],
-          "scene": 2
-        },
-        {
-          "title": "How much time is left?",
-          "situation": "Courier B delivers the tail at exactly 12:05. The maker starts at once.",
-          "evidence": [
-            "Work starts at 12:05.",
-            "Fitting takes 3 minutes, followed by a 1-minute check.",
-            "The festival starts at 12:10. The weather vane must be ready by then."
-          ],
-          "question": "How many minutes will be left after the check before the festival starts at 12:10?",
-          "kind": "number",
-          "options": [],
-          "answer": "1",
-          "explanation": "The work takes 3 + 1 = 4 minutes and finishes at 12:09. There is 1 minute left until 12:10.",
-          "outcome": "The plan works. The maker fits the tail, checks that the weather vane turns and gets it ready for the festival.",
-          "next": "Raise the weather vane",
+          "explanation": "The maker needs 12 minutes, so the tail must reach them by 11:58 at the latest. B: 4 km at 12 km/h is 20 minutes, arriving at 11:50. A leaves before the handover, C arrives at 12:05, and D does not take boxes this size.",
+          "outcome": "Nika books courier B: the box is collected at 11:30 and delivered to the maker at 11:50. The maker has 20 minutes for a job that takes 12.",
+          "next": "Assemble the weather vane",
           "hints": [
-            "Find the finishing time for all the work first.",
-            "12:05 + 4 minutes = 12:09.",
-            "How many minutes are there from 12:09 to 12:10?"
+            "First work out by what time the tail must reach the maker.",
+            "Travel time: divide the distance by the speed. At 12 km/h, one kilometre takes 5 minutes.",
+            "Check three things for each courier: departure time, arrival time and whether the box fits."
           ],
           "scene": 3
+        },
+        {
+          "title": "What about the sail?",
+          "situation": "In the Swallow’s hold, the maker fits the tail: the vane is ready at 12:02, and the rooster is on the tower by 12:10. The second half of Nika’s mistake remains: the box with the sail, which Tim the boatman is waiting for on Little Island.",
+          "evidence": [
+            "Courier B will bring the box with the sail back to the square by 12:15.",
+            "Tim is waiting for the sail at his dock on Little Island until 13:30.",
+            "The Swift flies to Little Island every 40 minutes, with the first flight at 12:00. The flight takes 25 minutes.",
+            "A box is only loaded onto a flight that departs after the box has reached the square."
+          ],
+          "question": "What is the earliest time the sail can reach Tim? Enter the time as HH:MM.",
+          "kind": "time",
+          "options": [],
+          "answer": "13:05",
+          "feedback": [],
+          "explanation": "The Swift’s flights: 12:00, 12:40, 13:20. The box is only in the square at 12:15, so the first suitable flight is at 12:40. 12:40 + 25 minutes = 13:05, and Tim is still waiting.",
+          "outcome": "The sail leaves at 12:40 and reaches Tim at 13:05, 25 minutes before he stops waiting. Both boxes have found their owners.",
+          "next": "Raise the weather vane",
+          "hints": [
+            "Write out the Swift’s flights: the first at 12:00, then every 40 minutes.",
+            "The box can only go on a flight that departs after 12:15.",
+            "Add the flight time to the departure time."
+          ],
+          "scene": 2
         }
       ]
     },
     "uk": {
-      "title": "\u041f\u043e\u0441\u0438\u043b\u043a\u0430 \u0434\u043b\u044f \u0425\u043c\u0430\u0440\u043d\u043e\u0433\u043e \u043e\u0441\u0442\u0440\u043e\u0432\u0430",
-      "intro": "\u041d\u0430 \u0425\u043c\u0430\u0440\u043d\u043e\u043c\u0443 \u043e\u0441\u0442\u0440\u043e\u0432\u0456 \u0437\u0431\u0438\u0440\u0430\u044e\u0442\u044c \u0444\u043b\u044e\u0433\u0435\u0440 \u0434\u043e \u0441\u0432\u044f\u0442\u0430. \u0417\u0430\u043c\u0456\u0441\u0442\u044c \u0445\u0432\u043e\u0441\u0442\u0430 \u0432 \u043a\u043e\u0440\u043e\u0431\u0446\u0456 \u0432\u0438\u044f\u0432\u0438\u043b\u043e\u0441\u044f \u043c\u0430\u043b\u0435\u043d\u044c\u043a\u0435 \u0432\u0456\u0442\u0440\u0438\u043b\u043e. \u041b\u0438\u0441\u0442\u043e\u043d\u043e\u0448\u0430 \u041d\u0456\u043a\u0430 \u043a\u0430\u0436\u0435: \u00ab\u0417\u0434\u0430\u0454\u0442\u044c\u0441\u044f, \u044f \u043f\u0435\u0440\u0435\u043f\u043b\u0443\u0442\u0430\u043b\u0430 \u0434\u0432\u0456 \u043a\u043e\u0440\u043e\u0431\u043a\u0438 \u0437 \u043e\u0434\u043d\u0430\u043a\u043e\u0432\u043e\u044e \u0445\u043c\u0430\u0440\u0438\u043d\u043a\u043e\u044e \u043d\u0430 \u043a\u0440\u0438\u0448\u0446\u0456\u00bb. \u041d\u0430 \u043f\u043e\u0448\u0442\u0456 \u0437\u0430\u043b\u0438\u0448\u0438\u043b\u0438\u0441\u044f \u0434\u0432\u0456 \u043f\u043e\u0441\u0438\u043b\u043a\u0438. \u0414\u043e\u043f\u043e\u043c\u043e\u0436\u0438 \u0437\u043d\u0430\u0439\u0442\u0438 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0443 \u0439 \u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0457\u0457 \u0434\u043e \u043c\u0430\u0439\u0441\u0442\u0435\u0440\u043d\u0456.",
-      "ending": "\u041d\u0456\u043a\u0430 \u0432\u0456\u0434\u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0443 \u043a\u043e\u0440\u043e\u0431\u043a\u0443, \u0430 \u043a\u0443\u0440\u2019\u0454\u0440 \u0411 \u043f\u0440\u0438\u0432\u0456\u0437 \u0457\u0457 \u043e 12:05. \u041c\u0430\u0439\u0441\u0442\u0435\u0440 \u0443\u0441\u0442\u0438\u0433 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0438 \u0445\u0432\u0456\u0441\u0442 \u0456 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0442\u0438 \u0444\u043b\u044e\u0433\u0435\u0440 \u0456\u0437 \u0437\u0430\u043f\u0430\u0441\u043e\u043c \u0432 \u043e\u0434\u043d\u0443 \u0445\u0432\u0438\u043b\u0438\u043d\u0443. \u041d\u0456\u043a\u0430 \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u043b\u0430: \u043f\u0456\u0434 \u0447\u0430\u0441 \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u0434\u0438\u0432\u0438\u043b\u0430\u0441\u044f \u043d\u0430 \u043c\u0430\u043b\u044e\u043d\u043e\u043a \u0445\u043c\u0430\u0440\u0438\u043d\u043a\u0438. \u0422\u0435\u043f\u0435\u0440 \u0432\u043e\u043d\u0430 \u0437\u0432\u0456\u0440\u044f\u0442\u0438\u043c\u0435 \u0430\u0434\u0440\u0435\u0441\u0443.",
-      "question": "\u0427\u043e\u043c\u0443 \u043d\u0430\u0439\u0440\u0430\u043d\u0456\u0448\u0438\u0439 \u043a\u0443\u0440\u2019\u0454\u0440 \u043d\u0435 \u043c\u0456\u0433 \u0437\u0430\u0431\u0440\u0430\u0442\u0438 \u043d\u0430\u0448\u0443 \u043f\u043e\u0441\u0438\u043b\u043a\u0443?",
+      "title": "Посилка для Хмарного острова",
+      "intro": "На Хмарному острові до свята збирають флюгер-півня. Майстер відкрив коробку: замість хвоста всередині маленьке вітрило. Листоноша Ніка впевнена, що переплутала дві коробки з однаковою хмаринкою на кришці. На пошті чотири незатребувані відправлення, у всіх розмокли ярлики. Свято о 12:10, «Ластівка» літає на острів раз на день. Треба знайти хвіст, доставити його майстрові і встигнути до свята. А потім ще повернути вітрило тому, хто на нього чекає.",
+      "ending": "Хвіст знайшовся в третій коробці: дві коробки важили однаково, і розібратися допомогла довжина. «Ластівка» долетіла за 40 хвилин із зупинкою, кур’єр Б привіз хвіст об 11:50, і майстер підняв флюгер до 12:10. Вітрило полетіло «Серпокрильцем» о 12:40 і було в човняра Тіма о 13:05. Ніка більше не підписує коробки лише малюнком: тепер на кожній адреса і маса.",
+      "question": "Дві коробки важили рівно 1,6 кг. Чому маса сама по собі не сказала, у якій із них хвіст?",
       "steps": [
         {
-          "title": "\u042f\u043a\u0430 \u043a\u043e\u0440\u043e\u0431\u043a\u0430 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430?",
-          "situation": "\u041c\u0430\u0439\u0441\u0442\u0435\u0440 \u043d\u0430\u0434\u0456\u0441\u043b\u0430\u0432 \u043a\u0440\u0435\u0441\u043b\u0435\u043d\u043d\u044f \u0439 \u043e\u043f\u0438\u0441 \u043f\u0430\u043a\u0443\u0432\u0430\u043d\u043d\u044f. \u041d\u0456\u043a\u0430 \u043f\u0440\u043e\u043f\u043e\u043d\u0443\u0454 \u0441\u043f\u0435\u0440\u0448\u0443 \u0437\u0432\u0456\u0440\u0438\u0442\u0438 \u043c\u0430\u0441\u0443, \u0430 \u043f\u043e\u0442\u0456\u043c \u0432\u0456\u0434\u043a\u0440\u0438\u0442\u0438 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u043d\u0443 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0439 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0442\u0438 \u0434\u0435\u0442\u0430\u043b\u044c.",
+          "title": "Яка коробка наша?",
+          "situation": "На пошті Ніка кладе на ваги всі чотири відправлення і дістає накладну майстра. Відкривати чужі посилки не можна, тому вибрати треба за накладною, а відкрити лише одну.",
           "evidence": [
-            "\u0425\u0432\u0456\u0441\u0442 \u0444\u043b\u044e\u0433\u0435\u0440\u0430 \u0432\u0430\u0436\u0438\u0442\u044c 1 \u043a\u0433.",
-            "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0432\u0430\u0436\u0438\u0442\u044c 150 \u0433, \u043f\u0430\u043f\u0456\u0440 \u0443\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456 100 \u0433.",
-            "\u041f\u043e\u0441\u0438\u043b\u043a\u0438, \u0449\u043e \u0437\u0430\u043b\u0438\u0448\u0438\u043b\u0438\u0441\u044f, \u0432\u0430\u0436\u0430\u0442\u044c 1250 \u0433 \u0456 1450 \u0433."
+            "Накладна майстра: хвіст завдовжки 45 см, маса 1 кг 200 г. Запакований у коробку масою 250 г, усередині ще 150 г паперу.",
+            "Відправлення №1: 1,45 кг, коробка завдовжки 50 см.",
+            "Відправлення №2: 1,6 кг, коробка завдовжки 30 см.",
+            "Відправлення №3: 1,6 кг, коробка завдовжки 50 см.",
+            "Відправлення №4: 1 кг 750 г, коробка завдовжки 60 см."
           ],
-          "question": "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0433\u0440\u0430\u043c\u0456\u0432 \u043c\u0430\u0454 \u0432\u0430\u0436\u0438\u0442\u0438 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u043f\u043e\u0441\u0438\u043b\u043a\u0430 \u0440\u0430\u0437\u043e\u043c \u0456\u0437 \u043f\u0430\u043a\u0443\u0432\u0430\u043d\u043d\u044f\u043c?",
-          "kind": "number",
-          "options": [],
-          "answer": "1250",
-          "explanation": "1 \u043a\u0433 = 1000 \u0433. 1000 + 150 + 100 = 1250 \u0433.",
-          "outcome": "\u041d\u0456\u043a\u0430 \u0432\u0456\u0434\u043a\u0440\u0438\u0432\u0430\u0454 \u043f\u043e\u0441\u0438\u043b\u043a\u0443 \u043c\u0430\u0441\u043e\u044e 1250 \u0433 \u0456 \u0437\u0432\u0456\u0440\u044f\u0454 \u0445\u0432\u0456\u0441\u0442 \u0456\u0437 \u043a\u0440\u0435\u0441\u043b\u0435\u043d\u043d\u044f\u043c. \u0426\u0435 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0434\u0435\u0442\u0430\u043b\u044c! \u0422\u0435\u043f\u0435\u0440 \u0441\u043f\u043b\u0430\u043d\u0443\u0454\u043c\u043e \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0443.",
-          "next": "\u041f\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0442\u0438 \u0447\u0430\u0441 \u0440\u0435\u0439\u0441\u0443",
+          "question": "Яке відправлення відкрити?",
+          "kind": "choice",
+          "options": [
+            "Відправлення №1",
+            "Відправлення №2",
+            "Відправлення №3",
+            "Відправлення №4"
+          ],
+          "answer": 2,
+          "feedback": [
+            "1,45 кг це 1450 г: хвіст і коробка без паперу. Але папір теж лежить усередині.",
+            "Маса збігається, але хвіст завдовжки 45 см не поміститься в коробку завдовжки 30 см.",
+            "",
+            "1 кг 750 г важче за потрібну масу на 150 г."
+          ],
+          "explanation": "1200 + 250 + 150 = 1600 г, тобто 1,6 кг. Стільки важать №2 і №3, але хвіст завдовжки 45 см поміститься лише в коробку завдовжки 50 см. Ніка відкриває №3: усередині хвіст півня.",
+          "outcome": "Хвіст знайдено у відправленні №3. Тепер його треба відправити на острів «Ластівкою» і зрозуміти, скільки часу залишиться.",
+          "next": "До причалу «Ластівки»",
           "hints": [
-            "\u041f\u0435\u0440\u0435\u0432\u0435\u0434\u0438 \u043a\u0456\u043b\u043e\u0433\u0440\u0430\u043c \u0443 \u0433\u0440\u0430\u043c\u0438.",
-            "\u0414\u043e\u0434\u0430\u0439 \u043c\u0430\u0441\u0443 \u0434\u0435\u0442\u0430\u043b\u0456, \u043a\u043e\u0440\u043e\u0431\u043a\u0438 \u0439 \u043f\u0430\u043f\u0435\u0440\u0443.",
-            "1000 + 150 + 100."
+            "Переведи все в грами і додай хвіст, коробку і папір.",
+            "Однакову масу можуть мати дві коробки. Тоді дивися на розмір.",
+            "Хвіст завдовжки 45 см не зігнеш: коробка має бути довшою."
           ],
           "scene": 0
         },
         {
-          "title": "\u041a\u043e\u043b\u0438 \u043f\u0440\u0438\u0431\u0443\u0434\u0435 \u043f\u043e\u0432\u0456\u0442\u0440\u044f\u043d\u0430 \u043f\u043e\u0448\u0442\u0430?",
-          "situation": "\u041d\u0456\u043a\u0430 \u043c\u043e\u0436\u0435 \u0432\u0456\u0434\u043f\u0440\u0430\u0432\u0438\u0442\u0438 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u043d\u0430 \u00ab\u041b\u0430\u0441\u0442\u0456\u0432\u0446\u0456\u00bb. \u041f\u0435\u0440\u0435\u0432\u0456\u0440\u043c\u043e \u0457\u0457 \u0440\u043e\u0437\u043a\u043b\u0430\u0434 \u0434\u043e \u043e\u0441\u0442\u0440\u043e\u0432\u0430.",
+          "title": "Коли коробка буде на острові?",
+          "situation": "На причалі Ніка здає коробку на «Ластівку». Капітан показує маршрут: до острова з однією зупинкою на Вітряній вежі. Порахуй, коли коробку видадуть кур’єрові.",
           "evidence": [
-            "\u0412\u0438\u043b\u0456\u0442 \u043e 10:25.",
-            "\u041f\u0435\u0440\u0448\u0438\u0439 \u043f\u0435\u0440\u0435\u043b\u0456\u0442 \u0442\u0440\u0438\u0432\u0430\u0454 35 \u0445\u0432\u0438\u043b\u0438\u043d, \u0437\u0443\u043f\u0438\u043d\u043a\u0430 10 \u0445\u0432\u0438\u043b\u0438\u043d, \u0434\u0440\u0443\u0433\u0438\u0439 \u043f\u0435\u0440\u0435\u043b\u0456\u0442 25 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u041f\u0456\u0441\u043b\u044f \u043f\u0440\u0438\u0431\u0443\u0442\u0442\u044f \u0440\u043e\u0437\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043d\u0430 \u043e\u0441\u0442\u0440\u043e\u0432\u0456 \u0437\u0430\u0439\u043c\u0430\u0454 \u0449\u0435 10 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u0424\u043b\u044e\u0433\u0435\u0440 \u043c\u0430\u0454 \u0431\u0443\u0442\u0438 \u0433\u043e\u0442\u043e\u0432\u0438\u0439 \u0434\u043e 12:10."
+            "«Ластівка» вилітає о 10:25 і летить зі швидкістю 90 км/год.",
+            "До острова 60 км. Дорогою одна зупинка на Вітряній вежі, 10 хвилин.",
+            "Після прибуття розвантаження займає 10 хвилин, потім коробку видають кур’єрові."
           ],
-          "question": "\u041e \u043a\u043e\u0442\u0440\u0456\u0439 \u00ab\u041b\u0430\u0441\u0442\u0456\u0432\u043a\u0430\u00bb \u043f\u0440\u0438\u0431\u0443\u0434\u0435 \u043d\u0430 \u043e\u0441\u0442\u0440\u0456\u0432, \u0449\u0435 \u0434\u043e \u0440\u043e\u0437\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f? \u0412\u0432\u0435\u0434\u0438 \u0413\u0413:\u0425\u0425.",
+          "question": "О котрій коробку видадуть кур’єрові на острові? Введи час ГГ:ХХ.",
           "kind": "time",
           "options": [],
-          "answer": "11:35",
-          "explanation": "35 + 10 + 25 = 70 \u0445\u0432\u0438\u043b\u0438\u043d. 10:25 + 70 \u0445\u0432\u0438\u043b\u0438\u043d = 11:35.",
-          "outcome": "\u041f\u0456\u0441\u043b\u044f 10 \u0445\u0432\u0438\u043b\u0438\u043d \u0440\u043e\u0437\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u043c\u043e\u0436\u043d\u0430 \u0437\u0430\u0431\u0440\u0430\u0442\u0438 \u043e\u0431 11:45. \u041f\u043e\u0442\u0440\u0456\u0431\u0435\u043d \u043a\u0443\u0440\u2019\u0454\u0440, \u044f\u043a\u0438\u0439 \u0437\u0430\u0431\u0435\u0440\u0435 \u0457\u0457 \u043d\u0435 \u0440\u0430\u043d\u0456\u0448\u0435 \u0446\u044c\u043e\u0433\u043e \u0447\u0430\u0441\u0443 \u0439 \u0443\u0441\u0442\u0438\u0433\u043d\u0435 \u0434\u043e \u043c\u0430\u0439\u0441\u0442\u0435\u0440\u043d\u0456.",
-          "next": "\u0412\u0438\u0431\u0440\u0430\u0442\u0438 \u043a\u0443\u0440\u2019\u0454\u0440\u0430",
+          "answer": "11:25",
+          "feedback": [],
+          "explanation": "60 км зі швидкістю 90 км/год це 2/3 години, тобто 40 хвилин. Зупинка 10 хвилин і розвантаження 10 хвилин: разом 60 хвилин. 10:25 + 60 хвилин = 11:25.",
+          "outcome": "Коробку видадуть об 11:25. До свята о 12:10 залишається 45 хвилин, і їх треба розділити між дорогою кур’єра і роботою майстра.",
+          "next": "Вибрати кур’єра",
           "hints": [
-            "\u0421\u043f\u043e\u0447\u0430\u0442\u043a\u0443 \u0434\u043e\u0434\u0430\u0439 \u043f\u0435\u0440\u0435\u043b\u044c\u043e\u0442\u0438 \u0439 \u0437\u0443\u043f\u0438\u043d\u043a\u0443.",
-            "\u0414\u043e \u043f\u0440\u0438\u0431\u0443\u0442\u0442\u044f \u043c\u0438\u043d\u0435 70 \u0445\u0432\u0438\u043b\u0438\u043d. \u0420\u043e\u0437\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f \u043f\u043e\u043a\u0438 \u043d\u0435 \u0434\u043e\u0434\u0430\u0432\u0430\u0439.",
-            "\u0414\u043e\u0434\u0430\u0439 \u0434\u043e 10:25 \u0433\u043e\u0434\u0438\u043d\u0443 \u0439 \u0449\u0435 10 \u0445\u0432\u0438\u043b\u0438\u043d."
+            "Спершу дізнайся, скільки хвилин займе сам політ: за годину 90 км, отже яку частину години займуть 60 км?",
+            "60 із 90 це дві третини. Переведи дві третини години у хвилини.",
+            "До польоту додай зупинку і розвантаження, а потім усе до 10:25."
           ],
           "scene": 1
         },
         {
-          "title": "\u0425\u0442\u043e \u0432\u0441\u0442\u0438\u0433\u043d\u0435 \u0437 \u043a\u043e\u0440\u043e\u0431\u043a\u043e\u044e?",
-          "situation": "\u041a\u0443\u0440\u2019\u0454\u0440\u0438 \u0440\u043e\u0437\u0432\u043e\u0437\u044f\u0442\u044c \u0456 \u0456\u043d\u0448\u0456 \u043f\u043e\u0441\u0438\u043b\u043a\u0438, \u0442\u043e\u043c\u0443 \u043a\u043e\u0436\u0435\u043d \u043c\u0430\u0454 \u0441\u0432\u0456\u0439 \u0440\u0435\u0439\u0441. \u041d\u0456\u043a\u0430 \u043f\u043e\u043a\u0430\u0437\u0443\u0454 \u0440\u043e\u0437\u043a\u043b\u0430\u0434: \u0447\u0430\u0441 \u0432\u0438\u0457\u0437\u0434\u0443 \u0437\u043c\u0456\u043d\u0438\u0442\u0438 \u043d\u0435 \u043c\u043e\u0436\u043d\u0430.",
+          "title": "Хто довезе хвіст?",
+          "situation": "На площі острова чотири кур’єри, у кожного свій рейс за розкладом: час виїзду змінити не можна. Ніка записала для кожного, коли він виїжджає, скільки їхати і що він бере.",
           "evidence": [
-            "\u041a\u043e\u0440\u043e\u0431\u043a\u0430 \u0433\u043e\u0442\u043e\u0432\u0430 \u0434\u043e \u0432\u0438\u0434\u0430\u0447\u0456 \u043e\u0431 11:45.",
-            "\u0424\u043b\u044e\u0433\u0435\u0440 \u043c\u0430\u0454 \u0431\u0443\u0442\u0438 \u0433\u043e\u0442\u043e\u0432\u0438\u0439 \u0434\u043e 12:10.",
-            "\u041c\u0430\u0439\u0441\u0442\u0440\u043e\u0432\u0456 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0456 3 \u0445\u0432\u0438\u043b\u0438\u043d\u0438 \u043d\u0430 \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0445\u0432\u043e\u0441\u0442\u0430 \u0439 1 \u0445\u0432\u0438\u043b\u0438\u043d\u0430 \u043d\u0430 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0443.",
-            "\u041a\u0443\u0440\u2019\u0454\u0440 \u0410: \u0432\u0438\u0457\u0437\u0434 \u043e\u0431 11:40, \u0434\u043e\u0440\u043e\u0433\u0430 20 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u041a\u0443\u0440\u2019\u0454\u0440 \u0411: \u0432\u0438\u0457\u0437\u0434 \u043e\u0431 11:50, \u0434\u043e\u0440\u043e\u0433\u0430 15 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u041a\u0443\u0440\u2019\u0454\u0440 \u0412: \u0432\u0438\u0457\u0437\u0434 \u043e 12:00, \u0434\u043e\u0440\u043e\u0433\u0430 20 \u0445\u0432\u0438\u043b\u0438\u043d."
+            "Коробку видають об 11:25. Свято о 12:10. Майстрові потрібно 12 хвилин: установити хвіст і перевірити флюгер.",
+            "Кур’єр А: виїжджає об 11:20, їде 3 км зі швидкістю 12 км/год.",
+            "Кур’єр Б: виїжджає об 11:30, їде 4 км зі швидкістю 12 км/год.",
+            "Кур’єр В: виїжджає об 11:35, іде з візком 3 км зі швидкістю 6 км/год.",
+            "Кур’єр Г: виїжджає об 11:25, їде 5 км зі швидкістю 10 км/год, але бере лише коробки завдовжки до 40 см."
           ],
-          "question": "\u0425\u0442\u043e \u0437\u0430\u0431\u0435\u0440\u0435 \u0433\u043e\u0442\u043e\u0432\u0443 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0439 \u0437\u0430\u043b\u0438\u0448\u0438\u0442\u044c \u043c\u0430\u0439\u0441\u0442\u0440\u043e\u0432\u0456 \u0447\u0430\u0441 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u0438 \u0440\u043e\u0431\u043e\u0442\u0443 \u0434\u043e 12:10?",
+          "question": "Хто довезе хвіст так, щоб майстер устиг до 12:10?",
           "kind": "choice",
           "options": [
-            "\u041a\u0443\u0440\u2019\u0454\u0440 \u0410",
-            "\u041a\u0443\u0440\u2019\u0454\u0440 \u0411",
-            "\u041a\u0443\u0440\u2019\u0454\u0440 \u0412"
+            "Кур’єр А",
+            "Кур’єр Б",
+            "Кур’єр В",
+            "Кур’єр Г"
           ],
           "answer": 1,
-          "explanation": "\u0410 \u0457\u0434\u0435 \u0449\u0435 \u0434\u043e \u0432\u0438\u0434\u0430\u0447\u0456 \u043a\u043e\u0440\u043e\u0431\u043a\u0438. \u0411 \u043f\u0440\u0438\u0431\u0443\u0432\u0430\u0454 \u043e 12:05, \u0442\u043e\u0436 \u0440\u043e\u0431\u043e\u0442\u0430 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c\u0441\u044f \u043e 12:09. \u0412 \u043f\u0440\u0438\u0431\u0443\u0432\u0430\u0454 \u043e 12:20, \u0443\u0436\u0435 \u043f\u0456\u0441\u043b\u044f \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e\u0433\u043e \u0447\u0430\u0441\u0443.",
-          "outcome": "\u041d\u0456\u043a\u0430 \u0434\u043e\u043c\u043e\u0432\u043b\u044f\u0454\u0442\u044c\u0441\u044f \u0437 \u043a\u0443\u0440\u2019\u0454\u0440\u043e\u043c \u0411. \u0412\u0456\u043d \u0437\u0430\u0431\u0435\u0440\u0435 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u043e\u0431 11:50 \u0456 \u043f\u0440\u0438\u0432\u0435\u0437\u0435 \u043e 12:05.",
-          "next": "\u0417\u0443\u0441\u0442\u0440\u0456\u0442\u0438 \u043a\u043e\u0440\u043e\u0431\u043a\u0443 \u0432 \u043c\u0430\u0439\u0441\u0442\u0435\u0440\u043d\u0456",
-          "hints": [
-            "\u041f\u0435\u0440\u0435\u0432\u0456\u0440 \u0456 \u0447\u0430\u0441 \u0432\u0438\u0457\u0437\u0434\u0443, \u0456 \u0447\u0430\u0441 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u044f \u0440\u043e\u0431\u043e\u0442\u0438.",
-            "\u041c\u0430\u0439\u0441\u0442\u0440\u043e\u0432\u0456 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0432\u0441\u044c\u043e\u0433\u043e 4 \u0445\u0432\u0438\u043b\u0438\u043d\u0438.",
-            "\u0411 \u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043e 12:05. \u0427\u0435\u0440\u0435\u0437 \u0447\u043e\u0442\u0438\u0440\u0438 \u0445\u0432\u0438\u043b\u0438\u043d\u0438 \u0431\u0443\u0434\u0435 12:09."
+          "feedback": [
+            "Кур’єр А виїжджає об 11:20, а коробку видадуть лише об 11:25.",
+            "",
+            "3 км при 6 км/год це 30 хвилин: кур’єр В приїде о 12:05, і майстрові не вистачить 12 хвилин.",
+            "За часом кур’єр Г встигає, але наша коробка завдовжки 50 см, а він бере лише до 40 см."
           ],
-          "scene": 2
-        },
-        {
-          "title": "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0447\u0430\u0441\u0443 \u0437\u0430\u043b\u0438\u0448\u0438\u0442\u044c\u0441\u044f?",
-          "situation": "\u041a\u0443\u0440\u2019\u0454\u0440 \u0411 \u0434\u043e\u0441\u0442\u0430\u0432\u0438\u0432 \u0445\u0432\u0456\u0441\u0442 \u0442\u043e\u0447\u043d\u043e \u043e 12:05. \u041c\u0430\u0439\u0441\u0442\u0435\u0440 \u043e\u0434\u0440\u0430\u0437\u0443 \u043f\u043e\u0447\u0438\u043d\u0430\u0454 \u043f\u0440\u0430\u0446\u044e\u0432\u0430\u0442\u0438.",
-          "evidence": [
-            "\u041f\u043e\u0447\u0430\u0442\u043e\u043a \u0440\u043e\u0431\u043e\u0442\u0438 \u043e 12:05.",
-            "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044f \u0442\u0440\u0438\u0432\u0430\u0454 3 \u0445\u0432\u0438\u043b\u0438\u043d\u0438, \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430 \u0449\u0435 1 \u0445\u0432\u0438\u043b\u0438\u043d\u0443.",
-            "\u0421\u0432\u044f\u0442\u043e \u043f\u043e\u0447\u0438\u043d\u0430\u0454\u0442\u044c\u0441\u044f \u043e 12:10. \u041d\u0430 \u0446\u0435\u0439 \u0447\u0430\u0441 \u0444\u043b\u044e\u0433\u0435\u0440 \u043c\u0430\u0454 \u0431\u0443\u0442\u0438 \u0433\u043e\u0442\u043e\u0432\u0438\u0439."
-          ],
-          "question": "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0445\u0432\u0438\u043b\u0438\u043d \u0437\u0430\u043b\u0438\u0448\u0438\u0442\u044c\u0441\u044f \u043f\u0456\u0441\u043b\u044f \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0438 \u0434\u043e \u043f\u043e\u0447\u0430\u0442\u043a\u0443 \u0441\u0432\u044f\u0442\u0430 \u043e 12:10?",
-          "kind": "number",
-          "options": [],
-          "answer": "1",
-          "explanation": "\u0420\u043e\u0431\u043e\u0442\u0430 \u0437\u0430\u0439\u043c\u0430\u0454 3 + 1 = 4 \u0445\u0432\u0438\u043b\u0438\u043d\u0438 \u0439 \u0437\u0430\u0432\u0435\u0440\u0448\u0438\u0442\u044c\u0441\u044f \u043e 12:09. \u0414\u043e 12:10 \u0437\u0430\u043b\u0438\u0448\u0430\u0454\u0442\u044c\u0441\u044f 1 \u0445\u0432\u0438\u043b\u0438\u043d\u0430.",
-          "outcome": "\u041f\u043b\u0430\u043d \u043f\u0456\u0434\u0445\u043e\u0434\u0438\u0442\u044c. \u041c\u0430\u0439\u0441\u0442\u0435\u0440 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u044e\u0454 \u0445\u0432\u0456\u0441\u0442, \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454 \u043e\u0431\u0435\u0440\u0442\u0430\u043d\u043d\u044f \u0439 \u0433\u043e\u0442\u0443\u0454 \u0444\u043b\u044e\u0433\u0435\u0440 \u0434\u043e \u0441\u0432\u044f\u0442\u0430.",
-          "next": "\u041f\u0456\u0434\u043d\u044f\u0442\u0438 \u0444\u043b\u044e\u0433\u0435\u0440",
+          "explanation": "Майстрові потрібно 12 хвилин, отже хвіст має бути в нього не пізніше ніж об 11:58. Б: 4 км при 12 км/год це 20 хвилин, приїде об 11:50. А їде до видачі, В приїде о 12:05, Г не бере таких коробок.",
+          "outcome": "Ніка домовляється з кур’єром Б: він забирає коробку об 11:30 і привозить майстрові об 11:50. У майстра 20 хвилин на роботу, яка займає 12.",
+          "next": "Зібрати флюгер",
           "hints": [
-            "\u0421\u043f\u043e\u0447\u0430\u0442\u043a\u0443 \u0437\u043d\u0430\u0439\u0434\u0438 \u0447\u0430\u0441 \u0437\u0430\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u044f \u0432\u0441\u0456\u0454\u0457 \u0440\u043e\u0431\u043e\u0442\u0438.",
-            "12:05 + 4 \u0445\u0432\u0438\u043b\u0438\u043d\u0438 = 12:09.",
-            "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0445\u0432\u0438\u043b\u0438\u043d \u043c\u0456\u0436 12:09 \u0456 12:10?"
+            "Спершу порахуй, до котрої години хвіст має бути в майстра.",
+            "Час дороги: відстань поділи на швидкість. При 12 км/год один кілометр займає 5 хвилин.",
+            "Перевір у кожного три речі: час виїзду, час прибуття і чи підходить коробка."
           ],
           "scene": 3
+        },
+        {
+          "title": "Куди подіти вітрило?",
+          "situation": "У трюмі «Ластівки» майстер установлює хвіст: о 12:02 флюгер готовий, до 12:10 півень на вежі. Залишилася друга половина помилки Ніки: коробка з вітрилом, на яку чекає човняр Тім на Малому острові.",
+          "evidence": [
+            "Кур’єр Б привезе коробку з вітрилом назад на площу до 12:15.",
+            "Тім чекає на вітрило на своєму причалі на Малому острові до 13:30.",
+            "«Серпокрилець» літає на Малий острів кожні 40 хвилин, перший рейс о 12:00. Політ триває 25 хвилин.",
+            "Коробку вантажать лише на рейс, який вилітає після того, як її привезли на площу."
+          ],
+          "question": "О котрій найраніше вітрило буде в Тіма? Введи час ГГ:ХХ.",
+          "kind": "time",
+          "options": [],
+          "answer": "13:05",
+          "feedback": [],
+          "explanation": "Рейси «Серпокрильця»: 12:00, 12:40, 13:20. Коробка на площі лише о 12:15, отже перший підхожий рейс о 12:40. 12:40 + 25 хвилин = 13:05, Тім ще чекає.",
+          "outcome": "Вітрило відлітає о 12:40 і буде в Тіма о 13:05, за 25 хвилин до того, як він перестане чекати. Обидві коробки знайшли своїх господарів.",
+          "next": "Підняти флюгер",
+          "hints": [
+            "Випиши рейси «Серпокрильця»: перший о 12:00, далі кожні 40 хвилин.",
+            "Коробка потрапить лише на рейс, який вилітає після 12:15.",
+            "Додай тривалість польоту до часу вильоту."
+          ],
+          "scene": 2
         }
       ]
     }

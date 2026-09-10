@@ -14,18 +14,26 @@ await test('reviewed cases preserve puzzles across languages and contain every p
    assert.equal(content.steps.length,4);
    content.steps.forEach((step:RevisedStep,index:number)=>{
     const original=story.locales.ru.steps[index];
-    for(const field of ['title','situation','question','explanation','outcome','next'] as const)assert.ok(step[field]?.trim(),`${file}/${lang}/${index}/${field}`);
+    const where=`${file}/${lang}/${index}`;
+    for(const field of ['title','situation','question','explanation','outcome','next'] as const)assert.ok(step[field]?.trim(),`${where}/${field}`);
     assert.ok(step.evidence.length>0 && step.evidence.every((fact:string)=>fact.trim()));
     assert.equal(step.hints.length,3);assert.ok(step.hints.every((hint:string)=>hint.trim()));
-    for(const field of ['kind','answer','scene'] as const)assert.deepEqual(step[field],original[field],`${file}/${lang}/${index}/${field}`);
+    for(const field of ['kind','answer','scene'] as const)assert.deepEqual(step[field],original[field],`${where}/${field}`);
+    assert.equal(step.options.length,original.options.length,`${where}/options`);
     assert.ok(Number.isInteger(step.scene)&&step.scene>=0&&step.scene<=3);
-    if(step.kind==='choice'){assert.ok(step.options.length>=2);assert.ok(typeof step.answer==='number'&&step.answer>=0&&step.answer<step.options.length);}
-    if(step.kind==='order'){assert.ok(Array.isArray(step.answer));assert.equal(step.answer.length,step.options.length);assert.deepEqual([...step.answer].sort((a,b)=>a-b),step.options.map((_:string,i:number)=>i));}
     const response=Array.isArray(step.answer)?step.answer:String(step.answer);
-    assert.ok(validateResponse(step.kind,step.answer,response));
+    assert.ok(validateResponse(step.kind,step.answer,response),`${where}: answer must validate`);
     assert.equal(validateResponse(step.kind,step.answer,''),false);
-    if(step.kind==='choice')step.options.forEach((_:string,i:number)=>assert.equal(validateResponse(step.kind,step.answer,String(i)),i===step.answer));
-    assert.doesNotMatch(JSON.stringify(step),/[\u2013\u2014]/);
+    if(step.kind==='choice'){
+     assert.ok(step.options.length>=4,`${where}: choice needs at least four options`);
+     assert.ok(typeof step.answer==='number'&&step.answer>=0&&step.answer<step.options.length);
+     assert.equal(step.feedback?.length,step.options.length,`${where}: feedback per option`);
+     step.options.forEach((_:string,i:number)=>{assert.equal(validateResponse('choice',step.answer,String(i)),i===step.answer);assert.equal(Boolean(step.feedback?.[i]?.trim()),i!==step.answer,`${where}/feedback/${i}`);});
+    }
+    if(step.kind==='multi'){assert.ok(Array.isArray(step.answer)&&step.answer.length>0&&step.answer.length<step.options.length);assert.ok((step.answer as number[]).every(i=>Number.isInteger(i)&&i>=0&&i<step.options.length));}
+    if(step.kind==='order'){assert.ok(Array.isArray(step.answer));assert.equal(step.answer.length,step.options.length);assert.deepEqual([...step.answer as number[]].sort((a,b)=>a-b),step.options.map((_:string,i:number)=>i));}
+    if(step.kind==='time'||step.kind==='number'){for(const hint of step.hints)assert.ok(!hint.includes(String(step.answer)),`${where}: hint reveals the answer`);}
+    assert.doesNotMatch(JSON.stringify(step),/[–—]/);
    });
   }
   const paths=story.id==='owl'?['scene.png','backgrounds/courtyard.webp','backgrounds/library.webp','backgrounds/theatre.webp']:story.id==='forest'?['depot','clearing','workshop','pavilions'].map(id=>`backgrounds/forest-${id}.jpg`):[0,1,2,3].map(i=>`backgrounds/${story.id}-${i}.jpg`);

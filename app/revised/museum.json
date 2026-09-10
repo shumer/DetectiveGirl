@@ -3,422 +3,498 @@
   "number": "004",
   "locales": {
     "ru": {
-      "title": "\u041c\u0443\u0437\u0435\u0439 \u043f\u0435\u0440\u0435\u043f\u0443\u0442\u0430\u043d\u043d\u044b\u0445 \u0442\u0435\u043d\u0435\u0439",
-      "intro": "\u0412 \u043c\u0443\u0437\u0435\u0435 \u0442\u0435\u043d\u0435\u0439 \u043b\u0438\u0441\u0430 \u0432\u0434\u0440\u0443\u0433 \u0441\u0442\u0430\u043b\u0430 \u0432\u0435\u043b\u0438\u043a\u0430\u043d\u043e\u043c. \u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435\u043b\u044c \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u0437\u043d\u0430\u043a\u043e\u043c\u0443\u044e \u0444\u0438\u0433\u0443\u0440\u043a\u0443: \u0435\u0451 \u043d\u0435 \u043c\u0435\u043d\u044f\u043b\u0438. \u041f\u043e\u0441\u043b\u0435 \u0443\u0431\u043e\u0440\u043a\u0438 \u043b\u0430\u043c\u043f\u0430 \u0441\u0442\u043e\u0438\u0442 \u043d\u0430 \u0434\u0440\u0443\u0433\u043e\u0439 \u043e\u0442\u043c\u0435\u0442\u043a\u0435, \u0430 \u0443\u0437\u043a\u0430\u044f \u0448\u0438\u0440\u043c\u0430 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0435\u0442 \u0447\u0430\u0441\u0442\u044c \u0441\u0446\u0435\u043d\u044b. \u041f\u043e\u043c\u043e\u0433\u0438 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0432\u0447\u0435\u0440\u0430\u0448\u043d\u0438\u0439 \u043f\u043e\u043a\u0430\u0437 \u043f\u043e \u0438\u0437\u043c\u0435\u0440\u0435\u043d\u0438\u044f\u043c \u0438 \u043f\u043b\u0430\u043d\u0443.",
-      "ending": "\u0418\u0441\u043f\u044b\u0442\u0430\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u0442\u0430\u0431\u043b\u0438\u0446\u0430 \u043f\u043e\u043c\u043e\u0433\u043b\u0430 \u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0442\u0435\u043d\u044c \u0432\u044b\u0441\u043e\u0442\u043e\u0439 60 \u0441\u043c. \u0428\u0438\u0440\u043c\u0430 170 \u0441\u043c \u0432\u043c\u0435\u0441\u0442\u0438\u043b\u0430 \u0441\u0446\u0435\u043d\u0443 \u0441 \u0431\u043e\u043a\u043e\u0432\u044b\u043c\u0438 \u043f\u043e\u043b\u044f\u043c\u0438, \u0430 \u0440\u0430\u0432\u043d\u044b\u0435 \u043f\u0440\u043e\u043c\u0435\u0436\u0443\u0442\u043a\u0438 \u043f\u043e 30 \u0441\u043c \u043f\u043e\u043c\u043e\u0433\u043b\u0438 \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0435\u0451 \u043f\u043e \u0446\u0435\u043d\u0442\u0440\u0443. \u0424\u0438\u0433\u0443\u0440\u043a\u0430 \u0431\u044b\u043b\u0430 \u043f\u0440\u0435\u0436\u043d\u0435\u0439: \u0438\u0437\u043c\u0435\u043d\u0438\u043b\u0438\u0441\u044c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043f\u043e\u043a\u0430\u0437\u0430.",
-      "question": "\u041a\u0430\u043a\u0430\u044f \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043f\u043e\u043a\u0430\u0437\u0430\u043b\u0430, \u0447\u0442\u043e \u043c\u0435\u043d\u044f\u0442\u044c \u0444\u0438\u0433\u0443\u0440\u043a\u0443 \u043d\u0435 \u043d\u0443\u0436\u043d\u043e?",
+      "title": "Музей перепутанных теней",
+      "intro": "В музее теней сорвался дневной показ «Лиса и луна»: тень лисы на экране стала втрое выше, а слайд с луной пропал из коробки. Смотритель уверяет, что фигурки не трогали. Утром в зале были трое: уборщица Роза, механик Тимур, который чинил проектор, и школьная экскурсия с экскурсоводом Олей. Следующий показ в 13:00. Нужно вернуть лису в прежний размер, найти луну и понять, кто и что здесь натворил.",
+      "ending": "Лису сделал великаном мальчик с экскурсии: в 10:48 он передвинул лампу на отметку 30 см, пока Оля отвечала на вопросы. Луну никто не крал: Тимур забрал её на чистку по заявке и не оставил записки. Датчик рельса и порядок событий помогли отделить настоящую причину от подозрений против механика, который честно всё записал. Луну почистили первой, и показ начался в 13:00.",
+      "question": "Тимур ставил лампу на 30 см и забрал луну. Почему он всё равно не виноват в сорванном показе?",
       "steps": [
         {
-          "title": "\u041d\u0430\u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0432\u044b\u0440\u043e\u0441\u043b\u0430 \u0442\u0435\u043d\u044c?",
-          "situation": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435\u043b\u044c \u0434\u043e\u0441\u0442\u0430\u043b \u0432\u0447\u0435\u0440\u0430\u0448\u043d\u044e\u044e \u0444\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u044e \u0441 \u043b\u0438\u043d\u0435\u0439\u043a\u043e\u0439 \u0438 \u0438\u0437\u043c\u0435\u0440\u0438\u043b \u0441\u0435\u0433\u043e\u0434\u043d\u044f\u0448\u043d\u044e\u044e \u0442\u0435\u043d\u044c.",
+          "title": "Насколько сдвинули лампу?",
+          "situation": "За столом проектора смотритель показывает вчерашнюю фотографию с линейкой и сегодняшнюю тень. Лампа ездит по рельсу с отметками, а тень растёт по правилу, которое смотритель проверил на этом проекторе много раз.",
           "evidence": [
-            "\u0412\u0447\u0435\u0440\u0430 \u0432\u044b\u0441\u043e\u0442\u0430 \u0442\u0435\u043d\u0438 \u0431\u044b\u043b\u0430 60 \u0441\u043c.",
-            "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u0432\u044b\u0441\u043e\u0442\u0430 \u0442\u0435\u043d\u0438 1 \u043c 80 \u0441\u043c.",
-            "\u0424\u0438\u0433\u0443\u0440\u043a\u0430 \u043b\u0438\u0441\u044b \u043d\u0435 \u043c\u0435\u043d\u044f\u043b\u0430\u0441\u044c."
+            "Правило смотрителя: если экран и фигурка стоят на месте, то во сколько раз лампа ближе к фигурке, во столько же раз выше тень.",
+            "Вчера лампа стояла в 90 см от фигурки, тень лисы была 60 см.",
+            "Сегодня тень 1 м 80 см. Фигурка и экран не двигались."
           ],
-          "question": "\u0412\u043e \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0440\u0430\u0437 \u0441\u0435\u0433\u043e\u0434\u043d\u044f\u0448\u043d\u044f\u044f \u0442\u0435\u043d\u044c \u0432\u044b\u0448\u0435 \u0432\u0447\u0435\u0440\u0430\u0448\u043d\u0435\u0439? \u0412\u0432\u0435\u0434\u0438 \u0447\u0438\u0441\u043b\u043e.",
+          "question": "На каком расстоянии от фигурки стоит лампа сейчас? Введи число сантиметров.",
           "kind": "number",
           "options": [],
-          "answer": "3",
-          "explanation": "1 \u043c 80 \u0441\u043c = 180 \u0441\u043c. 180 : 60 = 3.",
-          "outcome": "\u0422\u0435\u043d\u044c \u0441\u0442\u0430\u043b\u0430 \u0432\u0442\u0440\u043e\u0435 \u0432\u044b\u0448\u0435 \u043f\u0440\u0438 \u0442\u043e\u0439 \u0436\u0435 \u0444\u0438\u0433\u0443\u0440\u043a\u0435. \u041f\u0440\u043e\u0432\u0435\u0440\u0438\u043c, \u043a\u0430\u043a\u043e\u0435 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u0435 \u043b\u0430\u043c\u043f\u044b \u0432\u0435\u0440\u043d\u0451\u0442 \u043f\u0440\u0435\u0436\u043d\u044e\u044e \u0432\u044b\u0441\u043e\u0442\u0443.",
-          "next": "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0442\u0430\u0431\u043b\u0438\u0446\u0443 \u0438\u0441\u043f\u044b\u0442\u0430\u043d\u0438\u0439",
+          "answer": "30",
+          "feedback": [],
+          "explanation": "180 : 60 = 3, тень выросла втрое. Значит, лампа стала втрое ближе: 90 : 3 = 30 см.",
+          "outcome": "Лампу передвинули с 90 см на отметку 30 см. Такая отметка есть на рельсе, её используют для другого показа. Это не случайный толчок: лампу кто-то поставил. Идём в зал смотреть журнал и датчик рельса.",
+          "next": "Проверить журнал зала",
           "hints": [
-            "\u0412\u044b\u0440\u0430\u0437\u0438 \u043e\u0431\u0435 \u0432\u044b\u0441\u043e\u0442\u044b \u0432 \u0441\u0430\u043d\u0442\u0438\u043c\u0435\u0442\u0440\u0430\u0445.",
-            "\u0421\u0440\u0430\u0432\u043d\u0438 180 \u0441\u043c \u0441 60 \u0441\u043c \u0434\u0435\u043b\u0435\u043d\u0438\u0435\u043c.",
-            "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u0440\u0430\u0437 60 \u043f\u043e\u043c\u0435\u0449\u0430\u0435\u0442\u0441\u044f \u0432 180?"
-          ],
-          "scene": 0
-        },
-        {
-          "title": "\u041d\u0430 \u043a\u0430\u043a\u0443\u044e \u043e\u0442\u043c\u0435\u0442\u043a\u0443 \u0432\u0435\u0440\u043d\u0443\u0442\u044c \u043b\u0430\u043c\u043f\u0443?",
-          "situation": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435\u043b\u044c \u0443\u0436\u0435 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u043b \u0442\u0440\u0438 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u043b\u0430\u043c\u043f\u044b \u0438 \u0437\u0430\u043f\u0438\u0441\u0430\u043b \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u044b. \u0412\u043e \u0432\u0441\u0435\u0445 \u043e\u043f\u044b\u0442\u0430\u0445 \u0444\u0438\u0433\u0443\u0440\u043a\u0430 \u0438 \u044d\u043a\u0440\u0430\u043d \u0441\u0442\u043e\u044f\u043b\u0438 \u043d\u0430 \u0441\u0432\u043e\u0438\u0445 \u043c\u0435\u0441\u0442\u0430\u0445.",
-          "evidence": [
-            "\u041e\u0442\u043c\u0435\u0442\u043a\u0430 \u0410: \u0442\u0435\u043d\u044c \u0432\u044b\u0441\u043e\u0442\u043e\u0439 180 \u0441\u043c.",
-            "\u041e\u0442\u043c\u0435\u0442\u043a\u0430 \u0411: \u0442\u0435\u043d\u044c \u0432\u044b\u0441\u043e\u0442\u043e\u0439 120 \u0441\u043c.",
-            "\u041e\u0442\u043c\u0435\u0442\u043a\u0430 \u0412: \u0442\u0435\u043d\u044c \u0432\u044b\u0441\u043e\u0442\u043e\u0439 60 \u0441\u043c.",
-            "\u0414\u043b\u044f \u043f\u043e\u043a\u0430\u0437\u0430 \u043d\u0443\u0436\u043d\u0430 \u0432\u044b\u0441\u043e\u0442\u0430 60 \u0441\u043c."
-          ],
-          "question": "\u041a\u0430\u043a\u0443\u044e \u043e\u0442\u043c\u0435\u0442\u043a\u0443 \u043d\u0443\u0436\u043d\u043e \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u043f\u043e \u0442\u0430\u0431\u043b\u0438\u0446\u0435?",
-          "kind": "choice",
-          "options": [
-            "\u041e\u0442\u043c\u0435\u0442\u043a\u0430 \u0410",
-            "\u041e\u0442\u043c\u0435\u0442\u043a\u0430 \u0411",
-            "\u041e\u0442\u043c\u0435\u0442\u043a\u0430 \u0412"
-          ],
-          "answer": 2,
-          "explanation": "\u0422\u043e\u043b\u044c\u043a\u043e \u043e\u0442\u043c\u0435\u0442\u043a\u0430 \u0412 \u0434\u0430\u043b\u0430 \u0442\u0435\u043d\u044c 60 \u0441\u043c. \u0410 \u0434\u0430\u0451\u0442 180 \u0441\u043c, \u0411 \u0434\u0430\u0451\u0442 120 \u0441\u043c.",
-          "outcome": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435\u043b\u044c \u0441\u0442\u0430\u0432\u0438\u0442 \u043b\u0430\u043c\u043f\u0443 \u043d\u0430 \u043e\u0442\u043c\u0435\u0442\u043a\u0443 \u0412 \u0438 \u0438\u0437\u043c\u0435\u0440\u044f\u0435\u0442 \u0442\u0435\u043d\u044c: 60 \u0441\u043c. \u0422\u0435\u043f\u0435\u0440\u044c \u043d\u0443\u0436\u043d\u043e \u0437\u0430\u043c\u0435\u043d\u0438\u0442\u044c \u0443\u0437\u043a\u0443\u044e \u0448\u0438\u0440\u043c\u0443, \u0447\u0442\u043e\u0431\u044b \u043f\u043e\u043c\u0435\u0441\u0442\u0438\u043b\u0438\u0441\u044c \u043b\u0438\u0441\u0430 \u0438 \u0434\u0435\u0440\u0435\u0432\u043e.",
-          "next": "\u041f\u043e\u0434\u043e\u0431\u0440\u0430\u0442\u044c \u0448\u0438\u0440\u043c\u0443",
-          "hints": [
-            "\u041d\u0430\u0439\u0434\u0438 \u0432 \u0442\u0430\u0431\u043b\u0438\u0446\u0435 \u043d\u0443\u0436\u043d\u0443\u044e \u0432\u044b\u0441\u043e\u0442\u0443.",
-            "\u0418\u0449\u0435\u043c 60 \u0441\u043c, \u043a\u0430\u043a \u043d\u0430 \u0432\u0447\u0435\u0440\u0430\u0448\u043d\u0435\u043c \u043f\u043e\u043a\u0430\u0437\u0435.",
-            "\u0421\u0440\u0430\u0432\u043d\u0438 \u043a\u0430\u0436\u0434\u0443\u044e \u0441\u0442\u0440\u043e\u043a\u0443 \u0442\u0430\u0431\u043b\u0438\u0446\u044b \u0441 60 \u0441\u043c."
+            "Сначала узнай, во сколько раз выросла тень. Переведи метры в сантиметры.",
+            "Во столько же раз лампа стала ближе к фигурке.",
+            "Раздели вчерашнее расстояние на это число."
           ],
           "scene": 1
         },
         {
-          "title": "\u041a\u0430\u043a\u043e\u0439 \u0448\u0438\u0440\u0438\u043d\u044b \u043d\u0443\u0436\u0435\u043d \u044d\u043a\u0440\u0430\u043d?",
-          "situation": "\u0412 \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u043e\u0439 \u0435\u0441\u0442\u044c \u0442\u0440\u0438 \u0448\u0438\u0440\u043c\u044b. \u041d\u043e\u0432\u0443\u044e \u043f\u043e\u0441\u0442\u0430\u0432\u044f\u0442 \u043d\u0430 \u0442\u043e\u043c \u0436\u0435 \u0440\u0430\u0441\u0441\u0442\u043e\u044f\u043d\u0438\u0438 \u043e\u0442 \u043b\u0430\u043c\u043f\u044b \u0438 \u0444\u0438\u0433\u0443\u0440\u043a\u0438, \u0447\u0442\u043e \u0438 \u043f\u0440\u0435\u0436\u043d\u044e\u044e. \u0422\u043e\u0433\u0434\u0430 \u0440\u0430\u0437\u043c\u0435\u0440 \u0442\u0435\u043d\u0435\u0439 \u043d\u0435 \u0438\u0437\u043c\u0435\u043d\u0438\u0442\u0441\u044f.",
+          "title": "Кто передвинул лампу?",
+          "situation": "В зале смотритель достаёт журнал и распечатку датчика на рельсе. Датчик записывает каждое перемещение лампы, но время считает от включения проектора. Трое были в зале в разное время. Проверь, кто мог сдвинуть лампу последним.",
           "evidence": [
-            "\u0421\u0446\u0435\u043d\u0430 \u0441 \u043b\u0438\u0441\u043e\u0439 \u0438 \u0434\u0435\u0440\u0435\u0432\u043e\u043c \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 120 \u0441\u043c \u043f\u043e \u0448\u0438\u0440\u0438\u043d\u0435.",
-            "\u041f\u043e \u043f\u043b\u0430\u043d\u0443 \u043f\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u043d\u0443\u0436\u043d\u043e \u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043d\u0435 \u043c\u0435\u043d\u044c\u0448\u0435 25 \u0441\u043c \u0441 \u043a\u0430\u0436\u0434\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u0441\u0446\u0435\u043d\u044b.",
-            "\u0428\u0438\u0440\u043c\u044b \u0438\u043c\u0435\u044e\u0442 \u0448\u0438\u0440\u0438\u043d\u0443 150 \u0441\u043c, 170 \u0441\u043c \u0438 160 \u0441\u043c."
+            "Вчера в 19:00 после показа лампа стояла на 90 см, это записано в журнале. Сегодня в 12:00 смотритель увидел её на 30 см.",
+            "Роза убирала зал с 8:00 до 8:45. Проектор в это время был выключен.",
+            "Тимур чинил проектор с 9:30 до 10:10. В его заявке: «включил проектор в 9:30, заменил лампу, проверил на отметке 30 см, вернул на 90 см».",
+            "Экскурсия Оли была в зале с 10:30 до 11:15. Дети подходили к проектору.",
+            "Датчик рельса, время от включения проектора: 0:22 лампа на 30 см, 0:35 на 90 см, 1:18 на 30 см. Больше перемещений нет."
           ],
-          "question": "\u041a\u0430\u043a\u0430\u044f \u0438\u0437 \u0442\u0440\u0451\u0445 \u0448\u0438\u0440\u043c \u0432\u043c\u0435\u0441\u0442\u0438\u0442 \u0441\u0446\u0435\u043d\u0443 \u0438 \u043e\u0431\u0430 \u0431\u043e\u043a\u043e\u0432\u044b\u0445 \u043f\u043e\u043b\u044f?",
+          "question": "Кто передвинул лампу в последний раз?",
           "kind": "choice",
           "options": [
-            "150 \u0441\u043c",
-            "170 \u0441\u043c",
-            "160 \u0441\u043c"
+            "Роза во время уборки",
+            "Тимур во время ремонта",
+            "Кто-то из экскурсии Оли",
+            "Смотритель, когда открывал зал"
           ],
-          "answer": 1,
-          "explanation": "120 + 25 + 25 = 170 \u0441\u043c. \u0428\u0438\u0440\u043c\u044b 150 \u0438 160 \u0441\u043c \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0443\u0437\u043a\u0438\u0435.",
-          "outcome": "\u041f\u043e\u0434\u0445\u043e\u0434\u0438\u0442 \u0448\u0438\u0440\u043c\u0430 170 \u0441\u043c. \u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435\u043b\u044c \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0438\u0442 \u0435\u0451 \u0432 \u0437\u0430\u043b, \u0433\u0434\u0435 \u043e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u044d\u043a\u0440\u0430\u043d \u0442\u043e\u0447\u043d\u043e \u043f\u043e \u0446\u0435\u043d\u0442\u0440\u0443.",
-          "next": "\u041f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0448\u0438\u0440\u043c\u0443 \u0432 \u0437\u0430\u043b\u0435",
+          "answer": 2,
+          "feedback": [
+            "Роза ушла в 8:45, а проектор включили только в 9:30. При выключенном проекторе датчик перемещений не записал.",
+            "Тимур ставил 30 см в 9:52 для проверки, но в 10:05 вернул 90 см, как и написал. Последнее перемещение было позже, после его ухода.",
+            "",
+            "Смотритель пришёл в 12:00, а последнее перемещение датчик записал раньше."
+          ],
+          "explanation": "Проектор включили в 9:30, значит записи датчика это 9:52, 10:05 и 10:48. Тимур поставил 30 см для проверки и в 10:05 вернул 90 см, как и написал в заявке. Последний сдвиг в 10:48 был во время экскурсии Оли. Роза ушла до включения проектора.",
+          "outcome": "Лампу сдвинули в 10:48, во время экскурсии. Оля вспоминает: как раз тогда один мальчик спрашивал, как сделать лису великаном. С лампой ясно. Но луна пропала не тогда: Оля видела её в коробке перед уходом. Ищем луну.",
+          "next": "Искать луну",
           "hints": [
-            "\u041d\u0443\u0436\u043d\u044b \u0434\u0432\u0430 \u0431\u043e\u043a\u043e\u0432\u044b\u0445 \u043f\u043e\u043b\u044f, \u043d\u0435 \u043e\u0434\u043d\u043e.",
-            "\u041a 120 \u0441\u043c \u043f\u0440\u0438\u0431\u0430\u0432\u044c 25 \u0441\u043c \u0434\u0432\u0430\u0436\u0434\u044b.",
-            "\u041c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u0430\u044f \u0448\u0438\u0440\u0438\u043d\u0430 \u0441\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 170 \u0441\u043c."
+            "Датчик считает время от включения проектора. Переведи его записи в обычное время.",
+            "Найди самое позднее перемещение лампы и посмотри, кто был в зале в этот момент.",
+            "Заявка Тимура не противоречит датчику: сравни его записи 0:22 и 0:35 с тем, что он написал."
           ],
-          "scene": 3
+          "scene": 0
         },
         {
-          "title": "\u0413\u0434\u0435 \u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0430?",
-          "situation": "\u041d\u0430 \u043f\u043e\u043b\u0443 \u0437\u0430\u043b\u0430 \u043e\u0442\u043c\u0435\u0447\u0435\u043d\u043e \u043c\u0435\u0441\u0442\u043e \u0434\u043b\u044f \u0448\u0438\u0440\u043c\u044b: \u043f\u043e\u043b\u043e\u0441\u0430 \u0448\u0438\u0440\u0438\u043d\u043e\u0439 230 \u0441\u043c. \u041f\u043e\u0441\u0442\u0430\u0432\u0438\u043c \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u0443\u044e \u0448\u0438\u0440\u043c\u0443 \u0442\u043e\u0447\u043d\u043e \u043f\u043e\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0435.",
+          "title": "Когда пропала луна?",
+          "situation": "В кинозале смотритель, Оля и Тимур вспоминают, кто и когда заходил после экскурсии. Дверь зала на замке с датчиком, поэтому все входы известны. Расставь события по порядку, чтобы понять, кто был в зале, когда луна исчезла.",
           "evidence": [
-            "\u041f\u043e\u043b\u043e\u0441\u0430 \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0438\u043c\u0435\u0435\u0442 \u0448\u0438\u0440\u0438\u043d\u0443 230 \u0441\u043c.",
-            "\u0428\u0438\u0440\u0438\u043d\u0430 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u043e\u0439 \u0448\u0438\u0440\u043c\u044b 170 \u0441\u043c.",
-            "\u041f\u0440\u043e\u043c\u0435\u0436\u0443\u0442\u043a\u0438 \u043c\u0435\u0436\u0434\u0443 \u043a\u0440\u0430\u044f\u043c\u0438 \u0448\u0438\u0440\u043c\u044b \u0438 \u0433\u0440\u0430\u043d\u0438\u0446\u0430\u043c\u0438 \u043f\u043e\u043b\u043e\u0441\u044b \u0434\u043e\u043b\u0436\u043d\u044b \u0431\u044b\u0442\u044c \u0440\u0430\u0432\u043d\u044b."
+            "Оля видела луну в коробке слайдов за 5 минут до того, как экскурсия вышла из зала.",
+            "Экскурсия вышла из зала в 11:15.",
+            "Тимур вернулся за инструментами через 25 минут после выхода экскурсии и пробыл в зале 10 минут.",
+            "Смотритель открыл коробку в 12:00: луны нет.",
+            "Больше в зал никто не входил."
           ],
-          "question": "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u0441\u0430\u043d\u0442\u0438\u043c\u0435\u0442\u0440\u043e\u0432 \u043d\u0443\u0436\u043d\u043e \u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0441 \u043a\u0430\u0436\u0434\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b \u0448\u0438\u0440\u043c\u044b?",
-          "kind": "number",
-          "options": [],
-          "answer": "30",
-          "explanation": "230 - 170 = 60 \u0441\u043c \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u043e\u0433\u043e \u043c\u0435\u0441\u0442\u0430. 60 : 2 = 30 \u0441\u043c \u0441 \u043a\u0430\u0436\u0434\u043e\u0439 \u0441\u0442\u043e\u0440\u043e\u043d\u044b.",
-          "outcome": "\u0421\u043c\u043e\u0442\u0440\u0438\u0442\u0435\u043b\u044c \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u043f\u043e 30 \u0441\u043c, \u0437\u0430\u043a\u0440\u0435\u043f\u043b\u044f\u0435\u0442 \u0448\u0438\u0440\u043c\u0443 \u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0435\u0442 \u043f\u043e\u043a\u0430\u0437. \u0412\u0441\u044f \u0441\u0446\u0435\u043d\u0430 \u043f\u043e\u043c\u0435\u0449\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u044d\u043a\u0440\u0430\u043d\u0435.",
-          "next": "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044b\u0439 \u0441\u043f\u0435\u043a\u0442\u0430\u043a\u043b\u044c",
+          "question": "Расставь события от самого раннего к самому позднему.",
+          "kind": "order",
+          "options": [
+            "Смотритель открывает коробку: луны нет",
+            "Тимур возвращается за инструментами",
+            "Оля видит луну в коробке",
+            "Экскурсия выходит из зала"
+          ],
+          "answer": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "feedback": [],
+          "explanation": "Оля видела луну в 11:10, экскурсия вышла в 11:15, Тимур вернулся в 11:40 и ушёл в 11:50, смотритель открыл коробку в 12:00. Между 11:15 и 12:00 в зале был только Тимур.",
+          "outcome": "После выхода экскурсии в зале был только Тимур. В его заявке есть ещё один пункт: «забрать слайды с царапинами на чистку». А на луне царапина с прошлой недели. Идём в мастерскую.",
+          "next": "В мастерскую",
           "hints": [
-            "\u0421\u043d\u0430\u0447\u0430\u043b\u0430 \u043d\u0430\u0439\u0434\u0438 \u043e\u0431\u0449\u0435\u0435 \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u043e\u0435 \u043c\u0435\u0441\u0442\u043e.",
-            "\u0412\u044b\u0447\u0442\u0438 170 \u0438\u0437 230.",
-            "\u0420\u0430\u0437\u0434\u0435\u043b\u0438 \u043e\u0441\u0442\u0430\u0432\u0448\u0438\u0435\u0441\u044f 60 \u0441\u043c \u043f\u043e\u0440\u043e\u0432\u043d\u0443 \u043c\u0435\u0436\u0434\u0443 \u0434\u0432\u0443\u043c\u044f \u0441\u0442\u043e\u0440\u043e\u043d\u0430\u043c\u0438."
+            "Сначала вычисли время каждого события, у двух оно дано относительно других.",
+            "«За 5 минут до 11:15» это раньше, чем 11:15. «Через 25 минут после 11:15» это позже.",
+            "Выстрой четыре времени по возрастанию."
           ],
           "scene": 2
+        },
+        {
+          "title": "Успеет ли луна к показу?",
+          "situation": "В мастерской луна лежит в очереди на чистку вместе с другими поцарапанными слайдами. Тимур извиняется: забыл оставить записку. Машина чистит слайды строго по очереди. Проверь, успеет ли луна к показу, если ничего не менять.",
+          "evidence": [
+            "Показ «Лиса и луна» начинается в 13:00.",
+            "Машина чистит по одному слайду, по 4 минуты на каждый. Очередь запустили в 12:20. Луна в очереди седьмая.",
+            "После чистки слайд сохнет 10 минут, потом его несут в зал 5 минут."
+          ],
+          "question": "На сколько минут луна опоздает к началу показа, если очередь оставить как есть? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "3",
+          "feedback": [],
+          "explanation": "7 × 4 = 28 минут: луна будет чистой в 12:48. Сушка до 12:58, в зале в 13:03. Это на 3 минуты позже начала.",
+          "outcome": "Опоздание маленькое, но показ ждать не будет. Тимур переставляет луну первой: чистая в 12:24, сухая в 12:34, в зале в 12:39. Лампу возвращают на отметку 90 см.",
+          "next": "Посмотреть восстановленный показ",
+          "hints": [
+            "Посчитай, во сколько закончится чистка седьмого слайда.",
+            "Не забудь про сушку и дорогу до зала.",
+            "Сравни полученное время с началом показа."
+          ],
+          "scene": 3
         }
       ]
     },
     "pl": {
       "title": "Muzeum Pomieszanych Cieni",
-      "intro": "W muzeum cieni lis nagle ur\u00f3s\u0142 do rozmiar\u00f3w olbrzyma. Opiekun pokazuje znajom\u0105 figurk\u0119: nikt jej nie wymieni\u0142. Po sprz\u0105taniu lampa stoi na innym oznaczeniu, a zbyt w\u0105ski ekran nie mie\u015bci ca\u0142ej sceny. Pom\u00f3\u017c odtworzy\u0107 wczorajszy pokaz, korzystaj\u0105c z pomiar\u00f3w i planu.",
-      "ending": "Tabela pr\u00f3b pomog\u0142a przywr\u00f3ci\u0107 cie\u0144 o wysoko\u015bci 60 cm. Ekran o szeroko\u015bci 170 cm pomie\u015bci\u0142 scen\u0119 i zapas po bokach. R\u00f3wne odst\u0119py po 30 cm pozwoli\u0142y ustawi\u0107 go po\u015brodku. Figurka by\u0142a ta sama, zmieni\u0142o si\u0119 ustawienie pokazu.",
-      "question": "Kt\u00f3ra pr\u00f3ba pokaza\u0142a, \u017ce nie trzeba zmienia\u0107 figurki?",
+      "intro": "W muzeum cieni nie udał się dzienny pokaz „Lis i księżyc”: cień lisa na ekranie stał się trzy razy wyższy, a slajd z księżycem zniknął z pudełka. Opiekun zapewnia, że figurek nikt nie dotykał. Rano w sali były trzy osoby: sprzątaczka Róża, mechanik Timur, który naprawiał projektor, i szkolna wycieczka z przewodniczką Olą. Następny pokaz jest o 13:00. Trzeba przywrócić lisowi dawny rozmiar, znaleźć księżyc i zrozumieć, kto co tu nabroił.",
+      "ending": "Lisa zamienił w olbrzyma chłopiec z wycieczki: o 10:48 przesunął lampę na oznaczenie 30 cm, kiedy Ola odpowiadała na pytania. Księżyca nikt nie ukradł: Timur zabrał go do czyszczenia zgodnie ze zleceniem i nie zostawił kartki. Czujnik szyny i kolejność zdarzeń pomogły oddzielić prawdziwą przyczynę od podejrzeń wobec mechanika, który uczciwie wszystko zapisał. Księżyc wyczyszczono jako pierwszy i pokaz zaczął się o 13:00.",
+      "question": "Timur ustawiał lampę na 30 cm i zabrał księżyc. Dlaczego mimo to nie jest winny nieudanego pokazu?",
       "steps": [
         {
-          "title": "Jak bardzo ur\u00f3s\u0142 cie\u0144?",
-          "situation": "Opiekun znalaz\u0142 wczorajsze zdj\u0119cie z linijk\u0105 i zmierzy\u0142 dzisiejszy cie\u0144.",
+          "title": "O ile przesunięto lampę?",
+          "situation": "Przy stole projektora opiekun pokazuje wczorajsze zdjęcie z linijką i dzisiejszy cień. Lampa jeździ po szynie z oznaczeniami, a cień rośnie według reguły, którą opiekun wiele razy sprawdził na tym projektorze.",
           "evidence": [
-            "Wczoraj cie\u0144 mia\u0142 60 cm wysoko\u015bci.",
-            "Dzisiaj ma 1 m 80 cm wysoko\u015bci.",
-            "Figurka lisa jest ta sama."
+            "Reguła opiekuna: jeśli ekran i figurka stoją na miejscu, to ile razy lampa jest bliżej figurki, tyle razy wyższy jest cień.",
+            "Wczoraj lampa stała 90 cm od figurki, cień lisa miał 60 cm.",
+            "Dziś cień ma 1 m 80 cm. Figurka i ekran się nie ruszały."
           ],
-          "question": "Ile razy dzisiejszy cie\u0144 jest wy\u017cszy od wczorajszego? Wpisz liczb\u0119.",
+          "question": "W jakiej odległości od figurki stoi teraz lampa? Wpisz liczbę centymetrów.",
           "kind": "number",
           "options": [],
-          "answer": "3",
-          "explanation": "1 m 80 cm = 180 cm. 180 : 60 = 3.",
-          "outcome": "Cie\u0144 jest trzy razy wy\u017cszy, cho\u0107 figurka si\u0119 nie zmieni\u0142a. Sprawd\u017amy, gdzie ustawi\u0107 lamp\u0119, \u017ceby wr\u00f3ci\u0142 do poprzedniej wysoko\u015bci.",
-          "next": "Zobacz tabel\u0119 pr\u00f3b",
+          "answer": "30",
+          "feedback": [],
+          "explanation": "180 : 60 = 3, cień urósł trzykrotnie. Czyli lampa jest trzy razy bliżej: 90 : 3 = 30 cm.",
+          "outcome": "Lampę przesunięto z 90 cm na oznaczenie 30 cm. Takie oznaczenie jest na szynie, używa się go do innego pokazu. To nie przypadkowe potrącenie: ktoś ustawił lampę. Idziemy do sali sprawdzić dziennik i czujnik szyny.",
+          "next": "Sprawdź dziennik sali",
           "hints": [
-            "Zapisz obie wysoko\u015bci w centymetrach.",
-            "Podziel 180 cm przez 60 cm.",
-            "Ile razy 60 mie\u015bci si\u0119 w 180?"
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Gdzie ustawi\u0107 lamp\u0119?",
-          "situation": "Opiekun sprawdzi\u0142 wcze\u015bniej trzy ustawienia lampy i zapisa\u0142 wyniki. We wszystkich pr\u00f3bach figurka i ekran pozostawa\u0142y na swoich miejscach.",
-          "evidence": [
-            "Oznaczenie A: cie\u0144 o wysoko\u015bci 180 cm.",
-            "Oznaczenie B: cie\u0144 o wysoko\u015bci 120 cm.",
-            "Oznaczenie C: cie\u0144 o wysoko\u015bci 60 cm.",
-            "Do pokazu potrzebny jest cie\u0144 o wysoko\u015bci 60 cm."
-          ],
-          "question": "Kt\u00f3re oznaczenie trzeba wybra\u0107 wed\u0142ug tabeli?",
-          "kind": "choice",
-          "options": [
-            "Oznaczenie A",
-            "Oznaczenie B",
-            "Oznaczenie C"
-          ],
-          "answer": 2,
-          "explanation": "Tylko ustawienie C da\u0142o cie\u0144 o wysoko\u015bci 60 cm. A daje 180 cm, a B 120 cm.",
-          "outcome": "Opiekun stawia lamp\u0119 na oznaczeniu C i mierzy cie\u0144: 60 cm. Teraz trzeba wymieni\u0107 w\u0105ski ekran, \u017ceby zmie\u015bci\u0142y si\u0119 lis i drzewo.",
-          "next": "Wybierz ekran",
-          "hints": [
-            "Znajd\u017a potrzebn\u0105 wysoko\u015b\u0107 w tabeli.",
-            "Szukamy 60 cm, jak na wczorajszym pokazie.",
-            "Por\u00f3wnaj ka\u017cdy wiersz z 60 cm."
+            "Najpierw ustal, ile razy urósł cień. Zamień metry na centymetry.",
+            "Tyle samo razy lampa zbliżyła się do figurki.",
+            "Podziel wczorajszą odległość przez tę liczbę."
           ],
           "scene": 1
         },
         {
-          "title": "Jak szeroki ma by\u0107 ekran?",
-          "situation": "W warsztacie s\u0105 trzy ekrany. Nowy stanie w tej samej odleg\u0142o\u015bci od lampy i figurki co poprzedni. Dzi\u0119ki temu rozmiary cieni si\u0119 nie zmieni\u0105.",
+          "title": "Kto przesunął lampę?",
+          "situation": "W sali opiekun wyjmuje dziennik i wydruk z czujnika na szynie. Czujnik zapisuje każde przesunięcie lampy, ale czas liczy od włączenia projektora. Trzy osoby były w sali o różnych porach. Sprawdź, kto mógł przesunąć lampę jako ostatni.",
           "evidence": [
-            "Scena z lisem i drzewem zajmuje 120 cm szeroko\u015bci.",
-            "Plan przedstawienia wymaga co najmniej 25 cm zapasu z ka\u017cdej strony sceny.",
-            "Ekrany maj\u0105 szeroko\u015b\u0107 150 cm, 170 cm i 160 cm."
+            "Wczoraj o 19:00 po pokazie lampa stała na 90 cm, tak zapisano w dzienniku. Dziś o 12:00 opiekun zobaczył ją na 30 cm.",
+            "Róża sprzątała salę od 8:00 do 8:45. Projektor był wtedy wyłączony.",
+            "Timur naprawiał projektor od 9:30 do 10:10. W jego zleceniu: „włączyłem projektor o 9:30, wymieniłem lampę, sprawdziłem na oznaczeniu 30 cm, wróciłem na 90 cm”.",
+            "Wycieczka Oli była w sali od 10:30 do 11:15. Dzieci podchodziły do projektora.",
+            "Czujnik szyny, czas od włączenia projektora: 0:22 lampa na 30 cm, 0:35 na 90 cm, 1:18 na 30 cm. Więcej przesunięć nie ma."
           ],
-          "question": "Kt\u00f3ry ekran pomie\u015bci scen\u0119 i zapas po obu stronach?",
+          "question": "Kto przesunął lampę jako ostatni?",
           "kind": "choice",
           "options": [
-            "150 cm",
-            "170 cm",
-            "160 cm"
+            "Róża podczas sprzątania",
+            "Timur podczas naprawy",
+            "Ktoś z wycieczki Oli",
+            "Opiekun, kiedy otwierał salę"
           ],
-          "answer": 1,
-          "explanation": "120 + 25 + 25 = 170 cm. Ekrany o szeroko\u015bci 150 i 160 cm s\u0105 za w\u0105skie.",
-          "outcome": "Pasuje ekran o szeroko\u015bci 170 cm. Opiekun przenosi go do sali. Zosta\u0142o ustawi\u0107 go dok\u0142adnie po\u015brodku.",
-          "next": "Ustaw ekran w sali",
+          "answer": 2,
+          "feedback": [
+            "Róża wyszła o 8:45, a projektor włączono dopiero o 9:30. Przy wyłączonym projektorze czujnik nie zapisał żadnych przesunięć.",
+            "Timur ustawił 30 cm o 9:52 na próbę, ale o 10:05 wrócił na 90 cm, tak jak napisał. Ostatnie przesunięcie było później, po jego wyjściu.",
+            "",
+            "Opiekun przyszedł o 12:00, a ostatnie przesunięcie czujnik zapisał wcześniej."
+          ],
+          "explanation": "Projektor włączono o 9:30, więc zapisy czujnika to 9:52, 10:05 i 10:48. Timur ustawił 30 cm na próbę i o 10:05 wrócił na 90 cm, tak jak napisał w zleceniu. Ostatnie przesunięcie o 10:48 było podczas wycieczki Oli. Róża wyszła przed włączeniem projektora.",
+          "outcome": "Lampę przesunięto o 10:48, podczas wycieczki. Ola przypomina sobie: akurat wtedy jeden chłopiec pytał, jak zrobić z lisa olbrzyma. Z lampą wszystko jasne. Ale księżyc nie zniknął wtedy: Ola widziała go w pudełku przed wyjściem. Szukamy księżyca.",
+          "next": "Szukaj księżyca",
           "hints": [
-            "Zapas jest potrzebny z dw\u00f3ch stron.",
-            "Do 120 cm dodaj dwa razy po 25 cm.",
-            "Minimalna szeroko\u015b\u0107 wynosi 170 cm."
+            "Czujnik liczy czas od włączenia projektora. Przelicz jego zapisy na zwykły czas.",
+            "Znajdź najpóźniejsze przesunięcie lampy i sprawdź, kto był wtedy w sali.",
+            "Zlecenie Timura nie przeczy czujnikowi: porównaj jego zapisy 0:22 i 0:35 z tym, co napisał."
           ],
-          "scene": 3
+          "scene": 0
         },
         {
-          "title": "Gdzie jest \u015brodek?",
-          "situation": "Na pod\u0142odze zaznaczono miejsce na ekran: pas o szeroko\u015bci 230 cm. Ustawmy wybrany ekran dok\u0142adnie po\u015brodku.",
+          "title": "Kiedy zniknął księżyc?",
+          "situation": "W sali kinowej opiekun, Ola i Timur przypominają sobie, kto i kiedy wchodził po wycieczce. Drzwi sali mają zamek z czujnikiem, więc wszystkie wejścia są znane. Ułóż zdarzenia po kolei, żeby zrozumieć, kto był w sali, kiedy zniknął księżyc.",
           "evidence": [
-            "Zaznaczony pas ma szeroko\u015b\u0107 230 cm.",
-            "Wybrany ekran ma szeroko\u015b\u0107 170 cm.",
-            "Odst\u0119py mi\u0119dzy brzegami ekranu a granicami pasa maj\u0105 by\u0107 r\u00f3wne."
+            "Ola widziała księżyc w pudełku ze slajdami 5 minut przed tym, jak wycieczka wyszła z sali.",
+            "Wycieczka wyszła z sali o 11:15.",
+            "Timur wrócił po narzędzia 25 minut po wyjściu wycieczki i był w sali 10 minut.",
+            "Opiekun otworzył pudełko o 12:00: księżyca nie ma.",
+            "Nikt więcej nie wchodził do sali."
           ],
-          "question": "Ile centymetr\u00f3w trzeba zostawi\u0107 z ka\u017cdej strony ekranu?",
-          "kind": "number",
-          "options": [],
-          "answer": "30",
-          "explanation": "230 - 170 = 60 cm wolnego miejsca. 60 : 2 = 30 cm z ka\u017cdej strony.",
-          "outcome": "Opiekun zostawia po 30 cm, mocuje ekran i zaczyna pokaz. Ca\u0142a scena mie\u015bci si\u0119 na ekranie.",
-          "next": "Obejrzyj naprawiony pokaz",
+          "question": "Ułóż zdarzenia od najwcześniejszego do najpóźniejszego.",
+          "kind": "order",
+          "options": [
+            "Opiekun otwiera pudełko: księżyca nie ma",
+            "Timur wraca po narzędzia",
+            "Ola widzi księżyc w pudełku",
+            "Wycieczka wychodzi z sali"
+          ],
+          "answer": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "feedback": [],
+          "explanation": "Ola widziała księżyc o 11:10, wycieczka wyszła o 11:15, Timur wrócił o 11:40 i wyszedł o 11:50, opiekun otworzył pudełko o 12:00. Między 11:15 a 12:00 w sali był tylko Timur.",
+          "outcome": "Po wyjściu wycieczki w sali był tylko Timur. W jego zleceniu jest jeszcze jeden punkt: „zabrać porysowane slajdy do czyszczenia”. A na księżycu jest rysa z zeszłego tygodnia. Idziemy do warsztatu.",
+          "next": "Do warsztatu",
           "hints": [
-            "Najpierw oblicz ca\u0142e wolne miejsce.",
-            "Odejmij 170 od 230.",
-            "Podziel pozosta\u0142e 60 cm po r\u00f3wno na dwie strony."
+            "Najpierw oblicz czas każdego zdarzenia, dla dwóch podano go względem innych.",
+            "„5 minut przed 11:15” to wcześniej niż 11:15. „25 minut po 11:15” to później.",
+            "Ustaw cztery godziny rosnąco."
           ],
           "scene": 2
+        },
+        {
+          "title": "Czy księżyc zdąży na pokaz?",
+          "situation": "W warsztacie księżyc leży w kolejce do czyszczenia razem z innymi porysowanymi slajdami. Timur przeprasza: zapomniał zostawić kartkę. Maszyna czyści slajdy ściśle po kolei. Sprawdź, czy księżyc zdąży na pokaz, jeśli niczego nie zmienimy.",
+          "evidence": [
+            "Pokaz „Lis i księżyc” zaczyna się o 13:00.",
+            "Maszyna czyści po jednym slajdzie, po 4 minuty na każdy. Kolejkę uruchomiono o 12:20. Księżyc jest w kolejce siódmy.",
+            "Po czyszczeniu slajd schnie 10 minut, potem niesie się go do sali 5 minut."
+          ],
+          "question": "O ile minut księżyc spóźni się na początek pokazu, jeśli zostawimy kolejkę bez zmian? Wpisz liczbę.",
+          "kind": "number",
+          "options": [],
+          "answer": "3",
+          "feedback": [],
+          "explanation": "7 × 4 = 28 minut: księżyc będzie czysty o 12:48. Schnięcie do 12:58, w sali o 13:03. To 3 minuty po początku.",
+          "outcome": "Spóźnienie jest małe, ale pokaz nie będzie czekać. Timur przestawia księżyc na początek kolejki: czysty o 12:24, suchy o 12:34, w sali o 12:39. Lampa wraca na oznaczenie 90 cm.",
+          "next": "Obejrzyj przywrócony pokaz",
+          "hints": [
+            "Policz, o której skończy się czyszczenie siódmego slajdu.",
+            "Nie zapomnij o schnięciu i drodze do sali.",
+            "Porównaj otrzymaną godzinę z początkiem pokazu."
+          ],
+          "scene": 3
         }
       ]
     },
     "en": {
       "title": "The Museum of Mixed-Up Shadows",
-      "intro": "In the shadow museum, the fox has suddenly become a giant. The guide shows you the familiar figure: it has not been replaced. After cleaning, the lamp is on a different mark, and the screen is too narrow for the whole scene. Use the measurements and plan to restore yesterday\u2019s show.",
-      "ending": "The test table helped bring the shadow back to 60 cm tall. The 170 cm screen fitted the scene with space on both sides. Equal 30 cm gaps put it in the middle. The figure was the same all along; the show\u2019s setup had changed.",
-      "question": "Which check showed that the figure did not need to be replaced?",
+      "intro": "At the shadow museum, the daytime show “The Fox and the Moon” went wrong: the fox’s shadow on the screen became three times taller, and the moon slide vanished from its box. The keeper insists nobody touched the figures. Three people were in the hall that morning: Rosa the cleaner, Timur the mechanic, who was repairing the projector, and a school trip led by Olya the guide. The next show is at 13:00. You need to return the fox to its old size, find the moon and work out who did what here.",
+      "ending": "A boy from the school trip turned the fox into a giant: at 10:48 he moved the lamp to the 30 cm mark while Olya was answering questions. Nobody stole the moon: Timur took it for cleaning as his job sheet said and forgot to leave a note. The rail sensor and the order of events separated the real cause from suspicion of the mechanic, who had honestly written everything down. The moon was cleaned first, and the show began at 13:00.",
+      "question": "Timur set the lamp to 30 cm and took the moon. Why is he still not to blame for the ruined show?",
       "steps": [
         {
-          "title": "How much taller is the shadow?",
-          "situation": "The guide finds yesterday\u2019s photo with a ruler in it and measures today\u2019s shadow.",
+          "title": "How far was the lamp moved?",
+          "situation": "At the projector desk, the keeper shows yesterday’s photo with a ruler and today’s shadow. The lamp slides along a rail with marks, and the shadow grows according to a rule the keeper has tested many times on this projector.",
           "evidence": [
-            "Yesterday the shadow was 60 cm tall.",
-            "Today it is 1 m 80 cm tall.",
-            "The fox figure has not changed."
+            "The keeper’s rule: if the screen and the figure stay where they are, then however many times closer the lamp is to the figure, the shadow is that many times taller.",
+            "Yesterday the lamp stood 90 cm from the figure, and the fox’s shadow was 60 cm tall.",
+            "Today the shadow is 1 m 80 cm tall. The figure and the screen have not moved."
           ],
-          "question": "How many times as tall is today\u2019s shadow as yesterday\u2019s? Enter a number.",
+          "question": "How far from the figure is the lamp now? Enter the number of centimetres.",
           "kind": "number",
           "options": [],
-          "answer": "3",
-          "explanation": "1 m 80 cm = 180 cm. 180 \u00f7 60 = 3.",
-          "outcome": "The shadow is three times as tall with the same figure. Let\u2019s find the lamp position that restores its old height.",
-          "next": "Look at the test table",
+          "answer": "30",
+          "feedback": [],
+          "explanation": "180 ÷ 60 = 3, so the shadow grew three times taller. That means the lamp is three times closer: 90 ÷ 3 = 30 cm.",
+          "outcome": "The lamp was moved from 90 cm to the 30 cm mark. That mark exists on the rail; it is used for a different show. This was no accidental knock: somebody set the lamp there. Let’s go to the hall and look at the log and the rail sensor.",
+          "next": "Check the hall log",
           "hints": [
-            "Write both heights in centimetres.",
-            "Divide 180 cm by 60 cm.",
-            "How many times does 60 fit into 180?"
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Where should the lamp go?",
-          "situation": "The guide has tested three lamp positions and recorded the results. The figure and screen stayed in the same places throughout the tests.",
-          "evidence": [
-            "Mark A: shadow height 180 cm.",
-            "Mark B: shadow height 120 cm.",
-            "Mark C: shadow height 60 cm.",
-            "The show needs a shadow 60 cm tall."
-          ],
-          "question": "Which mark should you choose using the table?",
-          "kind": "choice",
-          "options": [
-            "Mark A",
-            "Mark B",
-            "Mark C"
-          ],
-          "answer": 2,
-          "explanation": "Only mark C produced a 60 cm shadow. A gives 180 cm and B gives 120 cm.",
-          "outcome": "The guide moves the lamp to mark C and measures the shadow: 60 cm. Now we need a wider screen to fit both the fox and the tree.",
-          "next": "Choose a screen",
-          "hints": [
-            "Find the height we need in the table.",
-            "We need 60 cm, just like yesterday.",
-            "Compare each row with 60 cm."
+            "First work out how many times taller the shadow became. Convert metres to centimetres.",
+            "The lamp moved that many times closer to the figure.",
+            "Divide yesterday’s distance by that number."
           ],
           "scene": 1
         },
         {
-          "title": "How wide should the screen be?",
-          "situation": "There are three screens in the workshop. The new one will stand at the same distance from the lamp and figure as the old one, so the shadow sizes will stay the same.",
+          "title": "Who moved the lamp?",
+          "situation": "In the hall, the keeper brings out the log and a printout from the rail sensor. The sensor records every movement of the lamp, but it counts time from when the projector was switched on. Three people were in the hall at different times. Check who could have moved the lamp last.",
           "evidence": [
-            "The fox-and-tree scene is 120 cm wide.",
-            "The show plan requires at least 25 cm of extra space on each side of the scene.",
-            "The screens are 150 cm, 170 cm and 160 cm wide."
+            "Yesterday at 19:00, after the show, the lamp stood at 90 cm; that is written in the log. Today at 12:00 the keeper found it at 30 cm.",
+            "Rosa cleaned the hall from 8:00 to 8:45. The projector was switched off at the time.",
+            "Timur repaired the projector from 9:30 to 10:10. His job sheet says: “switched on the projector at 9:30, replaced the bulb, tested at the 30 cm mark, returned it to 90 cm”.",
+            "Olya’s school trip was in the hall from 10:30 to 11:15. The children went up to the projector.",
+            "Rail sensor, time since the projector was switched on: 0:22 lamp at 30 cm, 0:35 at 90 cm, 1:18 at 30 cm. There are no other movements."
           ],
-          "question": "Which screen fits the scene and the extra space on both sides?",
+          "question": "Who moved the lamp last?",
           "kind": "choice",
           "options": [
-            "150 cm",
-            "170 cm",
-            "160 cm"
+            "Rosa while cleaning",
+            "Timur during the repair",
+            "Someone from Olya’s school trip",
+            "The keeper when opening the hall"
           ],
-          "answer": 1,
-          "explanation": "120 + 25 + 25 = 170 cm. The 150 cm and 160 cm screens are too narrow.",
-          "outcome": "The 170 cm screen fits. The guide carries it into the hall. All that remains is to place it in the middle.",
-          "next": "Position the screen in the hall",
+          "answer": 2,
+          "feedback": [
+            "Rosa left at 8:45, and the projector was only switched on at 9:30. With the projector off, the sensor recorded no movements.",
+            "Timur set 30 cm at 9:52 for a test, but at 10:05 he returned it to 90 cm, just as he wrote. The last movement came later, after he had left.",
+            "",
+            "The keeper arrived at 12:00, and the sensor recorded the last movement earlier than that."
+          ],
+          "explanation": "The projector was switched on at 9:30, so the sensor entries are 9:52, 10:05 and 10:48. Timur set 30 cm for a test and returned it to 90 cm at 10:05, just as he wrote on his job sheet. The last move at 10:48 happened during Olya’s school trip. Rosa left before the projector was switched on.",
+          "outcome": "The lamp was moved at 10:48, during the school trip. Olya remembers that right then one boy was asking how to turn the fox into a giant. The lamp is explained. But the moon did not vanish then: Olya saw it in the box before leaving. Let’s look for the moon.",
+          "next": "Look for the moon",
           "hints": [
-            "Allow extra space on two sides, not one.",
-            "Add 25 cm to 120 cm twice.",
-            "The minimum width is 170 cm."
+            "The sensor counts time from when the projector was switched on. Convert its entries to clock time.",
+            "Find the latest lamp movement and see who was in the hall at that moment.",
+            "Timur’s job sheet does not contradict the sensor: compare its 0:22 and 0:35 entries with what he wrote."
           ],
-          "scene": 3
+          "scene": 0
         },
         {
-          "title": "Where is the middle?",
-          "situation": "A 230 cm-wide space is marked on the hall floor for the screen. Let\u2019s put our chosen screen exactly in the middle.",
+          "title": "When did the moon vanish?",
+          "situation": "In the screening hall, the keeper, Olya and Timur recall who came in after the school trip and when. The hall door has a lock with a sensor, so every entry is known. Put the events in order to see who was in the hall when the moon disappeared.",
           "evidence": [
-            "The marked space is 230 cm wide.",
-            "The chosen screen is 170 cm wide.",
-            "The gaps between the screen edges and the marked boundaries must be equal."
+            "Olya saw the moon in the slide box 5 minutes before the school trip left the hall.",
+            "The school trip left the hall at 11:15.",
+            "Timur came back for his tools 25 minutes after the school trip left and stayed in the hall for 10 minutes.",
+            "The keeper opened the box at 12:00: the moon was gone.",
+            "Nobody else entered the hall."
           ],
-          "question": "How many centimetres should you leave on each side of the screen?",
-          "kind": "number",
-          "options": [],
-          "answer": "30",
-          "explanation": "230 - 170 = 60 cm of free space. 60 \u00f7 2 = 30 cm on each side.",
-          "outcome": "The guide leaves 30 cm on each side, secures the screen and starts the show. The whole scene fits.",
-          "next": "Watch the restored show",
+          "question": "Put the events in order from earliest to latest.",
+          "kind": "order",
+          "options": [
+            "The keeper opens the box: the moon is gone",
+            "Timur comes back for his tools",
+            "Olya sees the moon in the box",
+            "The school trip leaves the hall"
+          ],
+          "answer": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "feedback": [],
+          "explanation": "Olya saw the moon at 11:10, the school trip left at 11:15, Timur came back at 11:40 and left at 11:50, and the keeper opened the box at 12:00. Between 11:15 and 12:00, only Timur was in the hall.",
+          "outcome": "After the school trip left, only Timur was in the hall. His job sheet has one more item: “collect the scratched slides for cleaning”. And the moon has had a scratch since last week. Off to the workshop.",
+          "next": "To the workshop",
           "hints": [
-            "Find the total free space first.",
-            "Subtract 170 from 230.",
-            "Split the remaining 60 cm equally between the two sides."
+            "First work out the time of each event; two of them are given relative to the others.",
+            "“5 minutes before 11:15” is earlier than 11:15. “25 minutes after 11:15” is later.",
+            "Arrange the four times in increasing order."
           ],
           "scene": 2
+        },
+        {
+          "title": "Will the moon make the show?",
+          "situation": "In the workshop, the moon is in the cleaning queue with other scratched slides. Timur apologises: he forgot to leave a note. The machine cleans slides strictly in order. Check whether the moon will make the show if nothing is changed.",
+          "evidence": [
+            "The show “The Fox and the Moon” starts at 13:00.",
+            "The machine cleans one slide at a time, 4 minutes each. The queue was started at 12:20. The moon is seventh in the queue.",
+            "After cleaning, a slide dries for 10 minutes, then it takes 5 minutes to carry it to the hall."
+          ],
+          "question": "How many minutes late will the moon be for the start of the show if the queue is left as it is? Enter a number.",
+          "kind": "number",
+          "options": [],
+          "answer": "3",
+          "feedback": [],
+          "explanation": "7 × 4 = 28 minutes: the moon will be clean at 12:48. Drying until 12:58, in the hall at 13:03. That is 3 minutes after the start.",
+          "outcome": "The delay is small, but the show will not wait. Timur moves the moon to the front of the queue: clean at 12:24, dry at 12:34, in the hall at 12:39. The lamp goes back to the 90 cm mark.",
+          "next": "Watch the restored show",
+          "hints": [
+            "Work out when the cleaning of the seventh slide will finish.",
+            "Do not forget the drying and the walk to the hall.",
+            "Compare the time you get with the start of the show."
+          ],
+          "scene": 3
         }
       ]
     },
     "uk": {
-      "title": "\u041c\u0443\u0437\u0435\u0439 \u043f\u0435\u0440\u0435\u043f\u043b\u0443\u0442\u0430\u043d\u0438\u0445 \u0442\u0456\u043d\u0435\u0439",
-      "intro": "\u0423 \u043c\u0443\u0437\u0435\u0457 \u0442\u0456\u043d\u0435\u0439 \u043b\u0438\u0441\u0438\u0446\u044f \u0440\u0430\u043f\u0442\u043e\u043c \u0441\u0442\u0430\u043b\u0430 \u0432\u0435\u043b\u0435\u0442\u043d\u0435\u043c. \u0414\u043e\u0433\u043b\u044f\u0434\u0430\u0447 \u043f\u043e\u043a\u0430\u0437\u0443\u0454 \u0437\u043d\u0430\u0439\u043e\u043c\u0443 \u0444\u0456\u0433\u0443\u0440\u043a\u0443: \u0457\u0457 \u043d\u0435 \u043c\u0456\u043d\u044f\u043b\u0438. \u041f\u0456\u0441\u043b\u044f \u043f\u0440\u0438\u0431\u0438\u0440\u0430\u043d\u043d\u044f \u043b\u0430\u043c\u043f\u0430 \u0441\u0442\u043e\u0457\u0442\u044c \u043d\u0430 \u0456\u043d\u0448\u0456\u0439 \u043f\u043e\u0437\u043d\u0430\u0447\u0446\u0456, \u0430 \u0437\u0430\u0432\u0443\u0437\u044c\u043a\u0430 \u0448\u0438\u0440\u043c\u0430 \u043d\u0435 \u0432\u043c\u0456\u0449\u0443\u0454 \u0432\u0441\u044e \u0441\u0446\u0435\u043d\u0443. \u0414\u043e\u043f\u043e\u043c\u043e\u0436\u0438 \u0432\u0456\u0434\u043d\u043e\u0432\u0438\u0442\u0438 \u0432\u0447\u043e\u0440\u0430\u0448\u043d\u044e \u0432\u0438\u0441\u0442\u0430\u0432\u0443 \u0437\u0430 \u0432\u0438\u043c\u0456\u0440\u0430\u043c\u0438 \u0439 \u043f\u043b\u0430\u043d\u043e\u043c.",
-      "ending": "\u0422\u0430\u0431\u043b\u0438\u0446\u044f \u0434\u043e\u0441\u043b\u0456\u0434\u0456\u0432 \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043b\u0430 \u043f\u043e\u0432\u0435\u0440\u043d\u0443\u0442\u0438 \u0442\u0456\u043d\u044c \u0437\u0430\u0432\u0432\u0438\u0448\u043a\u0438 60 \u0441\u043c. \u0428\u0438\u0440\u043c\u0430 170 \u0441\u043c \u0443\u043c\u0456\u0441\u0442\u0438\u043b\u0430 \u0441\u0446\u0435\u043d\u0443 \u0456\u0437 \u0437\u0430\u043f\u0430\u0441\u043e\u043c \u043f\u043e \u0431\u043e\u043a\u0430\u0445. \u041e\u0434\u043d\u0430\u043a\u043e\u0432\u0456 \u043f\u0440\u043e\u043c\u0456\u0436\u043a\u0438 \u043f\u043e 30 \u0441\u043c \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043b\u0438 \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0457\u0457 \u043f\u043e\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456. \u0424\u0456\u0433\u0443\u0440\u043a\u0430 \u0437\u0430\u043b\u0438\u0448\u0430\u043b\u0430\u0441\u044f \u0442\u0456\u0454\u044e \u0441\u0430\u043c\u043e\u044e, \u0437\u043c\u0456\u043d\u0438\u043b\u043e\u0441\u044f \u0440\u043e\u0437\u0442\u0430\u0448\u0443\u0432\u0430\u043d\u043d\u044f \u043e\u0431\u043b\u0430\u0434\u043d\u0430\u043d\u043d\u044f.",
-      "question": "\u042f\u043a\u0430 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430 \u043f\u043e\u043a\u0430\u0437\u0430\u043b\u0430, \u0449\u043e \u0444\u0456\u0433\u0443\u0440\u043a\u0443 \u043c\u0456\u043d\u044f\u0442\u0438 \u043d\u0435 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e?",
+      "title": "Музей переплутаних тіней",
+      "intro": "У музеї тіней зірвався денний показ «Лисиця і місяць»: тінь лисиці на екрані стала втричі вищою, а слайд із місяцем зник із коробки. Доглядач запевняє, що фігурок не чіпали. Уранці в залі були троє: прибиральниця Роза, механік Тимур, який лагодив проєктор, і шкільна екскурсія з екскурсоводкою Олею. Наступний показ о 13:00. Треба повернути лисиці колишній розмір, знайти місяць і зрозуміти, хто і що тут накоїв.",
+      "ending": "Лисицю зробив велетнем хлопчик з екскурсії: о 10:48 він пересунув лампу на позначку 30 см, поки Оля відповідала на запитання. Місяць ніхто не крав: Тимур забрав його на чищення за заявкою і не залишив записки. Датчик рейки і порядок подій допомогли відокремити справжню причину від підозр проти механіка, який чесно все записав. Місяць почистили першим, і показ почався о 13:00.",
+      "question": "Тимур ставив лампу на 30 см і забрав місяць. Чому він усе одно не винен у зірваному показі?",
       "steps": [
         {
-          "title": "\u041d\u0430\u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u0432\u0438\u0440\u043e\u0441\u043b\u0430 \u0442\u0456\u043d\u044c?",
-          "situation": "\u0414\u043e\u0433\u043b\u044f\u0434\u0430\u0447 \u0437\u043d\u0430\u0439\u0448\u043e\u0432 \u0443\u0447\u043e\u0440\u0430\u0448\u043d\u0454 \u0444\u043e\u0442\u043e \u0437 \u043b\u0456\u043d\u0456\u0439\u043a\u043e\u044e \u0442\u0430 \u0432\u0438\u043c\u0456\u0440\u044f\u0432 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456\u0448\u043d\u044e \u0442\u0456\u043d\u044c.",
+          "title": "Наскільки зсунули лампу?",
+          "situation": "За столом проєктора доглядач показує вчорашню фотографію з лінійкою і сьогоднішню тінь. Лампа їздить по рейці з позначками, а тінь росте за правилом, яке доглядач перевірив на цьому проєкторі багато разів.",
           "evidence": [
-            "\u0423\u0447\u043e\u0440\u0430 \u0442\u0456\u043d\u044c \u0431\u0443\u043b\u0430 \u0437\u0430\u0432\u0432\u0438\u0448\u043a\u0438 60 \u0441\u043c.",
-            "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u0457\u0457 \u0432\u0438\u0441\u043e\u0442\u0430 1 \u043c 80 \u0441\u043c.",
-            "\u0424\u0456\u0433\u0443\u0440\u043a\u0430 \u043b\u0438\u0441\u0438\u0446\u0456 \u043d\u0435 \u0437\u043c\u0456\u043d\u0438\u043b\u0430\u0441\u044f."
+            "Правило доглядача: якщо екран і фігурка стоять на місці, то у скільки разів лампа ближче до фігурки, у стільки ж разів вища тінь.",
+            "Учора лампа стояла за 90 см від фігурки, тінь лисиці була 60 см.",
+            "Сьогодні тінь 1 м 80 см. Фігурка і екран не рухалися."
           ],
-          "question": "\u0423 \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u0440\u0430\u0437\u0456\u0432 \u0441\u044c\u043e\u0433\u043e\u0434\u043d\u0456\u0448\u043d\u044f \u0442\u0456\u043d\u044c \u0432\u0438\u0449\u0430 \u0437\u0430 \u0432\u0447\u043e\u0440\u0430\u0448\u043d\u044e? \u0412\u0432\u0435\u0434\u0438 \u0447\u0438\u0441\u043b\u043e.",
+          "question": "На якій відстані від фігурки стоїть лампа зараз? Введи число сантиметрів.",
           "kind": "number",
           "options": [],
-          "answer": "3",
-          "explanation": "1 \u043c 80 \u0441\u043c = 180 \u0441\u043c. 180 : 60 = 3.",
-          "outcome": "\u0422\u0456\u043d\u044c \u0443\u0442\u0440\u0438\u0447\u0456 \u0432\u0438\u0449\u0430, \u0445\u043e\u0447\u0430 \u0444\u0456\u0433\u0443\u0440\u043a\u0430 \u0442\u0430 \u0441\u0430\u043c\u0430. \u041f\u0435\u0440\u0435\u0432\u0456\u0440\u043c\u043e, \u043a\u0443\u0434\u0438 \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u043b\u0430\u043c\u043f\u0443, \u0449\u043e\u0431 \u043f\u043e\u0432\u0435\u0440\u043d\u0443\u0442\u0438 \u043a\u043e\u043b\u0438\u0448\u043d\u044e \u0432\u0438\u0441\u043e\u0442\u0443.",
-          "next": "\u041f\u043e\u0434\u0438\u0432\u0438\u0442\u0438\u0441\u044f \u0442\u0430\u0431\u043b\u0438\u0446\u044e \u0434\u043e\u0441\u043b\u0456\u0434\u0456\u0432",
+          "answer": "30",
+          "feedback": [],
+          "explanation": "180 : 60 = 3, тінь виросла втричі. Отже, лампа стала втричі ближче: 90 : 3 = 30 см.",
+          "outcome": "Лампу пересунули з 90 см на позначку 30 см. Така позначка є на рейці, її використовують для іншого показу. Це не випадковий поштовх: лампу хтось поставив. Ідемо в зал дивитися журнал і датчик рейки.",
+          "next": "Перевірити журнал залу",
           "hints": [
-            "\u0412\u0438\u0440\u0430\u0437\u0438 \u043e\u0431\u0438\u0434\u0432\u0456 \u0432\u0438\u0441\u043e\u0442\u0438 \u0432 \u0441\u0430\u043d\u0442\u0438\u043c\u0435\u0442\u0440\u0430\u0445.",
-            "\u041f\u043e\u0434\u0456\u043b\u0438 180 \u0441\u043c \u043d\u0430 60 \u0441\u043c.",
-            "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0440\u0430\u0437\u0456\u0432 60 \u0443\u043c\u0456\u0449\u0443\u0454\u0442\u044c\u0441\u044f \u0432 180?"
-          ],
-          "scene": 0
-        },
-        {
-          "title": "\u041a\u0443\u0434\u0438 \u043f\u043e\u0432\u0435\u0440\u043d\u0443\u0442\u0438 \u043b\u0430\u043c\u043f\u0443?",
-          "situation": "\u0414\u043e\u0433\u043b\u044f\u0434\u0430\u0447 \u0443\u0436\u0435 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0432 \u0442\u0440\u0438 \u043f\u043e\u043b\u043e\u0436\u0435\u043d\u043d\u044f \u043b\u0430\u043c\u043f\u0438 \u0439 \u0437\u0430\u043f\u0438\u0441\u0430\u0432 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442\u0438. \u0423 \u0432\u0441\u0456\u0445 \u0434\u043e\u0441\u043b\u0456\u0434\u0430\u0445 \u0444\u0456\u0433\u0443\u0440\u043a\u0430 \u0442\u0430 \u0435\u043a\u0440\u0430\u043d \u0437\u0430\u043b\u0438\u0448\u0430\u043b\u0438\u0441\u044f \u043d\u0430 \u0441\u0432\u043e\u0457\u0445 \u043c\u0456\u0441\u0446\u044f\u0445.",
-          "evidence": [
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0410: \u0442\u0456\u043d\u044c \u0437\u0430\u0432\u0432\u0438\u0448\u043a\u0438 180 \u0441\u043c.",
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0411: \u0442\u0456\u043d\u044c \u0437\u0430\u0432\u0432\u0438\u0448\u043a\u0438 120 \u0441\u043c.",
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0412: \u0442\u0456\u043d\u044c \u0437\u0430\u0432\u0432\u0438\u0448\u043a\u0438 60 \u0441\u043c.",
-            "\u0414\u043b\u044f \u0432\u0438\u0441\u0442\u0430\u0432\u0438 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0442\u0456\u043d\u044c \u0437\u0430\u0432\u0432\u0438\u0448\u043a\u0438 60 \u0441\u043c."
-          ],
-          "question": "\u042f\u043a\u0443 \u043f\u043e\u0437\u043d\u0430\u0447\u043a\u0443 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0432\u0438\u0431\u0440\u0430\u0442\u0438 \u0437\u0430 \u0442\u0430\u0431\u043b\u0438\u0446\u0435\u044e?",
-          "kind": "choice",
-          "options": [
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0410",
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0411",
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0412"
-          ],
-          "answer": 2,
-          "explanation": "\u041b\u0438\u0448\u0435 \u043f\u043e\u0437\u043d\u0430\u0447\u043a\u0430 \u0412 \u0434\u0430\u043b\u0430 \u0442\u0456\u043d\u044c 60 \u0441\u043c. \u0410 \u0434\u0430\u0454 180 \u0441\u043c, \u0411 \u0434\u0430\u0454 120 \u0441\u043c.",
-          "outcome": "\u0414\u043e\u0433\u043b\u044f\u0434\u0430\u0447 \u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043b\u0430\u043c\u043f\u0443 \u043d\u0430 \u043f\u043e\u0437\u043d\u0430\u0447\u043a\u0443 \u0412 \u0456 \u0432\u0438\u043c\u0456\u0440\u044e\u0454 \u0442\u0456\u043d\u044c: 60 \u0441\u043c. \u0422\u0435\u043f\u0435\u0440 \u0442\u0440\u0435\u0431\u0430 \u0437\u0430\u043c\u0456\u043d\u0438\u0442\u0438 \u0432\u0443\u0437\u044c\u043a\u0443 \u0448\u0438\u0440\u043c\u0443, \u0449\u043e\u0431 \u0443\u043c\u0456\u0441\u0442\u0438\u043b\u0438\u0441\u044f \u043b\u0438\u0441\u0438\u0446\u044f \u0439 \u0434\u0435\u0440\u0435\u0432\u043e.",
-          "next": "\u041f\u0456\u0434\u0456\u0431\u0440\u0430\u0442\u0438 \u0448\u0438\u0440\u043c\u0443",
-          "hints": [
-            "\u0417\u043d\u0430\u0439\u0434\u0438 \u0432 \u0442\u0430\u0431\u043b\u0438\u0446\u0456 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0443 \u0432\u0438\u0441\u043e\u0442\u0443.",
-            "\u0428\u0443\u043a\u0430\u0454\u043c\u043e 60 \u0441\u043c, \u044f\u043a \u043d\u0430 \u0432\u0447\u043e\u0440\u0430\u0448\u043d\u0456\u0439 \u0432\u0438\u0441\u0442\u0430\u0432\u0456.",
-            "\u041f\u043e\u0440\u0456\u0432\u043d\u044f\u0439 \u043a\u043e\u0436\u0435\u043d \u0440\u044f\u0434\u043e\u043a \u0456\u0437 60 \u0441\u043c."
+            "Спершу дізнайся, у скільки разів виросла тінь. Переведи метри в сантиметри.",
+            "У стільки ж разів лампа стала ближче до фігурки.",
+            "Поділи вчорашню відстань на це число."
           ],
           "scene": 1
         },
         {
-          "title": "\u042f\u043a\u043e\u0457 \u0448\u0438\u0440\u0438\u043d\u0438 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0448\u0438\u0440\u043c\u0430?",
-          "situation": "\u0423 \u043c\u0430\u0439\u0441\u0442\u0435\u0440\u043d\u0456 \u0454 \u0442\u0440\u0438 \u0448\u0438\u0440\u043c\u0438. \u041d\u043e\u0432\u0443 \u043f\u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0442\u044c \u043d\u0430 \u0442\u0456\u0439 \u0441\u0430\u043c\u0456\u0439 \u0432\u0456\u0434\u0441\u0442\u0430\u043d\u0456 \u0432\u0456\u0434 \u043b\u0430\u043c\u043f\u0438 \u0439 \u0444\u0456\u0433\u0443\u0440\u043a\u0438, \u0449\u043e \u0439 \u043f\u043e\u043f\u0435\u0440\u0435\u0434\u043d\u044e. \u0422\u043e\u0434\u0456 \u0440\u043e\u0437\u043c\u0456\u0440\u0438 \u0442\u0456\u043d\u0435\u0439 \u043d\u0435 \u0437\u043c\u0456\u043d\u044f\u0442\u044c\u0441\u044f.",
+          "title": "Хто пересунув лампу?",
+          "situation": "У залі доглядач дістає журнал і роздруківку датчика на рейці. Датчик записує кожне переміщення лампи, але час рахує від увімкнення проєктора. Троє були в залі в різний час. Перевір, хто міг зсунути лампу останнім.",
           "evidence": [
-            "\u0421\u0446\u0435\u043d\u0430 \u0437 \u043b\u0438\u0441\u0438\u0446\u0435\u044e \u0439 \u0434\u0435\u0440\u0435\u0432\u043e\u043c \u0437\u0430\u0439\u043c\u0430\u0454 120 \u0441\u043c \u0437\u0430\u0432\u0448\u0438\u0440\u0448\u043a\u0438.",
-            "\u0417\u0430 \u043f\u043b\u0430\u043d\u043e\u043c \u0432\u0438\u0441\u0442\u0430\u0432\u0438 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0437\u0430\u043b\u0438\u0448\u0438\u0442\u0438 \u0449\u043e\u043d\u0430\u0439\u043c\u0435\u043d\u0448\u0435 25 \u0441\u043c \u0437 \u043a\u043e\u0436\u043d\u043e\u0433\u043e \u0431\u043e\u043a\u0443 \u0441\u0446\u0435\u043d\u0438.",
-            "\u0428\u0438\u0440\u043c\u0438 \u043c\u0430\u044e\u0442\u044c \u0448\u0438\u0440\u0438\u043d\u0443 150 \u0441\u043c, 170 \u0441\u043c \u0456 160 \u0441\u043c."
+            "Учора о 19:00 після показу лампа стояла на 90 см, це записано в журналі. Сьогодні о 12:00 доглядач побачив її на 30 см.",
+            "Роза прибирала зал з 8:00 до 8:45. Проєктор у цей час був вимкнений.",
+            "Тимур лагодив проєктор з 9:30 до 10:10. У його заявці: «увімкнув проєктор о 9:30, замінив лампу, перевірив на позначці 30 см, повернув на 90 см».",
+            "Екскурсія Олі була в залі з 10:30 до 11:15. Діти підходили до проєктора.",
+            "Датчик рейки, час від увімкнення проєктора: 0:22 лампа на 30 см, 0:35 на 90 см, 1:18 на 30 см. Більше переміщень немає."
           ],
-          "question": "\u042f\u043a\u0430 \u0448\u0438\u0440\u043c\u0430 \u0432\u043c\u0456\u0441\u0442\u0438\u0442\u044c \u0441\u0446\u0435\u043d\u0443 \u0439 \u0437\u0430\u043f\u0430\u0441 \u0437 \u043e\u0431\u043e\u0445 \u0431\u043e\u043a\u0456\u0432?",
+          "question": "Хто пересунув лампу востаннє?",
           "kind": "choice",
           "options": [
-            "150 \u0441\u043c",
-            "170 \u0441\u043c",
-            "160 \u0441\u043c"
+            "Роза під час прибирання",
+            "Тимур під час ремонту",
+            "Хтось з екскурсії Олі",
+            "Доглядач, коли відкривав зал"
           ],
-          "answer": 1,
-          "explanation": "120 + 25 + 25 = 170 \u0441\u043c. \u0428\u0438\u0440\u043c\u0438 150 \u0456 160 \u0441\u043c \u0437\u0430\u0432\u0443\u0437\u044c\u043a\u0456.",
-          "outcome": "\u041f\u0456\u0434\u0445\u043e\u0434\u0438\u0442\u044c \u0448\u0438\u0440\u043c\u0430 170 \u0441\u043c. \u0414\u043e\u0433\u043b\u044f\u0434\u0430\u0447 \u043f\u0435\u0440\u0435\u043d\u043e\u0441\u0438\u0442\u044c \u0457\u0457 \u0434\u043e \u0437\u0430\u043b\u0438. \u0417\u0430\u043b\u0438\u0448\u0438\u043b\u043e\u0441\u044f \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0457\u0457 \u0442\u043e\u0447\u043d\u043e \u043f\u043e\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456.",
-          "next": "\u041f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u0438 \u0448\u0438\u0440\u043c\u0443 \u0432 \u0437\u0430\u043b\u0456",
+          "answer": 2,
+          "feedback": [
+            "Роза пішла о 8:45, а проєктор увімкнули лише о 9:30. При вимкненому проєкторі датчик переміщень не записав.",
+            "Тимур ставив 30 см о 9:52 для перевірки, але о 10:05 повернув 90 см, як і написав. Останнє переміщення було пізніше, після того як він пішов.",
+            "",
+            "Доглядач прийшов о 12:00, а останнє переміщення датчик записав раніше."
+          ],
+          "explanation": "Проєктор увімкнули о 9:30, отже записи датчика це 9:52, 10:05 і 10:48. Тимур поставив 30 см для перевірки і о 10:05 повернув 90 см, як і написав у заявці. Останній зсув о 10:48 був під час екскурсії Олі. Роза пішла до увімкнення проєктора.",
+          "outcome": "Лампу зсунули о 10:48, під час екскурсії. Оля згадує: саме тоді один хлопчик питав, як зробити лисицю велетнем. З лампою ясно. Але місяць зник не тоді: Оля бачила його в коробці перед тим, як піти. Шукаємо місяць.",
+          "next": "Шукати місяць",
           "hints": [
-            "\u0417\u0430\u043f\u0430\u0441 \u043f\u043e\u0442\u0440\u0456\u0431\u0435\u043d \u0456\u0437 \u0434\u0432\u043e\u0445 \u0431\u043e\u043a\u0456\u0432, \u043d\u0435 \u0437 \u043e\u0434\u043d\u043e\u0433\u043e.",
-            "\u0414\u043e 120 \u0441\u043c \u0434\u043e\u0434\u0430\u0439 25 \u0441\u043c \u0434\u0432\u0456\u0447\u0456.",
-            "\u041d\u0430\u0439\u043c\u0435\u043d\u0448\u0430 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0430 \u0448\u0438\u0440\u0438\u043d\u0430 \u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c 170 \u0441\u043c."
+            "Датчик рахує час від увімкнення проєктора. Переведи його записи у звичайний час.",
+            "Знайди найпізніше переміщення лампи і подивися, хто був у залі в цей момент.",
+            "Заявка Тимура не суперечить датчику: порівняй його записи 0:22 і 0:35 з тим, що він написав."
           ],
-          "scene": 3
+          "scene": 0
         },
         {
-          "title": "\u0414\u0435 \u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0430?",
-          "situation": "\u041d\u0430 \u043f\u0456\u0434\u043b\u043e\u0437\u0456 \u0437\u0430\u043b\u0438 \u043f\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u043e \u043c\u0456\u0441\u0446\u0435 \u0434\u043b\u044f \u0448\u0438\u0440\u043c\u0438: \u0441\u043c\u0443\u0433\u0430 \u0437\u0430\u0432\u0448\u0438\u0440\u0448\u043a\u0438 230 \u0441\u043c. \u041f\u043e\u0441\u0442\u0430\u0432\u0438\u043c\u043e \u043e\u0431\u0440\u0430\u043d\u0443 \u0448\u0438\u0440\u043c\u0443 \u0442\u043e\u0447\u043d\u043e \u043f\u043e\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456.",
+          "title": "Коли зник місяць?",
+          "situation": "У кінозалі доглядач, Оля і Тимур згадують, хто і коли заходив після екскурсії. Двері залу на замку з датчиком, тому всі входи відомі. Розстав події по порядку, щоб зрозуміти, хто був у залі, коли місяць зник.",
           "evidence": [
-            "\u041f\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u0430 \u0441\u043c\u0443\u0433\u0430 \u043c\u0430\u0454 \u0448\u0438\u0440\u0438\u043d\u0443 230 \u0441\u043c.",
-            "\u041e\u0431\u0440\u0430\u043d\u0430 \u0448\u0438\u0440\u043c\u0430 \u043c\u0430\u0454 \u0448\u0438\u0440\u0438\u043d\u0443 170 \u0441\u043c.",
-            "\u041f\u0440\u043e\u043c\u0456\u0436\u043a\u0438 \u043c\u0456\u0436 \u043a\u0440\u0430\u044f\u043c\u0438 \u0448\u0438\u0440\u043c\u0438 \u0442\u0430 \u043c\u0435\u0436\u0430\u043c\u0438 \u0441\u043c\u0443\u0433\u0438 \u043c\u0430\u044e\u0442\u044c \u0431\u0443\u0442\u0438 \u043e\u0434\u043d\u0430\u043a\u043e\u0432\u0438\u043c\u0438."
+            "Оля бачила місяць у коробці слайдів за 5 хвилин до того, як екскурсія вийшла із залу.",
+            "Екскурсія вийшла із залу об 11:15.",
+            "Тимур повернувся за інструментами через 25 хвилин після виходу екскурсії і пробув у залі 10 хвилин.",
+            "Доглядач відкрив коробку о 12:00: місяця немає.",
+            "Більше в зал ніхто не заходив."
           ],
-          "question": "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0441\u0430\u043d\u0442\u0438\u043c\u0435\u0442\u0440\u0456\u0432 \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u043e \u0437\u0430\u043b\u0438\u0448\u0438\u0442\u0438 \u0437 \u043a\u043e\u0436\u043d\u043e\u0433\u043e \u0431\u043e\u043a\u0443 \u0448\u0438\u0440\u043c\u0438?",
-          "kind": "number",
-          "options": [],
-          "answer": "30",
-          "explanation": "230 - 170 = 60 \u0441\u043c \u0432\u0456\u043b\u044c\u043d\u043e\u0433\u043e \u043c\u0456\u0441\u0446\u044f. 60 : 2 = 30 \u0441\u043c \u0437 \u043a\u043e\u0436\u043d\u043e\u0433\u043e \u0431\u043e\u043a\u0443.",
-          "outcome": "\u0414\u043e\u0433\u043b\u044f\u0434\u0430\u0447 \u0437\u0430\u043b\u0438\u0448\u0430\u0454 \u043f\u043e 30 \u0441\u043c, \u0437\u0430\u043a\u0440\u0456\u043f\u043b\u044e\u0454 \u0448\u0438\u0440\u043c\u0443 \u0439 \u043f\u043e\u0447\u0438\u043d\u0430\u0454 \u0432\u0438\u0441\u0442\u0430\u0432\u0443. \u0423\u0441\u044f \u0441\u0446\u0435\u043d\u0430 \u0432\u043c\u0456\u0449\u0443\u0454\u0442\u044c\u0441\u044f \u043d\u0430 \u0435\u043a\u0440\u0430\u043d\u0456.",
-          "next": "\u041f\u043e\u0434\u0438\u0432\u0438\u0442\u0438\u0441\u044f \u0432\u0456\u0434\u043d\u043e\u0432\u043b\u0435\u043d\u0443 \u0432\u0438\u0441\u0442\u0430\u0432\u0443",
+          "question": "Розстав події від найранішої до найпізнішої.",
+          "kind": "order",
+          "options": [
+            "Доглядач відкриває коробку: місяця немає",
+            "Тимур повертається за інструментами",
+            "Оля бачить місяць у коробці",
+            "Екскурсія виходить із залу"
+          ],
+          "answer": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "feedback": [],
+          "explanation": "Оля бачила місяць об 11:10, екскурсія вийшла об 11:15, Тимур повернувся об 11:40 і пішов об 11:50, доглядач відкрив коробку о 12:00. Між 11:15 і 12:00 у залі був лише Тимур.",
+          "outcome": "Після виходу екскурсії в залі був лише Тимур. У його заявці є ще один пункт: «забрати слайди з подряпинами на чищення». А на місяці подряпина з минулого тижня. Ідемо в майстерню.",
+          "next": "У майстерню",
           "hints": [
-            "\u0421\u043f\u043e\u0447\u0430\u0442\u043a\u0443 \u0437\u043d\u0430\u0439\u0434\u0438 \u0432\u0441\u0435 \u0432\u0456\u043b\u044c\u043d\u0435 \u043c\u0456\u0441\u0446\u0435.",
-            "\u0412\u0456\u0434\u043d\u0456\u043c\u0438 170 \u0432\u0456\u0434 230.",
-            "\u041f\u043e\u0434\u0456\u043b\u0438 \u0440\u0435\u0448\u0442\u0443 60 \u0441\u043c \u043f\u043e\u0440\u0456\u0432\u043d\u0443 \u043c\u0456\u0436 \u0434\u0432\u043e\u043c\u0430 \u0431\u043e\u043a\u0430\u043c\u0438."
+            "Спершу обчисли час кожної події, у двох його дано відносно інших.",
+            "«За 5 хвилин до 11:15» це раніше, ніж 11:15. «Через 25 хвилин після 11:15» це пізніше.",
+            "Вишикуй чотири часи за зростанням."
           ],
           "scene": 2
+        },
+        {
+          "title": "Чи встигне місяць до показу?",
+          "situation": "У майстерні місяць лежить у черзі на чищення разом з іншими подряпаними слайдами. Тимур вибачається: забув залишити записку. Машина чистить слайди строго по черзі. Перевір, чи встигне місяць до показу, якщо нічого не міняти.",
+          "evidence": [
+            "Показ «Лисиця і місяць» починається о 13:00.",
+            "Машина чистить по одному слайду, по 4 хвилини на кожен. Чергу запустили о 12:20. Місяць у черзі сьомий.",
+            "Після чищення слайд сохне 10 хвилин, потім його несуть у зал 5 хвилин."
+          ],
+          "question": "На скільки хвилин місяць запізниться до початку показу, якщо чергу залишити як є? Введи число.",
+          "kind": "number",
+          "options": [],
+          "answer": "3",
+          "feedback": [],
+          "explanation": "7 × 4 = 28 хвилин: місяць буде чистим о 12:48. Сушіння до 12:58, у залі о 13:03. Це на 3 хвилини пізніше за початок.",
+          "outcome": "Запізнення маленьке, але показ чекати не буде. Тимур переставляє місяць першим: чистий о 12:24, сухий о 12:34, у залі о 12:39. Лампу повертають на позначку 90 см.",
+          "next": "Подивитися відновлений показ",
+          "hints": [
+            "Порахуй, о котрій закінчиться чищення сьомого слайда.",
+            "Не забудь про сушіння і дорогу до залу.",
+            "Порівняй отриманий час із початком показу."
+          ],
+          "scene": 3
         }
       ]
     }

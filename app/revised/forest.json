@@ -3,204 +3,250 @@
   "number": "002",
   "locales": {
     "ru": {
-      "title": "\u041b\u0435\u0441\u043d\u044b\u0435 \u0444\u043e\u043d\u0430\u0440\u0438",
-      "intro": "\u041b\u0430\u0434\u0430 \u0433\u043e\u0442\u043e\u0432\u0438\u0442 \u0432\u0435\u0447\u0435\u0440\u043d\u044e\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0443 \u043f\u043e \u0442\u0440\u043e\u043f\u0435 \u0441 \u0431\u0443\u043c\u0430\u0436\u043d\u044b\u043c\u0438 \u0433\u0440\u0438\u0431\u0430\u043c\u0438. \u0412\u043e \u0432\u0440\u0435\u043c\u044f \u0434\u043d\u0435\u0432\u043d\u043e\u0439 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438 \u0447\u0430\u0441\u0442\u044c \u0444\u043e\u043d\u0430\u0440\u0435\u0439 \u043d\u0435 \u0437\u0430\u0433\u043e\u0440\u0435\u043b\u0430\u0441\u044c. \u0412\u0441\u0435 \u043e\u0441\u0442\u0430\u044e\u0442\u0441\u044f \u0443 \u0432\u0445\u043e\u0434\u0430, \u043f\u043e\u043a\u0430 \u043c\u0430\u0441\u0442\u0435\u0440 \u0418\u043b\u044c\u044f \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u0442 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u0438\u0435. \u041f\u043e\u043c\u043e\u0433\u0438 \u043d\u0430\u0439\u0442\u0438 \u043f\u0440\u0438\u0447\u0438\u043d\u0443 \u0438 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u0438\u0442\u044c \u043f\u043b\u0430\u043d \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0438.",
-      "ending": "\u041f\u0440\u0438\u0447\u0438\u043d\u0430 \u043d\u0430\u0439\u0434\u0435\u043d\u0430: \u0442\u0440\u0435\u0442\u0438\u0439 \u0431\u043b\u043e\u043a \u0432\u043a\u043b\u044e\u0447\u0438\u043b\u0438 \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0440\u0430\u043d\u043e, \u0438 \u0435\u0433\u043e \u0437\u0430\u0440\u044f\u0434 \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u043b\u0441\u044f \u0434\u043e \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438. \u0418\u043b\u044c\u044f \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u0439 \u0431\u043b\u043e\u043a \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u043b \u0432\u0441\u0435 \u0444\u043e\u043d\u0430\u0440\u0438. \u041d\u0430 \u0432\u0435\u0447\u0435\u0440 \u043f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d \u0447\u0430\u0441\u043e\u0432\u043e\u0439 \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u0441 \u0437\u0430\u043f\u0430\u0441\u043e\u043c \u0440\u0430\u0431\u043e\u0442\u044b 15 \u043c\u0438\u043d\u0443\u0442. \u0414\u0435\u0442\u0438 \u0438\u0434\u0443\u0442 \u043f\u043e \u043d\u0435\u043c\u0443 \u0432\u043c\u0435\u0441\u0442\u0435 \u0441 \u041b\u0430\u0434\u043e\u0439.",
-      "question": "\u041f\u043e\u0447\u0435\u043c\u0443 \u0440\u0430\u0431\u043e\u0442\u0430\u044e\u0449\u0438\u0439 \u043d\u0430 \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u043c \u0431\u043b\u043e\u043a\u0435 \u0444\u043e\u043d\u0430\u0440\u044c \u043f\u043e\u043c\u043e\u0433 \u0441\u0443\u0437\u0438\u0442\u044c \u043f\u043e\u0438\u0441\u043a \u043f\u0440\u0438\u0447\u0438\u043d\u044b?",
+      "title": "Лесные фонари",
+      "intro": "Лада готовит вечернюю прогулку по тропе с бумажными грибами-фонарями. Днём на проверке фонари в конце тропы погасли все разом, в одну секунду. Мастер Илья клянётся, что блок питания новый. Сторож видел у Круглой поляны незнакомца. Лада хочет знать, почему погас свет, чтобы вечером это не повторилось, и успеть подготовить прогулку к 18:10.",
+      "ending": "Свет погас не из-за блока и не из-за незнакомца. Провод от блока 3 лежал через тропу, и в 15:15 его перерезала тележка с ящиками. Разряд блока отпал по времени: он бы выключился в 15:10, а свет пропал в 15:16. Провод заменили на катушку 100 м и проложили вдоль тропы, блок Б зарядился к 17:55. Проверка в 18:00, прогулка с 18:10 до 19:10, у блока останется 5 минут запаса.",
+      "question": "Незнакомец у поляны был на самом деле. Почему он всё равно ни при чём?",
       "steps": [
         {
-          "title": "\u0413\u0434\u0435 \u043e\u0431\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u0441\u0432\u0435\u0442?",
-          "situation": "\u041b\u0430\u0434\u0430 \u0440\u0430\u0437\u0432\u043e\u0440\u0430\u0447\u0438\u0432\u0430\u0435\u0442 \u043f\u043b\u0430\u043d \u0442\u0440\u043e\u043f\u044b. \u0423\u0447\u0430\u0441\u0442\u043a\u0438 \u0438\u0434\u0443\u0442 \u043f\u043e\u0434\u0440\u044f\u0434, \u0438 \u0444\u043e\u043d\u0430\u0440\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u043b\u0438 \u043e\u0442 \u0432\u0445\u043e\u0434\u0430.",
+          "title": "Где обрывается свет?",
+          "situation": "Лада разворачивает план тропы у склада. Фонари пронумерованы подряд от входа, участки разной длины. Днём Илья прошёл вдоль тропы и записал, какие фонари горят.",
           "evidence": [
-            "\u041d\u0430 6 \u0443\u0447\u0430\u0441\u0442\u043a\u0430\u0445 \u043f\u043e 6 \u0444\u043e\u043d\u0430\u0440\u0435\u0439, \u0432\u0441\u0435\u0433\u043e 36.",
-            "\u041f\u0435\u0440\u0432\u044b\u0435 24 \u0444\u043e\u043d\u0430\u0440\u044f \u0433\u043e\u0440\u044f\u0442, \u043e\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u0435 \u043d\u0435 \u0433\u043e\u0440\u044f\u0442.",
-            "\u0411\u043b\u043e\u043a 1 \u043f\u0438\u0442\u0430\u0435\u0442 \u0443\u0447\u0430\u0441\u0442\u043a\u0438 1 \u0438 2, \u0431\u043b\u043e\u043a 2 \u043f\u0438\u0442\u0430\u0435\u0442 3 \u0438 4, \u0431\u043b\u043e\u043a 3 \u043f\u0438\u0442\u0430\u0435\u0442 5 \u0438 6.",
-            "\u041a\u0440\u0443\u0433\u043b\u0430\u044f \u043f\u043e\u043b\u044f\u043d\u0430 \u043d\u0430\u0445\u043e\u0434\u0438\u0442\u0441\u044f \u043c\u0435\u0436\u0434\u0443 \u0443\u0447\u0430\u0441\u0442\u043a\u0430\u043c\u0438 4 \u0438 5."
+            "На участках по порядку от входа: 5, 7, 6, 8, 4 и 6 фонарей, всего 36.",
+            "На проверке горели фонари с 1 по 26. Дальше все тёмные.",
+            "Блок 1 питает участки 1 и 2, блок 2 питает участки 3 и 4, блок 3 питает участки 5 и 6.",
+            "Каждый блок питает только свои фонари."
           ],
-          "question": "\u0421\u043a\u043e\u043b\u044c\u043a\u043e \u0443\u0447\u0430\u0441\u0442\u043a\u043e\u0432 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u043e \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e? \u0412\u0432\u0435\u0434\u0438 \u0447\u0438\u0441\u043b\u043e \u0443\u0447\u0430\u0441\u0442\u043a\u043e\u0432.",
+          "question": "Сколько фонарей питает блок, из-за которого пропал свет? Введи число.",
           "kind": "number",
           "options": [],
-          "answer": "4",
-          "explanation": "24 : 6 = 4. \u041f\u0435\u0440\u0432\u044b\u0435 \u0447\u0435\u0442\u044b\u0440\u0435 \u0443\u0447\u0430\u0441\u0442\u043a\u0430 \u043e\u0441\u0432\u0435\u0449\u0435\u043d\u044b, \u0443\u0447\u0430\u0441\u0442\u043a\u0438 5 \u0438 6 \u0442\u0451\u043c\u043d\u044b\u0435.",
-          "outcome": "\u041e\u0431\u0430 \u0442\u0451\u043c\u043d\u044b\u0445 \u0443\u0447\u0430\u0441\u0442\u043a\u0430 \u043f\u0438\u0442\u0430\u044e\u0442\u0441\u044f \u043e\u0442 \u0431\u043b\u043e\u043a\u0430 3. \u0418\u043b\u044c\u044f \u043f\u0440\u0435\u0434\u043b\u0430\u0433\u0430\u0435\u0442 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0435\u0433\u043e \u0443 \u041a\u0440\u0443\u0433\u043b\u043e\u0439 \u043f\u043e\u043b\u044f\u043d\u044b.",
-          "next": "\u041f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u0442\u0440\u0435\u0442\u0438\u0439 \u0431\u043b\u043e\u043a",
+          "answer": "10",
+          "feedback": [],
+          "explanation": "5 + 7 + 6 + 8 = 26: горят ровно первые четыре участка. Фонарь 27 стоит на участке 5. Тёмные участки 5 и 6 питает блок 3: 4 + 6 = 10 фонарей.",
+          "outcome": "Погасли все 10 фонарей блока 3 сразу и ни один другой. Значит, дело в блоке или в его проводе, а не в самих фонарях. Идём к Круглой поляне, где стоит блок 3.",
+          "next": "Идти к блоку 3",
           "hints": [
-            "\u041d\u0430 \u043a\u0430\u0436\u0434\u043e\u043c \u0443\u0447\u0430\u0441\u0442\u043a\u0435 \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u043e\u0435 \u0447\u0438\u0441\u043b\u043e \u0444\u043e\u043d\u0430\u0440\u0435\u0439.",
-            "\u0420\u0430\u0437\u0434\u0435\u043b\u0438 \u0447\u0438\u0441\u043b\u043e \u0433\u043e\u0440\u044f\u0449\u0438\u0445 \u0444\u043e\u043d\u0430\u0440\u0435\u0439 \u043d\u0430 6.",
-            "24 : 6 \u043f\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0435\u0442 \u0447\u0438\u0441\u043b\u043e \u043e\u0441\u0432\u0435\u0449\u0451\u043d\u043d\u044b\u0445 \u0443\u0447\u0430\u0441\u0442\u043a\u043e\u0432."
+            "Складывай фонари по участкам от входа, пока не наберёшь 26.",
+            "Первый тёмный фонарь номер 27. Найди, на каком участке он стоит.",
+            "Тёмные участки питает один и тот же блок. Сложи фонари его участков."
           ],
           "scene": 0
         },
         {
-          "title": "\u041f\u043e\u0447\u0435\u043c\u0443 \u0444\u043e\u043d\u0430\u0440\u044c \u043d\u0435 \u0433\u043e\u0440\u0435\u043b?",
-          "situation": "\u0418\u043b\u044c\u044f \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0438\u043b \u043f\u0435\u0440\u0432\u044b\u0439 \u0442\u0451\u043c\u043d\u044b\u0439 \u0444\u043e\u043d\u0430\u0440\u044c \u043a \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u043c\u0443 \u0431\u043b\u043e\u043a\u0443, \u0438 \u0442\u043e\u0442 \u0437\u0430\u0433\u043e\u0440\u0435\u043b\u0441\u044f. \u0422\u0435\u043f\u0435\u0440\u044c \u043c\u0430\u0441\u0442\u0435\u0440 \u0441\u0432\u0435\u0440\u044f\u0435\u0442 \u0432\u0440\u0435\u043c\u044f \u0440\u0430\u0431\u043e\u0442\u044b \u0431\u043b\u043e\u043a\u0430 3.",
+          "title": "Почему погас свет?",
+          "situation": "У Круглой поляны Илья открывает ящик блока 3. Лада собрала все факты, включая рассказ сторожа. Версий три: блок разрядился, кто-то его выключил, повреждён провод. Проверь каждую по времени и по тому, что видно на месте.",
           "evidence": [
-            "\u041d\u0430 \u043a\u0430\u0440\u0442\u043e\u0447\u043a\u0435 \u0418\u043b\u044c\u0438: \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0439 \u0431\u043b\u043e\u043a 3 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 50 \u043c\u0438\u043d\u0443\u0442, \u0437\u0430\u0442\u0435\u043c \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u0435\u0442\u0441\u044f.",
-            "\u0421\u0435\u0433\u043e\u0434\u043d\u044f \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0439 \u0431\u043b\u043e\u043a \u0432\u043a\u043b\u044e\u0447\u0438\u043b\u0438 \u0432 14:20 \u0438 \u0431\u043e\u043b\u044c\u0448\u0435 \u043d\u0435 \u0432\u044b\u043a\u043b\u044e\u0447\u0430\u043b\u0438.",
-            "\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043d\u0430\u0447\u0430\u043b\u0430\u0441\u044c \u0432 15:20."
+            "Датчик блока записал: фонари 27-36 погасли в 15:16.",
+            "Илья включил полностью заряженный блок 3 в 14:20. По карточке заряда хватает ровно на 50 минут, потом блок выключается сам.",
+            "Индикатор заряда блока показывает 2 деления из 5. Выключатель стоит в положении «включено».",
+            "Провод от блока к фонарю 27 лежит поперёк тропы. По журналу склада в 15:15 по тропе проехала тележка с ящиками.",
+            "Сторож видел незнакомца у поляны в 14:40. В 14:50 тот ушёл в сторону входа."
           ],
-          "question": "\u0412\u043e \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0431\u043b\u043e\u043a 3 \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u043b \u043e\u0442\u043a\u043b\u044e\u0447\u0438\u0442\u044c\u0441\u044f? \u0412\u0432\u0435\u0434\u0438 \u0432\u0440\u0435\u043c\u044f \u0427\u0427:\u041c\u041c.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:10",
-          "explanation": "14:20 + 40 \u043c\u0438\u043d\u0443\u0442 = 15:00; \u0435\u0449\u0451 10 \u043c\u0438\u043d\u0443\u0442 \u0434\u0430\u044e\u0442 15:10. \u042d\u0442\u043e \u043d\u0430 10 \u043c\u0438\u043d\u0443\u0442 \u0440\u0430\u043d\u044c\u0448\u0435 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438.",
-          "outcome": "\u041c\u0430\u0441\u0442\u0435\u0440 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0430\u0435\u0442, \u0447\u0442\u043e \u0431\u043b\u043e\u043a \u0440\u0430\u0437\u0440\u044f\u0436\u0435\u043d. \u0421\u0430\u043c \u0444\u043e\u043d\u0430\u0440\u044c \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442, \u043f\u043e\u044d\u0442\u043e\u043c\u0443 \u0438\u0434\u0451\u043c \u0432 \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u0443\u044e \u043f\u043e\u0434\u043e\u0431\u0440\u0430\u0442\u044c \u0437\u0430\u043c\u0435\u043d\u0443 \u0434\u043b\u044f \u0434\u0432\u0443\u0445 \u0442\u0451\u043c\u043d\u044b\u0445 \u0443\u0447\u0430\u0441\u0442\u043a\u043e\u0432.",
-          "next": "\u0412\u044b\u0431\u0440\u0430\u0442\u044c \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u0439 \u0431\u043b\u043e\u043a",
+          "question": "Какая версия согласуется со всеми фактами?",
+          "kind": "choice",
+          "options": [
+            "Блок разрядился, заряда хватило только до 15:10",
+            "Незнакомец выключил блок и ушёл",
+            "Провод поперёк тропы повредила тележка в 15:15",
+            "Все 10 фонарей перегорели одновременно"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Если бы блок разрядился, свет пропал бы в 15:10. А он пропал в 15:16, и индикатор до сих пор показывает заряд.",
+            "Выключатель в положении «включено», а незнакомец ушёл в 14:50, за 26 минут до того, как погас свет.",
+            "",
+            "Десять фонарей не перегорают в одну секунду, а на первом шаге мы уже поняли, что дело в блоке или проводе."
+          ],
+          "explanation": "Разряд не подходит: 14:20 + 50 минут = 15:10, а свет пропал в 15:16, и заряд в блоке остался. Незнакомец ушёл в 14:50 и выключатель не трогал. Провод лежит поперёк тропы, тележка проехала в 15:15, свет пропал через минуту. Илья находит на проводе след колеса и разрыв.",
+          "outcome": "Причина найдена: провод перерезала тележка. Нужен новый провод, который проложат вдоль тропы, и блок на вечер. Идём в мастерскую.",
+          "next": "В мастерскую",
           "hints": [
-            "\u041f\u0440\u0438\u0431\u0430\u0432\u044c 50 \u043c\u0438\u043d\u0443\u0442 \u043a \u043c\u043e\u043c\u0435\u043d\u0442\u0443 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u044f.",
-            "\u0414\u043e 15:00 \u043f\u0440\u043e\u0439\u0434\u0451\u0442 40 \u043c\u0438\u043d\u0443\u0442.",
-            "\u041e\u0441\u0442\u0430\u0451\u0442\u0441\u044f \u0435\u0449\u0451 10 \u043c\u0438\u043d\u0443\u0442."
+            "Проверь версию с разрядом по времени: во сколько выключился бы блок, включённый в 14:20?",
+            "Сравни время каждого события с 15:16, когда погас свет.",
+            "Ищи событие, которое произошло прямо перед 15:16 и объясняет, почему погасли все фонари блока сразу."
           ],
           "scene": 1
         },
         {
-          "title": "\u041a\u0430\u043a\u043e\u0433\u043e \u0437\u0430\u043f\u0430\u0441\u0430 \u0445\u0432\u0430\u0442\u0438\u0442?",
-          "situation": "\u0412 \u043c\u0430\u0441\u0442\u0435\u0440\u0441\u043a\u043e\u0439 \u0442\u0440\u0438 \u0431\u043b\u043e\u043a\u0430, \u0438 \u043a\u0430\u0436\u0434\u044b\u0439 \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442 \u043a \u043d\u0430\u0448\u0438\u043c \u0444\u043e\u043d\u0430\u0440\u044f\u043c. \u0418\u043b\u044c\u044f \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0437\u0430\u0440\u044f\u0434\u0438\u0442 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u043a \u0432\u0435\u0447\u0435\u0440\u043d\u0435\u0439 \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0435.",
+          "title": "Что взять из мастерской?",
+          "situation": "В мастерской Илья раскладывает катушки провода и запасные блоки. Новый провод проложат вдоль тропы, в обход, чтобы тележки его не задевали. Обход измерен по плану. Блок нужен на всю вечернюю прогулку, включая проверку перед выходом.",
           "evidence": [
-            "\u041f\u0443\u0442\u044c \u0434\u043e \u043f\u0430\u0432\u0438\u043b\u044c\u043e\u043d\u043e\u0432 \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 45 \u043c\u0438\u043d\u0443\u0442.",
-            "\u0412\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 \u0435\u0449\u0451 15 \u043c\u0438\u043d\u0443\u0442; \u0441\u0432\u0435\u0442 \u043d\u0443\u0436\u0435\u043d \u0432\u0441\u0451 \u044d\u0442\u043e \u0432\u0440\u0435\u043c\u044f.",
-            "\u041d\u0430 \u043a\u0430\u0440\u0442\u043e\u0447\u043a\u0430\u0445 \u0443\u043a\u0430\u0437\u0430\u043d\u043e, \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043a\u0430\u0436\u0434\u044b\u0439 \u0431\u043b\u043e\u043a \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u043f\u043e\u0441\u043b\u0435 \u043f\u043e\u043b\u043d\u043e\u0439 \u0437\u0430\u0440\u044f\u0434\u043a\u0438."
+            "На плане обход провода вдоль тропы измерен: 4,5 см. Масштаб плана: 1 см = 20 м. Сращивать провод из двух кусков нельзя.",
+            "Катушки провода: 60 м, 80 м и 100 м.",
+            "Вечером фонари включают для проверки в 18:00. Группа выходит в 18:10, идёт до павильонов 45 минут с остановками и возвращается за 15 минут. Свет нужен до самого возвращения.",
+            "Блоки после полной зарядки работают: А 40 минут, Б 75 минут, В 50 минут."
           ],
-          "question": "\u0412\u044b\u0431\u0435\u0440\u0438 \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u0439 \u0431\u043b\u043e\u043a, \u043a\u043e\u0442\u043e\u0440\u043e\u0433\u043e \u0445\u0432\u0430\u0442\u0438\u0442 \u043d\u0430 \u0432\u0441\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0443.",
-          "kind": "choice",
+          "question": "Отметь, что нужно взять: один провод и один блок.",
+          "kind": "multi",
           "options": [
-            "\u0411\u043b\u043e\u043a \u0410: 40 \u043c\u0438\u043d\u0443\u0442",
-            "\u0411\u043b\u043e\u043a \u0411: 75 \u043c\u0438\u043d\u0443\u0442",
-            "\u0411\u043b\u043e\u043a \u0412: 50 \u043c\u0438\u043d\u0443\u0442"
+            "Катушка 60 м",
+            "Катушка 80 м",
+            "Катушка 100 м",
+            "Блок А: 40 минут",
+            "Блок Б: 75 минут",
+            "Блок В: 50 минут"
           ],
-          "answer": 1,
-          "explanation": "\u041d\u0443\u0436\u043d\u043e 45 + 15 = 60 \u043c\u0438\u043d\u0443\u0442. 40 \u0438 50 \u043c\u0435\u043d\u044c\u0448\u0435 60. \u0422\u043e\u043b\u044c\u043a\u043e \u0431\u043b\u043e\u043a \u0411 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 75 \u043c\u0438\u043d\u0443\u0442 \u0438 \u0434\u0430\u0451\u0442 \u0437\u0430\u043f\u0430\u0441 15 \u043c\u0438\u043d\u0443\u0442.",
-          "outcome": "\u0418\u043b\u044c\u044f \u0443\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442 \u0431\u043b\u043e\u043a \u0411 \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u0442 \u0441\u0432\u0435\u0442 \u043d\u0430 \u043e\u0431\u043e\u0438\u0445 \u0443\u0447\u0430\u0441\u0442\u043a\u0430\u0445. \u041a \u0432\u044b\u0445\u043e\u0434\u0443 \u043e\u043d \u0441\u043d\u043e\u0432\u0430 \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0437\u0430\u0440\u044f\u0434\u0438\u0442 \u0431\u043b\u043e\u043a. \u041e\u0441\u0442\u0430\u043b\u043e\u0441\u044c \u043d\u0430\u0437\u043d\u0430\u0447\u0438\u0442\u044c \u0432\u0440\u0435\u043c\u044f \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u044f.",
-          "next": "\u0421\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0432\u0435\u0447\u0435\u0440\u043d\u0438\u0439 \u043f\u043b\u0430\u043d",
+          "answer": [
+            2,
+            4
+          ],
+          "feedback": [],
+          "explanation": "Обход: 4,5 × 20 = 90 м. Катушки 60 и 80 м коротки, подходит 100 м. Свет нужен с 18:00 до возвращения в 19:10, то есть 70 минут. Блоки А и В работают меньше, подходит только блок Б на 75 минут.",
+          "outcome": "Илья берёт катушку 100 м и блок Б. Провод проложат вдоль тропы, а блок нужно зарядить до 18:00.",
+          "next": "Зарядить блок",
           "hints": [
-            "\u0423\u0447\u0438\u0442\u044b\u0432\u0430\u0439 \u043f\u0443\u0442\u044c \u0432 \u043e\u0431\u0435 \u0441\u0442\u043e\u0440\u043e\u043d\u044b.",
-            "\u0414\u043b\u044f \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0438 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f 60 \u043c\u0438\u043d\u0443\u0442 \u0441\u0432\u0435\u0442\u0430.",
-            "\u0421\u0440\u0430\u0432\u043d\u0438 40, 75 \u0438 50 \u0441 60."
+            "Провод: переведи сантиметры плана в метры по масштабу.",
+            "Свет нужен с момента проверки в 18:00, а не с выхода группы. Посчитай минуты до возвращения.",
+            "Нужны ровно два предмета: один провод и один блок."
           ],
           "scene": 2
         },
         {
-          "title": "\u041a\u043e\u0433\u0434\u0430 \u0433\u0440\u0443\u043f\u043f\u0430 \u0432\u0435\u0440\u043d\u0451\u0442\u0441\u044f?",
-          "situation": "\u041b\u0430\u0434\u0430 \u0437\u0430\u043f\u0438\u0441\u044b\u0432\u0430\u0435\u0442 \u0432\u0440\u0435\u043c\u044f \u0432\u043e\u0437\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u0418\u043b\u044c\u0438. \u041e\u043d \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u0442 \u0433\u0440\u0443\u043f\u043f\u0443 \u0443 \u0432\u0445\u043e\u0434\u0430 \u0438 \u0432\u044b\u043a\u043b\u044e\u0447\u0438\u0442 \u0444\u043e\u043d\u0430\u0440\u0438.",
+          "title": "Успеет ли блок зарядиться?",
+          "situation": "У павильонов Илья ставит блок Б на зарядку и прокладывает провод. Лада проверяет, успеет ли всё к проверке в 18:00.",
           "evidence": [
-            "\u0413\u0440\u0443\u043f\u043f\u0430 \u0432\u044b\u0445\u043e\u0434\u0438\u0442 \u0432 18:10, \u0432 \u044d\u0442\u043e\u0442 \u0436\u0435 \u043c\u043e\u043c\u0435\u043d\u0442 \u0432\u043a\u043b\u044e\u0447\u0430\u044e\u0442 \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0437\u0430\u0440\u044f\u0436\u0435\u043d\u043d\u044b\u0439 \u0431\u043b\u043e\u043a \u0411.",
-            "\u0414\u043e \u043f\u0430\u0432\u0438\u043b\u044c\u043e\u043d\u043e\u0432 \u0438\u0434\u0442\u0438 45 \u043c\u0438\u043d\u0443\u0442, \u043e\u0431\u0440\u0430\u0442\u043d\u043e 15 \u043c\u0438\u043d\u0443\u0442.",
-            "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0443\u0436\u0435 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u044b \u0432 \u044d\u0442\u043e \u0432\u0440\u0435\u043c\u044f.",
-            "\u0411\u043b\u043e\u043a \u0411 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 75 \u043c\u0438\u043d\u0443\u0442."
+            "Проверка фонарей назначена на 18:00.",
+            "Полная зарядка блока Б от нуля занимает 90 минут.",
+            "Когда Илья поставил блок Б на зарядку в 16:55, тот был заряжен на 1/3.",
+            "Заряд прибавляется равномерно."
           ],
-          "question": "\u0412\u043e \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u043f\u043e \u043f\u043b\u0430\u043d\u0443 \u0433\u0440\u0443\u043f\u043f\u0430 \u0432\u0435\u0440\u043d\u0451\u0442\u0441\u044f \u043a\u043e \u0432\u0445\u043e\u0434\u0443? \u0412\u0432\u0435\u0434\u0438 \u0432\u0440\u0435\u043c\u044f \u0427\u0427:\u041c\u041c.",
+          "question": "Во сколько блок Б будет заряжен полностью? Введи время ЧЧ:ММ.",
           "kind": "time",
           "options": [],
-          "answer": "19:10",
-          "explanation": "45 + 15 = 60 \u043c\u0438\u043d\u0443\u0442. \u0427\u0435\u0440\u0435\u0437 \u0447\u0430\u0441 \u043f\u043e\u0441\u043b\u0435 18:10 \u0431\u0443\u0434\u0435\u0442 19:10. \u0423 \u0431\u043b\u043e\u043a\u0430 \u043e\u0441\u0442\u0430\u043d\u0435\u0442\u0441\u044f 75 - 60 = 15 \u043c\u0438\u043d\u0443\u0442 \u0437\u0430\u043f\u0430\u0441\u0430.",
-          "outcome": "\u0422\u0435\u043f\u0435\u0440\u044c \u0443 \u041b\u0430\u0434\u044b \u0435\u0441\u0442\u044c \u043e\u0441\u0432\u0435\u0449\u0451\u043d\u043d\u044b\u0439 \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u0438 \u0432\u0440\u0435\u043c\u044f \u0432\u0441\u0442\u0440\u0435\u0447\u0438 \u0441 \u0418\u043b\u044c\u0451\u0439. \u041c\u043e\u0436\u043d\u043e \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u0442\u044c \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0443.",
-          "next": "\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043b\u0435\u0441\u043d\u0443\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u043a\u0443",
+          "answer": "17:55",
+          "feedback": [],
+          "explanation": "Не хватает 2/3 заряда. 2/3 от 90 минут это 60 минут. 16:55 + 60 минут = 17:55, за 5 минут до проверки.",
+          "outcome": "Блок Б готов к 17:55, провод лежит вдоль тропы. В 18:00 проверка, в 18:10 группа выходит и вернётся в 19:10. Прогулка состоится.",
+          "next": "Открыть лесную прогулку",
           "hints": [
-            "\u0421\u043b\u043e\u0436\u0438 \u0432\u0440\u0435\u043c\u044f \u0442\u0443\u0434\u0430 \u0438 \u043e\u0431\u0440\u0430\u0442\u043d\u043e.",
-            "\u0412\u0435\u0441\u044c \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u0437\u0430\u043d\u0438\u043c\u0430\u0435\u0442 \u043e\u0434\u0438\u043d \u0447\u0430\u0441.",
-            "\u041f\u0440\u0438\u0431\u0430\u0432\u044c \u043e\u0434\u0438\u043d \u0447\u0430\u0441 \u043a 18:10."
+            "Заряжать нужно не весь блок, а только недостающую часть.",
+            "Какая доля заряда не хватает и сколько это минут из 90?",
+            "Прибавь эти минуты к 16:55."
           ],
           "scene": 3
         }
       ]
     },
     "pl": {
-      "title": "Le\u015bne latarnie",
-      "intro": "\u0141ada przygotowuje wieczorny spacer szlakiem papierowych grzyb\u00f3w. Podczas dziennej pr\u00f3by cz\u0119\u015b\u0107 latarni si\u0119 nie zapali\u0142a. Wszyscy czekaj\u0105 przy wej\u015bciu, a Ilja sprawdza o\u015bwietlenie. Pom\u00f3\u017c znale\u017a\u0107 przyczyn\u0119 i zaplanowa\u0107 spacer.",
-      "ending": "Zagadka rozwi\u0105zana: trzeci akumulator w\u0142\u0105czono za wcze\u015bnie i roz\u0142adowa\u0142 si\u0119 przed pr\u00f3b\u0105. Ilja zamontowa\u0142 wybrany zapasowy akumulator i sprawdzi\u0142 wszystkie latarnie. Wieczorny spacer potrwa godzin\u0119, a o\u015bwietlenie ma jeszcze 15 minut zapasu. Dzieci wyruszaj\u0105 razem z \u0141ad\u0105.",
-      "question": "Dlaczego pr\u00f3ba z zapasowym akumulatorem pomog\u0142a znale\u017a\u0107 przyczyn\u0119 awarii?",
+      "title": "Leśne latarnie",
+      "intro": "Łada przygotowuje wieczorny spacer szlakiem papierowych grzybów-latarni. Po południu podczas próby latarnie na końcu szlaku zgasły wszystkie naraz, w jednej sekundzie. Majster Ilja zarzeka się, że akumulator jest nowy. Stróż widział przy Okrągłej Polanie nieznajomego. Łada chce wiedzieć, dlaczego zgasło światło, żeby wieczorem to się nie powtórzyło, i zdążyć przygotować spacer na 18:10.",
+      "ending": "Światło zgasło nie przez akumulator i nie przez nieznajomego. Przewód od akumulatora 3 leżał w poprzek szlaku i o 15:15 przeciął go wózek ze skrzynkami. Rozładowanie odpadło ze względu na czas: akumulator wyłączyłby się o 15:10, a światło zgasło o 15:16. Przewód wymieniono na szpulę 100 m i poprowadzono wzdłuż szlaku, akumulator B naładował się do 17:55. Próba o 18:00, spacer od 18:10 do 19:10, akumulatorowi zostanie 5 minut zapasu.",
+      "question": "Nieznajomy przy polanie był naprawdę. Dlaczego mimo to nie ma z tym nic wspólnego?",
       "steps": [
         {
-          "title": "Gdzie ko\u0144czy si\u0119 \u015bwiat\u0142o?",
-          "situation": "\u0141ada rozk\u0142ada plan szlaku. Odcinki biegn\u0105 jeden za drugim, a latarnie sprawdzano od wej\u015bcia.",
+          "title": "Gdzie urywa się światło?",
+          "situation": "Łada rozkłada plan szlaku przy magazynie. Latarnie są ponumerowane po kolei od wejścia, odcinki mają różną długość. Po południu Ilja przeszedł wzdłuż szlaku i zapisał, które latarnie świecą.",
           "evidence": [
-            "Na ka\u017cdym z 6 odcink\u00f3w jest 6 latarni, razem 36.",
-            "Pierwsze 24 latarnie \u015bwiec\u0105, pozosta\u0142e nie.",
-            "Akumulator 1 zasila odcinki 1 i 2, akumulator 2 odcinki 3 i 4, a akumulator 3 odcinki 5 i 6.",
-            "Okr\u0105g\u0142a Polana le\u017cy mi\u0119dzy odcinkami 4 i 5."
+            "Na odcinkach po kolei od wejścia: 5, 7, 6, 8, 4 i 6 latarni, razem 36.",
+            "Podczas próby świeciły latarnie od 1 do 26. Dalej wszystkie ciemne.",
+            "Akumulator 1 zasila odcinki 1 i 2, akumulator 2 odcinki 3 i 4, akumulator 3 odcinki 5 i 6.",
+            "Każdy akumulator zasila tylko swoje latarnie."
           ],
-          "question": "Ile odcink\u00f3w jest w ca\u0142o\u015bci o\u015bwietlonych? Wpisz liczb\u0119.",
+          "question": "Ile latarni zasila akumulator, przez który zniknęło światło? Wpisz liczbę.",
           "kind": "number",
           "options": [],
-          "answer": "4",
-          "explanation": "24 : 6 = 4. Pierwsze cztery odcinki s\u0105 o\u015bwietlone, a odcinki 5 i 6 s\u0105 ciemne.",
-          "outcome": "Oba ciemne odcinki korzystaj\u0105 z akumulatora 3. Ilja proponuje sprawdzi\u0107 go przy Okr\u0105g\u0142ej Polanie.",
-          "next": "Sprawd\u017a trzeci akumulator",
+          "answer": "10",
+          "feedback": [],
+          "explanation": "5 + 7 + 6 + 8 = 26: świecą dokładnie pierwsze cztery odcinki. Latarnia 27 stoi na odcinku 5. Ciemne odcinki 5 i 6 zasila akumulator 3: 4 + 6 = 10 latarni.",
+          "outcome": "Zgasło wszystkie 10 latarni akumulatora 3 naraz i żadna inna. Czyli chodzi o akumulator albo jego przewód, a nie o same latarnie. Idziemy na Okrągłą Polanę, gdzie stoi akumulator 3.",
+          "next": "Idź do akumulatora 3",
           "hints": [
-            "Na ka\u017cdym odcinku jest tyle samo latarni.",
-            "Podziel liczb\u0119 \u015bwiec\u0105cych latarni przez 6.",
-            "24 : 6 to liczba o\u015bwietlonych odcink\u00f3w."
+            "Dodawaj latarnie po odcinkach od wejścia, aż uzbierasz 26.",
+            "Pierwsza ciemna latarnia ma numer 27. Ustal, na którym odcinku stoi.",
+            "Ciemne odcinki zasila ten sam akumulator. Dodaj latarnie z jego odcinków."
           ],
           "scene": 0
         },
         {
-          "title": "Dlaczego latarnia nie \u015bwieci\u0142a?",
-          "situation": "Ilja pod\u0142\u0105czy\u0142 pierwsz\u0105 ciemn\u0105 latarni\u0119 do zapasowego akumulatora. Zapali\u0142a si\u0119! Teraz sprawdza, jak d\u0142ugo dzia\u0142a\u0142 akumulator 3.",
+          "title": "Dlaczego zgasło światło?",
+          "situation": "Przy Okrągłej Polanie Ilja otwiera skrzynkę akumulatora 3. Łada zebrała wszystkie fakty, łącznie z relacją stróża. Wersje są trzy: akumulator się rozładował, ktoś go wyłączył, uszkodzony jest przewód. Sprawdź każdą według czasu i tego, co widać na miejscu.",
           "evidence": [
-            "Na karcie Ilji: w pe\u0142ni na\u0142adowany akumulator 3 dzia\u0142a przez 50 minut, potem si\u0119 wy\u0142\u0105cza.",
-            "Dzi\u015b w\u0142\u0105czono go w pe\u0142ni na\u0142adowanego o 14:20 i ju\u017c go nie wy\u0142\u0105czano.",
-            "Pr\u00f3ba zacz\u0119\u0142a si\u0119 o 15:20."
+            "Czujnik akumulatora zapisał: latarnie 27-36 zgasły o 15:16.",
+            "Ilja włączył w pełni naładowany akumulator 3 o 14:20. Według karty ładunku wystarcza dokładnie na 50 minut, potem akumulator sam się wyłącza.",
+            "Wskaźnik ładunku pokazuje 2 kreski z 5. Wyłącznik jest w pozycji „włączone”.",
+            "Przewód od akumulatora do latarni 27 leży w poprzek szlaku. Według dziennika magazynu o 15:15 szlakiem przejechał wózek ze skrzynkami.",
+            "Stróż widział nieznajomego przy polanie o 14:40. O 14:50 tamten odszedł w stronę wejścia."
           ],
-          "question": "O kt\u00f3rej akumulator 3 powinien si\u0119 wy\u0142\u0105czy\u0107? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:10",
-          "explanation": "14:20 + 40 minut = 15:00. Jeszcze 10 minut daje 15:10, czyli 10 minut przed pr\u00f3b\u0105.",
-          "outcome": "Ilja potwierdza: akumulator jest roz\u0142adowany. Sama latarnia dzia\u0142a. W warsztacie wybierzemy zamiennik dla obu ciemnych odcink\u00f3w.",
-          "next": "Wybierz zapasowy akumulator",
+          "question": "Która wersja zgadza się ze wszystkimi faktami?",
+          "kind": "choice",
+          "options": [
+            "Akumulator się rozładował, ładunku starczyło tylko do 15:10",
+            "Nieznajomy wyłączył akumulator i odszedł",
+            "Przewód w poprzek szlaku uszkodził wózek o 15:15",
+            "Wszystkie 10 latarni przepaliło się jednocześnie"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Gdyby akumulator się rozładował, światło zgasłoby o 15:10. A zgasło o 15:16, a wskaźnik nadal pokazuje ładunek.",
+            "Wyłącznik jest w pozycji „włączone”, a nieznajomy odszedł o 14:50, 26 minut przed tym, jak zgasło światło.",
+            "",
+            "Dziesięć latarni nie przepala się w jednej sekundzie, a w pierwszym kroku ustaliliśmy, że chodzi o akumulator albo przewód."
+          ],
+          "explanation": "Rozładowanie nie pasuje: 14:20 + 50 minut = 15:10, a światło zgasło o 15:16 i w akumulatorze został ładunek. Nieznajomy odszedł o 14:50 i nie dotykał wyłącznika. Przewód leży w poprzek szlaku, wózek przejechał o 15:15, światło zgasło minutę później. Ilja znajduje na przewodzie ślad koła i przerwanie.",
+          "outcome": "Przyczyna znaleziona: przewód przeciął wózek. Potrzebny jest nowy przewód, który poprowadzą wzdłuż szlaku, i akumulator na wieczór. Idziemy do warsztatu.",
+          "next": "Do warsztatu",
           "hints": [
-            "Dodaj 50 minut do godziny w\u0142\u0105czenia.",
-            "Do 15:00 mija 40 minut.",
-            "Zostaje jeszcze 10 minut."
+            "Sprawdź wersję z rozładowaniem według czasu: o której wyłączyłby się akumulator włączony o 14:20?",
+            "Porównaj czas każdego zdarzenia z 15:16, kiedy zgasło światło.",
+            "Szukaj zdarzenia, które nastąpiło tuż przed 15:16 i wyjaśnia, dlaczego zgasły wszystkie latarnie akumulatora naraz."
           ],
           "scene": 1
         },
         {
-          "title": "Kt\u00f3ry wystarczy na spacer?",
-          "situation": "W warsztacie s\u0105 trzy akumulatory pasuj\u0105ce do naszych latarni. Ilja w pe\u0142ni na\u0142aduje wybrany przed wieczornym spacerem.",
+          "title": "Co wziąć z warsztatu?",
+          "situation": "W warsztacie Ilja rozkłada szpule przewodu i zapasowe akumulatory. Nowy przewód poprowadzą wzdłuż szlaku, okrężną drogą, żeby wózki go nie zaczepiały. Objazd zmierzono na planie. Akumulator jest potrzebny na cały wieczorny spacer, łącznie z próbą przed wyjściem.",
           "evidence": [
-            "Droga do pawilon\u00f3w zajmuje 45 minut.",
-            "Powr\u00f3t trwa kolejne 15 minut. \u015awiat\u0142o jest potrzebne przez ca\u0142y ten czas.",
-            "Karty podaj\u0105 czas dzia\u0142ania ka\u017cdego akumulatora po pe\u0142nym na\u0142adowaniu."
+            "Na planie objazd przewodu wzdłuż szlaku zmierzono: 4,5 cm. Skala planu: 1 cm = 20 m. Nie wolno łączyć przewodu z dwóch kawałków.",
+            "Szpule przewodu: 60 m, 80 m i 100 m.",
+            "Wieczorem latarnie włącza się do próby o 18:00. Grupa wychodzi o 18:10, idzie do pawilonów 45 minut z postojami i wraca w 15 minut. Światło jest potrzebne aż do powrotu.",
+            "Akumulatory po pełnym naładowaniu działają: A 40 minut, B 75 minut, C 50 minut."
           ],
-          "question": "Wybierz jedyny akumulator, kt\u00f3ry wystarczy na ca\u0142y spacer.",
-          "kind": "choice",
+          "question": "Zaznacz, co trzeba wziąć: jeden przewód i jeden akumulator.",
+          "kind": "multi",
           "options": [
+            "Szpula 60 m",
+            "Szpula 80 m",
+            "Szpula 100 m",
             "Akumulator A: 40 minut",
             "Akumulator B: 75 minut",
             "Akumulator C: 50 minut"
           ],
-          "answer": 1,
-          "explanation": "Potrzeba 45 + 15 = 60 minut. 40 i 50 to mniej ni\u017c 60. Tylko akumulator B dzia\u0142a przez 75 minut i daje 15 minut zapasu.",
-          "outcome": "Ilja montuje akumulator B i sprawdza \u015bwiat\u0142o na obu odcinkach. Przed wyj\u015bciem ponownie na\u0142aduje go do pe\u0142na. Zosta\u0142o ustali\u0107 godzin\u0119 powrotu.",
-          "next": "Zaplanuj wieczorny spacer",
+          "answer": [
+            2,
+            4
+          ],
+          "feedback": [],
+          "explanation": "Objazd: 4,5 × 20 = 90 m. Szpule 60 i 80 m są za krótkie, pasuje 100 m. Światło jest potrzebne od 18:00 do powrotu o 19:10, czyli 70 minut. Akumulatory A i C działają krócej, pasuje tylko akumulator B na 75 minut.",
+          "outcome": "Ilja bierze szpulę 100 m i akumulator B. Przewód poprowadzą wzdłuż szlaku, a akumulator trzeba naładować do 18:00.",
+          "next": "Naładuj akumulator",
           "hints": [
-            "Uwzgl\u0119dnij drog\u0119 w obie strony.",
-            "Potrzeba 60 minut \u015bwiat\u0142a.",
-            "Por\u00f3wnaj 40, 75 i 50 z 60."
+            "Przewód: przelicz centymetry z planu na metry według skali.",
+            "Światło jest potrzebne od próby o 18:00, a nie od wyjścia grupy. Policz minuty do powrotu.",
+            "Potrzebne są dokładnie dwie rzeczy: jeden przewód i jeden akumulator."
           ],
           "scene": 2
         },
         {
-          "title": "O kt\u00f3rej wr\u00f3ci grupa?",
-          "situation": "\u0141ada zapisuje godzin\u0119 powrotu dla Ilji. Spotka grup\u0119 przy wej\u015bciu i wy\u0142\u0105czy latarnie.",
+          "title": "Czy akumulator zdąży się naładować?",
+          "situation": "Przy pawilonach Ilja podłącza akumulator B do ładowania i kładzie przewód. Łada sprawdza, czy wszystko zdąży na próbę o 18:00.",
           "evidence": [
-            "Grupa wyrusza o 18:10. Wtedy te\u017c zostaje w\u0142\u0105czony w pe\u0142ni na\u0142adowany akumulator B.",
-            "Droga do pawilon\u00f3w trwa 45 minut, a powr\u00f3t 15 minut.",
-            "Przerwy s\u0105 ju\u017c wliczone w ten czas.",
-            "Akumulator B dzia\u0142a przez 75 minut."
+            "Próba latarni wyznaczona jest na 18:00.",
+            "Pełne ładowanie akumulatora B od zera zajmuje 90 minut.",
+            "Kiedy Ilja podłączył akumulator B do ładowania o 16:55, był naładowany w 1/3.",
+            "Ładunek przybywa równomiernie."
           ],
-          "question": "O kt\u00f3rej grupa wr\u00f3ci do wej\u015bcia zgodnie z planem? Wpisz czas GG:MM.",
+          "question": "O której akumulator B będzie w pełni naładowany? Wpisz czas GG:MM.",
           "kind": "time",
           "options": [],
-          "answer": "19:10",
-          "explanation": "45 + 15 = 60 minut. Godzin\u0119 po 18:10 b\u0119dzie 19:10. Akumulatorowi zostanie 75 - 60 = 15 minut zapasu.",
-          "outcome": "\u0141ada ma o\u015bwietlony szlak i ustalon\u0105 godzin\u0119 spotkania z Ilj\u0105. Mo\u017cna wyrusza\u0107!",
-          "next": "Rozpocznij le\u015bny spacer",
+          "answer": "17:55",
+          "feedback": [],
+          "explanation": "Brakuje 2/3 ładunku. 2/3 z 90 minut to 60 minut. 16:55 + 60 minut = 17:55, 5 minut przed próbą.",
+          "outcome": "Akumulator B gotowy na 17:55, przewód leży wzdłuż szlaku. O 18:00 próba, o 18:10 grupa wychodzi i wróci o 19:10. Spacer się odbędzie.",
+          "next": "Rozpocznij leśny spacer",
           "hints": [
-            "Dodaj czas drogi tam i z powrotem.",
-            "Ca\u0142a trasa zajmuje godzin\u0119.",
-            "Dodaj godzin\u0119 do 18:10."
+            "Ładować trzeba nie cały akumulator, a tylko brakującą część.",
+            "Jakiej części ładunku brakuje i ile to minut z 90?",
+            "Dodaj te minuty do 16:55."
           ],
           "scene": 3
         }
@@ -208,203 +254,249 @@
     },
     "en": {
       "title": "Forest Lanterns",
-      "intro": "Lada is preparing an evening walk along a trail of paper mushrooms. During the daytime test, some of the lanterns fail to light up. Everyone waits at the entrance while Ilya checks the lights. Help find the cause and plan the walk.",
-      "ending": "Mystery solved: the third battery pack was switched on too early and ran out before the test. Ilya fitted your chosen spare and checked every lantern. The evening route takes an hour, with 15 minutes of battery life to spare. The children set off with Lada.",
-      "question": "Why did testing the lantern with a spare battery pack help narrow down the problem?",
+      "intro": "Lada is preparing an evening walk along a trail of paper mushroom lanterns. During the afternoon test, the lanterns at the end of the trail all went out at once, in a single second. Ilya the technician swears the battery pack is new. The watchman saw a stranger near Round Clearing. Lada wants to know why the lights went out so it does not happen again in the evening, and to have the walk ready by 18:10.",
+      "ending": "The lights did not go out because of the pack or the stranger. The cable from pack 3 lay across the trail, and at 15:15 a cart full of crates cut through it. A flat pack was ruled out by timing: it would have switched off at 15:10, but the lights went out at 15:16. The cable was replaced with a 100 m spool laid along the trail, and pack B was charged by 17:55. Test at 18:00, walk from 18:10 to 19:10, with 5 minutes of battery to spare.",
+      "question": "The stranger near the clearing was real. Why is he still nothing to do with it?",
       "steps": [
         {
           "title": "Where does the light stop?",
-          "situation": "Lada unfolds the trail map. The sections follow one another, and the lanterns were checked starting at the entrance.",
+          "situation": "Lada unfolds the trail map by the depot. The lanterns are numbered in order from the entrance, and the sections are different lengths. In the afternoon, Ilya walked the trail and wrote down which lanterns were lit.",
           "evidence": [
-            "There are 6 sections with 6 lanterns each: 36 in total.",
-            "The first 24 lanterns work. The rest are dark.",
+            "The sections, in order from the entrance, have 5, 7, 6, 8, 4 and 6 lanterns: 36 in total.",
+            "During the test, lanterns 1 to 26 were lit. All the rest were dark.",
             "Pack 1 powers sections 1 and 2, pack 2 powers sections 3 and 4, and pack 3 powers sections 5 and 6.",
-            "Round Clearing is between sections 4 and 5."
+            "Each pack powers only its own lanterns."
           ],
-          "question": "How many sections are fully lit? Enter a number.",
+          "question": "How many lanterns are powered by the pack that lost the light? Enter a number.",
           "kind": "number",
           "options": [],
-          "answer": "4",
-          "explanation": "24 \u00f7 6 = 4. The first four sections are lit, while sections 5 and 6 are dark.",
-          "outcome": "Both dark sections use battery pack 3. Ilya suggests checking it at Round Clearing.",
-          "next": "Check the third battery pack",
+          "answer": "10",
+          "feedback": [],
+          "explanation": "5 + 7 + 6 + 8 = 26: exactly the first four sections are lit. Lantern 27 is on section 5. The dark sections 5 and 6 are powered by pack 3: 4 + 6 = 10 lanterns.",
+          "outcome": "All 10 lanterns of pack 3 went out at once, and no others. So the problem is the pack or its cable, not the lanterns themselves. Let’s go to Round Clearing, where pack 3 stands.",
+          "next": "Go to pack 3",
           "hints": [
-            "Every section has the same number of lanterns.",
-            "Divide the number of working lanterns by 6.",
-            "24 \u00f7 6 gives the number of lit sections."
+            "Add up the lanterns section by section from the entrance until you reach 26.",
+            "The first dark lantern is number 27. Work out which section it stands on.",
+            "The dark sections are powered by the same pack. Add up the lanterns of its sections."
           ],
           "scene": 0
         },
         {
-          "title": "Why was the lantern dark?",
-          "situation": "Ilya connects the first dark lantern to a spare battery pack. It lights up! Now he checks how long pack 3 has been running.",
+          "title": "Why did the lights go out?",
+          "situation": "At Round Clearing, Ilya opens the box of pack 3. Lada has gathered all the facts, including the watchman’s story. There are three theories: the pack ran flat, someone switched it off, the cable is damaged. Test each one against the timing and what you can see on the spot.",
           "evidence": [
-            "Ilya\u2019s card says a fully charged pack 3 runs for 50 minutes, then switches off.",
-            "Today it was switched on fully charged at 14:20 and left on.",
-            "The test started at 15:20."
+            "The pack’s sensor recorded that lanterns 27-36 went out at 15:16.",
+            "Ilya switched on fully charged pack 3 at 14:20. According to the card, the charge lasts exactly 50 minutes, then the pack switches itself off.",
+            "The charge indicator shows 2 bars out of 5. The switch is in the “on” position.",
+            "The cable from the pack to lantern 27 lies across the trail. According to the depot log, a cart full of crates drove along the trail at 15:15.",
+            "The watchman saw a stranger near the clearing at 14:40. At 14:50 the stranger left towards the entrance."
           ],
-          "question": "What time should pack 3 have switched off? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:10",
-          "explanation": "14:20 + 40 minutes = 15:00. Another 10 minutes gives 15:10, which is 10 minutes before the test.",
-          "outcome": "Ilya confirms that the pack is empty. The lantern itself works, so let\u2019s choose a replacement pack for both dark sections in the workshop.",
-          "next": "Choose a spare battery pack",
+          "question": "Which theory fits all the facts?",
+          "kind": "choice",
+          "options": [
+            "The pack ran flat; the charge only lasted until 15:10",
+            "The stranger switched the pack off and left",
+            "The cart damaged the cable lying across the trail at 15:15",
+            "All 10 lanterns burned out at the same time"
+          ],
+          "answer": 2,
+          "feedback": [
+            "If the pack had run flat, the lights would have gone out at 15:10. They went out at 15:16, and the indicator still shows charge.",
+            "The switch is in the “on” position, and the stranger left at 14:50, 26 minutes before the lights went out.",
+            "",
+            "Ten lanterns do not burn out in one second, and in step one we already worked out that the problem is the pack or the cable."
+          ],
+          "explanation": "A flat pack does not fit: 14:20 + 50 minutes = 15:10, but the lights went out at 15:16 and there is still charge in the pack. The stranger left at 14:50 and never touched the switch. The cable lies across the trail, the cart drove past at 15:15, and the lights went out a minute later. Ilya finds a wheel mark and a break on the cable.",
+          "outcome": "The cause is found: the cart cut the cable. We need a new cable, to be laid along the trail, and a pack for the evening. Off to the workshop.",
+          "next": "To the workshop",
           "hints": [
-            "Add 50 minutes to the switch-on time.",
-            "It takes 40 minutes to reach 15:00.",
-            "There are 10 minutes left to add."
+            "Test the flat-pack theory against the timing: when would a pack switched on at 14:20 have switched off?",
+            "Compare the time of each event with 15:16, when the lights went out.",
+            "Look for an event that happened right before 15:16 and explains why all the pack’s lanterns went out at once."
           ],
           "scene": 1
         },
         {
-          "title": "Which pack will last?",
-          "situation": "The workshop has three packs that fit our lanterns. Ilya will fully charge the chosen one before the evening walk.",
+          "title": "What to take from the workshop?",
+          "situation": "In the workshop, Ilya lays out cable spools and spare packs. The new cable will run along the trail, on a detour, so that carts cannot catch it. The detour has been measured on the map. The pack has to last the whole evening walk, including the test before setting off.",
           "evidence": [
-            "The walk to the pavilions takes 45 minutes.",
-            "The return takes another 15 minutes. The lights are needed the whole time.",
-            "The cards show how long each pack runs after a full charge."
+            "On the map, the cable detour along the trail measures 4.5 cm. The map scale is 1 cm = 20 m. The cable cannot be joined from two pieces.",
+            "Cable spools: 60 m, 80 m and 100 m.",
+            "In the evening, the lanterns are switched on for a test at 18:00. The group leaves at 18:10, takes 45 minutes to reach the pavilions including stops, and returns in 15 minutes. Light is needed until they are back.",
+            "After a full charge, the packs run for: A 40 minutes, B 75 minutes, C 50 minutes."
           ],
-          "question": "Choose the only pack that will last for the whole walk.",
-          "kind": "choice",
+          "question": "Select what to take: one cable and one pack.",
+          "kind": "multi",
           "options": [
+            "60 m spool",
+            "80 m spool",
+            "100 m spool",
             "Pack A: 40 minutes",
             "Pack B: 75 minutes",
             "Pack C: 50 minutes"
           ],
-          "answer": 1,
-          "explanation": "We need 45 + 15 = 60 minutes. Both 40 and 50 are less than 60. Only pack B lasts 75 minutes, giving 15 minutes to spare.",
-          "outcome": "Ilya fits pack B and tests the lights on both sections. He will fully recharge it before the walk. Now we need to set a return time.",
-          "next": "Plan the evening walk",
+          "answer": [
+            2,
+            4
+          ],
+          "feedback": [],
+          "explanation": "The detour: 4.5 × 20 = 90 m. The 60 m and 80 m spools are too short, so the 100 m spool fits. Light is needed from 18:00 until the return at 19:10, which is 70 minutes. Packs A and C run for less, so only pack B at 75 minutes will do.",
+          "outcome": "Ilya takes the 100 m spool and pack B. The cable will be laid along the trail, and the pack must be charged by 18:00.",
+          "next": "Charge the pack",
           "hints": [
-            "Include the journey both ways.",
-            "The walk needs 60 minutes of light.",
-            "Compare 40, 75 and 50 with 60."
+            "Cable: convert the centimetres on the map to metres using the scale.",
+            "Light is needed from the test at 18:00, not from when the group leaves. Count the minutes until the return.",
+            "Exactly two items are needed: one cable and one pack."
           ],
           "scene": 2
         },
         {
-          "title": "When will the group return?",
-          "situation": "Lada writes down the return time for Ilya. He will meet the group at the entrance and switch off the lanterns.",
+          "title": "Will the pack charge in time?",
+          "situation": "At the pavilions, Ilya puts pack B on charge and lays the cable. Lada checks whether everything will be ready for the test at 18:00.",
           "evidence": [
-            "The group leaves at 18:10. Fully charged pack B is switched on at the same time.",
-            "It takes 45 minutes to reach the pavilions and 15 minutes to return.",
-            "Stops are already included in these times.",
-            "Pack B runs for 75 minutes."
+            "The lantern test is set for 18:00.",
+            "A full charge of pack B from empty takes 90 minutes.",
+            "When Ilya put pack B on charge at 16:55, it was 1/3 charged.",
+            "The charge increases evenly."
           ],
-          "question": "What time will the group return to the entrance as planned? Enter HH:MM.",
+          "question": "What time will pack B be fully charged? Enter the time as HH:MM.",
           "kind": "time",
           "options": [],
-          "answer": "19:10",
-          "explanation": "45 + 15 = 60 minutes. One hour after 18:10 is 19:10. The pack will have 75 - 60 = 15 minutes left.",
-          "outcome": "Lada has a lit route and a time to meet Ilya. The walk is ready to begin!",
+          "answer": "17:55",
+          "feedback": [],
+          "explanation": "2/3 of the charge is missing. 2/3 of 90 minutes is 60 minutes. 16:55 + 60 minutes = 17:55, 5 minutes before the test.",
+          "outcome": "Pack B is ready by 17:55, and the cable lies along the trail. Test at 18:00, the group leaves at 18:10 and returns at 19:10. The walk is on.",
           "next": "Begin the forest walk",
           "hints": [
-            "Add the outward and return times.",
-            "The whole route takes one hour.",
-            "Add one hour to 18:10."
+            "You only need to charge the missing part, not the whole pack.",
+            "What fraction of the charge is missing, and how many minutes out of 90 is that?",
+            "Add those minutes to 16:55."
           ],
           "scene": 3
         }
       ]
     },
     "uk": {
-      "title": "\u041b\u0456\u0441\u043e\u0432\u0456 \u043b\u0456\u0445\u0442\u0430\u0440\u0456",
-      "intro": "\u041b\u0430\u0434\u0430 \u0433\u043e\u0442\u0443\u0454 \u0432\u0435\u0447\u0456\u0440\u043d\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u0443 \u0441\u0442\u0435\u0436\u043a\u043e\u044e \u0437 \u043f\u0430\u043f\u0435\u0440\u043e\u0432\u0438\u043c\u0438 \u0433\u0440\u0438\u0431\u0430\u043c\u0438. \u041f\u0456\u0434 \u0447\u0430\u0441 \u0434\u0435\u043d\u043d\u043e\u0457 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0438 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 \u043b\u0456\u0445\u0442\u0430\u0440\u0456\u0432 \u043d\u0435 \u0437\u0430\u0441\u0432\u0456\u0442\u0438\u043b\u0430\u0441\u044f. \u0423\u0441\u0456 \u0447\u0435\u043a\u0430\u044e\u0442\u044c \u0431\u0456\u043b\u044f \u0432\u0445\u043e\u0434\u0443, \u043f\u043e\u043a\u0438 \u043c\u0430\u0439\u0441\u0442\u0435\u0440 \u0406\u043b\u043b\u044f \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454 \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043d\u044f. \u0414\u043e\u043f\u043e\u043c\u043e\u0436\u0438 \u0437\u043d\u0430\u0439\u0442\u0438 \u043f\u0440\u0438\u0447\u0438\u043d\u0443 \u0439 \u0441\u043f\u043b\u0430\u043d\u0443\u0432\u0430\u0442\u0438 \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u0443.",
-      "ending": "\u041f\u0440\u0438\u0447\u0438\u043d\u0443 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u043e: \u0442\u0440\u0435\u0442\u0456\u0439 \u0431\u043b\u043e\u043a \u0443\u0432\u0456\u043c\u043a\u043d\u0443\u043b\u0438 \u0437\u0430\u0440\u0430\u043d\u043e, \u0456 \u0432\u0456\u043d \u0440\u043e\u0437\u0440\u044f\u0434\u0438\u0432\u0441\u044f \u0449\u0435 \u0434\u043e \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0438. \u0406\u043b\u043b\u044f \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0432 \u043e\u0431\u0440\u0430\u043d\u0438\u0439 \u0437\u0430\u043f\u0430\u0441\u043d\u0438\u0439 \u0431\u043b\u043e\u043a \u0456 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0432 \u0443\u0441\u0456 \u043b\u0456\u0445\u0442\u0430\u0440\u0456. \u0412\u0435\u0447\u0456\u0440\u043d\u044f \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u0430 \u0442\u0440\u0438\u0432\u0430\u0442\u0438\u043c\u0435 \u0433\u043e\u0434\u0438\u043d\u0443, \u0430 \u0441\u0432\u0456\u0442\u043b\u0430 \u0432\u0438\u0441\u0442\u0430\u0447\u0438\u0442\u044c \u0449\u0435 \u043d\u0430 15 \u0445\u0432\u0438\u043b\u0438\u043d. \u0414\u0456\u0442\u0438 \u0432\u0438\u0440\u0443\u0448\u0430\u044e\u0442\u044c \u0440\u0430\u0437\u043e\u043c \u0456\u0437 \u041b\u0430\u0434\u043e\u044e.",
-      "question": "\u0427\u043e\u043c\u0443 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430 \u043b\u0456\u0445\u0442\u0430\u0440\u044f \u0456\u0437 \u0437\u0430\u043f\u0430\u0441\u043d\u0438\u043c \u0431\u043b\u043e\u043a\u043e\u043c \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043b\u0430 \u0437\u0432\u0443\u0437\u0438\u0442\u0438 \u043f\u043e\u0448\u0443\u043a \u043f\u0440\u0438\u0447\u0438\u043d\u0438?",
+      "title": "Лісові ліхтарі",
+      "intro": "Лада готує вечірню прогулянку стежкою з паперовими грибами-ліхтарями. Удень на перевірці ліхтарі в кінці стежки згасли всі разом, за одну секунду. Майстер Ілля присягається, що блок живлення новий. Сторож бачив біля Круглої галявини незнайомця. Лада хоче знати, чому згасло світло, щоб увечері це не повторилося, і встигнути підготувати прогулянку до 18:10.",
+      "ending": "Світло згасло не через блок і не через незнайомця. Провід від блока 3 лежав поперек стежки, і о 15:15 його перерізав візок із ящиками. Розряд блока відпав за часом: він би вимкнувся о 15:10, а світло зникло о 15:16. Провід замінили на котушку 100 м і проклали вздовж стежки, блок Б зарядився до 17:55. Перевірка о 18:00, прогулянка з 18:10 до 19:10, у блока залишиться 5 хвилин запасу.",
+      "question": "Незнайомець біля галявини був насправді. Чому він усе одно ні до чого?",
       "steps": [
         {
-          "title": "\u0414\u0435 \u0437\u0430\u043a\u0456\u043d\u0447\u0443\u0454\u0442\u044c\u0441\u044f \u0441\u0432\u0456\u0442\u043b\u043e?",
-          "situation": "\u041b\u0430\u0434\u0430 \u0440\u043e\u0437\u0433\u043e\u0440\u0442\u0430\u0454 \u043f\u043b\u0430\u043d \u0441\u0442\u0435\u0436\u043a\u0438. \u0414\u0456\u043b\u044f\u043d\u043a\u0438 \u0439\u0434\u0443\u0442\u044c \u043e\u0434\u043d\u0430 \u0437\u0430 \u043e\u0434\u043d\u043e\u044e, \u0430 \u043b\u0456\u0445\u0442\u0430\u0440\u0456 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u043b\u0438 \u0432\u0456\u0434 \u0432\u0445\u043e\u0434\u0443.",
+          "title": "Де обривається світло?",
+          "situation": "Лада розгортає план стежки біля складу. Ліхтарі пронумеровані підряд від входу, ділянки різної довжини. Удень Ілля пройшов уздовж стежки і записав, які ліхтарі горять.",
           "evidence": [
-            "\u041d\u0430 6 \u0434\u0456\u043b\u044f\u043d\u043a\u0430\u0445 \u043f\u043e 6 \u043b\u0456\u0445\u0442\u0430\u0440\u0456\u0432, \u0443\u0441\u044c\u043e\u0433\u043e 36.",
-            "\u041f\u0435\u0440\u0448\u0456 24 \u043b\u0456\u0445\u0442\u0430\u0440\u0456 \u0441\u0432\u0456\u0442\u044f\u0442\u044c\u0441\u044f, \u0440\u0435\u0448\u0442\u0430 \u043d\u0456.",
-            "\u0411\u043b\u043e\u043a 1 \u0436\u0438\u0432\u0438\u0442\u044c \u0434\u0456\u043b\u044f\u043d\u043a\u0438 1 \u0456 2, \u0431\u043b\u043e\u043a 2 \u0434\u0456\u043b\u044f\u043d\u043a\u0438 3 \u0456 4, \u0431\u043b\u043e\u043a 3 \u0434\u0456\u043b\u044f\u043d\u043a\u0438 5 \u0456 6.",
-            "\u041a\u0440\u0443\u0433\u043b\u0430 \u0433\u0430\u043b\u044f\u0432\u0438\u043d\u0430 \u043c\u0456\u0436 \u0434\u0456\u043b\u044f\u043d\u043a\u0430\u043c\u0438 4 \u0456 5."
+            "На ділянках по порядку від входу: 5, 7, 6, 8, 4 і 6 ліхтарів, разом 36.",
+            "На перевірці горіли ліхтарі з 1 по 26. Далі всі темні.",
+            "Блок 1 живить ділянки 1 і 2, блок 2 живить ділянки 3 і 4, блок 3 живить ділянки 5 і 6.",
+            "Кожен блок живить лише свої ліхтарі."
           ],
-          "question": "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u0434\u0456\u043b\u044f\u043d\u043e\u043a \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u043e \u043f\u043e\u0432\u043d\u0456\u0441\u0442\u044e? \u0412\u0432\u0435\u0434\u0438 \u0447\u0438\u0441\u043b\u043e.",
+          "question": "Скільки ліхтарів живить блок, через який зникло світло? Введи число.",
           "kind": "number",
           "options": [],
-          "answer": "4",
-          "explanation": "24 : 6 = 4. \u041f\u0435\u0440\u0448\u0456 \u0447\u043e\u0442\u0438\u0440\u0438 \u0434\u0456\u043b\u044f\u043d\u043a\u0438 \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u0456, \u0430 \u0434\u0456\u043b\u044f\u043d\u043a\u0438 5 \u0456 6 \u0442\u0435\u043c\u043d\u0456.",
-          "outcome": "\u041e\u0431\u0438\u0434\u0432\u0456 \u0442\u0435\u043c\u043d\u0456 \u0434\u0456\u043b\u044f\u043d\u043a\u0438 \u0436\u0438\u0432\u043b\u044f\u0442\u044c\u0441\u044f \u0432\u0456\u0434 \u0431\u043b\u043e\u043a\u0430 3. \u0406\u043b\u043b\u044f \u043f\u0440\u043e\u043f\u043e\u043d\u0443\u0454 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0442\u0438 \u0439\u043e\u0433\u043e \u0431\u0456\u043b\u044f \u041a\u0440\u0443\u0433\u043b\u043e\u0457 \u0433\u0430\u043b\u044f\u0432\u0438\u043d\u0438.",
-          "next": "\u041f\u0435\u0440\u0435\u0432\u0456\u0440\u0438\u0442\u0438 \u0442\u0440\u0435\u0442\u0456\u0439 \u0431\u043b\u043e\u043a",
+          "answer": "10",
+          "feedback": [],
+          "explanation": "5 + 7 + 6 + 8 = 26: горять рівно перші чотири ділянки. Ліхтар 27 стоїть на ділянці 5. Темні ділянки 5 і 6 живить блок 3: 4 + 6 = 10 ліхтарів.",
+          "outcome": "Згасли всі 10 ліхтарів блока 3 одразу і жоден інший. Отже, річ у блоці або в його проводі, а не в самих ліхтарях. Ідемо до Круглої галявини, де стоїть блок 3.",
+          "next": "Іти до блока 3",
           "hints": [
-            "\u041d\u0430 \u043a\u043e\u0436\u043d\u0456\u0439 \u0434\u0456\u043b\u044f\u043d\u0446\u0456 \u043e\u0434\u043d\u0430\u043a\u043e\u0432\u0430 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043b\u0456\u0445\u0442\u0430\u0440\u0456\u0432.",
-            "\u041f\u043e\u0434\u0456\u043b\u0438 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u0443\u0432\u0456\u043c\u043a\u043d\u0435\u043d\u0438\u0445 \u043b\u0456\u0445\u0442\u0430\u0440\u0456\u0432 \u043d\u0430 6.",
-            "24 : 6 \u0434\u0430\u0454 \u043a\u0456\u043b\u044c\u043a\u0456\u0441\u0442\u044c \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u0438\u0445 \u0434\u0456\u043b\u044f\u043d\u043e\u043a."
+            "Додавай ліхтарі по ділянках від входу, поки не набереш 26.",
+            "Перший темний ліхтар номер 27. Знайди, на якій ділянці він стоїть.",
+            "Темні ділянки живить той самий блок. Додай ліхтарі його ділянок."
           ],
           "scene": 0
         },
         {
-          "title": "\u0427\u043e\u043c\u0443 \u043b\u0456\u0445\u0442\u0430\u0440 \u043d\u0435 \u0441\u0432\u0456\u0442\u0438\u0432\u0441\u044f?",
-          "situation": "\u0406\u043b\u043b\u044f \u043f\u0456\u0434\u2019\u0454\u0434\u043d\u0430\u0432 \u043f\u0435\u0440\u0448\u0438\u0439 \u0442\u0435\u043c\u043d\u0438\u0439 \u043b\u0456\u0445\u0442\u0430\u0440 \u0434\u043e \u0437\u0430\u043f\u0430\u0441\u043d\u043e\u0433\u043e \u0431\u043b\u043e\u043a\u0430, \u0456 \u0442\u043e\u0439 \u0437\u0430\u0441\u0432\u0456\u0442\u0438\u0432\u0441\u044f. \u0422\u0435\u043f\u0435\u0440 \u043c\u0430\u0439\u0441\u0442\u0435\u0440 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454, \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043f\u0440\u0430\u0446\u044e\u0432\u0430\u0432 \u0431\u043b\u043e\u043a 3.",
+          "title": "Чому згасло світло?",
+          "situation": "Біля Круглої галявини Ілля відкриває ящик блока 3. Лада зібрала всі факти, разом із розповіддю сторожа. Версій три: блок розрядився, хтось його вимкнув, пошкоджено провід. Перевір кожну за часом і за тим, що видно на місці.",
           "evidence": [
-            "\u041d\u0430 \u043a\u0430\u0440\u0442\u0446\u0456 \u0406\u043b\u043b\u0456: \u043f\u043e\u0432\u043d\u0456\u0441\u0442\u044e \u0437\u0430\u0440\u044f\u0434\u0436\u0435\u043d\u0438\u0439 \u0431\u043b\u043e\u043a 3 \u043f\u0440\u0430\u0446\u044e\u0454 50 \u0445\u0432\u0438\u043b\u0438\u043d, \u043f\u043e\u0442\u0456\u043c \u0432\u0438\u043c\u0438\u043a\u0430\u0454\u0442\u044c\u0441\u044f.",
-            "\u0421\u044c\u043e\u0433\u043e\u0434\u043d\u0456 \u043f\u043e\u0432\u043d\u0456\u0441\u0442\u044e \u0437\u0430\u0440\u044f\u0434\u0436\u0435\u043d\u0438\u0439 \u0431\u043b\u043e\u043a \u0443\u0432\u0456\u043c\u043a\u043d\u0443\u043b\u0438 \u043e 14:20 \u0456 \u0431\u0456\u043b\u044c\u0448\u0435 \u043d\u0435 \u0432\u0438\u043c\u0438\u043a\u0430\u043b\u0438.",
-            "\u041f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0430 \u043f\u043e\u0447\u0430\u043b\u0430\u0441\u044f \u043e 15:20."
+            "Датчик блока записав: ліхтарі 27-36 згасли о 15:16.",
+            "Ілля увімкнув повністю заряджений блок 3 о 14:20. За карткою заряду вистачає рівно на 50 хвилин, потім блок вимикається сам.",
+            "Індикатор заряду блока показує 2 поділки з 5. Вимикач стоїть у положенні «увімкнено».",
+            "Провід від блока до ліхтаря 27 лежить поперек стежки. За журналом складу о 15:15 стежкою проїхав візок із ящиками.",
+            "Сторож бачив незнайомця біля галявини о 14:40. О 14:50 той пішов у бік входу."
           ],
-          "question": "\u041e \u043a\u043e\u0442\u0440\u0456\u0439 \u0431\u043b\u043e\u043a 3 \u043c\u0430\u0432 \u0432\u0438\u043c\u043a\u043d\u0443\u0442\u0438\u0441\u044f? \u0412\u0432\u0435\u0434\u0438 \u0447\u0430\u0441 \u0413\u0413:\u0425\u0425.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:10",
-          "explanation": "14:20 + 40 \u0445\u0432\u0438\u043b\u0438\u043d = 15:00. \u0429\u0435 10 \u0445\u0432\u0438\u043b\u0438\u043d \u0434\u0430\u044e\u0442\u044c 15:10, \u0442\u043e\u0431\u0442\u043e \u0437\u0430 10 \u0445\u0432\u0438\u043b\u0438\u043d \u0434\u043e \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u043a\u0438.",
-          "outcome": "\u0406\u043b\u043b\u044f \u043f\u0456\u0434\u0442\u0432\u0435\u0440\u0434\u0436\u0443\u0454: \u0431\u043b\u043e\u043a \u0440\u043e\u0437\u0440\u044f\u0434\u0436\u0435\u043d\u0438\u0439. \u0421\u0430\u043c \u043b\u0456\u0445\u0442\u0430\u0440 \u043f\u0440\u0430\u0446\u044e\u0454. \u0423 \u043c\u0430\u0439\u0441\u0442\u0435\u0440\u043d\u0456 \u043f\u0456\u0434\u0431\u0435\u0440\u0435\u043c\u043e \u0437\u0430\u043c\u0456\u043d\u0443 \u0434\u043b\u044f \u043e\u0431\u043e\u0445 \u0442\u0435\u043c\u043d\u0438\u0445 \u0434\u0456\u043b\u044f\u043d\u043e\u043a.",
-          "next": "\u0412\u0438\u0431\u0440\u0430\u0442\u0438 \u0437\u0430\u043f\u0430\u0441\u043d\u0438\u0439 \u0431\u043b\u043e\u043a",
+          "question": "Яка версія узгоджується з усіма фактами?",
+          "kind": "choice",
+          "options": [
+            "Блок розрядився, заряду вистачило лише до 15:10",
+            "Незнайомець вимкнув блок і пішов",
+            "Провід поперек стежки пошкодив візок о 15:15",
+            "Усі 10 ліхтарів перегоріли одночасно"
+          ],
+          "answer": 2,
+          "feedback": [
+            "Якби блок розрядився, світло зникло б о 15:10. А воно зникло о 15:16, і індикатор досі показує заряд.",
+            "Вимикач у положенні «увімкнено», а незнайомець пішов о 14:50, за 26 хвилин до того, як згасло світло.",
+            "",
+            "Десять ліхтарів не перегорають за одну секунду, а на першому кроці ми вже зрозуміли, що річ у блоці або проводі."
+          ],
+          "explanation": "Розряд не підходить: 14:20 + 50 хвилин = 15:10, а світло зникло о 15:16, і заряд у блоці залишився. Незнайомець пішов о 14:50 і вимикача не торкався. Провід лежить поперек стежки, візок проїхав о 15:15, світло зникло за хвилину. Ілля знаходить на проводі слід колеса і розрив.",
+          "outcome": "Причину знайдено: провід перерізав візок. Потрібен новий провід, який прокладуть уздовж стежки, і блок на вечір. Ідемо в майстерню.",
+          "next": "У майстерню",
           "hints": [
-            "\u0414\u043e\u0434\u0430\u0439 50 \u0445\u0432\u0438\u043b\u0438\u043d \u0434\u043e \u0447\u0430\u0441\u0443 \u0432\u0432\u0456\u043c\u043a\u043d\u0435\u043d\u043d\u044f.",
-            "\u0414\u043e 15:00 \u043c\u0438\u043d\u0430\u0454 40 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u0417\u0430\u043b\u0438\u0448\u0430\u0454\u0442\u044c\u0441\u044f \u0434\u043e\u0434\u0430\u0442\u0438 \u0449\u0435 10 \u0445\u0432\u0438\u043b\u0438\u043d."
+            "Перевір версію з розрядом за часом: о котрій вимкнувся б блок, увімкнений о 14:20?",
+            "Порівняй час кожної події з 15:16, коли згасло світло.",
+            "Шукай подію, яка сталася прямо перед 15:16 і пояснює, чому згасли всі ліхтарі блока одразу."
           ],
           "scene": 1
         },
         {
-          "title": "\u042f\u043a\u043e\u0433\u043e \u0431\u043b\u043e\u043a\u0430 \u0432\u0438\u0441\u0442\u0430\u0447\u0438\u0442\u044c?",
-          "situation": "\u0423 \u043c\u0430\u0439\u0441\u0442\u0435\u0440\u043d\u0456 \u0442\u0440\u0438 \u0431\u043b\u043e\u043a\u0438, \u0456 \u043a\u043e\u0436\u0435\u043d \u043f\u0456\u0434\u0445\u043e\u0434\u0438\u0442\u044c \u0434\u043e \u043d\u0430\u0448\u0438\u0445 \u043b\u0456\u0445\u0442\u0430\u0440\u0456\u0432. \u0406\u043b\u043b\u044f \u043f\u043e\u0432\u043d\u0456\u0441\u0442\u044e \u0437\u0430\u0440\u044f\u0434\u0438\u0442\u044c \u043e\u0431\u0440\u0430\u043d\u0438\u0439 \u043f\u0435\u0440\u0435\u0434 \u0432\u0435\u0447\u0456\u0440\u043d\u044c\u043e\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u043e\u044e.",
+          "title": "Що взяти з майстерні?",
+          "situation": "У майстерні Ілля розкладає котушки проводу і запасні блоки. Новий провід прокладуть уздовж стежки, в обхід, щоб візки його не чіпляли. Обхід виміряно за планом. Блок потрібен на всю вечірню прогулянку, разом із перевіркою перед виходом.",
           "evidence": [
-            "\u0428\u043b\u044f\u0445 \u0434\u043e \u043f\u0430\u0432\u0456\u043b\u044c\u0439\u043e\u043d\u0456\u0432 \u0437\u0430\u0439\u043c\u0430\u0454 45 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u041f\u043e\u0432\u0435\u0440\u043d\u0435\u043d\u043d\u044f \u0442\u0440\u0438\u0432\u0430\u0454 \u0449\u0435 15 \u0445\u0432\u0438\u043b\u0438\u043d. \u0421\u0432\u0456\u0442\u043b\u043e \u043f\u043e\u0442\u0440\u0456\u0431\u043d\u0435 \u0432\u0435\u0441\u044c \u0446\u0435\u0439 \u0447\u0430\u0441.",
-            "\u041d\u0430 \u043a\u0430\u0440\u0442\u043a\u0430\u0445 \u0443\u043a\u0430\u0437\u0430\u043d\u043e, \u0441\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0436\u0435\u043d \u0431\u043b\u043e\u043a \u043f\u0440\u0430\u0446\u044e\u0454 \u043f\u0456\u0441\u043b\u044f \u043f\u043e\u0432\u043d\u043e\u0457 \u0437\u0430\u0440\u044f\u0434\u043a\u0438."
+            "На плані обхід проводу вздовж стежки виміряно: 4,5 см. Масштаб плану: 1 см = 20 м. Зрощувати провід із двох шматків не можна.",
+            "Котушки проводу: 60 м, 80 м і 100 м.",
+            "Увечері ліхтарі вмикають для перевірки о 18:00. Група виходить о 18:10, іде до павільйонів 45 хвилин із зупинками і повертається за 15 хвилин. Світло потрібне до самого повернення.",
+            "Блоки після повної зарядки працюють: А 40 хвилин, Б 75 хвилин, В 50 хвилин."
           ],
-          "question": "\u0412\u0438\u0431\u0435\u0440\u0438 \u0454\u0434\u0438\u043d\u0438\u0439 \u0431\u043b\u043e\u043a, \u044f\u043a\u043e\u0433\u043e \u0432\u0438\u0441\u0442\u0430\u0447\u0438\u0442\u044c \u043d\u0430 \u0432\u0441\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u0443.",
-          "kind": "choice",
+          "question": "Познач, що треба взяти: один провід і один блок.",
+          "kind": "multi",
           "options": [
-            "\u0411\u043b\u043e\u043a \u0410: 40 \u0445\u0432\u0438\u043b\u0438\u043d",
-            "\u0411\u043b\u043e\u043a \u0411: 75 \u0445\u0432\u0438\u043b\u0438\u043d",
-            "\u0411\u043b\u043e\u043a \u0412: 50 \u0445\u0432\u0438\u043b\u0438\u043d"
+            "Котушка 60 м",
+            "Котушка 80 м",
+            "Котушка 100 м",
+            "Блок А: 40 хвилин",
+            "Блок Б: 75 хвилин",
+            "Блок В: 50 хвилин"
           ],
-          "answer": 1,
-          "explanation": "\u041f\u043e\u0442\u0440\u0456\u0431\u043d\u043e 45 + 15 = 60 \u0445\u0432\u0438\u043b\u0438\u043d. 40 \u0456 50 \u043c\u0435\u043d\u0448\u0435 \u0437\u0430 60. \u041b\u0438\u0448\u0435 \u0431\u043b\u043e\u043a \u0411 \u043f\u0440\u0430\u0446\u044e\u0454 75 \u0445\u0432\u0438\u043b\u0438\u043d \u0456 \u0434\u0430\u0454 \u0437\u0430\u043f\u0430\u0441 \u0443 15 \u0445\u0432\u0438\u043b\u0438\u043d.",
-          "outcome": "\u0406\u043b\u043b\u044f \u0432\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u044e\u0454 \u0431\u043b\u043e\u043a \u0411 \u0456 \u043f\u0435\u0440\u0435\u0432\u0456\u0440\u044f\u0454 \u0441\u0432\u0456\u0442\u043b\u043e \u043d\u0430 \u043e\u0431\u043e\u0445 \u0434\u0456\u043b\u044f\u043d\u043a\u0430\u0445. \u041f\u0435\u0440\u0435\u0434 \u0432\u0438\u0445\u043e\u0434\u043e\u043c \u0432\u0456\u043d \u0437\u043d\u043e\u0432\u0443 \u043f\u043e\u0432\u043d\u0456\u0441\u0442\u044e \u0437\u0430\u0440\u044f\u0434\u0438\u0442\u044c \u0439\u043e\u0433\u043e. \u0417\u0430\u043b\u0438\u0448\u0438\u043b\u043e\u0441\u044f \u0432\u0438\u0437\u043d\u0430\u0447\u0438\u0442\u0438 \u0447\u0430\u0441 \u043f\u043e\u0432\u0435\u0440\u043d\u0435\u043d\u043d\u044f.",
-          "next": "\u0421\u043f\u043b\u0430\u043d\u0443\u0432\u0430\u0442\u0438 \u0432\u0435\u0447\u0456\u0440\u043d\u044e \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u0443",
+          "answer": [
+            2,
+            4
+          ],
+          "feedback": [],
+          "explanation": "Обхід: 4,5 × 20 = 90 м. Котушки 60 і 80 м закороткі, підходить 100 м. Світло потрібне з 18:00 до повернення о 19:10, тобто 70 хвилин. Блоки А і В працюють менше, підходить лише блок Б на 75 хвилин.",
+          "outcome": "Ілля бере котушку 100 м і блок Б. Провід прокладуть уздовж стежки, а блок треба зарядити до 18:00.",
+          "next": "Зарядити блок",
           "hints": [
-            "\u0412\u0440\u0430\u0445\u0443\u0439 \u0448\u043b\u044f\u0445 \u0432 \u043e\u0431\u0438\u0434\u0432\u0430 \u0431\u043e\u043a\u0438.",
-            "\u041f\u043e\u0442\u0440\u0456\u0431\u043d\u043e 60 \u0445\u0432\u0438\u043b\u0438\u043d \u0441\u0432\u0456\u0442\u043b\u0430.",
-            "\u041f\u043e\u0440\u0456\u0432\u043d\u044f\u0439 40, 75 \u0456 50 \u0456\u0437 60."
+            "Провід: переведи сантиметри плану в метри за масштабом.",
+            "Світло потрібне з моменту перевірки о 18:00, а не з виходу групи. Порахуй хвилини до повернення.",
+            "Потрібні рівно два предмети: один провід і один блок."
           ],
           "scene": 2
         },
         {
-          "title": "\u041a\u043e\u043b\u0438 \u043f\u043e\u0432\u0435\u0440\u043d\u0435\u0442\u044c\u0441\u044f \u0433\u0440\u0443\u043f\u0430?",
-          "situation": "\u041b\u0430\u0434\u0430 \u0437\u0430\u043f\u0438\u0441\u0443\u0454 \u0447\u0430\u0441 \u043f\u043e\u0432\u0435\u0440\u043d\u0435\u043d\u043d\u044f \u0434\u043b\u044f \u0406\u043b\u043b\u0456. \u0412\u0456\u043d \u0437\u0443\u0441\u0442\u0440\u0456\u043d\u0435 \u0433\u0440\u0443\u043f\u0443 \u0431\u0456\u043b\u044f \u0432\u0445\u043e\u0434\u0443 \u0439 \u0432\u0438\u043c\u043a\u043d\u0435 \u043b\u0456\u0445\u0442\u0430\u0440\u0456.",
+          "title": "Чи встигне блок зарядитися?",
+          "situation": "Біля павільйонів Ілля ставить блок Б на зарядку і прокладає провід. Лада перевіряє, чи все встигне до перевірки о 18:00.",
           "evidence": [
-            "\u0413\u0440\u0443\u043f\u0430 \u0432\u0438\u0445\u043e\u0434\u0438\u0442\u044c \u043e 18:10. \u0422\u043e\u0434\u0456 \u0436 \u0432\u043c\u0438\u043a\u0430\u044e\u0442\u044c \u043f\u043e\u0432\u043d\u0456\u0441\u0442\u044e \u0437\u0430\u0440\u044f\u0434\u0436\u0435\u043d\u0438\u0439 \u0431\u043b\u043e\u043a \u0411.",
-            "\u0414\u043e \u043f\u0430\u0432\u0456\u043b\u044c\u0439\u043e\u043d\u0456\u0432 \u0456\u0442\u0438 45 \u0445\u0432\u0438\u043b\u0438\u043d, \u043d\u0430\u0437\u0430\u0434 15 \u0445\u0432\u0438\u043b\u0438\u043d.",
-            "\u0417\u0443\u043f\u0438\u043d\u043a\u0438 \u0432\u0436\u0435 \u0432\u0440\u0430\u0445\u043e\u0432\u0430\u043d\u0456 \u0432 \u0446\u044c\u043e\u043c\u0443 \u0447\u0430\u0441\u0456.",
-            "\u0411\u043b\u043e\u043a \u0411 \u043f\u0440\u0430\u0446\u044e\u0454 75 \u0445\u0432\u0438\u043b\u0438\u043d."
+            "Перевірку ліхтарів призначено на 18:00.",
+            "Повна зарядка блока Б від нуля займає 90 хвилин.",
+            "Коли Ілля поставив блок Б на зарядку о 16:55, той був заряджений на 1/3.",
+            "Заряд додається рівномірно."
           ],
-          "question": "\u041e \u043a\u043e\u0442\u0440\u0456\u0439 \u0437\u0430 \u043f\u043b\u0430\u043d\u043e\u043c \u0433\u0440\u0443\u043f\u0430 \u043f\u043e\u0432\u0435\u0440\u043d\u0435\u0442\u044c\u0441\u044f \u0434\u043e \u0432\u0445\u043e\u0434\u0443? \u0412\u0432\u0435\u0434\u0438 \u0447\u0430\u0441 \u0413\u0413:\u0425\u0425.",
+          "question": "О котрій блок Б буде заряджений повністю? Введи час ГГ:ХХ.",
           "kind": "time",
           "options": [],
-          "answer": "19:10",
-          "explanation": "45 + 15 = 60 \u0445\u0432\u0438\u043b\u0438\u043d. \u0427\u0435\u0440\u0435\u0437 \u0433\u043e\u0434\u0438\u043d\u0443 \u043f\u0456\u0441\u043b\u044f 18:10 \u0431\u0443\u0434\u0435 19:10. \u0423 \u0431\u043b\u043e\u043a\u0430 \u0437\u0430\u043b\u0438\u0448\u0438\u0442\u044c\u0441\u044f 75 - 60 = 15 \u0445\u0432\u0438\u043b\u0438\u043d \u0437\u0430\u043f\u0430\u0441\u0443.",
-          "outcome": "\u041b\u0430\u0434\u0430 \u043c\u0430\u0454 \u043e\u0441\u0432\u0456\u0442\u043b\u0435\u043d\u0438\u0439 \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u0456 \u0447\u0430\u0441 \u0437\u0443\u0441\u0442\u0440\u0456\u0447\u0456 \u0437 \u0406\u043b\u043b\u0435\u044e. \u041c\u043e\u0436\u043d\u0430 \u0432\u0438\u0440\u0443\u0448\u0430\u0442\u0438!",
-          "next": "\u041f\u043e\u0447\u0430\u0442\u0438 \u043b\u0456\u0441\u043e\u0432\u0443 \u043f\u0440\u043e\u0433\u0443\u043b\u044f\u043d\u043a\u0443",
+          "answer": "17:55",
+          "feedback": [],
+          "explanation": "Бракує 2/3 заряду. 2/3 від 90 хвилин це 60 хвилин. 16:55 + 60 хвилин = 17:55, за 5 хвилин до перевірки.",
+          "outcome": "Блок Б готовий до 17:55, провід лежить уздовж стежки. О 18:00 перевірка, о 18:10 група виходить і повернеться о 19:10. Прогулянка відбудеться.",
+          "next": "Відкрити лісову прогулянку",
           "hints": [
-            "\u0414\u043e\u0434\u0430\u0439 \u0447\u0430\u0441 \u0448\u043b\u044f\u0445\u0443 \u0442\u0443\u0434\u0438 \u0439 \u043d\u0430\u0437\u0430\u0434.",
-            "\u0423\u0432\u0435\u0441\u044c \u043c\u0430\u0440\u0448\u0440\u0443\u0442 \u0437\u0430\u0439\u043c\u0430\u0454 \u043e\u0434\u043d\u0443 \u0433\u043e\u0434\u0438\u043d\u0443.",
-            "\u0414\u043e\u0434\u0430\u0439 \u0433\u043e\u0434\u0438\u043d\u0443 \u0434\u043e 18:10."
+            "Заряджати треба не весь блок, а лише частину, якої бракує.",
+            "Якої частки заряду бракує і скільки це хвилин із 90?",
+            "Додай ці хвилини до 16:55."
           ],
           "scene": 3
         }
