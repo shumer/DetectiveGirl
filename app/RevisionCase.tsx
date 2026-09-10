@@ -4,6 +4,7 @@ import { Progress } from '@/components/ui/progress';
 import { translations, type Language } from './i18n';
 import forestCopy from './forest.json';
 import { AUTO_HINT_AFTER, rankIndex, validateResponse, type ResponseKind } from './revision-game';
+import { saveResult } from './progress';
 export type RevisedStep = { title: string; situation: string; evidence: string[]; question: string; kind: ResponseKind; options: string[]; answer: string | number | number[]; feedback?: string[]; explanation: string; outcome: string; next: string; hints: string[]; scene: number };
 export type RevisedLocale = { title: string; intro: string; ending: string; question: string; steps: RevisedStep[] };
 export type RevisedStory = { id: string; number: string; locales: Record<Language, RevisedLocale> };
@@ -16,8 +17,8 @@ const labels = {
 export function localeOf(story: RevisedStory, language: Language): RevisedLocale {
   return story.locales[language];
 }
-type Props = { story: RevisedStory; language: Language; step: number; setStep: (value: number) => void; exit: () => void };
-export default function RevisionCase({ story, language, step, setStep, exit }: Props) {
+type Props = { story: RevisedStory; language: Language; step: number; setStep: (value: number) => void; exit: () => void; onSolved?: () => void };
+export default function RevisionCase({ story, language, step, setStep, exit, onSolved }: Props) {
   const t = localeOf(story, language), shared = translations[language], buttons = forestCopy[language], ui = labels[language];
   const [solved, setSolved] = useState(false), [wrong, setWrong] = useState<string | null>(null), [hint, setHint] = useState(0);
   const [answer, setAnswer] = useState(''), [order, setOrder] = useState<number[]>([]), [picked, setPicked] = useState<number[]>([]);
@@ -25,6 +26,7 @@ export default function RevisionCase({ story, language, step, setStep, exit }: P
   const heading = useRef<HTMLHeadingElement>(null);
   useEffect(() => { heading.current?.focus({ preventScroll: step < 0 }); }, [step]);
   const done = step === t.steps.length, task = t.steps[step];
+  useEffect(() => { if (done) { saveResult(story.id, { mistakes, hints: hintsUsed }); onSolved?.(); } }, [done]); // eslint-disable-line react-hooks/exhaustive-deps
   const openHint = (auto: boolean) => { if (hint >= task.hints.length) return; setHint(hint + 1); setHintsUsed(hintsUsed + 1); setAutoHint(auto); };
   const advance = () => { setSolved(false); setWrong(null); setHint(0); setAnswer(''); setOrder([]); setPicked([]); setStepMistakes(0); setAutoHint(false); setStep(step + 1); };
   function check(value: string | number[]) {
@@ -38,7 +40,7 @@ export default function RevisionCase({ story, language, step, setStep, exit }: P
     setStepMistakes(count); setMistakes(mistakes + 1);
     if (count % AUTO_HINT_AFTER === 0 && hint < task.hints.length) openHint(true);
   }
-  if (step < 0) return <div className="start forest-start"><section className="cover forest-cover"><div className="cover-shade" /><div className="cover-label"><Fingerprint size={19} />{shared.secret}</div><div className="cover-title"><span className="eyebrow">{shared.case} {story.number}</span><h1 ref={heading} tabIndex={-1}>{t.title}</h1><p>{buttons[30]}</p></div><div className="case-stamp">{shared.unsolved}</div></section><section className="brief"><span className="eyebrow">{shared.case} {story.number}</span><h2>{shared.greeting}</h2><p>{t.intro}</p><div className="mission"><Search /><div><strong>{shared.motto}</strong><p>{buttons[30]}</p></div></div><button className="primary" onClick={() => setStep(0)}>{shared.start}<ArrowRight size={20} /></button><p className="quiet">{shared.calm}</p><button className="text-button" onClick={exit}>{buttons[8]}</button></section></div>;
+  if (step < 0) return <div className="start forest-start"><section className="cover forest-cover"><div className="cover-shade" /><div className="cover-label"><Fingerprint size={19} />{shared.secret}</div><div className="cover-title"><span className="eyebrow">{shared.case} {story.number}</span><h1 ref={heading} tabIndex={-1}>{t.title}</h1><p>{buttons[30]}</p></div><div className="case-stamp">{shared.unsolved}</div></section><section className="brief"><span className="eyebrow">{shared.case} {story.number}</span><h2>{shared.greeting}</h2><p>{t.intro}</p><div className="mission"><Search /><div><strong>{shared.motto}</strong><p>{buttons[30]}</p></div></div><button className="primary" onClick={() => setStep(0)}>{shared.start}<ArrowRight size={20} /></button><p className="quiet">{shared.calm}</p><button className="text-button" onClick={exit}>{shared.gallery.back}</button></section></div>;
   const counters = <span className="counters"><span title={ui.mistakes}>{ui.mistakes}: <b>{mistakes}</b></span><span title={ui.hintsUsed}>{ui.hintsUsed}: <b>{hintsUsed}</b></span></span>;
   const letter = (i: number) => ui.letters[i] ?? String(i + 1);
   return <div className="forest-case"><div className="game-top"><span className="eyebrow">{done ? shared.closed : t.title}</span><span className="game-top-right">{counters}<span>{Math.min(step + 1, t.steps.length)} / {t.steps.length}</span></span></div><Progress value={done ? 100 : step / t.steps.length * 100} aria-label={shared.progress} /><div className="scene-window forest-window" aria-hidden="true" /><div className="game-grid"><section className="puzzle"><div className="location"><span>{done ? <Sparkles /> : <MapPin />}</span>{shared.case} {story.number}</div><h1 ref={heading} tabIndex={-1}>{done ? shared.end.solved : task.title}</h1>
@@ -50,5 +52,5 @@ export default function RevisionCase({ story, language, step, setStep, exit }: P
         : <form onSubmit={event => { event.preventDefault(); check(answer); }}><label htmlFor="revision-answer">{ui.answer}</label><input id="revision-answer" className="time-input" value={answer} disabled={solved} inputMode={task.kind === 'time' ? 'numeric' : 'decimal'} placeholder={task.kind === 'time' ? '00:00' : undefined} autoComplete="off" enterKeyHint="done" onChange={event => { let value = event.target.value; if (task.kind === 'time') { const digits = value.replace(/\D/g, '').slice(0, 4); value = digits.length > 2 ? `${digits.slice(0, 2)}:${digits.slice(2)}` : digits; } setAnswer(value.slice(0, 12)); setWrong(null); }} />{!solved && <button className="primary" type="submit">{buttons[4]}<ArrowRight size={18} /></button>}</form>}
       <div aria-live="polite">{wrong && <p className="feedback">{wrong}</p>}{solved && <div className="success"><strong><Check size={19} />{ui.correct}</strong><p>{task.explanation}</p>{task.outcome !== task.explanation && <><strong>{ui.outcome}</strong><p>{task.outcome}</p></>}<button className="primary" onClick={advance}>{task.next}<ArrowRight size={18} /></button></div>}</div>
       {!solved && <div className="hint-box"><button className="text-button" disabled={hint === task.hints.length} onClick={() => openHint(false)}><Lightbulb size={19} />{hint ? shared.moreHint : shared.hint}<span>{hint}/{task.hints.length}</span></button>{hint > 0 && <p aria-live="polite">{autoHint && <em className="auto-hint">{ui.autoHint} </em>}{task.hints[hint - 1]}</p>}</div>}
-    </>}<button className="text-button" onClick={exit}>{buttons[8]}</button></section><aside className="notebook"><span className="eyebrow"><NotebookPen size={16} />{buttons[29]}</span><h2>{shared.notebookTitle}</h2>{step === 0 && !solved && <p>{ui.empty}</p>}{t.steps.slice(0, done ? t.steps.length : step + (solved ? 1 : 0)).map((item, i) => <div className="clue" key={i}><span>0{i + 1} · {item.title}</span><p>{item.outcome}</p></div>)}<div className="partner"><Lightbulb size={20} /><p>{shared.partner}</p></div></aside></div></div>;
+    </>}<button className="text-button" onClick={exit}>{shared.gallery.back}</button></section><aside className="notebook"><span className="eyebrow"><NotebookPen size={16} />{buttons[29]}</span><h2>{shared.notebookTitle}</h2>{step === 0 && !solved && <p>{ui.empty}</p>}{t.steps.slice(0, done ? t.steps.length : step + (solved ? 1 : 0)).map((item, i) => <div className="clue" key={i}><span>0{i + 1} · {item.title}</span><p>{item.outcome}</p></div>)}<div className="partner"><Lightbulb size={20} /><p>{shared.partner}</p></div></aside></div></div>;
 }

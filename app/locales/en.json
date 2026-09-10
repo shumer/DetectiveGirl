@@ -182,5 +182,15 @@
     "Talk to Mira",
     "Check the route on camera",
     "Compare the people’s details"
-  ]
+  ],
+  "gallery": {
+    "title": "Choose a case",
+    "subtitle": "Eleven investigations. Each has four steps, hints and a notebook. Start with any of them.",
+    "solved": "Solved",
+    "fresh": "Unsolved",
+    "mistakes": "Mistakes",
+    "open": "Open the case",
+    "back": "Back to cases",
+    "clean": "no mistakes"
+  }
 }

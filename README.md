@@ -34,12 +34,18 @@ The site is published at https://shumer.github.io/DetectiveGirl/ . Free GitHub P
 
 Build reference: https://vite.dev/guide/static-deploy.html#github-pages
 
+## Start screen
+
+The start screen is a gallery of case cards: scene image, number, title, a one-line teaser and the status. Solved cases are marked with the number of mistakes; that progress is stored in the browser only. Choosing a card opens the case briefing with the “Accept the case” button, and every screen has a link back to the gallery.
+
 ## Content
 
 Eleven cases: the golden owl, the forest lanterns, a parcel for Cloud Island, the museum of mixed-up shadows, the Moon greenhouse, the theatre of the lost finale, the aquarium bubbles, the moon cookie bakery, the lighthouse tune, two bookmarks in a library and the park parade. Each has four connected steps, three hints per step, feedback for every wrong option, a mistake counter, a findings notebook and an ending. The maths is roughly fifth grade: clock corrections in both directions, time gaps against walking times, map scale, speed and distance, fractions of a whole, timetables with intervals. The difficulty rules live in `docs/difficulty.ru.md`.
 
 - `app/page.tsx` - case and language selection, scene styling.
+- `app/CaseGallery.tsx` - the start screen with case cards.
 - `app/RevisionCase.tsx` - the shared game interface.
+- `app/progress.ts` - solved-case storage and card teasers.
 - `app/revision-game.ts` - answer validation and the rating at the end.
 - `app/revised/*.json` - the playable cases in all four languages.
 - `docs/stories.ru.md` - all eleven scripts in Russian, generated from the JSON.

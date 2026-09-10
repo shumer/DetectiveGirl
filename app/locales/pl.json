@@ -182,5 +182,15 @@
     "Porozmawiaj z Mirą",
     "Sprawdź trasę na nagraniach",
     "Porównaj dane o osobach"
-  ]
+  ],
+  "gallery": {
+    "title": "Wybierz sprawę",
+    "subtitle": "Jedenaście śledztw. W każdym cztery kroki, podpowiedzi i notatnik. Zacznij od dowolnej.",
+    "solved": "Rozwiązana",
+    "fresh": "Nierozwiązana",
+    "mistakes": "Błędy",
+    "open": "Otwórz sprawę",
+    "back": "Lista spraw",
+    "clean": "bez błędów"
+  }
 }
