@@ -1,14 +1,16 @@
 # DetectiveGirl
 
-Детективная браузерная игра с математикой для детей. Четыре игровых дела с блокнотом улик, подсказками и объяснениями ответов.
+A browser detective game with maths for kids around age 11. Four cases, each with suspects or competing theories, a false trail, an evidence notebook, hints and an explanation for every wrong answer.
 
-## Языки
+Play it here: https://shumer.github.io/DetectiveGirl/
 
-На стартовом экране доступны **Русский / Polski / English / Українська**. Переведены интерфейс, сюжет, задания, подсказки, ошибки и развязка. Язык можно переключить и во время игры: ответы и текущий этап сохраняются. Выбранный язык запоминается в этом браузере. После обновления страницы расследование начинается заново.
+## Languages
 
-## Локальный запуск
+The start screen offers **Русский / Polski / English / Українська**. The interface, story, tasks, hints, feedback and endings are all translated. You can switch language mid-game: answers and the current step are kept. The chosen language is remembered in this browser. Reloading the page restarts the investigation.
 
-Нужны Node.js 24 и npm.
+## Running locally
+
+Requires Node.js 24 and npm.
 
 ```sh
 npm ci
@@ -22,35 +24,37 @@ npm run build
 npm run preview
 ```
 
-Сборка находится в `dist/`. Это статический сайт: сервер, API-ключи и аккаунт ChatGPT для игры не нужны. Относительные пути позволяют размещать игру в подпапке GitHub Pages.
+The build lands in `dist/`. It is a static site: no server, API keys or accounts are needed. Relative paths let the game live in a GitHub Pages subfolder.
 
 ## GitHub Pages
 
-В репозитории `shumer/DetectiveGirl` выберите **Settings → Pages → Build and deployment → Source: GitHub Actions**. После отправки файлов в ветку `main` workflow `.github/workflows/pages.yml` проверит и соберёт приложение, затем разместит `dist/`.
+In the `shumer/DetectiveGirl` repository choose **Settings → Pages → Build and deployment → Source: GitHub Actions**. Every push to `main` runs `.github/workflows/pages.yml`, which tests, builds and deploys `dist/`.
 
-Ожидаемый адрес после успешного первого размещения: https://shumer.github.io/DetectiveGirl/ . Само наличие workflow не означает, что сайт уже опубликован. Для бесплатного GitHub Pages нужен публичный репозиторий.
+The site is published at https://shumer.github.io/DetectiveGirl/ . Free GitHub Pages requires a public repository.
 
-Инструкция по сборке: https://vite.dev/guide/static-deploy.html#github-pages
+Build reference: https://vite.dev/guide/static-deploy.html#github-pages
 
-## Содержимое
+## Content
 
-Доступны четыре дела: тайна золотой совы, лесные фонари, посылка на облачный остров и музей перепутанных теней. Все переведены на русский, польский, английский и украинский и рассчитаны на 11 лет: в каждом есть подозреваемые или версии, ложный след и математика 5 класса, см. `docs/difficulty.ru.md`. В каждом четыре связанных шага, три подсказки на шаг, объяснение к каждому неверному варианту, счётчик ошибок, блокнот выводов и развязка. Все четыре дела переведены на русский, польский, английский и украинский.
+Four cases: the golden owl mystery, the forest lanterns, a parcel for Cloud Island and the museum of mixed-up shadows. Each has four connected steps, three hints per step, feedback for every wrong option, a mistake counter, a findings notebook and an ending. The maths is roughly fifth grade: clock corrections in both directions, time gaps against walking times, map scale, speed and distance, fractions of a whole, timetables with intervals. The difficulty rules live in `docs/difficulty.ru.md`.
 
-- `app/page.tsx` - выбор дела, языка и оформление сцен.
-- `app/RevisionCase.tsx` - общий игровой интерфейс.
-- `app/revision-game.ts` - проверка ответов.
-- `app/revised/*.json` - актуальные игровые сценарии и переводы.
-- `docs/stories.ru.md` - четыре игровых сценария, собраны из JSON.
-- `docs/difficulty.ru.md` - правила уровня сложности и механики.
-- `docs/story-drafts.ru.json` - семь черновиков старого уровня, требуют переработки перед реализацией.
-- `tests/revision.test.ts`, `tests/reviewed-content.test.ts` - проверка ответов, структуры и переводов дел, подсказок и доступности иллюстраций.
+- `app/page.tsx` - case and language selection, scene styling.
+- `app/RevisionCase.tsx` - the shared game interface.
+- `app/revision-game.ts` - answer validation and the rating at the end.
+- `app/revised/*.json` - the playable cases in all four languages.
+- `docs/stories.ru.md` - the four scripts in Russian, generated from the JSON.
+- `docs/difficulty.ru.md` - difficulty and mechanics rules (Russian).
+- `docs/story-drafts.ru.json` - seven older, easier drafts that need reworking before they are implemented.
+- `tests/revision.test.ts`, `tests/reviewed-content.test.ts` - answer validation, structure and translation consistency, hints that do not leak the answer, background assets.
 
-Исходный прототип был создан для Sites. Эта версия использует статическую сборку Vite + React + TypeScript, без серверной конфигурации Sites. Зависимости исходного шаблона сохранены в lockfile.
+Answer kinds: single choice (at least four options), multi-select, ordering cards, a number and a time. After two wrong answers in a row on a step, the next hint opens by itself.
 
-## Фоны и музыка
+The original prototype was built for Sites. This version is a static Vite + React + TypeScript build without the Sites server configuration. The original template's dependencies are kept in the lockfile.
 
-Цвета и иллюстрации меняются вместе с местом действия. Настройки - `app/themes.ts`, направления для будущих дел - `docs/art-direction.ru.md`. Музыка Sneaky Snitch включена по умолчанию с громкостью 18%, повторяется и ставится на паузу при скрытии вкладки. Если браузер блокирует автоматический звук, воспроизведение начнется при первом касании или нажатии клавиши. Кнопка позволяет выключить музыку. Автор и лицензия указаны в интерфейсе и `MUSIC-LICENSE.md`. Все аудиофайлы и фоны входят в сборку, внешние проигрыватели не используются.
+## Backgrounds and music
 
-## Связность сюжета
+Colours and illustrations change with the location. Settings are in `app/themes.ts`; art direction for future cases is in `docs/art-direction.ru.md`. The track Sneaky Snitch plays by default at 18% volume, loops, and pauses when the tab is hidden. If the browser blocks autoplay, playback starts on the first tap or key press. A button turns the music off. Credit and licence are shown in the interface and in `MUSIC-LICENSE.md`. All audio and backgrounds ship with the build; no external players are used.
 
-Каждый шаг показывает известные факты и конкретный вопрос. После ответа игрок получает объяснение, вывод для блокнота и переход к следующему действию. Предположения отделены от подтверждённых фактов. Время, маршрут и ограничения заданы до решения; развязка опирается на собранные сведения.
+## Story structure
+
+Every step shows the known facts and one concrete question. After answering, the player gets an explanation, a notebook entry and the next action. Guesses are kept apart from confirmed facts, and having no alibi is never treated as proof. Times, routes and constraints are given before the solution, and the ending relies only on what was collected.
