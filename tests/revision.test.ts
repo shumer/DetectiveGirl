@@ -18,3 +18,9 @@ await test('choice validation rejects missing and out-of-range choices',()=>{
  assert.ok(validateResponse('choice',1,'1'));
  for(const value of ['','0','2','1.0','one'])assert.equal(validateResponse('choice',1,value),false);
 });
+await test('multi-select answers require exactly the expected set in any order',()=>{
+ const expected=[0,1,3];
+ for(const value of [[0,1,3],[3,1,0],[1,3,0]]) assert.ok(validateResponse('multi',expected,value));
+ for(const value of [[],[0,1],[0,1,2,3],[0,1,1,3],[2]]) assert.equal(validateResponse('multi',expected,value),false);
+ assert.equal(validateResponse('multi',expected,'0,1,3'),false);
+});
