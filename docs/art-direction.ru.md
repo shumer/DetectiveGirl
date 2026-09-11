@@ -8,9 +8,9 @@
 
 Фоны созданы с помощью ImageGen специально для игры. Новые иллюстрации сохранены как WebP для уменьшения загрузки. Файл `scene.png` - исходный школьный коридор.
 
-## Дела 005-011: временные фоны
+## Cases 005-011: generated artwork
 
-Для этих дел иллюстраций пока нет. В игре стоят стилизованные SVG-сцены, которые генерирует `scripts/backgrounds.py` в палитрах ниже (`public/backgrounds/<id>-0..3.svg`). Когда появятся нарисованные фоны, достаточно положить четыре файла и поменять расширение в `storyScenes` в `app/themes.ts`. Промпт общий с лесным делом (`docs/forest-art.md`), сюжеты сцен по шагам:
+All 28 scene backgrounds are generated illustrations in `public/backgrounds/<id>-0..3.jpg`, connected through `storyScenes` in `app/themes.ts`. The original SVG drafts remain available. Prompts: [generated-art-005-011.md](generated-art-005-011.md). The table below lists scene indices, not step order; story data defines the actual order.
 
 | Дело | Сцены 0-3 |
 |---|---|
