@@ -1,462 +1,672 @@
 {
-  "id": "aquarium",
-  "number": "007",
-  "locales": {
-    "ru": {
-      "title": "Аквариум и загадка пузырьков",
-      "intro": "В выставочном аквариуме без экскурсии вдруг пошли ровные кольца пузырьков. Рыб здесь нет, только игрушки с механизмами: замок, лодка, ракушка и сундук. Посетитель уверен, что кольца пускает замок, у него самые толстые трубки. Смотритель записал время колец, но его часы спешат. Помоги найти, какая игрушка работает сама по себе, почему она включилась и как настроить показ для гостей.",
-      "ending": "Кольца пускал сундук, а не лодка и не замок. Расписание лодки совпадало с наблюдениями, но смотритель выключил её в 10:15, а кольцо в 10:20 всё равно появилось. Сундук запустила вчерашняя проверочная программа с автозапуском в 09:50. Для сеанса в 11:10 смотритель задал четыре кольца, чтобы последнее вышло не позже 11:38.",
-      "question": "Лодка выпускала бы кольца ровно в те же минуты, что и сундук. Что окончательно доказало, что виновата не она?",
-      "steps": [
-        {
-          "title": "Когда ждать следующее кольцо?",
-          "situation": "У аквариума смотритель показывает три записи в блокноте. Он записывал время по своим наручным часам, а механизмы игрушек работают по точному времени.",
-          "evidence": [
-            "По часам смотрителя кольца появились в 10:05, 10:11 и 10:17.",
-            "Часы смотрителя спешат на 3 минуты.",
-            "Предположим, что кольца идут через равные промежутки."
-          ],
-          "question": "Во сколько по точному времени появится следующее кольцо? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "10:20",
-          "feedback": [],
-          "explanation": "По точному времени кольца были в 10:02, 10:08 и 10:14: из каждого наблюдения вычитаем 3 минуты. Промежуток 6 минут, значит следующее в 10:20.",
-          "outcome": "В 10:20 кольцо действительно появилось. Кольца идут каждые 6 минут, начиная с 10:02 или раньше. Идём к пульту сравнивать программы игрушек.",
-          "next": "Открыть программы игрушек",
-          "hints": [
-            "Часы смотрителя спешат: настоящее время меньше, чем он записал.",
-            "Переведи все три наблюдения в точное время и найди промежуток между ними.",
-            "Прибавь промежуток к последнему точному времени."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Какая игрушка пускает кольца?",
-          "situation": "На пульте четыре программы, по одной на игрушку. Каждая задаёт, когда игрушка выпускает первое кольцо и как часто следующие. Смотритель успел провести один опыт, а посетитель настаивает на замке.",
-          "evidence": [
-            "Наблюдения по точному времени: 10:02, 10:08, 10:14, 10:20.",
-            "Замок: первое кольцо в 10:02, затем каждые 4 минуты.",
-            "Лодка: первое кольцо в 10:02, затем каждые 6 минут.",
-            "Ракушка: первое кольцо в 10:05, затем каждые 6 минут.",
-            "Сундук: первое кольцо в 09:56, затем каждые 6 минут.",
-            "В 10:15 смотритель выключил программу лодки. Кольцо в 10:20 всё равно появилось.",
-            "Посетитель говорит, что кольца пускает замок: у него самые толстые трубки."
-          ],
-          "question": "Какая игрушка выпускает кольца?",
-          "kind": "choice",
-          "options": [
-            "Замок",
-            "Лодка",
-            "Ракушка",
-            "Сундук"
-          ],
-          "answer": 3,
-          "feedback": [
-            "Замок дал бы второе кольцо в 10:06, а не в 10:08. Толстые трубки не меняют расписание.",
-            "Расписание лодки совпадает со всеми наблюдениями. Но её выключили в 10:15, а кольцо в 10:20 всё равно появилось.",
-            "Ракушка начинает в 10:05 и дальше даёт 10:11, 10:17: ни одно время не совпадает.",
-            ""
-          ],
-          "explanation": "Замок отпадает по промежутку, ракушка по времени начала. Лодка и сундук дают одинаковые минуты: 10:02, 10:08, 10:14, 10:20. Разделил их опыт: лодку выключили в 10:15, а кольцо в 10:20 появилось, значит его пустил сундук. Первое кольцо сундука в 09:56 смотритель просто не видел.",
-          "outcome": "Кольца пускает сундук. Смотритель выключает его программу, и в 10:26 кольца нет. Теперь выясним, почему сундук включился без экскурсии.",
-          "next": "Открыть журнал сундука",
-          "hints": [
-            "Сначала отбрось программы, у которых не совпадает промежуток или время первого кольца.",
-            "Если две программы дают одни и те же минуты, расписание их не различит. Ищи опыт, который различает.",
-            "Что произошло с кольцами после того, как лодку выключили?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Откуда взялся ранний запуск?",
-          "situation": "В журнале сундука осталась вчерашняя проверочная программа с автозапуском. Смотритель хочет убедиться, что именно она объясняет кольца, и понять, сколько колец вышло бы без вмешательства.",
-          "evidence": [
-            "Проверочная программа запускается автоматически в 09:50 и перед первым кольцом ждёт 6 минут.",
-            "Дальше она выпускает кольцо каждые 6 минут, пока её не выключат.",
-            "Смотритель выключил программу в 10:22, но хочет знать, что было бы, если бы она работала до конца утра: до 10:44 включительно."
-          ],
-          "question": "Сколько колец выпустил бы сундук с первого кольца до 10:44 включительно? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "9",
-          "feedback": [],
-          "explanation": "Первое кольцо в 09:50 + 6 минут = 09:56, это совпадает с расписанием сундука. От 09:56 до 10:44 проходит 48 минут, это 48 : 6 = 8 промежутков. Колец на одно больше, чем промежутков: 9.",
-          "outcome": "Проверочная программа объясняет и первое кольцо, и все следующие. Смотритель удаляет автозапуск и настраивает программу для сеанса.",
-          "next": "Настроить программу показа",
-          "hints": [
-            "Сначала найди время первого кольца: к моменту запуска прибавь ожидание.",
-            "Посчитай минуты от первого кольца до последнего и раздели на промежуток.",
-            "Первое кольцо тоже считается: колец на одно больше, чем промежутков."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Сколько колец увидят гости?",
-          "situation": "Смотритель готовит показ. Новая программа сундука начнётся вместе с сеансом, а последнее кольцо должно успеть подняться до конца сеанса.",
-          "evidence": [
-            "Сеанс начинается в 11:10 и длится 30 минут.",
-            "Первое кольцо выходит через 5 минут после начала сеанса, дальше каждые 6 минут.",
-            "Последнее кольцо должно выйти не позже чем за 2 минуты до конца сеанса, иначе гости не увидят, как оно поднимется."
-          ],
-          "question": "Сколько колец нужно задать в программе? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Сеанс заканчивается в 11:40, последнее кольцо не позже 11:38. Кольца: 11:15, 11:21, 11:27, 11:33, следующее в 11:39 уже поздно. Итого четыре кольца.",
-          "outcome": "Смотритель задаёт четыре кольца, последнее в 11:33. Сундук больше не включается сам, а посетитель узнал, что толстые трубки ничего не доказывают.",
-          "next": "Открыть показ пузырьков",
-          "hints": [
-            "Выпиши моменты колец по порядку от первого.",
-            "Найди последний разрешённый момент: конец сеанса минус две минуты.",
-            "Отбрось кольца после этого момента."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "pl": {
-      "title": "Akwarium i zagadka bąbelków",
-      "intro": "W wystawowym akwarium bez wycieczki nagle poszły równe kręgi bąbelków. Ryb tu nie ma, tylko zabawki z mechanizmami: zamek, łódka, muszla i skrzynia. Zwiedzający jest pewien, że kręgi puszcza zamek, bo ma najgrubsze rurki. Opiekun zapisał czasy kręgów, ale jego zegarek się spieszy. Pomóż ustalić, która zabawka działa sama z siebie, dlaczego się włączyła i jak ustawić pokaz dla gości.",
-      "ending": "Kręgi puszczała skrzynia, a nie łódka ani zamek. Rozkład łódki zgadzał się z obserwacjami, ale opiekun wyłączył ją o 10:15, a krąg o 10:20 i tak się pojawił. Skrzynię uruchomił wczorajszy program testowy z autostartem o 09:50. Na seans o 11:10 opiekun ustawił cztery kręgi, żeby ostatni wyszedł najpóźniej o 11:38.",
-      "question": "Łódka wypuszczałaby kręgi dokładnie w tych samych minutach co skrzynia. Co ostatecznie dowiodło, że to nie ona?",
-      "steps": [
-        {
-          "title": "Kiedy spodziewać się następnego kręgu?",
-          "situation": "Przy akwarium opiekun pokazuje trzy zapisy w notesie. Zapisywał czas według swojego zegarka, a mechanizmy zabawek działają według dokładnego czasu.",
-          "evidence": [
-            "Według zegarka opiekuna kręgi pojawiły się o 10:05, 10:11 i 10:17.",
-            "Zegarek opiekuna spieszy się o 3 minuty.",
-            "Załóżmy, że kręgi idą w równych odstępach."
-          ],
-          "question": "O której według dokładnego czasu pojawi się następny krąg? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "10:20",
-          "feedback": [],
-          "explanation": "Według dokładnego czasu kręgi były o 10:02, 10:08 i 10:14: od każdej obserwacji odejmujemy 3 minuty. Odstęp to 6 minut, więc następny o 10:20.",
-          "outcome": "O 10:20 krąg rzeczywiście się pojawił. Kręgi idą co 6 minut, począwszy od 10:02 albo wcześniej. Idziemy do pulpitu porównać programy zabawek.",
-          "next": "Otwórz programy zabawek",
-          "hints": [
-            "Zegarek opiekuna się spieszy: prawdziwy czas jest wcześniejszy niż zapisał.",
-            "Przelicz wszystkie trzy obserwacje na dokładny czas i znajdź odstęp między nimi.",
-            "Dodaj odstęp do ostatniego dokładnego czasu."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Która zabawka puszcza kręgi?",
-          "situation": "Na pulpicie są cztery programy, po jednym na zabawkę. Każdy określa, kiedy zabawka wypuszcza pierwszy krąg i jak często następne. Opiekun zdążył zrobić jeden eksperyment, a zwiedzający upiera się przy zamku.",
-          "evidence": [
-            "Obserwacje według dokładnego czasu: 10:02, 10:08, 10:14, 10:20.",
-            "Zamek: pierwszy krąg o 10:02, potem co 4 minuty.",
-            "Łódka: pierwszy krąg o 10:02, potem co 6 minut.",
-            "Muszla: pierwszy krąg o 10:05, potem co 6 minut.",
-            "Skrzynia: pierwszy krąg o 09:56, potem co 6 minut.",
-            "O 10:15 opiekun wyłączył program łódki. Krąg o 10:20 i tak się pojawił.",
-            "Zwiedzający mówi, że kręgi puszcza zamek: ma najgrubsze rurki."
-          ],
-          "question": "Która zabawka wypuszcza kręgi?",
-          "kind": "choice",
-          "options": [
-            "Zamek",
-            "Łódka",
-            "Muszla",
-            "Skrzynia"
-          ],
-          "answer": 3,
-          "feedback": [
-            "Zamek dałby drugi krąg o 10:06, a nie o 10:08. Grube rurki nie zmieniają rozkładu.",
-            "Rozkład łódki zgadza się ze wszystkimi obserwacjami. Ale wyłączono ją o 10:15, a krąg o 10:20 i tak się pojawił.",
-            "Muszla zaczyna o 10:05 i dalej daje 10:11, 10:17: żaden czas się nie zgadza.",
-            ""
-          ],
-          "explanation": "Zamek odpada przez odstęp, muszla przez czas początku. Łódka i skrzynia dają te same minuty: 10:02, 10:08, 10:14, 10:20. Rozdzielił je eksperyment: łódkę wyłączono o 10:15, a krąg o 10:20 się pojawił, więc puściła go skrzynia. Pierwszego kręgu skrzyni o 09:56 opiekun po prostu nie widział.",
-          "outcome": "Kręgi puszcza skrzynia. Opiekun wyłącza jej program i o 10:26 kręgu nie ma. Teraz ustalimy, dlaczego skrzynia włączyła się bez wycieczki.",
-          "next": "Otwórz dziennik skrzyni",
-          "hints": [
-            "Najpierw odrzuć programy, w których nie zgadza się odstęp albo czas pierwszego kręgu.",
-            "Jeśli dwa programy dają te same minuty, rozkład ich nie rozróżni. Szukaj eksperymentu, który rozróżnia.",
-            "Co stało się z kręgami po wyłączeniu łódki?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Skąd wziął się wczesny start?",
-          "situation": "W dzienniku skrzyni został wczorajszy program testowy z autostartem. Opiekun chce się upewnić, że to właśnie on wyjaśnia kręgi, i zrozumieć, ile kręgów wyszłoby bez interwencji.",
-          "evidence": [
-            "Program testowy uruchamia się automatycznie o 09:50 i przed pierwszym kręgiem czeka 6 minut.",
-            "Dalej wypuszcza krąg co 6 minut, dopóki się go nie wyłączy.",
-            "Opiekun wyłączył program o 10:22, ale chce wiedzieć, co by było, gdyby działał do końca poranka: do 10:44 włącznie."
-          ],
-          "question": "Ile kręgów wypuściłaby skrzynia od pierwszego kręgu do 10:44 włącznie? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "9",
-          "feedback": [],
-          "explanation": "Pierwszy krąg o 09:50 + 6 minut = 09:56, to zgadza się z rozkładem skrzyni. Od 09:56 do 10:44 mija 48 minut, czyli 48 : 6 = 8 odstępów. Kręgów jest o jeden więcej niż odstępów: 9.",
-          "outcome": "Program testowy wyjaśnia i pierwszy krąg, i wszystkie następne. Opiekun usuwa autostart i ustawia program na seans.",
-          "next": "Ustaw program pokazu",
-          "hints": [
-            "Najpierw znajdź czas pierwszego kręgu: do momentu startu dodaj oczekiwanie.",
-            "Policz minuty od pierwszego kręgu do ostatniego i podziel przez odstęp.",
-            "Pierwszy krąg też się liczy: kręgów jest o jeden więcej niż odstępów."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Ile kręgów zobaczą goście?",
-          "situation": "Opiekun przygotowuje pokaz. Nowy program skrzyni zacznie się razem z seansem, a ostatni krąg musi zdążyć wypłynąć przed końcem seansu.",
-          "evidence": [
-            "Seans zaczyna się o 11:10 i trwa 30 minut.",
-            "Pierwszy krąg wychodzi 5 minut po początku seansu, dalej co 6 minut.",
-            "Ostatni krąg musi wyjść najpóźniej 2 minuty przed końcem seansu, inaczej goście nie zobaczą, jak wypływa."
-          ],
-          "question": "Ile kręgów trzeba ustawić w programie? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Seans kończy się o 11:40, ostatni krąg najpóźniej o 11:38. Kręgi: 11:15, 11:21, 11:27, 11:33, następny o 11:39 jest już za późno. Razem cztery kręgi.",
-          "outcome": "Opiekun ustawia cztery kręgi, ostatni o 11:33. Skrzynia już nie włącza się sama, a zwiedzający dowiedział się, że grube rurki niczego nie dowodzą.",
-          "next": "Otwórz pokaz bąbelków",
-          "hints": [
-            "Wypisz momenty kręgów po kolei od pierwszego.",
-            "Znajdź ostatni dozwolony moment: koniec seansu minus dwie minuty.",
-            "Odrzuć kręgi po tym momencie."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "en": {
-      "title": "The Aquarium and the Bubble Riddle",
-      "intro": "In the display aquarium, neat rings of bubbles have started rising with no tour going on. There are no fish here, only mechanical toys: a castle, a boat, a shell and a chest. A visitor is sure the castle makes the rings, because it has the thickest pipes. The keeper wrote down the ring times, but his watch runs fast. Help find which toy is running on its own, why it switched on, and how to set up the show for the guests.",
-      "ending": "The rings came from the chest, not the boat and not the castle. The boat’s schedule matched the observations, but the keeper switched it off at 10:15 and the ring at 10:20 still appeared. The chest was started by yesterday’s test program with an auto-start at 09:50. For the 11:10 session the keeper set four rings, so that the last one rises no later than 11:38.",
-      "question": "The boat would have released rings at exactly the same minutes as the chest. What finally proved it was not the boat?",
-      "steps": [
-        {
-          "title": "When is the next ring due?",
-          "situation": "At the aquarium, the keeper shows three entries in his notebook. He wrote the times by his own wristwatch, while the toy mechanisms run on exact time.",
-          "evidence": [
-            "By the keeper’s watch, rings appeared at 10:05, 10:11 and 10:17.",
-            "The keeper’s watch is 3 minutes fast.",
-            "Let’s assume the rings come at equal intervals."
-          ],
-          "question": "At what exact time will the next ring appear? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "10:20",
-          "feedback": [],
-          "explanation": "In exact time the rings came at 10:02, 10:08 and 10:14: subtract 3 minutes from each observation. The interval is 6 minutes, so the next one is at 10:20.",
-          "outcome": "At 10:20 a ring really did appear. The rings come every 6 minutes, starting at 10:02 or earlier. Let’s go to the control panel and compare the toy programs.",
-          "next": "Open the toy programs",
-          "hints": [
-            "The keeper’s watch is fast: the real time is earlier than he wrote.",
-            "Convert all three observations to exact time and find the interval between them.",
-            "Add the interval to the last exact time."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Which toy makes the rings?",
-          "situation": "The control panel has four programs, one per toy. Each sets when the toy releases its first ring and how often the next ones come. The keeper managed one experiment, and the visitor insists on the castle.",
-          "evidence": [
-            "Observations in exact time: 10:02, 10:08, 10:14, 10:20.",
-            "Castle: first ring at 10:02, then every 4 minutes.",
-            "Boat: first ring at 10:02, then every 6 minutes.",
-            "Shell: first ring at 10:05, then every 6 minutes.",
-            "Chest: first ring at 09:56, then every 6 minutes.",
-            "At 10:15 the keeper switched off the boat’s program. The ring at 10:20 still appeared.",
-            "The visitor says the castle makes the rings: it has the thickest pipes."
-          ],
-          "question": "Which toy is releasing the rings?",
-          "kind": "choice",
-          "options": [
-            "The castle",
-            "The boat",
-            "The shell",
-            "The chest"
-          ],
-          "answer": 3,
-          "feedback": [
-            "The castle would give its second ring at 10:06, not 10:08. Thick pipes do not change the schedule.",
-            "The boat’s schedule matches every observation. But it was switched off at 10:15, and the ring at 10:20 still appeared.",
-            "The shell starts at 10:05 and then gives 10:11, 10:17: none of the times match.",
-            ""
-          ],
-          "explanation": "The castle is out because of the interval, the shell because of its start time. The boat and the chest give the same minutes: 10:02, 10:08, 10:14, 10:20. The experiment told them apart: the boat was switched off at 10:15, and the ring at 10:20 still came, so the chest released it. The keeper simply did not see the chest’s first ring at 09:56.",
-          "outcome": "The chest makes the rings. The keeper switches off its program, and at 10:26 there is no ring. Now let’s find out why the chest switched on without a tour.",
-          "next": "Open the chest’s log",
-          "hints": [
-            "First rule out the programs whose interval or first-ring time does not match.",
-            "If two programs give the same minutes, the schedule cannot tell them apart. Look for the experiment that does.",
-            "What happened to the rings after the boat was switched off?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Where did the early start come from?",
-          "situation": "The chest’s log still holds yesterday’s test program with an auto-start. The keeper wants to be sure it really explains the rings, and to know how many rings there would have been without anyone stepping in.",
-          "evidence": [
-            "The test program starts automatically at 09:50 and waits 6 minutes before the first ring.",
-            "After that it releases a ring every 6 minutes until it is switched off.",
-            "The keeper switched the program off at 10:22, but wants to know what would have happened if it had run until the end of the morning: up to and including 10:44."
-          ],
-          "question": "How many rings would the chest have released from its first ring up to and including 10:44? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "9",
-          "feedback": [],
-          "explanation": "The first ring at 09:50 + 6 minutes = 09:56, which matches the chest’s schedule. From 09:56 to 10:44 is 48 minutes, which is 48 ÷ 6 = 8 intervals. There is one more ring than there are intervals: 9.",
-          "outcome": "The test program explains both the first ring and all the following ones. The keeper deletes the auto-start and sets up the program for the session.",
-          "next": "Set up the show program",
-          "hints": [
-            "First find the time of the first ring: add the wait to the start time.",
-            "Count the minutes from the first ring to the last and divide by the interval.",
-            "The first ring counts too: there is one more ring than there are intervals."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "How many rings will the guests see?",
-          "situation": "The keeper prepares the show. The chest’s new program will start together with the session, and the last ring must have time to rise before the session ends.",
-          "evidence": [
-            "The session starts at 11:10 and lasts 30 minutes.",
-            "The first ring comes 5 minutes after the session starts, then every 6 minutes.",
-            "The last ring must come no later than 2 minutes before the end of the session, or the guests will not see it rise."
-          ],
-          "question": "How many rings should be set in the program? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "The session ends at 11:40, so the last ring must be no later than 11:38. The rings: 11:15, 11:21, 11:27, 11:33, and the next at 11:39 is too late. Four rings in total.",
-          "outcome": "The keeper sets four rings, the last at 11:33. The chest no longer switches itself on, and the visitor has learned that thick pipes prove nothing.",
-          "next": "Open the bubble show",
-          "hints": [
-            "Write out the ring times in order from the first.",
-            "Find the last allowed moment: the end of the session minus two minutes.",
-            "Drop the rings after that moment."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "uk": {
-      "title": "Акваріум і загадка бульбашок",
-      "intro": "У виставковому акваріумі без екскурсії раптом пішли рівні кільця бульбашок. Риб тут немає, лише іграшки з механізмами: замок, човен, мушля і скриня. Відвідувач упевнений, що кільця пускає замок, у нього найтовщі трубки. Доглядач записав час кілець, але його годинник поспішає. Допоможи знайти, яка іграшка працює сама по собі, чому вона увімкнулася і як налаштувати показ для гостей.",
-      "ending": "Кільця пускала скриня, а не човен і не замок. Розклад човна збігався зі спостереженнями, але доглядач вимкнув його о 10:15, а кільце о 10:20 усе одно з’явилося. Скриню запустила вчорашня перевірочна програма з автозапуском о 09:50. Для сеансу об 11:10 доглядач задав чотири кільця, щоб останнє вийшло не пізніше ніж об 11:38.",
-      "question": "Човен випускав би кільця рівно в ті самі хвилини, що й скриня. Що остаточно довело, що винен не він?",
-      "steps": [
-        {
-          "title": "Коли чекати наступне кільце?",
-          "situation": "Біля акваріума доглядач показує три записи в блокноті. Він записував час за своїм наручним годинником, а механізми іграшок працюють за точним часом.",
-          "evidence": [
-            "За годинником доглядача кільця з’явилися о 10:05, 10:11 і 10:17.",
-            "Годинник доглядача поспішає на 3 хвилини.",
-            "Припустімо, що кільця йдуть через рівні проміжки."
-          ],
-          "question": "О котрій за точним часом з’явиться наступне кільце? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "10:20",
-          "feedback": [],
-          "explanation": "За точним часом кільця були о 10:02, 10:08 і 10:14: від кожного спостереження віднімаємо 3 хвилини. Проміжок 6 хвилин, отже наступне о 10:20.",
-          "outcome": "О 10:20 кільце справді з’явилося. Кільця йдуть кожні 6 хвилин, починаючи з 10:02 або раніше. Ідемо до пульта порівнювати програми іграшок.",
-          "next": "Відкрити програми іграшок",
-          "hints": [
-            "Годинник доглядача поспішає: справжній час менший, ніж він записав.",
-            "Переведи всі три спостереження в точний час і знайди проміжок між ними.",
-            "Додай проміжок до останнього точного часу."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Яка іграшка пускає кільця?",
-          "situation": "На пульті чотири програми, по одній на іграшку. Кожна задає, коли іграшка випускає перше кільце і як часто наступні. Доглядач устиг провести один дослід, а відвідувач наполягає на замку.",
-          "evidence": [
-            "Спостереження за точним часом: 10:02, 10:08, 10:14, 10:20.",
-            "Замок: перше кільце о 10:02, потім кожні 4 хвилини.",
-            "Човен: перше кільце о 10:02, потім кожні 6 хвилин.",
-            "Мушля: перше кільце о 10:05, потім кожні 6 хвилин.",
-            "Скриня: перше кільце о 09:56, потім кожні 6 хвилин.",
-            "О 10:15 доглядач вимкнув програму човна. Кільце о 10:20 усе одно з’явилося.",
-            "Відвідувач каже, що кільця пускає замок: у нього найтовщі трубки."
-          ],
-          "question": "Яка іграшка випускає кільця?",
-          "kind": "choice",
-          "options": [
-            "Замок",
-            "Човен",
-            "Мушля",
-            "Скриня"
-          ],
-          "answer": 3,
-          "feedback": [
-            "Замок дав би друге кільце о 10:06, а не о 10:08. Товсті трубки не змінюють розкладу.",
-            "Розклад човна збігається з усіма спостереженнями. Але його вимкнули о 10:15, а кільце о 10:20 усе одно з’явилося.",
-            "Мушля починає о 10:05 і далі дає 10:11, 10:17: жоден час не збігається.",
-            ""
-          ],
-          "explanation": "Замок відпадає за проміжком, мушля за часом початку. Човен і скриня дають однакові хвилини: 10:02, 10:08, 10:14, 10:20. Розділив їх дослід: човен вимкнули о 10:15, а кільце о 10:20 з’явилося, отже його пустила скриня. Першого кільця скрині о 09:56 доглядач просто не бачив.",
-          "outcome": "Кільця пускає скриня. Доглядач вимикає її програму, і о 10:26 кільця немає. Тепер з’ясуємо, чому скриня увімкнулася без екскурсії.",
-          "next": "Відкрити журнал скрині",
-          "hints": [
-            "Спершу відкинь програми, у яких не збігається проміжок або час першого кільця.",
-            "Якщо дві програми дають ті самі хвилини, розклад їх не розрізнить. Шукай дослід, який розрізняє.",
-            "Що сталося з кільцями після того, як човен вимкнули?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Звідки взявся ранній запуск?",
-          "situation": "У журналі скрині залишилася вчорашня перевірочна програма з автозапуском. Доглядач хоче переконатися, що саме вона пояснює кільця, і зрозуміти, скільки кілець вийшло б без втручання.",
-          "evidence": [
-            "Перевірочна програма запускається автоматично о 09:50 і перед першим кільцем чекає 6 хвилин.",
-            "Далі вона випускає кільце кожні 6 хвилин, поки її не вимкнуть.",
-            "Доглядач вимкнув програму о 10:22, але хоче знати, що було б, якби вона працювала до кінця ранку: до 10:44 включно."
-          ],
-          "question": "Скільки кілець випустила б скриня від першого кільця до 10:44 включно? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "9",
-          "feedback": [],
-          "explanation": "Перше кільце о 09:50 + 6 хвилин = 09:56, це збігається з розкладом скрині. Від 09:56 до 10:44 минає 48 хвилин, це 48 : 6 = 8 проміжків. Кілець на одне більше, ніж проміжків: 9.",
-          "outcome": "Перевірочна програма пояснює і перше кільце, і всі наступні. Доглядач видаляє автозапуск і налаштовує програму для сеансу.",
-          "next": "Налаштувати програму показу",
-          "hints": [
-            "Спершу знайди час першого кільця: до моменту запуску додай очікування.",
-            "Порахуй хвилини від першого кільця до останнього і поділи на проміжок.",
-            "Перше кільце теж рахується: кілець на одне більше, ніж проміжків."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Скільки кілець побачать гості?",
-          "situation": "Доглядач готує показ. Нова програма скрині почнеться разом із сеансом, а останнє кільце має встигнути піднятися до кінця сеансу.",
-          "evidence": [
-            "Сеанс починається об 11:10 і триває 30 хвилин.",
-            "Перше кільце виходить через 5 хвилин після початку сеансу, далі кожні 6 хвилин.",
-            "Останнє кільце має вийти не пізніше ніж за 2 хвилини до кінця сеансу, інакше гості не побачать, як воно підніметься."
-          ],
-          "question": "Скільки кілець треба задати в програмі? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Сеанс закінчується об 11:40, останнє кільце не пізніше ніж об 11:38. Кільця: 11:15, 11:21, 11:27, 11:33, наступне об 11:39 уже пізно. Разом чотири кільця.",
-          "outcome": "Доглядач задає чотири кільця, останнє об 11:33. Скриня більше не вмикається сама, а відвідувач дізнався, що товсті трубки нічого не доводять.",
-          "next": "Відкрити показ бульбашок",
-          "hints": [
-            "Випиши моменти кілець по порядку від першого.",
-            "Знайди останній дозволений момент: кінець сеансу мінус дві хвилини.",
-            "Відкинь кільця після цього моменту."
-          ],
-          "scene": 3
-        }
-      ]
-    }
+ "id": "aquarium",
+ "number": "007",
+ "variants": [
+  {
+   "values": {
+    "wf": 3,
+    "o1": "10:05",
+    "o2": "10:11",
+    "o3": "10:17",
+    "r1": "10:02",
+    "r2": "10:08",
+    "r3": "10:14",
+    "iv": 6,
+    "nxt": "10:20",
+    "after": "10:26",
+    "ic": 4,
+    "c2": "10:06",
+    "sh0": "10:05",
+    "sh1": "10:11",
+    "sh2": "10:17",
+    "ch0": "09:56",
+    "boff": "10:17",
+    "dl": 6,
+    "ts": "09:50",
+    "until": "10:44",
+    "span": 48,
+    "gaps": 8,
+    "cnt": 9,
+    "soff": "10:22",
+    "ss": "11:10",
+    "sl": 30,
+    "f1": 5,
+    "iv2": 6,
+    "margin": 2,
+    "send": "11:40",
+    "allowed": "11:38",
+    "ringsList": "11:15, 11:21, 11:27, 11:33",
+    "nextring": "11:39",
+    "cnt2": 4,
+    "last": "11:33"
+   },
+   "answers": [
+    "10:20",
+    3,
+    "9",
+    "4"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     3,
+     0,
+     1
+    ],
+    null,
+    null
+   ]
+  },
+  {
+   "values": {
+    "wf": 4,
+    "o1": "10:08",
+    "o2": "10:13",
+    "o3": "10:18",
+    "r1": "10:04",
+    "r2": "10:09",
+    "r3": "10:14",
+    "iv": 5,
+    "nxt": "10:19",
+    "after": "10:24",
+    "ic": 3,
+    "c2": "10:07",
+    "sh0": "10:06",
+    "sh1": "10:11",
+    "sh2": "10:16",
+    "ch0": "09:59",
+    "boff": "10:16",
+    "dl": 4,
+    "ts": "09:55",
+    "until": "10:34",
+    "span": 35,
+    "gaps": 7,
+    "cnt": 8,
+    "soff": "10:21",
+    "ss": "11:00",
+    "sl": 40,
+    "f1": 4,
+    "iv2": 7,
+    "margin": 3,
+    "send": "11:40",
+    "allowed": "11:37",
+    "ringsList": "11:04, 11:11, 11:18, 11:25, 11:32",
+    "nextring": "11:39",
+    "cnt2": 5,
+    "last": "11:32"
+   },
+   "answers": [
+    "10:19",
+    3,
+    "8",
+    "5"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     1,
+     3,
+     0
+    ],
+    null,
+    null
+   ]
+  },
+  {
+   "values": {
+    "wf": 2,
+    "o1": "10:04",
+    "o2": "10:11",
+    "o3": "10:18",
+    "r1": "10:02",
+    "r2": "10:09",
+    "r3": "10:16",
+    "iv": 7,
+    "nxt": "10:23",
+    "after": "10:30",
+    "ic": 5,
+    "c2": "10:07",
+    "sh0": "10:05",
+    "sh1": "10:12",
+    "sh2": "10:19",
+    "ch0": "09:55",
+    "boff": "10:19",
+    "dl": 7,
+    "ts": "09:48",
+    "until": "11:05",
+    "span": 70,
+    "gaps": 10,
+    "cnt": 11,
+    "soff": "10:25",
+    "ss": "11:30",
+    "sl": 35,
+    "f1": 3,
+    "iv2": 5,
+    "margin": 2,
+    "send": "12:05",
+    "allowed": "12:03",
+    "ringsList": "11:33, 11:38, 11:43, 11:48, 11:53, 11:58, 12:03",
+    "nextring": "12:08",
+    "cnt2": 7,
+    "last": "12:03"
+   },
+   "answers": [
+    "10:23",
+    3,
+    "11",
+    "7"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     0,
+     1,
+     3
+    ],
+    null,
+    null
+   ]
+  },
+  {
+   "values": {
+    "wf": 5,
+    "o1": "10:13",
+    "o2": "10:21",
+    "o3": "10:29",
+    "r1": "10:08",
+    "r2": "10:16",
+    "r3": "10:24",
+    "iv": 8,
+    "nxt": "10:32",
+    "after": "10:40",
+    "ic": 6,
+    "c2": "10:14",
+    "sh0": "10:11",
+    "sh1": "10:19",
+    "sh2": "10:27",
+    "ch0": "10:00",
+    "boff": "10:28",
+    "dl": 8,
+    "ts": "09:52",
+    "until": "10:48",
+    "span": 48,
+    "gaps": 6,
+    "cnt": 7,
+    "soff": "10:34",
+    "ss": "12:00",
+    "sl": 30,
+    "f1": 6,
+    "iv2": 8,
+    "margin": 4,
+    "send": "12:30",
+    "allowed": "12:26",
+    "ringsList": "12:06, 12:14, 12:22",
+    "nextring": "12:30",
+    "cnt2": 3,
+    "last": "12:22"
+   },
+   "answers": [
+    "10:32",
+    3,
+    "7",
+    "3"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     2,
+     0,
+     1
+    ],
+    null,
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Аквариум и загадка пузырьков",
+   "intro": "В выставочном аквариуме без экскурсии вдруг пошли ровные кольца пузырьков. Рыб здесь нет, только игрушки с механизмами: замок, лодка, ракушка и сундук. Посетитель уверен, что кольца пускает замок, у него самые толстые трубки. Смотритель записал время колец, но его часы спешат. Помоги найти, какая игрушка работает сама по себе, почему она включилась и как настроить показ для гостей.",
+   "ending": "Кольца пускал сундук, а не лодка и не замок. Расписание лодки совпадало с наблюдениями, но смотритель выключил её в {boff}, а кольцо в {nxt} всё равно появилось. Сундук запустила вчерашняя проверочная программа с автозапуском в {ts}. Для сеанса в {ss} смотритель задал {cnt2|кольцо|кольца|колец}, чтобы последнее вышло не позже {allowed}.",
+   "question": "Лодка выпускала бы кольца ровно в те же минуты, что и сундук. Что окончательно доказало, что виновата не она?",
+   "steps": [
+    {
+     "title": "Когда ждать следующее кольцо?",
+     "situation": "У аквариума смотритель показывает три записи в блокноте. Он записывал время по своим наручным часам, а механизмы игрушек работают по точному времени.",
+     "evidence": [
+      "По часам смотрителя кольца появились в {o1}, {o2} и {o3}.",
+      "Часы смотрителя спешат на {wf|минуту|минуты|минут}.",
+      "Предположим, что кольца идут через равные промежутки."
+     ],
+     "question": "Во сколько по точному времени появится следующее кольцо? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "По точному времени кольца были в {r1}, {r2} и {r3}: из каждого наблюдения вычитаем {wf|минуту|минуты|минут}. Промежуток {iv|минута|минуты|минут}, значит следующее в {nxt}.",
+     "outcome": "В {nxt} кольцо действительно появилось. Кольца идут каждые {iv|минуту|минуты|минут}, начиная с {r1} или раньше. Идём к пульту сравнивать программы игрушек.",
+     "next": "Открыть программы игрушек",
+     "hints": [
+      "Часы смотрителя спешат: настоящее время меньше, чем он записал.",
+      "Переведи все три наблюдения в точное время и найди промежуток между ними.",
+      "Прибавь промежуток к последнему точному времени."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Какая игрушка пускает кольца?",
+     "situation": "На пульте четыре программы, по одной на игрушку. Каждая задаёт, когда игрушка выпускает первое кольцо и как часто следующие. Смотритель успел провести один опыт, а посетитель настаивает на замке.",
+     "evidence": [
+      "Наблюдения по точному времени: {r1}, {r2}, {r3}, {nxt}.",
+      "Замок: первое кольцо в {r1}, затем каждые {ic|минуту|минуты|минут}.",
+      "Лодка: первое кольцо в {r1}, затем каждые {iv|минуту|минуты|минут}.",
+      "Ракушка: первое кольцо в {sh0}, затем каждые {iv|минуту|минуты|минут}.",
+      "Сундук: первое кольцо в {ch0}, затем каждые {iv|минуту|минуты|минут}.",
+      "В {boff} смотритель выключил программу лодки. Кольцо в {nxt} всё равно появилось.",
+      "Посетитель говорит, что кольца пускает замок: у него самые толстые трубки."
+     ],
+     "question": "Какая игрушка выпускает кольца?",
+     "kind": "choice",
+     "options": [
+      "Замок",
+      "Лодка",
+      "Ракушка",
+      "Сундук"
+     ],
+     "feedback": [
+      "Замок дал бы второе кольцо в {c2}, а не в {r2}. Толстые трубки не меняют расписание.",
+      "Расписание лодки совпадает со всеми наблюдениями. Но её выключили в {boff}, а кольцо в {nxt} всё равно появилось.",
+      "Ракушка начинает в {sh0} и дальше даёт {sh1}, {sh2}: ни одно время не совпадает.",
+      ""
+     ],
+     "explanation": "Замок отпадает по промежутку, ракушка по времени начала. Лодка и сундук дают одинаковые минуты: {r1}, {r2}, {r3}, {nxt}. Разделил их опыт: лодку выключили в {boff}, а кольцо в {nxt} появилось, значит его пустил сундук. Первое кольцо сундука в {ch0} смотритель просто не видел.",
+     "outcome": "Кольца пускает сундук. Смотритель выключает его программу, и в {after} кольца нет. Теперь выясним, почему сундук включился без экскурсии.",
+     "next": "Открыть журнал сундука",
+     "hints": [
+      "Сначала отбрось программы, у которых не совпадает промежуток или время первого кольца.",
+      "Если две программы дают одни и те же минуты, расписание их не различит. Ищи опыт, который различает.",
+      "Что произошло с кольцами после того, как лодку выключили?"
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Откуда взялся ранний запуск?",
+     "situation": "В журнале сундука осталась вчерашняя проверочная программа с автозапуском. Смотритель хочет убедиться, что именно она объясняет кольца, и понять, сколько колец вышло бы без вмешательства.",
+     "evidence": [
+      "Проверочная программа запускается автоматически в {ts} и перед первым кольцом ждёт {dl|минуту|минуты|минут}.",
+      "Дальше она выпускает кольцо каждые {iv|минуту|минуты|минут}, пока её не выключат.",
+      "Смотритель выключил программу в {soff}, но хочет знать, что было бы, если бы она работала до конца утра: до {until} включительно."
+     ],
+     "question": "Сколько колец выпустил бы сундук с первого кольца до {until} включительно? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Первое кольцо в {ts} + {dl} минут = {ch0}, это совпадает с расписанием сундука. От {ch0} до {until} проходит {span} минут, это {span} : {iv} = {gaps} промежутков. Колец на одно больше, чем промежутков: {cnt}.",
+     "outcome": "Проверочная программа объясняет и первое кольцо, и все следующие. Смотритель удаляет автозапуск и настраивает программу для сеанса.",
+     "next": "Настроить программу показа",
+     "hints": [
+      "Сначала найди время первого кольца: к моменту запуска прибавь ожидание.",
+      "Посчитай минуты от первого кольца до последнего и раздели на промежуток.",
+      "Первое кольцо тоже считается: колец на одно больше, чем промежутков."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Сколько колец увидят гости?",
+     "situation": "Смотритель готовит показ. Новая программа сундука начнётся вместе с сеансом, а последнее кольцо должно успеть подняться до конца сеанса.",
+     "evidence": [
+      "Сеанс начинается в {ss} и длится {sl} минут.",
+      "Первое кольцо выходит через {f1|минуту|минуты|минут} после начала сеанса, дальше каждые {iv2|минуту|минуты|минут}.",
+      "Последнее кольцо должно выйти не позже чем за {margin|минуту|минуты|минут} до конца сеанса, иначе гости не увидят, как оно поднимется."
+     ],
+     "question": "Сколько колец нужно задать в программе? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Сеанс заканчивается в {send}, последнее кольцо не позже {allowed}. Кольца: {ringsList}, следующее в {nextring} уже поздно. Итого {cnt2|кольцо|кольца|колец}.",
+     "outcome": "Смотритель задаёт {cnt2|кольцо|кольца|колец}, последнее в {last}. Сундук больше не включается сам, а посетитель узнал, что толстые трубки ничего не доказывают.",
+     "next": "Открыть показ пузырьков",
+     "hints": [
+      "Выпиши моменты колец по порядку от первого.",
+      "Найди последний разрешённый момент: конец сеанса минус {margin|минута|минуты|минут}.",
+      "Отбрось кольца после этого момента."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "pl": {
+   "title": "Akwarium i zagadka bąbelków",
+   "intro": "W wystawowym akwarium bez wycieczki nagle poszły równe kręgi bąbelków. Ryb tu nie ma, tylko zabawki z mechanizmami: zamek, łódka, muszla i skrzynia. Zwiedzający jest pewien, że kręgi puszcza zamek, bo ma najgrubsze rurki. Opiekun zapisał czasy kręgów, ale jego zegarek się spieszy. Pomóż ustalić, która zabawka działa sama z siebie, dlaczego się włączyła i jak ustawić pokaz dla gości.",
+   "ending": "Kręgi puszczała skrzynia, a nie łódka ani zamek. Rozkład łódki zgadzał się z obserwacjami, ale opiekun wyłączył ją o {boff}, a krąg o {nxt} i tak się pojawił. Skrzynię uruchomił wczorajszy program testowy z autostartem o {ts}. Na seans o {ss} opiekun ustawił {cnt2|krąg|kręgi|kręgów}, żeby ostatni wyszedł najpóźniej o {allowed}.",
+   "question": "Łódka wypuszczałaby kręgi dokładnie w tych samych minutach co skrzynia. Co ostatecznie dowiodło, że to nie ona?",
+   "steps": [
+    {
+     "title": "Kiedy spodziewać się następnego kręgu?",
+     "situation": "Przy akwarium opiekun pokazuje trzy zapisy w notesie. Zapisywał czas według swojego zegarka, a mechanizmy zabawek działają według dokładnego czasu.",
+     "evidence": [
+      "Według zegarka opiekuna kręgi pojawiły się o {o1}, {o2} i {o3}.",
+      "Zegarek opiekuna spieszy się o {wf|minutę|minuty|minut}.",
+      "Załóżmy, że kręgi idą w równych odstępach."
+     ],
+     "question": "O której według dokładnego czasu pojawi się następny krąg? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Według dokładnego czasu kręgi były o {r1}, {r2} i {r3}: od każdej obserwacji odejmujemy {wf|minutę|minuty|minut}. Odstęp to {iv|minuta|minuty|minut}, więc następny o {nxt}.",
+     "outcome": "O {nxt} krąg rzeczywiście się pojawił. Kręgi idą co {iv|minutę|minuty|minut}, począwszy od {r1} albo wcześniej. Idziemy do pulpitu porównać programy zabawek.",
+     "next": "Otwórz programy zabawek",
+     "hints": [
+      "Zegarek opiekuna się spieszy: prawdziwy czas jest wcześniejszy niż zapisał.",
+      "Przelicz wszystkie trzy obserwacje na dokładny czas i znajdź odstęp między nimi.",
+      "Dodaj odstęp do ostatniego dokładnego czasu."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Która zabawka puszcza kręgi?",
+     "situation": "Na pulpicie są cztery programy, po jednym na zabawkę. Każdy określa, kiedy zabawka wypuszcza pierwszy krąg i jak często następne. Opiekun zdążył zrobić jeden eksperyment, a zwiedzający upiera się przy zamku.",
+     "evidence": [
+      "Obserwacje według dokładnego czasu: {r1}, {r2}, {r3}, {nxt}.",
+      "Zamek: pierwszy krąg o {r1}, potem co {ic|minutę|minuty|minut}.",
+      "Łódka: pierwszy krąg o {r1}, potem co {iv|minutę|minuty|minut}.",
+      "Muszla: pierwszy krąg o {sh0}, potem co {iv|minutę|minuty|minut}.",
+      "Skrzynia: pierwszy krąg o {ch0}, potem co {iv|minutę|minuty|minut}.",
+      "O {boff} opiekun wyłączył program łódki. Krąg o {nxt} i tak się pojawił.",
+      "Zwiedzający mówi, że kręgi puszcza zamek: ma najgrubsze rurki."
+     ],
+     "question": "Która zabawka wypuszcza kręgi?",
+     "kind": "choice",
+     "options": [
+      "Zamek",
+      "Łódka",
+      "Muszla",
+      "Skrzynia"
+     ],
+     "feedback": [
+      "Zamek dałby drugi krąg o {c2}, a nie o {r2}. Grube rurki nie zmieniają rozkładu.",
+      "Rozkład łódki zgadza się ze wszystkimi obserwacjami. Ale wyłączono ją o {boff}, a krąg o {nxt} i tak się pojawił.",
+      "Muszla zaczyna o {sh0} i dalej daje {sh1}, {sh2}: żaden czas się nie zgadza.",
+      ""
+     ],
+     "explanation": "Zamek odpada przez odstęp, muszla przez czas początku. Łódka i skrzynia dają te same minuty: {r1}, {r2}, {r3}, {nxt}. Rozdzielił je eksperyment: łódkę wyłączono o {boff}, a krąg o {nxt} się pojawił, więc puściła go skrzynia. Pierwszego kręgu skrzyni o {ch0} opiekun po prostu nie widział.",
+     "outcome": "Kręgi puszcza skrzynia. Opiekun wyłącza jej program i o {after} kręgu nie ma. Teraz ustalimy, dlaczego skrzynia włączyła się bez wycieczki.",
+     "next": "Otwórz dziennik skrzyni",
+     "hints": [
+      "Najpierw odrzuć programy, w których nie zgadza się odstęp albo czas pierwszego kręgu.",
+      "Jeśli dwa programy dają te same minuty, rozkład ich nie rozróżni. Szukaj eksperymentu, który rozróżnia.",
+      "Co stało się z kręgami po wyłączeniu łódki?"
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Skąd wziął się wczesny start?",
+     "situation": "W dzienniku skrzyni został wczorajszy program testowy z autostartem. Opiekun chce się upewnić, że to właśnie on wyjaśnia kręgi, i zrozumieć, ile kręgów wyszłoby bez interwencji.",
+     "evidence": [
+      "Program testowy uruchamia się automatycznie o {ts} i przed pierwszym kręgiem czeka {dl|minutę|minuty|minut}.",
+      "Dalej wypuszcza krąg co {iv|minutę|minuty|minut}, dopóki się go nie wyłączy.",
+      "Opiekun wyłączył program o {soff}, ale chce wiedzieć, co by było, gdyby działał do końca poranka: do {until} włącznie."
+     ],
+     "question": "Ile kręgów wypuściłaby skrzynia od pierwszego kręgu do {until} włącznie? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Pierwszy krąg o {ts} + {dl} minut = {ch0}, to zgadza się z rozkładem skrzyni. Od {ch0} do {until} mija {span} minut, czyli {span} : {iv} = {gaps} odstępów. Kręgów jest o jeden więcej niż odstępów: {cnt}.",
+     "outcome": "Program testowy wyjaśnia i pierwszy krąg, i wszystkie następne. Opiekun usuwa autostart i ustawia program na seans.",
+     "next": "Ustaw program pokazu",
+     "hints": [
+      "Najpierw znajdź czas pierwszego kręgu: do momentu startu dodaj oczekiwanie.",
+      "Policz minuty od pierwszego kręgu do ostatniego i podziel przez odstęp.",
+      "Pierwszy krąg też się liczy: kręgów jest o jeden więcej niż odstępów."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Ile kręgów zobaczą goście?",
+     "situation": "Opiekun przygotowuje pokaz. Nowy program skrzyni zacznie się razem z seansem, a ostatni krąg musi zdążyć wypłynąć przed końcem seansu.",
+     "evidence": [
+      "Seans zaczyna się o {ss} i trwa {sl} minut.",
+      "Pierwszy krąg wychodzi {f1|minutę|minuty|minut} po początku seansu, dalej co {iv2|minutę|minuty|minut}.",
+      "Ostatni krąg musi wyjść najpóźniej {margin|minutę|minuty|minut} przed końcem seansu, inaczej goście nie zobaczą, jak wypływa."
+     ],
+     "question": "Ile kręgów trzeba ustawić w programie? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Seans kończy się o {send}, ostatni krąg najpóźniej o {allowed}. Kręgi: {ringsList}, następny o {nextring} jest już za późno. Razem {cnt2|krąg|kręgi|kręgów}.",
+     "outcome": "Opiekun ustawia {cnt2|krąg|kręgi|kręgów}, ostatni o {last}. Skrzynia już nie włącza się sama, a zwiedzający dowiedział się, że grube rurki niczego nie dowodzą.",
+     "next": "Otwórz pokaz bąbelków",
+     "hints": [
+      "Wypisz momenty kręgów po kolei od pierwszego.",
+      "Znajdź ostatni dozwolony moment: koniec seansu minus {margin|minuta|minuty|minut}.",
+      "Odrzuć kręgi po tym momencie."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "en": {
+   "title": "The Aquarium and the Bubble Riddle",
+   "intro": "In the display aquarium, neat rings of bubbles have started rising with no tour going on. There are no fish here, only mechanical toys: a castle, a boat, a shell and a chest. A visitor is sure the castle makes the rings, because it has the thickest pipes. The keeper wrote down the ring times, but his watch runs fast. Help find which toy is running on its own, why it switched on, and how to set up the show for the guests.",
+   "ending": "The rings came from the chest, not the boat and not the castle. The boat’s schedule matched the observations, but the keeper switched it off at {boff} and the ring at {nxt} still appeared. The chest was started by yesterday’s test program with an auto-start at {ts}. For the {ss} session the keeper set {cnt2} rings, so that the last one rises no later than {allowed}.",
+   "question": "The boat would have released rings at exactly the same minutes as the chest. What finally proved it was not the boat?",
+   "steps": [
+    {
+     "title": "When is the next ring due?",
+     "situation": "At the aquarium, the keeper shows three entries in his notebook. He wrote the times by his own wristwatch, while the toy mechanisms run on exact time.",
+     "evidence": [
+      "By the keeper’s watch, rings appeared at {o1}, {o2} and {o3}.",
+      "The keeper’s watch is {wf|minute|minutes} fast.",
+      "Let’s assume the rings come at equal intervals."
+     ],
+     "question": "At what exact time will the next ring appear? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "In exact time the rings came at {r1}, {r2} and {r3}: subtract {wf|minute|minutes} from each observation. The interval is {iv} minutes, so the next one is at {nxt}.",
+     "outcome": "At {nxt} a ring really did appear. The rings come every {iv} minutes, starting at {r1} or earlier. Let’s go to the control panel and compare the toy programs.",
+     "next": "Open the toy programs",
+     "hints": [
+      "The keeper’s watch is fast: the real time is earlier than he wrote.",
+      "Convert all three observations to exact time and find the interval between them.",
+      "Add the interval to the last exact time."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Which toy makes the rings?",
+     "situation": "The control panel has four programs, one per toy. Each sets when the toy releases its first ring and how often the next ones come. The keeper managed one experiment, and the visitor insists on the castle.",
+     "evidence": [
+      "Observations in exact time: {r1}, {r2}, {r3}, {nxt}.",
+      "Castle: first ring at {r1}, then every {ic} minutes.",
+      "Boat: first ring at {r1}, then every {iv} minutes.",
+      "Shell: first ring at {sh0}, then every {iv} minutes.",
+      "Chest: first ring at {ch0}, then every {iv} minutes.",
+      "At {boff} the keeper switched off the boat’s program. The ring at {nxt} still appeared.",
+      "The visitor says the castle makes the rings: it has the thickest pipes."
+     ],
+     "question": "Which toy is releasing the rings?",
+     "kind": "choice",
+     "options": [
+      "The castle",
+      "The boat",
+      "The shell",
+      "The chest"
+     ],
+     "feedback": [
+      "The castle would give its second ring at {c2}, not {r2}. Thick pipes do not change the schedule.",
+      "The boat’s schedule matches every observation. But it was switched off at {boff}, and the ring at {nxt} still appeared.",
+      "The shell starts at {sh0} and then gives {sh1}, {sh2}: none of the times match.",
+      ""
+     ],
+     "explanation": "The castle is out because of the interval, the shell because of its start time. The boat and the chest give the same minutes: {r1}, {r2}, {r3}, {nxt}. The experiment told them apart: the boat was switched off at {boff}, and the ring at {nxt} still came, so the chest released it. The keeper simply did not see the chest’s first ring at {ch0}.",
+     "outcome": "The chest makes the rings. The keeper switches off its program, and at {after} there is no ring. Now let’s find out why the chest switched on without a tour.",
+     "next": "Open the chest’s log",
+     "hints": [
+      "First rule out the programs whose interval or first-ring time does not match.",
+      "If two programs give the same minutes, the schedule cannot tell them apart. Look for the experiment that does.",
+      "What happened to the rings after the boat was switched off?"
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Where did the early start come from?",
+     "situation": "The chest’s log still holds yesterday’s test program with an auto-start. The keeper wants to be sure it really explains the rings, and to know how many rings there would have been without anyone stepping in.",
+     "evidence": [
+      "The test program starts automatically at {ts} and waits {dl} minutes before the first ring.",
+      "After that it releases a ring every {iv} minutes until it is switched off.",
+      "The keeper switched the program off at {soff}, but wants to know what would have happened if it had run until the end of the morning: up to and including {until}."
+     ],
+     "question": "How many rings would the chest have released from its first ring up to and including {until}? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "The first ring at {ts} + {dl} minutes = {ch0}, which matches the chest’s schedule. From {ch0} to {until} is {span} minutes, which is {span} ÷ {iv} = {gaps} intervals. There is one more ring than there are intervals: {cnt}.",
+     "outcome": "The test program explains both the first ring and all the following ones. The keeper deletes the auto-start and sets up the program for the session.",
+     "next": "Set up the show program",
+     "hints": [
+      "First find the time of the first ring: add the wait to the start time.",
+      "Count the minutes from the first ring to the last and divide by the interval.",
+      "The first ring counts too: there is one more ring than there are intervals."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "How many rings will the guests see?",
+     "situation": "The keeper prepares the show. The chest’s new program will start together with the session, and the last ring must have time to rise before the session ends.",
+     "evidence": [
+      "The session starts at {ss} and lasts {sl} minutes.",
+      "The first ring comes {f1} minutes after the session starts, then every {iv2} minutes.",
+      "The last ring must come no later than {margin} minutes before the end of the session, or the guests will not see it rise."
+     ],
+     "question": "How many rings should be set in the program? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "The session ends at {send}, so the last ring must be no later than {allowed}. The rings: {ringsList}, and the next at {nextring} is too late. {cnt2} rings in total.",
+     "outcome": "The keeper sets {cnt2} rings, the last at {last}. The chest no longer switches itself on, and the visitor has learned that thick pipes prove nothing.",
+     "next": "Open the bubble show",
+     "hints": [
+      "Write out the ring times in order from the first.",
+      "Find the last allowed moment: the end of the session minus {margin} minutes.",
+      "Drop the rings after that moment."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "uk": {
+   "title": "Акваріум і загадка бульбашок",
+   "intro": "У виставковому акваріумі без екскурсії раптом пішли рівні кільця бульбашок. Риб тут немає, лише іграшки з механізмами: замок, човен, мушля і скриня. Відвідувач упевнений, що кільця пускає замок, у нього найтовщі трубки. Доглядач записав час кілець, але його годинник поспішає. Допоможи знайти, яка іграшка працює сама по собі, чому вона увімкнулася і як налаштувати показ для гостей.",
+   "ending": "Кільця пускала скриня, а не човен і не замок. Розклад човна збігався зі спостереженнями, але доглядач вимкнув його о {boff}, а кільце о {nxt} усе одно з’явилося. Скриню запустила вчорашня перевірочна програма з автозапуском о {ts}. Для сеансу о {ss} доглядач задав {cnt2|кільце|кільця|кілець}, щоб останнє вийшло не пізніше ніж о {allowed}.",
+   "question": "Човен випускав би кільця рівно в ті самі хвилини, що й скриня. Що остаточно довело, що винен не він?",
+   "steps": [
+    {
+     "title": "Коли чекати наступне кільце?",
+     "situation": "Біля акваріума доглядач показує три записи в блокноті. Він записував час за своїм наручним годинником, а механізми іграшок працюють за точним часом.",
+     "evidence": [
+      "За годинником доглядача кільця з’явилися о {o1}, {o2} і {o3}.",
+      "Годинник доглядача поспішає на {wf|хвилину|хвилини|хвилин}.",
+      "Припустімо, що кільця йдуть через рівні проміжки."
+     ],
+     "question": "О котрій за точним часом з’явиться наступне кільце? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "За точним часом кільця були о {r1}, {r2} і {r3}: від кожного спостереження віднімаємо {wf|хвилину|хвилини|хвилин}. Проміжок {iv|хвилина|хвилини|хвилин}, отже наступне о {nxt}.",
+     "outcome": "О {nxt} кільце справді з’явилося. Кільця йдуть кожні {iv|хвилину|хвилини|хвилин}, починаючи з {r1} або раніше. Ідемо до пульта порівнювати програми іграшок.",
+     "next": "Відкрити програми іграшок",
+     "hints": [
+      "Годинник доглядача поспішає: справжній час менший, ніж він записав.",
+      "Переведи всі три спостереження в точний час і знайди проміжок між ними.",
+      "Додай проміжок до останнього точного часу."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Яка іграшка пускає кільця?",
+     "situation": "На пульті чотири програми, по одній на іграшку. Кожна задає, коли іграшка випускає перше кільце і як часто наступні. Доглядач устиг провести один дослід, а відвідувач наполягає на замку.",
+     "evidence": [
+      "Спостереження за точним часом: {r1}, {r2}, {r3}, {nxt}.",
+      "Замок: перше кільце о {r1}, потім кожні {ic|хвилину|хвилини|хвилин}.",
+      "Човен: перше кільце о {r1}, потім кожні {iv|хвилину|хвилини|хвилин}.",
+      "Мушля: перше кільце о {sh0}, потім кожні {iv|хвилину|хвилини|хвилин}.",
+      "Скриня: перше кільце о {ch0}, потім кожні {iv|хвилину|хвилини|хвилин}.",
+      "О {boff} доглядач вимкнув програму човна. Кільце о {nxt} усе одно з’явилося.",
+      "Відвідувач каже, що кільця пускає замок: у нього найтовщі трубки."
+     ],
+     "question": "Яка іграшка випускає кільця?",
+     "kind": "choice",
+     "options": [
+      "Замок",
+      "Човен",
+      "Мушля",
+      "Скриня"
+     ],
+     "feedback": [
+      "Замок дав би друге кільце о {c2}, а не о {r2}. Товсті трубки не змінюють розкладу.",
+      "Розклад човна збігається з усіма спостереженнями. Але його вимкнули о {boff}, а кільце о {nxt} усе одно з’явилося.",
+      "Мушля починає о {sh0} і далі дає {sh1}, {sh2}: жоден час не збігається.",
+      ""
+     ],
+     "explanation": "Замок відпадає за проміжком, мушля за часом початку. Човен і скриня дають однакові хвилини: {r1}, {r2}, {r3}, {nxt}. Розділив їх дослід: човен вимкнули о {boff}, а кільце о {nxt} з’явилося, отже його пустила скриня. Першого кільця скрині о {ch0} доглядач просто не бачив.",
+     "outcome": "Кільця пускає скриня. Доглядач вимикає її програму, і о {after} кільця немає. Тепер з’ясуємо, чому скриня увімкнулася без екскурсії.",
+     "next": "Відкрити журнал скрині",
+     "hints": [
+      "Спершу відкинь програми, у яких не збігається проміжок або час першого кільця.",
+      "Якщо дві програми дають ті самі хвилини, розклад їх не розрізнить. Шукай дослід, який розрізняє.",
+      "Що сталося з кільцями після того, як човен вимкнули?"
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Звідки взявся ранній запуск?",
+     "situation": "У журналі скрині залишилася вчорашня перевірочна програма з автозапуском. Доглядач хоче переконатися, що саме вона пояснює кільця, і зрозуміти, скільки кілець вийшло б без втручання.",
+     "evidence": [
+      "Перевірочна програма запускається автоматично о {ts} і перед першим кільцем чекає {dl|хвилину|хвилини|хвилин}.",
+      "Далі вона випускає кільце кожні {iv|хвилину|хвилини|хвилин}, поки її не вимкнуть.",
+      "Доглядач вимкнув програму о {soff}, але хоче знати, що було б, якби вона працювала до кінця ранку: до {until} включно."
+     ],
+     "question": "Скільки кілець випустила б скриня від першого кільця до {until} включно? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Перше кільце о {ts} + {dl} хвилин = {ch0}, це збігається з розкладом скрині. Від {ch0} до {until} минає {span} хвилин, це {span} : {iv} = {gaps} проміжків. Кілець на одне більше, ніж проміжків: {cnt}.",
+     "outcome": "Перевірочна програма пояснює і перше кільце, і всі наступні. Доглядач видаляє автозапуск і налаштовує програму для сеансу.",
+     "next": "Налаштувати програму показу",
+     "hints": [
+      "Спершу знайди час першого кільця: до моменту запуску додай очікування.",
+      "Порахуй хвилини від першого кільця до останнього і поділи на проміжок.",
+      "Перше кільце теж рахується: кілець на одне більше, ніж проміжків."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Скільки кілець побачать гості?",
+     "situation": "Доглядач готує показ. Нова програма скрині почнеться разом із сеансом, а останнє кільце має встигнути піднятися до кінця сеансу.",
+     "evidence": [
+      "Сеанс починається о {ss} і триває {sl} хвилин.",
+      "Перше кільце виходить через {f1|хвилину|хвилини|хвилин} після початку сеансу, далі кожні {iv2|хвилину|хвилини|хвилин}.",
+      "Останнє кільце має вийти не пізніше ніж за {margin|хвилину|хвилини|хвилин} до кінця сеансу, інакше гості не побачать, як воно підніметься."
+     ],
+     "question": "Скільки кілець треба задати в програмі? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Сеанс закінчується о {send}, останнє кільце не пізніше ніж о {allowed}. Кільця: {ringsList}, наступне о {nextring} уже пізно. Разом {cnt2|кільце|кільця|кілець}.",
+     "outcome": "Доглядач задає {cnt2|кільце|кільця|кілець}, останнє о {last}. Скриня більше не вмикається сама, а відвідувач дізнався, що товсті трубки нічого не доводять.",
+     "next": "Відкрити показ бульбашок",
+     "hints": [
+      "Випиши моменти кілець по порядку від першого.",
+      "Знайди останній дозволений момент: кінець сеансу мінус {margin|хвилина|хвилини|хвилин}.",
+      "Відкинь кільця після цього моменту."
+     ],
+     "scene": 3
+    }
+   ]
+  }
+ }
 }

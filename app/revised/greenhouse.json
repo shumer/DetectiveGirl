@@ -1,502 +1,744 @@
 {
-  "id": "greenhouse",
-  "number": "005",
-  "locales": {
-    "ru": {
-      "title": "Сигнал с лунной оранжереи",
-      "intro": "Робот Пик ухаживает за ростками в учебной лунной оранжерее под куполом. Утром датчик ряда Б прислал сигнал: ростки недополучили свет, хотя лампа над рядом горела всё утро. Механик говорит, что лампа мигала при включении. Пик подозревает свою тележку. А ещё в оранжерее была экскурсия. Помоги понять, что закрывало свет, куда убрать помеху и как вернуть росткам недостающие минуты.",
-      "ending": "Свет закрывали дважды и разные вещи: с 9:18 до 9:32 тележка Пика с ящиками, с 9:47 до 10:05 экскурсия у ряда Б. Мигание лампы было до начала плана и ни на что не повлияло. Тележке нашли нишу Б, а группам отвели площадку П3 вне лучей. Дополнительная лампа с половинной силой работала с 11:40 до 12:10 и восполнила 15 минут. Ряд Б получил свои 60 минут.",
-      "question": "Лампа ряда Б горела 77 минут, а ростки получили 45. Почему исправная лампа ещё не значит, что освещение в порядке?",
-      "steps": [
-        {
-          "title": "Сколько света не хватило?",
-          "situation": "Под куполом Пик показывает журнал датчика ряда Б. Датчик стоит у самых ростков и записывает только тот свет, который до них доходит. Лампа над рядом пишет свой журнал отдельно.",
-          "evidence": [
-            "По плану на это утро каждый ряд должен получить 60 минут света.",
-            "Датчик ряда Б записал свет с 9:00 до 9:18, с 9:32 до 9:47 и с 10:05 до 10:17.",
-            "Журнал лампы ряда Б: горела с 9:00 до 10:17 без выключений."
-          ],
-          "question": "Сколько минут света недополучил ряд Б? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "15",
-          "feedback": [],
-          "explanation": "Три отрезка: 18 + 15 + 12 = 45 минут. По плану 60, не хватает 60 - 45 = 15 минут.",
-          "outcome": "Лампа горела 77 минут, а до ростков дошло 45. Значит, между лампой и рядом что-то было дважды: с 9:18 до 9:32 и с 9:47 до 10:05. Пик открывает журнал перемещений.",
-          "next": "Открыть журнал перемещений",
-          "hints": [
-            "Сложи три отрезка, в каждом посчитай минуты от начала до конца.",
-            "План 60 минут. Сравни с тем, что набралось.",
-            "Не хватает ровно разницы между планом и суммой отрезков."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Что закрывало свет?",
-          "situation": "У ряда Б Пик разложил всё, что случилось утром. Два промежутка без света уже известны: с 9:18 до 9:32 и с 9:47 до 10:05. Проверь каждое событие по времени: попадает ли оно в промежуток и может ли закрыть лампу.",
-          "evidence": [
-            "Пик поставил тележку с высокими ящиками у ряда Б в 9:18 и увёз её в 9:32.",
-            "По расписанию экскурсия стояла у ряда Б с 9:47 до 10:05: двенадцать человек между лампой и ростками.",
-            "Механик записал: лампа ряда Б мигала в 8:50 при включении, потом горела ровно.",
-            "Шторы купола закрываются на обед в 10:20 и открываются в 11:00."
-          ],
-          "question": "Что закрывало свет от ряда Б?",
-          "kind": "choice",
-          "options": [
-            "Только тележка Пика",
-            "Только экскурсия",
-            "Тележка в первый промежуток и экскурсия во второй",
-            "Мигание лампы при включении"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Тележка объясняет промежуток с 9:18 до 9:32. Но свет пропадал ещё раз, с 9:47 до 10:05, когда тележки уже не было.",
-            "Экскурсия объясняет промежуток с 9:47 до 10:05. Но первый промежуток начался в 9:18, за полчаса до экскурсии.",
-            "",
-            "Лампа мигала в 8:50, до начала плана в 9:00. Датчик в 9:00 уже видел ровный свет."
-          ],
-          "explanation": "Первый промежуток совпадает с тележкой: поставили в 9:18, увезли в 9:32. Второй совпадает с экскурсией: с 9:47 до 10:05. Мигание было до 9:00, шторы закрылись после 10:17. Причин две, и обе нужно устранить.",
-          "outcome": "Помех две: тележка и люди перед рядом. Тележке нужно постоянное место, а группам площадка вне лучей. Идём к нишам в коридоре.",
-          "next": "Выбрать место для тележки и группы",
-          "hints": [
-            "Сравни каждое событие с двумя промежутками без света.",
-            "Одно событие не может объяснить оба промежутка, если оно было только в одном из них.",
-            "Событие до 9:00 или после 10:17 на утренний план не влияет."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Куда убрать помехи?",
-          "situation": "В коридоре четыре ниши для тележки и три площадки для экскурсий. Пик измерил всё рулеткой. Нужно выбрать одну нишу и одну площадку так, чтобы ни то, ни другое не мешало лампам.",
-          "evidence": [
-            "Тележка занимает 80 см по ширине, и рядом с ней в той же нише нужен проход не уже 60 см.",
-            "Ниши: А 120 см, Б 150 см, В 130 см, Г 160 см. Ниша Г попадает в луч лампы ряда В.",
-            "На экскурсии 12 человек, каждому нужно 50 см вдоль перил площадки.",
-            "Площадки: П1 длиной 5 м, П2 длиной 6,5 м перед лампой ряда А, П3 длиной 7 м вне всех лучей."
-          ],
-          "question": "Отметь одну нишу для тележки и одну площадку для экскурсий.",
-          "kind": "multi",
-          "options": [
-            "Ниша А",
-            "Ниша Б",
-            "Ниша В",
-            "Ниша Г",
-            "Площадка П1",
-            "Площадка П2",
-            "Площадка П3"
-          ],
-          "answer": [
-            1,
-            6
-          ],
-          "feedback": [],
-          "explanation": "Тележке с проходом нужно 80 + 60 = 140 см. Подходят Б (150) и Г (160), но Г в луче лампы ряда В, остаётся Б. Группе нужно 12 × 50 см = 600 см, то есть 6 м. П1 коротка, П2 стоит перед лампой ряда А, подходит П3.",
-          "outcome": "Тележка теперь стоит в нише Б, экскурсии ждут на площадке П3. Осталось вернуть ряду Б недостающие 15 минут света.",
-          "next": "Настроить дополнительную лампу",
-          "hints": [
-            "Сначала посчитай, сколько сантиметров нужно тележке вместе с проходом, и сколько метров нужно группе.",
-            "Подходящих по размеру мест больше одного. Отбрось те, что стоят в луче какой-нибудь лампы.",
-            "Нужно ровно два ответа: одна ниша и одна площадка."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Когда выключить подсветку?",
-          "situation": "В пульте оранжереи Пик включает дополнительную лампу над рядом Б. Она слабее основной, поэтому время нужно пересчитать.",
-          "evidence": [
-            "Ряду Б не хватает 15 минут света основной лампы.",
-            "Дополнительная лампа даёт вдвое меньше света: чтобы восполнить одну минуту основной, она должна работать две.",
-            "Пик включит дополнительную лампу в 11:40.",
-            "Основная лампа в это время выключена по плану и не считается."
-          ],
-          "question": "Во сколько выключить дополнительную лампу, чтобы восполнить ровно недостачу? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "12:10",
-          "feedback": [],
-          "explanation": "15 минут основной лампы это 15 × 2 = 30 минут дополнительной. 11:40 + 30 минут = 12:10.",
-          "outcome": "В 12:10 ряд Б получит все 60 минут по плану. Тележка в нише, площадка выбрана, и утренний сбой больше не повторится.",
-          "next": "Завершить проверку оранжереи",
-          "hints": [
-            "Каждую недостающую минуту дополнительная лампа восполняет за две.",
-            "Удвой недостачу из первого шага.",
-            "Прибавь это время к 11:40."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "pl": {
-      "title": "Sygnał z księżycowej szklarni",
-      "intro": "Robot Pik opiekuje się sadzonkami w szkolnej szklarni na Księżycu pod kopułą. Rano czujnik rzędu B wysłał sygnał: sadzonki dostały za mało światła, choć lampa nad rzędem świeciła cały ranek. Mechanik mówi, że lampa migała przy włączaniu. Pik podejrzewa swój wózek. A w szklarni była jeszcze wycieczka. Pomóż ustalić, co zasłaniało światło, gdzie usunąć przeszkodę i jak oddać sadzonkom brakujące minuty.",
-      "ending": "Światło zasłaniały dwa razy różne rzeczy: od 9:18 do 9:32 wózek Pika ze skrzynkami, od 9:47 do 10:05 wycieczka przy rzędzie B. Miganie lampy było przed rozpoczęciem planu i na nic nie wpłynęło. Dla wózka znaleziono wnękę B, a grupom przydzielono platformę P3 poza smugami światła. Dodatkowa lampa o połowie mocy pracowała od 11:40 do 12:10 i uzupełniła 15 minut. Rząd B dostał swoje 60 minut.",
-      "question": "Lampa rzędu B świeciła 77 minut, a sadzonki dostały 45. Dlaczego sprawna lampa nie znaczy jeszcze, że oświetlenie jest w porządku?",
-      "steps": [
-        {
-          "title": "Ile światła zabrakło?",
-          "situation": "Pod kopułą Pik pokazuje dziennik czujnika rzędu B. Czujnik stoi tuż przy sadzonkach i zapisuje tylko to światło, które do nich dociera. Lampa nad rzędem prowadzi osobny dziennik.",
-          "evidence": [
-            "Według planu tego ranka każdy rząd ma dostać 60 minut światła.",
-            "Czujnik rzędu B zapisał światło od 9:00 do 9:18, od 9:32 do 9:47 i od 10:05 do 10:17.",
-            "Dziennik lampy rzędu B: świeciła od 9:00 do 10:17 bez wyłączeń."
-          ],
-          "question": "Ilu minut światła zabrakło rzędowi B? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "15",
-          "feedback": [],
-          "explanation": "Trzy odcinki: 18 + 15 + 12 = 45 minut. Według planu 60, brakuje 60 - 45 = 15 minut.",
-          "outcome": "Lampa świeciła 77 minut, a do sadzonek dotarło 45. Czyli między lampą a rzędem dwa razy coś było: od 9:18 do 9:32 i od 9:47 do 10:05. Pik otwiera dziennik przemieszczeń.",
-          "next": "Otwórz dziennik przemieszczeń",
-          "hints": [
-            "Dodaj trzy odcinki, w każdym policz minuty od początku do końca.",
-            "Plan to 60 minut. Porównaj z tym, co się uzbierało.",
-            "Brakuje dokładnie różnicy między planem a sumą odcinków."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Co zasłaniało światło?",
-          "situation": "Przy rzędzie B Pik rozłożył wszystko, co wydarzyło się rano. Dwie przerwy bez światła są już znane: od 9:18 do 9:32 i od 9:47 do 10:05. Sprawdź każde zdarzenie według czasu: czy mieści się w przerwie i czy może zasłonić lampę.",
-          "evidence": [
-            "Pik postawił wózek z wysokimi skrzynkami przy rzędzie B o 9:18 i zabrał go o 9:32.",
-            "Według rozkładu wycieczka stała przy rzędzie B od 9:47 do 10:05: dwanaście osób między lampą a sadzonkami.",
-            "Mechanik zapisał: lampa rzędu B migała o 8:50 przy włączaniu, potem świeciła równo.",
-            "Zasłony kopuły zamykają się na obiad o 10:20 i otwierają o 11:00."
-          ],
-          "question": "Co zasłaniało światło rzędowi B?",
-          "kind": "choice",
-          "options": [
-            "Tylko wózek Pika",
-            "Tylko wycieczka",
-            "Wózek w pierwszej przerwie i wycieczka w drugiej",
-            "Miganie lampy przy włączaniu"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Wózek wyjaśnia przerwę od 9:18 do 9:32. Ale światło znikło jeszcze raz, od 9:47 do 10:05, kiedy wózka już nie było.",
-            "Wycieczka wyjaśnia przerwę od 9:47 do 10:05. Ale pierwsza przerwa zaczęła się o 9:18, pół godziny przed wycieczką.",
-            "",
-            "Lampa migała o 8:50, przed początkiem planu o 9:00. O 9:00 czujnik widział już równe światło."
-          ],
-          "explanation": "Pierwsza przerwa zgadza się z wózkiem: postawiony o 9:18, zabrany o 9:32. Druga zgadza się z wycieczką: od 9:47 do 10:05. Miganie było przed 9:00, zasłony zamknęły się po 10:17. Przyczyny są dwie i obie trzeba usunąć.",
-          "outcome": "Przeszkody są dwie: wózek i ludzie przed rzędem. Wózek potrzebuje stałego miejsca, a grupy platformy poza smugami światła. Idziemy do wnęk na korytarzu.",
-          "next": "Wybierz miejsce dla wózka i grupy",
-          "hints": [
-            "Porównaj każde zdarzenie z dwiema przerwami bez światła.",
-            "Jedno zdarzenie nie wyjaśni obu przerw, jeśli było tylko w jednej z nich.",
-            "Zdarzenie przed 9:00 albo po 10:17 nie wpływa na poranny plan."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Gdzie usunąć przeszkody?",
-          "situation": "Na korytarzu są cztery wnęki na wózek i trzy platformy dla wycieczek. Pik zmierzył wszystko miarką. Trzeba wybrać jedną wnękę i jedną platformę tak, żeby ani jedno, ani drugie nie przeszkadzało lampom.",
-          "evidence": [
-            "Wózek zajmuje 80 cm szerokości, a obok niego w tej samej wnęce potrzebne jest przejście nie węższe niż 60 cm.",
-            "Wnęki: A 120 cm, B 150 cm, C 130 cm, D 160 cm. Wnęka D wchodzi w smugę lampy rzędu C.",
-            "Na wycieczce jest 12 osób, każda potrzebuje 50 cm wzdłuż barierki platformy.",
-            "Platformy: P1 o długości 5 m, P2 o długości 6,5 m przed lampą rzędu A, P3 o długości 7 m poza wszystkimi smugami."
-          ],
-          "question": "Zaznacz jedną wnękę dla wózka i jedną platformę dla wycieczek.",
-          "kind": "multi",
-          "options": [
-            "Wnęka A",
-            "Wnęka B",
-            "Wnęka C",
-            "Wnęka D",
-            "Platforma P1",
-            "Platforma P2",
-            "Platforma P3"
-          ],
-          "answer": [
-            1,
-            6
-          ],
-          "feedback": [],
-          "explanation": "Wózek z przejściem potrzebuje 80 + 60 = 140 cm. Pasują B (150) i D (160), ale D jest w smudze lampy rzędu C, zostaje B. Grupa potrzebuje 12 × 50 cm = 600 cm, czyli 6 m. P1 jest za krótka, P2 stoi przed lampą rzędu A, pasuje P3.",
-          "outcome": "Wózek stoi teraz we wnęce B, wycieczki czekają na platformie P3. Zostało oddać rzędowi B brakujące 15 minut światła.",
-          "next": "Ustaw dodatkową lampę",
-          "hints": [
-            "Najpierw policz, ile centymetrów potrzebuje wózek razem z przejściem i ile metrów potrzebuje grupa.",
-            "Pasujących rozmiarem miejsc jest więcej niż jedno. Odrzuć te, które stoją w smudze jakiejś lampy.",
-            "Potrzebne są dokładnie dwie odpowiedzi: jedna wnęka i jedna platforma."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Kiedy wyłączyć doświetlanie?",
-          "situation": "Na pulpicie szklarni Pik włącza dodatkową lampę nad rzędem B. Jest słabsza od głównej, więc czas trzeba przeliczyć.",
-          "evidence": [
-            "Rzędowi B brakuje 15 minut światła głównej lampy.",
-            "Dodatkowa lampa daje dwa razy mniej światła: żeby uzupełnić jedną minutę głównej, musi pracować dwie.",
-            "Pik włączy dodatkową lampę o 11:40.",
-            "Główna lampa jest w tym czasie wyłączona według planu i nie liczy się."
-          ],
-          "question": "O której wyłączyć dodatkową lampę, żeby uzupełnić dokładnie brak? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "12:10",
-          "feedback": [],
-          "explanation": "15 minut głównej lampy to 15 × 2 = 30 minut dodatkowej. 11:40 + 30 minut = 12:10.",
-          "outcome": "O 12:10 rząd B dostanie wszystkie 60 minut według planu. Wózek jest we wnęce, platforma wybrana i poranna awaria już się nie powtórzy.",
-          "next": "Zakończ kontrolę szklarni",
-          "hints": [
-            "Każdą brakującą minutę dodatkowa lampa uzupełnia w dwie.",
-            "Podwój brak z pierwszego kroku.",
-            "Dodaj ten czas do 11:40."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "en": {
-      "title": "Signal from the Moon Greenhouse",
-      "intro": "Pik the robot looks after seedlings in a school greenhouse under a dome on the Moon. This morning the sensor in row B sent a signal: the seedlings got too little light, even though the lamp above the row was on all morning. The mechanic says the lamp flickered when it was switched on. Pik suspects his own cart. And there was a school trip in the greenhouse too. Help work out what blocked the light, where to move the obstacle, and how to give the seedlings back their missing minutes.",
-      "ending": "The light was blocked twice, by different things: from 9:18 to 9:32 by Pik’s cart of crates, and from 9:47 to 10:05 by the school trip standing at row B. The lamp’s flicker happened before the plan began and changed nothing. The cart got niche B, and groups now wait on platform P3, outside every beam. The half-power extra lamp ran from 11:40 to 12:10 and made up the 15 minutes. Row B received its 60 minutes.",
-      "question": "The lamp in row B was on for 77 minutes, but the seedlings received 45. Why does a working lamp not yet mean the lighting is fine?",
-      "steps": [
-        {
-          "title": "How much light was missing?",
-          "situation": "Under the dome, Pik shows the log of the row B sensor. The sensor stands right beside the seedlings and records only the light that actually reaches them. The lamp above the row keeps its own separate log.",
-          "evidence": [
-            "According to the plan, every row should receive 60 minutes of light this morning.",
-            "The row B sensor recorded light from 9:00 to 9:18, from 9:32 to 9:47 and from 10:05 to 10:17.",
-            "The row B lamp log: on from 9:00 to 10:17 without being switched off."
-          ],
-          "question": "How many minutes of light did row B miss? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "15",
-          "feedback": [],
-          "explanation": "Three stretches: 18 + 15 + 12 = 45 minutes. The plan says 60, so 60 - 45 = 15 minutes are missing.",
-          "outcome": "The lamp was on for 77 minutes, but only 45 reached the seedlings. So something was between the lamp and the row twice: from 9:18 to 9:32 and from 9:47 to 10:05. Pik opens the movement log.",
-          "next": "Open the movement log",
-          "hints": [
-            "Add up the three stretches, counting the minutes from start to end in each.",
-            "The plan is 60 minutes. Compare it with what was collected.",
-            "Exactly the difference between the plan and the sum of the stretches is missing."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "What blocked the light?",
-          "situation": "At row B, Pik has laid out everything that happened this morning. The two gaps without light are already known: from 9:18 to 9:32 and from 9:47 to 10:05. Check each event by time: does it fall inside a gap, and could it block the lamp?",
-          "evidence": [
-            "Pik parked the cart with tall crates at row B at 9:18 and took it away at 9:32.",
-            "According to the timetable, the school trip stood at row B from 9:47 to 10:05: twelve people between the lamp and the seedlings.",
-            "The mechanic noted that the row B lamp flickered at 8:50 when switched on, then shone steadily.",
-            "The dome blinds close for lunch at 10:20 and open again at 11:00."
-          ],
-          "question": "What blocked the light from row B?",
-          "kind": "choice",
-          "options": [
-            "Only Pik’s cart",
-            "Only the school trip",
-            "The cart in the first gap and the school trip in the second",
-            "The lamp flickering when switched on"
-          ],
-          "answer": 2,
-          "feedback": [
-            "The cart explains the gap from 9:18 to 9:32. But the light disappeared again from 9:47 to 10:05, when the cart was already gone.",
-            "The school trip explains the gap from 9:47 to 10:05. But the first gap began at 9:18, half an hour before the trip.",
-            "",
-            "The lamp flickered at 8:50, before the plan started at 9:00. At 9:00 the sensor already saw steady light."
-          ],
-          "explanation": "The first gap matches the cart: parked at 9:18, removed at 9:32. The second matches the school trip: from 9:47 to 10:05. The flicker was before 9:00, and the blinds closed after 10:17. There are two causes, and both need fixing.",
-          "outcome": "Two obstacles: the cart and people in front of the row. The cart needs a permanent place, and groups need a platform outside the beams. Let’s go to the niches in the corridor.",
-          "next": "Choose places for the cart and the group",
-          "hints": [
-            "Compare each event with the two gaps without light.",
-            "One event cannot explain both gaps if it happened during only one of them.",
-            "An event before 9:00 or after 10:17 does not affect the morning plan."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Where to put the obstacles?",
-          "situation": "The corridor has four niches for the cart and three platforms for school trips. Pik has measured everything with a tape. You need to choose one niche and one platform so that neither gets in the way of the lamps.",
-          "evidence": [
-            "The cart is 80 cm wide, and beside it in the same niche there must be a passage at least 60 cm wide.",
-            "Niches: A 120 cm, B 150 cm, C 130 cm, D 160 cm. Niche D is in the beam of the row C lamp.",
-            "There are 12 people on a school trip, and each needs 50 cm along the platform rail.",
-            "Platforms: P1 is 5 m long, P2 is 6.5 m long and in front of the row A lamp, P3 is 7 m long and outside every beam."
-          ],
-          "question": "Select one niche for the cart and one platform for school trips.",
-          "kind": "multi",
-          "options": [
-            "Niche A",
-            "Niche B",
-            "Niche C",
-            "Niche D",
-            "Platform P1",
-            "Platform P2",
-            "Platform P3"
-          ],
-          "answer": [
-            1,
-            6
-          ],
-          "feedback": [],
-          "explanation": "The cart plus passage needs 80 + 60 = 140 cm. B (150) and D (160) fit, but D is in the beam of the row C lamp, so B remains. The group needs 12 × 50 cm = 600 cm, which is 6 m. P1 is too short, P2 stands in front of the row A lamp, so P3 fits.",
-          "outcome": "The cart now stands in niche B, and school trips wait on platform P3. All that remains is to give row B its missing 15 minutes of light.",
-          "next": "Set up the extra lamp",
-          "hints": [
-            "First work out how many centimetres the cart needs together with the passage, and how many metres the group needs.",
-            "More than one place fits by size. Rule out the ones that stand in some lamp’s beam.",
-            "Exactly two answers are needed: one niche and one platform."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "When to switch off the extra light?",
-          "situation": "At the greenhouse control panel, Pik switches on an extra lamp above row B. It is weaker than the main one, so the time has to be recalculated.",
-          "evidence": [
-            "Row B is missing 15 minutes of light from the main lamp.",
-            "The extra lamp gives half as much light: to make up one minute of the main lamp, it has to run for two.",
-            "Pik will switch on the extra lamp at 11:40.",
-            "The main lamp is off at that time according to the plan and does not count."
-          ],
-          "question": "What time should the extra lamp be switched off to make up exactly the shortfall? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "12:10",
-          "feedback": [],
-          "explanation": "15 minutes of the main lamp is 15 × 2 = 30 minutes of the extra lamp. 11:40 + 30 minutes = 12:10.",
-          "outcome": "At 12:10 row B will have received all 60 minutes of the plan. The cart is in its niche, the platform is chosen, and this morning’s failure will not happen again.",
-          "next": "Finish the greenhouse check",
-          "hints": [
-            "The extra lamp makes up each missing minute in two.",
-            "Double the shortfall from the first step.",
-            "Add that time to 11:40."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "uk": {
-      "title": "Сигнал з місячної оранжереї",
-      "intro": "Робот Пік доглядає за паростками в навчальній місячній оранжереї під куполом. Уранці датчик ряду Б надіслав сигнал: паростки недоотримали світло, хоча лампа над рядом горіла весь ранок. Механік каже, що лампа блимала при увімкненні. Пік підозрює свій візок. А ще в оранжереї була екскурсія. Допоможи зрозуміти, що закривало світло, куди прибрати перешкоду і як повернути паросткам хвилини, яких бракує.",
-      "ending": "Світло закривали двічі і різні речі: з 9:18 до 9:32 візок Піка з ящиками, з 9:47 до 10:05 екскурсія біля ряду Б. Блимання лампи було до початку плану і ні на що не вплинуло. Візку знайшли нішу Б, а групам відвели майданчик П3 поза променями. Додаткова лампа з половинною силою працювала з 11:40 до 12:10 і надолужила 15 хвилин. Ряд Б отримав свої 60 хвилин.",
-      "question": "Лампа ряду Б горіла 77 хвилин, а паростки отримали 45. Чому справна лампа ще не означає, що освітлення в порядку?",
-      "steps": [
-        {
-          "title": "Скільки світла не вистачило?",
-          "situation": "Під куполом Пік показує журнал датчика ряду Б. Датчик стоїть біля самих паростків і записує лише те світло, яке до них доходить. Лампа над рядом пише свій журнал окремо.",
-          "evidence": [
-            "За планом цього ранку кожен ряд має отримати 60 хвилин світла.",
-            "Датчик ряду Б записав світло з 9:00 до 9:18, з 9:32 до 9:47 і з 10:05 до 10:17.",
-            "Журнал лампи ряду Б: горіла з 9:00 до 10:17 без вимкнень."
-          ],
-          "question": "Скільки хвилин світла недоотримав ряд Б? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "15",
-          "feedback": [],
-          "explanation": "Три відрізки: 18 + 15 + 12 = 45 хвилин. За планом 60, бракує 60 - 45 = 15 хвилин.",
-          "outcome": "Лампа горіла 77 хвилин, а до паростків дійшло 45. Отже, між лампою і рядом щось було двічі: з 9:18 до 9:32 і з 9:47 до 10:05. Пік відкриває журнал переміщень.",
-          "next": "Відкрити журнал переміщень",
-          "hints": [
-            "Додай три відрізки, у кожному порахуй хвилини від початку до кінця.",
-            "План 60 хвилин. Порівняй з тим, що набралося.",
-            "Бракує рівно різниці між планом і сумою відрізків."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Що закривало світло?",
-          "situation": "Біля ряду Б Пік розклав усе, що сталося вранці. Два проміжки без світла вже відомі: з 9:18 до 9:32 і з 9:47 до 10:05. Перевір кожну подію за часом: чи потрапляє вона в проміжок і чи може закрити лампу.",
-          "evidence": [
-            "Пік поставив візок із високими ящиками біля ряду Б о 9:18 і забрав його о 9:32.",
-            "За розкладом екскурсія стояла біля ряду Б з 9:47 до 10:05: дванадцятеро людей між лампою і паростками.",
-            "Механік записав: лампа ряду Б блимала о 8:50 при увімкненні, потім горіла рівно.",
-            "Штори купола зачиняються на обід о 10:20 і відчиняються об 11:00."
-          ],
-          "question": "Що закривало світло від ряду Б?",
-          "kind": "choice",
-          "options": [
-            "Лише візок Піка",
-            "Лише екскурсія",
-            "Візок у перший проміжок і екскурсія в другий",
-            "Блимання лампи при увімкненні"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Візок пояснює проміжок з 9:18 до 9:32. Але світло зникало ще раз, з 9:47 до 10:05, коли візка вже не було.",
-            "Екскурсія пояснює проміжок з 9:47 до 10:05. Але перший проміжок почався о 9:18, за пів години до екскурсії.",
-            "",
-            "Лампа блимала о 8:50, до початку плану о 9:00. О 9:00 датчик уже бачив рівне світло."
-          ],
-          "explanation": "Перший проміжок збігається з візком: поставили о 9:18, забрали о 9:32. Другий збігається з екскурсією: з 9:47 до 10:05. Блимання було до 9:00, штори зачинилися після 10:17. Причин дві, і обидві треба усунути.",
-          "outcome": "Перешкод дві: візок і люди перед рядом. Візку потрібне постійне місце, а групам майданчик поза променями. Ідемо до ніш у коридорі.",
-          "next": "Вибрати місце для візка і групи",
-          "hints": [
-            "Порівняй кожну подію з двома проміжками без світла.",
-            "Одна подія не може пояснити обидва проміжки, якщо вона була лише в одному з них.",
-            "Подія до 9:00 або після 10:17 на ранковий план не впливає."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Куди прибрати перешкоди?",
-          "situation": "У коридорі чотири ніші для візка і три майданчики для екскурсій. Пік виміряв усе рулеткою. Треба вибрати одну нішу і один майданчик так, щоб ні те, ні інше не заважало лампам.",
-          "evidence": [
-            "Візок займає 80 см завширшки, і поруч із ним у тій самій ніші потрібен прохід не вужчий за 60 см.",
-            "Ніші: А 120 см, Б 150 см, В 130 см, Г 160 см. Ніша Г потрапляє в промінь лампи ряду В.",
-            "На екскурсії 12 людей, кожному потрібно 50 см уздовж поручнів майданчика.",
-            "Майданчики: П1 завдовжки 5 м, П2 завдовжки 6,5 м перед лампою ряду А, П3 завдовжки 7 м поза всіма променями."
-          ],
-          "question": "Познач одну нішу для візка і один майданчик для екскурсій.",
-          "kind": "multi",
-          "options": [
-            "Ніша А",
-            "Ніша Б",
-            "Ніша В",
-            "Ніша Г",
-            "Майданчик П1",
-            "Майданчик П2",
-            "Майданчик П3"
-          ],
-          "answer": [
-            1,
-            6
-          ],
-          "feedback": [],
-          "explanation": "Візку з проходом потрібно 80 + 60 = 140 см. Підходять Б (150) і Г (160), але Г у промені лампи ряду В, залишається Б. Групі потрібно 12 × 50 см = 600 см, тобто 6 м. П1 закоротка, П2 стоїть перед лампою ряду А, підходить П3.",
-          "outcome": "Візок тепер стоїть у ніші Б, екскурсії чекають на майданчику П3. Залишилося повернути ряду Б 15 хвилин світла, яких бракує.",
-          "next": "Налаштувати додаткову лампу",
-          "hints": [
-            "Спершу порахуй, скільки сантиметрів потрібно візку разом із проходом і скільки метрів потрібно групі.",
-            "Підхожих за розміром місць більше ніж одне. Відкинь ті, що стоять у промені якоїсь лампи.",
-            "Потрібно рівно дві відповіді: одна ніша і один майданчик."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Коли вимкнути підсвітку?",
-          "situation": "На пульті оранжереї Пік вмикає додаткову лампу над рядом Б. Вона слабша за основну, тому час треба перерахувати.",
-          "evidence": [
-            "Ряду Б бракує 15 хвилин світла основної лампи.",
-            "Додаткова лампа дає вдвічі менше світла: щоб надолужити одну хвилину основної, вона має працювати дві.",
-            "Пік увімкне додаткову лампу об 11:40.",
-            "Основна лампа в цей час вимкнена за планом і не рахується."
-          ],
-          "question": "О котрій вимкнути додаткову лампу, щоб надолужити рівно нестачу? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "12:10",
-          "feedback": [],
-          "explanation": "15 хвилин основної лампи це 15 × 2 = 30 хвилин додаткової. 11:40 + 30 хвилин = 12:10.",
-          "outcome": "О 12:10 ряд Б отримає всі 60 хвилин за планом. Візок у ніші, майданчик вибрано, і ранковий збій більше не повториться.",
-          "next": "Завершити перевірку оранжереї",
-          "hints": [
-            "Кожну хвилину, якої бракує, додаткова лампа надолужує за дві.",
-            "Подвой нестачу з першого кроку.",
-            "Додай цей час до 11:40."
-          ],
-          "scene": 3
-        }
-      ]
-    }
+ "id": "greenhouse",
+ "number": "005",
+ "variants": [
+  {
+   "values": {
+    "plan": 60,
+    "s1": "9:00",
+    "e1": "9:18",
+    "s2": "9:32",
+    "e2": "9:47",
+    "s3": "10:05",
+    "e3": "10:17",
+    "l1": 18,
+    "l2": 15,
+    "l3": 12,
+    "got": 45,
+    "miss": 15,
+    "lampon": 77,
+    "dgap": 29,
+    "fl": "8:50",
+    "bl": "10:20",
+    "cw": 80,
+    "pw": 60,
+    "need": 140,
+    "na": 120,
+    "nb": 150,
+    "nc": 130,
+    "nd": 160,
+    "ni": 1,
+    "nw": 150,
+    "n": 12,
+    "pp": 50,
+    "needcm": 600,
+    "needm": 6,
+    "p1": 5,
+    "p2": 6.5,
+    "p3": 7,
+    "extra": 30,
+    "xs": "11:40",
+    "xe": "12:10"
+   },
+   "answers": [
+    "15",
+    2,
+    [
+     1,
+     6
+    ],
+    "12:10"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     1,
+     3,
+     0
+    ],
+    [
+     5,
+     6,
+     3,
+     2,
+     4,
+     0,
+     1
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "plan": 60,
+    "s1": "9:00",
+    "e1": "9:12",
+    "s2": "9:30",
+    "e2": "9:48",
+    "s3": "10:03",
+    "e3": "10:15",
+    "l1": 12,
+    "l2": 18,
+    "l3": 12,
+    "got": 42,
+    "miss": 18,
+    "lampon": 75,
+    "dgap": 36,
+    "fl": "8:45",
+    "bl": "10:20",
+    "cw": 90,
+    "pw": 70,
+    "need": 160,
+    "na": 170,
+    "nb": 140,
+    "nc": 150,
+    "nd": 180,
+    "ni": 0,
+    "nw": 170,
+    "n": 15,
+    "pp": 40,
+    "needcm": 600,
+    "needm": 6,
+    "p1": 5.5,
+    "p2": 6,
+    "p3": 6.5,
+    "extra": 36,
+    "xs": "11:30",
+    "xe": "12:06"
+   },
+   "answers": [
+    "18",
+    2,
+    [
+     0,
+     6
+    ],
+    "12:06"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     1,
+     2,
+     0
+    ],
+    [
+     6,
+     1,
+     3,
+     2,
+     4,
+     0,
+     5
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "plan": 50,
+    "s1": "9:00",
+    "e1": "9:16",
+    "s2": "9:28",
+    "e2": "9:39",
+    "s3": "9:52",
+    "e3": "10:05",
+    "l1": 16,
+    "l2": 11,
+    "l3": 13,
+    "got": 40,
+    "miss": 10,
+    "lampon": 65,
+    "dgap": 23,
+    "fl": "8:55",
+    "bl": "10:10",
+    "cw": 70,
+    "pw": 60,
+    "need": 130,
+    "na": 120,
+    "nb": 125,
+    "nc": 140,
+    "nd": 150,
+    "ni": 2,
+    "nw": 140,
+    "n": 16,
+    "pp": 50,
+    "needcm": 800,
+    "needm": 8,
+    "p1": 7,
+    "p2": 8,
+    "p3": 8.5,
+    "extra": 20,
+    "xs": "11:45",
+    "xe": "12:05"
+   },
+   "answers": [
+    "10",
+    2,
+    [
+     2,
+     6
+    ],
+    "12:05"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     1,
+     0,
+     2
+    ],
+    [
+     5,
+     3,
+     0,
+     1,
+     6,
+     4,
+     2
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "plan": 70,
+    "s1": "9:00",
+    "e1": "9:20",
+    "s2": "9:35",
+    "e2": "9:52",
+    "s3": "10:08",
+    "e3": "10:22",
+    "l1": 20,
+    "l2": 17,
+    "l3": 14,
+    "got": 51,
+    "miss": 19,
+    "lampon": 82,
+    "dgap": 32,
+    "fl": "8:40",
+    "bl": "10:30",
+    "cw": 85,
+    "pw": 65,
+    "need": 150,
+    "na": 140,
+    "nb": 155,
+    "nc": 145,
+    "nd": 160,
+    "ni": 1,
+    "nw": 155,
+    "n": 10,
+    "pp": 60,
+    "needcm": 600,
+    "needm": 6,
+    "p1": 4,
+    "p2": 6.5,
+    "p3": 7,
+    "extra": 38,
+    "xs": "11:20",
+    "xe": "11:58"
+   },
+   "answers": [
+    "19",
+    2,
+    [
+     1,
+     6
+    ],
+    "11:58"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     2,
+     0,
+     1
+    ],
+    [
+     0,
+     6,
+     1,
+     5,
+     4,
+     3,
+     2
+    ],
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Сигнал с лунной оранжереи",
+   "intro": "Робот Пик ухаживает за ростками в учебной лунной оранжерее под куполом. Утром датчик ряда Б прислал сигнал: ростки недополучили свет, хотя лампа над рядом горела всё утро. Механик говорит, что лампа мигала при включении. Пик подозревает свою тележку. А ещё в оранжерее была экскурсия. Помоги понять, что закрывало свет, куда убрать помеху и как вернуть росткам недостающие минуты.",
+   "ending": "Свет закрывали дважды и разные вещи: с {e1} до {s2} тележка Пика с ящиками, с {e2} до {s3} экскурсия у ряда Б. Мигание лампы было до начала плана и ни на что не повлияло. Тележке нашли нишу {ni#А|Б|В|Г}, а группам отвели площадку П3 вне лучей. Дополнительная лампа с половинной силой работала с {xs} до {xe} и восполнила {miss|минуту|минуты|минут}. Ряд Б получил свои {plan} минут.",
+   "question": "Лампа ряда Б горела {lampon|минуту|минуты|минут}, а ростки получили {got}. Почему исправная лампа ещё не значит, что освещение в порядке?",
+   "steps": [
+    {
+     "title": "Сколько света не хватило?",
+     "situation": "Под куполом Пик показывает журнал датчика ряда Б. Датчик стоит у самых ростков и записывает только тот свет, который до них доходит. Лампа над рядом пишет свой журнал отдельно.",
+     "evidence": [
+      "По плану на это утро каждый ряд должен получить {plan} минут света.",
+      "Датчик ряда Б записал свет с {s1} до {e1}, с {s2} до {e2} и с {s3} до {e3}.",
+      "Журнал лампы ряда Б: горела с {s1} до {e3} без выключений."
+     ],
+     "question": "Сколько минут света недополучил ряд Б? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Три отрезка: {l1} + {l2} + {l3} = {got} минут. По плану {plan}, не хватает {plan} - {got} = {miss} минут.",
+     "outcome": "Лампа горела {lampon|минуту|минуты|минут}, а до ростков дошло {got}. Значит, между лампой и рядом что-то было дважды: с {e1} до {s2} и с {e2} до {s3}. Пик открывает журнал перемещений.",
+     "next": "Открыть журнал перемещений",
+     "hints": [
+      "Сложи три отрезка, в каждом посчитай минуты от начала до конца.",
+      "План {plan} минут. Сравни с тем, что набралось.",
+      "Не хватает ровно разницы между планом и суммой отрезков."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Что закрывало свет?",
+     "situation": "У ряда Б Пик разложил всё, что случилось утром. Два промежутка без света уже известны: с {e1} до {s2} и с {e2} до {s3}. Проверь каждое событие по времени: попадает ли оно в промежуток и может ли закрыть лампу.",
+     "evidence": [
+      "Пик поставил тележку с высокими ящиками у ряда Б в {e1} и увёз её в {s2}.",
+      "По расписанию экскурсия стояла у ряда Б с {e2} до {s3}: {n} человек между лампой и ростками.",
+      "Механик записал: лампа ряда Б мигала в {fl} при включении, потом горела ровно.",
+      "Шторы купола закрываются на обед в {bl} и открываются в 11:00."
+     ],
+     "question": "Что закрывало свет от ряда Б?",
+     "kind": "choice",
+     "options": [
+      "Только тележка Пика",
+      "Только экскурсия",
+      "Тележка в первый промежуток и экскурсия во второй",
+      "Мигание лампы при включении"
+     ],
+     "feedback": [
+      "Тележка объясняет промежуток с {e1} до {s2}. Но свет пропадал ещё раз, с {e2} до {s3}, когда тележки уже не было.",
+      "Экскурсия объясняет промежуток с {e2} до {s3}. Но первый промежуток начался в {e1}, за {dgap|минуту|минуты|минут} до экскурсии.",
+      "",
+      "Лампа мигала в {fl}, до начала плана в {s1}. В {s1} датчик уже видел ровный свет."
+     ],
+     "explanation": "Первый промежуток совпадает с тележкой: поставили в {e1}, увезли в {s2}. Второй совпадает с экскурсией: с {e2} до {s3}. Мигание было до {s1}, шторы закрылись после {e3}. Причин две, и обе нужно устранить.",
+     "outcome": "Помех две: тележка и люди перед рядом. Тележке нужно постоянное место, а группам площадка вне лучей. Идём к нишам в коридоре.",
+     "next": "Выбрать место для тележки и группы",
+     "hints": [
+      "Сравни каждое событие с двумя промежутками без света.",
+      "Одно событие не может объяснить оба промежутка, если оно было только в одном из них.",
+      "Событие до {s1} или после {e3} на утренний план не влияет."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Куда убрать помехи?",
+     "situation": "В коридоре четыре ниши для тележки и три площадки для экскурсий. Пик измерил всё рулеткой. Нужно выбрать одну нишу и одну площадку так, чтобы ни то, ни другое не мешало лампам.",
+     "evidence": [
+      "Тележка занимает {cw} см по ширине, и рядом с ней в той же нише нужен проход не уже {pw} см.",
+      "Ниши: А {na} см, Б {nb} см, В {nc} см, Г {nd} см. Ниша Г попадает в луч лампы ряда В.",
+      "На экскурсии {n} человек, каждому нужно {pp} см вдоль перил площадки.",
+      "Площадки: П1 длиной {p1} м, П2 длиной {p2} м перед лампой ряда А, П3 длиной {p3} м вне всех лучей."
+     ],
+     "question": "Отметь одну нишу для тележки и одну площадку для экскурсий.",
+     "kind": "multi",
+     "options": [
+      "Ниша А",
+      "Ниша Б",
+      "Ниша В",
+      "Ниша Г",
+      "Площадка П1",
+      "Площадка П2",
+      "Площадка П3"
+     ],
+     "feedback": [],
+     "explanation": "Тележке с проходом нужно {cw} + {pw} = {need} см. Подходят {ni#А|Б|В|Г} ({nw}) и Г ({nd}), но Г в луче лампы ряда В, остаётся {ni#А|Б|В|Г}. Группе нужно {n} × {pp} см = {needcm} см, то есть {needm} м. П1 коротка, П2 стоит перед лампой ряда А, подходит П3.",
+     "outcome": "Тележка теперь стоит в нише {ni#А|Б|В|Г}, экскурсии ждут на площадке П3. Осталось вернуть ряду Б недостающие {miss|минуту|минуты|минут} света.",
+     "next": "Настроить дополнительную лампу",
+     "hints": [
+      "Сначала посчитай, сколько сантиметров нужно тележке вместе с проходом, и сколько метров нужно группе.",
+      "Подходящих по размеру мест больше одного. Отбрось те, что стоят в луче какой-нибудь лампы.",
+      "Нужно ровно два ответа: одна ниша и одна площадка."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Когда выключить подсветку?",
+     "situation": "В пульте оранжереи Пик включает дополнительную лампу над рядом Б. Она слабее основной, поэтому время нужно пересчитать.",
+     "evidence": [
+      "Ряду Б не хватает {miss|минуты|минут|минут} света основной лампы.",
+      "Дополнительная лампа даёт вдвое меньше света: чтобы восполнить одну минуту основной, она должна работать две.",
+      "Пик включит дополнительную лампу в {xs}.",
+      "Основная лампа в это время выключена по плану и не считается."
+     ],
+     "question": "Во сколько выключить дополнительную лампу, чтобы восполнить ровно недостачу? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{miss|минута|минуты|минут} основной лампы это {miss} × 2 = {extra} минут дополнительной. {xs} + {extra} минут = {xe}.",
+     "outcome": "В {xe} ряд Б получит все {plan} минут по плану. Тележка в нише, площадка выбрана, и утренний сбой больше не повторится.",
+     "next": "Завершить проверку оранжереи",
+     "hints": [
+      "Каждую недостающую минуту дополнительная лампа восполняет за две.",
+      "Удвой недостачу из первого шага.",
+      "Прибавь это время к {xs}."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "pl": {
+   "title": "Sygnał z księżycowej szklarni",
+   "intro": "Robot Pik opiekuje się sadzonkami w szkolnej szklarni na Księżycu pod kopułą. Rano czujnik rzędu B wysłał sygnał: sadzonki dostały za mało światła, choć lampa nad rzędem świeciła cały ranek. Mechanik mówi, że lampa migała przy włączaniu. Pik podejrzewa swój wózek. A w szklarni była jeszcze wycieczka. Pomóż ustalić, co zasłaniało światło, gdzie usunąć przeszkodę i jak oddać sadzonkom brakujące minuty.",
+   "ending": "Światło zasłaniały dwa razy różne rzeczy: od {e1} do {s2} wózek Pika ze skrzynkami, od {e2} do {s3} wycieczka przy rzędzie B. Miganie lampy było przed rozpoczęciem planu i na nic nie wpłynęło. Dla wózka znaleziono wnękę {ni#A|B|C|D}, a grupom przydzielono platformę P3 poza smugami światła. Dodatkowa lampa o połowie mocy pracowała od {xs} do {xe} i uzupełniła {miss|minutę|minuty|minut}. Rząd B dostał swoje {plan} minut.",
+   "question": "Lampa rzędu B świeciła {lampon|minutę|minuty|minut}, a sadzonki dostały {got}. Dlaczego sprawna lampa nie znaczy jeszcze, że oświetlenie jest w porządku?",
+   "steps": [
+    {
+     "title": "Ile światła zabrakło?",
+     "situation": "Pod kopułą Pik pokazuje dziennik czujnika rzędu B. Czujnik stoi tuż przy sadzonkach i zapisuje tylko to światło, które do nich dociera. Lampa nad rzędem prowadzi osobny dziennik.",
+     "evidence": [
+      "Według planu tego ranka każdy rząd ma dostać {plan} minut światła.",
+      "Czujnik rzędu B zapisał światło od {s1} do {e1}, od {s2} do {e2} i od {s3} do {e3}.",
+      "Dziennik lampy rzędu B: świeciła od {s1} do {e3} bez wyłączeń."
+     ],
+     "question": "Ilu minut światła zabrakło rzędowi B? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Trzy odcinki: {l1} + {l2} + {l3} = {got} minut. Według planu {plan}, brakuje {plan} - {got} = {miss} minut.",
+     "outcome": "Lampa świeciła {lampon|minutę|minuty|minut}, a do sadzonek dotarło {got}. Czyli między lampą a rzędem dwa razy coś było: od {e1} do {s2} i od {e2} do {s3}. Pik otwiera dziennik przemieszczeń.",
+     "next": "Otwórz dziennik przemieszczeń",
+     "hints": [
+      "Dodaj trzy odcinki, w każdym policz minuty od początku do końca.",
+      "Plan to {plan} minut. Porównaj z tym, co się uzbierało.",
+      "Brakuje dokładnie różnicy między planem a sumą odcinków."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Co zasłaniało światło?",
+     "situation": "Przy rzędzie B Pik rozłożył wszystko, co wydarzyło się rano. Dwie przerwy bez światła są już znane: od {e1} do {s2} i od {e2} do {s3}. Sprawdź każde zdarzenie według czasu: czy mieści się w przerwie i czy może zasłonić lampę.",
+     "evidence": [
+      "Pik postawił wózek z wysokimi skrzynkami przy rzędzie B o {e1} i zabrał go o {s2}.",
+      "Według rozkładu wycieczka stała przy rzędzie B od {e2} do {s3}: {n} osób między lampą a sadzonkami.",
+      "Mechanik zapisał: lampa rzędu B migała o {fl} przy włączaniu, potem świeciła równo.",
+      "Zasłony kopuły zamykają się na obiad o {bl} i otwierają o 11:00."
+     ],
+     "question": "Co zasłaniało światło rzędowi B?",
+     "kind": "choice",
+     "options": [
+      "Tylko wózek Pika",
+      "Tylko wycieczka",
+      "Wózek w pierwszej przerwie i wycieczka w drugiej",
+      "Miganie lampy przy włączaniu"
+     ],
+     "feedback": [
+      "Wózek wyjaśnia przerwę od {e1} do {s2}. Ale światło znikło jeszcze raz, od {e2} do {s3}, kiedy wózka już nie było.",
+      "Wycieczka wyjaśnia przerwę od {e2} do {s3}. Ale pierwsza przerwa zaczęła się o {e1}, {dgap|minutę|minuty|minut} przed wycieczką.",
+      "",
+      "Lampa migała o {fl}, przed początkiem planu o {s1}. O {s1} czujnik widział już równe światło."
+     ],
+     "explanation": "Pierwsza przerwa zgadza się z wózkiem: postawiony o {e1}, zabrany o {s2}. Druga zgadza się z wycieczką: od {e2} do {s3}. Miganie było przed {s1}, zasłony zamknęły się po {e3}. Przyczyny są dwie i obie trzeba usunąć.",
+     "outcome": "Przeszkody są dwie: wózek i ludzie przed rzędem. Wózek potrzebuje stałego miejsca, a grupy platformy poza smugami światła. Idziemy do wnęk na korytarzu.",
+     "next": "Wybierz miejsce dla wózka i grupy",
+     "hints": [
+      "Porównaj każde zdarzenie z dwiema przerwami bez światła.",
+      "Jedno zdarzenie nie wyjaśni obu przerw, jeśli było tylko w jednej z nich.",
+      "Zdarzenie przed {s1} albo po {e3} nie wpływa na poranny plan."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Gdzie usunąć przeszkody?",
+     "situation": "Na korytarzu są cztery wnęki na wózek i trzy platformy dla wycieczek. Pik zmierzył wszystko miarką. Trzeba wybrać jedną wnękę i jedną platformę tak, żeby ani jedno, ani drugie nie przeszkadzało lampom.",
+     "evidence": [
+      "Wózek zajmuje {cw} cm szerokości, a obok niego w tej samej wnęce potrzebne jest przejście nie węższe niż {pw} cm.",
+      "Wnęki: A {na} cm, B {nb} cm, C {nc} cm, D {nd} cm. Wnęka D wchodzi w smugę lampy rzędu C.",
+      "Na wycieczce jest {n} osób, każda potrzebuje {pp} cm wzdłuż barierki platformy.",
+      "Platformy: P1 o długości {p1} m, P2 o długości {p2} m przed lampą rzędu A, P3 o długości {p3} m poza wszystkimi smugami."
+     ],
+     "question": "Zaznacz jedną wnękę dla wózka i jedną platformę dla wycieczek.",
+     "kind": "multi",
+     "options": [
+      "Wnęka A",
+      "Wnęka B",
+      "Wnęka C",
+      "Wnęka D",
+      "Platforma P1",
+      "Platforma P2",
+      "Platforma P3"
+     ],
+     "feedback": [],
+     "explanation": "Wózek z przejściem potrzebuje {cw} + {pw} = {need} cm. Pasują {ni#A|B|C|D} ({nw}) i D ({nd}), ale D jest w smudze lampy rzędu C, zostaje {ni#A|B|C|D}. Grupa potrzebuje {n} × {pp} cm = {needcm} cm, czyli {needm} m. P1 jest za krótka, P2 stoi przed lampą rzędu A, pasuje P3.",
+     "outcome": "Wózek stoi teraz we wnęce {ni#A|B|C|D}, wycieczki czekają na platformie P3. Zostało oddać rzędowi B brakujące {miss|minutę|minuty|minut} światła.",
+     "next": "Ustaw dodatkową lampę",
+     "hints": [
+      "Najpierw policz, ile centymetrów potrzebuje wózek razem z przejściem i ile metrów potrzebuje grupa.",
+      "Pasujących rozmiarem miejsc jest więcej niż jedno. Odrzuć te, które stoją w smudze jakiejś lampy.",
+      "Potrzebne są dokładnie dwie odpowiedzi: jedna wnęka i jedna platforma."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Kiedy wyłączyć doświetlanie?",
+     "situation": "Na pulpicie szklarni Pik włącza dodatkową lampę nad rzędem B. Jest słabsza od głównej, więc czas trzeba przeliczyć.",
+     "evidence": [
+      "Rzędowi B brakuje {miss|minuty|minut|minut} światła głównej lampy.",
+      "Dodatkowa lampa daje dwa razy mniej światła: żeby uzupełnić jedną minutę głównej, musi pracować dwie.",
+      "Pik włączy dodatkową lampę o {xs}.",
+      "Główna lampa jest w tym czasie wyłączona według planu i nie liczy się."
+     ],
+     "question": "O której wyłączyć dodatkową lampę, żeby uzupełnić dokładnie brak? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{miss|minuta|minuty|minut} głównej lampy to {miss} × 2 = {extra} minut dodatkowej. {xs} + {extra} minut = {xe}.",
+     "outcome": "O {xe} rząd B dostanie wszystkie {plan} minut według planu. Wózek jest we wnęce, platforma wybrana i poranna awaria już się nie powtórzy.",
+     "next": "Zakończ kontrolę szklarni",
+     "hints": [
+      "Każdą brakującą minutę dodatkowa lampa uzupełnia w dwie.",
+      "Podwój brak z pierwszego kroku.",
+      "Dodaj ten czas do {xs}."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "en": {
+   "title": "Signal from the Moon Greenhouse",
+   "intro": "Pik the robot looks after seedlings in a school greenhouse under a dome on the Moon. This morning the sensor in row B sent a signal: the seedlings got too little light, even though the lamp above the row was on all morning. The mechanic says the lamp flickered when it was switched on. Pik suspects his own cart. And there was a school trip in the greenhouse too. Help work out what blocked the light, where to move the obstacle, and how to give the seedlings back their missing minutes.",
+   "ending": "The light was blocked twice, by different things: from {e1} to {s2} by Pik’s cart of crates, and from {e2} to {s3} by the school trip standing at row B. The lamp’s flicker happened before the plan began and changed nothing. The cart got niche {ni#A|B|C|D}, and groups now wait on platform P3, outside every beam. The half-power extra lamp ran from {xs} to {xe} and made up the {miss} minutes. Row B received its {plan} minutes.",
+   "question": "The lamp in row B was on for {lampon} minutes, but the seedlings received {got}. Why does a working lamp not yet mean the lighting is fine?",
+   "steps": [
+    {
+     "title": "How much light was missing?",
+     "situation": "Under the dome, Pik shows the log of the row B sensor. The sensor stands right beside the seedlings and records only the light that actually reaches them. The lamp above the row keeps its own separate log.",
+     "evidence": [
+      "According to the plan, every row should receive {plan} minutes of light this morning.",
+      "The row B sensor recorded light from {s1} to {e1}, from {s2} to {e2} and from {s3} to {e3}.",
+      "The row B lamp log: on from {s1} to {e3} without being switched off."
+     ],
+     "question": "How many minutes of light did row B miss? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Three stretches: {l1} + {l2} + {l3} = {got} minutes. The plan says {plan}, so {plan} - {got} = {miss} minutes are missing.",
+     "outcome": "The lamp was on for {lampon} minutes, but only {got} reached the seedlings. So something was between the lamp and the row twice: from {e1} to {s2} and from {e2} to {s3}. Pik opens the movement log.",
+     "next": "Open the movement log",
+     "hints": [
+      "Add up the three stretches, counting the minutes from start to end in each.",
+      "The plan is {plan} minutes. Compare it with what was collected.",
+      "Exactly the difference between the plan and the sum of the stretches is missing."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "What blocked the light?",
+     "situation": "At row B, Pik has laid out everything that happened this morning. The two gaps without light are already known: from {e1} to {s2} and from {e2} to {s3}. Check each event by time: does it fall inside a gap, and could it block the lamp?",
+     "evidence": [
+      "Pik parked the cart with tall crates at row B at {e1} and took it away at {s2}.",
+      "According to the timetable, the school trip stood at row B from {e2} to {s3}: {n} people between the lamp and the seedlings.",
+      "The mechanic noted that the row B lamp flickered at {fl} when switched on, then shone steadily.",
+      "The dome blinds close for lunch at {bl} and open again at 11:00."
+     ],
+     "question": "What blocked the light from row B?",
+     "kind": "choice",
+     "options": [
+      "Only Pik’s cart",
+      "Only the school trip",
+      "The cart in the first gap and the school trip in the second",
+      "The lamp flickering when switched on"
+     ],
+     "feedback": [
+      "The cart explains the gap from {e1} to {s2}. But the light disappeared again from {e2} to {s3}, when the cart was already gone.",
+      "The school trip explains the gap from {e2} to {s3}. But the first gap began at {e1}, {dgap|minute|minutes} before the trip.",
+      "",
+      "The lamp flickered at {fl}, before the plan started at {s1}. At {s1} the sensor already saw steady light."
+     ],
+     "explanation": "The first gap matches the cart: parked at {e1}, removed at {s2}. The second matches the school trip: from {e2} to {s3}. The flicker was before {s1}, and the blinds closed after {e3}. There are two causes, and both need fixing.",
+     "outcome": "Two obstacles: the cart and people in front of the row. The cart needs a permanent place, and groups need a platform outside the beams. Let’s go to the niches in the corridor.",
+     "next": "Choose places for the cart and the group",
+     "hints": [
+      "Compare each event with the two gaps without light.",
+      "One event cannot explain both gaps if it happened during only one of them.",
+      "An event before {s1} or after {e3} does not affect the morning plan."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Where to put the obstacles?",
+     "situation": "The corridor has four niches for the cart and three platforms for school trips. Pik has measured everything with a tape. You need to choose one niche and one platform so that neither gets in the way of the lamps.",
+     "evidence": [
+      "The cart is {cw} cm wide, and beside it in the same niche there must be a passage at least {pw} cm wide.",
+      "Niches: A {na} cm, B {nb} cm, C {nc} cm, D {nd} cm. Niche D is in the beam of the row C lamp.",
+      "There are {n} people on a school trip, and each needs {pp} cm along the platform rail.",
+      "Platforms: P1 is {p1} m long, P2 is {p2} m long and in front of the row A lamp, P3 is {p3} m long and outside every beam."
+     ],
+     "question": "Select one niche for the cart and one platform for school trips.",
+     "kind": "multi",
+     "options": [
+      "Niche A",
+      "Niche B",
+      "Niche C",
+      "Niche D",
+      "Platform P1",
+      "Platform P2",
+      "Platform P3"
+     ],
+     "feedback": [],
+     "explanation": "The cart plus passage needs {cw} + {pw} = {need} cm. {ni#A|B|C|D} ({nw}) and D ({nd}) fit, but D is in the beam of the row C lamp, so {ni#A|B|C|D} remains. The group needs {n} × {pp} cm = {needcm} cm, which is {needm} m. P1 is too short, P2 stands in front of the row A lamp, so P3 fits.",
+     "outcome": "The cart now stands in niche {ni#A|B|C|D}, and school trips wait on platform P3. All that remains is to give row B its missing {miss} minutes of light.",
+     "next": "Set up the extra lamp",
+     "hints": [
+      "First work out how many centimetres the cart needs together with the passage, and how many metres the group needs.",
+      "More than one place fits by size. Rule out the ones that stand in some lamp’s beam.",
+      "Exactly two answers are needed: one niche and one platform."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "When to switch off the extra light?",
+     "situation": "At the greenhouse control panel, Pik switches on an extra lamp above row B. It is weaker than the main one, so the time has to be recalculated.",
+     "evidence": [
+      "Row B is missing {miss} minutes of light from the main lamp.",
+      "The extra lamp gives half as much light: to make up one minute of the main lamp, it has to run for two.",
+      "Pik will switch on the extra lamp at {xs}.",
+      "The main lamp is off at that time according to the plan and does not count."
+     ],
+     "question": "What time should the extra lamp be switched off to make up exactly the shortfall? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{miss} minutes of the main lamp is {miss} × 2 = {extra} minutes of the extra lamp. {xs} + {extra} minutes = {xe}.",
+     "outcome": "At {xe} row B will have received all {plan} minutes of the plan. The cart is in its niche, the platform is chosen, and this morning’s failure will not happen again.",
+     "next": "Finish the greenhouse check",
+     "hints": [
+      "The extra lamp makes up each missing minute in two.",
+      "Double the shortfall from the first step.",
+      "Add that time to {xs}."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "uk": {
+   "title": "Сигнал з місячної оранжереї",
+   "intro": "Робот Пік доглядає за паростками в навчальній місячній оранжереї під куполом. Уранці датчик ряду Б надіслав сигнал: паростки недоотримали світло, хоча лампа над рядом горіла весь ранок. Механік каже, що лампа блимала при увімкненні. Пік підозрює свій візок. А ще в оранжереї була екскурсія. Допоможи зрозуміти, що закривало світло, куди прибрати перешкоду і як повернути паросткам хвилини, яких бракує.",
+   "ending": "Світло закривали двічі і різні речі: з {e1} до {s2} візок Піка з ящиками, з {e2} до {s3} екскурсія біля ряду Б. Блимання лампи було до початку плану і ні на що не вплинуло. Візку знайшли нішу {ni#А|Б|В|Г}, а групам відвели майданчик П3 поза променями. Додаткова лампа з половинною силою працювала з {xs} до {xe} і надолужила {miss|хвилину|хвилини|хвилин}. Ряд Б отримав свої {plan} хвилин.",
+   "question": "Лампа ряду Б горіла {lampon|хвилину|хвилини|хвилин}, а паростки отримали {got}. Чому справна лампа ще не означає, що освітлення в порядку?",
+   "steps": [
+    {
+     "title": "Скільки світла не вистачило?",
+     "situation": "Під куполом Пік показує журнал датчика ряду Б. Датчик стоїть біля самих паростків і записує лише те світло, яке до них доходить. Лампа над рядом пише свій журнал окремо.",
+     "evidence": [
+      "За планом цього ранку кожен ряд має отримати {plan} хвилин світла.",
+      "Датчик ряду Б записав світло з {s1} до {e1}, з {s2} до {e2} і з {s3} до {e3}.",
+      "Журнал лампи ряду Б: горіла з {s1} до {e3} без вимкнень."
+     ],
+     "question": "Скільки хвилин світла недоотримав ряд Б? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Три відрізки: {l1} + {l2} + {l3} = {got} хвилин. За планом {plan}, бракує {plan} - {got} = {miss} хвилин.",
+     "outcome": "Лампа горіла {lampon|хвилину|хвилини|хвилин}, а до паростків дійшло {got}. Отже, між лампою і рядом щось було двічі: з {e1} до {s2} і з {e2} до {s3}. Пік відкриває журнал переміщень.",
+     "next": "Відкрити журнал переміщень",
+     "hints": [
+      "Додай три відрізки, у кожному порахуй хвилини від початку до кінця.",
+      "План {plan} хвилин. Порівняй з тим, що набралося.",
+      "Бракує рівно різниці між планом і сумою відрізків."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Що закривало світло?",
+     "situation": "Біля ряду Б Пік розклав усе, що сталося вранці. Два проміжки без світла вже відомі: з {e1} до {s2} і з {e2} до {s3}. Перевір кожну подію за часом: чи потрапляє вона в проміжок і чи може закрити лампу.",
+     "evidence": [
+      "Пік поставив візок із високими ящиками біля ряду Б о {e1} і забрав його о {s2}.",
+      "За розкладом екскурсія стояла біля ряду Б з {e2} до {s3}: {n} людей між лампою і паростками.",
+      "Механік записав: лампа ряду Б блимала о {fl} при увімкненні, потім горіла рівно.",
+      "Штори купола зачиняються на обід о {bl} і відчиняються об 11:00."
+     ],
+     "question": "Що закривало світло від ряду Б?",
+     "kind": "choice",
+     "options": [
+      "Лише візок Піка",
+      "Лише екскурсія",
+      "Візок у перший проміжок і екскурсія в другий",
+      "Блимання лампи при увімкненні"
+     ],
+     "feedback": [
+      "Візок пояснює проміжок з {e1} до {s2}. Але світло зникало ще раз, з {e2} до {s3}, коли візка вже не було.",
+      "Екскурсія пояснює проміжок з {e2} до {s3}. Але перший проміжок почався о {e1}, за {dgap|хвилину|хвилини|хвилин} до екскурсії.",
+      "",
+      "Лампа блимала о {fl}, до початку плану о {s1}. О {s1} датчик уже бачив рівне світло."
+     ],
+     "explanation": "Перший проміжок збігається з візком: поставили о {e1}, забрали о {s2}. Другий збігається з екскурсією: з {e2} до {s3}. Блимання було до {s1}, штори зачинилися після {e3}. Причин дві, і обидві треба усунути.",
+     "outcome": "Перешкод дві: візок і люди перед рядом. Візку потрібне постійне місце, а групам майданчик поза променями. Ідемо до ніш у коридорі.",
+     "next": "Вибрати місце для візка і групи",
+     "hints": [
+      "Порівняй кожну подію з двома проміжками без світла.",
+      "Одна подія не може пояснити обидва проміжки, якщо вона була лише в одному з них.",
+      "Подія до {s1} або після {e3} на ранковий план не впливає."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Куди прибрати перешкоди?",
+     "situation": "У коридорі чотири ніші для візка і три майданчики для екскурсій. Пік виміряв усе рулеткою. Треба вибрати одну нішу і один майданчик так, щоб ні те, ні інше не заважало лампам.",
+     "evidence": [
+      "Візок займає {cw} см завширшки, і поруч із ним у тій самій ніші потрібен прохід не вужчий за {pw} см.",
+      "Ніші: А {na} см, Б {nb} см, В {nc} см, Г {nd} см. Ніша Г потрапляє в промінь лампи ряду В.",
+      "На екскурсії {n} людей, кожному потрібно {pp} см уздовж поручнів майданчика.",
+      "Майданчики: П1 завдовжки {p1} м, П2 завдовжки {p2} м перед лампою ряду А, П3 завдовжки {p3} м поза всіма променями."
+     ],
+     "question": "Познач одну нішу для візка і один майданчик для екскурсій.",
+     "kind": "multi",
+     "options": [
+      "Ніша А",
+      "Ніша Б",
+      "Ніша В",
+      "Ніша Г",
+      "Майданчик П1",
+      "Майданчик П2",
+      "Майданчик П3"
+     ],
+     "feedback": [],
+     "explanation": "Візку з проходом потрібно {cw} + {pw} = {need} см. Підходять {ni#А|Б|В|Г} ({nw}) і Г ({nd}), але Г у промені лампи ряду В, залишається {ni#А|Б|В|Г}. Групі потрібно {n} × {pp} см = {needcm} см, тобто {needm} м. П1 закоротка, П2 стоїть перед лампою ряду А, підходить П3.",
+     "outcome": "Візок тепер стоїть у ніші {ni#А|Б|В|Г}, екскурсії чекають на майданчику П3. Залишилося повернути ряду Б {miss|хвилину|хвилини|хвилин} світла, яких бракує.",
+     "next": "Налаштувати додаткову лампу",
+     "hints": [
+      "Спершу порахуй, скільки сантиметрів потрібно візку разом із проходом і скільки метрів потрібно групі.",
+      "Підхожих за розміром місць більше ніж одне. Відкинь ті, що стоять у промені якоїсь лампи.",
+      "Потрібно рівно дві відповіді: одна ніша і один майданчик."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Коли вимкнути підсвітку?",
+     "situation": "На пульті оранжереї Пік вмикає додаткову лампу над рядом Б. Вона слабша за основну, тому час треба перерахувати.",
+     "evidence": [
+      "Ряду Б бракує {miss|хвилини|хвилин|хвилин} світла основної лампи.",
+      "Додаткова лампа дає вдвічі менше світла: щоб надолужити одну хвилину основної, вона має працювати дві.",
+      "Пік увімкне додаткову лампу о {xs}.",
+      "Основна лампа в цей час вимкнена за планом і не рахується."
+     ],
+     "question": "О котрій вимкнути додаткову лампу, щоб надолужити рівно нестачу? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{miss|хвилина|хвилини|хвилин} основної лампи це {miss} × 2 = {extra} хвилин додаткової. {xs} + {extra} хвилин = {xe}.",
+     "outcome": "О {xe} ряд Б отримає всі {plan} хвилин за планом. Візок у ніші, майданчик вибрано, і ранковий збій більше не повториться.",
+     "next": "Завершити перевірку оранжереї",
+     "hints": [
+      "Кожну хвилину, якої бракує, додаткова лампа надолужує за дві.",
+      "Подвой нестачу з першого кроку.",
+      "Додай цей час до {xs}."
+     ],
+     "scene": 3
+    }
+   ]
+  }
+ }
 }
