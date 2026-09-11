@@ -2,9 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { Music2, Pause, Play, Volume2 } from 'lucide-react';
 import { Field } from '@base-ui/react/field';
 import { Slider } from '@/components/ui/slider';
+import type { Track } from './themes';
 
 export type MusicLabels = { play: string; pause: string; volume: string; loading: string; error: string; credit: string; waiting: string };
-export default function MusicPlayer({ labels }: { labels: MusicLabels }) {
+export default function MusicPlayer({ labels, track }: { labels: MusicLabels; track: Track }) {
   const audio = useRef<HTMLAudioElement>(null);
   const [playing, setPlaying] = useState(false);
   const [enabled, setEnabled] = useState(true);
@@ -42,6 +43,17 @@ export default function MusicPlayer({ labels }: { labels: MusicLabels }) {
       player.pause();
     };
   }, []);
+  useEffect(() => {
+    const player = audio.current;
+    if (!player) return;
+    const next = new URL(`${import.meta.env.BASE_URL}${track.file}`, document.baseURI).href;
+    if (player.src === next) return;
+    const resume = wanted.current && !document.hidden;
+    player.src = next;
+    player.load();
+    setFailed(false);
+    if (resume) void player.play().catch(() => { /* Autoplay may need a gesture; the document listeners retry. */ });
+  }, [track.file]);
   async function toggle() {
     const player = audio.current;
     if (!player) return;
@@ -56,7 +68,7 @@ export default function MusicPlayer({ labels }: { labels: MusicLabels }) {
   }
   return <section className="music-player" aria-label={labels.credit}>
     {/* oxlint-disable-next-line jsx-a11y/media-has-caption -- Instrumental music only; no speech to caption. */}
-    <audio ref={audio} src={`${import.meta.env.BASE_URL}audio/sneaky-snitch.mp3`} preload="auto" loop
+    <audio ref={audio} src={`${import.meta.env.BASE_URL}${track.file}`} preload="auto" loop
       onPlaying={() => setPlaying(true)} onPause={() => setPlaying(false)} onError={() => { setFailed(true); setLoading(false); setPlaying(false); }} />
     <button className="music-toggle" onClick={() => { void toggle(); }} disabled={loading} aria-pressed={enabled}>
       {enabled ? <Pause size={17} /> : <Play size={17} />} {loading ? labels.loading : enabled ? labels.pause : labels.play}
@@ -64,7 +76,7 @@ export default function MusicPlayer({ labels }: { labels: MusicLabels }) {
     <Field.Root className="music-volume"><Field.Label><Volume2 size={15} />{labels.volume}</Field.Label>
       <Slider value={[volume]} min={0} max={100} step={1} onValueChange={value => { const next = Array.isArray(value) ? value[0] : value; setVolume(next); if (audio.current) { audio.current.volume = next / 100; audio.current.muted = next === 0; } }} />
     </Field.Root>
-    <div className="music-credit"><Music2 size={14} /><span><a href="https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100772" target="_blank" rel="noreferrer">Sneaky Snitch - Kevin MacLeod</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noreferrer">CC BY 3.0</a></span></div>
+    <div className="music-credit"><Music2 size={14} /><span><a href={track.url} target="_blank" rel="noreferrer">{track.title} - Kevin MacLeod</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY</a></span></div>
     {enabled && !playing && !loading && !failed && <output className="music-credit">{labels.waiting}</output>}
     {failed && <p className="music-error" role="alert">{labels.error}</p>}
   </section>;

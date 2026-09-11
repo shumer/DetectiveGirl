@@ -38,3 +38,20 @@ export const storyScenes: Record<string, Scene[]> = {
  library: palette('library', 'svg', [['#1d1226','#2d1d3a','#3f2c4e','#7a6688','#e9c27a'],['#211525','#332338','#48344d','#84708a','#f0cd86'],['#1a1420','#2a2132','#3c3146','#75697f','#e6c58c'],['#231628','#36243c','#4a3450','#8a7290','#f3d38f']]),
  park: palette('park', 'svg', [['#0c2418','#163726','#224b35','#5f8c72','#ffd866'],['#0f2a2c','#183f40','#245455','#5e8f90','#9fe0ff'],['#122413','#1d3820','#2a4c2d','#6a8f6c','#ffe27a'],['#0e1f2d','#183143','#224458','#5d7f94','#ffd76e']]),
 };
+/** Background music per case: Kevin MacLeod tracks under CC BY, see MUSIC-LICENSE.md. */
+export type Track = { file: string; title: string; url: string };
+const km = (file: string, title: string, search = title): Track => ({ file, title, url: `https://incompetech.com/music/royalty-free/index.html?keywords=${encodeURIComponent(search)}` });
+export const defaultTrack: Track = { file: 'audio/sneaky-snitch.mp3', title: 'Sneaky Snitch', url: 'https://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100772' };
+export const storyMusic: Record<string, Track> = {
+ owl: defaultTrack,
+ forest: km('audio/fairytale-waltz.m4a', 'Fairytale Waltz'),
+ cloud: km('audio/airship-serenity.m4a', 'Airship Serenity'),
+ museum: km('audio/investigations.m4a', 'Investigations'),
+ greenhouse: km('audio/dreamer.m4a', 'Dreamer'),
+ theatre: km('audio/bushwick-tarantella.m4a', 'Bushwick Tarantella'),
+ aquarium: km('audio/water-prelude.m4a', 'Water Prelude'),
+ bakery: km('audio/cheery-monday.m4a', 'Cheery Monday'),
+ lighthouse: km('audio/moonlight-hall.m4a', 'Moonlight Hall'),
+ library: km('audio/thinking-music.m4a', 'Thinking Music'),
+ park: km('audio/pixel-peeker-polka.m4a', 'Pixel Peeker Polka (faster)', 'Pixel Peeker Polka'),
+};

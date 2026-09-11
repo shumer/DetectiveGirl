@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import type { RevisedStep } from '../app/RevisionCase';
 import { validateResponse } from '../app/revision-game.ts';
-import { storyScenes } from '../app/themes.ts';
+import { storyScenes, storyMusic } from '../app/themes.ts';
 await test('reviewed cases preserve puzzles across languages and contain every player-facing field',()=>{
  const root=new URL('../app/revised/',import.meta.url);
  for(const file of readdirSync(root).filter(name=>name.endsWith('.json'))){
@@ -40,5 +40,9 @@ await test('reviewed cases preserve puzzles across languages and contain every p
   const scenes=storyScenes[story.id];
   assert.ok(scenes&&scenes.length===4,`${file}: four scenes in themes.ts`);
   for(const scene of scenes)assert.ok(existsSync(new URL(`../public/${scene.image}`,import.meta.url)),scene.image);
+  const track=storyMusic[story.id];
+  assert.ok(track,`${file}: music track in themes.ts`);
+  assert.ok(existsSync(new URL(`../public/${track.file}`,import.meta.url)),track.file);
+  assert.ok(readFileSync(new URL('../MUSIC-LICENSE.md',import.meta.url),'utf8').includes(track.file.replace('audio/','')),`${track.file} listed in MUSIC-LICENSE.md`);
  }
 });

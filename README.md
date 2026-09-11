@@ -59,7 +59,7 @@ The original prototype was built for Sites. This version is a static Vite + Reac
 
 ## Backgrounds and music
 
-Colours and illustrations change with the location. Cases 001-004 have painted backgrounds; cases 005-011 use generated SVG scenes for now. Settings are in `app/themes.ts`; art direction and scene briefs are in `docs/art-direction.ru.md`. The track Sneaky Snitch plays by default at 18% volume, loops, and pauses when the tab is hidden. If the browser blocks autoplay, playback starts on the first tap or key press. A button turns the music off. Credit and licence are shown in the interface and in `MUSIC-LICENSE.md`. All audio and backgrounds ship with the build; no external players are used.
+Colours and illustrations change with the location. Cases 001-004 have painted backgrounds; cases 005-011 use generated SVG scenes for now. Settings are in `app/themes.ts`; art direction and scene briefs are in `docs/art-direction.ru.md`. Each case has its own background track by Kevin MacLeod, chosen for the mood (an airship serenade for Cloud Island, a water prelude for the aquarium, a polka for the robot parade); the gallery plays Sneaky Snitch. Music starts at 18% volume, loops, and pauses when the tab is hidden. If the browser blocks autoplay, playback starts on the first tap or key press. A button turns the music off. Credit and licence are shown in the interface and in `MUSIC-LICENSE.md`. All audio and backgrounds ship with the build; no external players are used. Tracks other than Sneaky Snitch are re-encoded to AAC to keep downloads small; the full list is in `MUSIC-LICENSE.md`.
 
 ## Story structure
 

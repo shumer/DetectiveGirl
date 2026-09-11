@@ -6,7 +6,7 @@ import MusicPlayer from './MusicPlayer';
 import RevisionCase from './RevisionCase';
 import CaseGallery from './CaseGallery';
 import { revisedStories, localeOf } from './revised-stories';
-import { storyScenes, owlScenes } from './themes';
+import { storyScenes, owlScenes, storyMusic, defaultTrack } from './themes';
 import { readProgress, type Progress } from './progress';
 export default function Home(){
  const [language,setLanguage]=useState<Language>(()=>{try{const value=localStorage.getItem('detective-girl-language');return isLanguage(value)?value:'ru';}catch{return 'ru';}});
@@ -19,7 +19,7 @@ export default function Home(){
  const scene=story?(storyScenes[story.id]??storyScenes.owl)[sceneIndex]:owlScenes.corridor;
  const style={'--scene-image':`url("${new URL(`${import.meta.env.BASE_URL}${scene.image}`,document.baseURI).href}")`,'--background':scene.background,'--scene-surface':scene.surface,'--scene-raised':scene.raised,'--scene-border':scene.border,'--primary':scene.accent,'--ring':scene.accent} as CSSProperties;
  const picker=<div className="language-picker"><span id="language-label"><Languages size={18}/>{t.language}</span><RadioGroup value={language} onValueChange={value=>{if(isLanguage(value))setLanguage(value);}} aria-labelledby="language-label" className="language-options">{languages.map(item=><label key={item.id} lang={item.id} className={item.id===language?'language-option chosen':'language-option'}><RadioGroupItem value={item.id} aria-label={item.name}/><span>{item.name}</span></label>)}</RadioGroup></div>;
- return <div className="world" style={style}><div className="scene-backdrop" aria-hidden="true"/><div className="shell"><header><button className="brand" aria-label={t.brand.join(' ')} onClick={exit}><Search size={23}/><span>{t.brand[0]}<b>{t.brand[1]}</b></span></button><span className="case-id">{story?<>{t.case} {story.number} <span className="live-dot"/></>:<>{revisedStories.length} · {t.gallery.title.toLowerCase()}</>}</span></header><MusicPlayer labels={t.music}/>
+ return <div className="world" style={style}><div className="scene-backdrop" aria-hidden="true"/><div className="shell"><header><button className="brand" aria-label={t.brand.join(' ')} onClick={exit}><Search size={23}/><span>{t.brand[0]}<b>{t.brand[1]}</b></span></button><span className="case-id">{story?<>{t.case} {story.number} <span className="live-dot"/></>:<>{revisedStories.length} · {t.gallery.title.toLowerCase()}</>}</span></header><MusicPlayer labels={t.music} track={story?storyMusic[story.id]??defaultTrack:defaultTrack}/>
  {story?<main className={step<0?'start-wrap':'game'}>{picker}<RevisionCase key={`${story.id}-${run}`} story={story} language={language} step={step} setStep={setStep} exit={exit} onSolved={()=>setProgress(readProgress())}/></main>
  :<main className="gallery-wrap">{picker}<CaseGallery stories={revisedStories} language={language} progress={progress} onSelect={select}/></main>}
  <footer><span>{t.brand.join(' ')}</span><span>{t.footer}</span></footer></div></div>;
