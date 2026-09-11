@@ -191,6 +191,7 @@
     "mistakes": "Mistakes",
     "open": "Open the case",
     "back": "Back to cases",
-    "clean": "no mistakes"
+    "clean": "no mistakes",
+    "rounds": "Rounds solved"
   }
 }

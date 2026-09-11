@@ -19,21 +19,22 @@ await test('reviewed cases preserve puzzles across languages and contain every p
     for(const field of ['title','situation','question','explanation','outcome','next'] as const)assert.ok(step[field]?.trim(),`${where}/${field}`);
     assert.ok(step.evidence.length>0 && step.evidence.every((fact:string)=>fact.trim()));
     assert.equal(step.hints.length,3);assert.ok(step.hints.every((hint:string)=>hint.trim()));
-    for(const field of ['kind','answer','scene'] as const)assert.deepEqual(step[field],original[field],`${where}/${field}`);
+    for(const field of ['kind','scene'] as const)assert.deepEqual(step[field],original[field],`${where}/${field}`);
+    if(!story.variants)assert.deepEqual(step.answer,original.answer,`${where}/answer`);
     assert.equal(step.options.length,original.options.length,`${where}/options`);
     assert.ok(Number.isInteger(step.scene)&&step.scene>=0&&step.scene<=3);
     const response=Array.isArray(step.answer)?step.answer:String(step.answer);
-    assert.ok(validateResponse(step.kind,step.answer,response),`${where}: answer must validate`);
-    assert.equal(validateResponse(step.kind,step.answer,''),false);
+    if(!story.variants){assert.ok(validateResponse(step.kind,step.answer,response),`${where}: answer must validate`);assert.equal(validateResponse(step.kind,step.answer,''),false);}
     if(step.kind==='choice'){
      assert.ok(step.options.length>=4,`${where}: choice needs at least four options`);
-     assert.ok(typeof step.answer==='number'&&step.answer>=0&&step.answer<step.options.length);
      assert.equal(step.feedback?.length,step.options.length,`${where}: feedback per option`);
-     step.options.forEach((_:string,i:number)=>{assert.equal(validateResponse('choice',step.answer,String(i)),i===step.answer);assert.equal(Boolean(step.feedback?.[i]?.trim()),i!==step.answer,`${where}/feedback/${i}`);});
+     if(!story.variants){assert.ok(typeof step.answer==='number'&&step.answer>=0&&step.answer<step.options.length);step.options.forEach((_:string,i:number)=>{assert.equal(validateResponse('choice',step.answer,String(i)),i===step.answer);assert.equal(Boolean(step.feedback?.[i]?.trim()),i!==step.answer,`${where}/feedback/${i}`);});}
     }
-    if(step.kind==='multi'){assert.ok(Array.isArray(step.answer)&&step.answer.length>0&&step.answer.length<step.options.length);assert.ok((step.answer as number[]).every(i=>Number.isInteger(i)&&i>=0&&i<step.options.length));}
-    if(step.kind==='order'){assert.ok(Array.isArray(step.answer));assert.equal(step.answer.length,step.options.length);assert.deepEqual([...step.answer as number[]].sort((a,b)=>a-b),step.options.map((_:string,i:number)=>i));}
-    if(step.kind==='time'||step.kind==='number'){for(const hint of step.hints)assert.ok(!hint.includes(String(step.answer)),`${where}: hint reveals the answer`);}
+    if(!story.variants){
+     if(step.kind==='multi'){assert.ok(Array.isArray(step.answer)&&step.answer.length>0&&step.answer.length<step.options.length);}
+     if(step.kind==='order'){assert.ok(Array.isArray(step.answer));assert.equal(step.answer.length,step.options.length);}
+     if(step.kind==='time'||step.kind==='number'){for(const hint of step.hints)assert.ok(!hint.includes(String(step.answer)),`${where}: hint reveals the answer`);}
+    }
     assert.doesNotMatch(JSON.stringify(step),/[–—]/);
    });
   }

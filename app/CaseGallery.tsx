@@ -22,7 +22,7 @@ export default function CaseGallery({ stories, language, progress, onSelect }: P
             <span className="case-card-body">
               <strong>{locale.title}</strong>
               <span className="case-card-teaser">{teaser(locale.intro)}</span>
-              <span className="case-card-foot">{result ? (result.mistakes === 0 ? g.clean : `${g.mistakes}: ${result.mistakes}`) : g.fresh}<em>{g.open}</em></span>
+              <span className="case-card-foot">{result ? `${g.rounds}: ${result.variants.length} / ${story.variants?.length ?? 1}` : g.fresh}<em>{g.open}</em></span>
             </span>
           </button>
         </li>;
