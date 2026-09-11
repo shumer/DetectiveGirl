@@ -1,514 +1,740 @@
 {
-  "id": "park",
-  "number": "011",
-  "locales": {
-    "ru": {
-      "title": "Парк и новый маршрут парада",
-      "intro": "После дождя парковую арку закрыли на ремонт, а в 15:00 маленькие роботы должны привезти флажки к сцене. Тая, которая отвечает за парад, боится, что заряда роботов не хватит на обходной путь. На плане три открытых дороги и одна закрытая, где-то на пути лужа, а до старта роботам нужно ждать под крышей. Помоги выбрать дорогу, обойти лужу, найти павильон и рассчитать время выхода.",
-      "ending": "Из открытых дорог в запас хода 500 м уложилась только дорога через фонтан: 420 м. С обходом лужи она стала 460 м. Павильон В единственный вместил всех 18 роботов, не удлинил путь и не протекал. От павильона до сцены 350 м со скоростью 25 м в минуту это 14 минут, плюс 8 минут проверки, поэтому проверку начали в 14:38 и прибыли ровно в 15:00.",
-      "question": "Павильон Б вмещал всех роботов и стоял под крышей. Почему он всё равно не подошёл?",
-      "steps": [
-        {
-          "title": "По какой дороге ехать?",
-          "situation": "У входа Тая показывает план парка. Арка закрыта, но её дорога всё ещё нарисована. Роботы едут от входа до сцены без подзарядки.",
-          "evidence": [
-            "В маршрутной карточке роботов запас хода после полной зарядки: 500 м.",
-            "Через фонтан: 240 м, затем 180 м.",
-            "Через мост: 280 м, затем 250 м.",
-            "Через пруд: 150 м, затем 190 м, затем 170 м.",
-            "Через арку: 400 м, но арка закрыта на ремонт."
-          ],
-          "question": "Какой путь подходит?",
-          "kind": "choice",
-          "options": [
-            "Через фонтан",
-            "Через мост",
-            "Через пруд",
-            "Через арку"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "280 + 250 = 530 м, это больше запаса хода.",
-            "150 + 190 + 170 = 510 м, на 10 м больше, чем могут проехать роботы.",
-            "Путь короткий, но арка закрыта: проехать по нему нельзя."
-          ],
-          "explanation": "Фонтан: 240 + 180 = 420 м, укладывается в 500. Мост: 530 м, пруд: 510 м, оба длиннее. Арка короче всех, но закрыта.",
-          "outcome": "Выбран путь через фонтан, 420 м. Тая идёт проверить его и находит лужу на одном участке. Придётся объезжать.",
-          "next": "Проверить обход лужи",
-          "hints": [
-            "Сложи части каждого пути и сравни с 500 м.",
-            "Закрытая дорога не подходит, даже если она самая короткая.",
-            "Подходит только путь не длиннее 500 м, по которому можно проехать."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Насколько длиннее обход?",
-          "situation": "У фонтана Тая нашла сухую дорожку в обход лужи. Её длины нет на карточке, но есть на плане, а у плана известен масштаб.",
-          "evidence": [
-            "Выбранный путь имеет длину 420 м.",
-            "Из него убираем залитый участок длиной 30 м.",
-            "Вместо него роботы поедут по сухой дорожке. На плане она измерена: 3,5 см.",
-            "Масштаб плана: 1 см = 20 м.",
-            "Запас хода 500 м."
-          ],
-          "question": "Какой станет длина всего пути в метрах? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "460",
-          "feedback": [],
-          "explanation": "Обход на плане 3,5 см, по масштабу 3,5 × 20 = 70 м. Путь: 420 - 30 + 70 = 460 м. Это меньше 500, роботы доедут.",
-          "outcome": "Путь стал 460 м, запас 40 м. Теперь нужно место под крышей, где 18 роботов дождутся старта, и чтобы дорога до него не съела остаток запаса.",
-          "next": "Выбрать павильон",
-          "hints": [
-            "Переведи обход из сантиметров плана в метры.",
-            "Старый участок убираем, новый добавляем.",
-            "Проверь, что путь всё ещё не больше 500 м."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Где ждать старта?",
-          "situation": "У павильонов Тая сравнивает четыре варианта. В параде 18 роботов, и до старта все должны стоять под крышей. Некоторые павильоны лежат прямо на маршруте, другие в стороне.",
-          "evidence": [
-            "Исправленный маршрут: 460 м при запасе хода 500 м.",
-            "Павильон А: 16 мест, лежит на маршруте.",
-            "Павильон Б: 20 мест, заезд к нему добавляет к пути 60 м.",
-            "Павильон В: 18 мест, лежит на маршруте.",
-            "Павильон Г: 24 места, лежит на маршруте, но крыша протекает, и внутри лужи."
-          ],
-          "question": "Какой павильон подходит?",
-          "kind": "choice",
-          "options": [
-            "Павильон А",
-            "Павильон Б",
-            "Павильон В",
-            "Павильон Г"
-          ],
-          "answer": 2,
-          "feedback": [
-            "В павильоне А только 16 мест, а роботов 18.",
-            "Мест хватает, но с заездом путь станет 460 + 60 = 520 м, больше запаса.",
-            "",
-            "Мест много и он на маршруте, но крыша протекает: роботы промокнут, как на улице."
-          ],
-          "explanation": "А мал: 16 мест на 18 роботов. Б вмещает всех, но удлиняет путь до 520 м. Г на маршруте и большой, но не защищает от дождя. Только В вмещает 18, лежит на маршруте и сухой.",
-          "outcome": "Роботы ждут в павильоне В. Осталось рассчитать, когда начинать предстартовую проверку, чтобы прибыть к сцене ровно в 15:00.",
-          "next": "Назначить время проверки",
-          "hints": [
-            "У каждого павильона проверь три вещи: места, длину пути и крышу.",
-            "Заезд в павильон в стороне прибавляется к 460 м.",
-            "Протекающая крыша это то же самое, что без крыши."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Когда начинать проверку?",
-          "situation": "У сцены Тая измерила оставшийся отрезок. Роботы едут с постоянной скоростью, а перед выездом их проверяют. Прибыть нужно ровно к началу.",
-          "evidence": [
-            "Прибыть к сцене нужно ровно в 15:00.",
-            "От павильона В до сцены 350 м.",
-            "Роботы едут со скоростью 25 м в минуту.",
-            "Перед выездом нужна проверка продолжительностью 8 минут. После проверки роботы сразу выезжают."
-          ],
-          "question": "Во сколько начать проверку? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "14:38",
-          "feedback": [],
-          "explanation": "Дорога: 350 : 25 = 14 минут, значит выезд в 14:46. Проверка 8 минут перед выездом: начало в 14:38.",
-          "outcome": "План готов: проверка в 14:38, выезд в 14:46, прибытие в 15:00 с запасом хода 40 м. Тая записывает расписание, и парад состоится.",
-          "next": "Передать план парада",
-          "hints": [
-            "Время в пути: расстояние раздели на скорость.",
-            "Считай назад от 15:00: сначала дорога, потом проверка.",
-            "Проверка начинается раньше выезда."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "pl": {
-      "title": "Park i nowa trasa parady",
-      "intro": "Po deszczu parkową bramę zamknięto do remontu, a o 15:00 małe roboty mają przywieźć chorągiewki na scenę. Taja, która odpowiada za paradę, boi się, że ładunku robotów nie starczy na objazd. Na planie są trzy otwarte drogi i jedna zamknięta, gdzieś na trasie jest kałuża, a do startu roboty muszą czekać pod dachem. Pomóż wybrać drogę, ominąć kałużę, znaleźć pawilon i obliczyć czas wyjazdu.",
-      "ending": "Z otwartych dróg w zasięgu 500 m zmieściła się tylko droga przez fontannę: 420 m. Z objazdem kałuży wydłużyła się do 460 m. Pawilon C jako jedyny pomieścił wszystkie 18 robotów, nie wydłużył trasy i nie przeciekał. Z pawilonu do sceny 350 m z prędkością 25 m na minutę to 14 minut, plus 8 minut kontroli, więc kontrolę zaczęto o 14:38 i przyjechano dokładnie o 15:00.",
-      "question": "Pawilon B mieścił wszystkie roboty i miał dach. Dlaczego mimo to nie pasował?",
-      "steps": [
-        {
-          "title": "Którą drogą jechać?",
-          "situation": "Przy wejściu Taja pokazuje plan parku. Brama jest zamknięta, ale jej droga nadal jest narysowana. Roboty jadą od wejścia do sceny bez doładowania.",
-          "evidence": [
-            "W karcie trasy robotów zasięg po pełnym naładowaniu: 500 m.",
-            "Przez fontannę: 240 m, potem 180 m.",
-            "Przez most: 280 m, potem 250 m.",
-            "Przez staw: 150 m, potem 190 m, potem 170 m.",
-            "Przez bramę: 400 m, ale brama jest zamknięta do remontu."
-          ],
-          "question": "Która trasa pasuje?",
-          "kind": "choice",
-          "options": [
-            "Przez fontannę",
-            "Przez most",
-            "Przez staw",
-            "Przez bramę"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "280 + 250 = 530 m, to więcej niż zasięg.",
-            "150 + 190 + 170 = 510 m, o 10 m więcej, niż roboty mogą przejechać.",
-            "Trasa jest krótka, ale brama jest zamknięta: nie da się nią przejechać."
-          ],
-          "explanation": "Fontanna: 240 + 180 = 420 m, mieści się w 500. Most: 530 m, staw: 510 m, obie za długie. Brama jest najkrótsza, ale zamknięta.",
-          "outcome": "Wybrano trasę przez fontannę, 420 m. Taja idzie ją sprawdzić i znajduje kałużę na jednym odcinku. Trzeba będzie objechać.",
-          "next": "Sprawdź objazd kałuży",
-          "hints": [
-            "Dodaj części każdej trasy i porównaj z 500 m.",
-            "Zamknięta droga nie pasuje, nawet jeśli jest najkrótsza.",
-            "Pasuje tylko trasa nie dłuższa niż 500 m, którą da się przejechać."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "O ile dłuższy jest objazd?",
-          "situation": "Przy fontannie Taja znalazła suchą ścieżkę omijającą kałużę. Jej długości nie ma na karcie, ale jest na planie, a plan ma znaną skalę.",
-          "evidence": [
-            "Wybrana trasa ma długość 420 m.",
-            "Usuwamy z niej zalany odcinek o długości 30 m.",
-            "Zamiast niego roboty pojadą suchą ścieżką. Na planie zmierzono ją: 3,5 cm.",
-            "Skala planu: 1 cm = 20 m.",
-            "Zasięg 500 m."
-          ],
-          "question": "Jaka będzie długość całej trasy w metrach? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "460",
-          "feedback": [],
-          "explanation": "Objazd na planie ma 3,5 cm, według skali 3,5 × 20 = 70 m. Trasa: 420 - 30 + 70 = 460 m. To mniej niż 500, roboty dojadą.",
-          "outcome": "Trasa ma teraz 460 m, zapas 40 m. Teraz potrzebne jest miejsce pod dachem, gdzie 18 robotów doczeka startu, i żeby droga do niego nie zjadła reszty zapasu.",
-          "next": "Wybierz pawilon",
-          "hints": [
-            "Przelicz objazd z centymetrów planu na metry.",
-            "Stary odcinek usuwamy, nowy dodajemy.",
-            "Sprawdź, czy trasa nadal nie jest dłuższa niż 500 m."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Gdzie czekać na start?",
-          "situation": "Przy pawilonach Taja porównuje cztery warianty. W paradzie jest 18 robotów i do startu wszystkie muszą stać pod dachem. Niektóre pawilony leżą wprost na trasie, inne na uboczu.",
-          "evidence": [
-            "Poprawiona trasa: 460 m przy zasięgu 500 m.",
-            "Pawilon A: 16 miejsc, leży na trasie.",
-            "Pawilon B: 20 miejsc, dojazd do niego dodaje do trasy 60 m.",
-            "Pawilon C: 18 miejsc, leży na trasie.",
-            "Pawilon D: 24 miejsca, leży na trasie, ale dach przecieka i w środku są kałuże."
-          ],
-          "question": "Który pawilon pasuje?",
-          "kind": "choice",
-          "options": [
-            "Pawilon A",
-            "Pawilon B",
-            "Pawilon C",
-            "Pawilon D"
-          ],
-          "answer": 2,
-          "feedback": [
-            "W pawilonie A jest tylko 16 miejsc, a robotów jest 18.",
-            "Miejsc starcza, ale z dojazdem trasa będzie miała 460 + 60 = 520 m, więcej niż zasięg.",
-            "",
-            "Miejsc jest dużo i leży na trasie, ale dach przecieka: roboty zmokną jak na dworze."
-          ],
-          "explanation": "A jest za mały: 16 miejsc na 18 robotów. B mieści wszystkie, ale wydłuża trasę do 520 m. D jest na trasie i duży, ale nie chroni przed deszczem. Tylko C mieści 18, leży na trasie i jest suchy.",
-          "outcome": "Roboty czekają w pawilonie C. Zostało obliczyć, kiedy zacząć kontrolę przed startem, żeby dojechać do sceny dokładnie o 15:00.",
-          "next": "Ustal czas kontroli",
-          "hints": [
-            "Przy każdym pawilonie sprawdź trzy rzeczy: miejsca, długość trasy i dach.",
-            "Dojazd do pawilonu na uboczu dodaje się do 460 m.",
-            "Przeciekający dach to to samo, co brak dachu."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Kiedy zacząć kontrolę?",
-          "situation": "Przy scenie Taja zmierzyła pozostały odcinek. Roboty jadą ze stałą prędkością, a przed wyjazdem są sprawdzane. Dojechać trzeba dokładnie na początek.",
-          "evidence": [
-            "Dojechać do sceny trzeba dokładnie o 15:00.",
-            "Z pawilonu C do sceny jest 350 m.",
-            "Roboty jadą z prędkością 25 m na minutę.",
-            "Przed wyjazdem potrzebna jest kontrola trwająca 8 minut. Po kontroli roboty od razu wyjeżdżają."
-          ],
-          "question": "O której zacząć kontrolę? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "14:38",
-          "feedback": [],
-          "explanation": "Droga: 350 : 25 = 14 minut, więc wyjazd o 14:46. Kontrola 8 minut przed wyjazdem: początek o 14:38.",
-          "outcome": "Plan gotowy: kontrola o 14:38, wyjazd o 14:46, przyjazd o 15:00 z zapasem 40 m. Taja zapisuje rozkład i parada się odbędzie.",
-          "next": "Przekaż plan parady",
-          "hints": [
-            "Czas jazdy: odległość podziel przez prędkość.",
-            "Licz wstecz od 15:00: najpierw droga, potem kontrola.",
-            "Kontrola zaczyna się przed wyjazdem."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "en": {
-      "title": "The Park and the New Parade Route",
-      "intro": "After the rain, the park arch was closed for repairs, and at 15:00 the little robots have to bring the flags to the stage. Taya, who is in charge of the parade, is afraid the robots’ charge will not last the detour. The map shows three open routes and one closed one, there is a puddle somewhere along the way, and the robots need to wait under a roof before the start. Help choose the route, get round the puddle, find a pavilion and work out the departure time.",
-      "ending": "Of the open routes, only the one past the fountain fitted the 500 m range: 420 m. With the puddle detour it became 460 m. Pavilion C was the only one that held all 18 robots, did not lengthen the route and did not leak. From the pavilion to the stage is 350 m at 25 m per minute, which is 14 minutes, plus 8 minutes of checks, so the check started at 14:38 and the robots arrived at exactly 15:00.",
-      "question": "Pavilion B held all the robots and had a roof. Why was it still no good?",
-      "steps": [
-        {
-          "title": "Which route to take?",
-          "situation": "At the entrance, Taya shows the park map. The arch is closed, but its route is still drawn. The robots travel from the entrance to the stage without recharging.",
-          "evidence": [
-            "The robots’ route card gives their range after a full charge: 500 m.",
-            "Past the fountain: 240 m, then 180 m.",
-            "Over the bridge: 280 m, then 250 m.",
-            "Past the pond: 150 m, then 190 m, then 170 m.",
-            "Through the arch: 400 m, but the arch is closed for repairs."
-          ],
-          "question": "Which route works?",
-          "kind": "choice",
-          "options": [
-            "Past the fountain",
-            "Over the bridge",
-            "Past the pond",
-            "Through the arch"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "280 + 250 = 530 m, which is more than the range.",
-            "150 + 190 + 170 = 510 m, 10 m more than the robots can travel.",
-            "The route is short, but the arch is closed: you cannot go that way."
-          ],
-          "explanation": "Fountain: 240 + 180 = 420 m, within 500. Bridge: 530 m, pond: 510 m, both too long. The arch is the shortest of all, but closed.",
-          "outcome": "The fountain route is chosen, 420 m. Taya goes to check it and finds a puddle on one section. A detour will be needed.",
-          "next": "Check the puddle detour",
-          "hints": [
-            "Add up the parts of each route and compare with 500 m.",
-            "A closed route does not work, even if it is the shortest.",
-            "Only a route no longer than 500 m that can actually be travelled will do."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "How much longer is the detour?",
-          "situation": "At the fountain, Taya has found a dry path around the puddle. Its length is not on the card, but it is on the map, and the map’s scale is known.",
-          "evidence": [
-            "The chosen route is 420 m long.",
-            "We remove the flooded section, 30 m long.",
-            "Instead, the robots will take the dry path. On the map it measures 3.5 cm.",
-            "Map scale: 1 cm = 20 m.",
-            "The range is 500 m."
-          ],
-          "question": "How long will the whole route be, in metres? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "460",
-          "feedback": [],
-          "explanation": "The detour on the map is 3.5 cm, which by the scale is 3.5 × 20 = 70 m. The route: 420 - 30 + 70 = 460 m. That is less than 500, so the robots will make it.",
-          "outcome": "The route is now 460 m, with 40 m to spare. Now we need a place under a roof where 18 robots can wait for the start, without the way there eating up what is left of the range.",
-          "next": "Choose a pavilion",
-          "hints": [
-            "Convert the detour from map centimetres to metres.",
-            "Remove the old section, add the new one.",
-            "Check that the route is still no more than 500 m."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Where to wait for the start?",
-          "situation": "At the pavilions, Taya compares four options. There are 18 robots in the parade, and all of them must be under a roof before the start. Some pavilions lie right on the route, others off to the side.",
-          "evidence": [
-            "The corrected route: 460 m with a range of 500 m.",
-            "Pavilion A: 16 places, on the route.",
-            "Pavilion B: 20 places, but the detour to it adds 60 m to the route.",
-            "Pavilion C: 18 places, on the route.",
-            "Pavilion D: 24 places, on the route, but the roof leaks and there are puddles inside."
-          ],
-          "question": "Which pavilion works?",
-          "kind": "choice",
-          "options": [
-            "Pavilion A",
-            "Pavilion B",
-            "Pavilion C",
-            "Pavilion D"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Pavilion A has only 16 places, and there are 18 robots.",
-            "There are enough places, but with the detour the route becomes 460 + 60 = 520 m, more than the range.",
-            "",
-            "Plenty of places and on the route, but the roof leaks: the robots would get as wet as outside."
-          ],
-          "explanation": "A is too small: 16 places for 18 robots. B holds them all but stretches the route to 520 m. D is on the route and big, but does not keep the rain out. Only C holds 18, lies on the route and is dry.",
-          "outcome": "The robots wait in pavilion C. All that remains is to work out when to start the pre-departure check so they reach the stage at exactly 15:00.",
-          "next": "Set the check time",
-          "hints": [
-            "For each pavilion check three things: places, route length and roof.",
-            "The detour to a pavilion off the route is added to the 460 m.",
-            "A leaking roof is the same as no roof."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "When to start the check?",
-          "situation": "At the stage, Taya has measured the remaining stretch. The robots travel at a constant speed, and they are checked before departure. They must arrive exactly at the start.",
-          "evidence": [
-            "The robots must reach the stage at exactly 15:00.",
-            "From pavilion C to the stage is 350 m.",
-            "The robots travel at 25 m per minute.",
-            "Before departure they need a check lasting 8 minutes. After the check the robots leave at once."
-          ],
-          "question": "What time should the check start? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "14:38",
-          "feedback": [],
-          "explanation": "Travel: 350 ÷ 25 = 14 minutes, so departure at 14:46. An 8-minute check before departure: start at 14:38.",
-          "outcome": "The plan is ready: check at 14:38, departure at 14:46, arrival at 15:00 with 40 m of range to spare. Taya writes down the timetable, and the parade is on.",
-          "next": "Hand over the parade plan",
-          "hints": [
-            "Travel time: divide the distance by the speed.",
-            "Count back from 15:00: first the journey, then the check.",
-            "The check starts before the departure."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "uk": {
-      "title": "Парк і новий маршрут параду",
-      "intro": "Після дощу паркову арку зачинили на ремонт, а о 15:00 маленькі роботи мають привезти прапорці до сцени. Тая, яка відповідає за парад, боїться, що заряду роботів не вистачить на обхідний шлях. На плані три відкриті дороги й одна зачинена, десь на шляху калюжа, а до старту роботам треба чекати під дахом. Допоможи вибрати дорогу, обійти калюжу, знайти павільйон і розрахувати час виїзду.",
-      "ending": "З відкритих доріг у запас ходу 500 м уклалася лише дорога через фонтан: 420 м. З обходом калюжі вона стала 460 м. Павільйон В єдиний умістив усіх 18 роботів, не подовжив шлях і не протікав. Від павільйону до сцени 350 м зі швидкістю 25 м за хвилину це 14 хвилин, плюс 8 хвилин перевірки, тому перевірку почали о 14:38 і прибули рівно о 15:00.",
-      "question": "Павільйон Б уміщав усіх роботів і стояв під дахом. Чому він усе одно не підійшов?",
-      "steps": [
-        {
-          "title": "Якою дорогою їхати?",
-          "situation": "Біля входу Тая показує план парку. Арка зачинена, але її дорога досі намальована. Роботи їдуть від входу до сцени без підзарядки.",
-          "evidence": [
-            "У маршрутній картці роботів запас ходу після повної зарядки: 500 м.",
-            "Через фонтан: 240 м, потім 180 м.",
-            "Через міст: 280 м, потім 250 м.",
-            "Через ставок: 150 м, потім 190 м, потім 170 м.",
-            "Через арку: 400 м, але арка зачинена на ремонт."
-          ],
-          "question": "Який шлях підходить?",
-          "kind": "choice",
-          "options": [
-            "Через фонтан",
-            "Через міст",
-            "Через ставок",
-            "Через арку"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "280 + 250 = 530 м, це більше за запас ходу.",
-            "150 + 190 + 170 = 510 м, на 10 м більше, ніж можуть проїхати роботи.",
-            "Шлях короткий, але арка зачинена: проїхати ним не можна."
-          ],
-          "explanation": "Фонтан: 240 + 180 = 420 м, укладається в 500. Міст: 530 м, ставок: 510 м, обидва довші. Арка найкоротша, але зачинена.",
-          "outcome": "Вибрано шлях через фонтан, 420 м. Тая йде перевірити його і знаходить калюжу на одній ділянці. Доведеться об’їжджати.",
-          "next": "Перевірити обхід калюжі",
-          "hints": [
-            "Додай частини кожного шляху і порівняй із 500 м.",
-            "Зачинена дорога не підходить, навіть якщо вона найкоротша.",
-            "Підходить лише шлях не довший за 500 м, яким можна проїхати."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Наскільки довший обхід?",
-          "situation": "Біля фонтана Тая знайшла суху доріжку в обхід калюжі. Її довжини немає на картці, але є на плані, а в плану відомий масштаб.",
-          "evidence": [
-            "Вибраний шлях має довжину 420 м.",
-            "З нього прибираємо залиту ділянку завдовжки 30 м.",
-            "Замість неї роботи поїдуть сухою доріжкою. На плані її виміряно: 3,5 см.",
-            "Масштаб плану: 1 см = 20 м.",
-            "Запас ходу 500 м."
-          ],
-          "question": "Якою стане довжина всього шляху в метрах? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "460",
-          "feedback": [],
-          "explanation": "Обхід на плані 3,5 см, за масштабом 3,5 × 20 = 70 м. Шлях: 420 - 30 + 70 = 460 м. Це менше за 500, роботи доїдуть.",
-          "outcome": "Шлях став 460 м, запас 40 м. Тепер потрібне місце під дахом, де 18 роботів дочекаються старту, і щоб дорога до нього не з’їла решту запасу.",
-          "next": "Вибрати павільйон",
-          "hints": [
-            "Переведи обхід із сантиметрів плану в метри.",
-            "Стару ділянку прибираємо, нову додаємо.",
-            "Перевір, що шлях усе ще не більший за 500 м."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Де чекати старту?",
-          "situation": "Біля павільйонів Тая порівнює чотири варіанти. У параді 18 роботів, і до старту всі мають стояти під дахом. Деякі павільйони лежать просто на маршруті, інші осторонь.",
-          "evidence": [
-            "Виправлений маршрут: 460 м при запасі ходу 500 м.",
-            "Павільйон А: 16 місць, лежить на маршруті.",
-            "Павільйон Б: 20 місць, заїзд до нього додає до шляху 60 м.",
-            "Павільйон В: 18 місць, лежить на маршруті.",
-            "Павільйон Г: 24 місця, лежить на маршруті, але дах протікає, і всередині калюжі."
-          ],
-          "question": "Який павільйон підходить?",
-          "kind": "choice",
-          "options": [
-            "Павільйон А",
-            "Павільйон Б",
-            "Павільйон В",
-            "Павільйон Г"
-          ],
-          "answer": 2,
-          "feedback": [
-            "У павільйоні А лише 16 місць, а роботів 18.",
-            "Місць вистачає, але із заїздом шлях стане 460 + 60 = 520 м, більше за запас.",
-            "",
-            "Місць багато і він на маршруті, але дах протікає: роботи промокнуть, як на вулиці."
-          ],
-          "explanation": "А малий: 16 місць на 18 роботів. Б уміщає всіх, але подовжує шлях до 520 м. Г на маршруті і великий, але не захищає від дощу. Лише В уміщає 18, лежить на маршруті і сухий.",
-          "outcome": "Роботи чекають у павільйоні В. Залишилося розрахувати, коли починати передстартову перевірку, щоб прибути до сцени рівно о 15:00.",
-          "next": "Призначити час перевірки",
-          "hints": [
-            "У кожного павільйону перевір три речі: місця, довжину шляху і дах.",
-            "Заїзд у павільйон осторонь додається до 460 м.",
-            "Дах, що протікає, це те саме, що без даху."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Коли починати перевірку?",
-          "situation": "Біля сцени Тая виміряла відрізок, що залишився. Роботи їдуть зі сталою швидкістю, а перед виїздом їх перевіряють. Прибути треба рівно до початку.",
-          "evidence": [
-            "Прибути до сцени треба рівно о 15:00.",
-            "Від павільйону В до сцени 350 м.",
-            "Роботи їдуть зі швидкістю 25 м за хвилину.",
-            "Перед виїздом потрібна перевірка тривалістю 8 хвилин. Після перевірки роботи одразу виїжджають."
-          ],
-          "question": "О котрій почати перевірку? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "14:38",
-          "feedback": [],
-          "explanation": "Дорога: 350 : 25 = 14 хвилин, отже виїзд о 14:46. Перевірка 8 хвилин перед виїздом: початок о 14:38.",
-          "outcome": "План готовий: перевірка о 14:38, виїзд о 14:46, прибуття о 15:00 із запасом ходу 40 м. Тая записує розклад, і парад відбудеться.",
-          "next": "Передати план параду",
-          "hints": [
-            "Час у дорозі: відстань поділи на швидкість.",
-            "Рахуй назад від 15:00: спершу дорога, потім перевірка.",
-            "Перевірка починається раніше за виїзд."
-          ],
-          "scene": 3
-        }
-      ]
-    }
+ "id": "park",
+ "number": "011",
+ "variants": [
+  {
+   "values": {
+    "rng": 500,
+    "f1": 240,
+    "f2": 180,
+    "fs": 420,
+    "b1": 280,
+    "b2": 250,
+    "bs": 530,
+    "p1": 150,
+    "p2": 190,
+    "p3": 170,
+    "ps": 510,
+    "pdiff": 10,
+    "arch": 400,
+    "old": 30,
+    "dcm": 3.5,
+    "dm": 70,
+    "new": 460,
+    "spare": 40,
+    "nr": 18,
+    "pa": 16,
+    "pb": 20,
+    "extra": 60,
+    "withb": 520,
+    "pd": 24,
+    "dist": 350,
+    "spd": 25,
+    "tr": 14,
+    "dep": "14:46",
+    "chk": 8,
+    "start": "14:38"
+   },
+   "answers": [
+    0,
+    "460",
+    2,
+    "14:38"
+   ],
+   "orders": [
+    [
+     0,
+     2,
+     1,
+     3
+    ],
+    null,
+    [
+     1,
+     2,
+     0,
+     3
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "rng": 600,
+    "f1": 260,
+    "f2": 220,
+    "fs": 480,
+    "b1": 310,
+    "b2": 300,
+    "bs": 610,
+    "p1": 200,
+    "p2": 190,
+    "p3": 230,
+    "ps": 620,
+    "pdiff": 20,
+    "arch": 450,
+    "old": 40,
+    "dcm": 4.5,
+    "dm": 90,
+    "new": 530,
+    "spare": 70,
+    "nr": 22,
+    "pa": 20,
+    "pb": 25,
+    "extra": 80,
+    "withb": 610,
+    "pd": 30,
+    "dist": 400,
+    "spd": 20,
+    "tr": 20,
+    "dep": "14:40",
+    "chk": 10,
+    "start": "14:30"
+   },
+   "answers": [
+    0,
+    "530",
+    2,
+    "14:30"
+   ],
+   "orders": [
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    null,
+    [
+     1,
+     3,
+     0,
+     2
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "rng": 450,
+    "f1": 200,
+    "f2": 180,
+    "fs": 380,
+    "b1": 240,
+    "b2": 230,
+    "bs": 470,
+    "p1": 130,
+    "p2": 170,
+    "p3": 160,
+    "ps": 460,
+    "pdiff": 10,
+    "arch": 350,
+    "old": 20,
+    "dcm": 2.5,
+    "dm": 50,
+    "new": 410,
+    "spare": 40,
+    "nr": 15,
+    "pa": 12,
+    "pb": 18,
+    "extra": 50,
+    "withb": 460,
+    "pd": 20,
+    "dist": 300,
+    "spd": 25,
+    "tr": 12,
+    "dep": "14:48",
+    "chk": 6,
+    "start": "14:42"
+   },
+   "answers": [
+    0,
+    "410",
+    2,
+    "14:42"
+   ],
+   "orders": [
+    [
+     2,
+     3,
+     0,
+     1
+    ],
+    null,
+    [
+     2,
+     1,
+     3,
+     0
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "rng": 550,
+    "f1": 300,
+    "f2": 210,
+    "fs": 510,
+    "b1": 290,
+    "b2": 280,
+    "bs": 570,
+    "p1": 160,
+    "p2": 200,
+    "p3": 200,
+    "ps": 560,
+    "pdiff": 10,
+    "arch": 420,
+    "old": 35,
+    "dcm": 3,
+    "dm": 60,
+    "new": 535,
+    "spare": 15,
+    "nr": 20,
+    "pa": 18,
+    "pb": 24,
+    "extra": 20,
+    "withb": 555,
+    "pd": 28,
+    "dist": 450,
+    "spd": 30,
+    "tr": 15,
+    "dep": "14:45",
+    "chk": 9,
+    "start": "14:36"
+   },
+   "answers": [
+    0,
+    "535",
+    2,
+    "14:36"
+   ],
+   "orders": [
+    [
+     1,
+     2,
+     0,
+     3
+    ],
+    null,
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Парк и новый маршрут парада",
+   "intro": "После дождя парковую арку закрыли на ремонт, а в 15:00 маленькие роботы должны привезти флажки к сцене. Тая, которая отвечает за парад, боится, что заряда роботов не хватит на обходной путь. На плане три открытых дороги и одна закрытая, где-то на пути лужа, а до старта роботам нужно ждать под крышей. Помоги выбрать дорогу, обойти лужу, найти павильон и рассчитать время выхода.",
+   "ending": "Из открытых дорог в запас хода {rng} м уложилась только дорога через фонтан: {fs} м. С обходом лужи она стала {new} м. Павильон В единственный вместил всех {nr} роботов, не удлинил путь и не протекал. От павильона до сцены {dist} м со скоростью {spd} м в минуту это {tr|минута|минуты|минут}, плюс {chk|минута|минуты|минут} проверки, поэтому проверку начали в {start} и прибыли ровно в 15:00.",
+   "question": "Павильон Б вмещал всех роботов и стоял под крышей. Почему он всё равно не подошёл?",
+   "steps": [
+    {
+     "title": "По какой дороге ехать?",
+     "situation": "У входа Тая показывает план парка. Арка закрыта, но её дорога всё ещё нарисована. Роботы едут от входа до сцены без подзарядки.",
+     "evidence": [
+      "В маршрутной карточке роботов запас хода после полной зарядки: {rng} м.",
+      "Через фонтан: {f1} м, затем {f2} м.",
+      "Через мост: {b1} м, затем {b2} м.",
+      "Через пруд: {p1} м, затем {p2} м, затем {p3} м.",
+      "Через арку: {arch} м, но арка закрыта на ремонт."
+     ],
+     "question": "Какой путь подходит?",
+     "kind": "choice",
+     "options": [
+      "Через фонтан",
+      "Через мост",
+      "Через пруд",
+      "Через арку"
+     ],
+     "feedback": [
+      "",
+      "{b1} + {b2} = {bs} м, это больше запаса хода.",
+      "{p1} + {p2} + {p3} = {ps} м, на {pdiff} м больше, чем могут проехать роботы.",
+      "Путь короткий, но арка закрыта: проехать по нему нельзя."
+     ],
+     "explanation": "Фонтан: {f1} + {f2} = {fs} м, укладывается в {rng}. Мост: {bs} м, пруд: {ps} м, оба длиннее. Арка короче всех, но закрыта.",
+     "outcome": "Выбран путь через фонтан, {fs} м. Тая идёт проверить его и находит лужу на одном участке. Придётся объезжать.",
+     "next": "Проверить обход лужи",
+     "hints": [
+      "Сложи части каждого пути и сравни с {rng} м.",
+      "Закрытая дорога не подходит, даже если она самая короткая.",
+      "Подходит только путь не длиннее {rng} м, по которому можно проехать."
+     ],
+     "scene": 0,
+     "answer": 0
+    },
+    {
+     "title": "Насколько длиннее обход?",
+     "situation": "У фонтана Тая нашла сухую дорожку в обход лужи. Её длины нет на карточке, но есть на плане, а у плана известен масштаб.",
+     "evidence": [
+      "Выбранный путь имеет длину {fs} м.",
+      "Из него убираем залитый участок длиной {old} м.",
+      "Вместо него роботы поедут по сухой дорожке. На плане она измерена: {dcm} см.",
+      "Масштаб плана: 1 см = 20 м.",
+      "Запас хода {rng} м."
+     ],
+     "question": "Какой станет длина всего пути в метрах? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Обход на плане {dcm} см, по масштабу {dcm} × 20 = {dm} м. Путь: {fs} - {old} + {dm} = {new} м. Это не больше {rng}, роботы доедут.",
+     "outcome": "Путь стал {new} м, запас {spare} м. Теперь нужно место под крышей, где {nr} роботов дождутся старта, и чтобы дорога до него не съела остаток запаса.",
+     "next": "Выбрать павильон",
+     "hints": [
+      "Переведи обход из сантиметров плана в метры.",
+      "Старый участок убираем, новый добавляем.",
+      "Проверь, что путь всё ещё не больше {rng} м."
+     ],
+     "scene": 1,
+     "answer": "460"
+    },
+    {
+     "title": "Где ждать старта?",
+     "situation": "У павильонов Тая сравнивает четыре варианта. В параде {nr} роботов, и до старта все должны стоять под крышей. Некоторые павильоны лежат прямо на маршруте, другие в стороне.",
+     "evidence": [
+      "Исправленный маршрут: {new} м при запасе хода {rng} м.",
+      "Павильон А: {pa} мест, лежит на маршруте.",
+      "Павильон Б: {pb} мест, заезд к нему добавляет к пути {extra} м.",
+      "Павильон В: {nr} мест, лежит на маршруте.",
+      "Павильон Г: {pd} места, лежит на маршруте, но крыша протекает, и внутри лужи."
+     ],
+     "question": "Какой павильон подходит?",
+     "kind": "choice",
+     "options": [
+      "Павильон А",
+      "Павильон Б",
+      "Павильон В",
+      "Павильон Г"
+     ],
+     "feedback": [
+      "В павильоне А только {pa} мест, а роботов {nr}.",
+      "Мест хватает, но с заездом путь станет {new} + {extra} = {withb} м, больше запаса.",
+      "",
+      "Мест много и он на маршруте, но крыша протекает: роботы промокнут, как на улице."
+     ],
+     "explanation": "А мал: {pa} мест на {nr} роботов. Б вмещает всех, но удлиняет путь до {withb} м. Г на маршруте и большой, но не защищает от дождя. Только В вмещает {nr}, лежит на маршруте и сухой.",
+     "outcome": "Роботы ждут в павильоне В. Осталось рассчитать, когда начинать предстартовую проверку, чтобы прибыть к сцене ровно в 15:00.",
+     "next": "Назначить время проверки",
+     "hints": [
+      "У каждого павильона проверь три вещи: места, длину пути и крышу.",
+      "Заезд в павильон в стороне прибавляется к {new} м.",
+      "Протекающая крыша это то же самое, что без крыши."
+     ],
+     "scene": 2,
+     "answer": 2
+    },
+    {
+     "title": "Когда начинать проверку?",
+     "situation": "У сцены Тая измерила оставшийся отрезок. Роботы едут с постоянной скоростью, а перед выездом их проверяют. Прибыть нужно ровно к началу.",
+     "evidence": [
+      "Прибыть к сцене нужно ровно в 15:00.",
+      "От павильона В до сцены {dist} м.",
+      "Роботы едут со скоростью {spd} м в минуту.",
+      "Перед выездом нужна проверка продолжительностью {chk|минута|минуты|минут}. После проверки роботы сразу выезжают."
+     ],
+     "question": "Во сколько начать проверку? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Дорога: {dist} : {spd} = {tr} минут, значит выезд в {dep}. Проверка {chk} минут перед выездом: начало в {start}.",
+     "outcome": "План готов: проверка в {start}, выезд в {dep}, прибытие в 15:00 с запасом хода {spare} м. Тая записывает расписание, и парад состоится.",
+     "next": "Передать план парада",
+     "hints": [
+      "Время в пути: расстояние раздели на скорость.",
+      "Считай назад от 15:00: сначала дорога, потом проверка.",
+      "Проверка начинается раньше выезда."
+     ],
+     "scene": 3,
+     "answer": "14:38"
+    }
+   ]
+  },
+  "pl": {
+   "title": "Park i nowa trasa parady",
+   "intro": "Po deszczu parkową bramę zamknięto do remontu, a o 15:00 małe roboty mają przywieźć chorągiewki na scenę. Taja, która odpowiada za paradę, boi się, że ładunku robotów nie starczy na objazd. Na planie są trzy otwarte drogi i jedna zamknięta, gdzieś na trasie jest kałuża, a do startu roboty muszą czekać pod dachem. Pomóż wybrać drogę, ominąć kałużę, znaleźć pawilon i obliczyć czas wyjazdu.",
+   "ending": "Z otwartych dróg w zasięgu {rng} m zmieściła się tylko droga przez fontannę: {fs} m. Z objazdem kałuży wydłużyła się do {new} m. Pawilon C jako jedyny pomieścił wszystkie {nr} robotów, nie wydłużył trasy i nie przeciekał. Z pawilonu do sceny {dist} m z prędkością {spd} m na minutę to {tr|minuta|minuty|minut}, plus {chk|minuta|minuty|minut} kontroli, więc kontrolę zaczęto o {start} i przyjechano dokładnie o 15:00.",
+   "question": "Pawilon B mieścił wszystkie roboty i miał dach. Dlaczego mimo to nie pasował?",
+   "steps": [
+    {
+     "title": "Którą drogą jechać?",
+     "situation": "Przy wejściu Taja pokazuje plan parku. Brama jest zamknięta, ale jej droga nadal jest narysowana. Roboty jadą od wejścia do sceny bez doładowania.",
+     "evidence": [
+      "W karcie trasy robotów zasięg po pełnym naładowaniu: {rng} m.",
+      "Przez fontannę: {f1} m, potem {f2} m.",
+      "Przez most: {b1} m, potem {b2} m.",
+      "Przez staw: {p1} m, potem {p2} m, potem {p3} m.",
+      "Przez bramę: {arch} m, ale brama jest zamknięta do remontu."
+     ],
+     "question": "Która trasa pasuje?",
+     "kind": "choice",
+     "options": [
+      "Przez fontannę",
+      "Przez most",
+      "Przez staw",
+      "Przez bramę"
+     ],
+     "feedback": [
+      "",
+      "{b1} + {b2} = {bs} m, to więcej niż zasięg.",
+      "{p1} + {p2} + {p3} = {ps} m, o {pdiff} m więcej, niż roboty mogą przejechać.",
+      "Trasa jest krótka, ale brama jest zamknięta: nie da się nią przejechać."
+     ],
+     "explanation": "Fontanna: {f1} + {f2} = {fs} m, mieści się w {rng}. Most: {bs} m, staw: {ps} m, obie za długie. Brama jest najkrótsza, ale zamknięta.",
+     "outcome": "Wybrano trasę przez fontannę, {fs} m. Taja idzie ją sprawdzić i znajduje kałużę na jednym odcinku. Trzeba będzie objechać.",
+     "next": "Sprawdź objazd kałuży",
+     "hints": [
+      "Dodaj części każdej trasy i porównaj z {rng} m.",
+      "Zamknięta droga nie pasuje, nawet jeśli jest najkrótsza.",
+      "Pasuje tylko trasa nie dłuższa niż {rng} m, którą da się przejechać."
+     ],
+     "scene": 0,
+     "answer": 0
+    },
+    {
+     "title": "O ile dłuższy jest objazd?",
+     "situation": "Przy fontannie Taja znalazła suchą ścieżkę omijającą kałużę. Jej długości nie ma na karcie, ale jest na planie, a plan ma znaną skalę.",
+     "evidence": [
+      "Wybrana trasa ma długość {fs} m.",
+      "Usuwamy z niej zalany odcinek o długości {old} m.",
+      "Zamiast niego roboty pojadą suchą ścieżką. Na planie zmierzono ją: {dcm} cm.",
+      "Skala planu: 1 cm = 20 m.",
+      "Zasięg {rng} m."
+     ],
+     "question": "Jaka będzie długość całej trasy w metrach? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Objazd na planie ma {dcm} cm, według skali {dcm} × 20 = {dm} m. Trasa: {fs} - {old} + {dm} = {new} m. To nie więcej niż {rng}, roboty dojadą.",
+     "outcome": "Trasa ma teraz {new} m, zapas {spare} m. Teraz potrzebne jest miejsce pod dachem, gdzie {nr} robotów doczeka startu, i żeby droga do niego nie zjadła reszty zapasu.",
+     "next": "Wybierz pawilon",
+     "hints": [
+      "Przelicz objazd z centymetrów planu na metry.",
+      "Stary odcinek usuwamy, nowy dodajemy.",
+      "Sprawdź, czy trasa nadal nie jest dłuższa niż {rng} m."
+     ],
+     "scene": 1,
+     "answer": "460"
+    },
+    {
+     "title": "Gdzie czekać na start?",
+     "situation": "Przy pawilonach Taja porównuje cztery warianty. W paradzie jest {nr} robotów i do startu wszystkie muszą stać pod dachem. Niektóre pawilony leżą wprost na trasie, inne na uboczu.",
+     "evidence": [
+      "Poprawiona trasa: {new} m przy zasięgu {rng} m.",
+      "Pawilon A: {pa} miejsc, leży na trasie.",
+      "Pawilon B: {pb} miejsc, dojazd do niego dodaje do trasy {extra} m.",
+      "Pawilon C: {nr} miejsc, leży na trasie.",
+      "Pawilon D: {pd} miejsc, leży na trasie, ale dach przecieka i w środku są kałuże."
+     ],
+     "question": "Który pawilon pasuje?",
+     "kind": "choice",
+     "options": [
+      "Pawilon A",
+      "Pawilon B",
+      "Pawilon C",
+      "Pawilon D"
+     ],
+     "feedback": [
+      "W pawilonie A jest tylko {pa} miejsc, a robotów jest {nr}.",
+      "Miejsc starcza, ale z dojazdem trasa będzie miała {new} + {extra} = {withb} m, więcej niż zasięg.",
+      "",
+      "Miejsc jest dużo i leży na trasie, ale dach przecieka: roboty zmokną jak na dworze."
+     ],
+     "explanation": "A jest za mały: {pa} miejsc na {nr} robotów. B mieści wszystkie, ale wydłuża trasę do {withb} m. D jest na trasie i duży, ale nie chroni przed deszczem. Tylko C mieści {nr}, leży na trasie i jest suchy.",
+     "outcome": "Roboty czekają w pawilonie C. Zostało obliczyć, kiedy zacząć kontrolę przed startem, żeby dojechać do sceny dokładnie o 15:00.",
+     "next": "Ustal czas kontroli",
+     "hints": [
+      "Przy każdym pawilonie sprawdź trzy rzeczy: miejsca, długość trasy i dach.",
+      "Dojazd do pawilonu na uboczu dodaje się do {new} m.",
+      "Przeciekający dach to to samo, co brak dachu."
+     ],
+     "scene": 2,
+     "answer": 2
+    },
+    {
+     "title": "Kiedy zacząć kontrolę?",
+     "situation": "Przy scenie Taja zmierzyła pozostały odcinek. Roboty jadą ze stałą prędkością, a przed wyjazdem są sprawdzane. Dojechać trzeba dokładnie na początek.",
+     "evidence": [
+      "Dojechać do sceny trzeba dokładnie o 15:00.",
+      "Z pawilonu C do sceny jest {dist} m.",
+      "Roboty jadą z prędkością {spd} m na minutę.",
+      "Przed wyjazdem potrzebna jest kontrola trwająca {chk|minutę|minuty|minut}. Po kontroli roboty od razu wyjeżdżają."
+     ],
+     "question": "O której zacząć kontrolę? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Droga: {dist} : {spd} = {tr} minut, więc wyjazd o {dep}. Kontrola {chk} minut przed wyjazdem: początek o {start}.",
+     "outcome": "Plan gotowy: kontrola o {start}, wyjazd o {dep}, przyjazd o 15:00 z zapasem {spare} m. Taja zapisuje rozkład i parada się odbędzie.",
+     "next": "Przekaż plan parady",
+     "hints": [
+      "Czas jazdy: odległość podziel przez prędkość.",
+      "Licz wstecz od 15:00: najpierw droga, potem kontrola.",
+      "Kontrola zaczyna się przed wyjazdem."
+     ],
+     "scene": 3,
+     "answer": "14:38"
+    }
+   ]
+  },
+  "en": {
+   "title": "The Park and the New Parade Route",
+   "intro": "After the rain, the park arch was closed for repairs, and at 15:00 the little robots have to bring the flags to the stage. Taya, who is in charge of the parade, is afraid the robots’ charge will not last the detour. The map shows three open routes and one closed one, there is a puddle somewhere along the way, and the robots need to wait under a roof before the start. Help choose the route, get round the puddle, find a pavilion and work out the departure time.",
+   "ending": "Of the open routes, only the one past the fountain fitted the {rng} m range: {fs} m. With the puddle detour it became {new} m. Pavilion C was the only one that held all {nr} robots, did not lengthen the route and did not leak. From the pavilion to the stage is {dist} m at {spd} m per minute, which is {tr} minutes, plus {chk} minutes of checks, so the check started at {start} and the robots arrived at exactly 15:00.",
+   "question": "Pavilion B held all the robots and had a roof. Why was it still no good?",
+   "steps": [
+    {
+     "title": "Which route to take?",
+     "situation": "At the entrance, Taya shows the park map. The arch is closed, but its route is still drawn. The robots travel from the entrance to the stage without recharging.",
+     "evidence": [
+      "The robots’ route card gives their range after a full charge: {rng} m.",
+      "Past the fountain: {f1} m, then {f2} m.",
+      "Over the bridge: {b1} m, then {b2} m.",
+      "Past the pond: {p1} m, then {p2} m, then {p3} m.",
+      "Through the arch: {arch} m, but the arch is closed for repairs."
+     ],
+     "question": "Which route works?",
+     "kind": "choice",
+     "options": [
+      "Past the fountain",
+      "Over the bridge",
+      "Past the pond",
+      "Through the arch"
+     ],
+     "feedback": [
+      "",
+      "{b1} + {b2} = {bs} m, which is more than the range.",
+      "{p1} + {p2} + {p3} = {ps} m, {pdiff} m more than the robots can travel.",
+      "The route is short, but the arch is closed: you cannot go that way."
+     ],
+     "explanation": "Fountain: {f1} + {f2} = {fs} m, within {rng}. Bridge: {bs} m, pond: {ps} m, both too long. The arch is the shortest of all, but closed.",
+     "outcome": "The fountain route is chosen, {fs} m. Taya goes to check it and finds a puddle on one section. A detour will be needed.",
+     "next": "Check the puddle detour",
+     "hints": [
+      "Add up the parts of each route and compare with {rng} m.",
+      "A closed route does not work, even if it is the shortest.",
+      "Only a route no longer than {rng} m that can actually be travelled will do."
+     ],
+     "scene": 0,
+     "answer": 0
+    },
+    {
+     "title": "How much longer is the detour?",
+     "situation": "At the fountain, Taya has found a dry path around the puddle. Its length is not on the card, but it is on the map, and the map’s scale is known.",
+     "evidence": [
+      "The chosen route is {fs} m long.",
+      "We remove the flooded section, {old} m long.",
+      "Instead, the robots will take the dry path. On the map it measures {dcm} cm.",
+      "Map scale: 1 cm = 20 m.",
+      "The range is {rng} m."
+     ],
+     "question": "How long will the whole route be, in metres? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "The detour on the map is {dcm} cm, which by the scale is {dcm} × 20 = {dm} m. The route: {fs} - {old} + {dm} = {new} m. That is no more than {rng}, so the robots will make it.",
+     "outcome": "The route is now {new} m, with {spare} m to spare. Now we need a place under a roof where {nr} robots can wait for the start, without the way there eating up what is left of the range.",
+     "next": "Choose a pavilion",
+     "hints": [
+      "Convert the detour from map centimetres to metres.",
+      "Remove the old section, add the new one.",
+      "Check that the route is still no more than {rng} m."
+     ],
+     "scene": 1,
+     "answer": "460"
+    },
+    {
+     "title": "Where to wait for the start?",
+     "situation": "At the pavilions, Taya compares four options. There are {nr} robots in the parade, and all of them must be under a roof before the start. Some pavilions lie right on the route, others off to the side.",
+     "evidence": [
+      "The corrected route: {new} m with a range of {rng} m.",
+      "Pavilion A: {pa} places, on the route.",
+      "Pavilion B: {pb} places, but the detour to it adds {extra} m to the route.",
+      "Pavilion C: {nr} places, on the route.",
+      "Pavilion D: {pd} places, on the route, but the roof leaks and there are puddles inside."
+     ],
+     "question": "Which pavilion works?",
+     "kind": "choice",
+     "options": [
+      "Pavilion A",
+      "Pavilion B",
+      "Pavilion C",
+      "Pavilion D"
+     ],
+     "feedback": [
+      "Pavilion A has only {pa} places, and there are {nr} robots.",
+      "There are enough places, but with the detour the route becomes {new} + {extra} = {withb} m, more than the range.",
+      "",
+      "Plenty of places and on the route, but the roof leaks: the robots would get as wet as outside."
+     ],
+     "explanation": "A is too small: {pa} places for {nr} robots. B holds them all but stretches the route to {withb} m. D is on the route and big, but does not keep the rain out. Only C holds {nr}, lies on the route and is dry.",
+     "outcome": "The robots wait in pavilion C. All that remains is to work out when to start the pre-departure check so they reach the stage at exactly 15:00.",
+     "next": "Set the check time",
+     "hints": [
+      "For each pavilion check three things: places, route length and roof.",
+      "The detour to a pavilion off the route is added to the {new} m.",
+      "A leaking roof is the same as no roof."
+     ],
+     "scene": 2,
+     "answer": 2
+    },
+    {
+     "title": "When to start the check?",
+     "situation": "At the stage, Taya has measured the remaining stretch. The robots travel at a constant speed, and they are checked before departure. They must arrive exactly at the start.",
+     "evidence": [
+      "The robots must reach the stage at exactly 15:00.",
+      "From pavilion C to the stage is {dist} m.",
+      "The robots travel at {spd} m per minute.",
+      "Before departure they need a check lasting {chk} minutes. After the check the robots leave at once."
+     ],
+     "question": "What time should the check start? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Travel: {dist} ÷ {spd} = {tr} minutes, so departure at {dep}. A {chk}-minute check before departure: start at {start}.",
+     "outcome": "The plan is ready: check at {start}, departure at {dep}, arrival at 15:00 with {spare} m of range to spare. Taya writes down the timetable, and the parade is on.",
+     "next": "Hand over the parade plan",
+     "hints": [
+      "Travel time: divide the distance by the speed.",
+      "Count back from 15:00: first the journey, then the check.",
+      "The check starts before the departure."
+     ],
+     "scene": 3,
+     "answer": "14:38"
+    }
+   ]
+  },
+  "uk": {
+   "title": "Парк і новий маршрут параду",
+   "intro": "Після дощу паркову арку зачинили на ремонт, а о 15:00 маленькі роботи мають привезти прапорці до сцени. Тая, яка відповідає за парад, боїться, що заряду роботів не вистачить на обхідний шлях. На плані три відкриті дороги й одна зачинена, десь на шляху калюжа, а до старту роботам треба чекати під дахом. Допоможи вибрати дорогу, обійти калюжу, знайти павільйон і розрахувати час виїзду.",
+   "ending": "З відкритих доріг у запас ходу {rng} м уклалася лише дорога через фонтан: {fs} м. З обходом калюжі вона стала {new} м. Павільйон В єдиний умістив усіх {nr} роботів, не подовжив шлях і не протікав. Від павільйону до сцени {dist} м зі швидкістю {spd} м за хвилину це {tr|хвилина|хвилини|хвилин}, плюс {chk|хвилина|хвилини|хвилин} перевірки, тому перевірку почали о {start} і прибули рівно о 15:00.",
+   "question": "Павільйон Б уміщав усіх роботів і стояв під дахом. Чому він усе одно не підійшов?",
+   "steps": [
+    {
+     "title": "Якою дорогою їхати?",
+     "situation": "Біля входу Тая показує план парку. Арка зачинена, але її дорога досі намальована. Роботи їдуть від входу до сцени без підзарядки.",
+     "evidence": [
+      "У маршрутній картці роботів запас ходу після повної зарядки: {rng} м.",
+      "Через фонтан: {f1} м, потім {f2} м.",
+      "Через міст: {b1} м, потім {b2} м.",
+      "Через ставок: {p1} м, потім {p2} м, потім {p3} м.",
+      "Через арку: {arch} м, але арка зачинена на ремонт."
+     ],
+     "question": "Який шлях підходить?",
+     "kind": "choice",
+     "options": [
+      "Через фонтан",
+      "Через міст",
+      "Через ставок",
+      "Через арку"
+     ],
+     "feedback": [
+      "",
+      "{b1} + {b2} = {bs} м, це більше за запас ходу.",
+      "{p1} + {p2} + {p3} = {ps} м, на {pdiff} м більше, ніж можуть проїхати роботи.",
+      "Шлях короткий, але арка зачинена: проїхати ним не можна."
+     ],
+     "explanation": "Фонтан: {f1} + {f2} = {fs} м, укладається в {rng}. Міст: {bs} м, ставок: {ps} м, обидва довші. Арка найкоротша, але зачинена.",
+     "outcome": "Вибрано шлях через фонтан, {fs} м. Тая йде перевірити його і знаходить калюжу на одній ділянці. Доведеться об’їжджати.",
+     "next": "Перевірити обхід калюжі",
+     "hints": [
+      "Додай частини кожного шляху і порівняй із {rng} м.",
+      "Зачинена дорога не підходить, навіть якщо вона найкоротша.",
+      "Підходить лише шлях не довший за {rng} м, яким можна проїхати."
+     ],
+     "scene": 0,
+     "answer": 0
+    },
+    {
+     "title": "Наскільки довший обхід?",
+     "situation": "Біля фонтана Тая знайшла суху доріжку в обхід калюжі. Її довжини немає на картці, але є на плані, а в плану відомий масштаб.",
+     "evidence": [
+      "Вибраний шлях має довжину {fs} м.",
+      "З нього прибираємо залиту ділянку завдовжки {old} м.",
+      "Замість неї роботи поїдуть сухою доріжкою. На плані її виміряно: {dcm} см.",
+      "Масштаб плану: 1 см = 20 м.",
+      "Запас ходу {rng} м."
+     ],
+     "question": "Якою стане довжина всього шляху в метрах? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Обхід на плані {dcm} см, за масштабом {dcm} × 20 = {dm} м. Шлях: {fs} - {old} + {dm} = {new} м. Це не більше за {rng}, роботи доїдуть.",
+     "outcome": "Шлях став {new} м, запас {spare} м. Тепер потрібне місце під дахом, де {nr} роботів дочекаються старту, і щоб дорога до нього не з’їла решту запасу.",
+     "next": "Вибрати павільйон",
+     "hints": [
+      "Переведи обхід із сантиметрів плану в метри.",
+      "Стару ділянку прибираємо, нову додаємо.",
+      "Перевір, що шлях усе ще не більший за {rng} м."
+     ],
+     "scene": 1,
+     "answer": "460"
+    },
+    {
+     "title": "Де чекати старту?",
+     "situation": "Біля павільйонів Тая порівнює чотири варіанти. У параді {nr} роботів, і до старту всі мають стояти під дахом. Деякі павільйони лежать просто на маршруті, інші осторонь.",
+     "evidence": [
+      "Виправлений маршрут: {new} м при запасі ходу {rng} м.",
+      "Павільйон А: {pa} місць, лежить на маршруті.",
+      "Павільйон Б: {pb} місць, заїзд до нього додає до шляху {extra} м.",
+      "Павільйон В: {nr} місць, лежить на маршруті.",
+      "Павільйон Г: {pd} місць, лежить на маршруті, але дах протікає, і всередині калюжі."
+     ],
+     "question": "Який павільйон підходить?",
+     "kind": "choice",
+     "options": [
+      "Павільйон А",
+      "Павільйон Б",
+      "Павільйон В",
+      "Павільйон Г"
+     ],
+     "feedback": [
+      "У павільйоні А лише {pa} місць, а роботів {nr}.",
+      "Місць вистачає, але із заїздом шлях стане {new} + {extra} = {withb} м, більше за запас.",
+      "",
+      "Місць багато і він на маршруті, але дах протікає: роботи промокнуть, як на вулиці."
+     ],
+     "explanation": "А малий: {pa} місць на {nr} роботів. Б уміщає всіх, але подовжує шлях до {withb} м. Г на маршруті і великий, але не захищає від дощу. Лише В уміщає {nr}, лежить на маршруті і сухий.",
+     "outcome": "Роботи чекають у павільйоні В. Залишилося розрахувати, коли починати передстартову перевірку, щоб прибути до сцени рівно о 15:00.",
+     "next": "Призначити час перевірки",
+     "hints": [
+      "У кожного павільйону перевір три речі: місця, довжину шляху і дах.",
+      "Заїзд у павільйон осторонь додається до {new} м.",
+      "Дах, що протікає, це те саме, що без даху."
+     ],
+     "scene": 2,
+     "answer": 2
+    },
+    {
+     "title": "Коли починати перевірку?",
+     "situation": "Біля сцени Тая виміряла відрізок, що залишився. Роботи їдуть зі сталою швидкістю, а перед виїздом їх перевіряють. Прибути треба рівно до початку.",
+     "evidence": [
+      "Прибути до сцени треба рівно о 15:00.",
+      "Від павільйону В до сцени {dist} м.",
+      "Роботи їдуть зі швидкістю {spd} м за хвилину.",
+      "Перед виїздом потрібна перевірка тривалістю {chk|хвилина|хвилини|хвилин}. Після перевірки роботи одразу виїжджають."
+     ],
+     "question": "О котрій почати перевірку? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Дорога: {dist} : {spd} = {tr} хвилин, отже виїзд о {dep}. Перевірка {chk} хвилин перед виїздом: початок о {start}.",
+     "outcome": "План готовий: перевірка о {start}, виїзд о {dep}, прибуття о 15:00 із запасом ходу {spare} м. Тая записує розклад, і парад відбудеться.",
+     "next": "Передати план параду",
+     "hints": [
+      "Час у дорозі: відстань поділи на швидкість.",
+      "Рахуй назад від 15:00: спершу дорога, потім перевірка.",
+      "Перевірка починається раніше за виїзд."
+     ],
+     "scene": 3,
+     "answer": "14:38"
+    }
+   ]
+  }
+ }
 }

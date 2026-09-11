@@ -89,6 +89,9 @@ def write_case(case_id, number, locales, variants):
     signatures = [json.dumps(v['answers'], ensure_ascii=False) for v in variants]
     assert len(set(signatures)) == 4, 'variants must have different answers'
     steps0 = locales['ru']['steps']
+    # Keep the round 1 answer on every step for tooling that reads a single answer.
+    for lang in LANGS:
+        for i, st in enumerate(locales[lang]['steps']): st['answer'] = variants[0]['answers'][i]
     for i, var in enumerate(variants):
         var.setdefault('orders', shuffled_orders(case_id, i, steps0))
     story = {'id': case_id, 'number': number, 'variants': variants, 'locales': locales}

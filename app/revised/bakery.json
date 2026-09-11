@@ -1,458 +1,656 @@
 {
-  "id": "bakery",
-  "number": "008",
-  "locales": {
-    "ru": {
-      "title": "Пекарня лунных пряников",
-      "intro": "Для ярмарки заказали 48 пряников в форме луны. Коробка стоит на прилавке, но в ней заметно пустое место, а сама пекарь Вера была весь день у печи и ничего не заметила. Утром в пекарне были дегустаторы, курьер Петя и помощница Маша. Помоги выяснить, сколько лун не хватает, куда они делись, хватит ли теста и когда коробку можно отдавать.",
-      "ending": "Не хватало четырёх лун: 48 испекли, 42 в коробке, две разбитые лежали отдельно. Дегустаторы получили звёзды, а четыре луны увёз на стенд ярмарки курьер Петя по накладной, которую Вера не прочитала. Из 200 г теста вышло шесть лун: четыре в коробку и две про запас. Печь была занята звёздами до 14:50, поэтому луны остыли к 15:15, и курьер их дождался.",
-      "question": "Дегустаторы получили ровно шесть пряников, а не хватало четырёх. Почему сразу было видно, что дело не в них?",
-      "steps": [
-        {
-          "title": "Сколько лун не хватает?",
-          "situation": "У прилавка Вера показывает два снимка: полные противни перед упаковкой и открытую коробку. Рядом с коробкой тарелка с двумя разбитыми лунами: их отложили, потому что на ярмарку такие не годятся.",
-          "evidence": [
-            "Испекли 4 полных противня по 12 лун.",
-            "В коробке 6 полных рядов по 7 лун.",
-            "Две разбитые луны лежат отдельно на тарелке и в коробку не попали."
-          ],
-          "question": "Сколько лун не хватает, не считая разбитых? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Испекли 4 × 12 = 48. В коробке 6 × 7 = 42. Разбитые две не пропали, они на тарелке: 48 - 42 - 2 = 4 луны неизвестно где.",
-          "outcome": "Четыре луны исчезли между противнем и коробкой. Вера открывает журнал утра: дегустация, курьер, помощница.",
-          "next": "Проверить журнал утра",
-          "hints": [
-            "Посчитай испечённые и посчитай в коробке.",
-            "Разбитые не пропали, они лежат отдельно.",
-            "Вычти из испечённых и коробку, и разбитые."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Куда делись четыре луны?",
-          "situation": "В журнале записано всё, что выносили из пекарни утром, а к записям есть фотографии. Проверь каждую версию и по числу, и по форме пряников.",
-          "evidence": [
-            "09:20: три дегустатора получили по 2 пряника. На фото дегустации шесть звёзд.",
-            "09:40: Вера отложила две разбитые луны на тарелку.",
-            "09:50: курьер Петя взял пакет по накладной «4 шт., образцы для стенда ярмарки». На фото стенда четыре луны.",
-            "Помощница Маша приходила в 10:00, но только за фартуком, и к прянику не подходила.",
-            "Фото противней сделано в 09:10: на них 48 лун."
-          ],
-          "question": "Где четыре луны?",
-          "kind": "choice",
-          "options": [
-            "Их съели дегустаторы",
-            "Их не было: испекли только 44 луны",
-            "Их увёз Петя на стенд ярмарки по накладной",
-            "Это и есть две разбитые луны"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Дегустаторы получили шесть пряников, а не четыре, и на фото у них звёзды.",
-            "На фото противней в 09:10 ровно 48 лун.",
-            "",
-            "Разбитых две, а не хватает четырёх. К тому же разбитые лежат на тарелке, они никуда не делись."
-          ],
-          "explanation": "У дегустаторов шесть звёзд: не то число и не та форма. Противни полные. Разбитых только две. А накладная Пети говорит ровно о четырёх образцах, и на фото стенда четыре луны. Луны не пропали, они на ярмарке.",
-          "outcome": "Вера вспоминает: она подписала накладную не глядя. Стенду луны нужны, значит для коробки надо допечь четыре. Идём проверять тесто.",
-          "next": "Проверить оставшееся тесто",
-          "hints": [
-            "У каждой версии проверь число пряников и форму на фотографии.",
-            "Разбитые луны никуда не делись, их две.",
-            "Сравни число в накладной Пети с недостачей."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Хватит ли теста?",
-          "situation": "На столе Вера взвешивает оставшееся тесто. Для коробки нужно четыре луны, но она хочет ещё несколько про запас, если тесто позволит.",
-          "evidence": [
-            "Осталось 200 г теста.",
-            "На одну луну уходит 30 г теста.",
-            "Из остатка теста, которого не хватает на целую луну, луну не делают."
-          ],
-          "question": "Сколько всего лун можно вырезать из оставшегося теста? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "6",
-          "feedback": [],
-          "explanation": "200 : 30 = 6 и 20 г в остатке. Шесть лун: четыре в коробку и две про запас, 20 г теста останется.",
-          "outcome": "Теста хватает на шесть лун: четыре для коробки и две запасные. Осталось узнать, когда луны будут готовы: печь сейчас занята.",
-          "next": "Рассчитать время выдачи",
-          "hints": [
-            "Раздели запас теста на расход одной луны.",
-            "Остаток, которого не хватает на целую луну, не считается.",
-            "Лун получится целое число."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Когда забирать заказ?",
-          "situation": "У печи Вера смотрит на часы. В печи сейчас звёзды для другого заказа, и достать их раньше нельзя. Курьер ярмарки уже в пути.",
-          "evidence": [
-            "Сейчас 14:40. Вера начинает вырезать луны прямо сейчас, это занимает 5 минут.",
-            "Печь занята звёздами до 14:50. Луны можно поставить в печь только после этого.",
-            "Выпечка лун занимает 15 минут, потом они остывают 10 минут. Курьеру отдают только остывшие.",
-            "Курьер приедет в 15:10 и может подождать не больше 10 минут."
-          ],
-          "question": "Во сколько луны будут готовы к выдаче? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:15",
-          "feedback": [],
-          "explanation": "Вырезание закончится в 14:45, но печь освободится только в 14:50. Выпечка до 15:05, остывание до 15:15. Курьер ждёт до 15:20, значит успеваем.",
-          "outcome": "Луны готовы в 15:15, курьер их дождётся. Коробка снова полная, а Вера с этого дня читает накладные перед подписью.",
-          "next": "Передать заказ на ярмарку",
-          "hints": [
-            "Вырезать можно, пока печь занята звёздами.",
-            "Печь освободится только в 14:50, раньше выпечка не начнётся.",
-            "После выпечки ещё остывание."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "pl": {
-      "title": "Piekarnia księżycowych pierników",
-      "intro": "Na jarmark zamówiono 48 pierników w kształcie księżyca. Pudełko stoi na ladzie, ale widać w nim puste miejsce, a piekarka Wiera cały dzień była przy piecu i niczego nie zauważyła. Rano w piekarni byli degustatorzy, kurier Petia i pomocnica Masza. Pomóż ustalić, ilu księżyców brakuje, gdzie się podziały, czy wystarczy ciasta i kiedy pudełko można wydać.",
-      "ending": "Brakowało czterech księżyców: 48 upieczono, 42 są w pudełku, dwa połamane leżały osobno. Degustatorzy dostali gwiazdki, a cztery księżyce zawiózł na stoisko jarmarku kurier Petia według listu przewozowego, którego Wiera nie przeczytała. Z 200 g ciasta wyszło sześć księżyców: cztery do pudełka i dwa na zapas. Piec był zajęty gwiazdkami do 14:50, więc księżyce ostygły na 15:15 i kurier na nie zaczekał.",
-      "question": "Degustatorzy dostali dokładnie sześć pierników, a brakowało czterech. Dlaczego od razu było widać, że to nie oni?",
-      "steps": [
-        {
-          "title": "Ilu księżyców brakuje?",
-          "situation": "Przy ladzie Wiera pokazuje dwa zdjęcia: pełne blachy przed pakowaniem i otwarte pudełko. Obok pudełka stoi talerz z dwoma połamanymi księżycami: odłożono je, bo takie na jarmark się nie nadają.",
-          "evidence": [
-            "Upieczono 4 pełne blachy po 12 księżyców.",
-            "W pudełku jest 6 pełnych rzędów po 7 księżyców.",
-            "Dwa połamane księżyce leżą osobno na talerzu i do pudełka nie trafiły."
-          ],
-          "question": "Ilu księżyców brakuje, nie licząc połamanych? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Upieczono 4 × 12 = 48. W pudełku 6 × 7 = 42. Dwa połamane nie zniknęły, są na talerzu: 48 - 42 - 2 = 4 księżyce nie wiadomo gdzie.",
-          "outcome": "Cztery księżyce zniknęły między blachą a pudełkiem. Wiera otwiera dziennik poranka: degustacja, kurier, pomocnica.",
-          "next": "Sprawdź dziennik poranka",
-          "hints": [
-            "Policz upieczone i policz te w pudełku.",
-            "Połamane nie zniknęły, leżą osobno.",
-            "Od upieczonych odejmij i pudełko, i połamane."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Gdzie się podziały cztery księżyce?",
-          "situation": "W dzienniku zapisano wszystko, co rano wynoszono z piekarni, a do zapisów są zdjęcia. Sprawdź każdą wersję i pod względem liczby, i kształtu pierników.",
-          "evidence": [
-            "09:20: trzech degustatorów dostało po 2 pierniki. Na zdjęciu z degustacji sześć gwiazdek.",
-            "09:40: Wiera odłożyła dwa połamane księżyce na talerz.",
-            "09:50: kurier Petia wziął paczkę według listu przewozowego „4 szt., próbki na stoisko jarmarku”. Na zdjęciu stoiska cztery księżyce.",
-            "Pomocnica Masza przyszła o 10:00, ale tylko po fartuch, i do pierników nie podchodziła.",
-            "Zdjęcie blach zrobiono o 09:10: jest na nich 48 księżyców."
-          ],
-          "question": "Gdzie są cztery księżyce?",
-          "kind": "choice",
-          "options": [
-            "Zjedli je degustatorzy",
-            "Nie było ich: upieczono tylko 44 księżyce",
-            "Zawiózł je Petia na stoisko jarmarku według listu przewozowego",
-            "To właśnie te dwa połamane księżyce"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Degustatorzy dostali sześć pierników, a nie cztery, i na zdjęciu mają gwiazdki.",
-            "Na zdjęciu blach o 09:10 jest dokładnie 48 księżyców.",
-            "",
-            "Połamane są dwa, a brakuje czterech. Poza tym połamane leżą na talerzu, nigdzie nie zniknęły."
-          ],
-          "explanation": "Degustatorzy mają sześć gwiazdek: nie ta liczba i nie ten kształt. Blachy są pełne. Połamane są tylko dwa. A list przewozowy Petii mówi dokładnie o czterech próbkach i na zdjęciu stoiska są cztery księżyce. Księżyce nie zniknęły, są na jarmarku.",
-          "outcome": "Wiera przypomina sobie: podpisała list przewozowy bez czytania. Stoisko potrzebuje księżyców, więc do pudełka trzeba dopiec cztery. Idziemy sprawdzić ciasto.",
-          "next": "Sprawdź pozostałe ciasto",
-          "hints": [
-            "Przy każdej wersji sprawdź liczbę pierników i kształt na zdjęciu.",
-            "Połamane księżyce nigdzie nie zniknęły, są dwa.",
-            "Porównaj liczbę z listu przewozowego Petii z brakiem."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Czy wystarczy ciasta?",
-          "situation": "Na stole Wiera waży pozostałe ciasto. Do pudełka potrzeba czterech księżyców, ale chce jeszcze kilka na zapas, jeśli ciasto pozwoli.",
-          "evidence": [
-            "Zostało 200 g ciasta.",
-            "Na jeden księżyc idzie 30 g ciasta.",
-            "Z resztki ciasta, której nie starcza na cały księżyc, księżyca się nie robi."
-          ],
-          "question": "Ile księżyców łącznie można wyciąć z pozostałego ciasta? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "6",
-          "feedback": [],
-          "explanation": "200 : 30 = 6 i 20 g reszty. Sześć księżyców: cztery do pudełka i dwa na zapas, zostanie 20 g ciasta.",
-          "outcome": "Ciasta starcza na sześć księżyców: cztery do pudełka i dwa zapasowe. Zostało ustalić, kiedy księżyce będą gotowe: piec jest teraz zajęty.",
-          "next": "Oblicz czas wydania",
-          "hints": [
-            "Podziel zapas ciasta przez zużycie na jeden księżyc.",
-            "Reszta, której nie starcza na cały księżyc, się nie liczy.",
-            "Księżyców wyjdzie liczba całkowita."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Kiedy odebrać zamówienie?",
-          "situation": "Przy piecu Wiera patrzy na zegar. W piecu są teraz gwiazdki do innego zamówienia i nie można ich wyjąć wcześniej. Kurier z jarmarku jest już w drodze.",
-          "evidence": [
-            "Jest 14:40. Wiera zaczyna wycinać księżyce od razu, zajmuje to 5 minut.",
-            "Piec jest zajęty gwiazdkami do 14:50. Księżyce można włożyć do pieca dopiero potem.",
-            "Pieczenie księżyców trwa 15 minut, potem stygną 10 minut. Kurierowi wydaje się tylko ostygnięte.",
-            "Kurier przyjedzie o 15:10 i może zaczekać najwyżej 10 minut."
-          ],
-          "question": "O której księżyce będą gotowe do wydania? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:15",
-          "feedback": [],
-          "explanation": "Wycinanie skończy się o 14:45, ale piec zwolni się dopiero o 14:50. Pieczenie do 15:05, stygnięcie do 15:15. Kurier czeka do 15:20, więc zdążymy.",
-          "outcome": "Księżyce są gotowe o 15:15, kurier na nie zaczeka. Pudełko znów jest pełne, a Wiera od tego dnia czyta listy przewozowe przed podpisem.",
-          "next": "Przekaż zamówienie na jarmark",
-          "hints": [
-            "Wycinać można, kiedy piec jest zajęty gwiazdkami.",
-            "Piec zwolni się dopiero o 14:50, wcześniej pieczenie się nie zacznie.",
-            "Po pieczeniu jest jeszcze stygnięcie."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "en": {
-      "title": "The Moon Cookie Bakery",
-      "intro": "48 moon-shaped cookies were ordered for the fair. The box is on the counter, but there is a visible empty space in it, and Vera the baker was at the oven all day and noticed nothing. In the morning the bakery was visited by tasters, Petya the courier and Masha the helper. Help work out how many moons are missing, where they went, whether there is enough dough, and when the box can be handed over.",
-      "ending": "Four moons were missing: 48 were baked, 42 are in the box, and two broken ones lay separately. The tasters got stars, and four moons were taken to the fair stand by Petya the courier under a delivery note Vera had not read. The 200 g of dough gave six moons: four for the box and two spare. The oven was busy with stars until 14:50, so the moons had cooled by 15:15, and the courier waited for them.",
-      "question": "The tasters received exactly six cookies, and four were missing. Why was it immediately clear that they were not the cause?",
-      "steps": [
-        {
-          "title": "How many moons are missing?",
-          "situation": "At the counter, Vera shows two photos: full trays before packing and the open box. Beside the box is a plate with two broken moons: they were set aside because broken ones are no good for the fair.",
-          "evidence": [
-            "4 full trays of 12 moons each were baked.",
-            "The box holds 6 full rows of 7 moons.",
-            "Two broken moons lie separately on a plate and did not go into the box."
-          ],
-          "question": "How many moons are missing, not counting the broken ones? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Baked: 4 × 12 = 48. In the box: 6 × 7 = 42. The two broken ones did not vanish, they are on the plate: 48 - 42 - 2 = 4 moons are unaccounted for.",
-          "outcome": "Four moons disappeared between the tray and the box. Vera opens the morning log: the tasting, the courier, the helper.",
-          "next": "Check the morning log",
-          "hints": [
-            "Count the baked ones and count the ones in the box.",
-            "The broken ones did not vanish; they lie separately.",
-            "Subtract both the box and the broken ones from the baked ones."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Where did the four moons go?",
-          "situation": "The log records everything that left the bakery this morning, and there are photos to go with the entries. Check each theory by both the number and the shape of the cookies.",
-          "evidence": [
-            "09:20: three tasters received 2 cookies each. The tasting photo shows six stars.",
-            "09:40: Vera set two broken moons aside on a plate.",
-            "09:50: Petya the courier took a bag under a delivery note reading “4 pcs, samples for the fair stand”. The stand photo shows four moons.",
-            "Masha the helper came in at 10:00, but only for her apron, and did not go near the cookies.",
-            "The tray photo was taken at 09:10: it shows 48 moons."
-          ],
-          "question": "Where are the four moons?",
-          "kind": "choice",
-          "options": [
-            "The tasters ate them",
-            "They never existed: only 44 moons were baked",
-            "Petya took them to the fair stand under the delivery note",
-            "They are the two broken moons"
-          ],
-          "answer": 2,
-          "feedback": [
-            "The tasters received six cookies, not four, and in the photo they have stars.",
-            "The tray photo at 09:10 shows exactly 48 moons.",
-            "",
-            "There are two broken ones, and four are missing. Besides, the broken ones are on the plate; they went nowhere."
-          ],
-          "explanation": "The tasters have six stars: wrong number and wrong shape. The trays were full. Only two are broken. But Petya’s delivery note says exactly four samples, and the stand photo shows four moons. The moons did not vanish; they are at the fair.",
-          "outcome": "Vera remembers: she signed the delivery note without looking. The stand needs its moons, so four more must be baked for the box. Let’s check the dough.",
-          "next": "Check the remaining dough",
-          "hints": [
-            "For each theory check the number of cookies and the shape in the photo.",
-            "The broken moons went nowhere, and there are two of them.",
-            "Compare the number on Petya’s delivery note with the shortfall."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Is there enough dough?",
-          "situation": "At the table, Vera weighs the remaining dough. The box needs four moons, but she wants a few spare ones too, if the dough allows.",
-          "evidence": [
-            "200 g of dough is left.",
-            "One moon takes 30 g of dough.",
-            "No moon is made from a leftover that is not enough for a whole one."
-          ],
-          "question": "How many moons in total can be cut from the remaining dough? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "6",
-          "feedback": [],
-          "explanation": "200 ÷ 30 = 6 with 20 g left over. Six moons: four for the box and two spare, with 20 g of dough remaining.",
-          "outcome": "There is enough dough for six moons: four for the box and two spare. Now we need to know when the moons will be ready: the oven is busy right now.",
-          "next": "Work out the handover time",
-          "hints": [
-            "Divide the dough supply by the amount for one moon.",
-            "A leftover that is not enough for a whole moon does not count.",
-            "The number of moons will be a whole number."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "When can the order be collected?",
-          "situation": "At the oven, Vera looks at the clock. The oven currently holds stars for another order, and they cannot come out early. The fair’s courier is already on the way.",
-          "evidence": [
-            "It is 14:40 now. Vera starts cutting the moons right away; it takes 5 minutes.",
-            "The oven is busy with stars until 14:50. The moons can go in only after that.",
-            "Baking the moons takes 15 minutes, then they cool for 10 minutes. Only cooled moons are handed to the courier.",
-            "The courier arrives at 15:10 and can wait no more than 10 minutes."
-          ],
-          "question": "What time will the moons be ready to hand over? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:15",
-          "feedback": [],
-          "explanation": "Cutting finishes at 14:45, but the oven is free only at 14:50. Baking until 15:05, cooling until 15:15. The courier waits until 15:20, so we make it.",
-          "outcome": "The moons are ready at 15:15, and the courier waits for them. The box is full again, and from today Vera reads delivery notes before signing.",
-          "next": "Send the order to the fair",
-          "hints": [
-            "Cutting can be done while the oven is busy with stars.",
-            "The oven is free only at 14:50; baking cannot start before that.",
-            "After baking there is still the cooling."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "uk": {
-      "title": "Пекарня місячних пряників",
-      "intro": "Для ярмарку замовили 48 пряників у формі місяця. Коробка стоїть на прилавку, але в ній помітне порожнє місце, а сама пекарка Віра була весь день біля печі й нічого не помітила. Уранці в пекарні були дегустатори, кур’єр Петя і помічниця Маша. Допоможи з’ясувати, скількох місяців бракує, куди вони поділися, чи вистачить тіста і коли коробку можна віддавати.",
-      "ending": "Бракувало чотирьох місяців: 48 спекли, 42 в коробці, два розбиті лежали окремо. Дегустатори отримали зірки, а чотири місяці відвіз на стенд ярмарку кур’єр Петя за накладною, якої Віра не прочитала. Із 200 г тіста вийшло шість місяців: чотири в коробку і два про запас. Піч була зайнята зірками до 14:50, тому місяці охололи до 15:15, і кур’єр їх дочекався.",
-      "question": "Дегустатори отримали рівно шість пряників, а бракувало чотирьох. Чому одразу було видно, що річ не в них?",
-      "steps": [
-        {
-          "title": "Скількох місяців бракує?",
-          "situation": "Біля прилавка Віра показує два знімки: повні дека перед пакуванням і відкриту коробку. Поруч із коробкою тарілка з двома розбитими місяцями: їх відклали, бо на ярмарок такі не годяться.",
-          "evidence": [
-            "Спекли 4 повні дека по 12 місяців.",
-            "У коробці 6 повних рядів по 7 місяців.",
-            "Два розбиті місяці лежать окремо на тарілці й у коробку не потрапили."
-          ],
-          "question": "Скількох місяців бракує, не рахуючи розбитих? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "4",
-          "feedback": [],
-          "explanation": "Спекли 4 × 12 = 48. У коробці 6 × 7 = 42. Розбиті два не зникли, вони на тарілці: 48 - 42 - 2 = 4 місяці невідомо де.",
-          "outcome": "Чотири місяці зникли між деком і коробкою. Віра відкриває журнал ранку: дегустація, кур’єр, помічниця.",
-          "next": "Перевірити журнал ранку",
-          "hints": [
-            "Порахуй спечені й порахуй у коробці.",
-            "Розбиті не зникли, вони лежать окремо.",
-            "Відніми від спечених і коробку, і розбиті."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Куди поділися чотири місяці?",
-          "situation": "У журналі записано все, що виносили з пекарні вранці, а до записів є фотографії. Перевір кожну версію і за кількістю, і за формою пряників.",
-          "evidence": [
-            "09:20: три дегустатори отримали по 2 пряники. На фото дегустації шість зірок.",
-            "09:40: Віра відклала два розбиті місяці на тарілку.",
-            "09:50: кур’єр Петя взяв пакет за накладною «4 шт., зразки для стенда ярмарку». На фото стенда чотири місяці.",
-            "Помічниця Маша приходила о 10:00, але лише по фартух, і до пряників не підходила.",
-            "Фото дек зроблено о 09:10: на них 48 місяців."
-          ],
-          "question": "Де чотири місяці?",
-          "kind": "choice",
-          "options": [
-            "Їх з’їли дегустатори",
-            "Їх не було: спекли лише 44 місяці",
-            "Їх відвіз Петя на стенд ярмарку за накладною",
-            "Це і є два розбиті місяці"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Дегустатори отримали шість пряників, а не чотири, і на фото в них зірки.",
-            "На фото дек о 09:10 рівно 48 місяців.",
-            "",
-            "Розбитих два, а бракує чотирьох. До того ж розбиті лежать на тарілці, вони нікуди не поділися."
-          ],
-          "explanation": "У дегустаторів шість зірок: не та кількість і не та форма. Дека повні. Розбитих лише два. А накладна Петі говорить рівно про чотири зразки, і на фото стенда чотири місяці. Місяці не зникли, вони на ярмарку.",
-          "outcome": "Віра згадує: вона підписала накладну не дивлячись. Стенду місяці потрібні, отже для коробки треба допекти чотири. Ідемо перевіряти тісто.",
-          "next": "Перевірити тісто, що залишилося",
-          "hints": [
-            "У кожної версії перевір кількість пряників і форму на фотографії.",
-            "Розбиті місяці нікуди не поділися, їх два.",
-            "Порівняй число в накладній Петі з нестачею."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Чи вистачить тіста?",
-          "situation": "На столі Віра зважує тісто, що залишилося. Для коробки потрібно чотири місяці, але вона хоче ще кілька про запас, якщо тісто дозволить.",
-          "evidence": [
-            "Залишилося 200 г тіста.",
-            "На один місяць іде 30 г тіста.",
-            "Із залишку тіста, якого не вистачає на цілий місяць, місяця не роблять."
-          ],
-          "question": "Скільки всього місяців можна вирізати з тіста, що залишилося? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "6",
-          "feedback": [],
-          "explanation": "200 : 30 = 6 і 20 г у залишку. Шість місяців: чотири в коробку і два про запас, 20 г тіста залишиться.",
-          "outcome": "Тіста вистачає на шість місяців: чотири для коробки і два запасні. Залишилося дізнатися, коли місяці будуть готові: піч зараз зайнята.",
-          "next": "Розрахувати час видачі",
-          "hints": [
-            "Поділи запас тіста на витрату одного місяця.",
-            "Залишок, якого не вистачає на цілий місяць, не рахується.",
-            "Місяців вийде ціле число."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Коли забирати замовлення?",
-          "situation": "Біля печі Віра дивиться на годинник. У печі зараз зірки для іншого замовлення, і дістати їх раніше не можна. Кур’єр ярмарку вже в дорозі.",
-          "evidence": [
-            "Зараз 14:40. Віра починає вирізати місяці просто зараз, це займає 5 хвилин.",
-            "Піч зайнята зірками до 14:50. Місяці можна поставити в піч лише після цього.",
-            "Випікання місяців займає 15 хвилин, потім вони охолоджуються 10 хвилин. Кур’єрові віддають лише охололі.",
-            "Кур’єр приїде о 15:10 і може почекати не більше ніж 10 хвилин."
-          ],
-          "question": "О котрій місяці будуть готові до видачі? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "15:15",
-          "feedback": [],
-          "explanation": "Вирізання закінчиться о 14:45, але піч звільниться лише о 14:50. Випікання до 15:05, охолодження до 15:15. Кур’єр чекає до 15:20, отже встигаємо.",
-          "outcome": "Місяці готові о 15:15, кур’єр їх дочекається. Коробка знову повна, а Віра відтепер читає накладні перед підписом.",
-          "next": "Передати замовлення на ярмарок",
-          "hints": [
-            "Вирізати можна, поки піч зайнята зірками.",
-            "Піч звільниться лише о 14:50, раніше випікання не почнеться.",
-            "Після випікання ще охолодження."
-          ],
-          "scene": 3
-        }
-      ]
-    }
+ "id": "bakery",
+ "number": "008",
+ "variants": [
+  {
+   "values": {
+    "tr": 4,
+    "tp": 12,
+    "baked": 48,
+    "br": 6,
+    "bp": 7,
+    "inbox": 42,
+    "bk": 2,
+    "missing": 4,
+    "tn": 3,
+    "te": 2,
+    "samples": 6,
+    "fake": 44,
+    "dg": 200,
+    "pm": 30,
+    "cnt": 6,
+    "rest": 20,
+    "spare": 2,
+    "now": "14:40",
+    "cut": 5,
+    "cutdone": "14:45",
+    "ob": "14:50",
+    "bake": 15,
+    "bakedt": "15:05",
+    "cool": 10,
+    "ready": "15:15",
+    "cr": "15:10",
+    "wait": 10,
+    "crmax": "15:20"
+   },
+   "answers": [
+    "4",
+    2,
+    "6",
+    "15:15"
+   ],
+   "orders": [
+    null,
+    [
+     1,
+     0,
+     3,
+     2
+    ],
+    null,
+    null
+   ]
+  },
+  {
+   "values": {
+    "tr": 5,
+    "tp": 10,
+    "baked": 50,
+    "br": 7,
+    "bp": 6,
+    "inbox": 42,
+    "bk": 3,
+    "missing": 5,
+    "tn": 3,
+    "te": 2,
+    "samples": 6,
+    "fake": 45,
+    "dg": 330,
+    "pm": 40,
+    "cnt": 8,
+    "rest": 10,
+    "spare": 3,
+    "now": "15:00",
+    "cut": 6,
+    "cutdone": "15:06",
+    "ob": "15:12",
+    "bake": 18,
+    "bakedt": "15:30",
+    "cool": 8,
+    "ready": "15:38",
+    "cr": "15:30",
+    "wait": 10,
+    "crmax": "15:40"
+   },
+   "answers": [
+    "5",
+    2,
+    "8",
+    "15:38"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     3,
+     0,
+     1
+    ],
+    null,
+    null
+   ]
+  },
+  {
+   "values": {
+    "tr": 3,
+    "tp": 15,
+    "baked": 45,
+    "br": 5,
+    "bp": 8,
+    "inbox": 40,
+    "bk": 2,
+    "missing": 3,
+    "tn": 2,
+    "te": 2,
+    "samples": 4,
+    "fake": 42,
+    "dg": 170,
+    "pm": 30,
+    "cnt": 5,
+    "rest": 20,
+    "spare": 2,
+    "now": "13:50",
+    "cut": 4,
+    "cutdone": "13:54",
+    "ob": "14:05",
+    "bake": 12,
+    "bakedt": "14:17",
+    "cool": 12,
+    "ready": "14:29",
+    "cr": "14:25",
+    "wait": 5,
+    "crmax": "14:30"
+   },
+   "answers": [
+    "3",
+    2,
+    "5",
+    "14:29"
+   ],
+   "orders": [
+    null,
+    [
+     0,
+     2,
+     3,
+     1
+    ],
+    null,
+    null
+   ]
+  },
+  {
+   "values": {
+    "tr": 4,
+    "tp": 14,
+    "baked": 56,
+    "br": 8,
+    "bp": 6,
+    "inbox": 48,
+    "bk": 2,
+    "missing": 6,
+    "tn": 3,
+    "te": 3,
+    "samples": 9,
+    "fake": 50,
+    "dg": 280,
+    "pm": 30,
+    "cnt": 9,
+    "rest": 10,
+    "spare": 3,
+    "now": "16:10",
+    "cut": 5,
+    "cutdone": "16:15",
+    "ob": "16:18",
+    "bake": 20,
+    "bakedt": "16:38",
+    "cool": 10,
+    "ready": "16:48",
+    "cr": "16:40",
+    "wait": 10,
+    "crmax": "16:50"
+   },
+   "answers": [
+    "6",
+    2,
+    "9",
+    "16:48"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     1,
+     0,
+     3
+    ],
+    null,
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Пекарня лунных пряников",
+   "intro": "Для ярмарки заказали {baked} пряников в форме луны. Коробка стоит на прилавке, но в ней заметно пустое место, а сама пекарь Вера была весь день у печи и ничего не заметила. Утром в пекарне были дегустаторы, курьер Петя и помощница Маша. Помоги выяснить, сколько лун не хватает, куда они делись, хватит ли теста и когда коробку можно отдавать.",
+   "ending": "Не хватало {missing|луны|лун|лун}: {baked} испекли, {inbox} в коробке, {bk|разбитая|разбитые|разбитых} лежали отдельно. Дегустаторы получили звёзды, а {missing|луну|луны|лун} увёз на стенд ярмарки курьер Петя по накладной, которую Вера не прочитала. Из {dg} г теста вышло {cnt|луна|луны|лун}: {missing} в коробку и {spare} про запас. Печь была занята звёздами до {ob}, поэтому луны остыли к {ready}, и курьер их дождался.",
+   "question": "Дегустаторы получили ровно {samples|пряник|пряника|пряников}, а не хватало {missing}. Почему сразу было видно, что дело не в них?",
+   "steps": [
+    {
+     "title": "Сколько лун не хватает?",
+     "situation": "У прилавка Вера показывает два снимка: полные противни перед упаковкой и открытую коробку. Рядом с коробкой тарелка с разбитыми лунами: их отложили, потому что на ярмарку такие не годятся.",
+     "evidence": [
+      "Испекли {tr} полных противня по {tp} лун.",
+      "В коробке {br} полных рядов по {bp} лун.",
+      "{bk|разбитая луна лежит|разбитые луны лежат|разбитых лун лежат} отдельно на тарелке и в коробку не попали."
+     ],
+     "question": "Сколько лун не хватает, не считая разбитых? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Испекли {tr} × {tp} = {baked}. В коробке {br} × {bp} = {inbox}. Разбитые не пропали, они на тарелке: {baked} - {inbox} - {bk} = {missing|луна|луны|лун} неизвестно где.",
+     "outcome": "{missing|луна исчезла|луны исчезли|лун исчезли} между противнем и коробкой. Вера открывает журнал утра: дегустация, курьер, помощница.",
+     "next": "Проверить журнал утра",
+     "hints": [
+      "Посчитай испечённые и посчитай в коробке.",
+      "Разбитые не пропали, они лежат отдельно.",
+      "Вычти из испечённых и коробку, и разбитые."
+     ],
+     "scene": 0,
+     "answer": "4"
+    },
+    {
+     "title": "Куда делись луны?",
+     "situation": "В журнале записано всё, что выносили из пекарни утром, а к записям есть фотографии. Проверь каждую версию и по числу, и по форме пряников.",
+     "evidence": [
+      "09:20: {tn} дегустатора получили по {te} пряника. На фото дегустации {samples|звезда|звезды|звёзд}.",
+      "09:40: Вера отложила {bk|разбитую луну|разбитые луны|разбитых лун} на тарелку.",
+      "09:50: курьер Петя взял пакет по накладной «{missing} шт., образцы для стенда ярмарки». На фото стенда {missing|луна|луны|лун}.",
+      "Помощница Маша приходила в 10:00, но только за фартуком, и к пряникам не подходила.",
+      "Фото противней сделано в 09:10: на них {baked} лун."
+     ],
+     "question": "Где недостающие луны?",
+     "kind": "choice",
+     "options": [
+      "Их съели дегустаторы",
+      "Их не было: испекли только {fake|луну|луны|лун}",
+      "Их увёз Петя на стенд ярмарки по накладной",
+      "Это и есть разбитые луны"
+     ],
+     "feedback": [
+      "Дегустаторы получили {samples|пряник|пряника|пряников}, а не {missing}, и на фото у них звёзды.",
+      "На фото противней в 09:10 ровно {baked} лун.",
+      "",
+      "Разбитых {bk}, а не хватает {missing}. К тому же разбитые лежат на тарелке, они никуда не делись."
+     ],
+     "explanation": "У дегустаторов {samples|звезда|звезды|звёзд}: не то число и не та форма. Противни полные. Разбитых только {bk}. А накладная Пети говорит ровно о {missing} образцах, и на фото стенда {missing|луна|луны|лун}. Луны не пропали, они на ярмарке.",
+     "outcome": "Вера вспоминает: она подписала накладную не глядя. Стенду луны нужны, значит для коробки надо допечь {missing}. Идём проверять тесто.",
+     "next": "Проверить оставшееся тесто",
+     "hints": [
+      "У каждой версии проверь число пряников и форму на фотографии.",
+      "Разбитые луны никуда не делись, их {bk}.",
+      "Сравни число в накладной Пети с недостачей."
+     ],
+     "scene": 1,
+     "answer": 2
+    },
+    {
+     "title": "Хватит ли теста?",
+     "situation": "На столе Вера взвешивает оставшееся тесто. Для коробки нужно {missing|луна|луны|лун}, но она хочет ещё несколько про запас, если тесто позволит.",
+     "evidence": [
+      "Осталось {dg} г теста.",
+      "На одну луну уходит {pm} г теста.",
+      "Из остатка теста, которого не хватает на целую луну, луну не делают."
+     ],
+     "question": "Сколько всего лун можно вырезать из оставшегося теста? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dg} : {pm} = {cnt} и {rest} г в остатке. {cnt|луна|луны|лун}: {missing} в коробку и {spare} про запас, {rest} г теста останется.",
+     "outcome": "Теста хватает на {cnt|луну|луны|лун}: {missing} для коробки и {spare} запасные. Осталось узнать, когда луны будут готовы: печь сейчас занята.",
+     "next": "Рассчитать время выдачи",
+     "hints": [
+      "Раздели запас теста на расход одной луны.",
+      "Остаток, которого не хватает на целую луну, не считается.",
+      "Лун получится целое число."
+     ],
+     "scene": 2,
+     "answer": "6"
+    },
+    {
+     "title": "Когда забирать заказ?",
+     "situation": "У печи Вера смотрит на часы. В печи сейчас звёзды для другого заказа, и достать их раньше нельзя. Курьер ярмарки уже в пути.",
+     "evidence": [
+      "Сейчас {now}. Вера начинает вырезать луны прямо сейчас, это занимает {cut|минуту|минуты|минут}.",
+      "Печь занята звёздами до {ob}. Луны можно поставить в печь только после этого.",
+      "Выпечка лун занимает {bake|минуту|минуты|минут}, потом они остывают {cool|минуту|минуты|минут}. Курьеру отдают только остывшие.",
+      "Курьер приедет в {cr} и может подождать не больше {wait|минуты|минут|минут}."
+     ],
+     "question": "Во сколько луны будут готовы к выдаче? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Вырезание закончится в {cutdone}, но печь освободится только в {ob}. Выпечка до {bakedt}, остывание до {ready}. Курьер ждёт до {crmax}, значит успеваем.",
+     "outcome": "Луны готовы в {ready}, курьер их дождётся. Коробка снова полная, а Вера с этого дня читает накладные перед подписью.",
+     "next": "Передать заказ на ярмарку",
+     "hints": [
+      "Вырезать можно, пока печь занята звёздами.",
+      "Печь освободится только в {ob}, раньше выпечка не начнётся.",
+      "После выпечки ещё остывание."
+     ],
+     "scene": 3,
+     "answer": "15:15"
+    }
+   ]
+  },
+  "pl": {
+   "title": "Piekarnia księżycowych pierników",
+   "intro": "Na jarmark zamówiono {baked} pierników w kształcie księżyca. Pudełko stoi na ladzie, ale widać w nim puste miejsce, a piekarka Wiera cały dzień była przy piecu i niczego nie zauważyła. Rano w piekarni byli degustatorzy, kurier Petia i pomocnica Masza. Pomóż ustalić, ilu księżyców brakuje, gdzie się podziały, czy wystarczy ciasta i kiedy pudełko można wydać.",
+   "ending": "Brakowało {missing|księżyca|księżyców|księżyców}: {baked} upieczono, {inbox} jest w pudełku, {bk|połamany leżał|połamane leżały|połamanych leżało} osobno. Degustatorzy dostali gwiazdki, a {missing|księżyc|księżyce|księżyców} zawiózł na stoisko jarmarku kurier Petia według listu przewozowego, którego Wiera nie przeczytała. Z {dg} g ciasta wyszło {cnt|księżyc|księżyce|księżyców}: {missing} do pudełka i {spare} na zapas. Piec był zajęty gwiazdkami do {ob}, więc księżyce ostygły na {ready} i kurier na nie zaczekał.",
+   "question": "Degustatorzy dostali dokładnie {samples|piernik|pierniki|pierników}, a brakowało {missing}. Dlaczego od razu było widać, że to nie oni?",
+   "steps": [
+    {
+     "title": "Ilu księżyców brakuje?",
+     "situation": "Przy ladzie Wiera pokazuje dwa zdjęcia: pełne blachy przed pakowaniem i otwarte pudełko. Obok pudełka stoi talerz z połamanymi księżycami: odłożono je, bo takie na jarmark się nie nadają.",
+     "evidence": [
+      "Upieczono {tr} pełne blachy po {tp} księżyców.",
+      "W pudełku jest {br} pełnych rzędów po {bp} księżyców.",
+      "{bk|połamany księżyc leży|połamane księżyce leżą|połamanych księżyców leży} osobno na talerzu i do pudełka nie trafiły."
+     ],
+     "question": "Ilu księżyców brakuje, nie licząc połamanych? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Upieczono {tr} × {tp} = {baked}. W pudełku {br} × {bp} = {inbox}. Połamane nie zniknęły, są na talerzu: {baked} - {inbox} - {bk} = {missing|księżyc|księżyce|księżyców} nie wiadomo gdzie.",
+     "outcome": "{missing|księżyc zniknął|księżyce zniknęły|księżyców zniknęło} między blachą a pudełkiem. Wiera otwiera dziennik poranka: degustacja, kurier, pomocnica.",
+     "next": "Sprawdź dziennik poranka",
+     "hints": [
+      "Policz upieczone i policz te w pudełku.",
+      "Połamane nie zniknęły, leżą osobno.",
+      "Od upieczonych odejmij i pudełko, i połamane."
+     ],
+     "scene": 0,
+     "answer": "4"
+    },
+    {
+     "title": "Gdzie się podziały księżyce?",
+     "situation": "W dzienniku zapisano wszystko, co rano wynoszono z piekarni, a do zapisów są zdjęcia. Sprawdź każdą wersję i pod względem liczby, i kształtu pierników.",
+     "evidence": [
+      "09:20: {tn} degustatorów dostało po {te} pierniki. Na zdjęciu z degustacji {samples|gwiazdka|gwiazdki|gwiazdek}.",
+      "09:40: Wiera odłożyła {bk|połamany księżyc|połamane księżyce|połamanych księżyców} na talerz.",
+      "09:50: kurier Petia wziął paczkę według listu przewozowego „{missing} szt., próbki na stoisko jarmarku”. Na zdjęciu stoiska {missing|księżyc|księżyce|księżyców}.",
+      "Pomocnica Masza przyszła o 10:00, ale tylko po fartuch, i do pierników nie podchodziła.",
+      "Zdjęcie blach zrobiono o 09:10: jest na nich {baked} księżyców."
+     ],
+     "question": "Gdzie są brakujące księżyce?",
+     "kind": "choice",
+     "options": [
+      "Zjedli je degustatorzy",
+      "Nie było ich: upieczono tylko {fake|księżyc|księżyce|księżyców}",
+      "Zawiózł je Petia na stoisko jarmarku według listu przewozowego",
+      "To właśnie te połamane księżyce"
+     ],
+     "feedback": [
+      "Degustatorzy dostali {samples|piernik|pierniki|pierników}, a nie {missing}, i na zdjęciu mają gwiazdki.",
+      "Na zdjęciu blach o 09:10 jest dokładnie {baked} księżyców.",
+      "",
+      "Połamanych jest {bk}, a brakuje {missing}. Poza tym połamane leżą na talerzu, nigdzie nie zniknęły."
+     ],
+     "explanation": "Degustatorzy mają {samples|gwiazdkę|gwiazdki|gwiazdek}: nie ta liczba i nie ten kształt. Blachy są pełne. Połamanych jest tylko {bk}. A list przewozowy Petii mówi dokładnie o {missing} próbkach i na zdjęciu stoiska jest {missing|księżyc|księżyce|księżyców}. Księżyce nie zniknęły, są na jarmarku.",
+     "outcome": "Wiera przypomina sobie: podpisała list przewozowy bez czytania. Stoisko potrzebuje księżyców, więc do pudełka trzeba dopiec {missing}. Idziemy sprawdzić ciasto.",
+     "next": "Sprawdź pozostałe ciasto",
+     "hints": [
+      "Przy każdej wersji sprawdź liczbę pierników i kształt na zdjęciu.",
+      "Połamane księżyce nigdzie nie zniknęły, jest ich {bk}.",
+      "Porównaj liczbę z listu przewozowego Petii z brakiem."
+     ],
+     "scene": 1,
+     "answer": 2
+    },
+    {
+     "title": "Czy wystarczy ciasta?",
+     "situation": "Na stole Wiera waży pozostałe ciasto. Do pudełka potrzeba {missing|księżyca|księżyców|księżyców}, ale chce jeszcze kilka na zapas, jeśli ciasto pozwoli.",
+     "evidence": [
+      "Zostało {dg} g ciasta.",
+      "Na jeden księżyc idzie {pm} g ciasta.",
+      "Z resztki ciasta, której nie starcza na cały księżyc, księżyca się nie robi."
+     ],
+     "question": "Ile księżyców łącznie można wyciąć z pozostałego ciasta? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dg} : {pm} = {cnt} i {rest} g reszty. {cnt|księżyc|księżyce|księżyców}: {missing} do pudełka i {spare} na zapas, zostanie {rest} g ciasta.",
+     "outcome": "Ciasta starcza na {cnt|księżyc|księżyce|księżyców}: {missing} do pudełka i {spare} zapasowe. Zostało ustalić, kiedy księżyce będą gotowe: piec jest teraz zajęty.",
+     "next": "Oblicz czas wydania",
+     "hints": [
+      "Podziel zapas ciasta przez zużycie na jeden księżyc.",
+      "Reszta, której nie starcza na cały księżyc, się nie liczy.",
+      "Księżyców wyjdzie liczba całkowita."
+     ],
+     "scene": 2,
+     "answer": "6"
+    },
+    {
+     "title": "Kiedy odebrać zamówienie?",
+     "situation": "Przy piecu Wiera patrzy na zegar. W piecu są teraz gwiazdki do innego zamówienia i nie można ich wyjąć wcześniej. Kurier z jarmarku jest już w drodze.",
+     "evidence": [
+      "Jest {now}. Wiera zaczyna wycinać księżyce od razu, zajmuje to {cut|minutę|minuty|minut}.",
+      "Piec jest zajęty gwiazdkami do {ob}. Księżyce można włożyć do pieca dopiero potem.",
+      "Pieczenie księżyców trwa {bake|minutę|minuty|minut}, potem stygną {cool|minutę|minuty|minut}. Kurierowi wydaje się tylko ostygnięte.",
+      "Kurier przyjedzie o {cr} i może zaczekać najwyżej {wait|minutę|minuty|minut}."
+     ],
+     "question": "O której księżyce będą gotowe do wydania? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Wycinanie skończy się o {cutdone}, ale piec zwolni się dopiero o {ob}. Pieczenie do {bakedt}, stygnięcie do {ready}. Kurier czeka do {crmax}, więc zdążymy.",
+     "outcome": "Księżyce są gotowe o {ready}, kurier na nie zaczeka. Pudełko znów jest pełne, a Wiera od tego dnia czyta listy przewozowe przed podpisem.",
+     "next": "Przekaż zamówienie na jarmark",
+     "hints": [
+      "Wycinać można, kiedy piec jest zajęty gwiazdkami.",
+      "Piec zwolni się dopiero o {ob}, wcześniej pieczenie się nie zacznie.",
+      "Po pieczeniu jest jeszcze stygnięcie."
+     ],
+     "scene": 3,
+     "answer": "15:15"
+    }
+   ]
+  },
+  "en": {
+   "title": "The Moon Cookie Bakery",
+   "intro": "{baked} moon-shaped cookies were ordered for the fair. The box is on the counter, but there is a visible empty space in it, and Vera the baker was at the oven all day and noticed nothing. In the morning the bakery was visited by tasters, Petya the courier and Masha the helper. Help work out how many moons are missing, where they went, whether there is enough dough, and when the box can be handed over.",
+   "ending": "{missing} moons were missing: {baked} were baked, {inbox} are in the box, and {bk} broken ones lay separately. The tasters got stars, and {missing} moons were taken to the fair stand by Petya the courier under a delivery note Vera had not read. The {dg} g of dough gave {cnt} moons: {missing} for the box and {spare} spare. The oven was busy with stars until {ob}, so the moons had cooled by {ready}, and the courier waited for them.",
+   "question": "The tasters received exactly {samples} cookies, and {missing} were missing. Why was it immediately clear that they were not the cause?",
+   "steps": [
+    {
+     "title": "How many moons are missing?",
+     "situation": "At the counter, Vera shows two photos: full trays before packing and the open box. Beside the box is a plate with broken moons: they were set aside because broken ones are no good for the fair.",
+     "evidence": [
+      "{tr} full trays of {tp} moons each were baked.",
+      "The box holds {br} full rows of {bp} moons.",
+      "{bk} broken moons lie separately on a plate and did not go into the box."
+     ],
+     "question": "How many moons are missing, not counting the broken ones? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Baked: {tr} × {tp} = {baked}. In the box: {br} × {bp} = {inbox}. The broken ones did not vanish, they are on the plate: {baked} - {inbox} - {bk} = {missing} moons are unaccounted for.",
+     "outcome": "{missing} moons disappeared between the tray and the box. Vera opens the morning log: the tasting, the courier, the helper.",
+     "next": "Check the morning log",
+     "hints": [
+      "Count the baked ones and count the ones in the box.",
+      "The broken ones did not vanish; they lie separately.",
+      "Subtract both the box and the broken ones from the baked ones."
+     ],
+     "scene": 0,
+     "answer": "4"
+    },
+    {
+     "title": "Where did the moons go?",
+     "situation": "The log records everything that left the bakery this morning, and there are photos to go with the entries. Check each theory by both the number and the shape of the cookies.",
+     "evidence": [
+      "09:20: {tn} tasters received {te} cookies each. The tasting photo shows {samples} stars.",
+      "09:40: Vera set {bk} broken moons aside on a plate.",
+      "09:50: Petya the courier took a bag under a delivery note reading “{missing} pcs, samples for the fair stand”. The stand photo shows {missing} moons.",
+      "Masha the helper came in at 10:00, but only for her apron, and did not go near the cookies.",
+      "The tray photo was taken at 09:10: it shows {baked} moons."
+     ],
+     "question": "Where are the missing moons?",
+     "kind": "choice",
+     "options": [
+      "The tasters ate them",
+      "They never existed: only {fake} moons were baked",
+      "Petya took them to the fair stand under the delivery note",
+      "They are the broken moons"
+     ],
+     "feedback": [
+      "The tasters received {samples} cookies, not {missing}, and in the photo they have stars.",
+      "The tray photo at 09:10 shows exactly {baked} moons.",
+      "",
+      "There are {bk} broken ones, and {missing} are missing. Besides, the broken ones are on the plate; they went nowhere."
+     ],
+     "explanation": "The tasters have {samples} stars: wrong number and wrong shape. The trays were full. Only {bk} are broken. But Petya’s delivery note says exactly {missing} samples, and the stand photo shows {missing} moons. The moons did not vanish; they are at the fair.",
+     "outcome": "Vera remembers: she signed the delivery note without looking. The stand needs its moons, so {missing} more must be baked for the box. Let’s check the dough.",
+     "next": "Check the remaining dough",
+     "hints": [
+      "For each theory check the number of cookies and the shape in the photo.",
+      "The broken moons went nowhere, and there are {bk} of them.",
+      "Compare the number on Petya’s delivery note with the shortfall."
+     ],
+     "scene": 1,
+     "answer": 2
+    },
+    {
+     "title": "Is there enough dough?",
+     "situation": "At the table, Vera weighs the remaining dough. The box needs {missing} moons, but she wants a few spare ones too, if the dough allows.",
+     "evidence": [
+      "{dg} g of dough is left.",
+      "One moon takes {pm} g of dough.",
+      "No moon is made from a leftover that is not enough for a whole one."
+     ],
+     "question": "How many moons in total can be cut from the remaining dough? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dg} ÷ {pm} = {cnt} with {rest} g left over. {cnt} moons: {missing} for the box and {spare} spare, with {rest} g of dough remaining.",
+     "outcome": "There is enough dough for {cnt} moons: {missing} for the box and {spare} spare. Now we need to know when the moons will be ready: the oven is busy right now.",
+     "next": "Work out the handover time",
+     "hints": [
+      "Divide the dough supply by the amount for one moon.",
+      "A leftover that is not enough for a whole moon does not count.",
+      "The number of moons will be a whole number."
+     ],
+     "scene": 2,
+     "answer": "6"
+    },
+    {
+     "title": "When can the order be collected?",
+     "situation": "At the oven, Vera looks at the clock. The oven currently holds stars for another order, and they cannot come out early. The fair’s courier is already on the way.",
+     "evidence": [
+      "It is {now} now. Vera starts cutting the moons right away; it takes {cut} minutes.",
+      "The oven is busy with stars until {ob}. The moons can go in only after that.",
+      "Baking the moons takes {bake} minutes, then they cool for {cool} minutes. Only cooled moons are handed to the courier.",
+      "The courier arrives at {cr} and can wait no more than {wait} minutes."
+     ],
+     "question": "What time will the moons be ready to hand over? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Cutting finishes at {cutdone}, but the oven is free only at {ob}. Baking until {bakedt}, cooling until {ready}. The courier waits until {crmax}, so we make it.",
+     "outcome": "The moons are ready at {ready}, and the courier waits for them. The box is full again, and from today Vera reads delivery notes before signing.",
+     "next": "Send the order to the fair",
+     "hints": [
+      "Cutting can be done while the oven is busy with stars.",
+      "The oven is free only at {ob}; baking cannot start before that.",
+      "After baking there is still the cooling."
+     ],
+     "scene": 3,
+     "answer": "15:15"
+    }
+   ]
+  },
+  "uk": {
+   "title": "Пекарня місячних пряників",
+   "intro": "Для ярмарку замовили {baked} пряників у формі місяця. Коробка стоїть на прилавку, але в ній помітне порожнє місце, а сама пекарка Віра була весь день біля печі й нічого не помітила. Уранці в пекарні були дегустатори, кур’єр Петя і помічниця Маша. Допоможи з’ясувати, скількох місяців бракує, куди вони поділися, чи вистачить тіста і коли коробку можна віддавати.",
+   "ending": "Бракувало {missing|місяця|місяців|місяців}: {baked} спекли, {inbox} в коробці, {bk|розбитий лежав|розбиті лежали|розбитих лежали} окремо. Дегустатори отримали зірки, а {missing|місяць|місяці|місяців} відвіз на стенд ярмарку кур’єр Петя за накладною, якої Віра не прочитала. Із {dg} г тіста вийшло {cnt|місяць|місяці|місяців}: {missing} в коробку і {spare} про запас. Піч була зайнята зірками до {ob}, тому місяці охололи до {ready}, і кур’єр їх дочекався.",
+   "question": "Дегустатори отримали рівно {samples|пряник|пряники|пряників}, а бракувало {missing}. Чому одразу було видно, що річ не в них?",
+   "steps": [
+    {
+     "title": "Скількох місяців бракує?",
+     "situation": "Біля прилавка Віра показує два знімки: повні дека перед пакуванням і відкриту коробку. Поруч із коробкою тарілка з розбитими місяцями: їх відклали, бо на ярмарок такі не годяться.",
+     "evidence": [
+      "Спекли {tr} повні дека по {tp} місяців.",
+      "У коробці {br} повних рядів по {bp} місяців.",
+      "{bk|розбитий місяць лежить|розбиті місяці лежать|розбитих місяців лежать} окремо на тарілці й у коробку не потрапили."
+     ],
+     "question": "Скількох місяців бракує, не рахуючи розбитих? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "Спекли {tr} × {tp} = {baked}. У коробці {br} × {bp} = {inbox}. Розбиті не зникли, вони на тарілці: {baked} - {inbox} - {bk} = {missing|місяць|місяці|місяців} невідомо де.",
+     "outcome": "{missing|місяць зник|місяці зникли|місяців зникли} між деком і коробкою. Віра відкриває журнал ранку: дегустація, кур’єр, помічниця.",
+     "next": "Перевірити журнал ранку",
+     "hints": [
+      "Порахуй спечені й порахуй у коробці.",
+      "Розбиті не зникли, вони лежать окремо.",
+      "Відніми від спечених і коробку, і розбиті."
+     ],
+     "scene": 0,
+     "answer": "4"
+    },
+    {
+     "title": "Куди поділися місяці?",
+     "situation": "У журналі записано все, що виносили з пекарні вранці, а до записів є фотографії. Перевір кожну версію і за кількістю, і за формою пряників.",
+     "evidence": [
+      "09:20: {tn} дегустатори отримали по {te} пряники. На фото дегустації {samples|зірка|зірки|зірок}.",
+      "09:40: Віра відклала {bk|розбитий місяць|розбиті місяці|розбитих місяців} на тарілку.",
+      "09:50: кур’єр Петя взяв пакет за накладною «{missing} шт., зразки для стенда ярмарку». На фото стенда {missing|місяць|місяці|місяців}.",
+      "Помічниця Маша приходила о 10:00, але лише по фартух, і до пряників не підходила.",
+      "Фото дек зроблено о 09:10: на них {baked} місяців."
+     ],
+     "question": "Де місяці, яких бракує?",
+     "kind": "choice",
+     "options": [
+      "Їх з’їли дегустатори",
+      "Їх не було: спекли лише {fake|місяць|місяці|місяців}",
+      "Їх відвіз Петя на стенд ярмарку за накладною",
+      "Це і є розбиті місяці"
+     ],
+     "feedback": [
+      "Дегустатори отримали {samples|пряник|пряники|пряників}, а не {missing}, і на фото в них зірки.",
+      "На фото дек о 09:10 рівно {baked} місяців.",
+      "",
+      "Розбитих {bk}, а бракує {missing}. До того ж розбиті лежать на тарілці, вони нікуди не поділися."
+     ],
+     "explanation": "У дегустаторів {samples|зірка|зірки|зірок}: не та кількість і не та форма. Дека повні. Розбитих лише {bk}. А накладна Петі говорить рівно про {missing} зразків, і на фото стенда {missing|місяць|місяці|місяців}. Місяці не зникли, вони на ярмарку.",
+     "outcome": "Віра згадує: вона підписала накладну не дивлячись. Стенду місяці потрібні, отже для коробки треба допекти {missing}. Ідемо перевіряти тісто.",
+     "next": "Перевірити тісто, що залишилося",
+     "hints": [
+      "У кожної версії перевір кількість пряників і форму на фотографії.",
+      "Розбиті місяці нікуди не поділися, їх {bk}.",
+      "Порівняй число в накладній Петі з нестачею."
+     ],
+     "scene": 1,
+     "answer": 2
+    },
+    {
+     "title": "Чи вистачить тіста?",
+     "situation": "На столі Віра зважує тісто, що залишилося. Для коробки потрібно {missing|місяць|місяці|місяців}, але вона хоче ще кілька про запас, якщо тісто дозволить.",
+     "evidence": [
+      "Залишилося {dg} г тіста.",
+      "На один місяць іде {pm} г тіста.",
+      "Із залишку тіста, якого не вистачає на цілий місяць, місяця не роблять."
+     ],
+     "question": "Скільки всього місяців можна вирізати з тіста, що залишилося? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dg} : {pm} = {cnt} і {rest} г у залишку. {cnt|місяць|місяці|місяців}: {missing} в коробку і {spare} про запас, {rest} г тіста залишиться.",
+     "outcome": "Тіста вистачає на {cnt|місяць|місяці|місяців}: {missing} для коробки і {spare} запасні. Залишилося дізнатися, коли місяці будуть готові: піч зараз зайнята.",
+     "next": "Розрахувати час видачі",
+     "hints": [
+      "Поділи запас тіста на витрату одного місяця.",
+      "Залишок, якого не вистачає на цілий місяць, не рахується.",
+      "Місяців вийде ціле число."
+     ],
+     "scene": 2,
+     "answer": "6"
+    },
+    {
+     "title": "Коли забирати замовлення?",
+     "situation": "Біля печі Віра дивиться на годинник. У печі зараз зірки для іншого замовлення, і дістати їх раніше не можна. Кур’єр ярмарку вже в дорозі.",
+     "evidence": [
+      "Зараз {now}. Віра починає вирізати місяці просто зараз, це займає {cut|хвилину|хвилини|хвилин}.",
+      "Піч зайнята зірками до {ob}. Місяці можна поставити в піч лише після цього.",
+      "Випікання місяців займає {bake|хвилину|хвилини|хвилин}, потім вони охолоджуються {cool|хвилину|хвилини|хвилин}. Кур’єрові віддають лише охололі.",
+      "Кур’єр приїде о {cr} і може почекати не більше ніж {wait|хвилину|хвилини|хвилин}."
+     ],
+     "question": "О котрій місяці будуть готові до видачі? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Вирізання закінчиться о {cutdone}, але піч звільниться лише о {ob}. Випікання до {bakedt}, охолодження до {ready}. Кур’єр чекає до {crmax}, отже встигаємо.",
+     "outcome": "Місяці готові о {ready}, кур’єр їх дочекається. Коробка знову повна, а Віра відтепер читає накладні перед підписом.",
+     "next": "Передати замовлення на ярмарок",
+     "hints": [
+      "Вирізати можна, поки піч зайнята зірками.",
+      "Піч звільниться лише о {ob}, раніше випікання не почнеться.",
+      "Після випікання ще охолодження."
+     ],
+     "scene": 3,
+     "answer": "15:15"
+    }
+   ]
+  }
+ }
 }

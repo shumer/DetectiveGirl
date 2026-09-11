@@ -293,7 +293,8 @@
       "Отстающие часы показывают меньше, чем точные. Реши, прибавлять поправку или вычитать.",
       "Поправь оба конца промежутка на одно и то же число минут."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "У кого есть алиби?",
@@ -322,7 +323,12 @@
       "У Льва часы фотоаппарата спешат. Сначала переведи все его снимки в точное время.",
       "У Кима и Льва есть отметки времени. Посчитай минуты между соседними отметками и сравни с дорогой до витрины и обратно."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": [
+      0,
+      1,
+      3
+     ]
     },
     {
      "title": "Какая улика настоящая?",
@@ -355,7 +361,8 @@
       "Проверь время каждой записи журнала: попадает ли оно в окно {w1}-{w2}?",
       "Куда ведут капли и кто там работал в это время?"
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 1
     },
     {
      "title": "Успеет ли сова на выставку?",
@@ -379,7 +386,8 @@
       "Минуты в дороге между лампами не считаются: сова в это время не под лампой.",
       "После библиотеки сову ещё нужно донести до витрины."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "15:52"
     }
    ]
   },
@@ -420,7 +428,8 @@
       "Spóźniający się zegar pokazuje mniej niż dokładny. Zdecyduj, czy różnicę dodać, czy odjąć.",
       "Popraw oba końce przedziału o tę samą liczbę minut."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Kto ma alibi?",
@@ -449,7 +458,12 @@
       "Zegar aparatu Lwa się spieszy. Najpierw przelicz wszystkie jego zdjęcia na dokładny czas.",
       "Kim i Lew mają zapisane godziny. Policz minuty między sąsiednimi zapisami i porównaj z drogą do gabloty i z powrotem."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": [
+      0,
+      1,
+      3
+     ]
     },
     {
      "title": "Która poszlaka jest prawdziwa?",
@@ -482,7 +496,8 @@
       "Sprawdź godzinę każdego zapisu w dzienniku: czy mieści się w oknie {w1}-{w2}?",
       "Dokąd prowadzą krople i kto tam wtedy pracował?"
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 1
     },
     {
      "title": "Czy sowa zdąży na wystawę?",
@@ -506,7 +521,8 @@
       "Minut w drodze między lampami nie liczymy: sowa nie jest wtedy pod lampą.",
       "Po bibliotece sowę trzeba jeszcze donieść do gabloty."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "15:52"
     }
    ]
   },
@@ -547,7 +563,8 @@
       "A slow clock shows less than the exact time. Decide whether to add the difference or subtract it.",
       "Correct both ends of the interval by the same number of minutes."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Who has an alibi?",
@@ -576,7 +593,12 @@
       "Lev’s camera clock is fast. First convert all his photos to exact time.",
       "Kim and Lev have logged times. Count the minutes between neighbouring entries and compare with the walk to the case and back."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": [
+      0,
+      1,
+      3
+     ]
     },
     {
      "title": "Which clue is real?",
@@ -609,7 +631,8 @@
       "Check the time of each log entry: does it fall inside the {w1}-{w2} window?",
       "Where do the drops lead, and who was working there at the time?"
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 1
     },
     {
      "title": "Will the owl make the exhibition?",
@@ -633,7 +656,8 @@
       "Minutes spent walking between lamps do not count: the owl is not under a lamp then.",
       "After the library, the owl still has to be carried to the case."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "15:52"
     }
    ]
   },
@@ -674,7 +698,8 @@
       "Годинник, що відстає, показує менше, ніж точний. Виріши, додавати поправку чи віднімати.",
       "Поправ обидва кінці проміжку на те саме число хвилин."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "У кого є алібі?",
@@ -703,7 +728,12 @@
       "У Лева годинник фотоапарата поспішає. Спершу переведи всі його знімки в точний час.",
       "У Кіма і Лева є відмітки часу. Порахуй хвилини між сусідніми відмітками і порівняй з дорогою до вітрини і назад."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": [
+      0,
+      1,
+      3
+     ]
     },
     {
      "title": "Який доказ справжній?",
@@ -736,7 +766,8 @@
       "Перевір час кожного запису журналу: чи потрапляє він у вікно {w1}-{w2}?",
       "Куди ведуть краплі і хто там працював у цей час?"
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 1
     },
     {
      "title": "Чи встигне сова на виставку?",
@@ -760,7 +791,8 @@
       "Хвилини в дорозі між лампами не рахуються: сова в цей час не під лампою.",
       "Після бібліотеки сову ще треба донести до вітрини."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "15:52"
     }
    ]
   }

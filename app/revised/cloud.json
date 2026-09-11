@@ -374,7 +374,8 @@
       "Одинаковую массу могут иметь две коробки. Тогда смотри на размер.",
       "Хвост длиной {tl} см не согнёшь: коробка должна быть длиннее."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Когда коробка будет на острове?",
@@ -396,7 +397,8 @@
       "{dist} из {spd} это {fi#две трети|три четверти|половина|одна треть}. Переведи {fi#две трети|три четверти|половину|одну треть} часа в минуты.",
       "К полёту прибавь остановку и разгрузку, а потом всё к {dep}."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "11:25"
     },
     {
      "title": "Кто довезёт хвост?",
@@ -430,7 +432,8 @@
       "Время дороги: расстояние раздели на скорость. При {sb} км/ч один километр занимает {kmmin} минут.",
       "Проверь у каждого три вещи: время выезда, время прибытия и подходит ли коробка."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": 1
     },
     {
      "title": "Куда девать парус?",
@@ -453,7 +456,8 @@
       "Коробка попадёт только на рейс, который вылетает после {back}.",
       "Прибавь длительность полёта ко времени вылета."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "13:05"
     }
    ]
   },
@@ -495,7 +499,8 @@
       "Dwa pudełka mogą mieć tę samą masę. Wtedy patrz na rozmiar.",
       "Ogona o długości {tl} cm nie da się zgiąć: pudełko musi być dłuższe."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Kiedy pudełko będzie na wyspie?",
@@ -517,7 +522,8 @@
       "{dist} z {spd} to {fi#dwie trzecie|trzy czwarte|połowa|jedna trzecia}. Zamień {fi#dwie trzecie|trzy czwarte|połowę|jedną trzecią} godziny na minuty.",
       "Do lotu dodaj postój i rozładunek, a potem wszystko do {dep}."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "11:25"
     },
     {
      "title": "Kto dowiezie ogon?",
@@ -551,7 +557,8 @@
       "Czas drogi: odległość podziel przez prędkość. Przy {sb} km/h jeden kilometr zajmuje {kmmin} minut.",
       "Sprawdź u każdego trzy rzeczy: godzinę odjazdu, godzinę przyjazdu i czy pudełko pasuje."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": 1
     },
     {
      "title": "Co zrobić z żaglem?",
@@ -574,7 +581,8 @@
       "Pudełko trafi tylko na kurs, który wylatuje po {back}.",
       "Dodaj czas lotu do godziny wylotu."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "13:05"
     }
    ]
   },
@@ -616,7 +624,8 @@
       "Two boxes can have the same weight. Then look at the size.",
       "A {tl} cm tail cannot be bent: the box has to be longer."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "When will the box reach the island?",
@@ -638,7 +647,8 @@
       "{dist} out of {spd} is {fi#two thirds|three quarters|a half|one third}. Convert {fi#two thirds|three quarters|half|one third} of an hour into minutes.",
       "Add the stop and the unloading to the flight, then add it all to {dep}."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "11:25"
     },
     {
      "title": "Who will deliver the tail?",
@@ -672,7 +682,8 @@
       "Travel time: divide the distance by the speed. At {sb} km/h, one kilometre takes {kmmin} minutes.",
       "Check three things for each courier: departure time, arrival time and whether the box fits."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": 1
     },
     {
      "title": "What about the sail?",
@@ -695,7 +706,8 @@
       "The box can only go on a flight that departs after {back}.",
       "Add the flight time to the departure time."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "13:05"
     }
    ]
   },
@@ -737,7 +749,8 @@
       "Однакову масу можуть мати дві коробки. Тоді дивися на розмір.",
       "Хвіст завдовжки {tl} см не зігнеш: коробка має бути довшою."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Коли коробка буде на острові?",
@@ -759,7 +772,8 @@
       "{dist} із {spd} це {fi#дві третини|три чверті|половина|одна третина}. Переведи {fi#дві третини|три чверті|половину|одну третину} години у хвилини.",
       "До польоту додай зупинку і розвантаження, а потім усе до {dep}."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "11:25"
     },
     {
      "title": "Хто довезе хвіст?",
@@ -793,7 +807,8 @@
       "Час дороги: відстань поділи на швидкість. При {sb} км/год один кілометр займає {kmmin} хвилин.",
       "Перевір у кожного три речі: час виїзду, час прибуття і чи підходить коробка."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": 1
     },
     {
      "title": "Куди подіти вітрило?",
@@ -816,7 +831,8 @@
       "Коробка потрапить лише на рейс, який вилітає після {back}.",
       "Додай тривалість польоту до часу вильоту."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "13:05"
     }
    ]
   }

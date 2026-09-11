@@ -234,7 +234,8 @@
       "В файле идёт только первая часть, а потом сразу финал.",
       "Сколько минут длилась первая часть?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "25"
     },
     {
      "title": "Какая запись вчерашняя?",
@@ -269,7 +270,8 @@
       "Занавес тоже улика: красный занавес сняли до всех вчерашних репетиций.",
       "Должны совпасть оба признака: и число гирлянд, и цвет занавеса."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Какой финал репетировали?",
@@ -304,7 +306,8 @@
       "Список реквизита на сегодня говорит о сегодняшнем спектакле целиком, а не о финале.",
       "Лишний предмет на сцене тоже несовпадение."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 0
     },
     {
      "title": "Когда закончится репетиция?",
@@ -327,7 +330,8 @@
       "Прогонов {runs}, а пауз между ними только {pauses}.",
       "Сложи все прогоны и паузы между ними и прибавь к {ac}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "16:26"
     }
    ]
   },
@@ -357,7 +361,8 @@
       "W pliku jest tylko pierwsza część, a potem od razu finał.",
       "Ile minut trwała pierwsza część?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "25"
     },
     {
      "title": "Które nagranie jest wczorajsze?",
@@ -392,7 +397,8 @@
       "Kurtyna też jest poszlaką: czerwoną kurtynę zdjęto przed wszystkimi wczorajszymi próbami.",
       "Muszą się zgadzać obie cechy: liczba girland i kolor kurtyny."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Który finał próbowano?",
@@ -427,7 +433,8 @@
       "Lista rekwizytów na dziś mówi o całym dzisiejszym spektaklu, a nie o finale.",
       "Dodatkowy przedmiot na scenie to też niezgodność."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 0
     },
     {
      "title": "Kiedy skończy się próba?",
@@ -450,7 +457,8 @@
       "Przejść jest {runs}, a przerw między nimi tylko {pauses}.",
       "Dodaj wszystkie przejścia i przerwy między nimi, a potem dodaj to do {ac}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "16:26"
     }
    ]
   },
@@ -480,7 +488,8 @@
       "The file holds only the first part, and then the finale straight away.",
       "How many minutes did the first part last?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "25"
     },
     {
      "title": "Which recording is yesterday’s?",
@@ -515,7 +524,8 @@
       "The curtain is a clue too: the red curtain came down before all of yesterday’s rehearsals.",
       "Both features must match: the number of garlands and the colour of the curtain."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Which finale was rehearsed?",
@@ -550,7 +560,8 @@
       "Today’s props list describes the whole of today’s play, not the finale.",
       "An extra object on stage is a mismatch too."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 0
     },
     {
      "title": "When will the rehearsal end?",
@@ -573,7 +584,8 @@
       "There are {runs} runs, but only {pauses} breaks between them.",
       "Add up all the runs and the breaks between them, then add that to {ac}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "16:26"
     }
    ]
   },
@@ -603,7 +615,8 @@
       "У файлі йде лише перша частина, а потім одразу фінал.",
       "Скільки хвилин тривала перша частина?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "25"
     },
     {
      "title": "Який запис учорашній?",
@@ -638,7 +651,8 @@
       "Завіса теж доказ: червону завісу зняли до всіх учорашніх репетицій.",
       "Мають збігтися обидві ознаки: і кількість гірлянд, і колір завіси."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Який фінал репетирували?",
@@ -673,7 +687,8 @@
       "Список реквізиту на сьогодні говорить про сьогоднішню виставу цілком, а не про фінал.",
       "Зайвий предмет на сцені теж незбіг."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": 0
     },
     {
      "title": "Коли закінчиться репетиція?",
@@ -696,7 +711,8 @@
       "Прогонів {runs}, а пауз між ними лише {pauses}.",
       "Додай усі прогони і паузи між ними і додай до {ac}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "16:26"
     }
    ]
   }

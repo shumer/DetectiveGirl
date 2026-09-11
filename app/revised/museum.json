@@ -310,7 +310,8 @@
       "Во столько же раз лампа стала ближе к фигурке.",
       "Раздели вчерашнее расстояние на это число."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "30"
     },
     {
      "title": "Кто передвинул лампу?",
@@ -344,7 +345,8 @@
       "Найди самое позднее перемещение лампы и посмотри, кто был в зале в этот момент.",
       "Заявка Тимура не противоречит датчику: сравни его записи {r1} и {r2} с тем, что он написал."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Когда пропала луна?",
@@ -373,7 +375,13 @@
       "«За {ob} минут до {tend}» это раньше, чем {tend}. «Через {ta} минут после {tend}» это позже.",
       "Выстрой четыре времени по возрастанию."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      1,
+      0
+     ]
     },
     {
      "title": "Успеет ли луна к показу?",
@@ -395,7 +403,8 @@
       "Не забудь про сушку и дорогу до зала.",
       "Сравни полученное время с началом показа."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "3"
     }
    ]
   },
@@ -425,7 +434,8 @@
       "Tyle samo razy lampa zbliżyła się do figurki.",
       "Podziel wczorajszą odległość przez tę liczbę."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "30"
     },
     {
      "title": "Kto przesunął lampę?",
@@ -459,7 +469,8 @@
       "Znajdź najpóźniejsze przesunięcie lampy i sprawdź, kto był wtedy w sali.",
       "Zlecenie Timura nie przeczy czujnikowi: porównaj jego zapisy {r1} i {r2} z tym, co napisał."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Kiedy zniknął księżyc?",
@@ -488,7 +499,13 @@
       "„{ob} minut przed {tend}” to wcześniej niż {tend}. „{ta} minut po {tend}” to później.",
       "Ustaw cztery godziny rosnąco."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      1,
+      0
+     ]
     },
     {
      "title": "Czy księżyc zdąży na pokaz?",
@@ -510,7 +527,8 @@
       "Nie zapomnij o schnięciu i drodze do sali.",
       "Porównaj otrzymaną godzinę z początkiem pokazu."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "3"
     }
    ]
   },
@@ -540,7 +558,8 @@
       "The lamp moved that many times closer to the figure.",
       "Divide yesterday’s distance by that number."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "30"
     },
     {
      "title": "Who moved the lamp?",
@@ -574,7 +593,8 @@
       "Find the latest lamp movement and see who was in the hall at that moment.",
       "Timur’s job sheet does not contradict the sensor: compare its {r1} and {r2} entries with what he wrote."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "When did the moon vanish?",
@@ -603,7 +623,13 @@
       "“{ob} minutes before {tend}” is earlier than {tend}. “{ta} minutes after {tend}” is later.",
       "Arrange the four times in increasing order."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      1,
+      0
+     ]
     },
     {
      "title": "Will the moon make the show?",
@@ -625,7 +651,8 @@
       "Do not forget the drying and the walk to the hall.",
       "Compare the time you get with the start of the show."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "3"
     }
    ]
   },
@@ -655,7 +682,8 @@
       "У стільки ж разів лампа стала ближче до фігурки.",
       "Поділи вчорашню відстань на це число."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": "30"
     },
     {
      "title": "Хто пересунув лампу?",
@@ -689,7 +717,8 @@
       "Знайди найпізніше переміщення лампи і подивися, хто був у залі в цей момент.",
       "Заявка Тимура не суперечить датчику: порівняй його записи {r1} і {r2} з тим, що він написав."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": 2
     },
     {
      "title": "Коли зник місяць?",
@@ -718,7 +747,13 @@
       "«За {ob} хвилин до {tend}» це раніше, ніж {tend}. «Через {ta} хвилин після {tend}» це пізніше.",
       "Вишикуй чотири часи за зростанням."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      1,
+      0
+     ]
     },
     {
      "title": "Чи встигне місяць до показу?",
@@ -740,7 +775,8 @@
       "Не забудь про сушіння і дорогу до залу.",
       "Порівняй отриманий час із початком показу."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "3"
     }
    ]
   }

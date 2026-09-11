@@ -1,498 +1,756 @@
 {
-  "id": "lighthouse",
-  "number": "009",
-  "locales": {
-    "ru": {
-      "title": "Маяк, который забыл мелодию",
-      "intro": "Игрушечный маяк встречает гостей огоньком и короткой мелодией. Ася вчера правила программу, а сегодня звук запаздывает и ноты идут не в том порядке. Её брат говорит, что дело в проводе динамика, который он вчера задел. Помоги по видеозаписи и карточке мелодии вернуть приветствие и проверить его по контрольной записи.",
-      "ending": "Звук запаздывал на 18 секунд из-за шести тестовых ожиданий по 3 секунды, которые Ася забыла убрать. Провод брата был ни при чём: плохой провод не даёт одну и ту же задержку каждый раз. Ноты вернули в порядок от короткой к длинной: МИ, РЕ, СОЛЬ, ДО. Одно приветствие длится 15 секунд, а вся программа из трёх приветствий и двух пауз 49 секунд, ровно как на контрольной записи.",
-      "question": "Брат действительно задел провод. Почему эта версия не объясняла задержку?",
-      "steps": [
-        {
-          "title": "Насколько запаздывает звук?",
-          "situation": "У маяка Ася включает видеозапись сегодняшнего приветствия. На записи есть отметки времени файла, и Ася нашла два момента.",
-          "evidence": [
-            "Огонёк загорается на отметке 0:47 файла.",
-            "Первая нота слышна на отметке 1:05 файла.",
-            "По плану свет и звук должны начинаться одновременно."
-          ],
-          "question": "На сколько секунд запаздывает звук? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "18",
-          "feedback": [],
-          "explanation": "1:05 это 65 секунд, 0:47 это 47 секунд. 65 - 47 = 18 секунд.",
-          "outcome": "Звук отстаёт ровно на 18 секунд, и на трёх повторах записи задержка одинаковая. Посмотрим, откуда в программе звука берутся 18 секунд.",
-          "next": "Открыть программу звука",
-          "hints": [
-            "Переведи обе отметки в секунды.",
-            "1:05 это 60 секунд и ещё 5.",
-            "Вычти момент света из момента звука."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Где лишнее ожидание?",
-          "situation": "На экране программа звука по командам. Световая программа начинает сразу. Брат Аси настаивает на проводе. Проверь, что из этого даёт задержку ровно в 18 секунд, и каждый раз одинаковую.",
-          "evidence": [
-            "Команда 1: ждать 3 секунды, повторить 6 раз.",
-            "Команда 2: сыграть приветствие.",
-            "Команда 3: после приветствия ждать 2 секунды перед повтором.",
-            "Брат вчера задел провод динамика, провод сидит неплотно.",
-            "На трёх повторах записи задержка каждый раз ровно 18 секунд."
-          ],
-          "question": "Что объясняет задержку первого звука?",
-          "kind": "choice",
-          "options": [
-            "Шесть ожиданий по 3 секунды перед приветствием",
-            "Команда сыграть приветствие",
-            "Пауза 2 секунды после приветствия",
-            "Неплотный провод динамика"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "Эта команда начинает звук, а не задерживает его.",
-            "Эта пауза идёт после приветствия и не может задержать его начало.",
-            "Неплотный провод даёт треск или тишину, но не ровно 18 секунд каждый раз."
-          ],
-          "explanation": "Команда 1 стоит до звука и длится 3 × 6 = 18 секунд, ровно как задержка. Команда 2 начинает звук, команда 3 выполняется после него. Провод не даёт одинаковую задержку на каждом повторе.",
-          "outcome": "Ася вспоминает: она вставила тестовое ожидание, чтобы проверять свет, и забыла его убрать. Команду 1 удаляют, свет и звук начинают вместе. Теперь порядок нот.",
-          "next": "Сверить карточку мелодии",
-          "hints": [
-            "Ищи то, что стоит до первого звука.",
-            "Задержка одинаковая на каждом повторе: сбой провода так не работает.",
-            "Сколько секунд дают все повторы команды 1?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "В каком порядке звучат ноты?",
-          "situation": "На карточке Аси записано правило этого приветствия: звуки идут от самого короткого к самому длинному. Длительности даны в долях одного такта.",
-          "evidence": [
-            "Один такт длится 8 секунд.",
-            "МИ занимает 1/4 такта, СОЛЬ 1/2 такта, ДО 3/4 такта, РЕ 3/8 такта.",
-            "Каждый звук звучит один раз."
-          ],
-          "question": "Расставь звуки по правилу карточки, от короткого к длинному.",
-          "kind": "order",
-          "options": [
-            "СОЛЬ, 1/2 такта",
-            "ДО, 3/4 такта",
-            "МИ, 1/4 такта",
-            "РЕ, 3/8 такта"
-          ],
-          "answer": [
-            2,
-            3,
-            0,
-            1
-          ],
-          "feedback": [],
-          "explanation": "Приведём доли к восьмым: МИ 2/8, РЕ 3/8, СОЛЬ 4/8, ДО 6/8. В секундах: 2, 3, 4 и 6. Порядок: МИ, РЕ, СОЛЬ, ДО.",
-          "outcome": "Ася сохраняет порядок МИ, РЕ, СОЛЬ, ДО. Одно приветствие длится 2 + 3 + 4 + 6 = 15 секунд. Осталось проверить всю программу по контрольной записи.",
-          "next": "Рассчитать всю программу",
-          "hints": [
-            "Приведи все доли к одному знаменателю, например к восьмым.",
-            "1/2 это 4/8, 1/4 это 2/8, 3/4 это 6/8.",
-            "Сравни 2/8, 3/8, 4/8 и 6/8."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Сколько длится всё приветствие?",
-          "situation": "Программа повторяет восстановленное приветствие три раза. У Аси есть контрольная запись правильной программы, и по длительности можно проверить, всё ли восстановлено.",
-          "evidence": [
-            "Одно приветствие длится 15 секунд.",
-            "Приветствие звучит 3 раза.",
-            "Между соседними приветствиями пауза 2 секунды. Перед первым и после последнего пауз нет.",
-            "Контрольная запись правильной программы длится 49 секунд."
-          ],
-          "question": "Сколько секунд займёт восстановленная программа? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "49",
-          "feedback": [],
-          "explanation": "Три приветствия: 3 × 15 = 45 секунд. Две паузы: 2 × 2 = 4 секунды. Всего 49 секунд, как на контрольной записи.",
-          "outcome": "Длительность совпала с контрольной записью. Ася запускает маяк: свет и звук вместе, ноты по порядку, брат оправдан.",
-          "next": "Запустить приветствие",
-          "hints": [
-            "Сначала длительность одного приветствия из четырёх звуков.",
-            "Три приветствия, но пауз между ними только две.",
-            "Сложи звуки и паузы."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "pl": {
-      "title": "Latarnia, która zapomniała melodii",
-      "intro": "Zabawkowa latarnia morska wita gości światełkiem i krótką melodią. Asia wczoraj poprawiała program, a dziś dźwięk się spóźnia i nuty idą w złej kolejności. Jej brat mówi, że chodzi o przewód głośnika, który wczoraj zaczepił. Pomóż na podstawie nagrania i karty melodii przywrócić powitanie i sprawdzić je z nagraniem kontrolnym.",
-      "ending": "Dźwięk spóźniał się o 18 sekund przez sześć testowych oczekiwań po 3 sekundy, których Asia zapomniała usunąć. Przewód brata nie miał z tym nic wspólnego: zły przewód nie daje za każdym razem tego samego opóźnienia. Nuty wróciły do kolejności od krótkiej do długiej: MI, RE, SOL, DO. Jedno powitanie trwa 15 sekund, a cały program z trzech powitań i dwóch przerw 49 sekund, dokładnie jak na nagraniu kontrolnym.",
-      "question": "Brat naprawdę zaczepił przewód. Dlaczego ta wersja nie wyjaśniała opóźnienia?",
-      "steps": [
-        {
-          "title": "O ile spóźnia się dźwięk?",
-          "situation": "Przy latarni Asia włącza nagranie dzisiejszego powitania. Na nagraniu są znaczniki czasu pliku i Asia znalazła dwa momenty.",
-          "evidence": [
-            "Światełko zapala się na znaczniku 0:47 pliku.",
-            "Pierwsza nuta słychać na znaczniku 1:05 pliku.",
-            "Według planu światło i dźwięk mają zaczynać się jednocześnie."
-          ],
-          "question": "O ile sekund spóźnia się dźwięk? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "18",
-          "feedback": [],
-          "explanation": "1:05 to 65 sekund, 0:47 to 47 sekund. 65 - 47 = 18 sekund.",
-          "outcome": "Dźwięk spóźnia się dokładnie o 18 sekund i na trzech powtórzeniach nagrania opóźnienie jest takie samo. Zobaczmy, skąd w programie dźwięku bierze się 18 sekund.",
-          "next": "Otwórz program dźwięku",
-          "hints": [
-            "Zamień oba znaczniki na sekundy.",
-            "1:05 to 60 sekund i jeszcze 5.",
-            "Odejmij moment światła od momentu dźwięku."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Gdzie jest zbędne oczekiwanie?",
-          "situation": "Na ekranie jest program dźwięku po komendach. Program światła zaczyna od razu. Brat Asi upiera się przy przewodzie. Sprawdź, co z tego daje opóźnienie dokładnie 18 sekund, i to za każdym razem takie samo.",
-          "evidence": [
-            "Komenda 1: czekać 3 sekundy, powtórzyć 6 razy.",
-            "Komenda 2: zagrać powitanie.",
-            "Komenda 3: po powitaniu czekać 2 sekundy przed powtórzeniem.",
-            "Brat wczoraj zaczepił przewód głośnika, przewód siedzi luźno.",
-            "Na trzech powtórzeniach nagrania opóźnienie za każdym razem wynosi dokładnie 18 sekund."
-          ],
-          "question": "Co wyjaśnia opóźnienie pierwszego dźwięku?",
-          "kind": "choice",
-          "options": [
-            "Sześć oczekiwań po 3 sekundy przed powitaniem",
-            "Komenda zagrania powitania",
-            "Przerwa 2 sekundy po powitaniu",
-            "Luźny przewód głośnika"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "Ta komenda zaczyna dźwięk, a nie go opóźnia.",
-            "Ta przerwa jest po powitaniu i nie może opóźnić jego początku.",
-            "Luźny przewód daje trzaski albo ciszę, ale nie dokładnie 18 sekund za każdym razem."
-          ],
-          "explanation": "Komenda 1 stoi przed dźwiękiem i trwa 3 × 6 = 18 sekund, dokładnie tyle co opóźnienie. Komenda 2 zaczyna dźwięk, komenda 3 wykonuje się po nim. Przewód nie daje takiego samego opóźnienia przy każdym powtórzeniu.",
-          "outcome": "Asia przypomina sobie: wstawiła testowe oczekiwanie, żeby sprawdzać światło, i zapomniała je usunąć. Komenda 1 zostaje usunięta, światło i dźwięk zaczynają razem. Teraz kolejność nut.",
-          "next": "Sprawdź kartę melodii",
-          "hints": [
-            "Szukaj tego, co stoi przed pierwszym dźwiękiem.",
-            "Opóźnienie jest takie samo przy każdym powtórzeniu: awaria przewodu tak nie działa.",
-            "Ile sekund dają wszystkie powtórzenia komendy 1?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "W jakiej kolejności brzmią nuty?",
-          "situation": "Na karcie Asi zapisano regułę tego powitania: dźwięki idą od najkrótszego do najdłuższego. Długości podano w częściach jednego taktu.",
-          "evidence": [
-            "Jeden takt trwa 8 sekund.",
-            "MI zajmuje 1/4 taktu, SOL 1/2 taktu, DO 3/4 taktu, RE 3/8 taktu.",
-            "Każdy dźwięk brzmi raz."
-          ],
-          "question": "Ustaw dźwięki według reguły z karty, od krótkiego do długiego.",
-          "kind": "order",
-          "options": [
-            "SOL, 1/2 taktu",
-            "DO, 3/4 taktu",
-            "MI, 1/4 taktu",
-            "RE, 3/8 taktu"
-          ],
-          "answer": [
-            2,
-            3,
-            0,
-            1
-          ],
-          "feedback": [],
-          "explanation": "Sprowadźmy części do ósmych: MI 2/8, RE 3/8, SOL 4/8, DO 6/8. W sekundach: 2, 3, 4 i 6. Kolejność: MI, RE, SOL, DO.",
-          "outcome": "Asia zapisuje kolejność MI, RE, SOL, DO. Jedno powitanie trwa 2 + 3 + 4 + 6 = 15 sekund. Zostało sprawdzić cały program z nagraniem kontrolnym.",
-          "next": "Oblicz cały program",
-          "hints": [
-            "Sprowadź wszystkie części do wspólnego mianownika, na przykład do ósmych.",
-            "1/2 to 4/8, 1/4 to 2/8, 3/4 to 6/8.",
-            "Porównaj 2/8, 3/8, 4/8 i 6/8."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Ile trwa całe powitanie?",
-          "situation": "Program powtarza przywrócone powitanie trzy razy. Asia ma nagranie kontrolne poprawnego programu i po długości można sprawdzić, czy wszystko zostało przywrócone.",
-          "evidence": [
-            "Jedno powitanie trwa 15 sekund.",
-            "Powitanie brzmi 3 razy.",
-            "Między sąsiednimi powitaniami jest przerwa 2 sekundy. Przed pierwszym i po ostatnim przerw nie ma.",
-            "Nagranie kontrolne poprawnego programu trwa 49 sekund."
-          ],
-          "question": "Ile sekund zajmie przywrócony program? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "49",
-          "feedback": [],
-          "explanation": "Trzy powitania: 3 × 15 = 45 sekund. Dwie przerwy: 2 × 2 = 4 sekundy. Razem 49 sekund, jak na nagraniu kontrolnym.",
-          "outcome": "Długość zgadza się z nagraniem kontrolnym. Asia uruchamia latarnię: światło i dźwięk razem, nuty po kolei, brat uniewinniony.",
-          "next": "Uruchom powitanie",
-          "hints": [
-            "Najpierw długość jednego powitania z czterech dźwięków.",
-            "Powitania są trzy, ale przerw między nimi tylko dwie.",
-            "Dodaj dźwięki i przerwy."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "en": {
-      "title": "The Lighthouse That Forgot Its Tune",
-      "intro": "A toy lighthouse greets visitors with a light and a short tune. Asya edited the program yesterday, and today the sound comes late and the notes play in the wrong order. Her brother says the problem is the speaker cable he knocked yesterday. Help restore the greeting from the video recording and the melody card, and check it against the reference recording.",
-      "ending": "The sound was 18 seconds late because of six 3-second test waits that Asya forgot to remove. Her brother’s cable had nothing to do with it: a faulty cable does not give the same delay every time. The notes went back into order from shortest to longest: MI, RE, SOL, DO. One greeting lasts 15 seconds, and the whole program of three greetings and two pauses lasts 49 seconds, exactly like the reference recording.",
-      "question": "The brother really did knock the cable. Why did that theory not explain the delay?",
-      "steps": [
-        {
-          "title": "How late is the sound?",
-          "situation": "At the lighthouse, Asya plays the video of today’s greeting. The recording has file time marks, and Asya has found two moments.",
-          "evidence": [
-            "The light comes on at the 0:47 mark of the file.",
-            "The first note is heard at the 1:05 mark of the file.",
-            "According to the plan, the light and the sound should start at the same time."
-          ],
-          "question": "How many seconds late is the sound? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "18",
-          "feedback": [],
-          "explanation": "1:05 is 65 seconds, 0:47 is 47 seconds. 65 - 47 = 18 seconds.",
-          "outcome": "The sound is exactly 18 seconds behind, and the delay is the same on all three repeats in the recording. Let’s see where 18 seconds come from in the sound program.",
-          "next": "Open the sound program",
-          "hints": [
-            "Convert both marks to seconds.",
-            "1:05 is 60 seconds plus 5.",
-            "Subtract the light moment from the sound moment."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Where is the extra wait?",
-          "situation": "The screen shows the sound program command by command. The light program starts immediately. Asya’s brother insists on the cable. Check which of these gives a delay of exactly 18 seconds, the same every time.",
-          "evidence": [
-            "Command 1: wait 3 seconds, repeat 6 times.",
-            "Command 2: play the greeting.",
-            "Command 3: after the greeting, wait 2 seconds before repeating.",
-            "Yesterday the brother knocked the speaker cable, and it sits loosely.",
-            "On all three repeats in the recording the delay is exactly 18 seconds every time."
-          ],
-          "question": "What explains the delay of the first sound?",
-          "kind": "choice",
-          "options": [
-            "Six 3-second waits before the greeting",
-            "The command to play the greeting",
-            "The 2-second pause after the greeting",
-            "The loose speaker cable"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "This command starts the sound; it does not delay it.",
-            "This pause comes after the greeting and cannot delay its start.",
-            "A loose cable gives crackle or silence, not exactly 18 seconds every time."
-          ],
-          "explanation": "Command 1 comes before the sound and lasts 3 × 6 = 18 seconds, exactly the delay. Command 2 starts the sound, and command 3 runs after it. A cable does not give an identical delay on every repeat.",
-          "outcome": "Asya remembers: she inserted a test wait to check the light and forgot to remove it. Command 1 is deleted, and the light and sound start together. Now for the order of the notes.",
-          "next": "Check the melody card",
-          "hints": [
-            "Look for whatever comes before the first sound.",
-            "The delay is identical on every repeat: a cable fault does not behave like that.",
-            "How many seconds do all the repeats of command 1 add up to?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "In what order do the notes play?",
-          "situation": "Asya’s card states the rule for this greeting: the notes go from the shortest to the longest. The lengths are given as fractions of one bar.",
-          "evidence": [
-            "One bar lasts 8 seconds.",
-            "MI takes 1/4 of a bar, SOL 1/2 of a bar, DO 3/4 of a bar, RE 3/8 of a bar.",
-            "Each note plays once."
-          ],
-          "question": "Arrange the notes by the card’s rule, from shortest to longest.",
-          "kind": "order",
-          "options": [
-            "SOL, 1/2 bar",
-            "DO, 3/4 bar",
-            "MI, 1/4 bar",
-            "RE, 3/8 bar"
-          ],
-          "answer": [
-            2,
-            3,
-            0,
-            1
-          ],
-          "feedback": [],
-          "explanation": "Convert the fractions to eighths: MI 2/8, RE 3/8, SOL 4/8, DO 6/8. In seconds: 2, 3, 4 and 6. The order is MI, RE, SOL, DO.",
-          "outcome": "Asya saves the order MI, RE, SOL, DO. One greeting lasts 2 + 3 + 4 + 6 = 15 seconds. All that remains is to check the whole program against the reference recording.",
-          "next": "Work out the whole program",
-          "hints": [
-            "Bring all the fractions to a common denominator, for example eighths.",
-            "1/2 is 4/8, 1/4 is 2/8, 3/4 is 6/8.",
-            "Compare 2/8, 3/8, 4/8 and 6/8."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "How long is the whole greeting?",
-          "situation": "The program repeats the restored greeting three times. Asya has a reference recording of the correct program, and the length will show whether everything has been restored.",
-          "evidence": [
-            "One greeting lasts 15 seconds.",
-            "The greeting plays 3 times.",
-            "There is a 2-second pause between neighbouring greetings. There is no pause before the first or after the last.",
-            "The reference recording of the correct program lasts 49 seconds."
-          ],
-          "question": "How many seconds will the restored program take? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "49",
-          "feedback": [],
-          "explanation": "Three greetings: 3 × 15 = 45 seconds. Two pauses: 2 × 2 = 4 seconds. 49 seconds in total, just like the reference recording.",
-          "outcome": "The length matches the reference recording. Asya starts the lighthouse: light and sound together, notes in order, and her brother is cleared.",
-          "next": "Start the greeting",
-          "hints": [
-            "First find the length of one greeting made of four notes.",
-            "Three greetings, but only two pauses between them.",
-            "Add up the notes and the pauses."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "uk": {
-      "title": "Маяк, який забув мелодію",
-      "intro": "Іграшковий маяк зустрічає гостей вогником і короткою мелодією. Ася вчора правила програму, а сьогодні звук запізнюється і ноти йдуть не в тому порядку. Її брат каже, що річ у проводі динаміка, який він учора зачепив. Допоможи за відеозаписом і карткою мелодії повернути привітання і перевірити його за контрольним записом.",
-      "ending": "Звук запізнювався на 18 секунд через шість тестових очікувань по 3 секунди, які Ася забула прибрати. Провід брата був ні до чого: поганий провід не дає ту саму затримку щоразу. Ноти повернули в порядок від короткої до довгої: МІ, РЕ, СОЛЬ, ДО. Одне привітання триває 15 секунд, а вся програма з трьох привітань і двох пауз 49 секунд, рівно як на контрольному записі.",
-      "question": "Брат справді зачепив провід. Чому ця версія не пояснювала затримку?",
-      "steps": [
-        {
-          "title": "Наскільки запізнюється звук?",
-          "situation": "Біля маяка Ася вмикає відеозапис сьогоднішнього привітання. На записі є позначки часу файлу, і Ася знайшла два моменти.",
-          "evidence": [
-            "Вогник загоряється на позначці 0:47 файлу.",
-            "Першу ноту чути на позначці 1:05 файлу.",
-            "За планом світло і звук мають починатися одночасно."
-          ],
-          "question": "На скільки секунд запізнюється звук? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "18",
-          "feedback": [],
-          "explanation": "1:05 це 65 секунд, 0:47 це 47 секунд. 65 - 47 = 18 секунд.",
-          "outcome": "Звук відстає рівно на 18 секунд, і на трьох повторах запису затримка однакова. Подивимося, звідки в програмі звуку беруться 18 секунд.",
-          "next": "Відкрити програму звуку",
-          "hints": [
-            "Переведи обидві позначки в секунди.",
-            "1:05 це 60 секунд і ще 5.",
-            "Відніми момент світла від моменту звуку."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Де зайве очікування?",
-          "situation": "На екрані програма звуку за командами. Світлова програма починає одразу. Брат Асі наполягає на проводі. Перевір, що з цього дає затримку рівно у 18 секунд, і щоразу однакову.",
-          "evidence": [
-            "Команда 1: чекати 3 секунди, повторити 6 разів.",
-            "Команда 2: зіграти привітання.",
-            "Команда 3: після привітання чекати 2 секунди перед повтором.",
-            "Брат учора зачепив провід динаміка, провід сидить нещільно.",
-            "На трьох повторах запису затримка щоразу рівно 18 секунд."
-          ],
-          "question": "Що пояснює затримку першого звуку?",
-          "kind": "choice",
-          "options": [
-            "Шість очікувань по 3 секунди перед привітанням",
-            "Команда зіграти привітання",
-            "Пауза 2 секунди після привітання",
-            "Нещільний провід динаміка"
-          ],
-          "answer": 0,
-          "feedback": [
-            "",
-            "Ця команда починає звук, а не затримує його.",
-            "Ця пауза йде після привітання і не може затримати його початок.",
-            "Нещільний провід дає тріск або тишу, але не рівно 18 секунд щоразу."
-          ],
-          "explanation": "Команда 1 стоїть до звуку і триває 3 × 6 = 18 секунд, рівно як затримка. Команда 2 починає звук, команда 3 виконується після нього. Провід не дає однакову затримку на кожному повторі.",
-          "outcome": "Ася згадує: вона вставила тестове очікування, щоб перевіряти світло, і забула його прибрати. Команду 1 видаляють, світло і звук починають разом. Тепер порядок нот.",
-          "next": "Звірити картку мелодії",
-          "hints": [
-            "Шукай те, що стоїть до першого звуку.",
-            "Затримка однакова на кожному повторі: збій проводу так не працює.",
-            "Скільки секунд дають усі повтори команди 1?"
-          ],
-          "scene": 1
-        },
-        {
-          "title": "У якому порядку звучать ноти?",
-          "situation": "На картці Асі записано правило цього привітання: звуки йдуть від найкоротшого до найдовшого. Тривалості дано в частках одного такту.",
-          "evidence": [
-            "Один такт триває 8 секунд.",
-            "МІ займає 1/4 такту, СОЛЬ 1/2 такту, ДО 3/4 такту, РЕ 3/8 такту.",
-            "Кожен звук звучить один раз."
-          ],
-          "question": "Розстав звуки за правилом картки, від короткого до довгого.",
-          "kind": "order",
-          "options": [
-            "СОЛЬ, 1/2 такту",
-            "ДО, 3/4 такту",
-            "МІ, 1/4 такту",
-            "РЕ, 3/8 такту"
-          ],
-          "answer": [
-            2,
-            3,
-            0,
-            1
-          ],
-          "feedback": [],
-          "explanation": "Зведемо частки до восьмих: МІ 2/8, РЕ 3/8, СОЛЬ 4/8, ДО 6/8. У секундах: 2, 3, 4 і 6. Порядок: МІ, РЕ, СОЛЬ, ДО.",
-          "outcome": "Ася зберігає порядок МІ, РЕ, СОЛЬ, ДО. Одне привітання триває 2 + 3 + 4 + 6 = 15 секунд. Залишилося перевірити всю програму за контрольним записом.",
-          "next": "Розрахувати всю програму",
-          "hints": [
-            "Зведи всі частки до одного знаменника, наприклад до восьмих.",
-            "1/2 це 4/8, 1/4 це 2/8, 3/4 це 6/8.",
-            "Порівняй 2/8, 3/8, 4/8 і 6/8."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Скільки триває все привітання?",
-          "situation": "Програма повторює відновлене привітання тричі. В Асі є контрольний запис правильної програми, і за тривалістю можна перевірити, чи все відновлено.",
-          "evidence": [
-            "Одне привітання триває 15 секунд.",
-            "Привітання звучить 3 рази.",
-            "Між сусідніми привітаннями пауза 2 секунди. Перед першим і після останнього пауз немає.",
-            "Контрольний запис правильної програми триває 49 секунд."
-          ],
-          "question": "Скільки секунд займе відновлена програма? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "49",
-          "feedback": [],
-          "explanation": "Три привітання: 3 × 15 = 45 секунд. Дві паузи: 2 × 2 = 4 секунди. Разом 49 секунд, як на контрольному записі.",
-          "outcome": "Тривалість збіглася з контрольним записом. Ася запускає маяк: світло і звук разом, ноти по порядку, брата виправдано.",
-          "next": "Запустити привітання",
-          "hints": [
-            "Спершу тривалість одного привітання з чотирьох звуків.",
-            "Три привітання, але пауз між ними лише дві.",
-            "Додай звуки і паузи."
-          ],
-          "scene": 3
-        }
-      ]
-    }
+ "id": "lighthouse",
+ "number": "009",
+ "variants": [
+  {
+   "values": {
+    "lt": "0:47",
+    "st": "1:05",
+    "lsec": 47,
+    "ssec": 65,
+    "delay": 18,
+    "w": 3,
+    "rep": 6,
+    "pa": 2,
+    "bar": 8,
+    "fmi": "1/4",
+    "fsol": "1/2",
+    "fdo": "3/4",
+    "fre": "3/8",
+    "smi": 2,
+    "ssol": 4,
+    "sdo": 6,
+    "sre": 3,
+    "den": 1,
+    "n1": 0,
+    "n2": 3,
+    "n3": 1,
+    "n4": 2,
+    "s1": 2,
+    "s2": 3,
+    "s3": 4,
+    "s4": 6,
+    "greet": 15,
+    "rp": 3,
+    "pauses": 2,
+    "pz": 2,
+    "tot1": 45,
+    "tot2": 4,
+    "total": 49
+   },
+   "answers": [
+    "18",
+    0,
+    [
+     2,
+     3,
+     0,
+     1
+    ],
+    "49"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     1,
+     0,
+     3
+    ],
+    [
+     2,
+     1,
+     3,
+     0
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "lt": "0:52",
+    "st": "1:16",
+    "lsec": 52,
+    "ssec": 76,
+    "delay": 24,
+    "w": 4,
+    "rep": 6,
+    "pa": 2,
+    "bar": 12,
+    "fmi": "1/3",
+    "fsol": "1/4",
+    "fdo": "1/2",
+    "fre": "5/12",
+    "smi": 4,
+    "ssol": 3,
+    "sdo": 6,
+    "sre": 5,
+    "den": 2,
+    "n1": 1,
+    "n2": 0,
+    "n3": 3,
+    "n4": 2,
+    "s1": 3,
+    "s2": 4,
+    "s3": 5,
+    "s4": 6,
+    "greet": 18,
+    "rp": 3,
+    "pauses": 2,
+    "pz": 3,
+    "tot1": 54,
+    "tot2": 6,
+    "total": 60
+   },
+   "answers": [
+    "24",
+    0,
+    [
+     0,
+     2,
+     3,
+     1
+    ],
+    "60"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     2,
+     1,
+     0
+    ],
+    [
+     3,
+     1,
+     0,
+     2
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "lt": "1:10",
+    "st": "1:22",
+    "lsec": 70,
+    "ssec": 82,
+    "delay": 12,
+    "w": 3,
+    "rep": 4,
+    "pa": 2,
+    "bar": 8,
+    "fmi": "1/2",
+    "fsol": "3/4",
+    "fdo": "1/4",
+    "fre": "5/8",
+    "smi": 4,
+    "ssol": 6,
+    "sdo": 2,
+    "sre": 5,
+    "den": 1,
+    "n1": 2,
+    "n2": 0,
+    "n3": 3,
+    "n4": 1,
+    "s1": 2,
+    "s2": 4,
+    "s3": 5,
+    "s4": 6,
+    "greet": 17,
+    "rp": 4,
+    "pauses": 3,
+    "pz": 2,
+    "tot1": 68,
+    "tot2": 6,
+    "total": 74
+   },
+   "answers": [
+    "12",
+    0,
+    [
+     1,
+     2,
+     3,
+     0
+    ],
+    "74"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     2,
+     0,
+     1
+    ],
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "lt": "0:38",
+    "st": "0:58",
+    "lsec": 38,
+    "ssec": 58,
+    "delay": 20,
+    "w": 5,
+    "rep": 4,
+    "pa": 2,
+    "bar": 8,
+    "fmi": "1/8",
+    "fsol": "3/4",
+    "fdo": "1/2",
+    "fre": "3/8",
+    "smi": 1,
+    "ssol": 6,
+    "sdo": 4,
+    "sre": 3,
+    "den": 1,
+    "n1": 0,
+    "n2": 3,
+    "n3": 2,
+    "n4": 1,
+    "s1": 1,
+    "s2": 3,
+    "s3": 4,
+    "s4": 6,
+    "greet": 14,
+    "rp": 2,
+    "pauses": 1,
+    "pz": 5,
+    "tot1": 28,
+    "tot2": 5,
+    "total": 33
+   },
+   "answers": [
+    "20",
+    0,
+    [
+     2,
+     3,
+     1,
+     0
+    ],
+    "33"
+   ],
+   "orders": [
+    null,
+    [
+     0,
+     2,
+     1,
+     3
+    ],
+    [
+     3,
+     0,
+     2,
+     1
+    ],
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Маяк, который забыл мелодию",
+   "intro": "Игрушечный маяк встречает гостей огоньком и короткой мелодией. Ася вчера правила программу, а сегодня звук запаздывает и ноты идут не в том порядке. Её брат говорит, что дело в проводе динамика, который он вчера задел. Помоги по видеозаписи и карточке мелодии вернуть приветствие и проверить его по контрольной записи.",
+   "ending": "Звук запаздывал на {delay|секунду|секунды|секунд} из-за {rep} тестовых ожиданий по {w|секунде|секунды|секунд}, которые Ася забыла убрать. Провод брата был ни при чём: плохой провод не даёт одну и ту же задержку каждый раз. Ноты вернули в порядок от короткой к длинной: {n1#МИ|СОЛЬ|ДО|РЕ}, {n2#МИ|СОЛЬ|ДО|РЕ}, {n3#МИ|СОЛЬ|ДО|РЕ}, {n4#МИ|СОЛЬ|ДО|РЕ}. Одно приветствие длится {greet|секунду|секунды|секунд}, а вся программа из {rp} приветствий и {pauses|паузы|пауз|пауз} {total|секунду|секунды|секунд}, ровно как на контрольной записи.",
+   "question": "Брат действительно задел провод. Почему эта версия не объясняла задержку?",
+   "steps": [
+    {
+     "title": "Насколько запаздывает звук?",
+     "situation": "У маяка Ася включает видеозапись сегодняшнего приветствия. На записи есть отметки времени файла, и Ася нашла два момента.",
+     "evidence": [
+      "Огонёк загорается на отметке {lt} файла.",
+      "Первая нота слышна на отметке {st} файла.",
+      "По плану свет и звук должны начинаться одновременно."
+     ],
+     "question": "На сколько секунд запаздывает звук? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{st} это {ssec} секунд, {lt} это {lsec} секунд. {ssec} - {lsec} = {delay} секунд.",
+     "outcome": "Звук отстаёт ровно на {delay|секунду|секунды|секунд}, и на трёх повторах записи задержка одинаковая. Посмотрим, откуда в программе звука берётся столько секунд.",
+     "next": "Открыть программу звука",
+     "hints": [
+      "Переведи обе отметки в секунды.",
+      "Отметка вида минуты:секунды. Умножь минуты на 60 и прибавь секунды.",
+      "Вычти момент света из момента звука."
+     ],
+     "scene": 0,
+     "answer": "18"
+    },
+    {
+     "title": "Где лишнее ожидание?",
+     "situation": "На экране программа звука по командам. Световая программа начинает сразу. Брат Аси настаивает на проводе. Проверь, что из этого даёт задержку ровно в {delay|секунду|секунды|секунд}, и каждый раз одинаковую.",
+     "evidence": [
+      "Команда 1: ждать {w|секунду|секунды|секунд}, повторить {rep|раз|раза|раз}.",
+      "Команда 2: сыграть приветствие.",
+      "Команда 3: после приветствия ждать {pa} секунды перед повтором.",
+      "Брат вчера задел провод динамика, провод сидит неплотно.",
+      "На трёх повторах записи задержка каждый раз ровно {delay|секунда|секунды|секунд}."
+     ],
+     "question": "Что объясняет задержку первого звука?",
+     "kind": "choice",
+     "options": [
+      "{rep|ожидание|ожидания|ожиданий} по {w|секунде|секунды|секунд} перед приветствием",
+      "Команда сыграть приветствие",
+      "Пауза {pa} секунды после приветствия",
+      "Неплотный провод динамика"
+     ],
+     "feedback": [
+      "",
+      "Эта команда начинает звук, а не задерживает его.",
+      "Эта пауза идёт после приветствия и не может задержать его начало.",
+      "Неплотный провод даёт треск или тишину, но не ровно {delay|секунду|секунды|секунд} каждый раз."
+     ],
+     "explanation": "Команда 1 стоит до звука и длится {w} × {rep} = {delay} секунд, ровно как задержка. Команда 2 начинает звук, команда 3 выполняется после него. Провод не даёт одинаковую задержку на каждом повторе.",
+     "outcome": "Ася вспоминает: она вставила тестовое ожидание, чтобы проверять свет, и забыла его убрать. Команду 1 удаляют, свет и звук начинают вместе. Теперь порядок нот.",
+     "next": "Сверить карточку мелодии",
+     "hints": [
+      "Ищи то, что стоит до первого звука.",
+      "Задержка одинаковая на каждом повторе: сбой провода так не работает.",
+      "Сколько секунд дают все повторы команды 1?"
+     ],
+     "scene": 1,
+     "answer": 0
+    },
+    {
+     "title": "В каком порядке звучат ноты?",
+     "situation": "На карточке Аси записано правило этого приветствия: звуки идут от самого короткого к самому длинному. Длительности даны в долях одного такта.",
+     "evidence": [
+      "Один такт длится {bar} секунд.",
+      "МИ занимает {fmi} такта, СОЛЬ {fsol} такта, ДО {fdo} такта, РЕ {fre} такта.",
+      "Каждый звук звучит один раз."
+     ],
+     "question": "Расставь звуки по правилу карточки, от короткого к длинному.",
+     "kind": "order",
+     "options": [
+      "СОЛЬ, {fsol} такта",
+      "ДО, {fdo} такта",
+      "МИ, {fmi} такта",
+      "РЕ, {fre} такта"
+     ],
+     "feedback": [],
+     "explanation": "Такт {bar} секунд, значит в секундах: МИ {smi}, СОЛЬ {ssol}, ДО {sdo}, РЕ {sre}. Порядок от короткого к длинному: {n1#МИ|СОЛЬ|ДО|РЕ}, {n2#МИ|СОЛЬ|ДО|РЕ}, {n3#МИ|СОЛЬ|ДО|РЕ}, {n4#МИ|СОЛЬ|ДО|РЕ}.",
+     "outcome": "Ася сохраняет порядок {n1#МИ|СОЛЬ|ДО|РЕ}, {n2#МИ|СОЛЬ|ДО|РЕ}, {n3#МИ|СОЛЬ|ДО|РЕ}, {n4#МИ|СОЛЬ|ДО|РЕ}. Одно приветствие длится {s1} + {s2} + {s3} + {s4} = {greet} секунд. Осталось проверить всю программу по контрольной записи.",
+     "next": "Рассчитать всю программу",
+     "hints": [
+      "Приведи все доли к одному знаменателю, например к {den#четвертям|восьмым|двенадцатым|шестнадцатым}.",
+      "Или переведи доли в секунды: один такт это {bar} секунд, умножь каждую долю на {bar}.",
+      "Сравни четыре получившихся числа и расставь звуки по возрастанию."
+     ],
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      0,
+      1
+     ]
+    },
+    {
+     "title": "Сколько длится всё приветствие?",
+     "situation": "Программа повторяет восстановленное приветствие несколько раз. У Аси есть контрольная запись правильной программы, и по длительности можно проверить, всё ли восстановлено.",
+     "evidence": [
+      "Одно приветствие длится {greet|секунду|секунды|секунд}.",
+      "Приветствие звучит {rp|раз|раза|раз}.",
+      "Между соседними приветствиями пауза {pz|секунда|секунды|секунд}. Перед первым и после последнего пауз нет.",
+      "Контрольная запись правильной программы длится {total|секунду|секунды|секунд}."
+     ],
+     "question": "Сколько секунд займёт восстановленная программа? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{rp} приветствия: {rp} × {greet} = {tot1} секунд. {pauses|пауза|паузы|пауз}: {pauses} × {pz} = {tot2} секунд. Всего {total} секунд, как на контрольной записи.",
+     "outcome": "Длительность совпала с контрольной записью. Ася запускает маяк: свет и звук вместе, ноты по порядку, брат оправдан.",
+     "next": "Запустить приветствие",
+     "hints": [
+      "Сначала длительность одного приветствия из четырёх звуков.",
+      "Приветствий {rp}, но пауз между ними только {pauses}.",
+      "Сложи звуки и паузы."
+     ],
+     "scene": 3,
+     "answer": "49"
+    }
+   ]
+  },
+  "pl": {
+   "title": "Latarnia, która zapomniała melodii",
+   "intro": "Zabawkowa latarnia morska wita gości światełkiem i krótką melodią. Asia wczoraj poprawiała program, a dziś dźwięk się spóźnia i nuty idą w złej kolejności. Jej brat mówi, że chodzi o przewód głośnika, który wczoraj zaczepił. Pomóż na podstawie nagrania i karty melodii przywrócić powitanie i sprawdzić je z nagraniem kontrolnym.",
+   "ending": "Dźwięk spóźniał się o {delay|sekundę|sekundy|sekund} przez {rep} testowych oczekiwań po {w|sekundzie|sekundy|sekund}, których Asia zapomniała usunąć. Przewód brata nie miał z tym nic wspólnego: zły przewód nie daje za każdym razem tego samego opóźnienia. Nuty wróciły do kolejności od krótkiej do długiej: {n1#MI|SOL|DO|RE}, {n2#MI|SOL|DO|RE}, {n3#MI|SOL|DO|RE}, {n4#MI|SOL|DO|RE}. Jedno powitanie trwa {greet|sekundę|sekundy|sekund}, a cały program z {rp} powitań i {pauses|przerwy|przerw|przerw} {total|sekundę|sekundy|sekund}, dokładnie jak na nagraniu kontrolnym.",
+   "question": "Brat naprawdę zaczepił przewód. Dlaczego ta wersja nie wyjaśniała opóźnienia?",
+   "steps": [
+    {
+     "title": "O ile spóźnia się dźwięk?",
+     "situation": "Przy latarni Asia włącza nagranie dzisiejszego powitania. Na nagraniu są znaczniki czasu pliku i Asia znalazła dwa momenty.",
+     "evidence": [
+      "Światełko zapala się na znaczniku {lt} pliku.",
+      "Pierwszą nutę słychać na znaczniku {st} pliku.",
+      "Według planu światło i dźwięk mają zaczynać się jednocześnie."
+     ],
+     "question": "O ile sekund spóźnia się dźwięk? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{st} to {ssec} sekund, {lt} to {lsec} sekund. {ssec} - {lsec} = {delay} sekund.",
+     "outcome": "Dźwięk spóźnia się dokładnie o {delay|sekundę|sekundy|sekund} i na trzech powtórzeniach nagrania opóźnienie jest takie samo. Zobaczmy, skąd w programie dźwięku bierze się tyle sekund.",
+     "next": "Otwórz program dźwięku",
+     "hints": [
+      "Zamień oba znaczniki na sekundy.",
+      "Znacznik ma postać minuty:sekundy. Pomnóż minuty przez 60 i dodaj sekundy.",
+      "Odejmij moment światła od momentu dźwięku."
+     ],
+     "scene": 0,
+     "answer": "18"
+    },
+    {
+     "title": "Gdzie jest zbędne oczekiwanie?",
+     "situation": "Na ekranie jest program dźwięku po komendach. Program światła zaczyna od razu. Brat Asi upiera się przy przewodzie. Sprawdź, co z tego daje opóźnienie dokładnie {delay|sekundę|sekundy|sekund}, i to za każdym razem takie samo.",
+     "evidence": [
+      "Komenda 1: czekać {w|sekundę|sekundy|sekund}, powtórzyć {rep|raz|razy|razy}.",
+      "Komenda 2: zagrać powitanie.",
+      "Komenda 3: po powitaniu czekać {pa} sekundy przed powtórzeniem.",
+      "Brat wczoraj zaczepił przewód głośnika, przewód siedzi luźno.",
+      "Na trzech powtórzeniach nagrania opóźnienie za każdym razem wynosi dokładnie {delay|sekundę|sekundy|sekund}."
+     ],
+     "question": "Co wyjaśnia opóźnienie pierwszego dźwięku?",
+     "kind": "choice",
+     "options": [
+      "{rep|oczekiwanie|oczekiwania|oczekiwań} po {w|sekundzie|sekundy|sekund} przed powitaniem",
+      "Komenda zagrania powitania",
+      "Przerwa {pa} sekundy po powitaniu",
+      "Luźny przewód głośnika"
+     ],
+     "feedback": [
+      "",
+      "Ta komenda zaczyna dźwięk, a nie go opóźnia.",
+      "Ta przerwa jest po powitaniu i nie może opóźnić jego początku.",
+      "Luźny przewód daje trzaski albo ciszę, ale nie dokładnie {delay|sekundę|sekundy|sekund} za każdym razem."
+     ],
+     "explanation": "Komenda 1 stoi przed dźwiękiem i trwa {w} × {rep} = {delay} sekund, dokładnie tyle co opóźnienie. Komenda 2 zaczyna dźwięk, komenda 3 wykonuje się po nim. Przewód nie daje takiego samego opóźnienia przy każdym powtórzeniu.",
+     "outcome": "Asia przypomina sobie: wstawiła testowe oczekiwanie, żeby sprawdzać światło, i zapomniała je usunąć. Komenda 1 zostaje usunięta, światło i dźwięk zaczynają razem. Teraz kolejność nut.",
+     "next": "Sprawdź kartę melodii",
+     "hints": [
+      "Szukaj tego, co stoi przed pierwszym dźwiękiem.",
+      "Opóźnienie jest takie samo przy każdym powtórzeniu: awaria przewodu tak nie działa.",
+      "Ile sekund dają wszystkie powtórzenia komendy 1?"
+     ],
+     "scene": 1,
+     "answer": 0
+    },
+    {
+     "title": "W jakiej kolejności brzmią nuty?",
+     "situation": "Na karcie Asi zapisano regułę tego powitania: dźwięki idą od najkrótszego do najdłuższego. Długości podano w częściach jednego taktu.",
+     "evidence": [
+      "Jeden takt trwa {bar} sekund.",
+      "MI zajmuje {fmi} taktu, SOL {fsol} taktu, DO {fdo} taktu, RE {fre} taktu.",
+      "Każdy dźwięk brzmi raz."
+     ],
+     "question": "Ustaw dźwięki według reguły z karty, od krótkiego do długiego.",
+     "kind": "order",
+     "options": [
+      "SOL, {fsol} taktu",
+      "DO, {fdo} taktu",
+      "MI, {fmi} taktu",
+      "RE, {fre} taktu"
+     ],
+     "feedback": [],
+     "explanation": "Takt trwa {bar} sekund, więc w sekundach: MI {smi}, SOL {ssol}, DO {sdo}, RE {sre}. Kolejność od krótkiego do długiego: {n1#MI|SOL|DO|RE}, {n2#MI|SOL|DO|RE}, {n3#MI|SOL|DO|RE}, {n4#MI|SOL|DO|RE}.",
+     "outcome": "Asia zapisuje kolejność {n1#MI|SOL|DO|RE}, {n2#MI|SOL|DO|RE}, {n3#MI|SOL|DO|RE}, {n4#MI|SOL|DO|RE}. Jedno powitanie trwa {s1} + {s2} + {s3} + {s4} = {greet} sekund. Zostało sprawdzić cały program z nagraniem kontrolnym.",
+     "next": "Oblicz cały program",
+     "hints": [
+      "Sprowadź wszystkie części do wspólnego mianownika, na przykład do {den#czwartych|ósmych|dwunastych|szesnastych}.",
+      "Albo zamień części na sekundy: jeden takt to {bar} sekund, pomnóż każdą część przez {bar}.",
+      "Porównaj cztery otrzymane liczby i ustaw dźwięki rosnąco."
+     ],
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      0,
+      1
+     ]
+    },
+    {
+     "title": "Ile trwa całe powitanie?",
+     "situation": "Program powtarza przywrócone powitanie kilka razy. Asia ma nagranie kontrolne poprawnego programu i po długości można sprawdzić, czy wszystko zostało przywrócone.",
+     "evidence": [
+      "Jedno powitanie trwa {greet|sekundę|sekundy|sekund}.",
+      "Powitanie brzmi {rp|raz|razy|razy}.",
+      "Między sąsiednimi powitaniami jest przerwa {pz|sekunda|sekundy|sekund}. Przed pierwszym i po ostatnim przerw nie ma.",
+      "Nagranie kontrolne poprawnego programu trwa {total|sekundę|sekundy|sekund}."
+     ],
+     "question": "Ile sekund zajmie przywrócony program? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{rp} powitania: {rp} × {greet} = {tot1} sekund. {pauses|przerwa|przerwy|przerw}: {pauses} × {pz} = {tot2} sekund. Razem {total} sekund, jak na nagraniu kontrolnym.",
+     "outcome": "Długość zgadza się z nagraniem kontrolnym. Asia uruchamia latarnię: światło i dźwięk razem, nuty po kolei, brat uniewinniony.",
+     "next": "Uruchom powitanie",
+     "hints": [
+      "Najpierw długość jednego powitania z czterech dźwięków.",
+      "Powitań jest {rp}, ale przerw między nimi tylko {pauses}.",
+      "Dodaj dźwięki i przerwy."
+     ],
+     "scene": 3,
+     "answer": "49"
+    }
+   ]
+  },
+  "en": {
+   "title": "The Lighthouse That Forgot Its Tune",
+   "intro": "A toy lighthouse greets visitors with a light and a short tune. Asya edited the program yesterday, and today the sound comes late and the notes play in the wrong order. Her brother says the problem is the speaker cable he knocked yesterday. Help restore the greeting from the video recording and the melody card, and check it against the reference recording.",
+   "ending": "The sound was {delay} seconds late because of {rep} {w}-second test waits that Asya forgot to remove. Her brother’s cable had nothing to do with it: a faulty cable does not give the same delay every time. The notes went back into order from shortest to longest: {n1#MI|SOL|DO|RE}, {n2#MI|SOL|DO|RE}, {n3#MI|SOL|DO|RE}, {n4#MI|SOL|DO|RE}. One greeting lasts {greet} seconds, and the whole program of {rp} greetings and {pauses} pauses lasts {total} seconds, exactly like the reference recording.",
+   "question": "The brother really did knock the cable. Why did that theory not explain the delay?",
+   "steps": [
+    {
+     "title": "How late is the sound?",
+     "situation": "At the lighthouse, Asya plays the video of today’s greeting. The recording has file time marks, and Asya has found two moments.",
+     "evidence": [
+      "The light comes on at the {lt} mark of the file.",
+      "The first note is heard at the {st} mark of the file.",
+      "According to the plan, the light and the sound should start at the same time."
+     ],
+     "question": "How many seconds late is the sound? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{st} is {ssec} seconds, {lt} is {lsec} seconds. {ssec} - {lsec} = {delay} seconds.",
+     "outcome": "The sound is exactly {delay} seconds behind, and the delay is the same on all three repeats in the recording. Let’s see where that many seconds come from in the sound program.",
+     "next": "Open the sound program",
+     "hints": [
+      "Convert both marks to seconds.",
+      "A mark reads minutes:seconds. Multiply the minutes by 60 and add the seconds.",
+      "Subtract the light moment from the sound moment."
+     ],
+     "scene": 0,
+     "answer": "18"
+    },
+    {
+     "title": "Where is the extra wait?",
+     "situation": "The screen shows the sound program command by command. The light program starts immediately. Asya’s brother insists on the cable. Check which of these gives a delay of exactly {delay} seconds, the same every time.",
+     "evidence": [
+      "Command 1: wait {w} seconds, repeat {rep} times.",
+      "Command 2: play the greeting.",
+      "Command 3: after the greeting, wait {pa} seconds before repeating.",
+      "Yesterday the brother knocked the speaker cable, and it sits loosely.",
+      "On all three repeats in the recording the delay is exactly {delay} seconds every time."
+     ],
+     "question": "What explains the delay of the first sound?",
+     "kind": "choice",
+     "options": [
+      "{rep} {w}-second waits before the greeting",
+      "The command to play the greeting",
+      "The {pa}-second pause after the greeting",
+      "The loose speaker cable"
+     ],
+     "feedback": [
+      "",
+      "This command starts the sound; it does not delay it.",
+      "This pause comes after the greeting and cannot delay its start.",
+      "A loose cable gives crackle or silence, not exactly {delay} seconds every time."
+     ],
+     "explanation": "Command 1 comes before the sound and lasts {w} × {rep} = {delay} seconds, exactly the delay. Command 2 starts the sound, and command 3 runs after it. A cable does not give an identical delay on every repeat.",
+     "outcome": "Asya remembers: she inserted a test wait to check the light and forgot to remove it. Command 1 is deleted, and the light and sound start together. Now for the order of the notes.",
+     "next": "Check the melody card",
+     "hints": [
+      "Look for whatever comes before the first sound.",
+      "The delay is identical on every repeat: a cable fault does not behave like that.",
+      "How many seconds do all the repeats of command 1 add up to?"
+     ],
+     "scene": 1,
+     "answer": 0
+    },
+    {
+     "title": "In what order do the notes play?",
+     "situation": "Asya’s card states the rule for this greeting: the notes go from the shortest to the longest. The lengths are given as fractions of one bar.",
+     "evidence": [
+      "One bar lasts {bar} seconds.",
+      "MI takes {fmi} of a bar, SOL {fsol} of a bar, DO {fdo} of a bar, RE {fre} of a bar.",
+      "Each note plays once."
+     ],
+     "question": "Arrange the notes by the card’s rule, from shortest to longest.",
+     "kind": "order",
+     "options": [
+      "SOL, {fsol} bar",
+      "DO, {fdo} bar",
+      "MI, {fmi} bar",
+      "RE, {fre} bar"
+     ],
+     "feedback": [],
+     "explanation": "A bar is {bar} seconds, so in seconds: MI {smi}, SOL {ssol}, DO {sdo}, RE {sre}. The order from shortest to longest is {n1#MI|SOL|DO|RE}, {n2#MI|SOL|DO|RE}, {n3#MI|SOL|DO|RE}, {n4#MI|SOL|DO|RE}.",
+     "outcome": "Asya saves the order {n1#MI|SOL|DO|RE}, {n2#MI|SOL|DO|RE}, {n3#MI|SOL|DO|RE}, {n4#MI|SOL|DO|RE}. One greeting lasts {s1} + {s2} + {s3} + {s4} = {greet} seconds. All that remains is to check the whole program against the reference recording.",
+     "next": "Work out the whole program",
+     "hints": [
+      "Bring all the fractions to a common denominator, for example {den#quarters|eighths|twelfths|sixteenths}.",
+      "Or convert the fractions to seconds: one bar is {bar} seconds, so multiply each fraction by {bar}.",
+      "Compare the four numbers you get and arrange the notes in increasing order."
+     ],
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      0,
+      1
+     ]
+    },
+    {
+     "title": "How long is the whole greeting?",
+     "situation": "The program repeats the restored greeting several times. Asya has a reference recording of the correct program, and the length will show whether everything has been restored.",
+     "evidence": [
+      "One greeting lasts {greet} seconds.",
+      "The greeting plays {rp} times.",
+      "There is a {pz}-second pause between neighbouring greetings. There is no pause before the first or after the last.",
+      "The reference recording of the correct program lasts {total} seconds."
+     ],
+     "question": "How many seconds will the restored program take? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{rp} greetings: {rp} × {greet} = {tot1} seconds. {pauses} pauses: {pauses} × {pz} = {tot2} seconds. {total} seconds in total, just like the reference recording.",
+     "outcome": "The length matches the reference recording. Asya starts the lighthouse: light and sound together, notes in order, and her brother is cleared.",
+     "next": "Start the greeting",
+     "hints": [
+      "First find the length of one greeting made of four notes.",
+      "There are {rp} greetings, but only {pauses} pauses between them.",
+      "Add up the notes and the pauses."
+     ],
+     "scene": 3,
+     "answer": "49"
+    }
+   ]
+  },
+  "uk": {
+   "title": "Маяк, який забув мелодію",
+   "intro": "Іграшковий маяк зустрічає гостей вогником і короткою мелодією. Ася вчора правила програму, а сьогодні звук запізнюється і ноти йдуть не в тому порядку. Її брат каже, що річ у проводі динаміка, який він учора зачепив. Допоможи за відеозаписом і карткою мелодії повернути привітання і перевірити його за контрольним записом.",
+   "ending": "Звук запізнювався на {delay|секунду|секунди|секунд} через {rep} тестових очікувань по {w|секунді|секунди|секунд}, які Ася забула прибрати. Провід брата був ні до чого: поганий провід не дає ту саму затримку щоразу. Ноти повернули в порядок від короткої до довгої: {n1#МІ|СОЛЬ|ДО|РЕ}, {n2#МІ|СОЛЬ|ДО|РЕ}, {n3#МІ|СОЛЬ|ДО|РЕ}, {n4#МІ|СОЛЬ|ДО|РЕ}. Одне привітання триває {greet|секунду|секунди|секунд}, а вся програма з {rp} привітань і {pauses|паузи|пауз|пауз} {total|секунду|секунди|секунд}, рівно як на контрольному записі.",
+   "question": "Брат справді зачепив провід. Чому ця версія не пояснювала затримку?",
+   "steps": [
+    {
+     "title": "Наскільки запізнюється звук?",
+     "situation": "Біля маяка Ася вмикає відеозапис сьогоднішнього привітання. На записі є позначки часу файлу, і Ася знайшла два моменти.",
+     "evidence": [
+      "Вогник загоряється на позначці {lt} файлу.",
+      "Першу ноту чути на позначці {st} файлу.",
+      "За планом світло і звук мають починатися одночасно."
+     ],
+     "question": "На скільки секунд запізнюється звук? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{st} це {ssec} секунд, {lt} це {lsec} секунд. {ssec} - {lsec} = {delay} секунд.",
+     "outcome": "Звук відстає рівно на {delay|секунду|секунди|секунд}, і на трьох повторах запису затримка однакова. Подивимося, звідки в програмі звуку береться стільки секунд.",
+     "next": "Відкрити програму звуку",
+     "hints": [
+      "Переведи обидві позначки в секунди.",
+      "Позначка виду хвилини:секунди. Помнож хвилини на 60 і додай секунди.",
+      "Відніми момент світла від моменту звуку."
+     ],
+     "scene": 0,
+     "answer": "18"
+    },
+    {
+     "title": "Де зайве очікування?",
+     "situation": "На екрані програма звуку за командами. Світлова програма починає одразу. Брат Асі наполягає на проводі. Перевір, що з цього дає затримку рівно у {delay|секунду|секунди|секунд}, і щоразу однакову.",
+     "evidence": [
+      "Команда 1: чекати {w|секунду|секунди|секунд}, повторити {rep|раз|рази|разів}.",
+      "Команда 2: зіграти привітання.",
+      "Команда 3: після привітання чекати {pa} секунди перед повтором.",
+      "Брат учора зачепив провід динаміка, провід сидить нещільно.",
+      "На трьох повторах запису затримка щоразу рівно {delay|секунда|секунди|секунд}."
+     ],
+     "question": "Що пояснює затримку першого звуку?",
+     "kind": "choice",
+     "options": [
+      "{rep|очікування|очікування|очікувань} по {w|секунді|секунди|секунд} перед привітанням",
+      "Команда зіграти привітання",
+      "Пауза {pa} секунди після привітання",
+      "Нещільний провід динаміка"
+     ],
+     "feedback": [
+      "",
+      "Ця команда починає звук, а не затримує його.",
+      "Ця пауза йде після привітання і не може затримати його початок.",
+      "Нещільний провід дає тріск або тишу, але не рівно {delay|секунду|секунди|секунд} щоразу."
+     ],
+     "explanation": "Команда 1 стоїть до звуку і триває {w} × {rep} = {delay} секунд, рівно як затримка. Команда 2 починає звук, команда 3 виконується після нього. Провід не дає однакову затримку на кожному повторі.",
+     "outcome": "Ася згадує: вона вставила тестове очікування, щоб перевіряти світло, і забула його прибрати. Команду 1 видаляють, світло і звук починають разом. Тепер порядок нот.",
+     "next": "Звірити картку мелодії",
+     "hints": [
+      "Шукай те, що стоїть до першого звуку.",
+      "Затримка однакова на кожному повторі: збій проводу так не працює.",
+      "Скільки секунд дають усі повтори команди 1?"
+     ],
+     "scene": 1,
+     "answer": 0
+    },
+    {
+     "title": "У якому порядку звучать ноти?",
+     "situation": "На картці Асі записано правило цього привітання: звуки йдуть від найкоротшого до найдовшого. Тривалості дано в частках одного такту.",
+     "evidence": [
+      "Один такт триває {bar} секунд.",
+      "МІ займає {fmi} такту, СОЛЬ {fsol} такту, ДО {fdo} такту, РЕ {fre} такту.",
+      "Кожен звук звучить один раз."
+     ],
+     "question": "Розстав звуки за правилом картки, від короткого до довгого.",
+     "kind": "order",
+     "options": [
+      "СОЛЬ, {fsol} такту",
+      "ДО, {fdo} такту",
+      "МІ, {fmi} такту",
+      "РЕ, {fre} такту"
+     ],
+     "feedback": [],
+     "explanation": "Такт {bar} секунд, отже в секундах: МІ {smi}, СОЛЬ {ssol}, ДО {sdo}, РЕ {sre}. Порядок від короткого до довгого: {n1#МІ|СОЛЬ|ДО|РЕ}, {n2#МІ|СОЛЬ|ДО|РЕ}, {n3#МІ|СОЛЬ|ДО|РЕ}, {n4#МІ|СОЛЬ|ДО|РЕ}.",
+     "outcome": "Ася зберігає порядок {n1#МІ|СОЛЬ|ДО|РЕ}, {n2#МІ|СОЛЬ|ДО|РЕ}, {n3#МІ|СОЛЬ|ДО|РЕ}, {n4#МІ|СОЛЬ|ДО|РЕ}. Одне привітання триває {s1} + {s2} + {s3} + {s4} = {greet} секунд. Залишилося перевірити всю програму за контрольним записом.",
+     "next": "Розрахувати всю програму",
+     "hints": [
+      "Зведи всі частки до одного знаменника, наприклад до {den#четвертих|восьмих|дванадцятих|шістнадцятих}.",
+      "Або переведи частки в секунди: один такт це {bar} секунд, помнож кожну частку на {bar}.",
+      "Порівняй чотири отримані числа і розстав звуки за зростанням."
+     ],
+     "scene": 2,
+     "answer": [
+      2,
+      3,
+      0,
+      1
+     ]
+    },
+    {
+     "title": "Скільки триває все привітання?",
+     "situation": "Програма повторює відновлене привітання кілька разів. В Асі є контрольний запис правильної програми, і за тривалістю можна перевірити, чи все відновлено.",
+     "evidence": [
+      "Одне привітання триває {greet|секунду|секунди|секунд}.",
+      "Привітання звучить {rp|раз|рази|разів}.",
+      "Між сусідніми привітаннями пауза {pz|секунда|секунди|секунд}. Перед першим і після останнього пауз немає.",
+      "Контрольний запис правильної програми триває {total|секунду|секунди|секунд}."
+     ],
+     "question": "Скільки секунд займе відновлена програма? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{rp} привітання: {rp} × {greet} = {tot1} секунд. {pauses|пауза|паузи|пауз}: {pauses} × {pz} = {tot2} секунд. Разом {total} секунд, як на контрольному записі.",
+     "outcome": "Тривалість збіглася з контрольним записом. Ася запускає маяк: світло і звук разом, ноти по порядку, брата виправдано.",
+     "next": "Запустити привітання",
+     "hints": [
+      "Спершу тривалість одного привітання з чотирьох звуків.",
+      "Привітань {rp}, але пауз між ними лише {pauses}.",
+      "Додай звуки і паузи."
+     ],
+     "scene": 3,
+     "answer": "49"
+    }
+   ]
+  }
+ }
 }

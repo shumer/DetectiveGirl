@@ -335,7 +335,8 @@
       "Первый тёмный фонарь номер {first}. Найди, на каком участке он стоит.",
       "Тёмные участки питает один и тот же блок. Сложи фонари его участков."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10"
     },
     {
      "title": "Почему погас свет?",
@@ -369,7 +370,8 @@
       "Сравни время каждого события с {out}, когда погас свет.",
       "Ищи событие, которое произошло прямо перед {out} и объясняет, почему погасли все фонари блока сразу."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Что взять из мастерской?",
@@ -399,7 +401,11 @@
       "Свет нужен с момента проверки в 18:00, а не с выхода группы. Посчитай минуты до возвращения.",
       "Нужны ровно два предмета: один провод и один блок."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      4
+     ]
     },
     {
      "title": "Успеет ли блок зарядиться?",
@@ -422,7 +428,8 @@
       "Какая доля заряда не хватает и сколько это минут из {full}?",
       "Прибавь эти минуты к {cs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "17:55"
     }
    ]
   },
@@ -453,7 +460,8 @@
       "Pierwsza ciemna latarnia ma numer {first}. Ustal, na którym odcinku stoi.",
       "Ciemne odcinki zasila ten sam akumulator. Dodaj latarnie z jego odcinków."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10"
     },
     {
      "title": "Dlaczego zgasło światło?",
@@ -487,7 +495,8 @@
       "Porównaj czas każdego zdarzenia z {out}, kiedy zgasło światło.",
       "Szukaj zdarzenia, które nastąpiło tuż przed {out} i wyjaśnia, dlaczego zgasły wszystkie latarnie akumulatora naraz."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Co wziąć z warsztatu?",
@@ -517,7 +526,11 @@
       "Światło jest potrzebne od próby o 18:00, a nie od wyjścia grupy. Policz minuty do powrotu.",
       "Potrzebne są dokładnie dwie rzeczy: jeden przewód i jeden akumulator."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      4
+     ]
     },
     {
      "title": "Czy akumulator zdąży się naładować?",
@@ -540,7 +553,8 @@
       "Jakiej części ładunku brakuje i ile to minut z {full}?",
       "Dodaj te minuty do {cs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "17:55"
     }
    ]
   },
@@ -571,7 +585,8 @@
       "The first dark lantern is number {first}. Work out which section it stands on.",
       "The dark sections are powered by the same pack. Add up the lanterns of its sections."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10"
     },
     {
      "title": "Why did the lights go out?",
@@ -605,7 +620,8 @@
       "Compare the time of each event with {out}, when the lights went out.",
       "Look for an event that happened right before {out} and explains why all the pack’s lanterns went out at once."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "What to take from the workshop?",
@@ -635,7 +651,11 @@
       "Light is needed from the test at 18:00, not from when the group leaves. Count the minutes until the return.",
       "Exactly two items are needed: one cable and one pack."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      4
+     ]
     },
     {
      "title": "Will the pack charge in time?",
@@ -658,7 +678,8 @@
       "What fraction of the charge is missing, and how many minutes out of {full} is that?",
       "Add those minutes to {cs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "17:55"
     }
    ]
   },
@@ -689,7 +710,8 @@
       "Перший темний ліхтар номер {first}. Знайди, на якій ділянці він стоїть.",
       "Темні ділянки живить той самий блок. Додай ліхтарі його ділянок."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10"
     },
     {
      "title": "Чому згасло світло?",
@@ -723,7 +745,8 @@
       "Порівняй час кожної події з {out}, коли згасло світло.",
       "Шукай подію, яка сталася прямо перед {out} і пояснює, чому згасли всі ліхтарі блока одразу."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Що взяти з майстерні?",
@@ -753,7 +776,11 @@
       "Світло потрібне з моменту перевірки о 18:00, а не з виходу групи. Порахуй хвилини до повернення.",
       "Потрібні рівно два предмети: один провід і один блок."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      2,
+      4
+     ]
     },
     {
      "title": "Чи встигне блок зарядитися?",
@@ -776,7 +803,8 @@
       "Якої частки заряду бракує і скільки це хвилин із {full}?",
       "Додай ці хвилини до {cs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "17:55"
     }
    ]
   }

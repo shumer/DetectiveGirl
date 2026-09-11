@@ -254,7 +254,8 @@
       "Переведи все три наблюдения в точное время и найди промежуток между ними.",
       "Прибавь промежуток к последнему точному времени."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10:20"
     },
     {
      "title": "Какая игрушка пускает кольца?",
@@ -290,7 +291,8 @@
       "Если две программы дают одни и те же минуты, расписание их не различит. Ищи опыт, который различает.",
       "Что произошло с кольцами после того, как лодку выключили?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 3
     },
     {
      "title": "Откуда взялся ранний запуск?",
@@ -312,7 +314,8 @@
       "Посчитай минуты от первого кольца до последнего и раздели на промежуток.",
       "Первое кольцо тоже считается: колец на одно больше, чем промежутков."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "9"
     },
     {
      "title": "Сколько колец увидят гости?",
@@ -334,7 +337,8 @@
       "Найди последний разрешённый момент: конец сеанса минус {margin|минута|минуты|минут}.",
       "Отбрось кольца после этого момента."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "4"
     }
    ]
   },
@@ -364,7 +368,8 @@
       "Przelicz wszystkie trzy obserwacje na dokładny czas i znajdź odstęp między nimi.",
       "Dodaj odstęp do ostatniego dokładnego czasu."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10:20"
     },
     {
      "title": "Która zabawka puszcza kręgi?",
@@ -400,7 +405,8 @@
       "Jeśli dwa programy dają te same minuty, rozkład ich nie rozróżni. Szukaj eksperymentu, który rozróżnia.",
       "Co stało się z kręgami po wyłączeniu łódki?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 3
     },
     {
      "title": "Skąd wziął się wczesny start?",
@@ -422,7 +428,8 @@
       "Policz minuty od pierwszego kręgu do ostatniego i podziel przez odstęp.",
       "Pierwszy krąg też się liczy: kręgów jest o jeden więcej niż odstępów."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "9"
     },
     {
      "title": "Ile kręgów zobaczą goście?",
@@ -444,7 +451,8 @@
       "Znajdź ostatni dozwolony moment: koniec seansu minus {margin|minuta|minuty|minut}.",
       "Odrzuć kręgi po tym momencie."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "4"
     }
    ]
   },
@@ -474,7 +482,8 @@
       "Convert all three observations to exact time and find the interval between them.",
       "Add the interval to the last exact time."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10:20"
     },
     {
      "title": "Which toy makes the rings?",
@@ -510,7 +519,8 @@
       "If two programs give the same minutes, the schedule cannot tell them apart. Look for the experiment that does.",
       "What happened to the rings after the boat was switched off?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 3
     },
     {
      "title": "Where did the early start come from?",
@@ -532,7 +542,8 @@
       "Count the minutes from the first ring to the last and divide by the interval.",
       "The first ring counts too: there is one more ring than there are intervals."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "9"
     },
     {
      "title": "How many rings will the guests see?",
@@ -554,7 +565,8 @@
       "Find the last allowed moment: the end of the session minus {margin} minutes.",
       "Drop the rings after that moment."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "4"
     }
    ]
   },
@@ -584,7 +596,8 @@
       "Переведи всі три спостереження в точний час і знайди проміжок між ними.",
       "Додай проміжок до останнього точного часу."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "10:20"
     },
     {
      "title": "Яка іграшка пускає кільця?",
@@ -620,7 +633,8 @@
       "Якщо дві програми дають ті самі хвилини, розклад їх не розрізнить. Шукай дослід, який розрізняє.",
       "Що сталося з кільцями після того, як човен вимкнули?"
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 3
     },
     {
      "title": "Звідки взявся ранній запуск?",
@@ -642,7 +656,8 @@
       "Порахуй хвилини від першого кільця до останнього і поділи на проміжок.",
       "Перше кільце теж рахується: кілець на одне більше, ніж проміжків."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": "9"
     },
     {
      "title": "Скільки кілець побачать гості?",
@@ -664,7 +679,8 @@
       "Знайди останній дозволений момент: кінець сеансу мінус {margin|хвилина|хвилини|хвилин}.",
       "Відкинь кільця після цього моменту."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "4"
     }
    ]
   }

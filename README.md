@@ -40,14 +40,15 @@ The start screen is a gallery of case cards: scene image, number, title, a one-l
 
 ## Content
 
-Eleven cases: the golden owl, the forest lanterns, a parcel for Cloud Island, the museum of mixed-up shadows, the Moon greenhouse, the theatre of the lost finale, the aquarium bubbles, the moon cookie bakery, the lighthouse tune, two bookmarks in a library and the park parade. Each has four connected steps, three hints per step, feedback for every wrong option, a mistake counter, a findings notebook and an ending. The maths is roughly fifth grade: clock corrections in both directions, time gaps against walking times, map scale, speed and distance, fractions of a whole, timetables with intervals. The difficulty rules live in `docs/difficulty.ru.md`.
+Eleven cases: the golden owl, the forest lanterns, a parcel for Cloud Island, the museum of mixed-up shadows, the Moon greenhouse, the theatre of the lost finale, the aquarium bubbles, the moon cookie bakery, the lighthouse tune, two bookmarks in a library and the park parade. Each has four connected steps, three hints per step, feedback for every wrong option, a mistake counter, a findings notebook and an ending. Every case comes in four rounds: the same story with four different sets of numbers and answers, so it can be replayed. A new game picks a round the player has not solved yet, and the gallery shows how many rounds are done. The maths is roughly fifth grade: clock corrections in both directions, time gaps against walking times, map scale, speed and distance, fractions of a whole, timetables with intervals. The difficulty rules live in `docs/difficulty.ru.md`.
 
 - `app/page.tsx` - case and language selection, scene styling.
 - `app/CaseGallery.tsx` - the start screen with case cards.
 - `app/RevisionCase.tsx` - the shared game interface.
 - `app/progress.ts` - solved-case storage and card teasers.
 - `app/revision-game.ts` - answer validation and the rating at the end.
-- `app/revised/*.json` - the playable cases in all four languages.
+- `app/revised/*.json` - the playable cases in all four languages, generated from `scripts/cases/*.py` (text templates plus the four rounds of numbers). Rebuild with `python3 scripts/build_cases.py`.
+- `app/variants.ts` - fills the templates for the chosen round and reorders answer options.
 - `docs/stories.ru.md` - all eleven scripts in Russian, generated from the JSON.
 - `docs/difficulty.ru.md` - difficulty and mechanics rules (Russian).
 - `scripts/backgrounds.py` - generates the stylised SVG backgrounds for cases 005-011 until painted artwork exists (see `docs/art-direction.ru.md`).

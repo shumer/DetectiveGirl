@@ -298,7 +298,8 @@
       "План {plan} минут. Сравни с тем, что набралось.",
       "Не хватает ровно разницы между планом и суммой отрезков."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "15"
     },
     {
      "title": "Что закрывало свет?",
@@ -331,7 +332,8 @@
       "Одно событие не может объяснить оба промежутка, если оно было только в одном из них.",
       "Событие до {s1} или после {e3} на утренний план не влияет."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Куда убрать помехи?",
@@ -362,7 +364,11 @@
       "Подходящих по размеру мест больше одного. Отбрось те, что стоят в луче какой-нибудь лампы.",
       "Нужно ровно два ответа: одна ниша и одна площадка."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      1,
+      6
+     ]
     },
     {
      "title": "Когда выключить подсветку?",
@@ -385,7 +391,8 @@
       "Удвой недостачу из первого шага.",
       "Прибавь это время к {xs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "12:10"
     }
    ]
   },
@@ -415,7 +422,8 @@
       "Plan to {plan} minut. Porównaj z tym, co się uzbierało.",
       "Brakuje dokładnie różnicy między planem a sumą odcinków."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "15"
     },
     {
      "title": "Co zasłaniało światło?",
@@ -448,7 +456,8 @@
       "Jedno zdarzenie nie wyjaśni obu przerw, jeśli było tylko w jednej z nich.",
       "Zdarzenie przed {s1} albo po {e3} nie wpływa na poranny plan."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Gdzie usunąć przeszkody?",
@@ -479,7 +488,11 @@
       "Pasujących rozmiarem miejsc jest więcej niż jedno. Odrzuć te, które stoją w smudze jakiejś lampy.",
       "Potrzebne są dokładnie dwie odpowiedzi: jedna wnęka i jedna platforma."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      1,
+      6
+     ]
     },
     {
      "title": "Kiedy wyłączyć doświetlanie?",
@@ -502,7 +515,8 @@
       "Podwój brak z pierwszego kroku.",
       "Dodaj ten czas do {xs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "12:10"
     }
    ]
   },
@@ -532,7 +546,8 @@
       "The plan is {plan} minutes. Compare it with what was collected.",
       "Exactly the difference between the plan and the sum of the stretches is missing."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "15"
     },
     {
      "title": "What blocked the light?",
@@ -565,7 +580,8 @@
       "One event cannot explain both gaps if it happened during only one of them.",
       "An event before {s1} or after {e3} does not affect the morning plan."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Where to put the obstacles?",
@@ -596,7 +612,11 @@
       "More than one place fits by size. Rule out the ones that stand in some lamp’s beam.",
       "Exactly two answers are needed: one niche and one platform."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      1,
+      6
+     ]
     },
     {
      "title": "When to switch off the extra light?",
@@ -619,7 +639,8 @@
       "Double the shortfall from the first step.",
       "Add that time to {xs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "12:10"
     }
    ]
   },
@@ -649,7 +670,8 @@
       "План {plan} хвилин. Порівняй з тим, що набралося.",
       "Бракує рівно різниці між планом і сумою відрізків."
      ],
-     "scene": 0
+     "scene": 0,
+     "answer": "15"
     },
     {
      "title": "Що закривало світло?",
@@ -682,7 +704,8 @@
       "Одна подія не може пояснити обидва проміжки, якщо вона була лише в одному з них.",
       "Подія до {s1} або після {e3} на ранковий план не впливає."
      ],
-     "scene": 1
+     "scene": 1,
+     "answer": 2
     },
     {
      "title": "Куди прибрати перешкоди?",
@@ -713,7 +736,11 @@
       "Підхожих за розміром місць більше ніж одне. Відкинь ті, що стоять у промені якоїсь лампи.",
       "Потрібно рівно дві відповіді: одна ніша і один майданчик."
      ],
-     "scene": 2
+     "scene": 2,
+     "answer": [
+      1,
+      6
+     ]
     },
     {
      "title": "Коли вимкнути підсвітку?",
@@ -736,7 +763,8 @@
       "Подвой нестачу з першого кроку.",
       "Додай цей час до {xs}."
      ],
-     "scene": 3
+     "scene": 3,
+     "answer": "12:10"
     }
    ]
   }
