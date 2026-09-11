@@ -1,506 +1,824 @@
 {
-  "id": "cloud",
-  "number": "003",
-  "locales": {
-    "ru": {
-      "title": "Посылка для облачного острова",
-      "intro": "На облачном острове к празднику собирают флюгер-петуха. Мастер открыл коробку: вместо хвоста внутри маленький парус. Почтальон Ника уверена, что перепутала две коробки с одинаковым облаком на крышке. На почте четыре невостребованных отправления, у всех размокли ярлыки. Праздник в 12:10, «Ласточка» летает на остров раз в день. Нужно найти хвост, доставить его к мастеру и успеть к празднику. А потом ещё вернуть парус тому, кто его ждёт.",
-      "ending": "Хвост нашёлся в третьей коробке: две коробки весили одинаково, и разобраться помогла длина. «Ласточка» долетела за 40 минут с остановкой, курьер Б привёз хвост в 11:50, и мастер поднял флюгер к 12:10. Парус улетел «Стрижом» в 12:40 и был у лодочника Тима в 13:05. Ника больше не подписывает коробки только рисунком: теперь на каждой адрес и вес.",
-      "question": "Две коробки весили ровно 1,6 кг. Почему масса сама по себе не сказала, в какой из них хвост?",
-      "steps": [
-        {
-          "title": "Какая коробка наша?",
-          "situation": "На почте Ника кладёт на весы все четыре отправления и достаёт накладную мастера. Открывать чужие посылки нельзя, поэтому выбрать нужно по накладной, а открыть только одну.",
-          "evidence": [
-            "Накладная мастера: хвост длиной 45 см, масса 1 кг 200 г. Упакован в коробку массой 250 г, внутри ещё 150 г бумаги.",
-            "Отправление №1: 1,45 кг, коробка длиной 50 см.",
-            "Отправление №2: 1,6 кг, коробка длиной 30 см.",
-            "Отправление №3: 1,6 кг, коробка длиной 50 см.",
-            "Отправление №4: 1 кг 750 г, коробка длиной 60 см."
-          ],
-          "question": "Какое отправление открыть?",
-          "kind": "choice",
-          "options": [
-            "Отправление №1",
-            "Отправление №2",
-            "Отправление №3",
-            "Отправление №4"
-          ],
-          "answer": 2,
-          "feedback": [
-            "1,45 кг это 1450 г: хвост и коробка без бумаги. Но бумага тоже лежит внутри.",
-            "Масса совпадает, но хвост длиной 45 см не поместится в коробку длиной 30 см.",
-            "",
-            "1 кг 750 г тяжелее нужной массы на 150 г."
-          ],
-          "explanation": "1200 + 250 + 150 = 1600 г, то есть 1,6 кг. Столько весят №2 и №3, но хвост длиной 45 см поместится только в коробку длиной 50 см. Ника открывает №3: внутри хвост петуха.",
-          "outcome": "Хвост найден в отправлении №3. Теперь его нужно отправить на остров «Ласточкой» и понять, сколько времени останется.",
-          "next": "К причалу «Ласточки»",
-          "hints": [
-            "Переведи всё в граммы и сложи хвост, коробку и бумагу.",
-            "Одинаковую массу могут иметь две коробки. Тогда смотри на размер.",
-            "Хвост длиной 45 см не согнёшь: коробка должна быть длиннее."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Когда коробка будет на острове?",
-          "situation": "На причале Ника сдаёт коробку на «Ласточку». Капитан показывает маршрут: до острова с одной остановкой на Ветряной башне. Посчитай, когда коробку выдадут курьеру.",
-          "evidence": [
-            "«Ласточка» вылетает в 10:25 и летит со скоростью 90 км/ч.",
-            "До острова 60 км. По пути одна остановка на Ветряной башне, 10 минут.",
-            "После прибытия разгрузка занимает 10 минут, потом коробку выдают курьеру."
-          ],
-          "question": "Во сколько коробку выдадут курьеру на острове? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "11:25",
-          "feedback": [],
-          "explanation": "60 км при скорости 90 км/ч это 2/3 часа, то есть 40 минут. Остановка 10 минут и разгрузка 10 минут: всего 60 минут. 10:25 + 60 минут = 11:25.",
-          "outcome": "Коробку выдадут в 11:25. До праздника в 12:10 остаётся 45 минут, и их надо разделить между дорогой курьера и работой мастера.",
-          "next": "Выбрать курьера",
-          "hints": [
-            "Сначала узнай, сколько минут займёт сам полёт: за час 90 км, значит какую часть часа займут 60 км?",
-            "60 из 90 это две трети. Переведи две трети часа в минуты.",
-            "К полёту прибавь остановку и разгрузку, а потом всё к 10:25."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Кто довезёт хвост?",
-          "situation": "На площади острова четыре курьера, у каждого свой рейс по расписанию: время выезда изменить нельзя. Ника записала для каждого, когда он выезжает, сколько ехать и что он берёт.",
-          "evidence": [
-            "Коробку выдают в 11:25. Праздник в 12:10. Мастеру нужно 12 минут: установить хвост и проверить флюгер.",
-            "Курьер А: выезжает в 11:20, едет 3 км со скоростью 12 км/ч.",
-            "Курьер Б: выезжает в 11:30, едет 4 км со скоростью 12 км/ч.",
-            "Курьер В: выезжает в 11:35, идёт с тележкой 3 км со скоростью 6 км/ч.",
-            "Курьер Г: выезжает в 11:25, едет 5 км со скоростью 10 км/ч, но берёт только коробки длиной до 40 см."
-          ],
-          "question": "Кто довезёт хвост так, чтобы мастер успел к 12:10?",
-          "kind": "choice",
-          "options": [
-            "Курьер А",
-            "Курьер Б",
-            "Курьер В",
-            "Курьер Г"
-          ],
-          "answer": 1,
-          "feedback": [
-            "Курьер А выезжает в 11:20, а коробку выдадут только в 11:25.",
-            "",
-            "3 км при 6 км/ч это 30 минут: курьер В приедет в 12:05, и мастеру не хватит 12 минут.",
-            "По времени курьер Г успевает, но наша коробка длиной 50 см, а он берёт только до 40 см."
-          ],
-          "explanation": "Мастеру нужно 12 минут, значит хвост должен быть у него не позже 11:58. Б: 4 км при 12 км/ч это 20 минут, приедет в 11:50. А уезжает до выдачи, В приедет в 12:05, Г не берёт такие коробки.",
-          "outcome": "Ника договаривается с курьером Б: он забирает коробку в 11:30 и привозит мастеру в 11:50. У мастера 20 минут на работу, которая занимает 12.",
-          "next": "Собрать флюгер",
-          "hints": [
-            "Сначала посчитай, к какому времени хвост должен быть у мастера.",
-            "Время дороги: расстояние раздели на скорость. При 12 км/ч один километр занимает 5 минут.",
-            "Проверь у каждого три вещи: время выезда, время прибытия и подходит ли коробка."
-          ],
-          "scene": 3
-        },
-        {
-          "title": "Куда девать парус?",
-          "situation": "В трюме «Ласточки» мастер устанавливает хвост: в 12:02 флюгер готов, к 12:10 петух на башне. Осталась вторая половина ошибки Ники: коробка с парусом, которую ждёт лодочник Тим на Малом острове.",
-          "evidence": [
-            "Курьер Б привезёт коробку с парусом обратно на площадь к 12:15.",
-            "Тим ждёт парус на своём причале на Малом острове до 13:30.",
-            "«Стриж» летает на Малый остров каждые 40 минут, первый рейс в 12:00. Полёт занимает 25 минут.",
-            "Коробку грузят только на рейс, который вылетает после того, как её привезли на площадь."
-          ],
-          "question": "Во сколько самое раннее парус будет у Тима? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "13:05",
-          "feedback": [],
-          "explanation": "Рейсы «Стрижа»: 12:00, 12:40, 13:20. Коробка на площади только в 12:15, значит первый подходящий рейс в 12:40. 12:40 + 25 минут = 13:05, Тим ещё ждёт.",
-          "outcome": "Парус улетает в 12:40 и будет у Тима в 13:05, за 25 минут до того, как он перестанет ждать. Обе коробки нашли своих хозяев.",
-          "next": "Поднять флюгер",
-          "hints": [
-            "Выпиши рейсы «Стрижа»: первый в 12:00, дальше каждые 40 минут.",
-            "Коробка попадёт только на рейс, который вылетает после 12:15.",
-            "Прибавь длительность полёта ко времени вылета."
-          ],
-          "scene": 2
-        }
-      ]
-    },
-    "pl": {
-      "title": "Paczka dla Wyspy Chmur",
-      "intro": "Na Wyspie Chmur na święto składają wiatrowskaz w kształcie koguta. Majster otworzył pudełko: zamiast ogona w środku był mały żagiel. Listonoszka Nika jest pewna, że pomyliła dwa pudełka z taką samą chmurką na wieczku. Na poczcie są cztery nieodebrane przesyłki, wszystkie z rozmokłymi etykietami. Święto jest o 12:10, „Jaskółka” lata na wyspę raz dziennie. Trzeba znaleźć ogon, dostarczyć go do majstra i zdążyć na święto. A potem jeszcze oddać żagiel temu, kto na niego czeka.",
-      "ending": "Ogon znalazł się w trzecim pudełku: dwa pudełka ważyły tyle samo i pomogła długość. „Jaskółka” doleciała w 40 minut z postojem, kurier B przywiózł ogon o 11:50, a majster ustawił wiatrowskaz na 12:10. Żagiel odleciał „Jerzykiem” o 12:40 i był u szkutnika Tima o 13:05. Nika nie podpisuje już pudełek samym rysunkiem: teraz na każdym jest adres i masa.",
-      "question": "Dwa pudełka ważyły dokładnie 1,6 kg. Dlaczego sama masa nie powiedziała, w którym jest ogon?",
-      "steps": [
-        {
-          "title": "Które pudełko jest nasze?",
-          "situation": "Na poczcie Nika kładzie na wadze wszystkie cztery przesyłki i wyjmuje list przewozowy majstra. Cudzych paczek nie wolno otwierać, więc trzeba wybrać według listu, a otworzyć tylko jedną.",
-          "evidence": [
-            "List przewozowy majstra: ogon o długości 45 cm, masa 1 kg 200 g. Zapakowany w pudełko o masie 250 g, w środku jeszcze 150 g papieru.",
-            "Przesyłka nr 1: 1,45 kg, pudełko o długości 50 cm.",
-            "Przesyłka nr 2: 1,6 kg, pudełko o długości 30 cm.",
-            "Przesyłka nr 3: 1,6 kg, pudełko o długości 50 cm.",
-            "Przesyłka nr 4: 1 kg 750 g, pudełko o długości 60 cm."
-          ],
-          "question": "Którą przesyłkę otworzyć?",
-          "kind": "choice",
-          "options": [
-            "Przesyłka nr 1",
-            "Przesyłka nr 2",
-            "Przesyłka nr 3",
-            "Przesyłka nr 4"
-          ],
-          "answer": 2,
-          "feedback": [
-            "1,45 kg to 1450 g: ogon i pudełko bez papieru. Ale papier też jest w środku.",
-            "Masa się zgadza, ale ogon o długości 45 cm nie zmieści się w pudełku o długości 30 cm.",
-            "",
-            "1 kg 750 g jest o 150 g cięższe niż potrzebna masa."
-          ],
-          "explanation": "1200 + 250 + 150 = 1600 g, czyli 1,6 kg. Tyle ważą nr 2 i nr 3, ale ogon o długości 45 cm zmieści się tylko w pudełku o długości 50 cm. Nika otwiera nr 3: w środku jest ogon koguta.",
-          "outcome": "Ogon znalazł się w przesyłce nr 3. Teraz trzeba wysłać go na wyspę „Jaskółką” i policzyć, ile czasu zostanie.",
-          "next": "Do przystani „Jaskółki”",
-          "hints": [
-            "Zamień wszystko na gramy i dodaj ogon, pudełko i papier.",
-            "Dwa pudełka mogą mieć tę samą masę. Wtedy patrz na rozmiar.",
-            "Ogona o długości 45 cm nie da się zgiąć: pudełko musi być dłuższe."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Kiedy pudełko będzie na wyspie?",
-          "situation": "Na przystani Nika oddaje pudełko na „Jaskółkę”. Kapitan pokazuje trasę: do wyspy z jednym postojem na Wietrznej Wieży. Policz, kiedy pudełko zostanie wydane kurierowi.",
-          "evidence": [
-            "„Jaskółka” wylatuje o 10:25 i leci z prędkością 90 km/h.",
-            "Do wyspy jest 60 km. Po drodze jeden postój na Wietrznej Wieży, 10 minut.",
-            "Po przylocie rozładunek zajmuje 10 minut, potem pudełko wydaje się kurierowi."
-          ],
-          "question": "O której pudełko zostanie wydane kurierowi na wyspie? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "11:25",
-          "feedback": [],
-          "explanation": "60 km przy prędkości 90 km/h to 2/3 godziny, czyli 40 minut. Postój 10 minut i rozładunek 10 minut: razem 60 minut. 10:25 + 60 minut = 11:25.",
-          "outcome": "Pudełko zostanie wydane o 11:25. Do święta o 12:10 zostaje 45 minut i trzeba je podzielić między drogę kuriera i pracę majstra.",
-          "next": "Wybierz kuriera",
-          "hints": [
-            "Najpierw ustal, ile minut zajmie sam lot: w godzinę 90 km, więc jaką część godziny zajmie 60 km?",
-            "60 z 90 to dwie trzecie. Zamień dwie trzecie godziny na minuty.",
-            "Do lotu dodaj postój i rozładunek, a potem wszystko do 10:25."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Kto dowiezie ogon?",
-          "situation": "Na placu wyspy jest czterech kurierów, każdy ma swój kurs według rozkładu: godziny odjazdu nie można zmienić. Nika zapisała dla każdego, kiedy odjeżdża, jak długo jedzie i co bierze.",
-          "evidence": [
-            "Pudełko wydają o 11:25. Święto jest o 12:10. Majster potrzebuje 12 minut: zamontować ogon i sprawdzić wiatrowskaz.",
-            "Kurier A: odjeżdża o 11:20, jedzie 3 km z prędkością 12 km/h.",
-            "Kurier B: odjeżdża o 11:30, jedzie 4 km z prędkością 12 km/h.",
-            "Kurier C: odjeżdża o 11:35, idzie z wózkiem 3 km z prędkością 6 km/h.",
-            "Kurier D: odjeżdża o 11:25, jedzie 5 km z prędkością 10 km/h, ale bierze tylko pudełka o długości do 40 cm."
-          ],
-          "question": "Kto dowiezie ogon tak, żeby majster zdążył na 12:10?",
-          "kind": "choice",
-          "options": [
-            "Kurier A",
-            "Kurier B",
-            "Kurier C",
-            "Kurier D"
-          ],
-          "answer": 1,
-          "feedback": [
-            "Kurier A odjeżdża o 11:20, a pudełko wydadzą dopiero o 11:25.",
-            "",
-            "3 km przy 6 km/h to 30 minut: kurier C dojedzie o 12:05 i majstrowi zabraknie 12 minut.",
-            "Czasowo kurier D zdąży, ale nasze pudełko ma 50 cm długości, a on bierze tylko do 40 cm."
-          ],
-          "explanation": "Majster potrzebuje 12 minut, więc ogon musi być u niego najpóźniej o 11:58. B: 4 km przy 12 km/h to 20 minut, dojedzie o 11:50. A odjeżdża przed wydaniem, C dojedzie o 12:05, D nie bierze takich pudełek.",
-          "outcome": "Nika umawia się z kurierem B: odbiera pudełko o 11:30 i przywozi majstrowi o 11:50. Majster ma 20 minut na pracę, która zajmuje 12.",
-          "next": "Złóż wiatrowskaz",
-          "hints": [
-            "Najpierw policz, do której ogon musi być u majstra.",
-            "Czas drogi: odległość podziel przez prędkość. Przy 12 km/h jeden kilometr zajmuje 5 minut.",
-            "Sprawdź u każdego trzy rzeczy: godzinę odjazdu, godzinę przyjazdu i czy pudełko pasuje."
-          ],
-          "scene": 3
-        },
-        {
-          "title": "Co zrobić z żaglem?",
-          "situation": "W ładowni „Jaskółki” majster montuje ogon: o 12:02 wiatrowskaz jest gotowy, na 12:10 kogut jest na wieży. Została druga połowa pomyłki Niki: pudełko z żaglem, na które czeka szkutnik Tim na Małej Wyspie.",
-          "evidence": [
-            "Kurier B przywiezie pudełko z żaglem z powrotem na plac na 12:15.",
-            "Tim czeka na żagiel na swojej przystani na Małej Wyspie do 13:30.",
-            "„Jerzyk” lata na Małą Wyspę co 40 minut, pierwszy kurs o 12:00. Lot trwa 25 minut.",
-            "Pudełko ładuje się tylko na kurs, który wylatuje po tym, jak przywieziono je na plac."
-          ],
-          "question": "O której najwcześniej żagiel będzie u Tima? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "13:05",
-          "feedback": [],
-          "explanation": "Kursy „Jerzyka”: 12:00, 12:40, 13:20. Pudełko jest na placu dopiero o 12:15, więc pierwszy pasujący kurs jest o 12:40. 12:40 + 25 minut = 13:05, Tim jeszcze czeka.",
-          "outcome": "Żagiel odlatuje o 12:40 i będzie u Tima o 13:05, 25 minut przed tym, jak przestanie czekać. Oba pudełka trafiły do właścicieli.",
-          "next": "Ustaw wiatrowskaz",
-          "hints": [
-            "Wypisz kursy „Jerzyka”: pierwszy o 12:00, dalej co 40 minut.",
-            "Pudełko trafi tylko na kurs, który wylatuje po 12:15.",
-            "Dodaj czas lotu do godziny wylotu."
-          ],
-          "scene": 2
-        }
-      ]
-    },
-    "en": {
-      "title": "A Parcel for Cloud Island",
-      "intro": "On Cloud Island, a rooster weather vane is being assembled for the festival. The maker opened the box: instead of the tail, there was a little sail inside. Nika the postwoman is sure she mixed up two boxes with the same cloud on the lid. There are four unclaimed parcels at the post office, all with soggy labels. The festival is at 12:10, and the Swallow flies to the island once a day. You need to find the tail, get it to the maker and make it in time for the festival. And then return the sail to whoever is waiting for it.",
-      "ending": "The tail was in the third box: two boxes weighed the same, and it was the length that settled it. The Swallow flew there in 40 minutes plus a stop, courier B brought the tail at 11:50, and the maker raised the vane by 12:10. The sail left on the Swift at 12:40 and reached Tim the boatman at 13:05. Nika no longer labels boxes with just a picture: now every one carries an address and a weight.",
-      "question": "Two boxes weighed exactly 1.6 kg. Why did the weight alone not tell you which one held the tail?",
-      "steps": [
-        {
-          "title": "Which box is ours?",
-          "situation": "At the post office, Nika puts all four parcels on the scales and takes out the maker’s packing note. Other people’s parcels must not be opened, so you have to choose by the note and open only one.",
-          "evidence": [
-            "The maker’s note: the tail is 45 cm long and weighs 1 kg 200 g. It is packed in a box weighing 250 g, with another 150 g of paper inside.",
-            "Parcel 1: 1.45 kg, box 50 cm long.",
-            "Parcel 2: 1.6 kg, box 30 cm long.",
-            "Parcel 3: 1.6 kg, box 50 cm long.",
-            "Parcel 4: 1 kg 750 g, box 60 cm long."
-          ],
-          "question": "Which parcel should be opened?",
-          "kind": "choice",
-          "options": [
-            "Parcel 1",
-            "Parcel 2",
-            "Parcel 3",
-            "Parcel 4"
-          ],
-          "answer": 2,
-          "feedback": [
-            "1.45 kg is 1450 g: the tail and box without the paper. But the paper is inside too.",
-            "The weight matches, but a 45 cm tail will not fit in a 30 cm box.",
-            "",
-            "1 kg 750 g is 150 g heavier than the weight we need."
-          ],
-          "explanation": "1200 + 250 + 150 = 1600 g, which is 1.6 kg. Parcels 2 and 3 both weigh that, but a 45 cm tail only fits in the 50 cm box. Nika opens parcel 3: the rooster’s tail is inside.",
-          "outcome": "The tail is in parcel 3. Now it has to be sent to the island on the Swallow, and we need to work out how much time will be left.",
-          "next": "To the Swallow’s dock",
-          "hints": [
-            "Convert everything to grams and add the tail, the box and the paper.",
-            "Two boxes can have the same weight. Then look at the size.",
-            "A 45 cm tail cannot be bent: the box has to be longer."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "When will the box reach the island?",
-          "situation": "At the dock, Nika hands the box over to the Swallow. The captain shows the route: to the island with one stop at Windmill Tower. Work out when the box will be handed to a courier.",
-          "evidence": [
-            "The Swallow departs at 10:25 and flies at 90 km/h.",
-            "It is 60 km to the island. There is one stop on the way at Windmill Tower, lasting 10 minutes.",
-            "After arrival, unloading takes 10 minutes, and then the box is handed to a courier."
-          ],
-          "question": "What time will the box be handed to a courier on the island? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "11:25",
-          "feedback": [],
-          "explanation": "60 km at 90 km/h is 2/3 of an hour, which is 40 minutes. A 10-minute stop and 10 minutes of unloading: 60 minutes in total. 10:25 + 60 minutes = 11:25.",
-          "outcome": "The box will be handed over at 11:25. There are 45 minutes until the festival at 12:10, to be shared between the courier’s journey and the maker’s work.",
-          "next": "Choose a courier",
-          "hints": [
-            "First work out how many minutes the flight itself takes: 90 km in an hour, so what fraction of an hour does 60 km take?",
-            "60 out of 90 is two thirds. Convert two thirds of an hour into minutes.",
-            "Add the stop and the unloading to the flight, then add it all to 10:25."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Who will deliver the tail?",
-          "situation": "In the island square there are four couriers, each with a scheduled run: departure times cannot be changed. Nika has noted for each one when they leave, how far they travel and what they carry.",
-          "evidence": [
-            "The box is handed over at 11:25. The festival is at 12:10. The maker needs 12 minutes to fit the tail and check the vane.",
-            "Courier A: leaves at 11:20, rides 3 km at 12 km/h.",
-            "Courier B: leaves at 11:30, rides 4 km at 12 km/h.",
-            "Courier C: leaves at 11:35, walks 3 km with a cart at 6 km/h.",
-            "Courier D: leaves at 11:25, rides 5 km at 10 km/h, but only takes boxes up to 40 cm long."
-          ],
-          "question": "Who can deliver the tail so that the maker finishes by 12:10?",
-          "kind": "choice",
-          "options": [
-            "Courier A",
-            "Courier B",
-            "Courier C",
-            "Courier D"
-          ],
-          "answer": 1,
-          "feedback": [
-            "Courier A leaves at 11:20, but the box is only handed over at 11:25.",
-            "",
-            "3 km at 6 km/h is 30 minutes: courier C arrives at 12:05, and the maker would not have 12 minutes.",
-            "Courier D is fine on time, but our box is 50 cm long and D only takes boxes up to 40 cm."
-          ],
-          "explanation": "The maker needs 12 minutes, so the tail must reach them by 11:58 at the latest. B: 4 km at 12 km/h is 20 minutes, arriving at 11:50. A leaves before the handover, C arrives at 12:05, and D does not take boxes this size.",
-          "outcome": "Nika books courier B: the box is collected at 11:30 and delivered to the maker at 11:50. The maker has 20 minutes for a job that takes 12.",
-          "next": "Assemble the weather vane",
-          "hints": [
-            "First work out by what time the tail must reach the maker.",
-            "Travel time: divide the distance by the speed. At 12 km/h, one kilometre takes 5 minutes.",
-            "Check three things for each courier: departure time, arrival time and whether the box fits."
-          ],
-          "scene": 3
-        },
-        {
-          "title": "What about the sail?",
-          "situation": "In the Swallow’s hold, the maker fits the tail: the vane is ready at 12:02, and the rooster is on the tower by 12:10. The second half of Nika’s mistake remains: the box with the sail, which Tim the boatman is waiting for on Little Island.",
-          "evidence": [
-            "Courier B will bring the box with the sail back to the square by 12:15.",
-            "Tim is waiting for the sail at his dock on Little Island until 13:30.",
-            "The Swift flies to Little Island every 40 minutes, with the first flight at 12:00. The flight takes 25 minutes.",
-            "A box is only loaded onto a flight that departs after the box has reached the square."
-          ],
-          "question": "What is the earliest time the sail can reach Tim? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "13:05",
-          "feedback": [],
-          "explanation": "The Swift’s flights: 12:00, 12:40, 13:20. The box is only in the square at 12:15, so the first suitable flight is at 12:40. 12:40 + 25 minutes = 13:05, and Tim is still waiting.",
-          "outcome": "The sail leaves at 12:40 and reaches Tim at 13:05, 25 minutes before he stops waiting. Both boxes have found their owners.",
-          "next": "Raise the weather vane",
-          "hints": [
-            "Write out the Swift’s flights: the first at 12:00, then every 40 minutes.",
-            "The box can only go on a flight that departs after 12:15.",
-            "Add the flight time to the departure time."
-          ],
-          "scene": 2
-        }
-      ]
-    },
-    "uk": {
-      "title": "Посилка для Хмарного острова",
-      "intro": "На Хмарному острові до свята збирають флюгер-півня. Майстер відкрив коробку: замість хвоста всередині маленьке вітрило. Листоноша Ніка впевнена, що переплутала дві коробки з однаковою хмаринкою на кришці. На пошті чотири незатребувані відправлення, у всіх розмокли ярлики. Свято о 12:10, «Ластівка» літає на острів раз на день. Треба знайти хвіст, доставити його майстрові і встигнути до свята. А потім ще повернути вітрило тому, хто на нього чекає.",
-      "ending": "Хвіст знайшовся в третій коробці: дві коробки важили однаково, і розібратися допомогла довжина. «Ластівка» долетіла за 40 хвилин із зупинкою, кур’єр Б привіз хвіст об 11:50, і майстер підняв флюгер до 12:10. Вітрило полетіло «Серпокрильцем» о 12:40 і було в човняра Тіма о 13:05. Ніка більше не підписує коробки лише малюнком: тепер на кожній адреса і маса.",
-      "question": "Дві коробки важили рівно 1,6 кг. Чому маса сама по собі не сказала, у якій із них хвіст?",
-      "steps": [
-        {
-          "title": "Яка коробка наша?",
-          "situation": "На пошті Ніка кладе на ваги всі чотири відправлення і дістає накладну майстра. Відкривати чужі посилки не можна, тому вибрати треба за накладною, а відкрити лише одну.",
-          "evidence": [
-            "Накладна майстра: хвіст завдовжки 45 см, маса 1 кг 200 г. Запакований у коробку масою 250 г, усередині ще 150 г паперу.",
-            "Відправлення №1: 1,45 кг, коробка завдовжки 50 см.",
-            "Відправлення №2: 1,6 кг, коробка завдовжки 30 см.",
-            "Відправлення №3: 1,6 кг, коробка завдовжки 50 см.",
-            "Відправлення №4: 1 кг 750 г, коробка завдовжки 60 см."
-          ],
-          "question": "Яке відправлення відкрити?",
-          "kind": "choice",
-          "options": [
-            "Відправлення №1",
-            "Відправлення №2",
-            "Відправлення №3",
-            "Відправлення №4"
-          ],
-          "answer": 2,
-          "feedback": [
-            "1,45 кг це 1450 г: хвіст і коробка без паперу. Але папір теж лежить усередині.",
-            "Маса збігається, але хвіст завдовжки 45 см не поміститься в коробку завдовжки 30 см.",
-            "",
-            "1 кг 750 г важче за потрібну масу на 150 г."
-          ],
-          "explanation": "1200 + 250 + 150 = 1600 г, тобто 1,6 кг. Стільки важать №2 і №3, але хвіст завдовжки 45 см поміститься лише в коробку завдовжки 50 см. Ніка відкриває №3: усередині хвіст півня.",
-          "outcome": "Хвіст знайдено у відправленні №3. Тепер його треба відправити на острів «Ластівкою» і зрозуміти, скільки часу залишиться.",
-          "next": "До причалу «Ластівки»",
-          "hints": [
-            "Переведи все в грами і додай хвіст, коробку і папір.",
-            "Однакову масу можуть мати дві коробки. Тоді дивися на розмір.",
-            "Хвіст завдовжки 45 см не зігнеш: коробка має бути довшою."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Коли коробка буде на острові?",
-          "situation": "На причалі Ніка здає коробку на «Ластівку». Капітан показує маршрут: до острова з однією зупинкою на Вітряній вежі. Порахуй, коли коробку видадуть кур’єрові.",
-          "evidence": [
-            "«Ластівка» вилітає о 10:25 і летить зі швидкістю 90 км/год.",
-            "До острова 60 км. Дорогою одна зупинка на Вітряній вежі, 10 хвилин.",
-            "Після прибуття розвантаження займає 10 хвилин, потім коробку видають кур’єрові."
-          ],
-          "question": "О котрій коробку видадуть кур’єрові на острові? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "11:25",
-          "feedback": [],
-          "explanation": "60 км зі швидкістю 90 км/год це 2/3 години, тобто 40 хвилин. Зупинка 10 хвилин і розвантаження 10 хвилин: разом 60 хвилин. 10:25 + 60 хвилин = 11:25.",
-          "outcome": "Коробку видадуть об 11:25. До свята о 12:10 залишається 45 хвилин, і їх треба розділити між дорогою кур’єра і роботою майстра.",
-          "next": "Вибрати кур’єра",
-          "hints": [
-            "Спершу дізнайся, скільки хвилин займе сам політ: за годину 90 км, отже яку частину години займуть 60 км?",
-            "60 із 90 це дві третини. Переведи дві третини години у хвилини.",
-            "До польоту додай зупинку і розвантаження, а потім усе до 10:25."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Хто довезе хвіст?",
-          "situation": "На площі острова чотири кур’єри, у кожного свій рейс за розкладом: час виїзду змінити не можна. Ніка записала для кожного, коли він виїжджає, скільки їхати і що він бере.",
-          "evidence": [
-            "Коробку видають об 11:25. Свято о 12:10. Майстрові потрібно 12 хвилин: установити хвіст і перевірити флюгер.",
-            "Кур’єр А: виїжджає об 11:20, їде 3 км зі швидкістю 12 км/год.",
-            "Кур’єр Б: виїжджає об 11:30, їде 4 км зі швидкістю 12 км/год.",
-            "Кур’єр В: виїжджає об 11:35, іде з візком 3 км зі швидкістю 6 км/год.",
-            "Кур’єр Г: виїжджає об 11:25, їде 5 км зі швидкістю 10 км/год, але бере лише коробки завдовжки до 40 см."
-          ],
-          "question": "Хто довезе хвіст так, щоб майстер устиг до 12:10?",
-          "kind": "choice",
-          "options": [
-            "Кур’єр А",
-            "Кур’єр Б",
-            "Кур’єр В",
-            "Кур’єр Г"
-          ],
-          "answer": 1,
-          "feedback": [
-            "Кур’єр А виїжджає об 11:20, а коробку видадуть лише об 11:25.",
-            "",
-            "3 км при 6 км/год це 30 хвилин: кур’єр В приїде о 12:05, і майстрові не вистачить 12 хвилин.",
-            "За часом кур’єр Г встигає, але наша коробка завдовжки 50 см, а він бере лише до 40 см."
-          ],
-          "explanation": "Майстрові потрібно 12 хвилин, отже хвіст має бути в нього не пізніше ніж об 11:58. Б: 4 км при 12 км/год це 20 хвилин, приїде об 11:50. А їде до видачі, В приїде о 12:05, Г не бере таких коробок.",
-          "outcome": "Ніка домовляється з кур’єром Б: він забирає коробку об 11:30 і привозить майстрові об 11:50. У майстра 20 хвилин на роботу, яка займає 12.",
-          "next": "Зібрати флюгер",
-          "hints": [
-            "Спершу порахуй, до котрої години хвіст має бути в майстра.",
-            "Час дороги: відстань поділи на швидкість. При 12 км/год один кілометр займає 5 хвилин.",
-            "Перевір у кожного три речі: час виїзду, час прибуття і чи підходить коробка."
-          ],
-          "scene": 3
-        },
-        {
-          "title": "Куди подіти вітрило?",
-          "situation": "У трюмі «Ластівки» майстер установлює хвіст: о 12:02 флюгер готовий, до 12:10 півень на вежі. Залишилася друга половина помилки Ніки: коробка з вітрилом, на яку чекає човняр Тім на Малому острові.",
-          "evidence": [
-            "Кур’єр Б привезе коробку з вітрилом назад на площу до 12:15.",
-            "Тім чекає на вітрило на своєму причалі на Малому острові до 13:30.",
-            "«Серпокрилець» літає на Малий острів кожні 40 хвилин, перший рейс о 12:00. Політ триває 25 хвилин.",
-            "Коробку вантажать лише на рейс, який вилітає після того, як її привезли на площу."
-          ],
-          "question": "О котрій найраніше вітрило буде в Тіма? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "13:05",
-          "feedback": [],
-          "explanation": "Рейси «Серпокрильця»: 12:00, 12:40, 13:20. Коробка на площі лише о 12:15, отже перший підхожий рейс о 12:40. 12:40 + 25 хвилин = 13:05, Тім ще чекає.",
-          "outcome": "Вітрило відлітає о 12:40 і буде в Тіма о 13:05, за 25 хвилин до того, як він перестане чекати. Обидві коробки знайшли своїх господарів.",
-          "next": "Підняти флюгер",
-          "hints": [
-            "Випиши рейси «Серпокрильця»: перший о 12:00, далі кожні 40 хвилин.",
-            "Коробка потрапить лише на рейс, який вилітає після 12:15.",
-            "Додай тривалість польоту до часу вильоту."
-          ],
-          "scene": 2
-        }
-      ]
-    }
+ "id": "cloud",
+ "number": "003",
+ "variants": [
+  {
+   "values": {
+    "tkg": 1,
+    "tg": 200,
+    "tm": 1200,
+    "bm": 250,
+    "pm": 150,
+    "tot": 1600,
+    "totkg": 1.6,
+    "tl": 45,
+    "p1": 1.45,
+    "p1g": 1450,
+    "p1len": 50,
+    "p2len": 30,
+    "p3len": 50,
+    "p4kg": 1,
+    "p4g": 750,
+    "p4len": 60,
+    "dep": "10:25",
+    "spd": 90,
+    "dist": 60,
+    "frac": "2/3",
+    "fi": 0,
+    "fl": 40,
+    "stop": 10,
+    "unl": 10,
+    "arr": "11:25",
+    "left": 45,
+    "mk": 12,
+    "latest": "11:58",
+    "la": "11:20",
+    "lb": "11:30",
+    "db": 4,
+    "sb": 12,
+    "tb": 20,
+    "ab": "11:50",
+    "lc": "11:35",
+    "dc": 3,
+    "sc": 6,
+    "tc": 30,
+    "ac": "12:05",
+    "ld": "11:25",
+    "dd": 5,
+    "sd": 10,
+    "lim": 40,
+    "kmmin": 5,
+    "havem": 20,
+    "fin": "12:02",
+    "back": "12:15",
+    "tw": "13:30",
+    "f0": "12:00",
+    "every": 40,
+    "fl2": 25,
+    "fA": "12:00",
+    "fB": "12:40",
+    "fC": "13:20",
+    "fdep": "12:40",
+    "tim": "13:05",
+    "before": 25
+   },
+   "answers": [
+    2,
+    "11:25",
+    1,
+    "13:05"
+   ],
+   "orders": [
+    [
+     0,
+     2,
+     1,
+     3
+    ],
+    null,
+    [
+     3,
+     1,
+     0,
+     2
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "tkg": 1,
+    "tg": 100,
+    "tm": 1100,
+    "bm": 200,
+    "pm": 100,
+    "tot": 1400,
+    "totkg": 1.4,
+    "tl": 40,
+    "p1": 1.3,
+    "p1g": 1300,
+    "p1len": 45,
+    "p2len": 35,
+    "p3len": 50,
+    "p4kg": 1,
+    "p4g": 500,
+    "p4len": 60,
+    "dep": "10:20",
+    "spd": 60,
+    "dist": 45,
+    "frac": "3/4",
+    "fi": 1,
+    "fl": 45,
+    "stop": 5,
+    "unl": 10,
+    "arr": "11:20",
+    "left": 50,
+    "mk": 15,
+    "latest": "11:55",
+    "la": "11:15",
+    "lb": "11:25",
+    "db": 5,
+    "sb": 15,
+    "tb": 20,
+    "ab": "11:45",
+    "lc": "11:30",
+    "dc": 4,
+    "sc": 6,
+    "tc": 40,
+    "ac": "12:10",
+    "ld": "11:20",
+    "dd": 6,
+    "sd": 12,
+    "lim": 45,
+    "kmmin": 4,
+    "havem": 25,
+    "fin": "12:00",
+    "back": "12:20",
+    "tw": "13:15",
+    "f0": "12:05",
+    "every": 30,
+    "fl2": 20,
+    "fA": "12:05",
+    "fB": "12:35",
+    "fC": "13:05",
+    "fdep": "12:35",
+    "tim": "12:55",
+    "before": 20
+   },
+   "answers": [
+    2,
+    "11:20",
+    1,
+    "12:55"
+   ],
+   "orders": [
+    [
+     2,
+     0,
+     3,
+     1
+    ],
+    null,
+    [
+     0,
+     1,
+     2,
+     3
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "tkg": 1,
+    "tg": 500,
+    "tm": 1500,
+    "bm": 300,
+    "pm": 200,
+    "tot": 2000,
+    "totkg": 2,
+    "tl": 55,
+    "p1": 1.8,
+    "p1g": 1800,
+    "p1len": 60,
+    "p2len": 50,
+    "p3len": 60,
+    "p4kg": 2,
+    "p4g": 200,
+    "p4len": 70,
+    "dep": "10:35",
+    "spd": 80,
+    "dist": 40,
+    "frac": "1/2",
+    "fi": 2,
+    "fl": 30,
+    "stop": 15,
+    "unl": 10,
+    "arr": "11:30",
+    "left": 40,
+    "mk": 10,
+    "latest": "12:00",
+    "la": "11:25",
+    "lb": "11:35",
+    "db": 3,
+    "sb": 12,
+    "tb": 15,
+    "ab": "11:50",
+    "lc": "11:30",
+    "dc": 6,
+    "sc": 9,
+    "tc": 40,
+    "ac": "12:10",
+    "ld": "11:30",
+    "dd": 4,
+    "sd": 8,
+    "lim": 50,
+    "kmmin": 5,
+    "havem": 20,
+    "fin": "12:00",
+    "back": "12:25",
+    "tw": "13:40",
+    "f0": "12:00",
+    "every": 45,
+    "fl2": 30,
+    "fA": "12:00",
+    "fB": "12:45",
+    "fC": "13:30",
+    "fdep": "12:45",
+    "tim": "13:15",
+    "before": 25
+   },
+   "answers": [
+    2,
+    "11:30",
+    1,
+    "13:15"
+   ],
+   "orders": [
+    [
+     2,
+     3,
+     1,
+     0
+    ],
+    null,
+    [
+     3,
+     2,
+     0,
+     1
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "tkg": 1,
+    "tg": 400,
+    "tm": 1400,
+    "bm": 250,
+    "pm": 150,
+    "tot": 1800,
+    "totkg": 1.8,
+    "tl": 50,
+    "p1": 1.65,
+    "p1g": 1650,
+    "p1len": 55,
+    "p2len": 45,
+    "p3len": 55,
+    "p4kg": 1,
+    "p4g": 950,
+    "p4len": 60,
+    "dep": "10:50",
+    "spd": 90,
+    "dist": 30,
+    "frac": "1/3",
+    "fi": 3,
+    "fl": 20,
+    "stop": 10,
+    "unl": 15,
+    "arr": "11:35",
+    "left": 35,
+    "mk": 8,
+    "latest": "12:02",
+    "la": "11:30",
+    "lb": "11:40",
+    "db": 2,
+    "sb": 10,
+    "tb": 12,
+    "ab": "11:52",
+    "lc": "11:45",
+    "dc": 3,
+    "sc": 6,
+    "tc": 30,
+    "ac": "12:15",
+    "ld": "11:35",
+    "dd": 4,
+    "sd": 12,
+    "lim": 40,
+    "kmmin": 6,
+    "havem": 18,
+    "fin": "12:00",
+    "back": "12:10",
+    "tw": "13:20",
+    "f0": "11:50",
+    "every": 35,
+    "fl2": 25,
+    "fA": "11:50",
+    "fB": "12:25",
+    "fC": "13:00",
+    "fdep": "12:25",
+    "tim": "12:50",
+    "before": 30
+   },
+   "answers": [
+    2,
+    "11:35",
+    1,
+    "12:50"
+   ],
+   "orders": [
+    [
+     1,
+     0,
+     2,
+     3
+    ],
+    null,
+    [
+     2,
+     3,
+     0,
+     1
+    ],
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Посылка для облачного острова",
+   "intro": "На облачном острове к празднику собирают флюгер-петуха. Мастер открыл коробку: вместо хвоста внутри маленький парус. Почтальон Ника уверена, что перепутала две коробки с одинаковым облаком на крышке. На почте четыре невостребованных отправления, у всех размокли ярлыки. Праздник в 12:10, «Ласточка» летает на остров раз в день. Нужно найти хвост, доставить его к мастеру и успеть к празднику. А потом ещё вернуть парус тому, кто его ждёт.",
+   "ending": "Хвост нашёлся в третьей коробке: две коробки весили одинаково, и разобраться помогла длина. «Ласточка» долетела за {fl} минут с остановкой, курьер Б привёз хвост в {ab}, и мастер поднял флюгер к 12:10. Парус улетел «Стрижом» в {fdep} и был у лодочника Тима в {tim}. Ника больше не подписывает коробки только рисунком: теперь на каждой адрес и вес.",
+   "question": "Две коробки весили ровно {totkg} кг. Почему масса сама по себе не сказала, в какой из них хвост?",
+   "steps": [
+    {
+     "title": "Какая коробка наша?",
+     "situation": "На почте Ника кладёт на весы все четыре отправления и достаёт накладную мастера. Открывать чужие посылки нельзя, поэтому выбрать нужно по накладной, а открыть только одну.",
+     "evidence": [
+      "Накладная мастера: хвост длиной {tl} см, масса {tkg} кг {tg} г. Упакован в коробку массой {bm} г, внутри ещё {pm} г бумаги.",
+      "Отправление №1: {p1} кг, коробка длиной {p1len} см.",
+      "Отправление №2: {totkg} кг, коробка длиной {p2len} см.",
+      "Отправление №3: {totkg} кг, коробка длиной {p3len} см.",
+      "Отправление №4: {p4kg} кг {p4g} г, коробка длиной {p4len} см."
+     ],
+     "question": "Какое отправление открыть?",
+     "kind": "choice",
+     "options": [
+      "Отправление №1",
+      "Отправление №2",
+      "Отправление №3",
+      "Отправление №4"
+     ],
+     "feedback": [
+      "{p1} кг это {p1g} г: хвост и коробка без бумаги. Но бумага тоже лежит внутри.",
+      "Масса совпадает, но хвост длиной {tl} см не поместится в коробку длиной {p2len} см.",
+      "",
+      "{p4kg} кг {p4g} г тяжелее нужной массы на {pm} г."
+     ],
+     "explanation": "{tm} + {bm} + {pm} = {tot} г, то есть {totkg} кг. Столько весят №2 и №3, но хвост длиной {tl} см поместится только в коробку длиной {p3len} см. Ника открывает №3: внутри хвост петуха.",
+     "outcome": "Хвост найден в отправлении №3. Теперь его нужно отправить на остров «Ласточкой» и понять, сколько времени останется.",
+     "next": "К причалу «Ласточки»",
+     "hints": [
+      "Переведи всё в граммы и сложи хвост, коробку и бумагу.",
+      "Одинаковую массу могут иметь две коробки. Тогда смотри на размер.",
+      "Хвост длиной {tl} см не согнёшь: коробка должна быть длиннее."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Когда коробка будет на острове?",
+     "situation": "На причале Ника сдаёт коробку на «Ласточку». Капитан показывает маршрут: до острова с одной остановкой на Ветряной башне. Посчитай, когда коробку выдадут курьеру.",
+     "evidence": [
+      "«Ласточка» вылетает в {dep} и летит со скоростью {spd} км/ч.",
+      "До острова {dist} км. По пути одна остановка на Ветряной башне, {stop} минут.",
+      "После прибытия разгрузка занимает {unl} минут, потом коробку выдают курьеру."
+     ],
+     "question": "Во сколько коробку выдадут курьеру на острове? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dist} км при скорости {spd} км/ч это {frac} часа, то есть {fl} минут. Остановка {stop} минут и разгрузка {unl} минут. {dep} + {fl} + {stop} + {unl} минут = {arr}.",
+     "outcome": "Коробку выдадут в {arr}. До праздника в 12:10 остаётся {left} минут, и их надо разделить между дорогой курьера и работой мастера.",
+     "next": "Выбрать курьера",
+     "hints": [
+      "Сначала узнай, сколько минут займёт сам полёт: за час {spd} км, значит какую часть часа займут {dist} км?",
+      "{dist} из {spd} это {fi#две трети|три четверти|половина|одна треть}. Переведи {fi#две трети|три четверти|половину|одну треть} часа в минуты.",
+      "К полёту прибавь остановку и разгрузку, а потом всё к {dep}."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Кто довезёт хвост?",
+     "situation": "На площади острова четыре курьера, у каждого свой рейс по расписанию: время выезда изменить нельзя. Ника записала для каждого, когда он выезжает, сколько ехать и что он берёт.",
+     "evidence": [
+      "Коробку выдают в {arr}. Праздник в 12:10. Мастеру нужно {mk} минут: установить хвост и проверить флюгер.",
+      "Курьер А: выезжает в {la}, едет 3 км со скоростью 12 км/ч.",
+      "Курьер Б: выезжает в {lb}, едет {db} км со скоростью {sb} км/ч.",
+      "Курьер В: выезжает в {lc}, идёт с тележкой {dc} км со скоростью {sc} км/ч.",
+      "Курьер Г: выезжает в {ld}, едет {dd} км со скоростью {sd} км/ч, но берёт только коробки длиной до {lim} см."
+     ],
+     "question": "Кто довезёт хвост так, чтобы мастер успел к 12:10?",
+     "kind": "choice",
+     "options": [
+      "Курьер А",
+      "Курьер Б",
+      "Курьер В",
+      "Курьер Г"
+     ],
+     "feedback": [
+      "Курьер А выезжает в {la}, а коробку выдадут только в {arr}.",
+      "",
+      "{dc} км при {sc} км/ч это {tc} минут: курьер В приедет в {ac}, и мастеру не хватит {mk} минут.",
+      "По времени курьер Г успевает, но наша коробка длиной {p3len} см, а он берёт только до {lim} см."
+     ],
+     "explanation": "Мастеру нужно {mk} минут, значит хвост должен быть у него не позже {latest}. Б: {db} км при {sb} км/ч это {tb} минут, приедет в {ab}. А уезжает до выдачи, В приедет в {ac}, Г не берёт такие коробки.",
+     "outcome": "Ника договаривается с курьером Б: он забирает коробку в {lb} и привозит мастеру в {ab}. У мастера {havem} минут на работу, которая занимает {mk}.",
+     "next": "Собрать флюгер",
+     "hints": [
+      "Сначала посчитай, к какому времени хвост должен быть у мастера.",
+      "Время дороги: расстояние раздели на скорость. При {sb} км/ч один километр занимает {kmmin} минут.",
+      "Проверь у каждого три вещи: время выезда, время прибытия и подходит ли коробка."
+     ],
+     "scene": 3
+    },
+    {
+     "title": "Куда девать парус?",
+     "situation": "В трюме «Ласточки» мастер устанавливает хвост: в {fin} флюгер готов, к 12:10 петух на башне. Осталась вторая половина ошибки Ники: коробка с парусом, которую ждёт лодочник Тим на Малом острове.",
+     "evidence": [
+      "Курьер Б привезёт коробку с парусом обратно на площадь к {back}.",
+      "Тим ждёт парус на своём причале на Малом острове до {tw}.",
+      "«Стриж» летает на Малый остров каждые {every} минут, первый рейс в {f0}. Полёт занимает {fl2} минут.",
+      "Коробку грузят только на рейс, который вылетает после того, как её привезли на площадь."
+     ],
+     "question": "Во сколько самое раннее парус будет у Тима? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Рейсы «Стрижа»: {fA}, {fB}, {fC}. Коробка на площади только в {back}, значит первый подходящий рейс в {fdep}. {fdep} + {fl2} минут = {tim}, Тим ещё ждёт.",
+     "outcome": "Парус улетает в {fdep} и будет у Тима в {tim}, за {before|минуту|минуты|минут} до того, как он перестанет ждать. Обе коробки нашли своих хозяев.",
+     "next": "Поднять флюгер",
+     "hints": [
+      "Выпиши рейсы «Стрижа»: первый в {f0}, дальше каждые {every} минут.",
+      "Коробка попадёт только на рейс, который вылетает после {back}.",
+      "Прибавь длительность полёта ко времени вылета."
+     ],
+     "scene": 2
+    }
+   ]
+  },
+  "pl": {
+   "title": "Paczka dla Wyspy Chmur",
+   "intro": "Na Wyspie Chmur na święto składają wiatrowskaz w kształcie koguta. Majster otworzył pudełko: zamiast ogona w środku był mały żagiel. Listonoszka Nika jest pewna, że pomyliła dwa pudełka z taką samą chmurką na wieczku. Na poczcie są cztery nieodebrane przesyłki, wszystkie z rozmokłymi etykietami. Święto jest o 12:10, „Jaskółka” lata na wyspę raz dziennie. Trzeba znaleźć ogon, dostarczyć go do majstra i zdążyć na święto. A potem jeszcze oddać żagiel temu, kto na niego czeka.",
+   "ending": "Ogon znalazł się w trzecim pudełku: dwa pudełka ważyły tyle samo i pomogła długość. „Jaskółka” doleciała w {fl} minut z postojem, kurier B przywiózł ogon o {ab}, a majster ustawił wiatrowskaz na 12:10. Żagiel odleciał „Jerzykiem” o {fdep} i był u szkutnika Tima o {tim}. Nika nie podpisuje już pudełek samym rysunkiem: teraz na każdym jest adres i masa.",
+   "question": "Dwa pudełka ważyły dokładnie {totkg} kg. Dlaczego sama masa nie powiedziała, w którym jest ogon?",
+   "steps": [
+    {
+     "title": "Które pudełko jest nasze?",
+     "situation": "Na poczcie Nika kładzie na wadze wszystkie cztery przesyłki i wyjmuje list przewozowy majstra. Cudzych paczek nie wolno otwierać, więc trzeba wybrać według listu, a otworzyć tylko jedną.",
+     "evidence": [
+      "List przewozowy majstra: ogon o długości {tl} cm, masa {tkg} kg {tg} g. Zapakowany w pudełko o masie {bm} g, w środku jeszcze {pm} g papieru.",
+      "Przesyłka nr 1: {p1} kg, pudełko o długości {p1len} cm.",
+      "Przesyłka nr 2: {totkg} kg, pudełko o długości {p2len} cm.",
+      "Przesyłka nr 3: {totkg} kg, pudełko o długości {p3len} cm.",
+      "Przesyłka nr 4: {p4kg} kg {p4g} g, pudełko o długości {p4len} cm."
+     ],
+     "question": "Którą przesyłkę otworzyć?",
+     "kind": "choice",
+     "options": [
+      "Przesyłka nr 1",
+      "Przesyłka nr 2",
+      "Przesyłka nr 3",
+      "Przesyłka nr 4"
+     ],
+     "feedback": [
+      "{p1} kg to {p1g} g: ogon i pudełko bez papieru. Ale papier też jest w środku.",
+      "Masa się zgadza, ale ogon o długości {tl} cm nie zmieści się w pudełku o długości {p2len} cm.",
+      "",
+      "{p4kg} kg {p4g} g jest o {pm} g cięższe niż potrzebna masa."
+     ],
+     "explanation": "{tm} + {bm} + {pm} = {tot} g, czyli {totkg} kg. Tyle ważą nr 2 i nr 3, ale ogon o długości {tl} cm zmieści się tylko w pudełku o długości {p3len} cm. Nika otwiera nr 3: w środku jest ogon koguta.",
+     "outcome": "Ogon znalazł się w przesyłce nr 3. Teraz trzeba wysłać go na wyspę „Jaskółką” i policzyć, ile czasu zostanie.",
+     "next": "Do przystani „Jaskółki”",
+     "hints": [
+      "Zamień wszystko na gramy i dodaj ogon, pudełko i papier.",
+      "Dwa pudełka mogą mieć tę samą masę. Wtedy patrz na rozmiar.",
+      "Ogona o długości {tl} cm nie da się zgiąć: pudełko musi być dłuższe."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Kiedy pudełko będzie na wyspie?",
+     "situation": "Na przystani Nika oddaje pudełko na „Jaskółkę”. Kapitan pokazuje trasę: do wyspy z jednym postojem na Wietrznej Wieży. Policz, kiedy pudełko zostanie wydane kurierowi.",
+     "evidence": [
+      "„Jaskółka” wylatuje o {dep} i leci z prędkością {spd} km/h.",
+      "Do wyspy jest {dist} km. Po drodze jeden postój na Wietrznej Wieży, {stop} minut.",
+      "Po przylocie rozładunek zajmuje {unl} minut, potem pudełko wydaje się kurierowi."
+     ],
+     "question": "O której pudełko zostanie wydane kurierowi na wyspie? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dist} km przy prędkości {spd} km/h to {frac} godziny, czyli {fl} minut. Postój {stop} minut i rozładunek {unl} minut. {dep} + {fl} + {stop} + {unl} minut = {arr}.",
+     "outcome": "Pudełko zostanie wydane o {arr}. Do święta o 12:10 zostaje {left} minut i trzeba je podzielić między drogę kuriera i pracę majstra.",
+     "next": "Wybierz kuriera",
+     "hints": [
+      "Najpierw ustal, ile minut zajmie sam lot: w godzinę {spd} km, więc jaką część godziny zajmie {dist} km?",
+      "{dist} z {spd} to {fi#dwie trzecie|trzy czwarte|połowa|jedna trzecia}. Zamień {fi#dwie trzecie|trzy czwarte|połowę|jedną trzecią} godziny na minuty.",
+      "Do lotu dodaj postój i rozładunek, a potem wszystko do {dep}."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Kto dowiezie ogon?",
+     "situation": "Na placu wyspy jest czterech kurierów, każdy ma swój kurs według rozkładu: godziny odjazdu nie można zmienić. Nika zapisała dla każdego, kiedy odjeżdża, jak długo jedzie i co bierze.",
+     "evidence": [
+      "Pudełko wydają o {arr}. Święto jest o 12:10. Majster potrzebuje {mk} minut: zamontować ogon i sprawdzić wiatrowskaz.",
+      "Kurier A: odjeżdża o {la}, jedzie 3 km z prędkością 12 km/h.",
+      "Kurier B: odjeżdża o {lb}, jedzie {db} km z prędkością {sb} km/h.",
+      "Kurier C: odjeżdża o {lc}, idzie z wózkiem {dc} km z prędkością {sc} km/h.",
+      "Kurier D: odjeżdża o {ld}, jedzie {dd} km z prędkością {sd} km/h, ale bierze tylko pudełka o długości do {lim} cm."
+     ],
+     "question": "Kto dowiezie ogon tak, żeby majster zdążył na 12:10?",
+     "kind": "choice",
+     "options": [
+      "Kurier A",
+      "Kurier B",
+      "Kurier C",
+      "Kurier D"
+     ],
+     "feedback": [
+      "Kurier A odjeżdża o {la}, a pudełko wydadzą dopiero o {arr}.",
+      "",
+      "{dc} km przy {sc} km/h to {tc} minut: kurier C dojedzie o {ac} i majstrowi zabraknie {mk} minut.",
+      "Czasowo kurier D zdąży, ale nasze pudełko ma {p3len} cm długości, a on bierze tylko do {lim} cm."
+     ],
+     "explanation": "Majster potrzebuje {mk} minut, więc ogon musi być u niego najpóźniej o {latest}. B: {db} km przy {sb} km/h to {tb} minut, dojedzie o {ab}. A odjeżdża przed wydaniem, C dojedzie o {ac}, D nie bierze takich pudełek.",
+     "outcome": "Nika umawia się z kurierem B: odbiera pudełko o {lb} i przywozi majstrowi o {ab}. Majster ma {havem} minut na pracę, która zajmuje {mk}.",
+     "next": "Złóż wiatrowskaz",
+     "hints": [
+      "Najpierw policz, do której ogon musi być u majstra.",
+      "Czas drogi: odległość podziel przez prędkość. Przy {sb} km/h jeden kilometr zajmuje {kmmin} minut.",
+      "Sprawdź u każdego trzy rzeczy: godzinę odjazdu, godzinę przyjazdu i czy pudełko pasuje."
+     ],
+     "scene": 3
+    },
+    {
+     "title": "Co zrobić z żaglem?",
+     "situation": "W ładowni „Jaskółki” majster montuje ogon: o {fin} wiatrowskaz jest gotowy, na 12:10 kogut jest na wieży. Została druga połowa pomyłki Niki: pudełko z żaglem, na które czeka szkutnik Tim na Małej Wyspie.",
+     "evidence": [
+      "Kurier B przywiezie pudełko z żaglem z powrotem na plac na {back}.",
+      "Tim czeka na żagiel na swojej przystani na Małej Wyspie do {tw}.",
+      "„Jerzyk” lata na Małą Wyspę co {every} minut, pierwszy kurs o {f0}. Lot trwa {fl2} minut.",
+      "Pudełko ładuje się tylko na kurs, który wylatuje po tym, jak przywieziono je na plac."
+     ],
+     "question": "O której najwcześniej żagiel będzie u Tima? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Kursy „Jerzyka”: {fA}, {fB}, {fC}. Pudełko jest na placu dopiero o {back}, więc pierwszy pasujący kurs jest o {fdep}. {fdep} + {fl2} minut = {tim}, Tim jeszcze czeka.",
+     "outcome": "Żagiel odlatuje o {fdep} i będzie u Tima o {tim}, {before|minutę|minuty|minut} przed tym, jak przestanie czekać. Oba pudełka trafiły do właścicieli.",
+     "next": "Ustaw wiatrowskaz",
+     "hints": [
+      "Wypisz kursy „Jerzyka”: pierwszy o {f0}, dalej co {every} minut.",
+      "Pudełko trafi tylko na kurs, który wylatuje po {back}.",
+      "Dodaj czas lotu do godziny wylotu."
+     ],
+     "scene": 2
+    }
+   ]
+  },
+  "en": {
+   "title": "A Parcel for Cloud Island",
+   "intro": "On Cloud Island, a rooster weather vane is being assembled for the festival. The maker opened the box: instead of the tail, there was a little sail inside. Nika the postwoman is sure she mixed up two boxes with the same cloud on the lid. There are four unclaimed parcels at the post office, all with soggy labels. The festival is at 12:10, and the Swallow flies to the island once a day. You need to find the tail, get it to the maker and make it in time for the festival. And then return the sail to whoever is waiting for it.",
+   "ending": "The tail was in the third box: two boxes weighed the same, and it was the length that settled it. The Swallow flew there in {fl} minutes plus a stop, courier B brought the tail at {ab}, and the maker raised the vane by 12:10. The sail left on the Swift at {fdep} and reached Tim the boatman at {tim}. Nika no longer labels boxes with just a picture: now every one carries an address and a weight.",
+   "question": "Two boxes weighed exactly {totkg} kg. Why did the weight alone not tell you which one held the tail?",
+   "steps": [
+    {
+     "title": "Which box is ours?",
+     "situation": "At the post office, Nika puts all four parcels on the scales and takes out the maker’s packing note. Other people’s parcels must not be opened, so you have to choose by the note and open only one.",
+     "evidence": [
+      "The maker’s note: the tail is {tl} cm long and weighs {tkg} kg {tg} g. It is packed in a box weighing {bm} g, with another {pm} g of paper inside.",
+      "Parcel 1: {p1} kg, box {p1len} cm long.",
+      "Parcel 2: {totkg} kg, box {p2len} cm long.",
+      "Parcel 3: {totkg} kg, box {p3len} cm long.",
+      "Parcel 4: {p4kg} kg {p4g} g, box {p4len} cm long."
+     ],
+     "question": "Which parcel should be opened?",
+     "kind": "choice",
+     "options": [
+      "Parcel 1",
+      "Parcel 2",
+      "Parcel 3",
+      "Parcel 4"
+     ],
+     "feedback": [
+      "{p1} kg is {p1g} g: the tail and box without the paper. But the paper is inside too.",
+      "The weight matches, but a {tl} cm tail will not fit in a {p2len} cm box.",
+      "",
+      "{p4kg} kg {p4g} g is {pm} g heavier than the weight we need."
+     ],
+     "explanation": "{tm} + {bm} + {pm} = {tot} g, which is {totkg} kg. Parcels 2 and 3 both weigh that, but a {tl} cm tail only fits in the {p3len} cm box. Nika opens parcel 3: the rooster’s tail is inside.",
+     "outcome": "The tail is in parcel 3. Now it has to be sent to the island on the Swallow, and we need to work out how much time will be left.",
+     "next": "To the Swallow’s dock",
+     "hints": [
+      "Convert everything to grams and add the tail, the box and the paper.",
+      "Two boxes can have the same weight. Then look at the size.",
+      "A {tl} cm tail cannot be bent: the box has to be longer."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "When will the box reach the island?",
+     "situation": "At the dock, Nika hands the box over to the Swallow. The captain shows the route: to the island with one stop at Windmill Tower. Work out when the box will be handed to a courier.",
+     "evidence": [
+      "The Swallow departs at {dep} and flies at {spd} km/h.",
+      "It is {dist} km to the island. There is one stop on the way at Windmill Tower, lasting {stop} minutes.",
+      "After arrival, unloading takes {unl} minutes, and then the box is handed to a courier."
+     ],
+     "question": "What time will the box be handed to a courier on the island? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dist} km at {spd} km/h is {frac} of an hour, which is {fl} minutes. A {stop}-minute stop and {unl} minutes of unloading. {dep} + {fl} + {stop} + {unl} minutes = {arr}.",
+     "outcome": "The box will be handed over at {arr}. There are {left} minutes until the festival at 12:10, to be shared between the courier’s journey and the maker’s work.",
+     "next": "Choose a courier",
+     "hints": [
+      "First work out how many minutes the flight itself takes: {spd} km in an hour, so what fraction of an hour does {dist} km take?",
+      "{dist} out of {spd} is {fi#two thirds|three quarters|a half|one third}. Convert {fi#two thirds|three quarters|half|one third} of an hour into minutes.",
+      "Add the stop and the unloading to the flight, then add it all to {dep}."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Who will deliver the tail?",
+     "situation": "In the island square there are four couriers, each with a scheduled run: departure times cannot be changed. Nika has noted for each one when they leave, how far they travel and what they carry.",
+     "evidence": [
+      "The box is handed over at {arr}. The festival is at 12:10. The maker needs {mk} minutes to fit the tail and check the vane.",
+      "Courier A: leaves at {la}, rides 3 km at 12 km/h.",
+      "Courier B: leaves at {lb}, rides {db} km at {sb} km/h.",
+      "Courier C: leaves at {lc}, walks {dc} km with a cart at {sc} km/h.",
+      "Courier D: leaves at {ld}, rides {dd} km at {sd} km/h, but only takes boxes up to {lim} cm long."
+     ],
+     "question": "Who can deliver the tail so that the maker finishes by 12:10?",
+     "kind": "choice",
+     "options": [
+      "Courier A",
+      "Courier B",
+      "Courier C",
+      "Courier D"
+     ],
+     "feedback": [
+      "Courier A leaves at {la}, but the box is only handed over at {arr}.",
+      "",
+      "{dc} km at {sc} km/h is {tc} minutes: courier C arrives at {ac}, and the maker would not have {mk} minutes.",
+      "Courier D is fine on time, but our box is {p3len} cm long and D only takes boxes up to {lim} cm."
+     ],
+     "explanation": "The maker needs {mk} minutes, so the tail must reach them by {latest} at the latest. B: {db} km at {sb} km/h is {tb} minutes, arriving at {ab}. A leaves before the handover, C arrives at {ac}, and D does not take boxes this size.",
+     "outcome": "Nika books courier B: the box is collected at {lb} and delivered to the maker at {ab}. The maker has {havem} minutes for a job that takes {mk}.",
+     "next": "Assemble the weather vane",
+     "hints": [
+      "First work out by what time the tail must reach the maker.",
+      "Travel time: divide the distance by the speed. At {sb} km/h, one kilometre takes {kmmin} minutes.",
+      "Check three things for each courier: departure time, arrival time and whether the box fits."
+     ],
+     "scene": 3
+    },
+    {
+     "title": "What about the sail?",
+     "situation": "In the Swallow’s hold, the maker fits the tail: the vane is ready at {fin}, and the rooster is on the tower by 12:10. The second half of Nika’s mistake remains: the box with the sail, which Tim the boatman is waiting for on Little Island.",
+     "evidence": [
+      "Courier B will bring the box with the sail back to the square by {back}.",
+      "Tim is waiting for the sail at his dock on Little Island until {tw}.",
+      "The Swift flies to Little Island every {every} minutes, with the first flight at {f0}. The flight takes {fl2} minutes.",
+      "A box is only loaded onto a flight that departs after the box has reached the square."
+     ],
+     "question": "What is the earliest time the sail can reach Tim? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "The Swift’s flights: {fA}, {fB}, {fC}. The box is only in the square at {back}, so the first suitable flight is at {fdep}. {fdep} + {fl2} minutes = {tim}, and Tim is still waiting.",
+     "outcome": "The sail leaves at {fdep} and reaches Tim at {tim}, {before|minute|minutes} before he stops waiting. Both boxes have found their owners.",
+     "next": "Raise the weather vane",
+     "hints": [
+      "Write out the Swift’s flights: the first at {f0}, then every {every} minutes.",
+      "The box can only go on a flight that departs after {back}.",
+      "Add the flight time to the departure time."
+     ],
+     "scene": 2
+    }
+   ]
+  },
+  "uk": {
+   "title": "Посилка для Хмарного острова",
+   "intro": "На Хмарному острові до свята збирають флюгер-півня. Майстер відкрив коробку: замість хвоста всередині маленьке вітрило. Листоноша Ніка впевнена, що переплутала дві коробки з однаковою хмаринкою на кришці. На пошті чотири незатребувані відправлення, у всіх розмокли ярлики. Свято о 12:10, «Ластівка» літає на острів раз на день. Треба знайти хвіст, доставити його майстрові і встигнути до свята. А потім ще повернути вітрило тому, хто на нього чекає.",
+   "ending": "Хвіст знайшовся в третій коробці: дві коробки важили однаково, і розібратися допомогла довжина. «Ластівка» долетіла за {fl} хвилин із зупинкою, кур’єр Б привіз хвіст о {ab}, і майстер підняв флюгер до 12:10. Вітрило полетіло «Серпокрильцем» о {fdep} і було в човняра Тіма о {tim}. Ніка більше не підписує коробки лише малюнком: тепер на кожній адреса і маса.",
+   "question": "Дві коробки важили рівно {totkg} кг. Чому маса сама по собі не сказала, у якій із них хвіст?",
+   "steps": [
+    {
+     "title": "Яка коробка наша?",
+     "situation": "На пошті Ніка кладе на ваги всі чотири відправлення і дістає накладну майстра. Відкривати чужі посилки не можна, тому вибрати треба за накладною, а відкрити лише одну.",
+     "evidence": [
+      "Накладна майстра: хвіст завдовжки {tl} см, маса {tkg} кг {tg} г. Запакований у коробку масою {bm} г, усередині ще {pm} г паперу.",
+      "Відправлення №1: {p1} кг, коробка завдовжки {p1len} см.",
+      "Відправлення №2: {totkg} кг, коробка завдовжки {p2len} см.",
+      "Відправлення №3: {totkg} кг, коробка завдовжки {p3len} см.",
+      "Відправлення №4: {p4kg} кг {p4g} г, коробка завдовжки {p4len} см."
+     ],
+     "question": "Яке відправлення відкрити?",
+     "kind": "choice",
+     "options": [
+      "Відправлення №1",
+      "Відправлення №2",
+      "Відправлення №3",
+      "Відправлення №4"
+     ],
+     "feedback": [
+      "{p1} кг це {p1g} г: хвіст і коробка без паперу. Але папір теж лежить усередині.",
+      "Маса збігається, але хвіст завдовжки {tl} см не поміститься в коробку завдовжки {p2len} см.",
+      "",
+      "{p4kg} кг {p4g} г важче за потрібну масу на {pm} г."
+     ],
+     "explanation": "{tm} + {bm} + {pm} = {tot} г, тобто {totkg} кг. Стільки важать №2 і №3, але хвіст завдовжки {tl} см поміститься лише в коробку завдовжки {p3len} см. Ніка відкриває №3: усередині хвіст півня.",
+     "outcome": "Хвіст знайдено у відправленні №3. Тепер його треба відправити на острів «Ластівкою» і зрозуміти, скільки часу залишиться.",
+     "next": "До причалу «Ластівки»",
+     "hints": [
+      "Переведи все в грами і додай хвіст, коробку і папір.",
+      "Однакову масу можуть мати дві коробки. Тоді дивися на розмір.",
+      "Хвіст завдовжки {tl} см не зігнеш: коробка має бути довшою."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Коли коробка буде на острові?",
+     "situation": "На причалі Ніка здає коробку на «Ластівку». Капітан показує маршрут: до острова з однією зупинкою на Вітряній вежі. Порахуй, коли коробку видадуть кур’єрові.",
+     "evidence": [
+      "«Ластівка» вилітає о {dep} і летить зі швидкістю {spd} км/год.",
+      "До острова {dist} км. Дорогою одна зупинка на Вітряній вежі, {stop} хвилин.",
+      "Після прибуття розвантаження займає {unl} хвилин, потім коробку видають кур’єрові."
+     ],
+     "question": "О котрій коробку видадуть кур’єрові на острові? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{dist} км зі швидкістю {spd} км/год це {frac} години, тобто {fl} хвилин. Зупинка {stop} хвилин і розвантаження {unl} хвилин. {dep} + {fl} + {stop} + {unl} хвилин = {arr}.",
+     "outcome": "Коробку видадуть о {arr}. До свята о 12:10 залишається {left} хвилин, і їх треба розділити між дорогою кур’єра і роботою майстра.",
+     "next": "Вибрати кур’єра",
+     "hints": [
+      "Спершу дізнайся, скільки хвилин займе сам політ: за годину {spd} км, отже яку частину години займуть {dist} км?",
+      "{dist} із {spd} це {fi#дві третини|три чверті|половина|одна третина}. Переведи {fi#дві третини|три чверті|половину|одну третину} години у хвилини.",
+      "До польоту додай зупинку і розвантаження, а потім усе до {dep}."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Хто довезе хвіст?",
+     "situation": "На площі острова чотири кур’єри, у кожного свій рейс за розкладом: час виїзду змінити не можна. Ніка записала для кожного, коли він виїжджає, скільки їхати і що він бере.",
+     "evidence": [
+      "Коробку видають о {arr}. Свято о 12:10. Майстрові потрібно {mk} хвилин: установити хвіст і перевірити флюгер.",
+      "Кур’єр А: виїжджає о {la}, їде 3 км зі швидкістю 12 км/год.",
+      "Кур’єр Б: виїжджає о {lb}, їде {db} км зі швидкістю {sb} км/год.",
+      "Кур’єр В: виїжджає о {lc}, іде з візком {dc} км зі швидкістю {sc} км/год.",
+      "Кур’єр Г: виїжджає о {ld}, їде {dd} км зі швидкістю {sd} км/год, але бере лише коробки завдовжки до {lim} см."
+     ],
+     "question": "Хто довезе хвіст так, щоб майстер устиг до 12:10?",
+     "kind": "choice",
+     "options": [
+      "Кур’єр А",
+      "Кур’єр Б",
+      "Кур’єр В",
+      "Кур’єр Г"
+     ],
+     "feedback": [
+      "Кур’єр А виїжджає о {la}, а коробку видадуть лише о {arr}.",
+      "",
+      "{dc} км при {sc} км/год це {tc} хвилин: кур’єр В приїде о {ac}, і майстрові не вистачить {mk} хвилин.",
+      "За часом кур’єр Г встигає, але наша коробка завдовжки {p3len} см, а він бере лише до {lim} см."
+     ],
+     "explanation": "Майстрові потрібно {mk} хвилин, отже хвіст має бути в нього не пізніше ніж о {latest}. Б: {db} км при {sb} км/год це {tb} хвилин, приїде о {ab}. А їде до видачі, В приїде о {ac}, Г не бере таких коробок.",
+     "outcome": "Ніка домовляється з кур’єром Б: він забирає коробку о {lb} і привозить майстрові о {ab}. У майстра {havem} хвилин на роботу, яка займає {mk}.",
+     "next": "Зібрати флюгер",
+     "hints": [
+      "Спершу порахуй, до котрої години хвіст має бути в майстра.",
+      "Час дороги: відстань поділи на швидкість. При {sb} км/год один кілометр займає {kmmin} хвилин.",
+      "Перевір у кожного три речі: час виїзду, час прибуття і чи підходить коробка."
+     ],
+     "scene": 3
+    },
+    {
+     "title": "Куди подіти вітрило?",
+     "situation": "У трюмі «Ластівки» майстер установлює хвіст: о {fin} флюгер готовий, до 12:10 півень на вежі. Залишилася друга половина помилки Ніки: коробка з вітрилом, на яку чекає човняр Тім на Малому острові.",
+     "evidence": [
+      "Кур’єр Б привезе коробку з вітрилом назад на площу до {back}.",
+      "Тім чекає на вітрило на своєму причалі на Малому острові до {tw}.",
+      "«Серпокрилець» літає на Малий острів кожні {every} хвилин, перший рейс о {f0}. Політ триває {fl2} хвилин.",
+      "Коробку вантажать лише на рейс, який вилітає після того, як її привезли на площу."
+     ],
+     "question": "О котрій найраніше вітрило буде в Тіма? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Рейси «Серпокрильця»: {fA}, {fB}, {fC}. Коробка на площі лише о {back}, отже перший підхожий рейс о {fdep}. {fdep} + {fl2} хвилин = {tim}, Тім ще чекає.",
+     "outcome": "Вітрило відлітає о {fdep} і буде в Тіма о {tim}, за {before|хвилину|хвилини|хвилин} до того, як він перестане чекати. Обидві коробки знайшли своїх господарів.",
+     "next": "Підняти флюгер",
+     "hints": [
+      "Випиши рейси «Серпокрильця»: перший о {f0}, далі кожні {every} хвилин.",
+      "Коробка потрапить лише на рейс, який вилітає після {back}.",
+      "Додай тривалість польоту до часу вильоту."
+     ],
+     "scene": 2
+    }
+   ]
+  }
+ }
 }

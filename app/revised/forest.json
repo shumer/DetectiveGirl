@@ -1,506 +1,784 @@
 {
-  "id": "forest",
-  "number": "002",
-  "locales": {
-    "ru": {
-      "title": "Лесные фонари",
-      "intro": "Лада готовит вечернюю прогулку по тропе с бумажными грибами-фонарями. Днём на проверке фонари в конце тропы погасли все разом, в одну секунду. Мастер Илья клянётся, что блок питания новый. Сторож видел у Круглой поляны незнакомца. Лада хочет знать, почему погас свет, чтобы вечером это не повторилось, и успеть подготовить прогулку к 18:10.",
-      "ending": "Свет погас не из-за блока и не из-за незнакомца. Провод от блока 3 лежал через тропу, и в 15:15 его перерезала тележка с ящиками. Разряд блока отпал по времени: он бы выключился в 15:10, а свет пропал в 15:16. Провод заменили на катушку 100 м и проложили вдоль тропы, блок Б зарядился к 17:55. Проверка в 18:00, прогулка с 18:10 до 19:10, у блока останется 5 минут запаса.",
-      "question": "Незнакомец у поляны был на самом деле. Почему он всё равно ни при чём?",
-      "steps": [
-        {
-          "title": "Где обрывается свет?",
-          "situation": "Лада разворачивает план тропы у склада. Фонари пронумерованы подряд от входа, участки разной длины. Днём Илья прошёл вдоль тропы и записал, какие фонари горят.",
-          "evidence": [
-            "На участках по порядку от входа: 5, 7, 6, 8, 4 и 6 фонарей, всего 36.",
-            "На проверке горели фонари с 1 по 26. Дальше все тёмные.",
-            "Блок 1 питает участки 1 и 2, блок 2 питает участки 3 и 4, блок 3 питает участки 5 и 6.",
-            "Каждый блок питает только свои фонари."
-          ],
-          "question": "Сколько фонарей питает блок, из-за которого пропал свет? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "10",
-          "feedback": [],
-          "explanation": "5 + 7 + 6 + 8 = 26: горят ровно первые четыре участка. Фонарь 27 стоит на участке 5. Тёмные участки 5 и 6 питает блок 3: 4 + 6 = 10 фонарей.",
-          "outcome": "Погасли все 10 фонарей блока 3 сразу и ни один другой. Значит, дело в блоке или в его проводе, а не в самих фонарях. Идём к Круглой поляне, где стоит блок 3.",
-          "next": "Идти к блоку 3",
-          "hints": [
-            "Складывай фонари по участкам от входа, пока не наберёшь 26.",
-            "Первый тёмный фонарь номер 27. Найди, на каком участке он стоит.",
-            "Тёмные участки питает один и тот же блок. Сложи фонари его участков."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Почему погас свет?",
-          "situation": "У Круглой поляны Илья открывает ящик блока 3. Лада собрала все факты, включая рассказ сторожа. Версий три: блок разрядился, кто-то его выключил, повреждён провод. Проверь каждую по времени и по тому, что видно на месте.",
-          "evidence": [
-            "Датчик блока записал: фонари 27-36 погасли в 15:16.",
-            "Илья включил полностью заряженный блок 3 в 14:20. По карточке заряда хватает ровно на 50 минут, потом блок выключается сам.",
-            "Индикатор заряда блока показывает 2 деления из 5. Выключатель стоит в положении «включено».",
-            "Провод от блока к фонарю 27 лежит поперёк тропы. По журналу склада в 15:15 по тропе проехала тележка с ящиками.",
-            "Сторож видел незнакомца у поляны в 14:40. В 14:50 тот ушёл в сторону входа."
-          ],
-          "question": "Какая версия согласуется со всеми фактами?",
-          "kind": "choice",
-          "options": [
-            "Блок разрядился, заряда хватило только до 15:10",
-            "Незнакомец выключил блок и ушёл",
-            "Провод поперёк тропы повредила тележка в 15:15",
-            "Все 10 фонарей перегорели одновременно"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Если бы блок разрядился, свет пропал бы в 15:10. А он пропал в 15:16, и индикатор до сих пор показывает заряд.",
-            "Выключатель в положении «включено», а незнакомец ушёл в 14:50, за 26 минут до того, как погас свет.",
-            "",
-            "Десять фонарей не перегорают в одну секунду, а на первом шаге мы уже поняли, что дело в блоке или проводе."
-          ],
-          "explanation": "Разряд не подходит: 14:20 + 50 минут = 15:10, а свет пропал в 15:16, и заряд в блоке остался. Незнакомец ушёл в 14:50 и выключатель не трогал. Провод лежит поперёк тропы, тележка проехала в 15:15, свет пропал через минуту. Илья находит на проводе след колеса и разрыв.",
-          "outcome": "Причина найдена: провод перерезала тележка. Нужен новый провод, который проложат вдоль тропы, и блок на вечер. Идём в мастерскую.",
-          "next": "В мастерскую",
-          "hints": [
-            "Проверь версию с разрядом по времени: во сколько выключился бы блок, включённый в 14:20?",
-            "Сравни время каждого события с 15:16, когда погас свет.",
-            "Ищи событие, которое произошло прямо перед 15:16 и объясняет, почему погасли все фонари блока сразу."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Что взять из мастерской?",
-          "situation": "В мастерской Илья раскладывает катушки провода и запасные блоки. Новый провод проложат вдоль тропы, в обход, чтобы тележки его не задевали. Обход измерен по плану. Блок нужен на всю вечернюю прогулку, включая проверку перед выходом.",
-          "evidence": [
-            "На плане обход провода вдоль тропы измерен: 4,5 см. Масштаб плана: 1 см = 20 м. Сращивать провод из двух кусков нельзя.",
-            "Катушки провода: 60 м, 80 м и 100 м.",
-            "Вечером фонари включают для проверки в 18:00. Группа выходит в 18:10, идёт до павильонов 45 минут с остановками и возвращается за 15 минут. Свет нужен до самого возвращения.",
-            "Блоки после полной зарядки работают: А 40 минут, Б 75 минут, В 50 минут."
-          ],
-          "question": "Отметь, что нужно взять: один провод и один блок.",
-          "kind": "multi",
-          "options": [
-            "Катушка 60 м",
-            "Катушка 80 м",
-            "Катушка 100 м",
-            "Блок А: 40 минут",
-            "Блок Б: 75 минут",
-            "Блок В: 50 минут"
-          ],
-          "answer": [
-            2,
-            4
-          ],
-          "feedback": [],
-          "explanation": "Обход: 4,5 × 20 = 90 м. Катушки 60 и 80 м коротки, подходит 100 м. Свет нужен с 18:00 до возвращения в 19:10, то есть 70 минут. Блоки А и В работают меньше, подходит только блок Б на 75 минут.",
-          "outcome": "Илья берёт катушку 100 м и блок Б. Провод проложат вдоль тропы, а блок нужно зарядить до 18:00.",
-          "next": "Зарядить блок",
-          "hints": [
-            "Провод: переведи сантиметры плана в метры по масштабу.",
-            "Свет нужен с момента проверки в 18:00, а не с выхода группы. Посчитай минуты до возвращения.",
-            "Нужны ровно два предмета: один провод и один блок."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Успеет ли блок зарядиться?",
-          "situation": "У павильонов Илья ставит блок Б на зарядку и прокладывает провод. Лада проверяет, успеет ли всё к проверке в 18:00.",
-          "evidence": [
-            "Проверка фонарей назначена на 18:00.",
-            "Полная зарядка блока Б от нуля занимает 90 минут.",
-            "Когда Илья поставил блок Б на зарядку в 16:55, тот был заряжен на 1/3.",
-            "Заряд прибавляется равномерно."
-          ],
-          "question": "Во сколько блок Б будет заряжен полностью? Введи время ЧЧ:ММ.",
-          "kind": "time",
-          "options": [],
-          "answer": "17:55",
-          "feedback": [],
-          "explanation": "Не хватает 2/3 заряда. 2/3 от 90 минут это 60 минут. 16:55 + 60 минут = 17:55, за 5 минут до проверки.",
-          "outcome": "Блок Б готов к 17:55, провод лежит вдоль тропы. В 18:00 проверка, в 18:10 группа выходит и вернётся в 19:10. Прогулка состоится.",
-          "next": "Открыть лесную прогулку",
-          "hints": [
-            "Заряжать нужно не весь блок, а только недостающую часть.",
-            "Какая доля заряда не хватает и сколько это минут из 90?",
-            "Прибавь эти минуты к 16:55."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "pl": {
-      "title": "Leśne latarnie",
-      "intro": "Łada przygotowuje wieczorny spacer szlakiem papierowych grzybów-latarni. Po południu podczas próby latarnie na końcu szlaku zgasły wszystkie naraz, w jednej sekundzie. Majster Ilja zarzeka się, że akumulator jest nowy. Stróż widział przy Okrągłej Polanie nieznajomego. Łada chce wiedzieć, dlaczego zgasło światło, żeby wieczorem to się nie powtórzyło, i zdążyć przygotować spacer na 18:10.",
-      "ending": "Światło zgasło nie przez akumulator i nie przez nieznajomego. Przewód od akumulatora 3 leżał w poprzek szlaku i o 15:15 przeciął go wózek ze skrzynkami. Rozładowanie odpadło ze względu na czas: akumulator wyłączyłby się o 15:10, a światło zgasło o 15:16. Przewód wymieniono na szpulę 100 m i poprowadzono wzdłuż szlaku, akumulator B naładował się do 17:55. Próba o 18:00, spacer od 18:10 do 19:10, akumulatorowi zostanie 5 minut zapasu.",
-      "question": "Nieznajomy przy polanie był naprawdę. Dlaczego mimo to nie ma z tym nic wspólnego?",
-      "steps": [
-        {
-          "title": "Gdzie urywa się światło?",
-          "situation": "Łada rozkłada plan szlaku przy magazynie. Latarnie są ponumerowane po kolei od wejścia, odcinki mają różną długość. Po południu Ilja przeszedł wzdłuż szlaku i zapisał, które latarnie świecą.",
-          "evidence": [
-            "Na odcinkach po kolei od wejścia: 5, 7, 6, 8, 4 i 6 latarni, razem 36.",
-            "Podczas próby świeciły latarnie od 1 do 26. Dalej wszystkie ciemne.",
-            "Akumulator 1 zasila odcinki 1 i 2, akumulator 2 odcinki 3 i 4, akumulator 3 odcinki 5 i 6.",
-            "Każdy akumulator zasila tylko swoje latarnie."
-          ],
-          "question": "Ile latarni zasila akumulator, przez który zniknęło światło? Wpisz liczbę.",
-          "kind": "number",
-          "options": [],
-          "answer": "10",
-          "feedback": [],
-          "explanation": "5 + 7 + 6 + 8 = 26: świecą dokładnie pierwsze cztery odcinki. Latarnia 27 stoi na odcinku 5. Ciemne odcinki 5 i 6 zasila akumulator 3: 4 + 6 = 10 latarni.",
-          "outcome": "Zgasło wszystkie 10 latarni akumulatora 3 naraz i żadna inna. Czyli chodzi o akumulator albo jego przewód, a nie o same latarnie. Idziemy na Okrągłą Polanę, gdzie stoi akumulator 3.",
-          "next": "Idź do akumulatora 3",
-          "hints": [
-            "Dodawaj latarnie po odcinkach od wejścia, aż uzbierasz 26.",
-            "Pierwsza ciemna latarnia ma numer 27. Ustal, na którym odcinku stoi.",
-            "Ciemne odcinki zasila ten sam akumulator. Dodaj latarnie z jego odcinków."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Dlaczego zgasło światło?",
-          "situation": "Przy Okrągłej Polanie Ilja otwiera skrzynkę akumulatora 3. Łada zebrała wszystkie fakty, łącznie z relacją stróża. Wersje są trzy: akumulator się rozładował, ktoś go wyłączył, uszkodzony jest przewód. Sprawdź każdą według czasu i tego, co widać na miejscu.",
-          "evidence": [
-            "Czujnik akumulatora zapisał: latarnie 27-36 zgasły o 15:16.",
-            "Ilja włączył w pełni naładowany akumulator 3 o 14:20. Według karty ładunku wystarcza dokładnie na 50 minut, potem akumulator sam się wyłącza.",
-            "Wskaźnik ładunku pokazuje 2 kreski z 5. Wyłącznik jest w pozycji „włączone”.",
-            "Przewód od akumulatora do latarni 27 leży w poprzek szlaku. Według dziennika magazynu o 15:15 szlakiem przejechał wózek ze skrzynkami.",
-            "Stróż widział nieznajomego przy polanie o 14:40. O 14:50 tamten odszedł w stronę wejścia."
-          ],
-          "question": "Która wersja zgadza się ze wszystkimi faktami?",
-          "kind": "choice",
-          "options": [
-            "Akumulator się rozładował, ładunku starczyło tylko do 15:10",
-            "Nieznajomy wyłączył akumulator i odszedł",
-            "Przewód w poprzek szlaku uszkodził wózek o 15:15",
-            "Wszystkie 10 latarni przepaliło się jednocześnie"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Gdyby akumulator się rozładował, światło zgasłoby o 15:10. A zgasło o 15:16, a wskaźnik nadal pokazuje ładunek.",
-            "Wyłącznik jest w pozycji „włączone”, a nieznajomy odszedł o 14:50, 26 minut przed tym, jak zgasło światło.",
-            "",
-            "Dziesięć latarni nie przepala się w jednej sekundzie, a w pierwszym kroku ustaliliśmy, że chodzi o akumulator albo przewód."
-          ],
-          "explanation": "Rozładowanie nie pasuje: 14:20 + 50 minut = 15:10, a światło zgasło o 15:16 i w akumulatorze został ładunek. Nieznajomy odszedł o 14:50 i nie dotykał wyłącznika. Przewód leży w poprzek szlaku, wózek przejechał o 15:15, światło zgasło minutę później. Ilja znajduje na przewodzie ślad koła i przerwanie.",
-          "outcome": "Przyczyna znaleziona: przewód przeciął wózek. Potrzebny jest nowy przewód, który poprowadzą wzdłuż szlaku, i akumulator na wieczór. Idziemy do warsztatu.",
-          "next": "Do warsztatu",
-          "hints": [
-            "Sprawdź wersję z rozładowaniem według czasu: o której wyłączyłby się akumulator włączony o 14:20?",
-            "Porównaj czas każdego zdarzenia z 15:16, kiedy zgasło światło.",
-            "Szukaj zdarzenia, które nastąpiło tuż przed 15:16 i wyjaśnia, dlaczego zgasły wszystkie latarnie akumulatora naraz."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Co wziąć z warsztatu?",
-          "situation": "W warsztacie Ilja rozkłada szpule przewodu i zapasowe akumulatory. Nowy przewód poprowadzą wzdłuż szlaku, okrężną drogą, żeby wózki go nie zaczepiały. Objazd zmierzono na planie. Akumulator jest potrzebny na cały wieczorny spacer, łącznie z próbą przed wyjściem.",
-          "evidence": [
-            "Na planie objazd przewodu wzdłuż szlaku zmierzono: 4,5 cm. Skala planu: 1 cm = 20 m. Nie wolno łączyć przewodu z dwóch kawałków.",
-            "Szpule przewodu: 60 m, 80 m i 100 m.",
-            "Wieczorem latarnie włącza się do próby o 18:00. Grupa wychodzi o 18:10, idzie do pawilonów 45 minut z postojami i wraca w 15 minut. Światło jest potrzebne aż do powrotu.",
-            "Akumulatory po pełnym naładowaniu działają: A 40 minut, B 75 minut, C 50 minut."
-          ],
-          "question": "Zaznacz, co trzeba wziąć: jeden przewód i jeden akumulator.",
-          "kind": "multi",
-          "options": [
-            "Szpula 60 m",
-            "Szpula 80 m",
-            "Szpula 100 m",
-            "Akumulator A: 40 minut",
-            "Akumulator B: 75 minut",
-            "Akumulator C: 50 minut"
-          ],
-          "answer": [
-            2,
-            4
-          ],
-          "feedback": [],
-          "explanation": "Objazd: 4,5 × 20 = 90 m. Szpule 60 i 80 m są za krótkie, pasuje 100 m. Światło jest potrzebne od 18:00 do powrotu o 19:10, czyli 70 minut. Akumulatory A i C działają krócej, pasuje tylko akumulator B na 75 minut.",
-          "outcome": "Ilja bierze szpulę 100 m i akumulator B. Przewód poprowadzą wzdłuż szlaku, a akumulator trzeba naładować do 18:00.",
-          "next": "Naładuj akumulator",
-          "hints": [
-            "Przewód: przelicz centymetry z planu na metry według skali.",
-            "Światło jest potrzebne od próby o 18:00, a nie od wyjścia grupy. Policz minuty do powrotu.",
-            "Potrzebne są dokładnie dwie rzeczy: jeden przewód i jeden akumulator."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Czy akumulator zdąży się naładować?",
-          "situation": "Przy pawilonach Ilja podłącza akumulator B do ładowania i kładzie przewód. Łada sprawdza, czy wszystko zdąży na próbę o 18:00.",
-          "evidence": [
-            "Próba latarni wyznaczona jest na 18:00.",
-            "Pełne ładowanie akumulatora B od zera zajmuje 90 minut.",
-            "Kiedy Ilja podłączył akumulator B do ładowania o 16:55, był naładowany w 1/3.",
-            "Ładunek przybywa równomiernie."
-          ],
-          "question": "O której akumulator B będzie w pełni naładowany? Wpisz czas GG:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "17:55",
-          "feedback": [],
-          "explanation": "Brakuje 2/3 ładunku. 2/3 z 90 minut to 60 minut. 16:55 + 60 minut = 17:55, 5 minut przed próbą.",
-          "outcome": "Akumulator B gotowy na 17:55, przewód leży wzdłuż szlaku. O 18:00 próba, o 18:10 grupa wychodzi i wróci o 19:10. Spacer się odbędzie.",
-          "next": "Rozpocznij leśny spacer",
-          "hints": [
-            "Ładować trzeba nie cały akumulator, a tylko brakującą część.",
-            "Jakiej części ładunku brakuje i ile to minut z 90?",
-            "Dodaj te minuty do 16:55."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "en": {
-      "title": "Forest Lanterns",
-      "intro": "Lada is preparing an evening walk along a trail of paper mushroom lanterns. During the afternoon test, the lanterns at the end of the trail all went out at once, in a single second. Ilya the technician swears the battery pack is new. The watchman saw a stranger near Round Clearing. Lada wants to know why the lights went out so it does not happen again in the evening, and to have the walk ready by 18:10.",
-      "ending": "The lights did not go out because of the pack or the stranger. The cable from pack 3 lay across the trail, and at 15:15 a cart full of crates cut through it. A flat pack was ruled out by timing: it would have switched off at 15:10, but the lights went out at 15:16. The cable was replaced with a 100 m spool laid along the trail, and pack B was charged by 17:55. Test at 18:00, walk from 18:10 to 19:10, with 5 minutes of battery to spare.",
-      "question": "The stranger near the clearing was real. Why is he still nothing to do with it?",
-      "steps": [
-        {
-          "title": "Where does the light stop?",
-          "situation": "Lada unfolds the trail map by the depot. The lanterns are numbered in order from the entrance, and the sections are different lengths. In the afternoon, Ilya walked the trail and wrote down which lanterns were lit.",
-          "evidence": [
-            "The sections, in order from the entrance, have 5, 7, 6, 8, 4 and 6 lanterns: 36 in total.",
-            "During the test, lanterns 1 to 26 were lit. All the rest were dark.",
-            "Pack 1 powers sections 1 and 2, pack 2 powers sections 3 and 4, and pack 3 powers sections 5 and 6.",
-            "Each pack powers only its own lanterns."
-          ],
-          "question": "How many lanterns are powered by the pack that lost the light? Enter a number.",
-          "kind": "number",
-          "options": [],
-          "answer": "10",
-          "feedback": [],
-          "explanation": "5 + 7 + 6 + 8 = 26: exactly the first four sections are lit. Lantern 27 is on section 5. The dark sections 5 and 6 are powered by pack 3: 4 + 6 = 10 lanterns.",
-          "outcome": "All 10 lanterns of pack 3 went out at once, and no others. So the problem is the pack or its cable, not the lanterns themselves. Let’s go to Round Clearing, where pack 3 stands.",
-          "next": "Go to pack 3",
-          "hints": [
-            "Add up the lanterns section by section from the entrance until you reach 26.",
-            "The first dark lantern is number 27. Work out which section it stands on.",
-            "The dark sections are powered by the same pack. Add up the lanterns of its sections."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Why did the lights go out?",
-          "situation": "At Round Clearing, Ilya opens the box of pack 3. Lada has gathered all the facts, including the watchman’s story. There are three theories: the pack ran flat, someone switched it off, the cable is damaged. Test each one against the timing and what you can see on the spot.",
-          "evidence": [
-            "The pack’s sensor recorded that lanterns 27-36 went out at 15:16.",
-            "Ilya switched on fully charged pack 3 at 14:20. According to the card, the charge lasts exactly 50 minutes, then the pack switches itself off.",
-            "The charge indicator shows 2 bars out of 5. The switch is in the “on” position.",
-            "The cable from the pack to lantern 27 lies across the trail. According to the depot log, a cart full of crates drove along the trail at 15:15.",
-            "The watchman saw a stranger near the clearing at 14:40. At 14:50 the stranger left towards the entrance."
-          ],
-          "question": "Which theory fits all the facts?",
-          "kind": "choice",
-          "options": [
-            "The pack ran flat; the charge only lasted until 15:10",
-            "The stranger switched the pack off and left",
-            "The cart damaged the cable lying across the trail at 15:15",
-            "All 10 lanterns burned out at the same time"
-          ],
-          "answer": 2,
-          "feedback": [
-            "If the pack had run flat, the lights would have gone out at 15:10. They went out at 15:16, and the indicator still shows charge.",
-            "The switch is in the “on” position, and the stranger left at 14:50, 26 minutes before the lights went out.",
-            "",
-            "Ten lanterns do not burn out in one second, and in step one we already worked out that the problem is the pack or the cable."
-          ],
-          "explanation": "A flat pack does not fit: 14:20 + 50 minutes = 15:10, but the lights went out at 15:16 and there is still charge in the pack. The stranger left at 14:50 and never touched the switch. The cable lies across the trail, the cart drove past at 15:15, and the lights went out a minute later. Ilya finds a wheel mark and a break on the cable.",
-          "outcome": "The cause is found: the cart cut the cable. We need a new cable, to be laid along the trail, and a pack for the evening. Off to the workshop.",
-          "next": "To the workshop",
-          "hints": [
-            "Test the flat-pack theory against the timing: when would a pack switched on at 14:20 have switched off?",
-            "Compare the time of each event with 15:16, when the lights went out.",
-            "Look for an event that happened right before 15:16 and explains why all the pack’s lanterns went out at once."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "What to take from the workshop?",
-          "situation": "In the workshop, Ilya lays out cable spools and spare packs. The new cable will run along the trail, on a detour, so that carts cannot catch it. The detour has been measured on the map. The pack has to last the whole evening walk, including the test before setting off.",
-          "evidence": [
-            "On the map, the cable detour along the trail measures 4.5 cm. The map scale is 1 cm = 20 m. The cable cannot be joined from two pieces.",
-            "Cable spools: 60 m, 80 m and 100 m.",
-            "In the evening, the lanterns are switched on for a test at 18:00. The group leaves at 18:10, takes 45 minutes to reach the pavilions including stops, and returns in 15 minutes. Light is needed until they are back.",
-            "After a full charge, the packs run for: A 40 minutes, B 75 minutes, C 50 minutes."
-          ],
-          "question": "Select what to take: one cable and one pack.",
-          "kind": "multi",
-          "options": [
-            "60 m spool",
-            "80 m spool",
-            "100 m spool",
-            "Pack A: 40 minutes",
-            "Pack B: 75 minutes",
-            "Pack C: 50 minutes"
-          ],
-          "answer": [
-            2,
-            4
-          ],
-          "feedback": [],
-          "explanation": "The detour: 4.5 × 20 = 90 m. The 60 m and 80 m spools are too short, so the 100 m spool fits. Light is needed from 18:00 until the return at 19:10, which is 70 minutes. Packs A and C run for less, so only pack B at 75 minutes will do.",
-          "outcome": "Ilya takes the 100 m spool and pack B. The cable will be laid along the trail, and the pack must be charged by 18:00.",
-          "next": "Charge the pack",
-          "hints": [
-            "Cable: convert the centimetres on the map to metres using the scale.",
-            "Light is needed from the test at 18:00, not from when the group leaves. Count the minutes until the return.",
-            "Exactly two items are needed: one cable and one pack."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Will the pack charge in time?",
-          "situation": "At the pavilions, Ilya puts pack B on charge and lays the cable. Lada checks whether everything will be ready for the test at 18:00.",
-          "evidence": [
-            "The lantern test is set for 18:00.",
-            "A full charge of pack B from empty takes 90 minutes.",
-            "When Ilya put pack B on charge at 16:55, it was 1/3 charged.",
-            "The charge increases evenly."
-          ],
-          "question": "What time will pack B be fully charged? Enter the time as HH:MM.",
-          "kind": "time",
-          "options": [],
-          "answer": "17:55",
-          "feedback": [],
-          "explanation": "2/3 of the charge is missing. 2/3 of 90 minutes is 60 minutes. 16:55 + 60 minutes = 17:55, 5 minutes before the test.",
-          "outcome": "Pack B is ready by 17:55, and the cable lies along the trail. Test at 18:00, the group leaves at 18:10 and returns at 19:10. The walk is on.",
-          "next": "Begin the forest walk",
-          "hints": [
-            "You only need to charge the missing part, not the whole pack.",
-            "What fraction of the charge is missing, and how many minutes out of 90 is that?",
-            "Add those minutes to 16:55."
-          ],
-          "scene": 3
-        }
-      ]
-    },
-    "uk": {
-      "title": "Лісові ліхтарі",
-      "intro": "Лада готує вечірню прогулянку стежкою з паперовими грибами-ліхтарями. Удень на перевірці ліхтарі в кінці стежки згасли всі разом, за одну секунду. Майстер Ілля присягається, що блок живлення новий. Сторож бачив біля Круглої галявини незнайомця. Лада хоче знати, чому згасло світло, щоб увечері це не повторилося, і встигнути підготувати прогулянку до 18:10.",
-      "ending": "Світло згасло не через блок і не через незнайомця. Провід від блока 3 лежав поперек стежки, і о 15:15 його перерізав візок із ящиками. Розряд блока відпав за часом: він би вимкнувся о 15:10, а світло зникло о 15:16. Провід замінили на котушку 100 м і проклали вздовж стежки, блок Б зарядився до 17:55. Перевірка о 18:00, прогулянка з 18:10 до 19:10, у блока залишиться 5 хвилин запасу.",
-      "question": "Незнайомець біля галявини був насправді. Чому він усе одно ні до чого?",
-      "steps": [
-        {
-          "title": "Де обривається світло?",
-          "situation": "Лада розгортає план стежки біля складу. Ліхтарі пронумеровані підряд від входу, ділянки різної довжини. Удень Ілля пройшов уздовж стежки і записав, які ліхтарі горять.",
-          "evidence": [
-            "На ділянках по порядку від входу: 5, 7, 6, 8, 4 і 6 ліхтарів, разом 36.",
-            "На перевірці горіли ліхтарі з 1 по 26. Далі всі темні.",
-            "Блок 1 живить ділянки 1 і 2, блок 2 живить ділянки 3 і 4, блок 3 живить ділянки 5 і 6.",
-            "Кожен блок живить лише свої ліхтарі."
-          ],
-          "question": "Скільки ліхтарів живить блок, через який зникло світло? Введи число.",
-          "kind": "number",
-          "options": [],
-          "answer": "10",
-          "feedback": [],
-          "explanation": "5 + 7 + 6 + 8 = 26: горять рівно перші чотири ділянки. Ліхтар 27 стоїть на ділянці 5. Темні ділянки 5 і 6 живить блок 3: 4 + 6 = 10 ліхтарів.",
-          "outcome": "Згасли всі 10 ліхтарів блока 3 одразу і жоден інший. Отже, річ у блоці або в його проводі, а не в самих ліхтарях. Ідемо до Круглої галявини, де стоїть блок 3.",
-          "next": "Іти до блока 3",
-          "hints": [
-            "Додавай ліхтарі по ділянках від входу, поки не набереш 26.",
-            "Перший темний ліхтар номер 27. Знайди, на якій ділянці він стоїть.",
-            "Темні ділянки живить той самий блок. Додай ліхтарі його ділянок."
-          ],
-          "scene": 0
-        },
-        {
-          "title": "Чому згасло світло?",
-          "situation": "Біля Круглої галявини Ілля відкриває ящик блока 3. Лада зібрала всі факти, разом із розповіддю сторожа. Версій три: блок розрядився, хтось його вимкнув, пошкоджено провід. Перевір кожну за часом і за тим, що видно на місці.",
-          "evidence": [
-            "Датчик блока записав: ліхтарі 27-36 згасли о 15:16.",
-            "Ілля увімкнув повністю заряджений блок 3 о 14:20. За карткою заряду вистачає рівно на 50 хвилин, потім блок вимикається сам.",
-            "Індикатор заряду блока показує 2 поділки з 5. Вимикач стоїть у положенні «увімкнено».",
-            "Провід від блока до ліхтаря 27 лежить поперек стежки. За журналом складу о 15:15 стежкою проїхав візок із ящиками.",
-            "Сторож бачив незнайомця біля галявини о 14:40. О 14:50 той пішов у бік входу."
-          ],
-          "question": "Яка версія узгоджується з усіма фактами?",
-          "kind": "choice",
-          "options": [
-            "Блок розрядився, заряду вистачило лише до 15:10",
-            "Незнайомець вимкнув блок і пішов",
-            "Провід поперек стежки пошкодив візок о 15:15",
-            "Усі 10 ліхтарів перегоріли одночасно"
-          ],
-          "answer": 2,
-          "feedback": [
-            "Якби блок розрядився, світло зникло б о 15:10. А воно зникло о 15:16, і індикатор досі показує заряд.",
-            "Вимикач у положенні «увімкнено», а незнайомець пішов о 14:50, за 26 хвилин до того, як згасло світло.",
-            "",
-            "Десять ліхтарів не перегорають за одну секунду, а на першому кроці ми вже зрозуміли, що річ у блоці або проводі."
-          ],
-          "explanation": "Розряд не підходить: 14:20 + 50 хвилин = 15:10, а світло зникло о 15:16, і заряд у блоці залишився. Незнайомець пішов о 14:50 і вимикача не торкався. Провід лежить поперек стежки, візок проїхав о 15:15, світло зникло за хвилину. Ілля знаходить на проводі слід колеса і розрив.",
-          "outcome": "Причину знайдено: провід перерізав візок. Потрібен новий провід, який прокладуть уздовж стежки, і блок на вечір. Ідемо в майстерню.",
-          "next": "У майстерню",
-          "hints": [
-            "Перевір версію з розрядом за часом: о котрій вимкнувся б блок, увімкнений о 14:20?",
-            "Порівняй час кожної події з 15:16, коли згасло світло.",
-            "Шукай подію, яка сталася прямо перед 15:16 і пояснює, чому згасли всі ліхтарі блока одразу."
-          ],
-          "scene": 1
-        },
-        {
-          "title": "Що взяти з майстерні?",
-          "situation": "У майстерні Ілля розкладає котушки проводу і запасні блоки. Новий провід прокладуть уздовж стежки, в обхід, щоб візки його не чіпляли. Обхід виміряно за планом. Блок потрібен на всю вечірню прогулянку, разом із перевіркою перед виходом.",
-          "evidence": [
-            "На плані обхід проводу вздовж стежки виміряно: 4,5 см. Масштаб плану: 1 см = 20 м. Зрощувати провід із двох шматків не можна.",
-            "Котушки проводу: 60 м, 80 м і 100 м.",
-            "Увечері ліхтарі вмикають для перевірки о 18:00. Група виходить о 18:10, іде до павільйонів 45 хвилин із зупинками і повертається за 15 хвилин. Світло потрібне до самого повернення.",
-            "Блоки після повної зарядки працюють: А 40 хвилин, Б 75 хвилин, В 50 хвилин."
-          ],
-          "question": "Познач, що треба взяти: один провід і один блок.",
-          "kind": "multi",
-          "options": [
-            "Котушка 60 м",
-            "Котушка 80 м",
-            "Котушка 100 м",
-            "Блок А: 40 хвилин",
-            "Блок Б: 75 хвилин",
-            "Блок В: 50 хвилин"
-          ],
-          "answer": [
-            2,
-            4
-          ],
-          "feedback": [],
-          "explanation": "Обхід: 4,5 × 20 = 90 м. Котушки 60 і 80 м закороткі, підходить 100 м. Світло потрібне з 18:00 до повернення о 19:10, тобто 70 хвилин. Блоки А і В працюють менше, підходить лише блок Б на 75 хвилин.",
-          "outcome": "Ілля бере котушку 100 м і блок Б. Провід прокладуть уздовж стежки, а блок треба зарядити до 18:00.",
-          "next": "Зарядити блок",
-          "hints": [
-            "Провід: переведи сантиметри плану в метри за масштабом.",
-            "Світло потрібне з моменту перевірки о 18:00, а не з виходу групи. Порахуй хвилини до повернення.",
-            "Потрібні рівно два предмети: один провід і один блок."
-          ],
-          "scene": 2
-        },
-        {
-          "title": "Чи встигне блок зарядитися?",
-          "situation": "Біля павільйонів Ілля ставить блок Б на зарядку і прокладає провід. Лада перевіряє, чи все встигне до перевірки о 18:00.",
-          "evidence": [
-            "Перевірку ліхтарів призначено на 18:00.",
-            "Повна зарядка блока Б від нуля займає 90 хвилин.",
-            "Коли Ілля поставив блок Б на зарядку о 16:55, той був заряджений на 1/3.",
-            "Заряд додається рівномірно."
-          ],
-          "question": "О котрій блок Б буде заряджений повністю? Введи час ГГ:ХХ.",
-          "kind": "time",
-          "options": [],
-          "answer": "17:55",
-          "feedback": [],
-          "explanation": "Бракує 2/3 заряду. 2/3 від 90 хвилин це 60 хвилин. 16:55 + 60 хвилин = 17:55, за 5 хвилин до перевірки.",
-          "outcome": "Блок Б готовий до 17:55, провід лежить уздовж стежки. О 18:00 перевірка, о 18:10 група виходить і повернеться о 19:10. Прогулянка відбудеться.",
-          "next": "Відкрити лісову прогулянку",
-          "hints": [
-            "Заряджати треба не весь блок, а лише частину, якої бракує.",
-            "Якої частки заряду бракує і скільки це хвилин із 90?",
-            "Додай ці хвилини до 16:55."
-          ],
-          "scene": 3
-        }
-      ]
-    }
+ "id": "forest",
+ "number": "002",
+ "variants": [
+  {
+   "values": {
+    "s1": 5,
+    "s2": 7,
+    "s3": 6,
+    "s4": 8,
+    "s5": 4,
+    "s6": 6,
+    "total": 36,
+    "lit": 26,
+    "first": 27,
+    "ans1": 10,
+    "on": "14:20",
+    "dur": 50,
+    "offt": "15:10",
+    "out": "15:16",
+    "sl": "14:50",
+    "ss": "14:40",
+    "gap": 26,
+    "cart": "15:15",
+    "dcm": 4.5,
+    "dm": 90,
+    "r1": 60,
+    "r2": 80,
+    "r3": 100,
+    "spool": 100,
+    "sh1": 60,
+    "sh2": 80,
+    "wo": 45,
+    "wb": 15,
+    "need": 70,
+    "ret": "19:10",
+    "pa": 40,
+    "pb": 75,
+    "pc": 50,
+    "pi": 1,
+    "pack": 75,
+    "o1": 0,
+    "o2": 2,
+    "left": 5,
+    "full": 90,
+    "have": "1/3",
+    "miss": "2/3",
+    "missm": 60,
+    "cs": "16:55",
+    "cdone": "17:55",
+    "before": 5
+   },
+   "answers": [
+    "10",
+    2,
+    [
+     2,
+     4
+    ],
+    "17:55"
+   ],
+   "orders": [
+    null,
+    [
+     2,
+     1,
+     3,
+     0
+    ],
+    [
+     1,
+     0,
+     4,
+     2,
+     3,
+     5
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "s1": 6,
+    "s2": 5,
+    "s3": 7,
+    "s4": 6,
+    "s5": 5,
+    "s6": 7,
+    "total": 36,
+    "lit": 24,
+    "first": 25,
+    "ans1": 12,
+    "on": "14:10",
+    "dur": 55,
+    "offt": "15:05",
+    "out": "15:12",
+    "sl": "14:45",
+    "ss": "14:35",
+    "gap": 27,
+    "cart": "15:11",
+    "dcm": 3.5,
+    "dm": 70,
+    "r1": 50,
+    "r2": 80,
+    "r3": 60,
+    "spool": 80,
+    "sh1": 50,
+    "sh2": 60,
+    "wo": 40,
+    "wb": 20,
+    "need": 70,
+    "ret": "19:10",
+    "pa": 60,
+    "pb": 55,
+    "pc": 80,
+    "pi": 2,
+    "pack": 80,
+    "o1": 0,
+    "o2": 1,
+    "left": 10,
+    "full": 80,
+    "have": "1/4",
+    "miss": "3/4",
+    "missm": 60,
+    "cs": "16:52",
+    "cdone": "17:52",
+    "before": 8
+   },
+   "answers": [
+    "12",
+    2,
+    [
+     1,
+     5
+    ],
+    "17:52"
+   ],
+   "orders": [
+    null,
+    [
+     0,
+     3,
+     2,
+     1
+    ],
+    [
+     5,
+     2,
+     3,
+     4,
+     0,
+     1
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "s1": 4,
+    "s2": 8,
+    "s3": 5,
+    "s4": 7,
+    "s5": 6,
+    "s6": 5,
+    "total": 35,
+    "lit": 24,
+    "first": 25,
+    "ans1": 11,
+    "on": "14:30",
+    "dur": 40,
+    "offt": "15:10",
+    "out": "15:18",
+    "sl": "14:55",
+    "ss": "14:45",
+    "gap": 23,
+    "cart": "15:17",
+    "dcm": 5.5,
+    "dm": 110,
+    "r1": 90,
+    "r2": 120,
+    "r3": 100,
+    "spool": 120,
+    "sh1": 90,
+    "sh2": 100,
+    "wo": 35,
+    "wb": 15,
+    "need": 60,
+    "ret": "19:00",
+    "pa": 65,
+    "pb": 45,
+    "pc": 50,
+    "pi": 0,
+    "pack": 65,
+    "o1": 1,
+    "o2": 2,
+    "left": 5,
+    "full": 120,
+    "have": "3/4",
+    "miss": "1/4",
+    "missm": 30,
+    "cs": "17:20",
+    "cdone": "17:50",
+    "before": 10
+   },
+   "answers": [
+    "11",
+    2,
+    [
+     1,
+     3
+    ],
+    "17:50"
+   ],
+   "orders": [
+    null,
+    [
+     1,
+     2,
+     3,
+     0
+    ],
+    [
+     1,
+     2,
+     3,
+     0,
+     4,
+     5
+    ],
+    null
+   ]
+  },
+  {
+   "values": {
+    "s1": 5,
+    "s2": 6,
+    "s3": 7,
+    "s4": 8,
+    "s5": 5,
+    "s6": 8,
+    "total": 39,
+    "lit": 26,
+    "first": 27,
+    "ans1": 13,
+    "on": "14:05",
+    "dur": 60,
+    "offt": "15:05",
+    "out": "15:14",
+    "sl": "14:40",
+    "ss": "14:30",
+    "gap": 34,
+    "cart": "15:13",
+    "dcm": 2.5,
+    "dm": 50,
+    "r1": 40,
+    "r2": 45,
+    "r3": 60,
+    "spool": 60,
+    "sh1": 40,
+    "sh2": 45,
+    "wo": 50,
+    "wb": 15,
+    "need": 75,
+    "ret": "19:15",
+    "pa": 70,
+    "pb": 80,
+    "pc": 60,
+    "pi": 1,
+    "pack": 80,
+    "o1": 0,
+    "o2": 2,
+    "left": 5,
+    "full": 60,
+    "have": "1/6",
+    "miss": "5/6",
+    "missm": 50,
+    "cs": "17:03",
+    "cdone": "17:53",
+    "before": 7
+   },
+   "answers": [
+    "13",
+    2,
+    [
+     2,
+     4
+    ],
+    "17:53"
+   ],
+   "orders": [
+    null,
+    [
+     3,
+     1,
+     0,
+     2
+    ],
+    [
+     5,
+     0,
+     2,
+     1,
+     3,
+     4
+    ],
+    null
+   ]
   }
+ ],
+ "locales": {
+  "ru": {
+   "title": "Лесные фонари",
+   "intro": "Лада готовит вечернюю прогулку по тропе с бумажными грибами-фонарями. Днём на проверке фонари в конце тропы погасли все разом, в одну секунду. Мастер Илья клянётся, что блок питания новый. Сторож видел у Круглой поляны незнакомца. Лада хочет знать, почему погас свет, чтобы вечером это не повторилось, и успеть подготовить прогулку к 18:10.",
+   "ending": "Свет погас не из-за блока и не из-за незнакомца. Провод от блока 3 лежал через тропу, и в {cart} его перерезала тележка с ящиками. Разряд блока отпал по времени: он бы выключился в {offt}, а свет пропал в {out}. Провод заменили на катушку {spool} м и проложили вдоль тропы, блок {pi#А|Б|В} зарядился к {cdone}. Проверка в 18:00, прогулка с 18:10 до {ret}, у блока останется {left|минута|минуты|минут} запаса.",
+   "question": "Незнакомец у поляны был на самом деле. Почему он всё равно ни при чём?",
+   "steps": [
+    {
+     "title": "Где обрывается свет?",
+     "situation": "Лада разворачивает план тропы у склада. Фонари пронумерованы подряд от входа, участки разной длины. Днём Илья прошёл вдоль тропы и записал, какие фонари горят.",
+     "evidence": [
+      "На участках по порядку от входа: {s1}, {s2}, {s3}, {s4}, {s5} и {s6} фонарей, всего {total}.",
+      "На проверке горели фонари с 1 по {lit}. Дальше все тёмные.",
+      "Блок 1 питает участки 1 и 2, блок 2 питает участки 3 и 4, блок 3 питает участки 5 и 6.",
+      "Каждый блок питает только свои фонари."
+     ],
+     "question": "Сколько фонарей питает блок, из-за которого пропал свет? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{s1} + {s2} + {s3} + {s4} = {lit}: горят ровно первые четыре участка. Фонарь {first} стоит на участке 5. Тёмные участки 5 и 6 питает блок 3: {s5} + {s6} = {ans1} фонарей.",
+     "outcome": "Погасли все {ans1} фонарей блока 3 сразу и ни один другой. Значит, дело в блоке или в его проводе, а не в самих фонарях. Идём к Круглой поляне, где стоит блок 3.",
+     "next": "Идти к блоку 3",
+     "hints": [
+      "Складывай фонари по участкам от входа, пока не наберёшь {lit}.",
+      "Первый тёмный фонарь номер {first}. Найди, на каком участке он стоит.",
+      "Тёмные участки питает один и тот же блок. Сложи фонари его участков."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Почему погас свет?",
+     "situation": "У Круглой поляны Илья открывает ящик блока 3. Лада собрала все факты, включая рассказ сторожа. Версий три: блок разрядился, кто-то его выключил, повреждён провод. Проверь каждую по времени и по тому, что видно на месте.",
+     "evidence": [
+      "Датчик блока записал: фонари {first}-{total} погасли в {out}.",
+      "Илья включил полностью заряженный блок 3 в {on}. По карточке заряда хватает ровно на {dur} минут, потом блок выключается сам.",
+      "Индикатор заряда блока показывает 2 деления из 5. Выключатель стоит в положении «включено».",
+      "Провод от блока к фонарю {first} лежит поперёк тропы. По журналу склада в {cart} по тропе проехала тележка с ящиками.",
+      "Сторож видел незнакомца у поляны в {ss}. В {sl} тот ушёл в сторону входа."
+     ],
+     "question": "Какая версия согласуется со всеми фактами?",
+     "kind": "choice",
+     "options": [
+      "Блок разрядился, заряда хватило только до {offt}",
+      "Незнакомец выключил блок и ушёл",
+      "Провод поперёк тропы повредила тележка в {cart}",
+      "Все {ans1} фонарей перегорели одновременно"
+     ],
+     "feedback": [
+      "Если бы блок разрядился, свет пропал бы в {offt}. А он пропал в {out}, и индикатор до сих пор показывает заряд.",
+      "Выключатель в положении «включено», а незнакомец ушёл в {sl}, за {gap|минуту|минуты|минут} до того, как погас свет.",
+      "",
+      "Фонари не перегорают все в одну секунду, а на первом шаге мы уже поняли, что дело в блоке или проводе."
+     ],
+     "explanation": "Разряд не подходит: {on} + {dur} минут = {offt}, а свет пропал в {out}, и заряд в блоке остался. Незнакомец ушёл в {sl} и выключатель не трогал. Провод лежит поперёк тропы, тележка проехала в {cart}, свет пропал через минуту. Илья находит на проводе след колеса и разрыв.",
+     "outcome": "Причина найдена: провод перерезала тележка. Нужен новый провод, который проложат вдоль тропы, и блок на вечер. Идём в мастерскую.",
+     "next": "В мастерскую",
+     "hints": [
+      "Проверь версию с разрядом по времени: во сколько выключился бы блок, включённый в {on}?",
+      "Сравни время каждого события с {out}, когда погас свет.",
+      "Ищи событие, которое произошло прямо перед {out} и объясняет, почему погасли все фонари блока сразу."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Что взять из мастерской?",
+     "situation": "В мастерской Илья раскладывает катушки провода и запасные блоки. Новый провод проложат вдоль тропы, в обход, чтобы тележки его не задевали. Обход измерен по плану. Блок нужен на всю вечернюю прогулку, включая проверку перед выходом.",
+     "evidence": [
+      "На плане обход провода вдоль тропы измерен: {dcm} см. Масштаб плана: 1 см = 20 м. Сращивать провод из двух кусков нельзя.",
+      "Катушки провода: {r1} м, {r2} м и {r3} м.",
+      "Вечером фонари включают для проверки в 18:00. Группа выходит в 18:10, идёт до павильонов {wo} минут с остановками и возвращается за {wb} минут. Свет нужен до самого возвращения.",
+      "Блоки после полной зарядки работают: А {pa} минут, Б {pb} минут, В {pc} минут."
+     ],
+     "question": "Отметь, что нужно взять: один провод и один блок.",
+     "kind": "multi",
+     "options": [
+      "Катушка {r1} м",
+      "Катушка {r2} м",
+      "Катушка {r3} м",
+      "Блок А: {pa} минут",
+      "Блок Б: {pb} минут",
+      "Блок В: {pc} минут"
+     ],
+     "feedback": [],
+     "explanation": "Обход: {dcm} × 20 = {dm} м. Катушки {sh1} и {sh2} м коротки, подходит {spool} м. Свет нужен с 18:00 до возвращения в {ret}, то есть {need} минут. Блоки {o1#А|Б|В} и {o2#А|Б|В} работают меньше, подходит только блок {pi#А|Б|В} на {pack} минут.",
+     "outcome": "Илья берёт катушку {spool} м и блок {pi#А|Б|В}. Провод проложат вдоль тропы, а блок нужно зарядить до 18:00.",
+     "next": "Зарядить блок",
+     "hints": [
+      "Провод: переведи сантиметры плана в метры по масштабу.",
+      "Свет нужен с момента проверки в 18:00, а не с выхода группы. Посчитай минуты до возвращения.",
+      "Нужны ровно два предмета: один провод и один блок."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Успеет ли блок зарядиться?",
+     "situation": "У павильонов Илья ставит блок {pi#А|Б|В} на зарядку и прокладывает провод. Лада проверяет, успеет ли всё к проверке в 18:00.",
+     "evidence": [
+      "Проверка фонарей назначена на 18:00.",
+      "Полная зарядка блока {pi#А|Б|В} от нуля занимает {full} минут.",
+      "Когда Илья поставил блок {pi#А|Б|В} на зарядку в {cs}, тот был заряжен на {have}.",
+      "Заряд прибавляется равномерно."
+     ],
+     "question": "Во сколько блок {pi#А|Б|В} будет заряжен полностью? Введи время ЧЧ:ММ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Не хватает {miss} заряда. {miss} от {full} минут это {missm} минут. {cs} + {missm} минут = {cdone}, за {before|минуту|минуты|минут} до проверки.",
+     "outcome": "Блок {pi#А|Б|В} готов к {cdone}, провод лежит вдоль тропы. В 18:00 проверка, в 18:10 группа выходит и вернётся в {ret}. Прогулка состоится.",
+     "next": "Открыть лесную прогулку",
+     "hints": [
+      "Заряжать нужно не весь блок, а только недостающую часть.",
+      "Какая доля заряда не хватает и сколько это минут из {full}?",
+      "Прибавь эти минуты к {cs}."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "pl": {
+   "title": "Leśne latarnie",
+   "intro": "Łada przygotowuje wieczorny spacer szlakiem papierowych grzybów-latarni. Po południu podczas próby latarnie na końcu szlaku zgasły wszystkie naraz, w jednej sekundzie. Majster Ilja zarzeka się, że akumulator jest nowy. Stróż widział przy Okrągłej Polanie nieznajomego. Łada chce wiedzieć, dlaczego zgasło światło, żeby wieczorem to się nie powtórzyło, i zdążyć przygotować spacer na 18:10.",
+   "ending": "Światło zgasło nie przez akumulator i nie przez nieznajomego. Przewód od akumulatora 3 leżał w poprzek szlaku i o {cart} przeciął go wózek ze skrzynkami. Rozładowanie odpadło ze względu na czas: akumulator wyłączyłby się o {offt}, a światło zgasło o {out}. Przewód wymieniono na szpulę {spool} m i poprowadzono wzdłuż szlaku, akumulator {pi#A|B|C} naładował się do {cdone}. Próba o 18:00, spacer od 18:10 do {ret}, akumulatorowi zostanie {left|minuta|minuty|minut} zapasu.",
+   "question": "Nieznajomy przy polanie był naprawdę. Dlaczego mimo to nie ma z tym nic wspólnego?",
+   "steps": [
+    {
+     "title": "Gdzie urywa się światło?",
+     "situation": "Łada rozkłada plan szlaku przy magazynie. Latarnie są ponumerowane po kolei od wejścia, odcinki mają różną długość. Po południu Ilja przeszedł wzdłuż szlaku i zapisał, które latarnie świecą.",
+     "evidence": [
+      "Na odcinkach po kolei od wejścia: {s1}, {s2}, {s3}, {s4}, {s5} i {s6} latarni, razem {total}.",
+      "Podczas próby świeciły latarnie od 1 do {lit}. Dalej wszystkie ciemne.",
+      "Akumulator 1 zasila odcinki 1 i 2, akumulator 2 odcinki 3 i 4, akumulator 3 odcinki 5 i 6.",
+      "Każdy akumulator zasila tylko swoje latarnie."
+     ],
+     "question": "Ile latarni zasila akumulator, przez który zniknęło światło? Wpisz liczbę.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{s1} + {s2} + {s3} + {s4} = {lit}: świecą dokładnie pierwsze cztery odcinki. Latarnia {first} stoi na odcinku 5. Ciemne odcinki 5 i 6 zasila akumulator 3: {s5} + {s6} = {ans1} latarni.",
+     "outcome": "Zgasło wszystkie {ans1} latarni akumulatora 3 naraz i żadna inna. Czyli chodzi o akumulator albo jego przewód, a nie o same latarnie. Idziemy na Okrągłą Polanę, gdzie stoi akumulator 3.",
+     "next": "Idź do akumulatora 3",
+     "hints": [
+      "Dodawaj latarnie po odcinkach od wejścia, aż uzbierasz {lit}.",
+      "Pierwsza ciemna latarnia ma numer {first}. Ustal, na którym odcinku stoi.",
+      "Ciemne odcinki zasila ten sam akumulator. Dodaj latarnie z jego odcinków."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Dlaczego zgasło światło?",
+     "situation": "Przy Okrągłej Polanie Ilja otwiera skrzynkę akumulatora 3. Łada zebrała wszystkie fakty, łącznie z relacją stróża. Wersje są trzy: akumulator się rozładował, ktoś go wyłączył, uszkodzony jest przewód. Sprawdź każdą według czasu i tego, co widać na miejscu.",
+     "evidence": [
+      "Czujnik akumulatora zapisał: latarnie {first}-{total} zgasły o {out}.",
+      "Ilja włączył w pełni naładowany akumulator 3 o {on}. Według karty ładunku wystarcza dokładnie na {dur} minut, potem akumulator sam się wyłącza.",
+      "Wskaźnik ładunku pokazuje 2 kreski z 5. Wyłącznik jest w pozycji „włączone”.",
+      "Przewód od akumulatora do latarni {first} leży w poprzek szlaku. Według dziennika magazynu o {cart} szlakiem przejechał wózek ze skrzynkami.",
+      "Stróż widział nieznajomego przy polanie o {ss}. O {sl} tamten odszedł w stronę wejścia."
+     ],
+     "question": "Która wersja zgadza się ze wszystkimi faktami?",
+     "kind": "choice",
+     "options": [
+      "Akumulator się rozładował, ładunku starczyło tylko do {offt}",
+      "Nieznajomy wyłączył akumulator i odszedł",
+      "Przewód w poprzek szlaku uszkodził wózek o {cart}",
+      "Wszystkie {ans1} latarni przepaliło się jednocześnie"
+     ],
+     "feedback": [
+      "Gdyby akumulator się rozładował, światło zgasłoby o {offt}. A zgasło o {out}, a wskaźnik nadal pokazuje ładunek.",
+      "Wyłącznik jest w pozycji „włączone”, a nieznajomy odszedł o {sl}, {gap|minutę|minuty|minut} przed tym, jak zgasło światło.",
+      "",
+      "Latarnie nie przepalają się wszystkie w jednej sekundzie, a w pierwszym kroku ustaliliśmy, że chodzi o akumulator albo przewód."
+     ],
+     "explanation": "Rozładowanie nie pasuje: {on} + {dur} minut = {offt}, a światło zgasło o {out} i w akumulatorze został ładunek. Nieznajomy odszedł o {sl} i nie dotykał wyłącznika. Przewód leży w poprzek szlaku, wózek przejechał o {cart}, światło zgasło minutę później. Ilja znajduje na przewodzie ślad koła i przerwanie.",
+     "outcome": "Przyczyna znaleziona: przewód przeciął wózek. Potrzebny jest nowy przewód, który poprowadzą wzdłuż szlaku, i akumulator na wieczór. Idziemy do warsztatu.",
+     "next": "Do warsztatu",
+     "hints": [
+      "Sprawdź wersję z rozładowaniem według czasu: o której wyłączyłby się akumulator włączony o {on}?",
+      "Porównaj czas każdego zdarzenia z {out}, kiedy zgasło światło.",
+      "Szukaj zdarzenia, które nastąpiło tuż przed {out} i wyjaśnia, dlaczego zgasły wszystkie latarnie akumulatora naraz."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Co wziąć z warsztatu?",
+     "situation": "W warsztacie Ilja rozkłada szpule przewodu i zapasowe akumulatory. Nowy przewód poprowadzą wzdłuż szlaku, okrężną drogą, żeby wózki go nie zaczepiały. Objazd zmierzono na planie. Akumulator jest potrzebny na cały wieczorny spacer, łącznie z próbą przed wyjściem.",
+     "evidence": [
+      "Na planie objazd przewodu wzdłuż szlaku zmierzono: {dcm} cm. Skala planu: 1 cm = 20 m. Nie wolno łączyć przewodu z dwóch kawałków.",
+      "Szpule przewodu: {r1} m, {r2} m i {r3} m.",
+      "Wieczorem latarnie włącza się do próby o 18:00. Grupa wychodzi o 18:10, idzie do pawilonów {wo} minut z postojami i wraca w {wb} minut. Światło jest potrzebne aż do powrotu.",
+      "Akumulatory po pełnym naładowaniu działają: A {pa} minut, B {pb} minut, C {pc} minut."
+     ],
+     "question": "Zaznacz, co trzeba wziąć: jeden przewód i jeden akumulator.",
+     "kind": "multi",
+     "options": [
+      "Szpula {r1} m",
+      "Szpula {r2} m",
+      "Szpula {r3} m",
+      "Akumulator A: {pa} minut",
+      "Akumulator B: {pb} minut",
+      "Akumulator C: {pc} minut"
+     ],
+     "feedback": [],
+     "explanation": "Objazd: {dcm} × 20 = {dm} m. Szpule {sh1} i {sh2} m są za krótkie, pasuje {spool} m. Światło jest potrzebne od 18:00 do powrotu o {ret}, czyli {need} minut. Akumulatory {o1#A|B|C} i {o2#A|B|C} działają krócej, pasuje tylko akumulator {pi#A|B|C} na {pack} minut.",
+     "outcome": "Ilja bierze szpulę {spool} m i akumulator {pi#A|B|C}. Przewód poprowadzą wzdłuż szlaku, a akumulator trzeba naładować do 18:00.",
+     "next": "Naładuj akumulator",
+     "hints": [
+      "Przewód: przelicz centymetry z planu na metry według skali.",
+      "Światło jest potrzebne od próby o 18:00, a nie od wyjścia grupy. Policz minuty do powrotu.",
+      "Potrzebne są dokładnie dwie rzeczy: jeden przewód i jeden akumulator."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Czy akumulator zdąży się naładować?",
+     "situation": "Przy pawilonach Ilja podłącza akumulator {pi#A|B|C} do ładowania i kładzie przewód. Łada sprawdza, czy wszystko zdąży na próbę o 18:00.",
+     "evidence": [
+      "Próba latarni wyznaczona jest na 18:00.",
+      "Pełne ładowanie akumulatora {pi#A|B|C} od zera zajmuje {full} minut.",
+      "Kiedy Ilja podłączył akumulator {pi#A|B|C} do ładowania o {cs}, był naładowany w {have}.",
+      "Ładunek przybywa równomiernie."
+     ],
+     "question": "O której akumulator {pi#A|B|C} będzie w pełni naładowany? Wpisz czas GG:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Brakuje {miss} ładunku. {miss} z {full} minut to {missm} minut. {cs} + {missm} minut = {cdone}, {before|minutę|minuty|minut} przed próbą.",
+     "outcome": "Akumulator {pi#A|B|C} gotowy na {cdone}, przewód leży wzdłuż szlaku. O 18:00 próba, o 18:10 grupa wychodzi i wróci o {ret}. Spacer się odbędzie.",
+     "next": "Rozpocznij leśny spacer",
+     "hints": [
+      "Ładować trzeba nie cały akumulator, a tylko brakującą część.",
+      "Jakiej części ładunku brakuje i ile to minut z {full}?",
+      "Dodaj te minuty do {cs}."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "en": {
+   "title": "Forest Lanterns",
+   "intro": "Lada is preparing an evening walk along a trail of paper mushroom lanterns. During the afternoon test, the lanterns at the end of the trail all went out at once, in a single second. Ilya the technician swears the battery pack is new. The watchman saw a stranger near Round Clearing. Lada wants to know why the lights went out so it does not happen again in the evening, and to have the walk ready by 18:10.",
+   "ending": "The lights did not go out because of the pack or the stranger. The cable from pack 3 lay across the trail, and at {cart} a cart full of crates cut through it. A flat pack was ruled out by timing: it would have switched off at {offt}, but the lights went out at {out}. The cable was replaced with a {spool} m spool laid along the trail, and pack {pi#A|B|C} was charged by {cdone}. Test at 18:00, walk from 18:10 to {ret}, with {left|minute|minutes} of battery to spare.",
+   "question": "The stranger near the clearing was real. Why is he still nothing to do with it?",
+   "steps": [
+    {
+     "title": "Where does the light stop?",
+     "situation": "Lada unfolds the trail map by the depot. The lanterns are numbered in order from the entrance, and the sections are different lengths. In the afternoon, Ilya walked the trail and wrote down which lanterns were lit.",
+     "evidence": [
+      "The sections, in order from the entrance, have {s1}, {s2}, {s3}, {s4}, {s5} and {s6} lanterns: {total} in total.",
+      "During the test, lanterns 1 to {lit} were lit. All the rest were dark.",
+      "Pack 1 powers sections 1 and 2, pack 2 powers sections 3 and 4, and pack 3 powers sections 5 and 6.",
+      "Each pack powers only its own lanterns."
+     ],
+     "question": "How many lanterns are powered by the pack that lost the light? Enter a number.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{s1} + {s2} + {s3} + {s4} = {lit}: exactly the first four sections are lit. Lantern {first} is on section 5. The dark sections 5 and 6 are powered by pack 3: {s5} + {s6} = {ans1} lanterns.",
+     "outcome": "All {ans1} lanterns of pack 3 went out at once, and no others. So the problem is the pack or its cable, not the lanterns themselves. Let’s go to Round Clearing, where pack 3 stands.",
+     "next": "Go to pack 3",
+     "hints": [
+      "Add up the lanterns section by section from the entrance until you reach {lit}.",
+      "The first dark lantern is number {first}. Work out which section it stands on.",
+      "The dark sections are powered by the same pack. Add up the lanterns of its sections."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Why did the lights go out?",
+     "situation": "At Round Clearing, Ilya opens the box of pack 3. Lada has gathered all the facts, including the watchman’s story. There are three theories: the pack ran flat, someone switched it off, the cable is damaged. Test each one against the timing and what you can see on the spot.",
+     "evidence": [
+      "The pack’s sensor recorded that lanterns {first}-{total} went out at {out}.",
+      "Ilya switched on fully charged pack 3 at {on}. According to the card, the charge lasts exactly {dur} minutes, then the pack switches itself off.",
+      "The charge indicator shows 2 bars out of 5. The switch is in the “on” position.",
+      "The cable from the pack to lantern {first} lies across the trail. According to the depot log, a cart full of crates drove along the trail at {cart}.",
+      "The watchman saw a stranger near the clearing at {ss}. At {sl} the stranger left towards the entrance."
+     ],
+     "question": "Which theory fits all the facts?",
+     "kind": "choice",
+     "options": [
+      "The pack ran flat; the charge only lasted until {offt}",
+      "The stranger switched the pack off and left",
+      "The cart damaged the cable lying across the trail at {cart}",
+      "All {ans1} lanterns burned out at the same time"
+     ],
+     "feedback": [
+      "If the pack had run flat, the lights would have gone out at {offt}. They went out at {out}, and the indicator still shows charge.",
+      "The switch is in the “on” position, and the stranger left at {sl}, {gap|minute|minutes} before the lights went out.",
+      "",
+      "Lanterns do not all burn out in one second, and in step one we already worked out that the problem is the pack or the cable."
+     ],
+     "explanation": "A flat pack does not fit: {on} + {dur} minutes = {offt}, but the lights went out at {out} and there is still charge in the pack. The stranger left at {sl} and never touched the switch. The cable lies across the trail, the cart drove past at {cart}, and the lights went out a minute later. Ilya finds a wheel mark and a break on the cable.",
+     "outcome": "The cause is found: the cart cut the cable. We need a new cable, to be laid along the trail, and a pack for the evening. Off to the workshop.",
+     "next": "To the workshop",
+     "hints": [
+      "Test the flat-pack theory against the timing: when would a pack switched on at {on} have switched off?",
+      "Compare the time of each event with {out}, when the lights went out.",
+      "Look for an event that happened right before {out} and explains why all the pack’s lanterns went out at once."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "What to take from the workshop?",
+     "situation": "In the workshop, Ilya lays out cable spools and spare packs. The new cable will run along the trail, on a detour, so that carts cannot catch it. The detour has been measured on the map. The pack has to last the whole evening walk, including the test before setting off.",
+     "evidence": [
+      "On the map, the cable detour along the trail measures {dcm} cm. The map scale is 1 cm = 20 m. The cable cannot be joined from two pieces.",
+      "Cable spools: {r1} m, {r2} m and {r3} m.",
+      "In the evening, the lanterns are switched on for a test at 18:00. The group leaves at 18:10, takes {wo} minutes to reach the pavilions including stops, and returns in {wb} minutes. Light is needed until they are back.",
+      "After a full charge, the packs run for: A {pa} minutes, B {pb} minutes, C {pc} minutes."
+     ],
+     "question": "Select what to take: one cable and one pack.",
+     "kind": "multi",
+     "options": [
+      "{r1} m spool",
+      "{r2} m spool",
+      "{r3} m spool",
+      "Pack A: {pa} minutes",
+      "Pack B: {pb} minutes",
+      "Pack C: {pc} minutes"
+     ],
+     "feedback": [],
+     "explanation": "The detour: {dcm} × 20 = {dm} m. The {sh1} m and {sh2} m spools are too short, so the {spool} m spool fits. Light is needed from 18:00 until the return at {ret}, which is {need} minutes. Packs {o1#A|B|C} and {o2#A|B|C} run for less, so only pack {pi#A|B|C} at {pack} minutes will do.",
+     "outcome": "Ilya takes the {spool} m spool and pack {pi#A|B|C}. The cable will be laid along the trail, and the pack must be charged by 18:00.",
+     "next": "Charge the pack",
+     "hints": [
+      "Cable: convert the centimetres on the map to metres using the scale.",
+      "Light is needed from the test at 18:00, not from when the group leaves. Count the minutes until the return.",
+      "Exactly two items are needed: one cable and one pack."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Will the pack charge in time?",
+     "situation": "At the pavilions, Ilya puts pack {pi#A|B|C} on charge and lays the cable. Lada checks whether everything will be ready for the test at 18:00.",
+     "evidence": [
+      "The lantern test is set for 18:00.",
+      "A full charge of pack {pi#A|B|C} from empty takes {full} minutes.",
+      "When Ilya put pack {pi#A|B|C} on charge at {cs}, it was {have} charged.",
+      "The charge increases evenly."
+     ],
+     "question": "What time will pack {pi#A|B|C} be fully charged? Enter the time as HH:MM.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "{miss} of the charge is missing. {miss} of {full} minutes is {missm} minutes. {cs} + {missm} minutes = {cdone}, {before|minute|minutes} before the test.",
+     "outcome": "Pack {pi#A|B|C} is ready by {cdone}, and the cable lies along the trail. Test at 18:00, the group leaves at 18:10 and returns at {ret}. The walk is on.",
+     "next": "Begin the forest walk",
+     "hints": [
+      "You only need to charge the missing part, not the whole pack.",
+      "What fraction of the charge is missing, and how many minutes out of {full} is that?",
+      "Add those minutes to {cs}."
+     ],
+     "scene": 3
+    }
+   ]
+  },
+  "uk": {
+   "title": "Лісові ліхтарі",
+   "intro": "Лада готує вечірню прогулянку стежкою з паперовими грибами-ліхтарями. Удень на перевірці ліхтарі в кінці стежки згасли всі разом, за одну секунду. Майстер Ілля присягається, що блок живлення новий. Сторож бачив біля Круглої галявини незнайомця. Лада хоче знати, чому згасло світло, щоб увечері це не повторилося, і встигнути підготувати прогулянку до 18:10.",
+   "ending": "Світло згасло не через блок і не через незнайомця. Провід від блока 3 лежав поперек стежки, і о {cart} його перерізав візок із ящиками. Розряд блока відпав за часом: він би вимкнувся о {offt}, а світло зникло о {out}. Провід замінили на котушку {spool} м і проклали вздовж стежки, блок {pi#А|Б|В} зарядився до {cdone}. Перевірка о 18:00, прогулянка з 18:10 до {ret}, у блока залишиться {left|хвилина|хвилини|хвилин} запасу.",
+   "question": "Незнайомець біля галявини був насправді. Чому він усе одно ні до чого?",
+   "steps": [
+    {
+     "title": "Де обривається світло?",
+     "situation": "Лада розгортає план стежки біля складу. Ліхтарі пронумеровані підряд від входу, ділянки різної довжини. Удень Ілля пройшов уздовж стежки і записав, які ліхтарі горять.",
+     "evidence": [
+      "На ділянках по порядку від входу: {s1}, {s2}, {s3}, {s4}, {s5} і {s6} ліхтарів, разом {total}.",
+      "На перевірці горіли ліхтарі з 1 по {lit}. Далі всі темні.",
+      "Блок 1 живить ділянки 1 і 2, блок 2 живить ділянки 3 і 4, блок 3 живить ділянки 5 і 6.",
+      "Кожен блок живить лише свої ліхтарі."
+     ],
+     "question": "Скільки ліхтарів живить блок, через який зникло світло? Введи число.",
+     "kind": "number",
+     "options": [],
+     "feedback": [],
+     "explanation": "{s1} + {s2} + {s3} + {s4} = {lit}: горять рівно перші чотири ділянки. Ліхтар {first} стоїть на ділянці 5. Темні ділянки 5 і 6 живить блок 3: {s5} + {s6} = {ans1} ліхтарів.",
+     "outcome": "Згасли всі {ans1} ліхтарів блока 3 одразу і жоден інший. Отже, річ у блоці або в його проводі, а не в самих ліхтарях. Ідемо до Круглої галявини, де стоїть блок 3.",
+     "next": "Іти до блока 3",
+     "hints": [
+      "Додавай ліхтарі по ділянках від входу, поки не набереш {lit}.",
+      "Перший темний ліхтар номер {first}. Знайди, на якій ділянці він стоїть.",
+      "Темні ділянки живить той самий блок. Додай ліхтарі його ділянок."
+     ],
+     "scene": 0
+    },
+    {
+     "title": "Чому згасло світло?",
+     "situation": "Біля Круглої галявини Ілля відкриває ящик блока 3. Лада зібрала всі факти, разом із розповіддю сторожа. Версій три: блок розрядився, хтось його вимкнув, пошкоджено провід. Перевір кожну за часом і за тим, що видно на місці.",
+     "evidence": [
+      "Датчик блока записав: ліхтарі {first}-{total} згасли о {out}.",
+      "Ілля увімкнув повністю заряджений блок 3 о {on}. За карткою заряду вистачає рівно на {dur} хвилин, потім блок вимикається сам.",
+      "Індикатор заряду блока показує 2 поділки з 5. Вимикач стоїть у положенні «увімкнено».",
+      "Провід від блока до ліхтаря {first} лежить поперек стежки. За журналом складу о {cart} стежкою проїхав візок із ящиками.",
+      "Сторож бачив незнайомця біля галявини о {ss}. О {sl} той пішов у бік входу."
+     ],
+     "question": "Яка версія узгоджується з усіма фактами?",
+     "kind": "choice",
+     "options": [
+      "Блок розрядився, заряду вистачило лише до {offt}",
+      "Незнайомець вимкнув блок і пішов",
+      "Провід поперек стежки пошкодив візок о {cart}",
+      "Усі {ans1} ліхтарів перегоріли одночасно"
+     ],
+     "feedback": [
+      "Якби блок розрядився, світло зникло б о {offt}. А воно зникло о {out}, і індикатор досі показує заряд.",
+      "Вимикач у положенні «увімкнено», а незнайомець пішов о {sl}, за {gap|хвилину|хвилини|хвилин} до того, як згасло світло.",
+      "",
+      "Ліхтарі не перегорають усі за одну секунду, а на першому кроці ми вже зрозуміли, що річ у блоці або проводі."
+     ],
+     "explanation": "Розряд не підходить: {on} + {dur} хвилин = {offt}, а світло зникло о {out}, і заряд у блоці залишився. Незнайомець пішов о {sl} і вимикача не торкався. Провід лежить поперек стежки, візок проїхав о {cart}, світло зникло за хвилину. Ілля знаходить на проводі слід колеса і розрив.",
+     "outcome": "Причину знайдено: провід перерізав візок. Потрібен новий провід, який прокладуть уздовж стежки, і блок на вечір. Ідемо в майстерню.",
+     "next": "У майстерню",
+     "hints": [
+      "Перевір версію з розрядом за часом: о котрій вимкнувся б блок, увімкнений о {on}?",
+      "Порівняй час кожної події з {out}, коли згасло світло.",
+      "Шукай подію, яка сталася прямо перед {out} і пояснює, чому згасли всі ліхтарі блока одразу."
+     ],
+     "scene": 1
+    },
+    {
+     "title": "Що взяти з майстерні?",
+     "situation": "У майстерні Ілля розкладає котушки проводу і запасні блоки. Новий провід прокладуть уздовж стежки, в обхід, щоб візки його не чіпляли. Обхід виміряно за планом. Блок потрібен на всю вечірню прогулянку, разом із перевіркою перед виходом.",
+     "evidence": [
+      "На плані обхід проводу вздовж стежки виміряно: {dcm} см. Масштаб плану: 1 см = 20 м. Зрощувати провід із двох шматків не можна.",
+      "Котушки проводу: {r1} м, {r2} м і {r3} м.",
+      "Увечері ліхтарі вмикають для перевірки о 18:00. Група виходить о 18:10, іде до павільйонів {wo} хвилин із зупинками і повертається за {wb} хвилин. Світло потрібне до самого повернення.",
+      "Блоки після повної зарядки працюють: А {pa} хвилин, Б {pb} хвилин, В {pc} хвилин."
+     ],
+     "question": "Познач, що треба взяти: один провід і один блок.",
+     "kind": "multi",
+     "options": [
+      "Котушка {r1} м",
+      "Котушка {r2} м",
+      "Котушка {r3} м",
+      "Блок А: {pa} хвилин",
+      "Блок Б: {pb} хвилин",
+      "Блок В: {pc} хвилин"
+     ],
+     "feedback": [],
+     "explanation": "Обхід: {dcm} × 20 = {dm} м. Котушки {sh1} і {sh2} м закороткі, підходить {spool} м. Світло потрібне з 18:00 до повернення о {ret}, тобто {need} хвилин. Блоки {o1#А|Б|В} і {o2#А|Б|В} працюють менше, підходить лише блок {pi#А|Б|В} на {pack} хвилин.",
+     "outcome": "Ілля бере котушку {spool} м і блок {pi#А|Б|В}. Провід прокладуть уздовж стежки, а блок треба зарядити до 18:00.",
+     "next": "Зарядити блок",
+     "hints": [
+      "Провід: переведи сантиметри плану в метри за масштабом.",
+      "Світло потрібне з моменту перевірки о 18:00, а не з виходу групи. Порахуй хвилини до повернення.",
+      "Потрібні рівно два предмети: один провід і один блок."
+     ],
+     "scene": 2
+    },
+    {
+     "title": "Чи встигне блок зарядитися?",
+     "situation": "Біля павільйонів Ілля ставить блок {pi#А|Б|В} на зарядку і прокладає провід. Лада перевіряє, чи все встигне до перевірки о 18:00.",
+     "evidence": [
+      "Перевірку ліхтарів призначено на 18:00.",
+      "Повна зарядка блока {pi#А|Б|В} від нуля займає {full} хвилин.",
+      "Коли Ілля поставив блок {pi#А|Б|В} на зарядку о {cs}, той був заряджений на {have}.",
+      "Заряд додається рівномірно."
+     ],
+     "question": "О котрій блок {pi#А|Б|В} буде заряджений повністю? Введи час ГГ:ХХ.",
+     "kind": "time",
+     "options": [],
+     "feedback": [],
+     "explanation": "Бракує {miss} заряду. {miss} від {full} хвилин це {missm} хвилин. {cs} + {missm} хвилин = {cdone}, за {before|хвилину|хвилини|хвилин} до перевірки.",
+     "outcome": "Блок {pi#А|Б|В} готовий до {cdone}, провід лежить уздовж стежки. О 18:00 перевірка, о 18:10 група виходить і повернеться о {ret}. Прогулянка відбудеться.",
+     "next": "Відкрити лісову прогулянку",
+     "hints": [
+      "Заряджати треба не весь блок, а лише частину, якої бракує.",
+      "Якої частки заряду бракує і скільки це хвилин із {full}?",
+      "Додай ці хвилини до {cs}."
+     ],
+     "scene": 3
+    }
+   ]
+  }
+ }
 }
